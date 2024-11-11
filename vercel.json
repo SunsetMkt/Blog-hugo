@@ -1,0 +1,6 @@
+{
+    "buildCommand": "hugo --minify --gc",
+    "installCommand": "yum install golang",
+    "devCommand": "hugo server -D -w -p $PORT",
+    "outputDirectory": "public"
+}
