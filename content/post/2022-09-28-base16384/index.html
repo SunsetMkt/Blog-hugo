@@ -1,0 +1,299 @@
+---
+categories: Original
+date: "2022-09-28T00:00:00Z"
+tags:
+  - demo
+  - 前端
+  - JavaScript
+  - Base16384
+slug: base16384
+title: Base16384
+---
+
+<!--https://github.com/shigma/base16384.js-->
+<script>
+  function align(input, output, sWidth, tWidth, sOffset, tOffset) {
+    let offset = 0;
+    let rest = 0;
+    let i = 0,
+      j = 0;
+    const mask = (1 << tWidth) - 1;
+    while (i < input.length) {
+      const char = input[i] - sOffset;
+      offset += sWidth;
+      while (offset >= tWidth) {
+        offset -= tWidth;
+        output[j++] = rest + (char >> offset) + tOffset;
+        if (j === output.length) return;
+        rest = 0;
+      }
+      rest += (char << (tWidth - offset)) & mask;
+      i++;
+    }
+    if (offset) {
+      output[j++] = rest + tOffset;
+    }
+  }
+  function toUint8Array(source) {
+    return new TextEncoder().encode(source);
+  }
+  function encode(input) {
+    if (typeof input === "string") {
+      input = toUint8Array(input);
+    }
+    const output = new Uint16Array(Math.ceil((input.length * 4) / 7) + 1);
+    align(input, output, 8, 14, 0, 0x4e00);
+    output[output.length - 1] = (input.length % 7) + 0x3d00;
+    return output;
+  }
+  function toUint16Array(source) {
+    const input = new Uint16Array(source.length);
+    for (let i = 0; i < source.length; i++) {
+      input[i] = source.charCodeAt(i);
+    }
+    return input;
+  }
+  function decode(input) {
+    if (typeof input === "string") {
+      input = toUint16Array(input);
+    }
+    const length = input.length - 1;
+    const residue = input[length] - 0x3d00 || 7;
+    const output = new Uint8Array(Math.floor((length - 1) / 4) * 7 + residue);
+    align(input, output, 14, 8, 0x4e00, 0);
+    return output;
+  }
+
+  function encode_to_string(input) {
+    return String.fromCharCode(...encode(input));
+  }
+
+  function decode_to_string(input) {
+    return new TextDecoder().decode(decode(input));
+  }
+</script>
+
+<style>
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 10px;
+  }
+
+  h2 {
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 10px;
+  }
+
+  h3 {
+    color: #333;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 10px;
+  }
+
+  button {
+    background-color: #0088cc;
+    border: 1px solid #0077b3;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #0077b3;
+  }
+
+  button:active {
+    background-color: #006699;
+  }
+
+  input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  a {
+    color: #0088cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /*file input*/
+  input[type="file"] {
+    /*beautify*/
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+</style>
+
+<h1>Base16384</h1>
+<p>
+  <a href="https://github.com/shigma/base16384.js" class="link"
+    >Based on base16384.js</a
+  >
+</p>
+<p>
+  A unicode-based encoding scheme that presents binary data (sequence of 8-bit
+  bytes) in sequences of 14-bit printable Chinese characters. It saves 17% space
+  compared to base64.
+</p>
+
+<h2>Encode & Decode String</h2>
+<!--Input area-->
+<div>
+  <textarea id="input" rows="10" cols="80" placeholder="Encode"></textarea>
+  <!--Encode & Decode Btn-->
+  <!--
+    <div>
+        <button id="encode">Encode</button>
+        <button id="decode">Decode</button>
+    </div>
+    -->
+  <!--Output area-->
+  <textarea id="output" rows="10" cols="80" placeholder="Decode"></textarea>
+</div>
+<script>
+  const input = document.getElementById("input");
+  const output = document.getElementById("output");
+  /**
+    const encodeBtn = document.getElementById('encode');
+    const decodeBtn = document.getElementById('decode');
+    encodeBtn.addEventListener('click', () => {
+        output.value = encode_to_string(input.value);
+    });
+    decodeBtn.addEventListener('click', () => {
+        output.value = decode_to_string(input.value);
+    });
+    **/
+  // Auto encode & decode when input changed
+  input.addEventListener("input", () => {
+    output.value = encode_to_string(input.value);
+  });
+  output.addEventListener("input", () => {
+    input.value = decode_to_string(output.value);
+  });
+</script>
+
+<h2>Encode File to String</h2>
+<!--Upload File & Encode-->
+<div>
+  <h3>Upload File</h3>
+  <input type="file" id="file" />
+  <button id="encode_file">Encode</button>
+  <button id="encode_file_txt">Encode to TXT File</button>
+  <a id="download_encode_txt" download="encode.txt" style="display: none"
+    >Download TXT File</a
+  >
+  <h3>Encoded String</h3>
+  <textarea id="output_file" rows="10" cols="80"></textarea>
+</div>
+<script>
+  const file = document.getElementById("file");
+  const encodeFileBtn = document.getElementById("encode_file");
+  const outputFile = document.getElementById("output_file");
+  const encodeFileTxtBtn = document.getElementById("encode_file_txt");
+  const downloadEncodeTxt = document.getElementById("download_encode_txt");
+  encodeFileBtn.addEventListener("click", () => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const array = new Uint8Array(reader.result);
+      outputFile.value = encode_to_string(array);
+    };
+    reader.readAsArrayBuffer(file.files[0]);
+  });
+  encodeFileTxtBtn.addEventListener("click", () => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const array = new Uint8Array(reader.result);
+      const encode = encode_to_string(array);
+      const blob = new Blob([encode], { type: "text/plain" });
+      downloadEncodeTxt.href = URL.createObjectURL(blob);
+      downloadEncodeTxt.click();
+    };
+    reader.readAsArrayBuffer(file.files[0]);
+  });
+</script>
+
+<h2>Decode String to File</h2>
+<!--Decode string to file-->
+<div>
+  <h3>Upload TXT File or Input String</h3>
+  <input type="file" id="txt_file" />
+  <textarea id="input_file" rows="10" cols="80"></textarea>
+  <button id="decode_file">Decode</button>
+  <button id="decode_file_txt">Decode From TXT</button>
+  <a id="download" download="decode.bin" style="display: none">Download</a>
+</div>
+<script>
+  const inputFile = document.getElementById("input_file");
+  const decodeFileBtn = document.getElementById("decode_file");
+  const download = document.getElementById("download");
+  const txtFile = document.getElementById("txt_file");
+  const decodeFileTxtBtn = document.getElementById("decode_file_txt");
+  decodeFileBtn.addEventListener("click", () => {
+    const array = decode(inputFile.value);
+    const blob = new Blob([array], { type: "application/octet-stream" });
+    download.href = URL.createObjectURL(blob);
+    download.click();
+  });
+  decodeFileTxtBtn.addEventListener("click", () => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const array = decode(reader.result);
+      const blob = new Blob([array], { type: "application/octet-stream" });
+      download.href = URL.createObjectURL(blob);
+      download.click();
+    };
+    reader.readAsText(txtFile.files[0]);
+  });
+</script>

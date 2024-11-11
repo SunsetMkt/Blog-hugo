@@ -1,0 +1,37 @@
+---
+categories: Original
+date: "2023-07-31T00:00:00Z"
+tags:
+  - Kaspersky
+  - 音频
+slug: kaspersky-pig-button
+title: Kaspersky猪叫声
+---
+
+<audio
+  id="scream"
+  preload="auto"
+  src="/assets/postres/2023-07-31-kaspersky-pig-button/infected_p.wav"
+></audio>
+
+<button class=".btn .btn--primary" onclick="play()" type="button">播放</button>
+
+<a
+  href="/assets/postres/2023-07-31-kaspersky-pig-button/infected_p.wav"
+  download
+  >下载</a
+>
+
+<!--
+<br>
+
+<a href="https://eugene.kaspersky.com/2019/06/06/the-pig-is-back/">了解更多</a>
+-->
+
+<script>
+  var scream = document.getElementById("scream");
+  function play() {
+    scream.currentTime = 0;
+    scream.play();
+  }
+</script>

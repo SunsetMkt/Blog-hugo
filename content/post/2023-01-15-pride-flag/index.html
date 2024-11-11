@@ -1,0 +1,51 @@
+---
+categories: Original
+date: "2023-01-15T00:00:00Z"
+tags:
+  - PrideFlag
+slug: pride-flag
+title: Intersex-Inclusive Pride Flag
+---
+
+<!-- Source: https://upload.wikimedia.org/wikipedia/commons/6/60/Intersex-inclusive_pride_flag.svg -->
+<div id="flag">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1200"
+    height="762"
+    viewBox="0 0 6000 3810"
+  >
+    <path fill="#6d2380" d="M0,0 H6000 V3810 H0 z" />
+    <path fill="#2c58a4" d="M0,0 H6000 V3175 H0 z" />
+    <path fill="#78b82a" d="M0,0 H6000 V2540 H0 z" />
+    <path fill="#efe524" d="M0,0 H6000 V1905 H0 z" />
+    <path fill="#f28917" d="M0,0 H6000 V1270 H0 z" />
+    <path fill="#e22016" d="M0,0 H6000 V635 H0 z" />
+    <path fill="#000" d="M0,0 H1577 L3341,1905 L1577,3810 H0 z" />
+    <path fill="#945516" d="M0,0 H1209 L2973,1905 L1209,3810 H0 z" />
+    <path fill="#7bcce5" d="M0,0 H844 L2608,1905 L844,3810 H0 z" />
+    <path fill="#f4aec8" d="M0,0 H477 L2241,1905 L477,3810 H0 z" />
+    <path fill="#fff" d="M0,0 H111 L1874,1905 L111,3810 H0 z" />
+    <path fill="#fdd817" d="M0,278 L1507,1905 L0,3532 z" />
+    <circle
+      fill="none"
+      stroke="#66338b"
+      r="404"
+      cx="556"
+      cy="1905"
+      stroke-width="95"
+    />
+  </svg>
+</div>
+
+<script>
+  var flag = document.getElementById("flag");
+  flag.onclick = function () {
+    // request fullscreen or exit fullscreen
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      flag.requestFullscreen();
+    }
+  };
+</script>

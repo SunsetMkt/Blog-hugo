@@ -1,0 +1,45 @@
+---
+categories: Original
+date: "2023-06-21T00:00:00Z"
+description: 斯奈德是由深蓝互动所制作的游戏《重返未来：1999》及其衍生作品的登场角色。—— moegirl.org.cn
+tags:
+  - Web
+  - JavaScript
+  - 前端
+  - Spine
+  - 重返未来：1999
+slug: sinaide
+title: 斯奈德
+---
+
+<p>Spine动画没有正常运作，原因未知。</p>
+
+<script src="https://unpkg.com/pixi.js@7.x/dist/pixi.min.js"></script>
+<script src="https://unpkg.com/pixi-spine@4.x/dist/pixi-spine.js"></script>
+
+<script>
+  const app = new PIXI.Application();
+  document.body.appendChild(app.view);
+
+  // load spine data
+  PIXI.Assets.load(
+    "/assets/postres/2023-06-21-sinaide/302901_sinaide_p/302901_sinaide_p.skel"
+  ).then(onAssetsLoaded);
+
+  function onAssetsLoaded(spineboyAsset) {
+    app.stage.interactive = true;
+
+    // create a spine boy
+    const spineBoyPro = new PIXI.spine.Spine(spineboyAsset.spineData);
+
+    // set the position
+    spineBoyPro.x = app.screen.width / 2;
+    spineBoyPro.y = app.screen.height;
+
+    spineBoyPro.scale.set(0.5);
+
+    app.stage.addChild(spineBoyPro);
+
+    spineBoyPro.state.setAnimation(0, "b_idle", "b_idle");
+  }
+</script>
