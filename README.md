@@ -1,0 +1,2 @@
+# Blog-hugo
+Blog refactored.
