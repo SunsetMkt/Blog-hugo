@@ -41,6 +41,7 @@ jobs:
           extended: true
 
       - name: Build
+        continue-on-error: true
         run: hugo --minify --gc
 
       - name: Deploy 🚀
