@@ -5,16 +5,16 @@ rssFullContent = true
 favicon = "/favicon.ico"
 
 [footer]
-since = 2020
+since = 2024
 customText = ""
 
 [dateFormat]
 published = "2006-01-02"
-lastUpdated = "2006-01-02T15:04:05Z07:00" # RFC3339
+lastUpdated = "2006-01-02 15:04:05"
 
 [sidebar]
 emoji = ""
-subtitle = "Lead Programmer of Sunset Edu. & Tech. Group."
+subtitle = "Sunset Edu. & Tech. Group 的首席程序员"
 
 [sidebar.avatar]
 enabled = true
