@@ -8,17 +8,17 @@
 #newtab = true
 
 [[social]]
+identifier = "email"
+name = "Email"
+url = "mailto:hi@sunmkt.uk"
+
+[social.params]
+icon = "mail"
+
+[[social]]
 identifier = "github"
 name = "GitHub"
-url = "https://github.com/CaiJimmy/hugo-theme-stack"
+url = "https://github.com/SunsetMkt"
 
 [social.params]
 icon = "brand-github"
-
-[[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
-
-[social.params]
-icon = "brand-twitter"
