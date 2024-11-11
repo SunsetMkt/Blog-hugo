@@ -2,19 +2,19 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon = "/favicon.png"
+favicon = "/favicon.ico"
 
 [footer]
 since = 2020
 customText = ""
 
 [dateFormat]
-published = "Jan 02, 2006"
-lastUpdated = "Jan 02, 2006 15:04 MST"
+published = "2006-01-02"
+lastUpdated = "2006-01-02T15:04:05Z07:00" # RFC3339
 
 [sidebar]
-emoji = "🍥"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+emoji = ""
+subtitle = "Lead Programmer of Sunset Edu. & Tech. Group."
 
 [sidebar.avatar]
 enabled = true
@@ -28,7 +28,7 @@ readingTime = true
 
 [article.license]
 enabled = true
-default = "Licensed under CC BY-NC-SA 4.0"
+default = "除非另有说明，此内容使用 CC BY-SA 4.0 许可。"
 
 ## Widgets
 [[widgets.homepage]]
