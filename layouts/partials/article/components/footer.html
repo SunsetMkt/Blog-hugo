@@ -1,10 +1,14 @@
 <footer class="article-footer">
     {{ partial "article/components/tags" . }}
 
-    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) (not (eq .Params.categories "Repost")) }}
+    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
     <section class="article-copyright">
         {{ partial "helper/icon" "copyright" }}
+        {{ if and (eq .Params.categories "Repost") (eq .Params.license nil)}}
+        <span>{{ "请注意检查转载文章的版权情况。" | markdownify }}</span>
+        {{ else }}
         <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
+        {{ end }}
     </section>
     {{ end }}
 
