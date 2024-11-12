@@ -106,12 +106,10 @@ autoCreateIssue = false
 
 [comments.waline]
 serverURL = "https://waline.sunmkt.uk"
-lang = ""
-visitor = ""
+lang = "zh-CN"
 avatar = ""
 emoji = []
 requiredMeta = ["name"]
-placeholder = ""
 search = false
 turnstileKey = "0x4AAAAAAAZ0ouYIQ46lj2Up"
 
