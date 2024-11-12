@@ -52,7 +52,6 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Build
-        continue-on-error: true
         run: hugo --minify --gc
 
       - name: Upload artifact
