@@ -10,7 +10,7 @@ Blog refactored.
 scoop install main/go
 scoop install main/hugo-extended
 hugo mod get
-hugo
+hugo --minify --gc
 ```
 
 ## Hugo Theme Stack Starter Template

@@ -40,7 +40,6 @@ C:\Users\用户名\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\L
   <script>
     const viewdistance_chunks = document.getElementById("viewdistance_chunks");
     const viewdistance_config = document.getElementById("viewdistance_config");
-
     viewdistance_chunks.addEventListener("input", () => {
       if (viewdistance_chunks.value > 65536) {
         viewdistance_chunks.value = 65536;
