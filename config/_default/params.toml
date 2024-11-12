@@ -109,9 +109,11 @@ serverURL = "https://waline.sunmkt.uk"
 lang = ""
 visitor = ""
 avatar = ""
-emoji = ["https://unpkg.com/@waline/emojis@1.1.0/weibo"]
+emoji = []
 requiredMeta = ["name"]
 placeholder = ""
+search = false
+turnstileKey = "0x4AAAAAAAZ0ouYIQ46lj2Up"
 
 [comments.waline.locale]
 admin = "Admin"
