@@ -33,6 +33,8 @@
 
     {{ $title = $title | append " - " $siteTitle }}
     {{ $title = delimit $title "" }}
+{{- else -}}
+    {{ $title = printf "%s - %s" .Title $siteTitle }}
 {{- end -}}
 
 {{ return $title }}
