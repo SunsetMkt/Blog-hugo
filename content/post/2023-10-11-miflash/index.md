@@ -8,8 +8,6 @@ slug: miflash
 title: 小米刷机工具MiFlashPro和小米妙享的下载URL以及更多杂项
 ---
 
-{% include warning-xiaomi.md %}
-
 Reference: [miuiver](https://miuiver.com/miflash-pro/)
 
 ## MiFlashPro（包含 MiFlash）

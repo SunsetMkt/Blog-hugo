@@ -9,8 +9,6 @@ slug: xiaomi-eu-tips
 title: 关于MIUI EU的备忘
 ---
 
-{% include warning-xiaomi.md %}
-
 [Unofficial Xiaomi European Community](https://xiaomi.eu/community/)是一个可信的 MIUI 修改版提供来源，我们将其修改发布的 MIUI 成为 MIUI EU/EU 版。
 
 MIUI EU 大多修改自对应的 MIUI 中国版，但移除了只针对中国大陆服务的功能和广告，并提供更多语言支持和默认启动 Google 服务。

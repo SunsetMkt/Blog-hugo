@@ -8,8 +8,6 @@ slug: xiaomi-rom-cdn-speedlimit
 title: 小米ROM下载限速解决方案
 ---
 
-{% include warning-xiaomi.md %}
-
 ## 替换域名
 
 将 URL 中的域名替换为`bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com`。
