@@ -2,7 +2,6 @@
 categories: Original
 date: "2023-02-06T00:00:00Z"
 tags:
-  - 推荐
   - Python
   - Shell
   - 纸备份

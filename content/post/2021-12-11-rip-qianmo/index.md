@@ -2,7 +2,6 @@
 categories: Original
 date: "2021-12-11T00:00:00Z"
 tags:
-  - RIP
 slug: rip-qianmo
 title: R.I.P QianMo
 ---

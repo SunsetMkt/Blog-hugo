@@ -3,10 +3,6 @@ categories: Repost
 date: "2020-08-30T00:00:00Z"
 tags:
   - EXPLORER
-  - 星际联盟第一宇宙物理研究所理论物理首席科学家EXPLORER
-  - Explorer
-  - exp
-  - EXPLORER-lwt
 slug: beginning-of-the-ruin
 title: 覆灭序曲
 ---

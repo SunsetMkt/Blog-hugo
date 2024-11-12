@@ -1,16 +1,10 @@
 ---
-categories: Original
+categories: Repost
 date: "2020-08-17T00:00:00Z"
 tags:
   - EXPLORER
-  - 星际联盟第一宇宙物理研究所理论物理首席科学家EXPLORER
-  - Explorer
-  - exp
-  - EXPLORER-lwt
   - 玻海
-  - 仿生人会算出电子矩阵吗？
-slug: can-a-bionic-person-calculate-an-electronic-matrix
-  转载
+slug: can-a-bionic-person-calculate-an-electronic-matrix  
 title: 【玻海】仿生人会算出电子矩阵吗？
 ---
 

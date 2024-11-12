@@ -2,7 +2,6 @@
 categories: Original
 date: "2023-02-07T00:00:00Z"
 tags:
-  - 评论
   - SCPFoundation
   - Hannah
 slug: Hannah

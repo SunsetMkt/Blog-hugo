@@ -3,10 +3,6 @@ categories: Repost
 date: "2020-09-24T00:00:00Z"
 tags:
   - EXPLORER
-  - 星际联盟第一宇宙物理研究所理论物理首席科学家EXPLORER
-  - Explorer
-  - exp
-  - EXPLORER-lwt
 slug: return-to-the-stars
 title: 【科幻】归向星辰
 ---

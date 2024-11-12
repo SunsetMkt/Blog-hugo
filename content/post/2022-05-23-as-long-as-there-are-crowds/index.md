@@ -1,10 +1,7 @@
 ---
-categories: Original
+categories: Repost
 date: "2022-05-23T00:00:00Z"
 tags:
-  - 投稿
-  - 评论
-  - 新闻
   - 虚拟主播
   - ASoul
 slug: as-long-as-there-are-crowds

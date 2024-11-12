@@ -2,7 +2,6 @@
 categories: Repost
 date: "2020-03-10T00:00:00Z"
 tags:
-  - 魔幻现实主义
 slug: nameltsihw
 title: 人的子哨发
 ---

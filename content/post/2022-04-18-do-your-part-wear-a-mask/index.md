@@ -3,7 +3,6 @@ categories: Original
 date: "2022-04-18T00:00:00Z"
 description: Do your part. Wear a mask.（标题文案来自美剧The Good Doctor S4E2）
 tags:
-  - 公益
   - COVID19
 slug: do-your-part-wear-a-mask
 title: 【公益广告】保护自己 戴好口罩

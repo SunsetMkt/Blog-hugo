@@ -12,9 +12,9 @@ title: Bilibili HTML5 Video Player Demo
 
 Supported by the Theme
 
-{% include video id="BV1Js411o76u" provider="bilibili" %}
+{{< bilibili "BV1Js411o76u" >}}
 
-{% include video id="BV1cs411Q71" provider="bilibili" %}
+{{< bilibili "BV1cs411Q71" >}}
 
 [iframe URL](https://player.bilibili.com/player.html?aid=810872&bvid=BV1Js411o76u&cid=1176840&page=1)
 

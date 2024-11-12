@@ -59,4 +59,4 @@ title: 让我们谈谈Vocaloid吧
 
 与主题无关但还是放上来了。
 
-{% include video id="BV1Tp4y1S7cu" provider="bilibili" %}
+{{< bilibili "BV1Tp4y1S7cu" >}}

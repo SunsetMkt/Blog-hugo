@@ -7,7 +7,6 @@ redirect_from:
 tags:
   - 站务
   - 免责声明
-  - 余晖
   - Sunset
 slug: my-disclaimer-to-never-met
 title: 致从未谋面的阁下：一份来自Sunset的免责声明

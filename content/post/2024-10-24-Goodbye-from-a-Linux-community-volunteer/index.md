@@ -4,7 +4,6 @@ date: "2024-10-24T00:00:00Z"
 tags:
   - Linux
   - 开源
-  - 政治
   - 翻译
 slug: Goodbye-from-a-Linux-community-volunteer
 title: '【转载】linux: Goodbye from a Linux community volunteer'

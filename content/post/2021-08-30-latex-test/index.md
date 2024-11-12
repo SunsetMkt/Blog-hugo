@@ -1,7 +1,7 @@
 ---
 categories: Original
 date: "2021-08-30T00:00:00Z"
-mathjax: true
+math: true
 tags:
   - demo
   - 前端

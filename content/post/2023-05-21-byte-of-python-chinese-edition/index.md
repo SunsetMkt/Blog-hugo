@@ -6,4 +6,4 @@ slug: byte-of-python-chinese-edition
 title: 简明Python教程（转载）
 ---
 
-{% include pdfjs file="/assets/postres/2023-05-21-byte-of-python-chinese-edition/byte-of-python-chinese-edition.pdf" %}
+{{< embed-pdf url="byte-of-python-chinese-edition.pdf" >}}

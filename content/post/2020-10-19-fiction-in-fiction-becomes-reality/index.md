@@ -3,13 +3,8 @@ categories: Original
 date: "2020-10-19T00:00:00Z"
 tags:
   - EXPLORER
-  - 星际联盟第一宇宙物理研究所理论物理首席科学家EXPLORER
-  - Explorer
-  - exp
-  - EXPLORER-lwt
-  - 投稿
 slug: fiction-in-fiction-becomes-reality
-title: 【投稿】虚构中的虚构化为真实
+title: 虚构中的虚构化为真实
 ---
 
 [未来委员会总部（杜利昂星）] [^1]

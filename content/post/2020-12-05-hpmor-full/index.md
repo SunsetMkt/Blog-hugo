@@ -6,23 +6,6 @@ slug: hpmor-full
 title: 哈利波特与理性之道 不规范转载
 ---
 
-<script src="/assets/js/geturlargv.js"></script>
-<script>
-    var isView = 0;
-</script>
-<script>
-    isView = getQueryVariable("show");
-</script>
-<script>
-    if (isView == 1) {
-        console.log("show=1 exists.Pass.");
-    } else {
-        console.log("Arg show=1 is NOT in the URL.");
-        alert("本文转载尚未获得原作者许可，此页面暂时不提供服务。")
-        window.location.replace("/");
-    }
-</script>
-
 [Source](https://www.hpmor.xyz/authorization/)
 
 ## 授权和转载须知

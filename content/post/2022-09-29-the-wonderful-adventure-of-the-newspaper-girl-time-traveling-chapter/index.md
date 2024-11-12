@@ -4,12 +4,7 @@ date: "2022-09-29T00:00:00Z"
 tags:
   - 原创角色
   - Sunset
-  - 报妹
-  - Ce-daros
   - Cedaros
-  - 同人
-  - R18
-  - 投稿
 slug: the-wonderful-adventure-of-the-newspaper-girl-time-traveling-chapter
 title: 报妹的奇妙冒险（穿越篇）
 ---
@@ -19,8 +14,6 @@ title: 报妹的奇妙冒险（穿越篇）
 本文获得了使用原创角色“Sunset”设定的单独许可，不使用 CC 协议发布。禁止基于本文的二次创作、商业化使用或转载。
 
 感谢为原创角色“Sunset”创作的作者。
-
-{% include protection.html %}
 
 ---
 

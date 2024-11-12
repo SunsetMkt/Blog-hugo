@@ -2,11 +2,9 @@
 categories: Original
 date: "2020-11-17T00:00:00Z"
 tags:
-  - 投稿
-  - SGP计划
   - EXPLORER
 slug: EXPERIMENT
-title: 【投稿】EXPERIMENT
+title: EXPERIMENT
 ---
 
 [未来委员会总部(Dulione)]

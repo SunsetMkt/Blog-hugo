@@ -8,7 +8,7 @@ slug: heimu-demo
 title: 黑幕 Demo
 ---
 
-<style>
+```css
 .heimu,
 .heimu rt {
   background-color: #252525;
@@ -60,11 +60,7 @@ a.extiw:visited:hover span.heimu {
   color: #d1c4e9;
 }
 
-
 /*阅读更多：https://moegirl.uk/MediaWiki:Gadget-site-styles.css 本文引自萌娘百科(https://zh.moegirl.org)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0》协议。*/
-</style>
+```
 
 <span class="heimu" title="你知道的太多了">233333333333333333333333</span>
-<span class="heimu" title="你知道的太多了">
-阅读更多：https://moegirl.uk/MediaWiki:Gadget-site-styles.css 本文引自萌娘百科(https://zh.moegirl.org)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0》协议。Special Thanks To:https://www.cnblogs.com/send-off-a-friend/p/12355387.html
-</span>

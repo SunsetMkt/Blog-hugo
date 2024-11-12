@@ -2,7 +2,6 @@
 categories: Repost
 date: "2019-09-23T00:00:00Z"
 tags:
-  - 评论
 slug: you-are-slaves
 title: 他是狗，你们便是苟奴隶
 ---

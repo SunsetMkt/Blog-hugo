@@ -895,7 +895,7 @@ BagP/9k='/>
 
 - [引用材料](https://www.bilibili.com/video/BV1Gi4y1b7sa)
 
-{% include video id="BV1Gi4y1b7sa" provider="bilibili" %}
+{{< bilibili "BV1Gi4y1b7sa" PART_NUMBER >}}
 
 - 中国版的运行受不合理的网络连接限制
 - 中国版游戏内容可能受中国政府的有关政策限制
