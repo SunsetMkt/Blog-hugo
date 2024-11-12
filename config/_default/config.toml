@@ -16,3 +16,7 @@ disqusShortname = "sunset-blog-hugo"
 
 [pagination]
 pagerSize = 10
+
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
