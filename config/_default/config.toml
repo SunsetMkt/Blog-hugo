@@ -15,4 +15,4 @@ hasCJKLanguage = true
 disqusShortname = "sunset-blog-hugo"
 
 [pagination]
-pagerSize = 5
+pagerSize = 10
