@@ -20,3 +20,5 @@ pagerSize = 10
 [outputFormats.RSS]
 mediatype = "application/rss"
 baseName = "feed"
+
+disablePathToLower = true
