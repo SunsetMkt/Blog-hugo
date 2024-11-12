@@ -1,0 +1,20 @@
+{{ $commitHash := "unknown" }}
+{{ if fileExists ".git/logs/HEAD" }}
+  {{ $gitLog := readFile ".git/logs/HEAD" }}
+  {{ $fileLines := split $gitLog "\n" }}
+  {{ if gt (len $fileLines) 1 }}
+    {{ $lastLine := index $fileLines (sub (len $fileLines) 2) }}
+    {{ $splitLine := split $lastLine " " }}
+    {{ if gt (len $splitLine) 1 }}
+      {{ $commitHash = index $splitLine 1 }}
+      {{ $commitHash = substr $commitHash 0 8 }}
+    {{ else }}
+      {{ warnf "Unable to parse git log line: %s" $lastLine }}
+    {{ end }}
+  {{ else }}
+    {{ warnf "Git log file is empty or contains only one line" }}
+  {{ end }}
+{{ else }}
+  {{ warnf "Git log file not found" }}
+{{ end }}
+{{ return $commitHash }}
