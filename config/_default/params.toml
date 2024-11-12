@@ -77,7 +77,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "giscus"
+provider = "waline"
 
 [comments.disqusjs]
 shortname = ""
@@ -105,7 +105,7 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = ""
+serverURL = "https://waline.sunmkt.uk"
 lang = ""
 visitor = ""
 avatar = ""
