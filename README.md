@@ -13,6 +13,10 @@ hugo mod get
 hugo --minify --gc
 ```
 
+## Compatibility notes
+
+This blog is migrated from Jekyll with `/article/:slug/` URL pattern. The migrated slugs are defined explicitly in the front matter.
+
 ## Hugo Theme Stack Starter Template
 
 This is a quick start template for [Hugo theme Stack](https://github.com/CaiJimmy/hugo-theme-stack). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.
