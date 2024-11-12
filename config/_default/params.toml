@@ -60,9 +60,9 @@ site = ""
 card = "summary_large_image"
 
 [defaultImage.opengraph]
-enabled = false
-local = false
-src = ""
+enabled = true
+local = true
+src = "img/cover_template_1.jpg"
 
 [colorScheme]
 toggle = true
