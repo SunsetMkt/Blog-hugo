@@ -109,8 +109,8 @@ serverURL = "https://waline.sunmkt.uk"
 lang = ""
 visitor = ""
 avatar = ""
-emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
-requiredMeta = ["name", "email", "url"]
+emoji = ["https://unpkg.com/@waline/emojis@1.1.0/weibo"]
+requiredMeta = ["name"]
 placeholder = ""
 
 [comments.waline.locale]
