@@ -10,7 +10,7 @@ slug: ksc-kfa-chinese
 title: 安装Kaspersky Security Cloud Free简体中文版或卡巴斯基免费版
 ---
 
-适用于高级用户的补充材料：[卡巴斯基免费版的 Windows 安装包下载 URL 获取]({% post_url 2024-02-17-kfa %})
+适用于高级用户的补充材料：[卡巴斯基免费版的 Windows 安装包下载 URL 获取]({{< ref "2024-02-17-kfa" >}})
 
 ## 卡巴斯基免费版（推荐）
 

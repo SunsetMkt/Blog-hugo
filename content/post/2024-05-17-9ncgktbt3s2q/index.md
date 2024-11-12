@@ -14,7 +14,7 @@ title: 软件推荐：Human Anatomy Atlas
 
 每年的 10-12 月可能会有特价，价格为 1USD。
 
-也参见[绕过 Microsoft Store 应用的运行前正版验证]({% post_url 2023-02-20-bypassing-microsoft-store-licensing %})的部分内容以实现自动化部署。
+也参见[绕过 Microsoft Store 应用的运行前正版验证]({{< ref "2023-02-20-bypassing-microsoft-store-licensing" >}})的部分内容以实现自动化部署。
 
 ## Patch 内购
 

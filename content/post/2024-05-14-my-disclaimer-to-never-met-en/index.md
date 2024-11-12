@@ -9,7 +9,7 @@ slug: my-disclaimer-to-never-met-en
 title: 'To Whom It May Concern: A Disclaimer from Sunset'
 ---
 
-[Chinese original version]({% post_url 2024-05-14-my-disclaimer-to-never-met %}).
+[Chinese original version]({{< ref "2024-05-14-my-disclaimer-to-never-met" >}}).
 
 <!--
 Prompt: 请使用严谨的法律用语将提供的Markdown文档翻译为英文，不要增加或减少文本，保留Markdown格式。
@@ -124,7 +124,7 @@ Sunset is not:
 - A reliable supporter capable of promising long-term continuous help
 - An artificial intelligence capable of fully understanding and empathizing with complex human emotions
 
-Sunset's [Original Character (OC)]({% post_url 2024-11-10-sunset-profile %}) does not explicitly or implicitly indicate Sunset's real status.
+Sunset's [Original Character (OC)]({{< ref "2024-11-10-sunset-profile" >}}) does not explicitly or implicitly indicate Sunset's real status.
 
 ### Information Security, Privacy Policy, and GDPR
 

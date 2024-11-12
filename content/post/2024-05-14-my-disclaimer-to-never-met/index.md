@@ -12,7 +12,7 @@ slug: my-disclaimer-to-never-met
 title: 致从未谋面的阁下：一份来自Sunset的免责声明
 ---
 
-[English translation by ChatGPT for reference only]({% post_url 2024-05-14-my-disclaimer-to-never-met-en %}). Please notice that the translation may be not up-to-date or inaccurate.
+[English translation by ChatGPT for reference only]({{< ref "2024-05-14-my-disclaimer-to-never-met-en" >}}). Please notice that the translation may be not up-to-date or inaccurate.
 
 ## 致从未谋面的阁下：一份来自 Sunset 的免责声明
 
@@ -121,7 +121,7 @@ Sunset 不是：
 - 能够承诺长期持续帮助的可靠支持者
 - 能够完全理解并共情人类复杂情感的人工智能
 
-Sunset 的[原创角色]({% post_url 2024-11-10-sunset-profile %}) _（英语：Original Character，简称 OC）_ 不明示或暗示 Sunset 的真实状态。
+Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}}) _（英语：Original Character，简称 OC）_ 不明示或暗示 Sunset 的真实状态。
 
 ### 信息安全、隐私政策和 GDPR
 
