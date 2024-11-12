@@ -1,7 +1,7 @@
 # Change baseurl before deploy
 baseurl = "https://blog2.sunmkt.uk"
 languageCode = "zh-cn"
-title = "Sunset 的博客"
+title = "Sunset 的重构博客"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
