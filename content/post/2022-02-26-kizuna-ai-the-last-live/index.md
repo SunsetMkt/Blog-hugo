@@ -16,5 +16,3 @@ title: 后会有期：“世界上第一个虚拟Youtuber”Kizuna AI正式无�
 根据直播中提供的信息推测，在其休眠期间，Kizuner 们可以通过被称作\#KZN-chan 的 CeVIO AI 创作歌曲，基于 Kizuna AI 的动画项目也正在制作中。
 
 向推进人类文化娱乐事业的艺术工作者们致以最高的敬意！
-
-![img](7c2cd61513fdbc988771bd95b6026268fe809c7e.webp)
