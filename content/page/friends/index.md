@@ -14,4 +14,5 @@ menu:
 comments: false
 readingTime: false
 license: false
+slug: friends
 ---
