@@ -166,7 +166,7 @@ https://cdn.cnbj1.fds.api.mi-img.com/mibook-drivers/Driver/A53/20221111/MIUI_Plu
 
 [Latest](https://cdn.cnbj1.fds.api.mi-img.com/download/miaiot/AIoT_master_publication_3.2.0.464_04dc6bb9.exe)
 
-[补丁](https://www.coolapk.com/feed/42297337) ([wtsapi32.dll](/assets/postres/2023-10-11-miflash/old/wtsapi32.dll)) by [ChsBuffer](https://github.com/chsbuffer)
+[补丁](https://www.coolapk.com/feed/42297337) ([wtsapi32.dll](old/wtsapi32.dll)) by [ChsBuffer](https://github.com/chsbuffer)
 
 ```
 https://cdn.cnbj1.fds.api.mi-img.com/download/miaiot/AIoT_master_publication_3.2.0.464_04dc6bb9.exe
@@ -176,7 +176,7 @@ https://cdn.cnbj1.fds.api.mi-img.com/download/miaiot/AIoT_master_publication_3.2
 
 [Latest](https://cdn.cnbj1.fds.api.mi-img.com/ota-packages/61Lu_XiaomiPCManager_official_website_1.0.0.489_0977b577.exe)
 
-[补丁](https://www.coolapk1s.com/feed/46182665) ([wtsapi32.dll](/assets/postres/2023-10-11-miflash/wtsapi32.dll)) by [ChsBuffer](https://github.com/chsbuffer)
+[补丁](https://www.coolapk1s.com/feed/46182665) ([wtsapi32.dll](wtsapi32.dll)) by [ChsBuffer](https://github.com/chsbuffer)
 
 ```
 https://cdn.cnbj1.fds.api.mi-img.com/ota-packages/61Lu_XiaomiPCManager_official_website_1.0.0.489_0977b577.exe

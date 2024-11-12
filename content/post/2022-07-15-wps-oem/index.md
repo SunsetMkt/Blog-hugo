@@ -287,7 +287,7 @@ UninstExeCount=1
 
 [2019 from 423down](https://www.423down.com/8890.html)
 
-[WPS VBA 安装程序备份](/assets/postres/2022-07-15-wps-oem/VBA_Setup.exe)
+[WPS VBA 安装程序备份](VBA_Setup.exe)
 
 [2023 from 423down](https://www.423down.com/15937.html)
 

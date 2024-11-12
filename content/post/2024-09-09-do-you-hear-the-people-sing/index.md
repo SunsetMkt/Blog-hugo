@@ -23,7 +23,7 @@ title: Do You Hear The People Sing?
                 {
                     name: 'Do You Hear The People Sing?',
                     artist: 'Les Misérables',
-                    url: '/assets/postres/2024-09-09-do-you-hear-the-people-sing/Les Misérables Cast - Do You Hear The People Sing？ (Official Video) [PUlQNsl4Qvk].f251.webm',
+                    url: 'Les Misérables Cast - Do You Hear The People Sing？ (Official Video) [PUlQNsl4Qvk].f251.webm',
                 }
             ]
         });

@@ -14,7 +14,7 @@ title: 国际歌
         container: document.getElementById('aplayer'),
         audio: [{
             name: '国际歌',
-            url: '/assets/media/国际歌.mp3'
+            url: '国际歌.mp3'
         }]
     });
 </script>

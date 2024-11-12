@@ -14,7 +14,7 @@ title: 安装Kaspersky Security Cloud Free简体中文版或卡巴斯基免费�
 
 ## 卡巴斯基免费版（推荐）
 
-如果 Kaspersky 彻底移除了 Kaspersky Security Cloud 产品，您可以尝试下载卡巴斯基标准版（[在线安装链接](https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.15.8.493/startup.exe) [备用链接](/assets/postres/2023-07-23-ksc-kfa-chinese/zh_std_setup/startup.exe)）并使用激活码：
+如果 Kaspersky 彻底移除了 Kaspersky Security Cloud 产品，您可以尝试下载卡巴斯基标准版（[在线安装链接](https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.15.8.493/startup.exe) [备用链接](zh_std_setup/startup.exe)）并使用激活码：
 
 > 简体中文版在线安装包 URL 格式是：
 >
@@ -38,7 +38,7 @@ title: 安装Kaspersky Security Cloud Free简体中文版或卡巴斯基免费�
     </style>
 </div>
 
-来激活免费版。（或者直接使用[英文版 KFA](https://www.kaspersky.com/downloads/free-antivirus) [备用链接](/assets/postres/2023-07-23-ksc-kfa-chinese/en_free_setup/kaspersky4win202121.16.6.467en_39971.exe)）
+来激活免费版。（或者直接使用[英文版 KFA](https://www.kaspersky.com/downloads/free-antivirus) [备用链接](en_free_setup/kaspersky4win202121.16.6.467en_39971.exe)）
 
 > 卡巴斯基免费版和 Kaspersky Security Cloud Free 相比，缺少“文件粉碎机”（Free 版功能限制）、“无用数据清理”（半废弃）、“浏览器配置”（已废弃）功能，其余特性几乎一致。
 
@@ -56,7 +56,7 @@ https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=50036
 https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=5003617&businesspurposes=Update&licensetiers=Free&sites=https%3A%2F%2Fwww.kaspersky.com.cn
 ```
 
-可以获取到[链接](https://products.s.kaspersky-labs.com/homeuser/Kaspersky4Win2021/21.16.6.467/chinese_simplified-0.340.0/3831343838327c44454c7c31_41114/startup.exe)/[备份](/assets/postres/2023-07-23-ksc-kfa-chinese/zh_free_setup/startup.exe)。
+可以获取到[链接](https://products.s.kaspersky-labs.com/homeuser/Kaspersky4Win2021/21.16.6.467/chinese_simplified-0.340.0/3831343838327c44454c7c31_41114/startup.exe)/[备份](zh_free_setup/startup.exe)。
 
 <!--
 不一定有效:

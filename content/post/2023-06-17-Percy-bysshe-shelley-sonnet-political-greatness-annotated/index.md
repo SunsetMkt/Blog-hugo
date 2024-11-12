@@ -85,20 +85,20 @@ Of hopes and fears, being himself alone.
                 {
                     name: '二测版',
                     artist: '《重返未来：1999》',
-                    url: '/assets/postres/2023-06-17-Percy-bysshe-shelley-sonnet-political-greatness-annotated/bili.m4a',
-                    cover: '/assets/postres/2023-06-17-Percy-bysshe-shelley-sonnet-political-greatness-annotated/cover.png',
+                    url: 'bili.m4a',
+                    cover: 'cover.png',
                 },
                 {
                     name: '公测提取',
                     artist: '《重返未来：1999》',
-                    url: '/assets/postres/2023-06-17-Percy-bysshe-shelley-sonnet-political-greatness-annotated/770913_1.wav',
-                    cover: '/assets/postres/2023-06-17-Percy-bysshe-shelley-sonnet-political-greatness-annotated/cover.png',
+                    url: '770913_1.wav',
+                    cover: 'cover.png',
                 },
                 {
                     name: '无歌词',
                     artist: '《重返未来：1999》',
-                    url: '/assets/postres/2023-06-17-Percy-bysshe-shelley-sonnet-political-greatness-annotated/753105343_1.wav',
-                    cover: '/assets/postres/2023-06-17-Percy-bysshe-shelley-sonnet-political-greatness-annotated/cover.png',
+                    url: '753105343_1.wav',
+                    cover: 'cover.png',
                 }
             ]
         });
