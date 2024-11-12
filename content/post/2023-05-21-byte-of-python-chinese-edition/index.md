@@ -6,4 +6,4 @@ slug: byte-of-python-chinese-edition
 title: 简明Python教程（转载）
 ---
 
-{{< embed-pdf url="byte-of-python-chinese-edition.pdf" >}}
+{{< embed-pdf-iframe file="byte-of-python-chinese-edition.pdf" >}}

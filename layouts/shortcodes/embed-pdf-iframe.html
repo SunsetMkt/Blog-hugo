@@ -1,0 +1,34 @@
+{{ $uniqueID := substr (.Get "file" | md5) 0 8 }}
+{{ $pdfFile := .Get "file" | relURL }}
+
+<div>
+  <p>
+    <a href="#" id="embed-pdf-download-{{ $uniqueID }}" download>下载PDF</a>
+    <a
+      href="/js/pdf-js/web/viewer.html?file="
+      target="_blank"
+      id="embed-pdf-link-{{ $uniqueID }}"
+      >在新页面打开</a
+    >
+  </p>
+  <iframe
+    src="/js/pdf-js/web/viewer.html?file="
+    style="height: 500px; width: 100%; border: none; overflow: hidden"
+    id="embed-pdf-iframe-{{ $uniqueID }}"
+  ></iframe>
+  <script>
+    (function () {
+      var uniqueID = "{{ $uniqueID }}";
+      var filepath = "{{ $pdfFile }}";
+      var iframe = document.getElementById("embed-pdf-iframe-" + uniqueID);
+      var link = document.getElementById("embed-pdf-link-" + uniqueID);
+      var download = document.getElementById("embed-pdf-download-" + uniqueID);
+      var currentPagePath = window.location.pathname;
+      var href =
+        "/js/pdf-js/web/viewer.html?file=" + currentPagePath + filepath;
+      iframe.src = href;
+      link.href = href;
+      download.href = currentPagePath + filepath;
+    })();
+  </script>
+</div>
