@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://blog2.sunmkt.uk"
+baseurl = "https://blog.sunmkt.uk"
 languageCode = "zh-cn"
 title = "Sunset 的重构博客"
 
