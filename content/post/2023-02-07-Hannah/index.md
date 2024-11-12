@@ -112,7 +112,7 @@ Sunset 认为可以宽容一点，9c5a446d78 认为她的宽容是因为“把�
 
 （几周后，我自己下载了此文档，你可以在这里获得删除了敏感信息的 PDF 文件）
 
-{% include pdfjs file="/assets/postres/2023-02-07-Hannah/Psy346A_Fall20_Abnormal_Psychology_Handojo_V.pdf_%E5%B7%B2%E6%A0%87%E8%AE%B0%E5%AF%86%E6%96%87.pdf" %}
+{{< embed-pdf-iframe file="Psy346A_Fall20_Abnormal_Psychology_Handojo_V.pdf_%E5%B7%B2%E6%A0%87%E8%AE%B0%E5%AF%86%E6%96%87.pdf" >}}
 
 > Course Hero 平台的任何**Unlocked**文档似乎都可以通过访问`https://www.coursehero.com/api/v1/documents/download/【文档ID】]/`下载，而不需要额外付费。（未证实，等待复现）
 

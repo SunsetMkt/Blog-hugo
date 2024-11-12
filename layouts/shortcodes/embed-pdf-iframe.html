@@ -1,4 +1,5 @@
-{{ $uniqueID := substr (.Get "file" | md5) 0 8 }}
+{{ $uniqueID := substr (.Get "file" | md5) 0 8 }} 
+
 {{ $pdfFile := .Get "file" | relURL }}
 
 <div>
@@ -24,11 +25,12 @@
       var link = document.getElementById("embed-pdf-link-" + uniqueID);
       var download = document.getElementById("embed-pdf-download-" + uniqueID);
       var currentPagePath = window.location.pathname;
-      var href =
-        "/js/pdf-js/web/viewer.html?file=" + currentPagePath + filepath;
+      var src = currentPagePath + filepath;
+      src = src.replace("//", "/");
+      var href = "/js/pdf-js/web/viewer.html?file=" + src;
       iframe.src = href;
       link.href = href;
-      download.href = currentPagePath + filepath;
+      download.href = src;
     })();
   </script>
 </div>

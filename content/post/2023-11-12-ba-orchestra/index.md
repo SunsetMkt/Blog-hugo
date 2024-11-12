@@ -7,6 +7,6 @@ slug: ba-orchestra
 title: Some Blue Archive Orchestrals
 ---
 
-{% include video id="dFcDgrYuA9A" provider="youtube" %}
+{{< youtube "dFcDgrYuA9A" >}}
 
-{% include video id="eJ29pmFsSwY" provider="youtube" %}
+{{< youtube "eJ29pmFsSwY" >}}
