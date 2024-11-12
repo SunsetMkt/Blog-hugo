@@ -1,6 +1,6 @@
 ---
 title: Repost
-description: A description of this category
+description: 转载文章
 image: cover_template_2.jpg
 
 # Badge style

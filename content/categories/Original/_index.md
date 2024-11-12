@@ -1,6 +1,6 @@
 ---
 title: Original
-description: A description of this category
+description: 原创文章
 image: cover_template_1.jpg
 
 # Badge style
