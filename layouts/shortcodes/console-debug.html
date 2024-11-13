@@ -1,0 +1,15 @@
+<script>
+    console.log('========== Hugo Debug ==========');
+    console.log('hugo', JSON.parse({{ debug.Dump hugo }}));
+    console.log('site.AllPages', JSON.parse({{ debug.Dump site.AllPages }}));
+    console.log('site.BaseURL', JSON.parse({{ debug.Dump site.BaseURL }}));
+    console.log('site.Config', JSON.parse({{ debug.Dump site.Config }}));
+    console.log('site.Data', JSON.parse({{ debug.Dump site.Data }}));
+    console.log('site.Params', JSON.parse({{ debug.Dump site.Params }}));
+    console.log('site.RegularPages', JSON.parse({{ debug.Dump site.RegularPages }}));
+    console.log('.', JSON.parse({{ debug.Dump . }}));
+    console.log('$.Page', JSON.parse({{ debug.Dump $.Page }}));
+    console.log('$.Page.Params', JSON.parse({{ debug.Dump $.Page.Params }}));
+    console.log('$.Page.Site.Params', JSON.parse({{ debug.Dump $.Page.Site.Params }}));
+    console.log('========== /Hugo Debug ==========');
+</script>
