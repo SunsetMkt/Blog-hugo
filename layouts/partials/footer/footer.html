@@ -10,7 +10,9 @@
     <section class="powerby">
         {{ $commitHash := partialCached "getCommitHash.html" "git-commit-hash" }}
         提交: <code>{{ $commitHash | safeHTML }}</code>&nbsp;&nbsp;
-        环境: <code>{{ hugo.Environment | safeHTML }}</code>
+        环境: <code>{{ hugo.Environment | safeHTML }}</code>&nbsp;&nbsp;
+        Hugo: <code>{{ hugo.Version | safeHTML }}</code>&nbsp;&nbsp;
+        时间: <code>{{ time.Now.Unix | safeHTML }}</code>
         <br/>
 
         {{ with .Site.Params.footer.customText }}

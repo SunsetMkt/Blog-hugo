@@ -8,7 +8,8 @@
                 "*.html"
             ],
             "options": {
-                "parser": "go-template"
+                "parser": "go-template",
+                "tabWidth": 4
             }
         }
     ]
