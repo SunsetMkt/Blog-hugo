@@ -10,7 +10,7 @@ title: '【转载】linux: Goodbye from a Linux community volunteer'
 ---
 
 > 请注意，本文仅作存档用途，文章叙述可能无法保证中立性。
-> 阅读更多：[\[PATCH\] Revert "MAINTAINERS: Remove some entries due to various compliance requirements."](https://lore.kernel.org/all/20241023080935.2945-2-kexybiscuit@aosc.io/) [linux: Goodbye from a Linux community volunteer](https://lore.kernel.org/netdev/2m53bmuzemamzc4jzk2bj7tli22ruaaqqe34a2shtdtqrd52hp@alifh66en3rj/)
+> 阅读更多：[[PATCH] Revert "MAINTAINERS: Remove some entries due to various compliance requirements."](https://lore.kernel.org/all/20241023080935.2945-2-kexybiscuit@aosc.io/) [linux: Goodbye from a Linux community volunteer](https://lore.kernel.org/netdev/2m53bmuzemamzc4jzk2bj7tli22ruaaqqe34a2shtdtqrd52hp@alifh66en3rj/)
 
 你好，Linux 内核社区：
 

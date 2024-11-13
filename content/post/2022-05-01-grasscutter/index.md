@@ -11,9 +11,7 @@ slug: grasscutter
 title: 原神私服Grasscutter部署备忘
 ---
 
-<p class="notice--danger">
-    这里记录的信息已经过时了，请直接参考[项目文档](https://github.com/Grasscutters/Grasscutter)。
-</p>
+> 这里记录的信息已经过时了，请直接参考[项目文档](https://github.com/Grasscutters/Grasscutter)。
 
 项目地址：[Grasscutters/Grasscutter: A server software reimplementation for a certain anime game. (github.com)](https://github.com/Grasscutters/Grasscutter)
 
