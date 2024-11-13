@@ -15,7 +15,11 @@ hugo --minify --gc
 
 ## Compatibility notes
 
-This blog is migrated from Jekyll with `/article/:slug/` URL pattern. The migrated slugs are defined explicitly in the front matter.
+This blog is migrated from Jekyll with `/article/:slug/` URL pattern (allow uppercase). The migrated slugs are defined explicitly in the front matter.
+
+## Icons
+
+[Tabler](https://tabler.io/icons)
 
 ## Hugo Theme Stack Starter Template
 
