@@ -4,3 +4,37 @@
 
 // 萌娘百科 黑幕CSS
 @import "heimu";
+
+// 打印优化
+@media print {
+  aside {
+    display: none !important;
+  }
+
+  .waline-container {
+    display: none !important;
+  }
+
+  .site-footer {
+    display: none !important;
+  }
+
+  .article-category {
+    display: none !important;
+  }
+
+  .article-footer {
+    display: none !important;
+  }
+
+  .article-content > p {
+    margin: 0.5em 0 !important;
+  }
+
+  :root {
+    --article-font-size: 1.2rem !important;
+    --article-line-height: 1.85 !important;
+  }
+
+  @import "gutenberg/gutenberg";
+}
