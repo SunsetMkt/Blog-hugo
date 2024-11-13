@@ -11,7 +11,6 @@ menu:
         params:
             icon: link
 
-comments: false
 readingTime: false
 license: false
 slug: friends
