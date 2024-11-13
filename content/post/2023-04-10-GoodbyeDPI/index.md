@@ -2,7 +2,6 @@
 categories: Original
 date: "2023-04-10T00:00:00Z"
 tags:
-  - IT
   - 信息安全
   - 互联网
 slug: GoodbyeDPI
