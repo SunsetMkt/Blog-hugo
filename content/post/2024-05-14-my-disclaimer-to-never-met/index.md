@@ -1,9 +1,9 @@
 ---
 categories: Original
 date: "2024-05-14T00:00:00Z"
-redirect_from:
-- /privacy/
-- /disclaimer/
+aliases:
+  - /privacy/
+  - /disclaimer/
 tags:
   - 站务
   - 免责声明
