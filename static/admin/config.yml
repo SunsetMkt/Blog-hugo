@@ -3,6 +3,7 @@ backend:
   repo: SunsetMkt/Blog-hugo
   branch: main
   use_graphql: true
+  # FIXME: No OAuth settings, won't work except localhost. Read docs.
 
 locale: 'zh_Hans'
 
