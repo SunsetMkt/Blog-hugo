@@ -21,7 +21,7 @@ Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts �
 
 ## 系统镜像
 
-建议：[Windows 11 官方媒体制作工具/ISO 下载](https://www.microsoft.com/zh-cn/software-download/windows11)
+建议：[Windows 11 官方媒体制作工具/ISO 下载](https://www.microsoft.com/zh-cn/software-download/windows11) [ARM64](https://www.microsoft.com/zh-cn/software-download/windows11arm64)
 
 不建议：~~[Windows 10（October 14, 2025 停止支持）](https://www.microsoft.com/zh-cn/software-download/windows10)~~
 
