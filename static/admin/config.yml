@@ -2,6 +2,7 @@ backend:
   name: github
   repo: SunsetMkt/Blog-hugo
   branch: main
+  use_graphql: true
 
 locale: 'zh_Hans'
 
