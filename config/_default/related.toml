@@ -5,8 +5,8 @@ toLower = false
 
 [[indices]]
 name = "tags"
-weight = 100
+weight = 200
 
 [[indices]]
 name = "categories"
-weight = 200
+weight = 100
