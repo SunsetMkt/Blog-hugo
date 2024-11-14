@@ -6,7 +6,7 @@ tags:
   - 开源
   - 翻译
 slug: linux-9aa26719
-title: '【转载】Re: [PATCH] MAINTAINERS: Remove some entries due to various compliance
+title: 'Re: [PATCH] MAINTAINERS: Remove some entries due to various compliance
   requirements.'
 ---
 

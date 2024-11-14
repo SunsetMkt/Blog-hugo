@@ -6,7 +6,7 @@ tags:
   - 开源
   - 翻译
 slug: Goodbye-from-a-Linux-community-volunteer
-title: '【转载】linux: Goodbye from a Linux community volunteer'
+title: 'linux: Goodbye from a Linux community volunteer'
 ---
 
 > 请注意，本文仅作存档用途，文章叙述可能无法保证中立性。

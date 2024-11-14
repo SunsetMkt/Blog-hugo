@@ -4,7 +4,7 @@ date: "2023-05-24T00:00:00Z"
 tags:
   - WinRAR
 slug: winrar-keygen
-title: '"rarreg.key"是如何生成的？（转载）'
+title: '"rarreg.key"是如何生成的？'
 ---
 
 [来源](https://github.com/bitcookies/winrar-keygen)
