@@ -12,7 +12,43 @@
                 "isDefault": true
             },
             "isBackground": true,
-            "problemMatcher": []
+            "problemMatcher": [
+                {
+                    "owner": "hugo",
+                    "fileLocation": "absolute",
+                    "pattern": {
+                        "regexp": "^(Error):.*\"(.*?):(\\d*):(\\d*)\": (.*)",
+                        "severity": 1,
+                        "file": 2,
+                        "line": 3,
+                        "column": 4,
+                        "message": 5
+                    },
+                    "background": {
+                        "activeOnStart": false,
+                        "beginsPattern": "^Start building .*",
+                        "endsPattern": "^" /*Dont match anything*/
+                    }
+                },
+                {
+                    "owner": "hugo",
+                    "fileLocation": "absolute",
+                    "pattern": {
+                        "regexp": "^(ERROR).*\"(.*?):(\\d*):(\\d*)\": (.*)",
+                        "severity": 1,
+                        "file": 2,
+                        "line": 3,
+                        "column": 4,
+                        "message": 5,
+                        "loop": true
+                    },
+                    "background": {
+                        "activeOnStart": false,
+                        "beginsPattern": "Change detected.*",
+                        "endsPattern": "Total in .*"
+                    }
+                }
+            ]
         },
         {
             "label": "Build",
