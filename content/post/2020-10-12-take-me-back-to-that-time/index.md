@@ -5,6 +5,7 @@ description: 破墙梅顾文。
 tags:
   - SCP基金会
   - 小说
+  - LGBTQIA
 slug: take-me-back-to-that-time
 title: 说你永远不会离我而去
 ---

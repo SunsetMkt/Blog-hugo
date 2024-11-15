@@ -7,6 +7,7 @@ tags:
   - LLM
   - AI
   - Cedaros
+  - LGBTQIA
 slug: she-and-she
 title: 她和她
 ---
