@@ -5,7 +5,7 @@ backend:
   use_graphql: true
   # FIXME: No OAuth settings, won't work except localhost. Read docs.
 
-locale: 'zh_Hans'
+locale: "zh_Hans"
 
 # These lines should *not* be indented
 media_folder: "static/admin/uploads" # Media files will be stored in the repo under static/images/uploads
@@ -18,8 +18,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     identifier_field: "slug"
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index" # Filename template, e.g., YYYY-MM-DD-title.md
-    media_folder: ''
-    public_folder: ''
+    media_folder: ""
+    public_folder: ""
     fields: # The fields for each document, usually in front matter
       - {
           label: "Categories",
