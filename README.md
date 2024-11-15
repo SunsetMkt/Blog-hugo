@@ -27,6 +27,7 @@ scoop install main/ffmpeg
 ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
 # https://gist.github.com/lukehedger/277d136f68b028e22bed?permalink_comment_id=4436587#gistcomment-4436587
 ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k output.mp4
+# Firefox: media.wmf.hevc.enabled = 1 to play.
 ```
 
 ## Cloudflare Pages enforce file size
