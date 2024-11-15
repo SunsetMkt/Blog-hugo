@@ -32,8 +32,9 @@ ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k ou
 ## Cloudflare Pages enforce file size
 
 ```bash
-hugo --minify --gc && find public -type f -size +24M -print -exec rm -vf {} \;
-# +24M means >=25M
+hugo --minify --gc && find public -type f -size +25M -print -exec rm -vf {} \;
+# The maximum file size for a single Cloudflare Pages site asset is 25 MiB.
+# https://developers.cloudflare.com/pages/platform/limits/
 ```
 
 ## Icons
