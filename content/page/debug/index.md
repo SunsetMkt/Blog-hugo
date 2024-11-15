@@ -16,7 +16,7 @@ menu:
 
 ### 清空 localStorage
 
-<a class="link" href="javascript:void(0)" onclick="localStorage.clear();location.reload();">清空localStorage</a>
+<a class="link" href="javascript:void(0)" onclick="localStorage.clear();location.reload();">清空 localStorage</a>
 
 ### Eruda
 
@@ -74,6 +74,10 @@ URL 参数`eruda=true`。
     <a class="link" href="javascript:void(0)" onclick="DisableAnalysis();location.reload();">添加禁用标记</a>
     <a class="link" href="javascript:void(0)" onclick="RmDisableAnalysis();location.reload();">删除禁用标记</a>
 </div>
+
+## Firefox H.265/MPEG-H HEVC 视频播放
+
+在`about:config`将`media.wmf.hevc.enabled`设为`1`。
 
 ## 调试信息
 
