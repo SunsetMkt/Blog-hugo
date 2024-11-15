@@ -9,9 +9,9 @@
                 "*.html"
             ],
             "options": {
-                "parser": "go-template",
-                "tabWidth": 4
+                "parser": "go-template"
             }
         }
-    ]
+    ],
+    "tabWidth": 4
 }
