@@ -75,6 +75,17 @@ URL 参数`eruda=true`。
     <a class="link" href="javascript:void(0)" onclick="RmDisableAnalysis();location.reload();">删除禁用标记</a>
 </div>
 
+## 字体功能
+
+### 使用霞鹜文楷字体
+
+使用[LXGW WenKai / 霞鹜文楷](https://github.com/CMBill/lxgw-wenkai-web)。
+
+<div class="LXGW-WenKai-btns">
+    <a class="link" onclick="localStorage.setItem('LXGW-WenKai','true');location.reload();">打开</a>
+    <a class="link" onclick="localStorage.removeItem('LXGW-WenKai');location.reload();">关闭</a>
+</div>
+
 ## Firefox H.265/MPEG-H HEVC 视频播放
 
 在`about:config`将`media.wmf.hevc.enabled`设为`1`。

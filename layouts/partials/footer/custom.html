@@ -5,3 +5,14 @@
         instructions how to enable JavaScript in your web browser</a
     >.
 </noscript>
+
+<script>
+    if (localStorage.getItem("LXGW-WenKai")) {
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href =
+            "https://unpkg.com/@callmebill/lxgw-wenkai-web@1.501.0/style.css";
+        document.head.appendChild(link);
+        document.body.classList.add("lxgw-wenkai");
+    }
+</script>
