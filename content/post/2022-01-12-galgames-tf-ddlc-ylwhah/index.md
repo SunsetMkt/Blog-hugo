@@ -3,7 +3,6 @@ categories: Original
 date: "2022-01-12T00:00:00Z"
 tags:
   - 游戏
-  - Galgame
   - 视觉小说
 slug: galgames-tf-ddlc-ylwhah
 title: 几个Galgame/视觉小说赏析

@@ -5,6 +5,7 @@ tags:
   - 鸣潮
   - Unreal
   - 逆向工程
+  - 游戏
 slug: WuWa-Cutscenes
 title: 《鸣潮》的过场动画提取
 ---

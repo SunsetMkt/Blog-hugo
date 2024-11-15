@@ -3,9 +3,7 @@ categories: Original
 date: "2022-09-01T00:00:00Z"
 tags:
   - QQ
-  - UWP
   - Windows
-  - MicrosoftStore
 slug: QQ-UWP
 title: 获取QQ微软商店版安装包
 ---

@@ -2,7 +2,7 @@
 categories: Original
 date: "2023-02-07T00:00:00Z"
 tags:
-  - SCPFoundation
+  - SCP基金会
   - 时事评论
 slug: Hannah
 title: 有关SCP基金会中文社区部分管理行为的不完全且可能有偏见的讨论

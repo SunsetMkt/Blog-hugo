@@ -3,7 +3,7 @@ categories: Repost
 date: "2020-10-12T00:00:00Z"
 description: 长夏开在枝头上。
 tags:
-  - SCPFoundation
+  - SCP基金会
   - 小说
 slug: the-rose-hub
 title: 玫瑰

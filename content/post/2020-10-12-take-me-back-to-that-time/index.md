@@ -3,7 +3,7 @@ categories: Repost
 date: "2020-10-12T00:00:00Z"
 description: 破墙梅顾文。
 tags:
-  - SCPFoundation
+  - SCP基金会
   - 小说
 slug: take-me-back-to-that-time
 title: 说你永远不会离我而去

@@ -3,9 +3,8 @@ categories: Original
 date: "2022-05-01T00:00:00Z"
 tags:
   - 原神
-  - 私服
   - Java
-  - Grasscutter
+  - 游戏
   - 逆向工程
 slug: grasscutter
 title: 原神私服Grasscutter部署备忘
