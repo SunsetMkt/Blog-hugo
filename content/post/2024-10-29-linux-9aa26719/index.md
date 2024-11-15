@@ -4,7 +4,7 @@ date: "2024-10-29T00:00:00Z"
 tags:
   - Linux
   - 开源
-  - 翻译
+  - 时事评论
 slug: linux-9aa26719
 title: 'Re: [PATCH] MAINTAINERS: Remove some entries due to various compliance
   requirements.'

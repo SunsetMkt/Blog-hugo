@@ -2,8 +2,9 @@
 categories: Original
 date: "2020-04-12T12:00:00Z"
 tags:
-  - demo
+  - Demo
   - 前端
+  - Bilibili
 slug: bilibili-video-demo
 title: Bilibili HTML5 Video Player Demo
 ---

@@ -2,8 +2,9 @@
 categories: Repost
 date: "2024-01-20T00:00:00Z"
 tags:
+  - 苏联
 slug: Soviet-Jokes
-title: 苏联（苏修）东欧及冷战政治笑话
+title: 苏联、东欧及冷战政治笑话
 ---
 
 [Source](https://github.com/iijunxz/Soviet-Jokes)

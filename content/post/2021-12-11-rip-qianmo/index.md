@@ -2,6 +2,8 @@
 categories: Original
 date: "2021-12-11T00:00:00Z"
 tags:
+    - 时事评论
+    - 游戏
 slug: rip-qianmo
 title: R.I.P QianMo
 ---

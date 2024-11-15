@@ -3,8 +3,6 @@ categories: Original
 date: "2024-05-17T00:00:00Z"
 tags:
   - Windows
-  - Edge
-  - Copilot
 slug: edge-enable-copilot
 title: 在MS Edge上显示Copilot按钮
 ---

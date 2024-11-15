@@ -5,6 +5,7 @@ tags:
   - 逆向工程
   - Unity
   - 蔚蓝档案
+  - 游戏
 slug: reverse-engineering-blue-archive
 title: 蔚蓝档案的现存可能逆向工程方案和一些废话
 ---
@@ -25,7 +26,7 @@ BA 的大部分媒体资源文件都未经加密，可以直接解包。文本�
 
 和此项目类似的还有[blue-archive-spine](https://github.com/respectZ/blue-archive-spine)用于下载并导出蔚蓝档案的 Spine 动画和立绘（纪念大厅动画和人物立绘），并可直接在浏览器中播放。（不幸的是，部分动画会崩坏，原因不明）
 
-此项目的日服支持见[这个 Fork](https://github.com/sunsets-deprecated-username/blue-archive-spine)，可能并不完善。
+此项目的日服支持见[这个 Fork](https://github.com/unknown/blue-archive-spine)，可能并不完善。
 
 [有项目](https://github.com/lonqie/SchaleDB)提供了 BA 的部分文本资源，但是根据[开发者的描述](https://github.com/lonqie/SchaleDB/issues/10)，这似乎不是通过解包得来的。我认为这没有意义。
 

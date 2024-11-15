@@ -2,8 +2,7 @@
 categories: Repost
 date: "2023-06-17T00:00:00Z"
 tags:
-  - 翻译
-  - 十四行诗
+  - 音频
   - 重返未来：1999
 slug: Percy-bysshe-shelley-sonnet-political-greatness-annotated
 title: 'Sonnet: Political Greatness & 有关《重返未来：1999》'

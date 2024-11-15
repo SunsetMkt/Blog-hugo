@@ -3,8 +3,6 @@ categories: Original
 date: "2023-10-07T00:00:00Z"
 tags:
   - Android
-  - MIUI
-  - MIUIEU
 slug: xiaomi-eu-tips
 title: 关于MIUI EU的备忘
 ---

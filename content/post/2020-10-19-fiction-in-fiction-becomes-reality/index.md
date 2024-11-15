@@ -3,6 +3,7 @@ categories: Original
 date: "2020-10-19T00:00:00Z"
 tags:
   - EXPLORER
+  - 小说
 slug: fiction-in-fiction-becomes-reality
 title: 虚构中的虚构化为真实
 ---

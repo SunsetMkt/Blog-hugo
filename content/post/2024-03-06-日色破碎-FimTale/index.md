@@ -3,7 +3,7 @@ categories: Repost
 date: "2024-03-06T00:00:00Z"
 tags:
   - MyLittlePony
-  - ACG
+  - 小说
 slug: 日色破碎-FimTale
 title: 日色破碎 Markdown格式 导出自fimtale.com
 ---

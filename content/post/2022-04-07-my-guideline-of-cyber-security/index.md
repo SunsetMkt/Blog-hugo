@@ -3,7 +3,6 @@ categories: Original
 date: "2022-04-07T00:00:00Z"
 tags:
   - 信息安全
-  - 互联网
 slug: my-guideline-of-cyber-security
 title: Sunset的简易信息安全指引
 ---

@@ -3,14 +3,12 @@ categories: Original
 date: "2023-02-07T00:00:00Z"
 tags:
   - SCPFoundation
-  - Hannah
+  - 时事评论
 slug: Hannah
 title: 有关SCP基金会中文社区部分管理行为的不完全且可能有偏见的讨论
 ---
 
-> 摘录自[maybe_not_the_last_letter](https://github.com/sunsets-deprecated-username/maybe_not_the_last_letter)项目源码`care.rpy:130`，有修改补充和排版。
->
-> 联合作者：Sunset，sunsets-deprecated-username，9c5a446d7852de572f319257dc58776e0a72937b8d4dd6cebf286693246f04a5，EXPLORER（按第一次提供意见顺序排序）
+> 联合作者：Sunset，unknown，9c5a446d7852de572f319257dc58776e0a72937b8d4dd6cebf286693246f04a5，EXPLORER（按第一次提供意见顺序排序）
 
 ## 在一切之前
 
@@ -20,7 +18,7 @@ title: 有关SCP基金会中文社区部分管理行为的不完全且可能有�
 
 ## 前言和背景故事
 
-我们，Sunset、sunsets-deprecated-username、9c5a446d7852de572f319257dc58776e0a72937b8d4dd6cebf286693246f04a5 和 EXPLORER 讨论了一下，决定在这里补充一些事情。
+我们，Sunset、unknown、9c5a446d7852de572f319257dc58776e0a72937b8d4dd6cebf286693246f04a5 和 EXPLORER 讨论了一下，决定在这里补充一些事情。
 
 由于只有我能 commit，我在整合意见的过程中可能会遗漏，我尽量保证不会有太大的问题。
 
@@ -42,7 +40,7 @@ Hannah 的大部分作品没这么做，这提供了一部分印象分。
 
 其间发生了一些事情，Hannah 减少活跃。如果一定要中立地评价历史事件，我会说，她很年轻地搞砸了年轻人会搞砸的事。
 
-那之后我就没太关注了，不过我还是引用她作品中的部分内容在我的项目中，比如这里的描述还有 splash。（编者注：这里指的是[maybe_not_the_last_letter](https://github.com/sunsets-deprecated-username/maybe_not_the_last_letter)的相关部分）
+那之后我就没太关注了，不过我还是引用她作品中的部分内容在我的项目中，比如这里的描述还有 splash。（编者注：这里指的是[maybe_not_the_last_letter](https://github.com/unknown/maybe_not_the_last_letter)的相关部分）
 
 ## “发生了什么？”和第一次讨论
 

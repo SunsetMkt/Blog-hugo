@@ -2,10 +2,8 @@
 categories: Original
 date: "2024-06-22T00:00:00Z"
 tags:
-  - Firefox
-  - Brave
+  - Mozilla
   - 浏览器
-  - Windows
 slug: browser-preference
 title: 提案：在Manifest V3和Google的推动下向Firefox和Brave移动
 ---

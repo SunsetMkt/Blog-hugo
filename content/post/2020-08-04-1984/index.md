@@ -2,6 +2,7 @@
 categories: Repost
 date: "2020-08-04T00:00:00Z"
 tags:
+  - 小说
 slug: 1984
 title: Nineteen eighty-four
 ---

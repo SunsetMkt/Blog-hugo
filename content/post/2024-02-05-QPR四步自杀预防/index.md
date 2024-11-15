@@ -3,7 +3,8 @@ categories: Repost
 date: "2024-02-05T00:00:00Z"
 description: 虽然希望你永远都不要用到，但是万一哪一天有需要，希望能帮上忙。
 tags:
-  - 自杀干预
+  - 公益
+  - 医学
 slug: QPR四步自杀预防
 title: QPR四步自杀预防
 ---

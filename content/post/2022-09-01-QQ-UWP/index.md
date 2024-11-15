@@ -5,7 +5,6 @@ tags:
   - QQ
   - UWP
   - Windows
-  - Microsoft
   - MicrosoftStore
 slug: QQ-UWP
 title: 获取QQ微软商店版安装包

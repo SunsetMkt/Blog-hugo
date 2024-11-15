@@ -2,9 +2,7 @@
 categories: Original
 date: "2023-04-10T00:00:00Z"
 tags:
-  - Microsoft
   - Windows
-  - WSA
   - Android
 slug: activate-vpn-in-wsa
 title: 在适用于 Android™️ 的 Windows 子系统中启用VPN应用程序

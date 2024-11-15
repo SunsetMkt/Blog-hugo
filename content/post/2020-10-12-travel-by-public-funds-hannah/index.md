@@ -4,6 +4,7 @@ date: "2020-10-12T00:00:00Z"
 description: Deleted by the author.
 tags:
   - SCPFoundation
+  - 小说
 slug: travel-by-public-funds-hannah
 title: 公款旅游：梅花计划
 ---

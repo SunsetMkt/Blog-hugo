@@ -2,8 +2,7 @@
 categories: Original
 date: "2023-04-24T00:00:00Z"
 tags:
-  - MPV
-  - DolbyVision
+  - 信息技术
 slug: dolby-vision-mpv
 title: 使用MPV播放杜比视界视频
 ---

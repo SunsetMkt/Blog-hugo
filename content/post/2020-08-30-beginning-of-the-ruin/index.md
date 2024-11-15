@@ -3,6 +3,7 @@ categories: Repost
 date: "2020-08-30T00:00:00Z"
 tags:
   - EXPLORER
+  - 小说
 slug: beginning-of-the-ruin
 title: 覆灭序曲
 ---

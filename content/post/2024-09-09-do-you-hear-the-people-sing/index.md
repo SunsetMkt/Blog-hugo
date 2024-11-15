@@ -2,6 +2,7 @@
 categories: Repost
 date: "2024-09-09T00:00:00Z"
 tags:
+    - 音频
 slug: do-you-hear-the-people-sing
 title: Do You Hear The People Sing?
 ---

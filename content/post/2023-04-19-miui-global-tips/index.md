@@ -3,7 +3,6 @@ categories: Original
 date: "2023-04-19T00:00:00Z"
 tags:
   - Android
-  - MIUI
 slug: miui-global-tips
 title: 关于MIUI国际版的备忘
 ---

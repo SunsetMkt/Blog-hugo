@@ -2,9 +2,7 @@
 categories: Original
 date: "2020-05-21T00:00:00Z"
 tags:
-  - 故事
-  - 童话
-  - 元素小猪
+  - 小说
 slug: chemistry-pig-story-1
 title: 氢小猪的故事
 ---
@@ -32,4 +30,4 @@ title: 氢小猪的故事
 
 ---
 
-欢迎参与元素小猪系列故事创作，[点击这里](https://github.com/sunsets-deprecated-username/chemistry-pig-story)前往项目 GitHub 仓库。
+欢迎参与元素小猪系列故事创作，[点击这里](https://github.com/unknown/chemistry-pig-story)前往项目 GitHub 仓库。

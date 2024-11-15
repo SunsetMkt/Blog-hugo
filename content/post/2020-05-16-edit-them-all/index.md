@@ -2,8 +2,9 @@
 categories: Original
 date: "2020-05-16T00:00:00Z"
 tags:
-  - demo
+  - Demo
   - 前端
+  - JavaScript
 slug: edit-them-all
 title: 任意编辑网页文字Demo
 ---

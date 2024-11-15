@@ -2,9 +2,7 @@
 categories: Original
 date: "2024-04-10T00:00:00Z"
 tags:
-  - Windows
   - Adobe
-  - AdobeCreativeCloud
 slug: adobe-cc
 title: 安装Adobe Creative Cloud的便捷方法
 ---

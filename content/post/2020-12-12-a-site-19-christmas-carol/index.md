@@ -3,6 +3,7 @@ categories: Repost
 date: "2020-12-12T00:00:00Z"
 tags:
   - SCPFoundation
+  - 小说
 slug: a-site-19-christmas-carol
 title: Site-19圣诞颂歌
 ---

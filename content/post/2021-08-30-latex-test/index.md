@@ -3,7 +3,7 @@ categories: Original
 date: "2021-08-30T00:00:00Z"
 math: true
 tags:
-  - demo
+  - Demo
   - 前端
 slug: latex-test
 title: LaTex测试

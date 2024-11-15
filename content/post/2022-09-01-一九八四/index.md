@@ -2,6 +2,7 @@
 categories: Repost
 date: "2022-09-01T00:00:00Z"
 tags:
+    - 小说
 slug: 一九八四
 title: 一九八四
 toc: true

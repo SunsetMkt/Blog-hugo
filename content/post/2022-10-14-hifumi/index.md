@@ -3,6 +3,7 @@ categories: Repost
 date: "2022-10-14T00:00:00Z"
 tags:
   - 蔚蓝档案
+  - 游戏
 slug: hifumi
 title: 《蔚蓝档案》日步美的青春宣言
 ---

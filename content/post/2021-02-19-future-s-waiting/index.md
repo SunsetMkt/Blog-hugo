@@ -3,6 +3,7 @@ categories: Repost
 date: "2021-02-19T00:00:00Z"
 tags:
   - EXPLORER
+  - 小说
 slug: future-s-waiting
 title: Future's Waiting
 ---

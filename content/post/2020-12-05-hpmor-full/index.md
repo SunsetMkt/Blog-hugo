@@ -2,6 +2,8 @@
 categories: Repost
 date: "2020-12-05T00:00:00Z"
 tags:
+  - 小说
+  - 哈利波特
 slug: hpmor-full
 title: 哈利波特与理性之道 不规范转载
 ---

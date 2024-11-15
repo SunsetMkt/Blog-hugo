@@ -2,7 +2,9 @@
 categories: Original
 date: "2022-01-15T00:00:00Z"
 tags:
-  - ACG
+  - 游戏
+  - Galgame
+  - 视觉小说
 slug: planetarian
 title: 系列作品推荐：《星之梦》
 ---

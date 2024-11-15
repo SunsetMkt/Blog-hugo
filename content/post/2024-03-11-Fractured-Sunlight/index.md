@@ -3,7 +3,7 @@ categories: Repost
 date: "2024-03-11T00:00:00Z"
 tags:
   - MyLittlePony
-  - ACG
+  - 小说
 slug: Fractured-Sunlight
 title: 日色破碎
 ---

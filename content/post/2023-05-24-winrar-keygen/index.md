@@ -3,6 +3,8 @@ categories: Repost
 date: "2023-05-24T00:00:00Z"
 tags:
   - WinRAR
+  - 逆向工程
+  - 密码学
 slug: winrar-keygen
 title: '"rarreg.key"是如何生成的？'
 ---

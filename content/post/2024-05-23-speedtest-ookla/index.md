@@ -2,9 +2,8 @@
 categories: Original
 date: "2024-05-23T00:00:00Z"
 tags:
-  - Ookla
   - Speedtest
-  - Web
+  - 信息技术
 slug: speedtest-ookla
 title: Speedtest by Ookla
 ---

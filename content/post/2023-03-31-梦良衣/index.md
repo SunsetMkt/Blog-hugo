@@ -4,7 +4,6 @@ date: "2023-03-31T00:00:00Z"
 description: “此事休要再提”，但是我还要写备忘啊。
 tags:
   - Vocaloid
-  - ilem
 slug: 梦良衣
 title: 创作引用资源参考备忘：《勾指起誓》的背景故事
 ---

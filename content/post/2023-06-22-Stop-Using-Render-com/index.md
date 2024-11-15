@@ -2,8 +2,7 @@
 categories: Original
 date: "2023-06-22T00:00:00Z"
 tags:
-  - PaaS
-  - 产品评测
+  - 信息技术
 slug: Stop-Using-Render-com
 title: Stop Using Render.com
 ---

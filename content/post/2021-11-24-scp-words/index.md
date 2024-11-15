@@ -3,11 +3,12 @@ categories: Repost
 date: "2021-11-24T00:00:00Z"
 tags:
   - SCPFoundation
+  - 小说
 slug: scp-words
 title: 摘录自「SCP基金会」中的一些句子
 ---
 
-作者：智子酱 & sunsets-deprecated-username
+作者：智子酱 & unknown
 
 出处：https://www.cnblogs.com/Helium-Air/p/scp-words.html 有修改
 

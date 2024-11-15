@@ -2,6 +2,7 @@
 categories: Repost
 date: "2023-08-26T00:00:00Z"
 tags:
+ - 时事评论
 slug: 日本排放核废水，中国没必要这么恐慌
 title: 日本排放核废水，中国没必要这么恐慌
 ---

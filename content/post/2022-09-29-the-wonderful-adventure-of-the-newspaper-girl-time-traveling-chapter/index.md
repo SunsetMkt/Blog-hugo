@@ -5,6 +5,7 @@ tags:
   - 原创角色
   - Sunset
   - Cedaros
+  - 小说
 slug: the-wonderful-adventure-of-the-newspaper-girl-time-traveling-chapter
 title: 报妹的奇妙冒险（穿越篇）
 ---

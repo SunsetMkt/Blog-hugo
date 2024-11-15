@@ -5,7 +5,6 @@ description: '"Sometimes you have to ask the question whether something should b
   at all, and trusted computing is certainly one of those cases where the answer is
   obviously a big fat NO."'
 tags:
-  - Chrome
   - Google
 slug: Web-Environment-Integrity-issues-28
 title: Web-Environment-Integrity issue 28

@@ -4,7 +4,6 @@ date: "2023-10-14T00:00:00Z"
 tags:
   - Android
   - 华为
-  - HarmonyOS
 slug: Harmony-OS
 title: 有关HarmonyOS的误区
 ---

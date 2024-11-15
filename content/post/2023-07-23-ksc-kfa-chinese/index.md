@@ -5,7 +5,6 @@ tags:
   - Windows
   - 杀毒软件
   - Kaspersky
-  - 卡巴斯基
 slug: ksc-kfa-chinese
 title: 安装Kaspersky Security Cloud Free简体中文版或卡巴斯基免费版
 ---

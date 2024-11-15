@@ -3,7 +3,7 @@ categories: Repost
 date: "2020-08-17T00:00:00Z"
 tags:
   - EXPLORER
-  - 玻海
+  - 小说
 slug: can-a-bionic-person-calculate-an-electronic-matrix  
 title: 【玻海】仿生人会算出电子矩阵吗？
 ---

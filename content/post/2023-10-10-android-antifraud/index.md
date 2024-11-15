@@ -3,7 +3,6 @@ categories: Original
 date: "2023-10-10T00:00:00Z"
 tags:
   - Android
-  - 国家反诈中心
 slug: android-antifraud
 title: 中国Android手机内置“国家反诈中心”尚未证实
 ---

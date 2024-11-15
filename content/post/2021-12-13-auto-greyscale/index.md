@@ -2,9 +2,10 @@
 categories: Original
 date: "2021-12-13T00:00:00Z"
 tags:
-  - demo
+  - Demo
   - 前端
   - JavaScript
+  - CSS
 slug: auto-greyscale
 title: 取决于日期的自动网页黑白滤镜Demo
 ---

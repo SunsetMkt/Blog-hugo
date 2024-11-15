@@ -5,7 +5,6 @@ tags:
   - Windows
   - 杀毒软件
   - Kaspersky
-  - 卡巴斯基
 slug: kfa
 title: 卡巴斯基免费版的Windows安装包下载URL获取
 ---

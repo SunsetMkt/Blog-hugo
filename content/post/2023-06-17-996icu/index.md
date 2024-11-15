@@ -2,9 +2,7 @@
 categories: Original
 date: "2023-06-17T00:00:00Z"
 tags:
-  - 评论
-  - 996ICU
-  - 辟谣
+  - 时事评论
 slug: 996icu
 title: 有关996ICU项目的辟谣
 ---
