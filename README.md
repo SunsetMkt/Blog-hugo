@@ -6,20 +6,34 @@ Blog refactored.
 
 ## Quickstart
 
-```pwsh
+```bash
 scoop install main/go
 scoop install main/hugo-extended
 hugo mod get
 hugo --minify --gc
 ```
 
-## Compatibility notes
+## Migration notes
 
 This blog is migrated from Jekyll with `/article/:slug/` URL pattern (allow uppercase). The migrated slugs are defined explicitly in the front matter.
+
+## Compress media
+
+All files in final release should < 25 MB.
+
+```bash
+scoop install main/ffmpeg
+# https://stackoverflow.com/a/26109838
+ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
+# https://gist.github.com/lukehedger/277d136f68b028e22bed?permalink_comment_id=4436587#gistcomment-4436587
+ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k output.mp4
+```
 
 ## Icons
 
 [Tabler](https://tabler.io/icons)
+
+---
 
 ## Hugo Theme Stack Starter Template
 

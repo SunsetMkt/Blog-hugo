@@ -84,19 +84,19 @@ Of hopes and fears, being himself alone.
                 {
                     name: '二测版',
                     artist: '《重返未来：1999》',
-                    url: 'bili.m4a',
+                    url: 'bili.mp3',
                     cover: 'cover.png',
                 },
                 {
                     name: '公测提取',
                     artist: '《重返未来：1999》',
-                    url: '770913_1.wav',
+                    url: '770913_1.mp3',
                     cover: 'cover.png',
                 },
                 {
                     name: '无歌词',
                     artist: '《重返未来：1999》',
-                    url: '753105343_1.wav',
+                    url: '753105343_1.mp3',
                     cover: 'cover.png',
                 }
             ]
