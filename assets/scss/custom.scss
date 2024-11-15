@@ -5,6 +5,11 @@
 // 萌娘百科 黑幕CSS
 @import "heimu";
 
+// 为所有元素添加过渡效果
+* {
+    transition: all 0.5s ease-in-out;
+}
+
 // 打印优化
 @media print {
     aside {
