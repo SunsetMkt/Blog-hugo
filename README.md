@@ -19,7 +19,7 @@ This blog is migrated from Jekyll with `/article/:slug/` URL pattern (allow uppe
 
 ## Compress media
 
-All files in final release should < 25 MB.
+All files in final release should < 25 MB to make Cloudflare Pages happy.
 
 ```bash
 scoop install main/ffmpeg
@@ -27,6 +27,12 @@ scoop install main/ffmpeg
 ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
 # https://gist.github.com/lukehedger/277d136f68b028e22bed?permalink_comment_id=4436587#gistcomment-4436587
 ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k output.mp4
+```
+
+## Cloudflare Pages enforce file size
+
+```bash
+hugo --minify --gc && find public -type f -size +24900k -exec rm -f {} \;
 ```
 
 ## Icons
