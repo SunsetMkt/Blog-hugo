@@ -32,7 +32,8 @@ ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k ou
 ## Cloudflare Pages enforce file size
 
 ```bash
-hugo --minify --gc && find public -type f -size +24900k -exec rm -f {} \;
+hugo --minify --gc && find public -type f -size +24M -print -exec rm -vf {} \;
+# +24M means >=25M
 ```
 
 ## Icons
