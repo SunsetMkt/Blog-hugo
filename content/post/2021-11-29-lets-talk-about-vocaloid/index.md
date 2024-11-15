@@ -2,7 +2,7 @@
 categories: Original
 date: "2021-11-29T00:00:00Z"
 tags:
-  - Vocaloid
+    - Vocaloid
 slug: lets-talk-about-vocaloid
 title: 让我们谈谈Vocaloid吧
 ---

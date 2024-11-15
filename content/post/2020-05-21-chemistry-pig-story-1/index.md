@@ -2,7 +2,7 @@
 categories: Original
 date: "2020-05-21T00:00:00Z"
 tags:
-  - 小说
+    - 小说
 slug: chemistry-pig-story-1
 title: 氢小猪的故事
 ---

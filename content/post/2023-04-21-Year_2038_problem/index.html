@@ -2,8 +2,8 @@
 categories: Original
 date: "2023-04-21T00:00:00Z"
 tags:
-  - 公益
-  - 信息技术
+    - 公益
+    - 信息技术
 slug: Year_2038_problem
 title: 2038年问题倒计时
 ---
@@ -13,25 +13,32 @@ title: 2038年问题倒计时
 <p><a href="https://en.wikipedia.org/wiki/Year_2038_problem">了解更多</a></p>
 
 <script>
-  // 目标时间为2147483647
-  const targetTime = 2147483647;
+    // 目标时间为2147483647
+    const targetTime = 2147483647;
 
-  // 更新倒计时函数
-  function updateCountdown() {
-    const now = Math.floor(Date.now() / 1000);
-    const distance = targetTime - now;
+    // 更新倒计时函数
+    function updateCountdown() {
+        const now = Math.floor(Date.now() / 1000);
+        const distance = targetTime - now;
 
-    // 计算剩余时间
-    const days = Math.floor(distance / (24 * 60 * 60));
-    const hours = Math.floor((distance % (24 * 60 * 60)) / (60 * 60));
-    const minutes = Math.floor((distance % (60 * 60)) / 60);
-    const seconds = distance % 60;
+        // 计算剩余时间
+        const days = Math.floor(distance / (24 * 60 * 60));
+        const hours = Math.floor((distance % (24 * 60 * 60)) / (60 * 60));
+        const minutes = Math.floor((distance % (60 * 60)) / 60);
+        const seconds = distance % 60;
 
-    // 在网页中显示倒计时
-    document.getElementById("countdown").innerHTML =
-      days + " 天 " + hours + " 小时 " + minutes + " 分钟 " + seconds + " 秒 ";
-  }
+        // 在网页中显示倒计时
+        document.getElementById("countdown").innerHTML =
+            days +
+            " 天 " +
+            hours +
+            " 小时 " +
+            minutes +
+            " 分钟 " +
+            seconds +
+            " 秒 ";
+    }
 
-  // 每秒钟更新一次倒计时
-  setInterval(updateCountdown, 1000);
+    // 每秒钟更新一次倒计时
+    setInterval(updateCountdown, 1000);
 </script>

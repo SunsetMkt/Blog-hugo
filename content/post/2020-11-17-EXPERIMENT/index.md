@@ -2,8 +2,8 @@
 categories: Original
 date: "2020-11-17T00:00:00Z"
 tags:
-  - EXPLORER
-  - 小说
+    - EXPLORER
+    - 小说
 slug: EXPERIMENT
 title: EXPERIMENT
 ---
@@ -49,7 +49,11 @@ title: EXPERIMENT
 ☆EXPLORER
 
 [^1]: 一种腕带型多功能移动设备，大概起到地球中“手机”的作用，但功能绝对是办公用。
+
 [^editor1]: 编者注：原稿为 那一会是 疑为误
+
 [^editor2]: 编者注：原稿为 摸 疑为误
+
 [^2]: 肖然的母星。隶属于星际特工局。
+
 [^editor3]: 编者注：原稿不清 不影响原意及阅读

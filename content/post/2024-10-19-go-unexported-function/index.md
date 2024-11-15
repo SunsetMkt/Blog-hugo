@@ -2,7 +2,7 @@
 categories: Original
 date: "2024-10-19T00:00:00Z"
 tags:
-  - Go
+    - Go
 slug: go-unexported-function
 title: 在Go中使用未导出的函数
 ---

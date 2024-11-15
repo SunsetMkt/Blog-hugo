@@ -3,8 +3,8 @@ categories: Original
 date: "2022-02-26T19:53:00Z"
 description: 功劳难量、虚实难辨、抗争资本、勇攀高峰、创新为文、娱乐为人，善莫大焉。
 tags:
-  - 虚拟主播
-  - "Kizuna AI"
+    - 虚拟主播
+    - "Kizuna AI"
 slug: kizuna-ai-the-last-live
 title: 后会有期：“世界上第一个虚拟Youtuber”Kizuna AI正式无期限休眠
 ---

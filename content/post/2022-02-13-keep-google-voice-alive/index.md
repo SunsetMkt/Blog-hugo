@@ -2,7 +2,7 @@
 categories: Original
 date: "2022-02-13T00:00:00Z"
 tags:
-  - Google
+    - Google
 slug: keep-google-voice-alive
 title: 保持Google Voice活性避免被回收的方法备忘
 ---
@@ -39,29 +39,29 @@ Google Drive 添加 Google Apps Scripts（Drive 界面加号按钮，弹出菜�
 
 ```javascript
 function autoReplier() {
-  var labelObj = GmailApp.getUserLabelByName("voice");
-  var gmailThreads;
-  var messages;
-  var sender;
+    var labelObj = GmailApp.getUserLabelByName("voice");
+    var gmailThreads;
+    var messages;
+    var sender;
 
-  for (var gg = 0; gg < labelObj.getUnreadCount(); gg++) {
-    gmailThreads = labelObj.getThreads()[gg];
-    messages = gmailThreads.getMessages();
-    for (var ii = 0; ii < messages.length; ii++) {
-      if (messages[ii].isUnread()) {
-        msg = messages[ii].getPlainBody();
-        sender = messages[ii].getFrom();
+    for (var gg = 0; gg < labelObj.getUnreadCount(); gg++) {
+        gmailThreads = labelObj.getThreads()[gg];
+        messages = gmailThreads.getMessages();
+        for (var ii = 0; ii < messages.length; ii++) {
+            if (messages[ii].isUnread()) {
+                msg = messages[ii].getPlainBody();
+                sender = messages[ii].getFrom();
 
-        MailApp.sendEmail(
-          sender,
-          "Auto Reply",
-          "Hi, I went travelling for a few days, I'll call you later."
-        );
-        messages[ii].markRead();
-        messages[ii].moveToTrash();
-      }
+                MailApp.sendEmail(
+                    sender,
+                    "Auto Reply",
+                    "Hi, I went travelling for a few days, I'll call you later.",
+                );
+                messages[ii].markRead();
+                messages[ii].moveToTrash();
+            }
+        }
     }
-  }
 }
 ```
 

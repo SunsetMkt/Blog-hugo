@@ -2,9 +2,9 @@
 categories: Original
 date: "2020-05-18T00:00:00Z"
 tags:
-  - Demo
-  - 前端
-  - CSS
+    - Demo
+    - 前端
+    - CSS
 slug: grey-page
 title: 网页黑白滤镜
 ---
@@ -22,13 +22,13 @@ title: 网页黑白滤镜
 
 ```html
 <style>
-  html {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-    _filter: none;
-  }
+    html {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+        _filter: none;
+    }
 </style>
 ```

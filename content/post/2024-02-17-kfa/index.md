@@ -2,9 +2,9 @@
 categories: Original
 date: "2024-02-17T00:00:00Z"
 tags:
-  - Windows
-  - 杀毒软件
-  - Kaspersky
+    - Windows
+    - 杀毒软件
+    - Kaspersky
 slug: kfa
 title: 卡巴斯基免费版的Windows安装包下载URL获取
 ---
@@ -15,7 +15,7 @@ title: 卡巴斯基免费版的Windows安装包下载URL获取
 
 下载页面 URL 为：
 
-```
+```plain
 https://www.kaspersky.com/downloads/free-antivirus
 ```
 
@@ -25,7 +25,7 @@ https://www.kaspersky.com/downloads/free-antivirus
 
 [快速请求](https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=5003617&businesspurposes=Update&licensetiers=Free&sites=https%3A%2F%2Fwww.kaspersky.com&sites=https%3A%2F%2Fwww.kaspersky.com%2Fcarribean&sites=https%3A%2F%2Fwww.kaspersky.com%2Fisrael&sites=https%3A%2F%2Fwww.kaspersky.com%2Fsouth-east-asia&sites=https%3A%2F%2Fwww.kaspersky.com%2Findonesia&sites=https%3A%2F%2Fwww.kaspersky.com%2Fthe-european-union&sites=https%3A%2F%2Fwww.kaspersky.com%2Flatvia&sites=https%3A%2F%2Fwww.kaspersky.com%2Flithuania&sites=https%3A%2F%2Fwww.kaspersky.com%2Festonia&sites=https%3A%2F%2Fwww.kaspersky.com%2Funited-kingdom&sites=https%3A%2F%2Fwww.kaspersky.com%2Fcalifornia&sites=https%3A%2F%2Fwww.kaspersky.com%2Fbrazil)（使用浏览器访问此 API 可绕过反爬虫）
 
-```
+```plain
 https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=5003617&businesspurposes=Update&licensetiers=Free&sites=https%3A%2F%2Fwww.kaspersky.com&sites=https%3A%2F%2Fwww.kaspersky.com%2Fcarribean&sites=https%3A%2F%2Fwww.kaspersky.com%2Fisrael&sites=https%3A%2F%2Fwww.kaspersky.com%2Fsouth-east-asia&sites=https%3A%2F%2Fwww.kaspersky.com%2Findonesia&sites=https%3A%2F%2Fwww.kaspersky.com%2Fthe-european-union&sites=https%3A%2F%2Fwww.kaspersky.com%2Flatvia&sites=https%3A%2F%2Fwww.kaspersky.com%2Flithuania&sites=https%3A%2F%2Fwww.kaspersky.com%2Festonia&sites=https%3A%2F%2Fwww.kaspersky.com%2Funited-kingdom&sites=https%3A%2F%2Fwww.kaspersky.com%2Fcalifornia&sites=https%3A%2F%2Fwww.kaspersky.com%2Fbrazil
 ```
 
@@ -35,13 +35,13 @@ https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=50036
 
 [快速请求](https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=5003617&businesspurposes=Update&licensetiers=Free&sites=https%3A%2F%2Fwww.kaspersky.com.cn)
 
-```
+```plain
 https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=5003617&businesspurposes=Update&licensetiers=Free&sites=https%3A%2F%2Fwww.kaspersky.com.cn
 ```
 
 题外话，对于 KSOS，有：
 
-```
+```plain
 https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=2911399&businesspurposes=Update&licensetiers=KSOS&sites=https%3A%2F%2Fwww.kaspersky.com.cn
 ```
 
@@ -51,11 +51,11 @@ https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=29113
 
 ```javascript
 fetch("https://api-router.kaspersky-labs.com/pcp/PdcProxy/downloadurl", {
-  referrer: "https://www.kaspersky.com/downloads/free-antivirus",
-  body: '{"ApplicationId":[2269],"localization":["en-INT"],"Platform":"Windows","CppId":39971,"VersionNumber":"21.16.6.467","customizationParams":{"StartupScenario":"Free"}}',
-  method: "POST",
-  mode: "cors",
-  credentials: "include",
+    referrer: "https://www.kaspersky.com/downloads/free-antivirus",
+    body: '{"ApplicationId":[2269],"localization":["en-INT"],"Platform":"Windows","CppId":39971,"VersionNumber":"21.16.6.467","customizationParams":{"StartupScenario":"Free"}}',
+    method: "POST",
+    mode: "cors",
+    credentials: "include",
 });
 ```
 

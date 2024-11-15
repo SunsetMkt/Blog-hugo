@@ -2,8 +2,8 @@
 categories: Original
 date: "2023-08-09T00:00:00Z"
 tags:
-  - 前端
-  - Vercel
+    - 前端
+    - Vercel
 slug: hoppscotch-vercel
 title: 在Vercel上部署Hoppscotch（仅前端）
 ---

@@ -2,19 +2,15 @@
 categories: Original
 date: "2023-02-21T00:00:00Z"
 tags:
-  - 音频
+    - 音频
 slug: wilhelm-scream-button
 title: 威廉尖叫播放按钮
 ---
 
-<audio
-  id="scream"
-  preload="auto"
-  src="Wilhelm_Scream.ogg"
-></audio>
+<audio id="scream" preload="auto" src="Wilhelm_Scream.ogg"></audio>
 
 <button class=".btn .btn--primary" onclick="play()" type="button">
-  播放威廉尖叫
+    播放威廉尖叫
 </button>
 
 <a href="Wilhelm_Scream.ogg" download>下载威廉尖叫</a>
@@ -26,9 +22,9 @@ title: 威廉尖叫播放按钮
 -->
 
 <script>
-  var scream = document.getElementById("scream");
-  function play() {
-    scream.currentTime = 0;
-    scream.play();
-  }
+    var scream = document.getElementById("scream");
+    function play() {
+        scream.currentTime = 0;
+        scream.play();
+    }
 </script>

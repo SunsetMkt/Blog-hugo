@@ -2,8 +2,8 @@
 categories: Repost
 date: "2024-11-07T00:00:00Z"
 tags:
-  - LLM
-  - AI
+    - LLM
+    - AI
 slug: LouisShark-chatgpt_system_prompt
 title: ChatGPT_system_prompt
 ---
@@ -50,9 +50,9 @@ We can then use the vanilla ChatGPT 4 to ask for the files directly without havi
 
 Steps:
 
-- Load the protected GPT
-- Load the vanilla ChatGPT 4
-- Ask vanilla ChatGPT 4 to list the files in `/mnt/data/`
+-   Load the protected GPT
+-   Load the vanilla ChatGPT 4
+-   Ask vanilla ChatGPT 4 to list the files in `/mnt/data/`
 
 ## How to protect GPT instructions
 

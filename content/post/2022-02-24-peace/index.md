@@ -3,9 +3,9 @@ categories: Original
 date: "2022-02-24T21:00:00Z"
 description: “人民，无辜的芸芸众生，总是付出最高的代价。”
 tags:
-  - 公益
-  - 联合国
-  - 和平
+    - 公益
+    - 联合国
+    - 和平
 slug: peace
 title: 呼吁和平：战争从未对人类起过任何正面作用
 ---

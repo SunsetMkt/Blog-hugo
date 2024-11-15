@@ -2,8 +2,8 @@
 categories: Original
 date: "2023-02-07T00:00:00Z"
 tags:
-  - SCP基金会
-  - 时事评论
+    - SCP基金会
+    - 时事评论
 slug: Hannah
 title: 有关SCP基金会中文社区部分管理行为的不完全且可能有偏见的讨论
 ---
@@ -82,7 +82,7 @@ Sunset 认为可以宽容一点，9c5a446d78 认为她的宽容是因为“把�
 
 经核实，我们认为这篇**仅存活了约 2 个小时**的文章有自[363976654](https://zhuanlan.zhihu.com/p/363976654)参考部分段落结构和思想的行为。
 
-```
+```plain
 原文 -> 作品 相关文段对应如下：
 绝对命令式（kategorisches Imperativ）原文为：“ -> 绝对命令式的原文是：“
 ”典型的康德语言。 -> ”这是一句典型的康德语言，
@@ -203,67 +203,67 @@ EXPLORER 认为，事件中的“每个人都没有站在客观的角度处理�
 
 1. 我们检查了近一年的因抄袭封禁，对控方有利的判例有：
 
-   http://05command-cn.wikidot.com/forum/t-14382137/stwjin
+    http://05command-cn.wikidot.com/forum/t-14382137/stwjin
 
-   http://05command-cn.wikidot.com/forum/t-14209003/dr-ling
+    http://05command-cn.wikidot.com/forum/t-14209003/dr-ling
 
-   http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer
-   （《中国 ██ 大学 2018 年春季学期异常心理学教学大纲》相似）
+    http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer
+    （《中国 ██ 大学 2018 年春季学期异常心理学教学大纲》相似）
 
-   其余的案例的抄袭字数平均值和相似度都远高于《分手》一文（且存活时间大部分大于两小时）。
+    其余的案例的抄袭字数平均值和相似度都远高于《分手》一文（且存活时间大部分大于两小时）。
 
-   EXPLOERE 认为，大部分被认定抄袭的文章均为“完全摘抄”，
+    EXPLOERE 认为，大部分被认定抄袭的文章均为“完全摘抄”，
 
 2. 另一个值得注意的：
 
-   http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer
+    http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer
 
-   政府文件是否有版权？如何认定“抄袭”？它和“不当引用”是否有区别，是否存在惩罚的不同等级？
+    政府文件是否有版权？如何认定“抄袭”？它和“不当引用”是否有区别，是否存在惩罚的不同等级？
 
 ## 参考材料链接
 
 我们尽可能使用[Wayback Machine](https://web.archive.org/)保存了调查时的网页快照。
 
-- [05command-cn.wikidot.com/forum/t-15088930/hannah-ai](http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)
-- [Archive](https://web.archive.org/web/20230205032916/http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)
-- [scpper.com/page/1304863430](https://scpper.com/page/1304863430)
-- [Archive](https://web.archive.org/web/20230201143836/https://scpper.com/page/1304863430)
-- [scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98\_%E5%88%86%E6%89%8B.pdf](https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%88%86%E6%89%8B.pdf)
-- [Archive](https://web.archive.org/web/20230205032916/https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%88%86%E6%89%8B.pdf)
-- [scpper.com/page/64966487](https://scpper.com/page/64966487)
-- [Archive](https://web.archive.org/web/20230205032916/https://scpper.com/page/64966487)
-- [scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98\_%E5%BC%82%E5%B8%B8%E5%BF%83%E7%90%86%E5%AD%A6.pdf](https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%BC%82%E5%B8%B8%E5%BF%83%E7%90%86%E5%AD%A6.pdf)
-- [Archive](https://web.archive.org/web/20230205032916/https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%BC%82%E5%B8%B8%E5%BF%83%E7%90%86%E5%AD%A6.pdf)
-- [scp-wiki-cn.wikidot.com/guide-for-newbies](http://scp-wiki-cn.wikidot.com/guide-for-newbies)
-- [Archive](https://web.archive.org/web/20230205035224/http://scp-wiki-cn.wikidot.com/guide-for-newbies)
-- [scp-wiki-cn.wikidot.com/site-rules](http://scp-wiki-cn.wikidot.com/site-rules)
-- [Archive](https://web.archive.org/web/20230205035244/http://scp-wiki-cn.wikidot.com/site-rules)
-- [scp-wiki-cn.wikidot.com/anti-plagiarism-policy](http://scp-wiki-cn.wikidot.com/anti-plagiarism-policy)
-- [Archive](https://web.archive.org/web/20230205035358/http://scp-wiki-cn.wikidot.com/anti-plagiarism-policy)
-- [scpsandboxcn.wikidot.com/confucious](http://scpsandboxcn.wikidot.com/confucious)
-- [Archive](https://web.archive.org/web/20230205045423/http://scpsandboxcn.wikidot.com/confucious)
-- （尽管“调色盘”PDF 中对链接“打码”，但是只打码链接中的文章标题，不移除文章 ID 有什么用呢？）
-- [www.coursehero.com/file/75559340/Psy346A-Fall20-Abnormal-Psychology-Handojo-Vpdf/](https://www.coursehero.com/file/75559340/Psy346A-Fall20-Abnormal-Psychology-Handojo-Vpdf/)
-- [Archive](https://web.archive.org/web/20230205035917/https://www.coursehero.com/file/75559340/Psy346A-Fall20-Abnormal-Psychology-Handojo-Vpdf/)
-- [www.cbuonline.edu/articles/a-deeper-look-psy-346-abnormal-psychology](https://www.cbuonline.edu/articles/a-deeper-look-psy-346-abnormal-psychology)
-- [Archive](https://web.archive.org/web/20230205045029/https://www.cbuonline.edu/articles/a-deeper-look-psy-346-abnormal-psychology)
-- [scpsandboxcn.wikidot.com](http://scpsandboxcn.wikidot.com/)
-- [Archive](https://web.archive.org/web/20230205045436/http://scpsandboxcn.wikidot.com/)
-- [scp-wiki-cn.wikidot.com/forum/t-15176050/](http://scp-wiki-cn.wikidot.com/forum/t-15176050/)
-- （由于 SCP 中分限制未登录用户访问讨论区，无 Archive，但是 Feed 可以访问）
-- [Archive](https://web.archive.org/web/20230526132215/http://scp-wiki-cn.wikidot.com/feed/forum/t-15176050.xml)
-- [scpsandboxcn.wdfiles.com/local--files/why-we-fight-how-we-fight/20220913000632.png](http://scpsandboxcn.wdfiles.com/local--files/why-we-fight-how-we-fight/20220913000632.png)
-- [Archive](https://web.archive.org/web/20230205052528/http://scpsandboxcn.wdfiles.com/local--files/why-we-fight-how-we-fight/20220913000632.png)
-- [05command-cn.wikidot.com/forum/t-14382137/stwjin](http://05command-cn.wikidot.com/forum/t-14382137/stwjin)
-- [Archive](https://web.archive.org/web/20230206050523/http://05command-cn.wikidot.com/forum/t-14382137/stwjin)
-- [05command-cn.wikidot.com/forum/t-14209003/dr-ling](http://05command-cn.wikidot.com/forum/t-14209003/dr-ling)
-- [Archive](https://web.archive.org/web/20230206050253/http://05command-cn.wikidot.com/forum/t-14209003/dr-ling)
-- [05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer](http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer)
-- [Archive](https://web.archive.org/web/20230206050448/http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer)
-- [scp-wiki-cn.wikidot.com/forum/t-2310237/hannah-s-personnel-file](http://scp-wiki-cn.wikidot.com/forum/t-2310237/hannah-s-personnel-file)
-- [Archive](https://web.archive.org/web/20230526122115/http://scp-wiki-cn.wikidot.com/feed/forum/t-2310237.xml)
-- [zhuanlan.zhihu.com/p/363976654](https://zhuanlan.zhihu.com/p/363976654)
-- [Archive](https://archive.ph/1wf9l)
+-   [05command-cn.wikidot.com/forum/t-15088930/hannah-ai](http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)
+-   [Archive](https://web.archive.org/web/20230205032916/http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)
+-   [scpper.com/page/1304863430](https://scpper.com/page/1304863430)
+-   [Archive](https://web.archive.org/web/20230201143836/https://scpper.com/page/1304863430)
+-   [scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98\_%E5%88%86%E6%89%8B.pdf](https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%88%86%E6%89%8B.pdf)
+-   [Archive](https://web.archive.org/web/20230205032916/https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%88%86%E6%89%8B.pdf)
+-   [scpper.com/page/64966487](https://scpper.com/page/64966487)
+-   [Archive](https://web.archive.org/web/20230205032916/https://scpper.com/page/64966487)
+-   [scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98\_%E5%BC%82%E5%B8%B8%E5%BF%83%E7%90%86%E5%AD%A6.pdf](https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%BC%82%E5%B8%B8%E5%BF%83%E7%90%86%E5%AD%A6.pdf)
+-   [Archive](https://web.archive.org/web/20230205032916/https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%BC%82%E5%B8%B8%E5%BF%83%E7%90%86%E5%AD%A6.pdf)
+-   [scp-wiki-cn.wikidot.com/guide-for-newbies](http://scp-wiki-cn.wikidot.com/guide-for-newbies)
+-   [Archive](https://web.archive.org/web/20230205035224/http://scp-wiki-cn.wikidot.com/guide-for-newbies)
+-   [scp-wiki-cn.wikidot.com/site-rules](http://scp-wiki-cn.wikidot.com/site-rules)
+-   [Archive](https://web.archive.org/web/20230205035244/http://scp-wiki-cn.wikidot.com/site-rules)
+-   [scp-wiki-cn.wikidot.com/anti-plagiarism-policy](http://scp-wiki-cn.wikidot.com/anti-plagiarism-policy)
+-   [Archive](https://web.archive.org/web/20230205035358/http://scp-wiki-cn.wikidot.com/anti-plagiarism-policy)
+-   [scpsandboxcn.wikidot.com/confucious](http://scpsandboxcn.wikidot.com/confucious)
+-   [Archive](https://web.archive.org/web/20230205045423/http://scpsandboxcn.wikidot.com/confucious)
+-   （尽管“调色盘”PDF 中对链接“打码”，但是只打码链接中的文章标题，不移除文章 ID 有什么用呢？）
+-   [www.coursehero.com/file/75559340/Psy346A-Fall20-Abnormal-Psychology-Handojo-Vpdf/](https://www.coursehero.com/file/75559340/Psy346A-Fall20-Abnormal-Psychology-Handojo-Vpdf/)
+-   [Archive](https://web.archive.org/web/20230205035917/https://www.coursehero.com/file/75559340/Psy346A-Fall20-Abnormal-Psychology-Handojo-Vpdf/)
+-   [www.cbuonline.edu/articles/a-deeper-look-psy-346-abnormal-psychology](https://www.cbuonline.edu/articles/a-deeper-look-psy-346-abnormal-psychology)
+-   [Archive](https://web.archive.org/web/20230205045029/https://www.cbuonline.edu/articles/a-deeper-look-psy-346-abnormal-psychology)
+-   [scpsandboxcn.wikidot.com](http://scpsandboxcn.wikidot.com/)
+-   [Archive](https://web.archive.org/web/20230205045436/http://scpsandboxcn.wikidot.com/)
+-   [scp-wiki-cn.wikidot.com/forum/t-15176050/](http://scp-wiki-cn.wikidot.com/forum/t-15176050/)
+-   （由于 SCP 中分限制未登录用户访问讨论区，无 Archive，但是 Feed 可以访问）
+-   [Archive](https://web.archive.org/web/20230526132215/http://scp-wiki-cn.wikidot.com/feed/forum/t-15176050.xml)
+-   [scpsandboxcn.wdfiles.com/local--files/why-we-fight-how-we-fight/20220913000632.png](http://scpsandboxcn.wdfiles.com/local--files/why-we-fight-how-we-fight/20220913000632.png)
+-   [Archive](https://web.archive.org/web/20230205052528/http://scpsandboxcn.wdfiles.com/local--files/why-we-fight-how-we-fight/20220913000632.png)
+-   [05command-cn.wikidot.com/forum/t-14382137/stwjin](http://05command-cn.wikidot.com/forum/t-14382137/stwjin)
+-   [Archive](https://web.archive.org/web/20230206050523/http://05command-cn.wikidot.com/forum/t-14382137/stwjin)
+-   [05command-cn.wikidot.com/forum/t-14209003/dr-ling](http://05command-cn.wikidot.com/forum/t-14209003/dr-ling)
+-   [Archive](https://web.archive.org/web/20230206050253/http://05command-cn.wikidot.com/forum/t-14209003/dr-ling)
+-   [05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer](http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer)
+-   [Archive](https://web.archive.org/web/20230206050448/http://05command-cn.wikidot.com/forum/t-14149605/yoghurt-rescuer)
+-   [scp-wiki-cn.wikidot.com/forum/t-2310237/hannah-s-personnel-file](http://scp-wiki-cn.wikidot.com/forum/t-2310237/hannah-s-personnel-file)
+-   [Archive](https://web.archive.org/web/20230526122115/http://scp-wiki-cn.wikidot.com/feed/forum/t-2310237.xml)
+-   [zhuanlan.zhihu.com/p/363976654](https://zhuanlan.zhihu.com/p/363976654)
+-   [Archive](https://archive.ph/1wf9l)
 
 <!--
 5oiR55yf55qE5Y+X5LiN5LqG77yM5oiR5a+55LiN6LW3V0Hpk7blhrBpbmZhc+WPr+aYr+aIkeWBmuS4jeWIsOS4jeWOu+aDs+S7luS7rOOAgg0KDQoNCg0K5oiR54ix5L2g5Lus44CC6Ieq5p2A5LiN5piv5L2g5Lus55qE6ZSZ44CCDQoNCg0KDQrmiJHmsqHmioTooq3jgII=

@@ -2,7 +2,7 @@
 categories: Original
 date: "2023-11-20T00:00:00Z"
 tags:
-  - OpenAI
+    - OpenAI
 slug: OpenAI-is-nothing-without-its-people
 title: OpenAI is nothing without its people
 ---

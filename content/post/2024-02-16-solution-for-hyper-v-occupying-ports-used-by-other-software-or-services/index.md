@@ -2,7 +2,7 @@
 categories: Repost
 date: "2024-02-16T00:00:00Z"
 tags:
-  - Windows
+    - Windows
 slug: solution-for-hyper-v-occupying-ports-used-by-other-software-or-services
 title: Hyper-V 占用其他软件或服务端口解决方案
 ---
@@ -34,7 +34,7 @@ title: Hyper-V 占用其他软件或服务端口解决方案
 
 在那个问题的回答下，我看到有一些网友说「对我有用」，也有一些网友说「对我没用」，原因就是这个方法解决问题的概率完全是随机的……
 
-## []()[]()3. 正确的解决方法
+## [](https://example.com)[](https://example.com)3. 正确的解决方法
 
 正确的解决方法很简单，就是重新设置一下「TCP 动态端口范围」，让  `Hyper-V`  只在我们设定的范围内保留端口即可。可以以管理员权限运行下面的命令，将「TCP 动态端口范围」重新设定为  `49152-65535`。如果你觉得这个范围太大，还可以改小一点。
 

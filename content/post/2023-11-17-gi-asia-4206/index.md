@@ -2,9 +2,9 @@
 categories: Original
 date: "2023-11-17T00:00:00Z"
 tags:
-  - 游戏
-  - 原神
-  - 后端
+    - 游戏
+    - 原神
+    - 后端
 slug: gi-asia-4206
 title: Genshin Impact Asia 服务器在从中国大陆连接时报4206错误
 ---

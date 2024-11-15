@@ -2,8 +2,8 @@
 categories: Original
 date: "2022-10-13T00:00:00Z"
 tags:
-  - 杀毒软件
-  - Kaspersky
+    - 杀毒软件
+    - Kaspersky
 slug: ksc-chinese
 title: 安装Kaspersky Security Cloud Free中文版
 ---

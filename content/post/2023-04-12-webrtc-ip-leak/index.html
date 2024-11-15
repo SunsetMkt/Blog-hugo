@@ -3,9 +3,9 @@ categories: Original
 date: "2023-04-12T00:00:00Z"
 description: 使用stun.l.google.com:19302
 tags:
-  - Demo
-  - 前端
-  - JavaScript
+    - Demo
+    - 前端
+    - JavaScript
 slug: webrtc-ip-leak
 title: WebRTC泄露用户IP演示
 ---
@@ -15,60 +15,60 @@ title: WebRTC泄露用户IP演示
 <div id="showcase"></div>
 
 <script>
-  function findIP(onNewIP) {
-    const myPeerConnection =
-      window.RTCPeerConnection ||
-      window.webkitRTCPeerConnection ||
-      window.mozRTCPeerConnection;
-    const pc = new myPeerConnection({
-      iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
-    });
-    const seenAddresses = new Set();
+    function findIP(onNewIP) {
+        const myPeerConnection =
+            window.RTCPeerConnection ||
+            window.webkitRTCPeerConnection ||
+            window.mozRTCPeerConnection;
+        const pc = new myPeerConnection({
+            iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
+        });
+        const seenAddresses = new Set();
 
-    pc.createDataChannel("");
+        pc.createDataChannel("");
 
-    pc.createOffer().then(function (sdp) {
-      const lines = sdp.sdp.split("\n");
-      const addresses = [];
-      lines.forEach(function (line) {
-        if (line.indexOf("candidate") === -1) return;
-        const parts = line.split(" ");
-        const addr = parts[4];
-        if (addr !== "" && !seenAddresses.has(addr)) {
-          addresses.push(addr);
-          seenAddresses.add(addr);
-        }
-      });
-      if (addresses.length > 0) {
-        onNewIP(addresses);
-      }
-      pc.setLocalDescription(sdp);
-    });
+        pc.createOffer().then(function (sdp) {
+            const lines = sdp.sdp.split("\n");
+            const addresses = [];
+            lines.forEach(function (line) {
+                if (line.indexOf("candidate") === -1) return;
+                const parts = line.split(" ");
+                const addr = parts[4];
+                if (addr !== "" && !seenAddresses.has(addr)) {
+                    addresses.push(addr);
+                    seenAddresses.add(addr);
+                }
+            });
+            if (addresses.length > 0) {
+                onNewIP(addresses);
+            }
+            pc.setLocalDescription(sdp);
+        });
 
-    pc.onicecandidate = function (event) {
-      if (!event.candidate) return;
-      const parts = event.candidate.candidate.split(" ");
-      const addr = parts[4];
-      if (addr !== "" && !seenAddresses.has(addr)) {
-        onNewIP([addr]);
-        seenAddresses.add(addr);
-      }
-    };
-  }
+        pc.onicecandidate = function (event) {
+            if (!event.candidate) return;
+            const parts = event.candidate.candidate.split(" ");
+            const addr = parts[4];
+            if (addr !== "" && !seenAddresses.has(addr)) {
+                onNewIP([addr]);
+                seenAddresses.add(addr);
+            }
+        };
+    }
 
-  const showcase = document.getElementById("showcase");
-  const ul = document.createElement("ul");
-  ul.textContent = "您的IP地址：";
-  showcase.appendChild(ul);
+    const showcase = document.getElementById("showcase");
+    const ul = document.createElement("ul");
+    ul.textContent = "您的IP地址：";
+    showcase.appendChild(ul);
 
-  function addIP(addresses) {
-    console.log("got addresses: ", addresses);
-    addresses.forEach(function (address) {
-      const li = document.createElement("li");
-      li.textContent = address;
-      ul.appendChild(li);
-    });
-  }
+    function addIP(addresses) {
+        console.log("got addresses: ", addresses);
+        addresses.forEach(function (address) {
+            const li = document.createElement("li");
+            li.textContent = address;
+            ul.appendChild(li);
+        });
+    }
 
-  findIP(addIP);
+    findIP(addIP);
 </script>

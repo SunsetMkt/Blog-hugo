@@ -3,8 +3,8 @@ categories: Repost
 date: "2020-10-12T00:00:00Z"
 description: 长夏开在枝头上。
 tags:
-  - SCP基金会
-  - 小说
+    - SCP基金会
+    - 小说
 slug: the-rose-hub
 title: 玫瑰
 ---
@@ -25,7 +25,7 @@ title: 玫瑰
 
 [Source](http://scp-wiki-cn.wikidot.com/deep-in-my-bones)
 
-“我想要…很多很多的钱。”
+“我想要……很多很多的钱。”
 
 “你知道你不必这样的。”
 

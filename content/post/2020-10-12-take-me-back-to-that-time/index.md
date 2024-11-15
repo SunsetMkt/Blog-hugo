@@ -3,9 +3,9 @@ categories: Repost
 date: "2020-10-12T00:00:00Z"
 description: 破墙梅顾文。
 tags:
-  - SCP基金会
-  - 小说
-  - LGBTQIA
+    - SCP基金会
+    - 小说
+    - LGBTQIA
 slug: take-me-back-to-that-time
 title: 说你永远不会离我而去
 ---
@@ -76,7 +76,7 @@ Freedom 明白她遇到了什么了。在基金会档案中见过的异常，会
 
 然后世界又回来了。
 
-“…我不知道意义何在。”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)回答她。“本来也没什么意义吧？”
+“……我不知道意义何在。”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)回答她。“本来也没什么意义吧？”
 
 “有。”我可不适合灌鸡汤啊，Freedom 的脑子疯狂转着。我要怎么展示给她看意义，我 tm 自己都不知道意义是什么，还得是积极意义不能是消极意义，这真 tm 难爆了。
 

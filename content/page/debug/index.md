@@ -2,10 +2,10 @@
 title: "开发人员工具"
 slug: debug
 menu:
-  main:
-    weight: 5
-    params:
-      icon: tool
+    main:
+        weight: 5
+        params:
+            icon: tool
 ---
 
 ## 快捷链接

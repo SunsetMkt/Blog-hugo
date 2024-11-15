@@ -2,7 +2,7 @@
 categories: Original
 date: "2024-01-20T00:00:00Z"
 tags:
-  - 翻译
+    - 翻译
 slug: javier-gerardo-milei-wef-speech
 title: 阿根廷总统哈维尔·米莱在达沃斯的演讲
 ---

@@ -2,7 +2,7 @@
 categories: Original
 date: "2021-12-16T20:15:00Z"
 tags:
-  - 游戏
+    - 游戏
 slug: how-i-vote-a-game
 title: 关于“我如何给游戏评分”
 ---

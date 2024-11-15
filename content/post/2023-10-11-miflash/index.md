@@ -2,7 +2,7 @@
 categories: Original
 date: "2023-10-11T00:00:00Z"
 tags:
-  - Android
+    - Android
 slug: miflash
 title: 小米刷机工具MiFlashPro和小米妙享的下载URL以及更多杂项
 ---
@@ -19,7 +19,7 @@ Reference: [miuiver](https://miuiver.com/miflash-pro/)
 
 `7`版本不再强制要求登录小米账号。
 
-```
+```plain
 https://miuirom.xiaomi.com/rom/u1106245679/7.3.706.21/miflash_pro-7.3.706.21.zip
 https://miuirom.xiaomi.com/rom/u1106245679/7.3.627.20/miflash_pro-7.3.627.20.zip
 https://miuirom.xiaomi.com/rom/u1106245679/7.3.608.18/miflash_pro-7.3.608.18.zip
@@ -43,7 +43,7 @@ https://miuirom.xiaomi.com/rom/u265827351/3.3.518.58/miflash_pro-3.3.518.58.zip
 
 [Latest](https://cdn.alsgp0.fds.api.mi-img.com/micomm/MiFlash2020-3-14-0.rar)
 
-```
+```plain
 https://cdn.alsgp0.fds.api.mi-img.com/micomm/MiFlash2020-3-14-0.rar
 https://bigota.d.miui.com/tools/MiFlash2019-12-06-0.zip
 https://bigota.d.miui.com/tools/MiFlash2019-11-11-0.zip
@@ -69,7 +69,7 @@ https://bigota.d.miui.com/tools/MiPhone20140509.exe
 
 英文版修改文件名，`miflash_unlock-en-6.5.406.31.zip`。
 
-```
+```plain
 https://cdn.cnbj1.fds.api.mi-img.com/flash-tool/miflash_unlock_7.6.727.43.zip
 https://miuirom.xiaomi.com/rom/u1106245679/6.5.406.31/miflash_unlock-6.5.406.31.zip
 https://miuirom.xiaomi.com/rom/u1106245679/6.5.224.28/miflash_unlock-6.5.224.28.zip
@@ -105,7 +105,7 @@ https://miuirom.xiaomi.com/rom/u265827351/1.0.1225.2/miflash_unlock-1.0.1225.2.z
 
 [Latest](https://miuirom.xiaomi.com/rom/u1106245679/4.2.1028.10/MiAssistant-4.2.1028.10.zip)
 
-```
+```plain
 https://miuirom.xiaomi.com/rom/u1106245679/4.2.1028.10/MiAssistant-4.2.1028.10.zip
 https://miuirom.xiaomi.com/rom/u1106245679/3.2.522.32/MiAssistant-3.2.522.32.zip
 https://miuirom.xiaomi.com/rom/u491047765/2.3.0.4071/mipctoolexe-2.3.0.4071.exe
@@ -157,7 +157,7 @@ adb pull /sdcard/PartitionBackup.tgz D:\Backup
 
 [Latest](https://cdn.cnbj1.fds.api.mi-img.com/mibook-drivers/Driver/A53/20221111/MIUI_Plus.zip)
 
-```
+```plain
 https://cdn.cnbj1.fds.api.mi-img.com/mibook-drivers/Driver/A53/20221111/MIUI_Plus.zip
 ```
 
@@ -167,7 +167,7 @@ https://cdn.cnbj1.fds.api.mi-img.com/mibook-drivers/Driver/A53/20221111/MIUI_Plu
 
 [补丁](https://www.coolapk.com/feed/42297337) ([wtsapi32.dll](old/wtsapi32.dll)) by [ChsBuffer](https://github.com/chsbuffer)
 
-```
+```plain
 https://cdn.cnbj1.fds.api.mi-img.com/download/miaiot/AIoT_master_publication_3.2.0.464_04dc6bb9.exe
 ```
 
@@ -177,7 +177,7 @@ https://cdn.cnbj1.fds.api.mi-img.com/download/miaiot/AIoT_master_publication_3.2
 
 [补丁](https://www.coolapk1s.com/feed/46182665) ([wtsapi32.dll](wtsapi32.dll)) by [ChsBuffer](https://github.com/chsbuffer)
 
-```
+```plain
 https://cdn.cnbj1.fds.api.mi-img.com/ota-packages/61Lu_XiaomiPCManager_official_website_1.0.0.489_0977b577.exe
 ```
 

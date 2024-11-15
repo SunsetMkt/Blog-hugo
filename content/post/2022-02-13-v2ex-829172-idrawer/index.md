@@ -2,7 +2,7 @@
 categories: Repost
 date: "2022-02-13T00:00:00Z"
 tags:
-  - v2ex
+    - v2ex
 slug: v2ex-829172-idrawer
 title: 一句话摘录 v2ex 829172
 ---

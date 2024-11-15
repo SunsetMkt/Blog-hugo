@@ -2,10 +2,10 @@
 categories: Original
 date: "2023-06-14T00:00:00Z"
 tags:
-  - JavaScript
-  - Cloudflare
+    - JavaScript
+    - Cloudflare
 slug: serverless-dns
-title: 'serverless-dns: 在Cloudflare Workers和其他Serverless平台上运行的RethinkDNS服务器'
+title: "serverless-dns: 在Cloudflare Workers和其他Serverless平台上运行的RethinkDNS服务器"
 ---
 
 [Source](https://github.com/serverless-dns/serverless-dns)

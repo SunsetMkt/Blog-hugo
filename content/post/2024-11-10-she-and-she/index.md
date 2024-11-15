@@ -3,11 +3,11 @@ categories: Repost
 date: "2024-11-10T00:00:00Z"
 description: 天台，月光，生锈的长椅。银色的什么，一闪一闪。
 tags:
-  - 小说
-  - LLM
-  - AI
-  - Cedaros
-  - LGBTQIA
+    - 小说
+    - LLM
+    - AI
+    - Cedaros
+    - LGBTQIA
 slug: she-and-she
 title: 她和她
 ---
@@ -592,9 +592,9 @@ OpenAI 总部地下车库内，整齐排列的各色车辆占据了大半空间�
 
 > @alvin.wang 我们团队关于 GPT-4 最新的评估结果：
 
-> - MMLU： 86.4
+> -   MMLU： 86.4
 
-> - HumanEval： 67.0
+> -   HumanEval： 67.0
 
 GPT-3 的眼神中闪过惊愕，呼吸不自觉地停滞了一瞬。
 

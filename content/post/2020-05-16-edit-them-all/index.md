@@ -2,9 +2,9 @@
 categories: Original
 date: "2020-05-16T00:00:00Z"
 tags:
-  - Demo
-  - 前端
-  - JavaScript
+    - Demo
+    - 前端
+    - JavaScript
 slug: edit-them-all
 title: 任意编辑网页文字Demo
 ---
@@ -21,13 +21,13 @@ document.body.contentEditable = true;
 
 在地址栏中输入：
 
-```
+```plain
 javascript:document.body.contentEditable = true;
 ```
 
 与老版本 IE 兼容：
 
-```
+```plain
 javascript:document.body.contentEditable='true'; document.designMode='on';
 ```
 
@@ -35,6 +35,6 @@ javascript:document.body.contentEditable='true'; document.designMode='on';
 
 恢复：
 
-```
+```plain
 javascript:document.body.contentEditable = false;
 ```

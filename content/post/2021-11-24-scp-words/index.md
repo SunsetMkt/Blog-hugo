@@ -2,8 +2,8 @@
 categories: Repost
 date: "2021-11-24T00:00:00Z"
 tags:
-  - SCP基金会
-  - 小说
+    - SCP基金会
+    - 小说
 slug: scp-words
 title: 摘录自「SCP基金会」中的一些句子
 ---

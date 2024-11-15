@@ -2,7 +2,7 @@
 categories: Original
 date: "2022-07-15T00:00:00Z"
 tags:
-  - WPS
+    - WPS
 slug: wps-oem
 title: WPS Office Pro（金山WPS企业版）和金山PDF专业版的OEM配置方法
 ---
@@ -15,7 +15,7 @@ title: WPS Office Pro（金山WPS企业版）和金山PDF专业版的OEM配置�
 
 ## 调查
 
-```
+```plain
 名称: WPS Office 2019 珠海市政府专业版(11.8.2.8506).exe
 大小: 204752016 字节 (195 MiB)
 CRC32: C8542180
@@ -27,7 +27,7 @@ BLAKE2sp: 317f75c43da8c156f386099c6f50687d8e88aadf4c5226dfdbd06e01befcdffa
 
 通过使用`7-Zip`提取样本`WPS Office 2019 珠海市政府专业版(11.8.2.8506).exe`内文件，可以看到以下文件夹：
 
-```
+```plain
 ├─$PLUGINSDIR
 └─$_11_
 ```
@@ -36,7 +36,7 @@ BLAKE2sp: 317f75c43da8c156f386099c6f50687d8e88aadf4c5226dfdbd06e01befcdffa
 
 对于`$_11_`目录下的文件，可以猜测其作用：
 
-```
+```plain
 │  $EXEFILE # 安装程序，可以直接运行，或添加exe后缀名双击运行
 │  oem.ini # OEM配置文件
 │  oem_enterprise.txt # 未知，可能记录具体企业编号
@@ -58,7 +58,7 @@ BLAKE2sp: 317f75c43da8c156f386099c6f50687d8e88aadf4c5226dfdbd06e01befcdffa
 
 ### `oem_enterprise.txt`
 
-```
+```plain
 XXXX_XXXX
 
 ```
@@ -128,7 +128,7 @@ UninstExeCount=3
 
 ### `locateList.txt`
 
-```
+```plain
 【移除具体机构名称】
 
 
@@ -143,7 +143,7 @@ UninstExeCount=3
 
 因此，如下的示例是可行的：
 
-```
+```plain
 我是机构名称
 
 
@@ -165,8 +165,8 @@ WPS Office Pro 的任意版本安装程序（包括官网提供的试用版）�
 
 因此，最简的可激活 OEM 安装配置方法为：
 
-- 下载官网提供的试用版安装程序
-- 在安装程序所在目录下建立`oem.ini`文件，内容为：
+-   下载官网提供的试用版安装程序
+-   在安装程序所在目录下建立`oem.ini`文件，内容为：
 
 ```ini
 [Support]
@@ -176,7 +176,7 @@ Support2016SN=true
 Sn=【自行填入序列号】
 ```
 
-- 运行安装程序
+-   运行安装程序
 
 这样，安装程序会自动激活 WPS Office Pro。
 

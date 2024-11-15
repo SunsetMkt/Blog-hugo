@@ -2,9 +2,9 @@
 categories: Original
 date: "2020-08-08T00:00:00Z"
 tags:
-  - Demo
-  - Python
-  - 前端
+    - Demo
+    - Python
+    - 前端
 slug: PA-embed-console-demo
 title: PythonAnywhere Embeddable Consoles Demo
 ---

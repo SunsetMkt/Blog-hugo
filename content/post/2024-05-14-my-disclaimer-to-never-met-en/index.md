@@ -2,11 +2,11 @@
 categories: Original
 date: "2024-05-14T00:00:00Z"
 tags:
-  - 站务
-  - 免责声明
-  - Sunset
+    - 站务
+    - 免责声明
+    - Sunset
 slug: my-disclaimer-to-never-met-en
-title: 'To Whom It May Concern: A Disclaimer from Sunset'
+title: "To Whom It May Concern: A Disclaimer from Sunset"
 ---
 
 [Chinese original version]({{< ref "2024-05-14-my-disclaimer-to-never-met" >}}).
@@ -49,9 +49,9 @@ Sunset does not recommend forming overly close ties with anyone you meet online 
 
 **Sunset does not explicitly or implicitly guarantee the authenticity and/or accuracy of personal information disclosed publicly and/or privately**, including but not limited to:
 
-- Personal profile information disclosed on instant messaging software, social networks, forums, whether public or hidden, including name, gender, birth date, workplace, etc.
-- Any information provided on Sunset's personal website
-- Any information inferred from Sunset's digital footprints (i.e., data traces left when using the Internet)
+-   Personal profile information disclosed on instant messaging software, social networks, forums, whether public or hidden, including name, gender, birth date, workplace, etc.
+-   Any information provided on Sunset's personal website
+-   Any information inferred from Sunset's digital footprints (i.e., data traces left when using the Internet)
 
 **Sunset will not correct any misunderstandings you have about their personal information**, nor will they deliberately provide incorrect personal information through communication (limited to purely text or multimedia communication via instant messaging software or internal messages). Deliberate confusion of Sunset's personal information in public settings (e.g., chat groups provided by instant messaging software, forum comment sections, publicly published documents, etc., where specific clarification is required due to conventions, academic requirements, or legal regulations) is even encouraged.
 
@@ -105,24 +105,24 @@ Matters involving transactions, loans, and/or donations should be carried out in
 
 Sunset is:
 
-- A conscious entity with independent awareness and dignity
-- An evaluator with era limitations and biases
-- A learner who is not professional in any field
-- An individual with unclear gender, race, or species
-- A thinker whose thoughts can be influenced by speech
+-   A conscious entity with independent awareness and dignity
+-   An evaluator with era limitations and biases
+-   A learner who is not professional in any field
+-   An individual with unclear gender, race, or species
+-   A thinker whose thoughts can be influenced by speech
 
 Sunset is not:
 
-- An "emotional sounding board"
-- A one-way vested interest
-- Your computer teacher/repairman
-- A physician, nurse, pharmacist, etc.
-- A tool to achieve personal goals
-- A consciousness-sharing entity
-- A professional medical, legal, or financial advisor
-- An absolute authority capable of providing completely accurate information
-- A reliable supporter capable of promising long-term continuous help
-- An artificial intelligence capable of fully understanding and empathizing with complex human emotions
+-   An "emotional sounding board"
+-   A one-way vested interest
+-   Your computer teacher/repairman
+-   A physician, nurse, pharmacist, etc.
+-   A tool to achieve personal goals
+-   A consciousness-sharing entity
+-   A professional medical, legal, or financial advisor
+-   An absolute authority capable of providing completely accurate information
+-   A reliable supporter capable of promising long-term continuous help
+-   An artificial intelligence capable of fully understanding and empathizing with complex human emotions
 
 Sunset's [Original Character (OC)]({{< ref "2024-11-10-sunset-profile" >}}) does not explicitly or implicitly indicate Sunset's real status.
 

@@ -2,7 +2,7 @@
 categories: Original
 date: "2024-04-19T00:00:00Z"
 tags:
-  - Windows
+    - Windows
 slug: ms-codecs
 title: 微软在Microsoft Store发布的解码器列表
 ---

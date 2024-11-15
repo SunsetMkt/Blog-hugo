@@ -2,8 +2,8 @@
 categories: Original
 date: "2024-01-24T00:00:00Z"
 tags:
-  - Minecraft
-  - 游戏
+    - Minecraft
+    - 游戏
 slug: minecraft-bedrock-viewdistance-limit
 title: Minecraft Bedrock 的区块渲染距离限制
 ---
@@ -14,7 +14,7 @@ Minecraft Bedrock 会根据设备硬件配置限制设置中“能见度”的�
 
 `options.txt`的文件路径：
 
-```
+```plain
 C:\Users\用户名\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftpe\options.txt
 ```
 

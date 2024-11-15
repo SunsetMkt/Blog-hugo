@@ -2,8 +2,8 @@
 categories: Original
 date: "2023-07-15T00:00:00Z"
 tags:
-  - 后端
-  - Vercel
+    - 后端
+    - Vercel
 slug: umami-vercel
 title: 使用Vercel和PlanetScale部署Umami统计（备忘）
 ---

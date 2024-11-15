@@ -2,8 +2,8 @@
 categories: Original
 date: "2022-01-12T00:00:00Z"
 tags:
-  - 游戏
-  - 视觉小说
+    - 游戏
+    - 视觉小说
 slug: galgames-tf-ddlc-ylwhah
 title: 几个Galgame/视觉小说赏析
 ---
@@ -40,7 +40,7 @@ _（震惊！文学部部长自学 Python 竟是为了...）_
 
 游戏引擎是 Ren'Py，基于 Python2，原生提供打包功能但除了代码注释之外所有的细节都会保留。
 
-## 君と彼女と彼女の恋。
+## 君と彼女と彼女の恋
 
 （恐怖游戏警告，有违背伦理的情节）[你和她和她的恋爱。 - 萌娘百科 万物皆可萌的百科全书 (moegirl.org.cn)](https://moegirl.uk/%E4%BD%A0%E5%92%8C%E5%A5%B9%E5%92%8C%E5%A5%B9%E7%9A%84%E6%81%8B%E7%88%B1)
 

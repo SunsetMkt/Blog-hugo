@@ -2,13 +2,13 @@
 categories: Original
 date: "2024-11-10T00:00:00Z"
 tags:
-  - 原创角色
-  - Sunset
+    - 原创角色
+    - Sunset
 slug: sunset-profile
 title: 原创角色Sunset的设定集
 ---
 
-| ![Sunset的暂定头像](/sunset2_compressed.jpg)  |
+|        ![Sunset的暂定头像](/sunset2_compressed.jpg)         |
 | :---------------------------------------------------------: |
 | 适用于原创角色 Sunset 的头像暂定稿，基于 Stable Diffusion。 |
 
@@ -33,13 +33,21 @@ title: 原创角色Sunset的设定集
 |  关于 R-18[^9]   |                                   此角色最初被设计用于个人标识和引导示意，不建议用于仅为了引起性反应或使人震惊的作品。                                   |
 
 [^2]: 基于[萌娘百科相关条目](https://moegirl.uk/萌属性)的描述。
+
 [^3]: 所有设定根据参与作品的具体需要都允许灵活调整，但若出现参考范围的，*建议*参考提供的范围。
+
 [^4]: 在这里更多地指的是设定中年龄可“灵活调整”的现象。
+
 [^5]: 仍在创作中，暂定名引用自著作权属于上海米哈游天命科技有限公司的开放世界角色扮演游戏[《原神》](https://moegirl.uk/%E5%8E%9F%E7%A5%9E)中登场角色[荧](https://moegirl.uk/%E8%8D%A7)。
+
 [^6]: SCP 基金会是一个虚构的特工组织，作为同名互联网接龙小说创作项目中的主要要素。在该虚构宇宙中，SCP 基金会是一个跨国秘密组织，负责搜寻并收容各种具有异常属性的个体、地点或物体（统称为“异常”），其宗旨为“控制”（Secure），“收容”（Contain），“保护”（Protect）。（维基百科） 如果需要在作品中引用内容，作品需要使用知识共享-版权归属-相同方式共享 3.0 授权协议（[CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/deed.zh)）。
+
 [^7]: 灵感来自在美国 Hub 有线电视网于 2010 年 10 月 10 日首播的卡通节目[《彩虹小马：友谊是魔法》](https://moegirl.uk/%E5%BD%A9%E8%99%B9%E5%B0%8F%E9%A9%AC)衍生系列《小马国女孩》中登场角色[余晖烁烁（Sunset Shimmer/夕晖烁烁）](https://moegirl.uk/%E4%BD%99%E6%99%96%E7%83%81%E7%83%81)。
+
 [^8]: 作者仍保留单独授权给任意创作者的权利，在这种情况下，对此设定的使用限制可能不相同。
+
 [^9]: 在遵守授权协议的情况下并不需要遵守，但作者仍希望遵守的规则。
+
 [^11]: 根据年龄动态变化，规则：“中等偏瘦”。
 
 ## 简介
@@ -102,7 +110,7 @@ Sunset 的女友（？），是在“余晖教育和科技集团”建立后第�
 
 ### 基础外观
 
-```
+```plain
 1girl,solo,portrait,(bright:1.5),(white background:1.5),(soft lighting:1.3),(light on face:1.1),labcoat,black shirt,glasses,simple background,looking at viewer,small breasts,ahoge,bangs,medium hair,closed mouth,black eyes,blonde hair,black-framed eyewear,light smile,masterpiece,best quality,highres,absurdres,
 ```
 
@@ -112,7 +120,7 @@ Sunset 的女友（？），是在“余晖教育和科技集团”建立后第�
 
 使用模型：[Blue Archive Flat Celluloid Style Fine-tune](https://civitai.com/models/212253/baxl-or-blue-archive-flat-celluloid-style-fine-tune-or-kohaku-d-and-animagine-xl-v3)
 
-```
+```plain
 1girl,solo,portrait,(bright:1.5),(white background:1.5),(soft lighting:1.3),(light on face:1.1),labcoat,black shirt,glasses,simple background,looking at viewer,small breasts,ahoge,bangs,medium hair,closed mouth,black eyes,blonde hair,black-framed eyewear,light smile,masterpiece,best quality,highres,absurdres,
 Negative prompt: (shaded face:1.5),(shadow:1.3),(backlighting:1.2),(dark:1.1),nsfw,lowres,error,worst quality,low quality,jpeg artifacts,signature,username,blurry,chibi,text,
 ```
@@ -121,7 +129,7 @@ Negative prompt: (shaded face:1.5),(shadow:1.3),(backlighting:1.2),(dark:1.1),ns
 
 使用模型：[Blue Archive Flat Celluloid Style Fine-tune](https://civitai.com/models/212253/baxl-or-blue-archive-flat-celluloid-style-fine-tune-or-kohaku-d-and-animagine-xl-v3)
 
-```
+```plain
 1girl,original,solo,portrait,upper_body,labcoat,jeans,black shirt,glasses,hand_in_pocket,looking at viewer,small breasts,ahoge,bangs,medium hair,closed mouth,black eyes,blonde hair,black-framed eyewear,light smile,mechanical halo,halo,blue sky,best quality,masterpiece,highres,absurdres,
 Negative prompt: nsfw,lowres,error,worst quality,low quality,jpeg artifacts,signature,username,blurry,chibi,text,
 ```
@@ -130,10 +138,10 @@ Negative prompt: nsfw,lowres,error,worst quality,low quality,jpeg artifacts,sign
 
 小范围的设定修改是被允许的，例如：
 
-- 性转版本的角色可用于需要多于一个人，或必须使用特定性别的场景。
-- 更年轻/更老的角色可被用于必要的说明场景。
-- 一个不使用特征化着装的角色可用于展示不同的外观。
-- 为了联动或风格化，可以大幅度修改基础设定。
+-   性转版本的角色可用于需要多于一个人，或必须使用特定性别的场景。
+-   更年轻/更老的角色可被用于必要的说明场景。
+-   一个不使用特征化着装的角色可用于展示不同的外观。
+-   为了联动或风格化，可以大幅度修改基础设定。
 
 ### Blue Archive 风格联动（示例）
 

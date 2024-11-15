@@ -2,8 +2,8 @@
 categories: Original
 date: "2024-05-17T00:00:00Z"
 tags:
-  - VisibleBody
-  - 医学
+    - VisibleBody
+    - 医学
 slug: 9ncgktbt3s2q
 title: 软件推荐：Human Anatomy Atlas
 ---
@@ -56,5 +56,5 @@ retn
 
 ```hex
 Address	Length	Original bytes	Patched bytes
-000000018168F540	0x6	48 89 5C 24 08 57 	B0 00 90 90 90 C3 
+000000018168F540	0x6	48 89 5C 24 08 57 	B0 00 90 90 90 C3
 ```

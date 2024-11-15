@@ -2,9 +2,9 @@
 categories: Original
 date: "2022-08-10T00:00:00Z"
 tags:
-  - Demo
-  - 前端
-  - JavaScript
+    - Demo
+    - 前端
+    - JavaScript
 slug: hello-bike-qr
 title: 哈罗单车：根据单车编号生成二维码
 ---
@@ -15,45 +15,45 @@ title: 哈罗单车：根据单车编号生成二维码
 <script src="https://www.unpkg.com/qrcodejs@1.0.0/qrcode.min.js"></script>
 
 <style>
-  #qrcode {
-    width: 160px;
-    height: 160px;
-    margin-top: 15px;
-  }
+    #qrcode {
+        width: 160px;
+        height: 160px;
+        margin-top: 15px;
+    }
 </style>
 
 <input
-  id="text"
-  type="text"
-  value="http://c3x.me/?n=单车编号"
-  style="width: 80%"
+    id="text"
+    type="text"
+    value="http://c3x.me/?n=单车编号"
+    style="width: 80%"
 /><br />
 <div id="qrcode"></div>
 
 <script>
-  var qrcode = new QRCode("qrcode");
+    var qrcode = new QRCode("qrcode");
 
-  function makeCode() {
-    var elText = document.getElementById("text");
+    function makeCode() {
+        var elText = document.getElementById("text");
 
-    if (!elText.value) {
-      alert("Input a text");
-      elText.focus();
-      return;
+        if (!elText.value) {
+            alert("Input a text");
+            elText.focus();
+            return;
+        }
+
+        qrcode.makeCode(elText.value);
     }
 
-    qrcode.makeCode(elText.value);
-  }
+    makeCode();
 
-  makeCode();
-
-  $("#text")
-    .on("blur", function () {
-      makeCode();
-    })
-    .on("keydown", function (e) {
-      if (e.keyCode == 13) {
-        makeCode();
-      }
-    });
+    $("#text")
+        .on("blur", function () {
+            makeCode();
+        })
+        .on("keydown", function (e) {
+            if (e.keyCode == 13) {
+                makeCode();
+            }
+        });
 </script>

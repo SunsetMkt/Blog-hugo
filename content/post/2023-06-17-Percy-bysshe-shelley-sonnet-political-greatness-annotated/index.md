@@ -2,10 +2,10 @@
 categories: Repost
 date: "2023-06-17T00:00:00Z"
 tags:
-  - 音频
-  - 重返未来：1999
+    - 音频
+    - 重返未来：1999
 slug: Percy-bysshe-shelley-sonnet-political-greatness-annotated
-title: 'Sonnet: Political Greatness & 有关《重返未来：1999》'
+title: "Sonnet: Political Greatness & 有关《重返未来：1999》"
 ---
 
 _\[Published by Mrs. Shelley, "Posthumous Poems", 1824. There is a transcript, headed "Sonnet to the Republic of Benevento", in the Harvard manuscript book.]_\
@@ -199,8 +199,6 @@ When folly wraps wit , where to stand we?
 Before a cruel whip ？Man who man would be
 
 那牧鞭与谦卑羔羊又算得什么？
-
-
 
 Must rule the empire of himself
 

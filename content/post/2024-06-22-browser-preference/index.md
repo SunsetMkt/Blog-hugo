@@ -2,8 +2,8 @@
 categories: Original
 date: "2024-06-22T00:00:00Z"
 tags:
-  - Mozilla
-  - 浏览器
+    - Mozilla
+    - 浏览器
 slug: browser-preference
 title: 提案：在Manifest V3和Google的推动下向Firefox和Brave移动
 ---
@@ -18,11 +18,11 @@ Google 决定在 Chromium 中推行富有争议 Manifest V3 标准并移除对 V
 
 在这里，我们主要讨论 PC 端体验。它们需要满足以下要求：
 
-- Windows 下对 x64 和 ARM64 架构的支持
-- Linux 支持
-- 隐私保护特性
-- 开放源代码（可编译）
-- 不强制使用 VPN
+-   Windows 下对 x64 和 ARM64 架构的支持
+-   Linux 支持
+-   隐私保护特性
+-   开放源代码（可编译）
+-   不强制使用 VPN
 
 我们谨慎地评估了市面上常见的浏览器，并最终选择了 Firefox 和 Brave（基于 Chromium，使用[brave-debullshitinator](https://github.com/MulesGaming/brave-debullshitinator)移除不必要的功能。请注意，Brave 的开发商不是非营利性组织）。
 

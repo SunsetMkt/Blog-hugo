@@ -2,10 +2,10 @@
 categories: Original
 date: "2020-04-29T00:00:00Z"
 tags:
-  - Demo
-  - 前端
-  - 萌娘百科
-  - CSS
+    - Demo
+    - 前端
+    - 萌娘百科
+    - CSS
 slug: heimu-demo
 title: 黑幕 Demo
 ---
@@ -13,7 +13,7 @@ title: 黑幕 Demo
 ```css
 .heimu,
 .heimu rt {
-  background-color: #252525;
+    background-color: #252525;
 }
 
 .heimu,
@@ -27,39 +27,39 @@ span.heimu a.extiw,
 span.heimu a.extiw:visited,
 span.heimu a.mw-disambig,
 span.heimu a.mw-redirect {
-  transition: color 0.13s linear;
-  color: #252525;
-  text-shadow: none;
+    transition: color 0.13s linear;
+    color: #252525;
+    text-shadow: none;
 }
 
 span.heimu:hover,
 span.heimu:active {
-  color: white;
+    color: white;
 }
 
 span.heimu:hover a,
 a:hover span.heimu {
-  color: lightblue;
+    color: lightblue;
 }
 
 span.heimu:hover a:visited,
 a:visited:hover span.heimu {
-  color: #c5cae9;
+    color: #c5cae9;
 }
 
 span.heimu:hover a.new,
 a.new:hover span.heimu {
-  color: #fcc;
+    color: #fcc;
 }
 
 span.heimu a.new:hover:visited,
 a.new:hover:visited span.heimu {
-  color: #ef9a9a;
+    color: #ef9a9a;
 }
 
 span.heimu:hover a.extiw:visited,
 a.extiw:visited:hover span.heimu {
-  color: #d1c4e9;
+    color: #d1c4e9;
 }
 
 /*阅读更多：https://moegirl.uk/MediaWiki:Gadget-site-styles.css 本文引自萌娘百科(https://zh.moegirl.org)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0》协议。*/

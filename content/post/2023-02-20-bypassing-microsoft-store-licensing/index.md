@@ -2,8 +2,8 @@
 categories: Repost
 date: "2023-02-20T00:00:00Z"
 tags:
-  - Windows
-  - 逆向工程
+    - Windows
+    - 逆向工程
 slug: bypassing-microsoft-store-licensing
 title: 【部分翻译】绕过Microsoft Store应用的运行前正版验证
 ---

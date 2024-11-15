@@ -2,8 +2,8 @@
 categories: Repost
 date: "2020-10-12T00:00:00Z"
 tags:
-  - SCP基金会
-  - 小说
+    - SCP基金会
+    - 小说
 slug: the-shape-of-fireworks
 title: 升起烟火的形状
 ---

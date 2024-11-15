@@ -2,25 +2,17 @@
 categories: Original
 date: "2023-07-31T00:00:00Z"
 tags:
-  - Kaspersky
-  - 音频
+    - Kaspersky
+    - 音频
 slug: kaspersky-pig-button
 title: Kaspersky猪叫声
 ---
 
-<audio
-  id="scream"
-  preload="auto"
-  src="infected_p.wav"
-></audio>
+<audio id="scream" preload="auto" src="infected_p.wav"></audio>
 
 <button class=".btn .btn--primary" onclick="play()" type="button">播放</button>
 
-<a
-  href="infected_p.wav"
-  download
-  >下载</a
->
+<a href="infected_p.wav" download>下载</a>
 
 <!--
 <br>
@@ -29,9 +21,9 @@ title: Kaspersky猪叫声
 -->
 
 <script>
-  var scream = document.getElementById("scream");
-  function play() {
-    scream.currentTime = 0;
-    scream.play();
-  }
+    var scream = document.getElementById("scream");
+    function play() {
+        scream.currentTime = 0;
+        scream.play();
+    }
 </script>

@@ -2,9 +2,9 @@
 categories: Original
 date: "2024-11-08T00:00:00Z"
 tags:
-  - Google
-  - Cloudflare
-  - 前端
+    - Google
+    - Cloudflare
+    - 前端
 slug: cf-set-canonical-header
 title: 通过 Cloudflare 为页面设置规范 Canonical 标头
 ---

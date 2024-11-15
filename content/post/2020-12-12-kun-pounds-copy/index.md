@@ -2,7 +2,7 @@
 categories: Original
 date: "2020-12-12T00:00:00Z"
 tags:
-  - 锟斤拷
+    - 锟斤拷
 slug: kun-pounds-copy
 title: 锟斤拷锟斤拷锟斤拷锟斤拷
 ---
@@ -61,10 +61,10 @@ title: 锟斤拷锟斤拷锟斤拷锟斤拷
 >
 > **錕斤拷**
 >
-> 1. (_[computing](https://en.wiktionary.org/wiki/computing#Noun)_) _A string of [characters](https://en.wiktionary.org/wiki/character#English) occurring in [mojibake](https://en.wiktionary.org/wiki/mojibake#English) in [GBK](<https://en.wikipedia.org/wiki/GBK_(character_encoding)>) environments._
+> 1. (_[computing](https://en.wiktionary.org/wiki/computing#Noun)_) _A string of [characters](https://en.wiktionary.org/wiki/character#English) occurring in [mojibake](https://en.wiktionary.org/wiki/mojibake#English) in [GBK](<https://en.wikipedia.org/wiki/GBK_(character*encoding)>) environments.*
 >
 > #### Usage notes
 >
-> - The traditional form 錕斤拷 is a back-formation of the simplified form [锟斤拷](https://en.wiktionary.org/wiki/锟斤拷#Chinese). In reality only the simplified form appears in this mojibake.
+> -   The traditional form 錕斤拷 is a back-formation of the simplified form [锟斤拷](https://en.wiktionary.org/wiki/锟斤拷#Chinese). In reality only the simplified form appears in this mojibake.
 >
 > From: https://en.wiktionary.org/wiki/%E9%8C%95%E6%96%A4%E6%8B%B7

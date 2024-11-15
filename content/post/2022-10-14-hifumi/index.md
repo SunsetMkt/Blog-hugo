@@ -2,8 +2,8 @@
 categories: Repost
 date: "2022-10-14T00:00:00Z"
 tags:
-  - 蔚蓝档案
-  - 游戏
+    - 蔚蓝档案
+    - 游戏
 slug: hifumi
 title: 《蔚蓝档案》日步美的青春宣言
 ---
@@ -20,9 +20,9 @@ title: 《蔚蓝档案》日步美的青春宣言
             <div><span>我不想看到小梓成为杀人凶手……。</span><span><br><span lang="ja">アズサちゃんが人殺しになるのは嫌です……。</span></span></div>
         </div><br>
 
-        <div>
-            <div><span>那种黑暗又压抑的故事，我不想要。</span><span><br><span lang="ja">そんな暗くて憂鬱なお話、私は嫌なんです。</span></span></div>
-        </div><br>
+plain <div>
+<div><span>那种黑暗又压抑的故事，我不想要。</span><span><br><span lang="ja">そんな暗くて憂鬱なお話、私は嫌なんです。</span></span></div>
+</div><br>
 
         <div>
             <div><span>就算有人说那种故事才真实，才符合这个世界的本质，可我就是不喜欢！</span><span><br><span
@@ -95,10 +95,10 @@ title: 《蔚蓝档案》日步美的青春宣言
             <div><span>我不要梓变成杀人犯。</span><span><br><span lang="ja">アズサちゃんが人殺しになるのは嫌です……。</span></span></div>
         </div><br>
 
-        <div>
-            <div><span>那种……那种令人悲伤又难受的故事，
-                    只会留下苦涩馀味的故事……</span><span><br><span lang="ja">そんな、そんな憂鬱で不愉快な物語、</span></span></div>
-        </div><br>
+plain <div>
+<div><span>那种……那种令人悲伤又难受的故事，
+只会留下苦涩馀味的故事……</span><span><br><span lang="ja">そんな、そんな憂鬱で不愉快な物語、</span></span></div>
+</div><br>
 
         <div>
             <div><span>就算那是对的，即使那就是世界的真相

@@ -2,8 +2,8 @@
 categories: Repost
 date: "2020-09-24T00:00:00Z"
 tags:
-  - EXPLORER
-  - 小说
+    - EXPLORER
+    - 小说
 slug: return-to-the-stars
 title: 【科幻】归向星辰
 ---
