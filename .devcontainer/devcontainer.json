@@ -10,9 +10,9 @@
 			// Update VERSION to pick a specific hugo version.
 			// Example versions: latest, 0.73.0, 0,71.1
 			// Rebuild the container if it already exists to update.
-			"VERSION": "latest",
+			"VERSION": "0.138.0",
 			// Update NODE_VERSION to pick the Node.js version: 12, 14
-			"NODE_VERSION": "14"
+			"NODE_VERSION": "20"
 		}
 	},
 
@@ -28,7 +28,12 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"tamasfe.even-better-toml",
-				"davidanson.vscode-markdownlint"
+				"esbenp.prettier-vscode",
+				"davidanson.vscode-markdownlint",
+				"xiaohuohumax.format-files-by-ignores",
+				"rusnasonov.vscode-hugo",
+				"budparr.language-hugo-vscode",
+				"eliostruyf.vscode-front-matter"
 			]
 		}
 	},
