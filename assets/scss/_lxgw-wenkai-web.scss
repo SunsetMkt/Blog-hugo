@@ -1,8 +1,10 @@
 // @import url(https://unpkg.com/@callmebill/lxgw-wenkai-web@1.501.0/style.css);
 // Not async, load by JavaScript now.
+// https://unpkg.com/lxgw-wenkai-screen-web@1.501.0/style.css
+// https://github.com/CMBill/lxgw-wenkai-screen-web
 
 .lxgw-wenkai {
-    font-family: "LXGW WenKai";
+    font-family: "LXGW WenKai Screen";
     font-weight: normal;
-    --article-font-family: "LXGW WenKai", var(--article-font-family);
+    --article-font-family: "LXGW WenKai Screen", var(--article-font-family);
 }

@@ -79,7 +79,7 @@ URL 参数`eruda=true`。
 
 ### 使用霞鹜文楷字体
 
-使用[LXGW WenKai / 霞鹜文楷](https://github.com/CMBill/lxgw-wenkai-web)。
+使用[LXGW WenKai Screen / 霞鹜文楷屏幕阅读版](https://github.com/CMBill/lxgw-wenkai-screen-web)。
 
 <div class="LXGW-WenKai-btns">
     <a class="link" onclick="localStorage.setItem('LXGW-WenKai','true');location.reload();">打开</a>
