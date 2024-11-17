@@ -377,9 +377,6 @@ body.physHasPhysBodies {
 .debugUI {
     user-select: none;
     -webkit-user-select: none; /* for safari */
-    width: calc(90vw);
-    margin-left: calc(-45vw + 50%);
-    margin-bottom: 2em;
 }
 
 .debugUI input[type="text"] {
