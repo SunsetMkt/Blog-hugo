@@ -18,24 +18,33 @@ const defaultPhysConfigValues = {
     DraggableSelector: [
         "[data-phys]",
         "img",
+        "svg",
         "video",
+        "audio",
+        "h1",
         "h2",
         "h3",
         "h4",
+        "h5",
+        "h6",
         "p",
         "li",
         "a",
+        "span",
         ".youtube-container",
     ].join(", "),
     NeverDraggableSelector: ["[data-phys=none]", "div.gravgun-ground *"].join(
-        ", "
+        ", ",
     ),
     EnableTextBounds: true,
     TextBoundedSelectors: [
         "[data-phys-bounds=text]",
+        "h1",
         "h2",
         "h3",
         "h4",
+        "h5",
+        "h6",
         "p",
         "li",
     ].join(", "),
@@ -84,10 +93,10 @@ class PhysPlayElement {
 
         elem.addEventListener("mousemove", (event) => this.onMouseMove(event));
         elem.addEventListener("mouseenter", (event) =>
-            this.onMouseEnter(event)
+            this.onMouseEnter(event),
         );
         elem.addEventListener("mouseleave", (event) =>
-            this.onMouseLeave(event)
+            this.onMouseLeave(event),
         );
         elem.addEventListener("mousedown", (event) => this.onMouseDown(event));
     }
@@ -127,7 +136,7 @@ class PhysPlayElement {
         PhysPlayUtil.setElementClass(
             this.elem,
             physPlayClassNames.PhysElement_Extractable,
-            bShouldHaveHoverStyle
+            bShouldHaveHoverStyle,
         );
 
         if (bShouldHaveHoverStyle) {
@@ -178,7 +187,7 @@ class PhysPlayElement {
 
         this.isHoveringOverPickupBounds = this.isPointOverGrabbableRegion(
             mouseEvent.clientX,
-            mouseEvent.clientY
+            mouseEvent.clientY,
         );
         this.updateHoverStyle();
     }
@@ -223,7 +232,7 @@ class PhysPlayElement {
         if (
             !this.isPointOverGrabbableRegion(
                 mouseDownEvent.clientX,
-                mouseDownEvent.clientY
+                mouseDownEvent.clientY,
             )
         ) {
             return;
@@ -253,11 +262,11 @@ class PhysPlayElement {
         const onDocumentMouseUp = (mouseUpEvent) => {
             this.elem.ownerDocument.removeEventListener(
                 "mousemove",
-                onDocumentMouseMove
+                onDocumentMouseMove,
             );
             this.elem.ownerDocument.removeEventListener(
                 "mouseup",
-                onDocumentMouseUp
+                onDocumentMouseUp,
             );
 
             this.isMouseDown = false;
@@ -266,7 +275,7 @@ class PhysPlayElement {
 
         this.elem.ownerDocument.addEventListener(
             "mousemove",
-            onDocumentMouseMove
+            onDocumentMouseMove,
         );
         this.elem.ownerDocument.addEventListener("mouseup", onDocumentMouseUp);
 
@@ -277,13 +286,13 @@ class PhysPlayElement {
     playExtractionSoundEffect() {
         if (this.elem.attributes["data-phys-pickup-sound"]) {
             soundEffects.playSound(
-                this.elem.attributes["data-phys-pickup-sound"].value
+                this.elem.attributes["data-phys-pickup-sound"].value,
             );
         }
     }
 
     async extractElement(
-        mouseDownEvent /* optional, to start dragging immediately */
+        mouseDownEvent /* optional, to start dragging immediately */,
     ) {
         if (this.isExtracted) {
             return;
@@ -293,7 +302,7 @@ class PhysPlayElement {
             mouseDownEvent &&
             !this.isPointOverGrabbableRegion(
                 mouseDownEvent.clientX,
-                mouseDownEvent.clientY
+                mouseDownEvent.clientY,
             )
         ) {
             return Promise.reject();
@@ -344,7 +353,7 @@ class PhysPlayElement {
         PhysPlayUtil.forceFixedElementLayoutSize(
             this.elem,
             this.preExtractionClientSize.width + 2, // Account for rounding-down.
-            this.preExtractionClientSize.height + 2
+            this.preExtractionClientSize.height + 2,
         );
 
         // On firefox, once reparented it'll quickly flicker in the top left of the page otherwise.
@@ -381,7 +390,7 @@ class PhysPlayElement {
                 event.stopPropagation();
                 event.cancelBubble = true;
             },
-            { capture: false }
+            { capture: false },
         );
 
         this.elem.addEventListener(
@@ -390,7 +399,7 @@ class PhysPlayElement {
                 event.preventDefault();
                 event.stopPropagation();
             },
-            { capture: true }
+            { capture: true },
         );
 
         // How we'll start dragging the element *after* it's been extracted off the page.
@@ -406,7 +415,7 @@ class PhysPlayElement {
                 event.stopPropagation();
                 this.phys.render.mouse.mousedown(event);
             },
-            { capture: true }
+            { capture: true },
         );
 
         this.phys.mapExtractedElements.set(this.elem, this);
@@ -510,12 +519,12 @@ class PhysPlayElement {
                     fillStyle: "aqua",
                     opacity: 0.5,
                 },
-            }
+            },
         );
 
         Matter.Body.setAngle(
             this.body,
-            this.preExtractionTransformStyle.rotate
+            this.preExtractionTransformStyle.rotate,
         );
         Matter.Composite.add(this.phys.engine.world, [this.body]);
     }
@@ -547,7 +556,7 @@ class PhysPlayElement {
                     this.phys.render.bounds.min.y,
             },
             this.body.angle,
-            this.preExtractionTransformStyle.scale
+            this.preExtractionTransformStyle.scale,
         );
 
         let css = trs.getCSS();
@@ -573,7 +582,7 @@ class PhysPlayElement {
         ) {
             if (this.phys.mapPageElements.has(elem)) {
                 parentPhysPlayElements.push(
-                    this.phys.mapPageElements.get(elem)
+                    this.phys.mapPageElements.get(elem),
                 );
             }
         }
@@ -662,22 +671,22 @@ class PhysPlay {
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.DebugPageElements,
-            this.config.values.DebugPageElements
+            this.config.values.DebugPageElements,
         );
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.DebugPhysics,
-            this.config.values.DebugPhysics
+            this.config.values.DebugPhysics,
         );
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.ShowPhysDebugUI,
-            this.config.values.ShowPhysDebugUI
+            this.config.values.ShowPhysDebugUI,
         );
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.ShowSoundDebugUI,
-            this.config.values.ShowSoundDebugUI
+            this.config.values.ShowSoundDebugUI,
         );
 
         if (this.render) {
@@ -759,7 +768,7 @@ class PhysPlay {
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.HasPhysBodies,
-            this.mapExtractedElements.size > 0
+            this.mapExtractedElements.size > 0,
         );
 
         for (const pair of this.mapExtractedElements) {
@@ -821,7 +830,7 @@ class PhysPlay {
             -500 - 1000,
             100000,
             1000,
-            { isStatic: true }
+            { isStatic: true },
         );
 
         Matter.Composite.add(this.engine.world, [this.bodyGround, bodyCeiling]);
@@ -834,7 +843,7 @@ class PhysPlay {
         }
         const groundEdgeY = Math.min(
             window.innerHeight,
-            this.elemFooter.getBoundingClientRect().top
+            this.elemFooter.getBoundingClientRect().top,
         );
         const groundCenterY = groundEdgeY + 5000;
 
@@ -852,9 +861,9 @@ class PhysPlay {
                     physElem.body,
                     Matter.Vector.create(
                         physElem.body.position.x,
-                        physElem.body.position.y + groundDeltaY
+                        physElem.body.position.y + groundDeltaY,
                     ),
-                    false
+                    false,
                 );
                 physElem.updateTransform(true);
             }
@@ -862,7 +871,7 @@ class PhysPlay {
 
         Matter.Body.setPosition(
             this.bodyGround,
-            Matter.Vector.create(0, groundCenterY)
+            Matter.Vector.create(0, groundCenterY),
         );
     }
 
@@ -976,7 +985,7 @@ class PhysPlayGun {
                     event.preventDefault();
                 }
             },
-            { capture: true }
+            { capture: true },
         );
 
         document.addEventListener(
@@ -987,14 +996,14 @@ class PhysPlayGun {
                     event.preventDefault();
                 }
             },
-            { capture: true }
+            { capture: true },
         );
 
         document.addEventListener("mousedown", (event) =>
-            this.onMouseDown(event)
+            this.onMouseDown(event),
         );
         document.addEventListener("mousemove", (event) =>
-            this.onMouseMove(event)
+            this.onMouseMove(event),
         );
         document.addEventListener("mouseup", (event) => this.onMouseUp(event));
 
@@ -1044,23 +1053,23 @@ class PhysPlayGun {
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.ShowGravGunMessage,
-            true
+            true,
         );
 
         if (wiggleGravGun) {
             PhysPlayUtil.setElementClass(
                 this.elemButton,
                 physPlayClassNames.GravGunButton_ButtonWiggle,
-                false
+                false,
             );
             setTimeout(
                 () =>
                     PhysPlayUtil.setElementClass(
                         this.elemButton,
                         physPlayClassNames.GravGunButton_ButtonWiggle,
-                        true
+                        true,
                     ),
-                0
+                0,
             );
         }
     }
@@ -1069,7 +1078,7 @@ class PhysPlayGun {
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.ShowGravGunMessage,
-            false
+            false,
         );
     }
 
@@ -1143,16 +1152,16 @@ class PhysPlayGun {
         PhysPlayUtil.setElementClass(
             this.elemPhysGun,
             physPlayClassNames.GravGun_Recoil,
-            false
+            false,
         );
         setTimeout(
             () =>
                 PhysPlayUtil.setElementClass(
                     this.elemPhysGun,
                     physPlayClassNames.GravGun_Recoil,
-                    true
+                    true,
                 ),
-            0
+            0,
         );
     }
 
@@ -1168,7 +1177,7 @@ class PhysPlayGun {
             (this.hoveredItem.isExtractable || this.hoveredItem.isExtracted)
         ) {
             this.pickupItem(this.hoveredItem, event).catch(() =>
-                this.dryFire()
+                this.dryFire(),
             );
         } else {
             this.dryFire();
@@ -1204,7 +1213,7 @@ class PhysPlayGun {
             this.hoveredItem = null;
             for (const elem of document.elementsFromPoint(
                 event.clientX,
-                event.clientY
+                event.clientY,
             )) {
                 const physElem =
                     this.phys.mapExtractedElements.get(elem) ??
@@ -1254,27 +1263,27 @@ class PhysPlayGun {
         PhysPlayUtil.setElementClass(
             this.elemButton,
             physPlayClassNames.GravGun_Equipped,
-            this.equipped
+            this.equipped,
         );
         PhysPlayUtil.setElementClass(
             this.elemPhysGun,
             physPlayClassNames.GravGun_Equipped,
-            this.equipped
+            this.equipped,
         );
         PhysPlayUtil.setElementClass(
             this.elemPhysGun,
             physPlayClassNames.GravGun_HoveringOverItem,
-            this.hoveredItem != null
+            this.hoveredItem != null,
         );
         PhysPlayUtil.setElementClass(
             this.elemPhysGun,
             physPlayClassNames.GravGun_HoldingItem,
-            this.heldItem != null
+            this.heldItem != null,
         );
         PhysPlayUtil.setElementClass(
             document.body,
             physPlayClassNames.PhysGunEquipped,
-            this.equipped
+            this.equipped,
         );
     }
 }
@@ -1329,7 +1338,7 @@ class PhysPlayCan extends PhysPlayElement {
         clearTimeout(this.nagPutInTrashTimeout);
         this.nagPutInTrashTimeout = setTimeout(
             () => this.nagPutInTrash(),
-            3000 + Math.random() * 4000
+            3000 + Math.random() * 4000,
         );
     }
 
@@ -1386,7 +1395,7 @@ class PhysPlayTrash extends PhysPlayElement {
         super(phys, elem);
 
         document.addEventListener("scroll", (event) =>
-            this.onDocumentScroll(event)
+            this.onDocumentScroll(event),
         );
     }
 
@@ -1443,7 +1452,7 @@ class PhysPlayTrash extends PhysPlayElement {
         const deltaScrollSinceFreeze = this.frozenScrollTop - window.scrollY;
         const newBodyPosition = Matter.Vector.create(
             this.body.position.x,
-            this.frozenBodyCenterY + deltaScrollSinceFreeze
+            this.frozenBodyCenterY + deltaScrollSinceFreeze,
         );
 
         Matter.Body.setPosition(this.body, newBodyPosition);
@@ -1520,7 +1529,7 @@ class PhysPlayTrash extends PhysPlayElement {
                     fillStyle: "aqua",
                     opacity: 0.5,
                 },
-            }
+            },
         );
         const rightWall = Matter.Bodies.rectangle(
             leftWallMidpoint.x + bodySize.width - wallSize.width,
@@ -1532,7 +1541,7 @@ class PhysPlayTrash extends PhysPlayElement {
                     fillStyle: "aqua",
                     opacity: 0.5,
                 },
-            }
+            },
         );
         const floorSize = {
             width: bodySize.width,
@@ -1555,7 +1564,7 @@ class PhysPlayTrash extends PhysPlayElement {
                     fillStyle: "aqua",
                     opacity: 0.5,
                 },
-            }
+            },
         );
         this.body = Matter.Body.create({
             parts: [leftWall, rightWall, floor],
@@ -1567,7 +1576,7 @@ class PhysPlayTrash extends PhysPlayElement {
 
         Matter.Body.setAngle(
             this.body,
-            this.preExtractionTransformStyle.rotate
+            this.preExtractionTransformStyle.rotate,
         );
         Matter.Composite.add(this.phys.engine.world, [this.body]);
     }
@@ -1606,7 +1615,7 @@ class PhysPlayUtil {
             PhysPlayUtil.forceFixedElementLayoutSize(
                 elemMediaPlaceholder,
                 Number.parseFloat(computedStyle.width),
-                Number.parseFloat(computedStyle.height)
+                Number.parseFloat(computedStyle.height),
             );
 
             return elemMediaPlaceholder;
@@ -1615,7 +1624,7 @@ class PhysPlayUtil {
         const newChildren = [];
         for (const child of elem.childNodes) {
             newChildren.push(
-                PhysPlayUtil.deepCloneElement(child, bCloneMediaAsPlaceholders)
+                PhysPlayUtil.deepCloneElement(child, bCloneMediaAsPlaceholders),
             );
         }
 
@@ -1795,7 +1804,7 @@ class PhysPlayUtil {
             bounds.left,
             bounds.top,
             bounds.right - bounds.left,
-            bounds.bottom - bounds.top
+            bounds.bottom - bounds.top,
         );
     }
 }
@@ -1951,7 +1960,7 @@ class PhysPlayConfig {
         for (const elem of document.querySelectorAll("[data-phys-config]")) {
             const cfgName = elem.attributes["data-phys-config"].value;
             const elemInput = document.querySelector(
-                `[data-phys-config=${cfgName}]`
+                `[data-phys-config=${cfgName}]`,
             );
             if (!elemInput) {
                 continue;
