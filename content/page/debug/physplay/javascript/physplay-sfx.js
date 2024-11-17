@@ -36,7 +36,7 @@ const soundEffectInfo = {
         volume: 0.3,
     },
 
-    // Combine
+    // ~~Combine~~ Civil Protection, actually
     pickupthecan: {
         paths: [
             "physplay/audio/pickupthecan1.mp3",
@@ -112,7 +112,7 @@ class CSoundEffects {
             () => {
                 this.startLoading();
             },
-            { once: true }
+            { once: true },
         );
     }
 
@@ -149,7 +149,7 @@ class CSoundEffects {
             // if loading takes longer than a few hundred ms.
             setTimeout(
                 () => (state.pendingPlayRequestID = null),
-                info.delay + 500
+                info.delay + 500,
             );
         }
 
@@ -200,13 +200,12 @@ class CSoundEffects {
             state.onLoaded = Promise.all(
                 info.paths.map(async (path) => {
                     const arrayBuffer = await fetch(path).then((res) =>
-                        res.arrayBuffer()
+                        res.arrayBuffer(),
                     );
-                    const audioBuffer = await this.audioCtx.decodeAudioData(
-                        arrayBuffer
-                    );
+                    const audioBuffer =
+                        await this.audioCtx.decodeAudioData(arrayBuffer);
                     state.audioBuffers.push(audioBuffer);
-                })
+                }),
             );
 
             this.soundStates.set(name, state);
