@@ -23,7 +23,7 @@ menu:
 URL 参数`eruda=true`。
 
 <div class="eruda-btns">
-    <a class="link" onclick="localStorage.setItem('active-eruda','true');location.reload();">启动Eruda</a>
+    <a class="link" onclick="localStorage.setItem('active-eruda','true');location.reload();">启动Eruda</a>&nbsp;
     <a class="link" onclick="localStorage.removeItem('active-eruda');location.reload();">关闭Eruda</a>
 </div>
 
@@ -71,7 +71,7 @@ URL 参数`eruda=true`。
         setCookie("DisableAnalysis", "true", 0, "." + getMainHost());
       }
     </script>
-    <a class="link" href="javascript:void(0)" onclick="DisableAnalysis();location.reload();">添加禁用标记</a>
+    <a class="link" href="javascript:void(0)" onclick="DisableAnalysis();location.reload();">添加禁用标记</a>&nbsp;
     <a class="link" href="javascript:void(0)" onclick="RmDisableAnalysis();location.reload();">删除禁用标记</a>
 </div>
 
@@ -82,13 +82,20 @@ URL 参数`eruda=true`。
 使用[LXGW WenKai Screen / 霞鹜文楷屏幕阅读版](https://github.com/CMBill/lxgw-wenkai-screen-web)。
 
 <div class="LXGW-WenKai-btns">
-    <a class="link" onclick="localStorage.setItem('LXGW-WenKai','true');location.reload();">打开</a>
+    <a class="link" onclick="localStorage.setItem('LXGW-WenKai','true');location.reload();">打开</a>&nbsp;
     <a class="link" onclick="localStorage.removeItem('LXGW-WenKai');location.reload();">关闭</a>
 </div>
 
 ## Firefox H.265/MPEG-H HEVC 视频播放
 
 在`about:config`将`media.wmf.hevc.enabled`设为`1`。
+
+## 默认图片作者
+
+-   [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
+-   [mymind](https://unsplash.com/@mymind)
+-   [Luke Chesser](https://unsplash.com/@lukechesser)
+-   [Codioful (Formerly Gradienta)](https://unsplash.com/@codioful)
 
 ## 调试信息
 
