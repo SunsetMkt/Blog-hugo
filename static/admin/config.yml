@@ -3,7 +3,9 @@ backend:
   repo: SunsetMkt/Blog-hugo
   branch: main
   use_graphql: true
-  # FIXME: No OAuth settings, won't work except localhost. Read docs.
+  site_domain: https://blog.sunmkt.uk
+  base_url: https://blog.sunmkt.uk
+  auth_endpoint: /api/auth
 
 locale: "zh_Hans"
 

@@ -42,6 +42,10 @@ hugo --minify --gc && find public -type f -size +25M -print -exec rm -vf {} \;
 
 [Tabler](https://tabler.io/icons)
 
+## CMS & OAuth
+
+[netlify-cms-cloudflare-pages](https://github.com/i40west/netlify-cms-cloudflare-pages)
+
 ---
 
 ## Hugo Theme Stack Starter Template
@@ -92,7 +96,7 @@ If you want to build this site using another static page hosting, you need to ma
   
 You need to overwrite build command to install manually Go:
 
-```
+```plain
 amazon-linux-extras install golang1.11 && hugo --gc --minify
 ```
 
@@ -100,7 +104,7 @@ amazon-linux-extras install golang1.11 && hugo --gc --minify
 
 If you are using Node.js 20, you need to overwrite the install command to install manually Go:
 
-```
+```plain
 dnf install -y golang
 ```
 
