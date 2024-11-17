@@ -31,6 +31,7 @@ const defaultPhysConfigValues = {
         "li",
         "a",
         "span",
+        ".menu-social",
         ".youtube-container",
     ].join(", "),
     NeverDraggableSelector: ["[data-phys=none]", "div.gravgun-ground *"].join(
