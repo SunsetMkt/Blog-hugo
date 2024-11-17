@@ -97,3 +97,52 @@ Git 提交和构建信息请参考页脚。
 其他 Hugo 调试信息请参考 JavaScript 控制台。
 
 {{< console-debug >}}
+
+<div>
+    <!-- https://www.half-life.com/en/halflife2/20th -->
+    <link href="physplay/css/physplay.css" rel="stylesheet" type="text/css" />
+    <script
+        type="text/javascript"
+        src="physplay/javascript/fastdom.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="physplay/javascript/physplay-sfx.js"
+    ></script>
+    <script type="text/javascript" src="physplay/javascript/matter.js"></script>
+    <script
+        type="text/javascript"
+        src="physplay/javascript/matter-wrap.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="physplay/javascript/physplay.js"
+    ></script>
+    <div id="gravgun">
+        <div id="gravgunimage" class="gravgunimage"></div>
+        <div id="mobilemessage">
+            <span class="use-mouse">Perhaps with a mouse?</span>
+            <span class="use-desktop">Perhaps on a desktop browser?</span>
+        </div>
+        <img class="can" id="can" src="physplay/image/can.png" />
+        <img class="can intrash intrash1" src="physplay/image/can.png" />
+        <img class="can intrash intrash2" src="physplay/image/can.png" />
+        <div id="trashcan" class="trashcan" data-phys></div>
+        <div class="gravgun-ground"></div>
+        <fieldset id="sounddebug" class="debugUI">
+            <legend>[DEV] Sound Effect Debug</legend>
+            <ul>
+                Loading...
+            </ul>
+        </fieldset>
+        <fieldset id="physdebug" class="debugUI">
+            <legend>[DEV] Physics Debug Config</legend>
+            <ul></ul>
+            <button onclick="phys.config.reset()">Reset Config</button>
+        </fieldset>
+        <div id="physContainer">
+            <canvas id="physCanvas"> </canvas>
+        </div>
+        <div id="preloadImages"></div>
+    </div>
+</div>
