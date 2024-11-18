@@ -1,0 +1,6 @@
+<ul>
+    {{ range site.RegularPages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>
+<!-- https://discourse.gohugo.io/t/html-sitemap/43376/6 -->
