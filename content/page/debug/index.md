@@ -105,6 +105,10 @@ Git 提交和构建信息请参考页脚。
 
 {{< console-debug >}}
 
+## 把罐子扔到垃圾桶里
+
+这部分代码来自[Half-Life 2 Anniversary Update](https://www.half-life.com/en/halflife2/20th)。
+
 <div>
     <!-- https://www.half-life.com/en/halflife2/20th -->
     <link href="physplay/css/physplay.css" rel="stylesheet" type="text/css" />
@@ -128,8 +132,8 @@ Git 提交和构建信息请参考页脚。
     <div id="gravgun">
         <div id="gravgunimage" class="gravgunimage"></div>
         <div id="mobilemessage">
-            <span class="use-mouse">Perhaps with a mouse?</span>
-            <span class="use-desktop">Perhaps on a desktop browser?</span>
+            <span class="use-mouse">用鼠标试试？</span>
+            <span class="use-desktop">用电脑试试？</span>
         </div>
         <img class="can" id="can" src="physplay/image/can.png" />
         <img class="can intrash intrash1" src="physplay/image/can.png" />
