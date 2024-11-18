@@ -6,6 +6,13 @@ backend:
   site_domain: https://blog.sunmkt.uk
   base_url: https://blog.sunmkt.uk
   auth_endpoint: /api/auth
+  commit_messages:
+    create: "cms: create {{collection}} {{slug}}"
+    update: "cms: update {{collection}} {{slug}}"
+    delete: "cms: delete {{collection}} {{slug}}"
+    uploadMedia: "cms: uploadMedia {{path}}"
+    deleteMedia: "cms: deleteMedia {{path}}"
+    openAuthoring: "cms: openAuthoring {{message}}"
 
 locale: "zh_Hans"
 
