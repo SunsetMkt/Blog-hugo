@@ -33,8 +33,7 @@ collections:
       - {
           label: "Categories",
           name: "categories",
-          widget: "options",
-          default: "Original",
+          widget: "select",
           options: ["Original", "Repost"],
         }
       - { label: "Title", name: "title", widget: "string" }
