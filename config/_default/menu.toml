@@ -8,12 +8,28 @@
 #newtab = true
 
 [[social]]
+identifier = "domain"
+name = "Domain"
+url = "https://sunmkt.uk/"
+
+[social.params]
+icon = "link"
+
+[[social]]
 identifier = "email"
 name = "Email"
 url = "mailto:hi@sunmkt.uk"
 
 [social.params]
 icon = "mail"
+
+[[social]]
+identifier = "bluesky"
+name = "Bluesky"
+url = "https://bsky.app/profile/sunmkt.uk"
+
+[social.params]
+icon = "brand-bluesky"
 
 [[social]]
 identifier = "github"
