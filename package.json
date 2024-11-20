@@ -10,5 +10,9 @@
     "build": "hugo --minify --gc",
     "vercel-install-golang": "dnf install -y golang",
     "cloudflare-pages-build": "hugo --minify --gc && find public -type f -size +25M -print -exec rm -vf {} \\;"
+  },
+  "engines": {
+    "node": "~20",
+    "npm": "~10"
   }
 }
