@@ -4,7 +4,7 @@ date: "2020-06-26T00:00:00Z"
 description: unknown加密方案改进版，达到安全、方便、可行性高的目的。
 tags:
     - 文档
-    - EXPLORER
+    - Melancholie
     - 密码学
 slug: a-method-of-safely-delivering-information-in-the-campus-improved
 title: 在校园中安全传递信息的方法改进版
@@ -12,7 +12,7 @@ title: 在校园中安全传递信息的方法改进版
 
 # 在校园中安全传递信息的方法改进版
 
-**_Copyright EXPLORER（2020.6.26）_**
+**_Copyright Melancholie（2020.6.26）_**
 
 **SUMMARY：unknown 加密方案改进版，达到安全、方便、可行性高的目的。**
 

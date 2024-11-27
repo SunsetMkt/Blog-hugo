@@ -2,7 +2,7 @@
 categories: Repost
 date: "2020-09-24T00:00:00Z"
 tags:
-    - EXPLORER
+    - Melancholie
     - 小说
 slug: return-to-the-stars
 title: 【科幻】归向星辰
@@ -24,7 +24,7 @@ Per aspera ad astra.
 
 Universe of my own
 
-Written by EXPLORER
+Written by Melancholie
 
 [@倦暖](https://www.lofter.com/mentionredirect.do?blogId=524430116) 生快 🎂🎉
 
@@ -462,8 +462,8 @@ Written by EXPLORER
 >
 > Em...非常欣赏有能力独自完成无论篇幅长短的科幻小说的作者，
 >
-> 也同样感谢 EXPLORER 让我再次关注 LOFTER 平台，
+> 也同样感谢 Melancholie 让我再次关注 LOFTER 平台，
 >
 > 只是做了一点微小的工作，不足感谢。
 >
-> 再次感谢 EXPLORER 授权转载。
+> 再次感谢 Melancholie 授权转载。

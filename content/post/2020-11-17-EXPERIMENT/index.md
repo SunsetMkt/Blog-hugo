@@ -2,7 +2,7 @@
 categories: Original
 date: "2020-11-17T00:00:00Z"
 tags:
-    - EXPLORER
+    - Melancholie
     - 小说
 slug: EXPERIMENT
 title: EXPERIMENT
@@ -46,7 +46,7 @@ title: EXPERIMENT
 
 “没有 SGP 计划，美好的前进的未来就不可能达到。”
 
-☆EXPLORER
+☆Melancholie
 
 [^1]: 一种腕带型多功能移动设备，大概起到地球中“手机”的作用，但功能绝对是办公用。
 

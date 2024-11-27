@@ -2,7 +2,7 @@
 categories: Original
 date: "2020-10-19T00:00:00Z"
 tags:
-    - EXPLORER
+    - Melancholie
     - 小说
 slug: fiction-in-fiction-becomes-reality
 title: 虚构中的虚构化为真实
@@ -150,7 +150,7 @@ THE END
 
 [^2]: 星联宇宙原词为“展屏”，为便于理解更换为“电脑”。
 
-[^3]: Universe of My Own，EXPLORER 的宇宙。
+[^3]: Universe of My Own，Melancholie 的宇宙。
 
 [^4]: UMO 中存在了 407 年的星际组织。
 
@@ -162,4 +162,4 @@ THE END
 
 [^7]: UMO 中有名的童谣之一。出自梅尔斯星与以斯珠尔星的战乱背景之下。
 
-<!--（加黑加粗）-->**（本文所有名词、诗、童话、人名等皆为EXPLORER版权所有。）**
+<!--（加黑加粗）-->**（本文所有名词、诗、童话、人名等皆为Melancholie版权所有。）**
