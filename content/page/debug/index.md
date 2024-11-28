@@ -109,6 +109,10 @@ Git 提交和构建信息请参考页脚。
 
 {{< console-debug >}}
 
+## Written by Human, Not by AI
+
+[![Written by Human, Not by AI](Written-By-Human-Not-By-AI-Badge-white.svg)](https://notbyai.fyi/)
+
 ## 把罐子扔到垃圾桶里
 
 这部分代码来自[Half-Life 2 Anniversary Update](https://www.half-life.com/en/halflife2/20th)。
