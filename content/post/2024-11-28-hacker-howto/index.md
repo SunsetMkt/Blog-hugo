@@ -8,6 +8,10 @@ slug: hacker-howto
 title: 如何成为黑客
 ---
 
+> 编者注：这里提到的部分/全部内容可能已经过时了。它提到的很多问题都已经被改善，或者不再存在了。
+>
+> 它不被认为是一篇真正的教程。
+
 [Source](https://github.com/zer4tul/hacker-howto/blob/master/README.md)
 
 How To Become A Hacker
