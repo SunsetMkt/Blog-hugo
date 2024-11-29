@@ -13,8 +13,8 @@
             "postDebugTask": "Terminate All Tasks"
         },
         {
-            "command": "hugo --minify --gc",
-            "name": "Run hugo --minify --gc",
+            "command": "hugo --minify --gc --logLevel info",
+            "name": "Run hugo --minify --gc --logLevel info",
             "request": "launch",
             "type": "node-terminal"
             // don't worry it says 'node-terminal', it should work out-of-the-box in VS Code

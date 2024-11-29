@@ -7,9 +7,9 @@
     "prettier-plugin-lint-md": "^1.0.1"
   },
   "scripts": {
-    "build": "hugo --minify --gc",
+    "build": "hugo --minify --gc --logLevel info",
     "vercel-install-golang": "dnf install -y golang",
-    "cloudflare-pages-build": "hugo --minify --gc && find public -type f -size +25M -print -exec rm -vf {} \\;"
+    "cloudflare-pages-build": "hugo --minify --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \\;"
   },
   "engines": {
     "node": "~20",
