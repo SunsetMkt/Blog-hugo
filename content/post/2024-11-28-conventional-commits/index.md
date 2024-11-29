@@ -9,7 +9,7 @@ slug: conventional-commits
 title: "约定式提交 1.0.0"
 ---
 
-[Source](https://github.com/conventional-commits/conventionalcommits.org/blob/master/content/v1.0.0/index.zh-hans.md)
+[Source](https://github.com/conventional-commits/conventionalcommits.org/blob/master/content/v1.0.0/index.zh-hans.md) Creative Commons - CC BY 3.0
 
 ## 概述
 

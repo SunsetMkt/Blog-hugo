@@ -8,7 +8,7 @@ slug: contributor-covenant
 title: "贡献者公约 2.1"
 ---
 
-[Source](https://github.com/EthicalSource/contributor_covenant)
+[Source](https://github.com/EthicalSource/contributor_covenant) CC BY 4.0
 
 ## 我们的承诺
 

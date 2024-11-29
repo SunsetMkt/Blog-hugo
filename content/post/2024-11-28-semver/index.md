@@ -9,7 +9,7 @@ slug: semver
 title: "语义化版本 2.0.0"
 ---
 
-[Source](https://github.com/semver/semver.org/blob/gh-pages/lang/zh-CN/index.md)
+[Source](https://github.com/semver/semver.org/blob/gh-pages/lang/zh-CN/index.md) 知识共享 署名 3.0 (CC BY 3.0)
 
 ## 摘要
 
