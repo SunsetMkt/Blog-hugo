@@ -12,7 +12,7 @@
     "cloudflare-pages-build": "hugo --minify --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \\;"
   },
   "engines": {
-    "node": "~20",
+    "node": "~22",
     "npm": "~10"
   }
 }
