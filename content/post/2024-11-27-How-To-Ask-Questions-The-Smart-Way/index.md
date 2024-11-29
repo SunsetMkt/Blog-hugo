@@ -8,11 +8,13 @@ slug: How-To-Ask-Questions-The-Smart-Way
 title: 提问的智慧
 ---
 
-> 编者注：这里提到的部分内容可能已经过时了。
+> 编者注：这里提到的部分内容可能已经过时了。在[这里](https://github.com/braydie/HowToBeAProgrammer)寻找其他技巧性的指导。
 >
 > 邮件列表是一种比较古老的交流方式，它在现在的常见替代品是 GitHub/GitLab/其他 Git 托管服务的 Issues/Discussion。
 >
 > 不要 take it personally，这里提到的大部分建议都是为了高效/有效地除错，并且有相应的技术原因，但是作者没有写出来。
+>
+> 此文档没有通过伦理审查，阅读在[Hacker News](https://news.ycombinator.com/item?id=35200017)上的争论。
 >
 > 在任何情况下，优先遵守您当前工作的项目的 Code of conduct，大多数情况下是[这个文档](https://github.com/EthicalSource/contributor_covenant)。
 
