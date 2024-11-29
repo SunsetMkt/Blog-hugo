@@ -13,6 +13,8 @@ title: 提问的智慧
 > 邮件列表是一种比较古老的交流方式，它在现在的常见替代品是 GitHub/GitLab/其他 Git 托管服务的 Issues/Discussion。
 >
 > 不要 take it personally，这里提到的大部分建议都是为了高效/有效地除错，并且有相应的技术原因，但是作者没有写出来。
+>
+> 在任何情况下，优先遵守您当前工作的项目的 Code of conduct，大多数情况下是[这个文档](https://github.com/EthicalSource/contributor_covenant)。
 
 [Source](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md) [License](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/LICENSE)
 
