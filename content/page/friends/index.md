@@ -8,7 +8,7 @@ links:
       image: Cedaros.png
     - title: Melancholie
       description: "“他轻易地坠入了那虚无的深渊。”"
-      website: http://lwtumo.wikidot.com/
+      website: https://melanastra.xyz/
       image: Melancholie.png
     - title: Mori Meina
       description: "Stop Doing IT Jobs!!!!!"
