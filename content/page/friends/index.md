@@ -7,7 +7,7 @@ links:
       website: https://angelkawaii.xyz/
       image: Cedaros.png
     - title: Melancholie
-      description: "“他轻易地坠入了那虚无的深渊。”"
+      description: "愿阳光照亮我的脸，玫瑰盛开在我的脚边。"
       website: https://melanastra.xyz/
       image: Melancholie.png
     - title: Mori Meina
