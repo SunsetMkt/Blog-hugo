@@ -1,6 +1,8 @@
 [build.environment]
-HUGO_VERSION = "0.138.0"
+HUGO_VERSION = "0.139.3"
+NODE_VERSION = "22"
+GO_VERSION = "1.23.3"
 
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "hugo --minify --gc --logLevel info"
