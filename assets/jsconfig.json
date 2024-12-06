@@ -2,7 +2,9 @@
  "compilerOptions": {
   "baseUrl": ".",
   "paths": {
-   "*": null
+   "*": [
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!cai!jimmy\\hugo-theme-stack\\v3@v3.29.0\\assets\\*"
+   ]
   }
  }
 }
