@@ -10,4 +10,7 @@ slug: infinitynikki-unpack
 title: 《无限暖暖》的资源文件解包
 ---
 
-值得注意的参考资料：[1](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594) [2](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204)
+-   [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)
+-   [获取 Keychain](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204)
+-   [在 GitHub 上的 Keychain](https://github.com/kanren3/InfinityNikki)
+-   [序列化（用途未知）](https://github.com/NikkiTools/perfect)
