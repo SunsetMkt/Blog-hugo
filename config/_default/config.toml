@@ -3,6 +3,7 @@ baseurl = "https://blog.sunmkt.uk"
 languageCode = "zh-cn"
 title = "Sunset 的重构博客"
 disablePathToLower = true
+enableGitInfo = true
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
