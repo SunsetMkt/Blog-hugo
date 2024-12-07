@@ -3,6 +3,7 @@ categories: Repost
 date: "2024-11-30T00:00:00Z"
 tags:
     - 艺术
+    - 视频
 slug: a-pair-of-pigs
 title: "一对猪（约1850）"
 ---
