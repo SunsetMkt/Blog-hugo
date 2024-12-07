@@ -8,6 +8,8 @@ slug: how-to-install-minecraft
 title: 教程：如何安装并运行Minecraft国际版(For Windows)(非正版)
 ---
 
+> 这里提到的所有信息都已经过时了，请参考[Hello Minecraft! Launcher](https://github.com/HMCL-dev/HMCL)的说明。
+
 **本文内所有链接只保证发布时可用。**
 
 ### 如果您不想看这篇文章并且不在意游戏质量

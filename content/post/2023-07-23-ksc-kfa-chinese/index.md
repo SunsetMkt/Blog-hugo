@@ -9,11 +9,13 @@ slug: ksc-kfa-chinese
 title: 安装Kaspersky Security Cloud Free简体中文版或卡巴斯基免费版
 ---
 
-适用于高级用户的补充材料：[卡巴斯基免费版的 Windows 安装包下载 URL 获取]({{< ref "2024-02-17-kfa" >}})
+> 这里提到的部分信息已经过时了，建议阅读：
+>
+> 适用于高级用户的补充材料：[卡巴斯基免费版的 Windows 安装包下载 URL 获取]({{< ref "2024-02-17-kfa" >}})
 
 ## 卡巴斯基免费版（推荐）
 
-如果 Kaspersky 彻底移除了 Kaspersky Security Cloud 产品，您可以尝试下载卡巴斯基标准版（[在线安装链接](https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.15.8.493/startup.exe) [备用链接](zh_std_setup/startup.exe)）并使用激活码：
+~~如果 Kaspersky 彻底移除了 Kaspersky Security Cloud 产品，~~您可以尝试下载卡巴斯基标准版（[在线安装链接](https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.15.8.493/startup.exe) [备用链接](zh_std_setup/startup.exe)）并使用激活码：
 
 > 简体中文版在线安装包 URL 格式是：
 >
@@ -65,7 +67,7 @@ https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=50036
 
 ---
 
-Kaspersky Security Cloud Free 是个人认为卡巴斯基系列免费版的最优（设置项、其他非杀毒工具/功能）产品（截至 2023 年初，目前推荐卡巴斯基免费版），但是官方提供的下载渠道不包括简体中文版，本文描述如何安装 Kaspersky Security Cloud 简体中文版。
+~~Kaspersky Security Cloud Free 是个人认为卡巴斯基系列免费版的最优（设置项、其他非杀毒工具/功能）产品~~（截至 2023 年初，目前推荐卡巴斯基免费版），但是官方提供的下载渠道不包括简体中文版，本文描述如何安装 Kaspersky Security Cloud 简体中文版。
 
 ## KSC Free 下载
 
