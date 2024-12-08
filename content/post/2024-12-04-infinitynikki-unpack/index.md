@@ -7,16 +7,18 @@ tags:
     - 逆向工程
     - 游戏
 slug: infinitynikki-unpack
-title: 《无限暖暖》的资源文件解包
+title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 ---
 
 -   [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)（需要）by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
 -   [特定版本的 Fmodel](https://github.com/LukeFZ/FModel)（或者）by [LukeFZ](https://github.com/LukeFZ)
 -   [有关 AES Key 的讨论](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204)
 -   [在 GitHub 上的 AES Key](https://github.com/kanren3/InfinityNikki)
+-   [在 GitHub 上的 Mapping](https://github.com/CRiQSCLAN/Infinity-Nikki-SDK)
 -   [序列化实现](https://github.com/NikkiTools/perfect) by [LukeFZ](https://github.com/LukeFZ)
 -   [已提取资源](https://www.xivmodarchive.com/modid/123983) by [Crow](https://www.xivmodarchive.com/user/158572)
 -   [制作 Mod 存在的技术问题](https://gamebanana.com/threads/226150)
+-   [AutoHotkey 脚本](https://github.com/Kramar1337/InfinityNikki-AHK-flex)
 
 ## 获取用于 umodel 的 AES Key 列表（需要）
 
@@ -51,3 +53,9 @@ Endpoint: `https://gacha.lukefz.xyz/infinitynikki/keys`
 Expression: `$['mainKey','dynamicKeys']`
 
 配置完成后，在`AES`界面点击`Refresh`。
+
+### Endpoint Configuration (Mapping)
+
+Endpoint: `https://gacha.lukefz.xyz/infinitynikki/mappings`
+
+Expression: `$['url','filename']`
