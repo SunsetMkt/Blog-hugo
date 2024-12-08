@@ -10,6 +10,8 @@ slug: infinitynikki-unpack
 title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 ---
 
+## 有用的链接
+
 -   [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)（需要）by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
 -   [特定版本的 Fmodel](https://github.com/LukeFZ/FModel)（或者）by [LukeFZ](https://github.com/LukeFZ)
 -   [有关 AES Key 的讨论](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204)
@@ -63,3 +65,20 @@ Expression: `$['mainKey','dynamicKeys']`
 Endpoint: `https://gacha.lukefz.xyz/infinitynikki/mappings`
 
 Expression: `$['url','filename']`
+
+## 通用工具
+
+-   [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
+-   [AESDumpster](https://github.com/GHFear/AESDumpster)
+-   [Reqable](https://reqable.com/en-US/)
+-   [Dumper-7](https://github.com/Encryqed/Dumper-7)
+-   [RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS)
+-   [UnrealMappingsDumper](https://github.com/TheNaeem/UnrealMappingsDumper)
+-   [UE Viewer](https://www.gildor.org/en/projects/umodel)
+-   [FModel](https://github.com/4sval/FModel)
+-   [UnrealPak](https://github.com/EpicGames/UnrealEngine)
+-   [UnrealPakViewer](https://github.com/jashking/UnrealPakViewer)
+-   [wwiser](https://github.com/bnnm/wwiser)
+-   [vgmstream](https://github.com/vgmstream/vgmstream)
+-   [FFmpeg](https://github.com/FFmpeg/FFmpeg)
+-   [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/)
