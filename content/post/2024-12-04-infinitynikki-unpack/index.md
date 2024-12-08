@@ -49,3 +49,5 @@ UE Versions: `GAME_InfinityNikki`
 Endpoint: `https://gacha.lukefz.xyz/infinitynikki/keys`
 
 Expression: `$['mainKey','dynamicKeys']`
+
+配置完成后，在`AES`界面点击`Refresh`。
