@@ -10,10 +10,13 @@ slug: infinitynikki-unpack
 title: 《无限暖暖》的资源文件解包
 ---
 
--   [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)（需要）
+-   [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)（需要）by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
+-   [特定版本的 Fmodel](https://github.com/LukeFZ/FModel) by [LukeFZ](https://github.com/LukeFZ)
 -   [有关 AES Key 的讨论](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204)
 -   [在 GitHub 上的 AES Key](https://github.com/kanren3/InfinityNikki)
 -   [序列化实现](https://github.com/NikkiTools/perfect) by [LukeFZ](https://github.com/LukeFZ)
+-   [已提取资源](https://www.xivmodarchive.com/modid/123983) by [Crow](https://www.xivmodarchive.com/user/158572)
+-   [制作 Mod 存在的技术问题](https://gamebanana.com/threads/226150)
 
 ## 获取用于 umodel 的 AES Key 列表（需要）
 
