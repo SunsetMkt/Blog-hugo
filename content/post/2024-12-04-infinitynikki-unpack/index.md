@@ -12,8 +12,8 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 
 ## 有用的链接
 
--   [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)（需要）by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
--   [特定版本的 Fmodel](https://github.com/LukeFZ/FModel)（或者）by [LukeFZ](https://github.com/LukeFZ)
+-   [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)（基础）by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
+-   [特定版本的 Fmodel](https://github.com/LukeFZ/FModel)（推荐）by [LukeFZ](https://github.com/LukeFZ)
 -   [有关 AES Key 的讨论](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204)
 -   [在 GitHub 上的 AES Key](https://github.com/kanren3/InfinityNikki)
 -   [在 GitHub 上的 Mapping](https://github.com/CRiQSCLAN/Infinity-Nikki-SDK)
@@ -22,7 +22,7 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 -   [制作 Mod 存在的技术问题](https://gamebanana.com/threads/226150)
 -   [AutoHotkey 脚本](https://github.com/Kramar1337/InfinityNikki-AHK-flex)
 
-## 获取用于 umodel 的 AES Key 列表（需要）
+## 获取用于 umodel 的 AES Key 列表（基础）
 
 感谢[LukeFZ](https://github.com/LukeFZ)创建了这个 API。
 
@@ -42,7 +42,7 @@ with open("keys.txt", "w", encoding="utf-8") as f:
         f.write("0x" + key + "\n")
 ```
 
-## 配置 Fmodel（或者）
+## 配置 Fmodel（推荐）
 
 Archive Directory: 包含 InfinityNikki.exe 的目录
 
