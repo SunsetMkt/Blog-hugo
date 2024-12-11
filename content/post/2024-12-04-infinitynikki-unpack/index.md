@@ -66,6 +66,10 @@ Endpoint: `https://gacha.lukefz.xyz/infinitynikki/mappings`
 
 Expression: `$['url','filename']`
 
+## 手动获取 AES Key（TODO）
+
+客户端获取 Key 的过程可能与对`https://api.infoldgames.com/v1/gameconfig/parameter`的请求有关，关键词包含`PACDKC`。
+
 ## 通用工具
 
 -   [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
