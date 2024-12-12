@@ -28,3 +28,7 @@ sfc /scannow
 ## 如果没用
 
 [使用 Windows 更新修复电脑问题](https://support.microsoft.com/zh-cn/windows/%E4%BD%BF%E7%94%A8-windows-%E6%9B%B4%E6%96%B0%E4%BF%AE%E5%A4%8D%E7%94%B5%E8%84%91%E9%97%AE%E9%A2%98-497ac6da-7cac-4641-82a5-f50398d879a0)
+
+## 如果也没用
+
+[下载 Windows](https://www.microsoft.com/zh-cn/software-download/windows11)，保留应用和文件（不适用于 Insider 降级），安装。
