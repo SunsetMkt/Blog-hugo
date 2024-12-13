@@ -9,7 +9,7 @@ title: "林三土: “政治正确”与“言论自由” | C讲坛"
 
 [Source](https://matters.town/a/i4smnnqaca1g) CC BY-NC-ND 2.0 授权
 
-7 月 24 日晚上，我在“C 计划”和“3ESPACE”主办的“C 讲坛”中做了一次题为《“政治正确”和言论自由》的讲座。以下是录音整理稿，首发“C 计划”公众号（https://mp.weixin.qq.com/s/vp5AloCVHZ_CzvVETp5TDA），由志愿者**@笨拿拿、ATOMIC、Z.xs、孑、尹小雨** 整理，由叶明欣、廖廖、音十悦编辑，特此致谢。 由于讲座时间的限制，很多问题只能浅尝辄止，还请大家不吝批判。
+7 月 24 日晚上，我在“C 计划”和“3ESPACE”主办的“C 讲坛”中做了一次题为《“政治正确”和言论自由》的讲座。以下是录音整理稿，首发“C 计划”公众号（[https://mp.weixin.qq.com/s/vp5AloCVHZ_CzvVETp5TDA](https://mp.weixin.qq.com/s/vp5AloCVHZ_CzvVETp5TDA)），由志愿者**@笨拿拿、ATOMIC、Z.xs、孑、尹小雨** 整理，由叶明欣、廖廖、音十悦编辑，特此致谢。 由于讲座时间的限制，很多问题只能浅尝辄止，还请大家不吝批判。
 
 ---
 
