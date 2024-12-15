@@ -6,6 +6,10 @@ links:
       description: "In solitude, where we are least alone."
       website: https://angelkawaii.xyz/
       image: Cedaros.png
+    - title: Delta Maya
+      description: "Problem Solver. Life Enthusiast."
+      website: https://delm.dev/
+      image: 118270686.jpg
     - title: Melancholie
       description: "愿阳光照亮我的脸，玫瑰盛开在我的脚边。"
       website: https://melanastra.xyz/
