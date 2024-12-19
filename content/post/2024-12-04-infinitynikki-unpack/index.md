@@ -22,6 +22,10 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 -   [制作 Mod 存在的技术问题](https://gamebanana.com/threads/226150)
 -   [AutoHotkey 脚本](https://github.com/Kramar1337/InfinityNikki-AHK-flex)
 
+> 下面有关 AES Key 的部分可能仅对[Infinity Nikki](https://store.epicgames.com/en-US/p/infinity-nikki-71fc64)（国际版）有效。
+>
+> 在中国大陆发布的版本可能使用不同的 Key。
+
 ## 获取用于 umodel 的 AES Key 列表（基础）
 
 感谢[LukeFZ](https://github.com/LukeFZ)创建了这个 API。
