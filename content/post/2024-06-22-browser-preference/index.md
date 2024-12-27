@@ -47,7 +47,8 @@ Windows Registry Editor Version 5.00
 "BraveWalletDisabled"=dword:00000001
 "BraveVPNDisabled"=dword:00000001
 "BraveAIChatEnabled"=dword:00000000
-"IPFSEnabled"=dword:00000000
 "NewTabPageLocation"="https://search.brave.com"
 "PasswordManagerEnabled"=dword:00000000
+"TorDisabled"=dword:00000001
+"DnsOverHttpsMode"="automatic"
 ```
