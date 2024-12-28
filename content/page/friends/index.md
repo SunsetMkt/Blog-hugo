@@ -22,6 +22,10 @@ links:
       description: "Asahi Lina and Cyan Nyan, a VTuber yuri couple spreading love, knowledge, and positivity!"
       website: https://blog.thgirls.yt/
       image: TokyoHackerGirls.png
+    - title: "worable's blog"
+      description: 永远相信美好的事情即将发生
+      website: http://worable.cncloud.cloud/
+      image: worable.jpg
 menu:
     main:
         weight: 4
