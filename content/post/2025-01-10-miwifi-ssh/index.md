@@ -10,7 +10,7 @@ title: 小米路由器开启SSH
 
 [xmir-patcher](https://github.com/openwrt-xiaomi/xmir-patcher)提供了非常易用的漏洞利用方法，可以在小米路由器上开启 SSH，也参考[SSH 密码生成的前端方案](https://github.com/ddawx123/miwifi_sshpwd_generator)。
 
-小米路由器是一个嵌入式 Linux 设备。开启 SSH 后的一个应用是[ShellCrash](https://github.com/juewuy/ShellCrash)，由于性能原因，没有更好的应用了。
+小米路由器是一个基于修改版 OpenWrt 的嵌入式 Linux 设备。开启 SSH 后的一个应用是[ShellCrash](https://github.com/juewuy/ShellCrash)，由于性能原因，没有更好的应用了。
 
 不要期待它一定会有可用的第三方固件，但如果一定想要的话，可以检查[immortalwrt](https://github.com/immortalwrt/immortalwrt)或其他开源固件，不推荐使用私有/付费的闭源固件。
 
