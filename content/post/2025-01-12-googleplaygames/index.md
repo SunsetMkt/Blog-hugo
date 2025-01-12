@@ -14,3 +14,5 @@ title: "Google Play 游戏电脑版"
 -   [Google play games on PC hacking & reaserch theard](https://xdaforums.com/t/google-play-games-on-pc-hacking-reaserch-theard.4656397/)
 
 **遗憾的是，它的 Play 商店只允许下载游戏，不是一个合格的替代品。**
+
+也可尝试：[MSI App Player](https://www.msi.com/Landing/appplayer)。
