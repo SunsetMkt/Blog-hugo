@@ -2,7 +2,7 @@
     <div class="not-found-card">
         <h1 class="article-title">{{ T "notFound.title" }}</h1>
         <h2 class="article-subtitle">{{ T "notFound.subtitle" }}</h2>
-        <p class="article-description"><a href="#" id="back-to-old">我们正在将 Jekyll 引擎替换为 Hugo 引擎，部分页面可能有变动或不再被支持。您可尝试点击此处以回到旧版博客的对应页面。</a></p>
+        <!--<p class="article-description"><a href="#" id="back-to-old">我们正在将 Jekyll 引擎替换为 Hugo 引擎，部分页面可能有变动或不再被支持。您可尝试点击此处以回到旧版博客的对应页面。</a></p>-->
     </div>
 
     {{- $query := first 1 (where .Site.Pages "Layout" "==" "search") -}}
@@ -41,8 +41,8 @@
 
             document.getElementById('searchInput').setAttribute('value', searchKeyword);
 
-            const backToOld = document.getElementById('back-to-old');
-            backToOld.href = "https://blog2.sunmkt.uk" + wrongUrl.pathname;
+            // const backToOld = document.getElementById('back-to-old');
+            // backToOld.href = "https://blog2.sunmkt.uk" + wrongUrl.pathname;
         </script>
     {{- end -}}
     {{ partialCached "footer/footer" . }}
