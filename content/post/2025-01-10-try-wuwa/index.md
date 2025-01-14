@@ -8,4 +8,4 @@ slug: try-wuwa
 title: 《鸣潮》是个好游戏
 ---
 
-现在立刻[尝试它](https://store.epicgames.com/zh-CN/p/wuthering-waves-76ebc5)。
+现在立刻[尝试它](https://wutheringwaves.kurogames.com/zh-tw/)或[在 Epic 上查看](https://store.epicgames.com/zh-CN/p/wuthering-waves-76ebc5)。
