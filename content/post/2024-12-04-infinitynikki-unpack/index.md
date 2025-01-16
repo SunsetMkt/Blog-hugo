@@ -19,7 +19,7 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 -   [在 GitHub 上的 Mapping](https://github.com/CRiQSCLAN/Infinity-Nikki-SDK)
 -   [配置文件序列化实现](https://github.com/NikkiTools/perfect) by [LukeFZ](https://github.com/LukeFZ)
 -   [已提取资源](https://www.xivmodarchive.com/modid/123983) by [Crow](https://www.xivmodarchive.com/user/158572)
--   [制作 Mod 存在的技术问题](https://gamebanana.com/threads/226150)
+-   ~~[制作 Mod 存在的技术问题](#https://gamebanana.com/threads/226150)~~ 由于厌女评论和无价值讨论，已移除。
 -   [AutoHotkey 脚本](https://github.com/Kramar1337/InfinityNikki-AHK-flex)
 
 > 下面有关 AES Key 的部分仅在[Infinity Nikki](https://store.epicgames.com/en-US/p/infinity-nikki-71fc64)（国际版）上测试过。
