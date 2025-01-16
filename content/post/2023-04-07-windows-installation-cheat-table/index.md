@@ -24,7 +24,9 @@ Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts �
 
 不建议：~~[Windows 10（October 14, 2025 停止支持）](https://www.microsoft.com/zh-cn/software-download/windows10)~~
 
-> 如不显示 ISO 下载，使用开发人员工具切换 UserAgent 到 Apple 设备（iPad 等），刷新。
+如果一定要使用 Windows 10：[Windows LTSC Download](https://massgrave.dev/windows_ltsc_links)
+
+如果您在俄罗斯，可以尝试由[massgravel](https://github.com/massgravel)提供的[msdl](https://msdl.gravesoft.dev/)。
 
 ### ISO 写入 USB 存储设备
 
