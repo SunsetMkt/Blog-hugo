@@ -13,7 +13,7 @@ title: 移除游戏的Steam验证
 
 ## [goldberg_emulator](https://gitlab.com/Mr_Goldberg/goldberg_emulator)
 
-绕过`Steamworks`验证。
+绕过`Steamworks API`验证。
 
 替换`steam_api(64).dll`并期待它能工作。
 
@@ -28,3 +28,11 @@ title: 移除游戏的Steam验证
 ## [SteamAutoCracker](https://github.com/BigBoiCJ/SteamAutoCracker)
 
 自动化应用破解。
+
+## GreenLuma
+
+不修改游戏文件，而是干预 Steam 客户端本身。
+
+[CN_GreenLumaGUI](https://github.com/clinlx/CN_GreenLumaGUI)
+
+[GreenLuma](https://cs.rin.ru/forum/viewtopic.php?f=10&t=103709)
