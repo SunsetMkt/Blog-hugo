@@ -24,3 +24,7 @@ title: 移除游戏的Steam验证
 ## [Steamless](https://github.com/atom0s/Steamless)
 
 移除`SteamStub` DRM（若存在）。
+
+## [SteamAutoCracker](https://github.com/BigBoiCJ/SteamAutoCracker)
+
+自动化应用破解。
