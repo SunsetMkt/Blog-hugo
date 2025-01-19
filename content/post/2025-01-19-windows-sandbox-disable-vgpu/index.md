@@ -23,3 +23,5 @@ title: Windows Sandbox 在默认启用 vGPU 的状态下无法启动，报错 0x
 并使用此配置启动 Windows Sandbox。
 
 这显然是一个 Windows Bug，等待来自 Microsoft 的修复。
+
+备注：24H2 以上的 Windows Sandbox 有在 Microsoft Store 上的部件，如果它没有自动下载，从[这里](https://apps.microsoft.com/detail/9nsmxc3nb0hn)手动触发安装。
