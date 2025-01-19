@@ -10,7 +10,7 @@ title: IDA Pro 9.0.241217 SP1 已泄露（含破解）
 [链接到种子下载页面](https://web.archive.org/web/20250115023908/https://kaede.jp.net/fkhexrays/)
 
 <!--
-或者直接使用此[磁力链接](magnet:?xt=urn:btih:96db6c6bf7648a647cbac67ab07c5d0926ff66ca&dn=ida90sp1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.hotplug.ru%3A2710%2Fannounce&tr=https%3A%2F%2Ftrackers.mlsub.net%3A443%2Fannounce&tr=udp%3A%2F%2Fevan.im%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.renfei.net%3A8080%2Fannounce&tr=http%3A%2F%2Fipv4.rer.lol%3A2710%2Fannounce&tr=https%3A%2F%2Ftracker.lilithraws.org%3A443%2Fannounce)。
+5oiW6ICF55u05o6l5L2/55So5q2kW+ejgeWKm+mTvuaOpV0obWFnbmV0Oj94dD11cm46YnRpaDo5NmRiNmM2YmY3NjQ4YTY0N2NiYWM2N2FiMDdjNWQwOTI2ZmY2NmNhJmRuPWlkYTkwc3AxJnRyPXVkcCUzQSUyRiUyRnRyYWNrZXIub3BlbnRyYWNrci5vcmclM0ExMzM3JTJGYW5ub3VuY2UmdHI9dWRwJTNBJTJGJTJGZXhwbG9kaWUub3JnJTNBNjk2OSUyRmFubm91bmNlJnRyPXVkcCUzQSUyRiUyRnJldHJhY2tlci5ob3RwbHVnLnJ1JTNBMjcxMCUyRmFubm91bmNlJnRyPWh0dHBzJTNBJTJGJTJGdHJhY2tlcnMubWxzdWIubmV0JTNBNDQzJTJGYW5ub3VuY2UmdHI9dWRwJTNBJTJGJTJGZXZhbi5pbSUzQTY5NjklMkZhbm5vdW5jZSZ0cj1odHRwJTNBJTJGJTJGdHJhY2tlci5yZW5mZWkubmV0JTNBODA4MCUyRmFubm91bmNlJnRyPWh0dHAlM0ElMkYlMkZpcHY0LnJlci5sb2wlM0EyNzEwJTJGYW5ub3VuY2UmdHI9aHR0cHMlM0ElMkYlMkZ0cmFja2VyLmxpbGl0aHJhd3Mub3JnJTNBNDQzJTJGYW5ub3VuY2Up44CC
 -->
 
 Via [IDA_PRO_CHAT](https://t.me/ida_pro_chat)
