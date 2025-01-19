@@ -29,10 +29,12 @@ title: 移除游戏的Steam验证
 
 自动化应用破解。
 
-## GreenLuma
+## GreenLuma 及类似 Steam 客户端注入方案
 
 不修改游戏文件，而是干预 Steam 客户端本身。
 
-[CN_GreenLumaGUI](https://github.com/clinlx/CN_GreenLumaGUI)
+[CN_GreenLumaGUI](https://github.com/clinlx/CN_GreenLumaGUI)（基于闭源软件）
 
-[GreenLuma](https://cs.rin.ru/forum/viewtopic.php?f=10&t=103709)
+[GreenLuma](https://cs.rin.ru/forum/viewtopic.php?f=10&t=103709)（闭源软件）
+
+[SteamTools](https://steamtools.net/)（闭源软件）
