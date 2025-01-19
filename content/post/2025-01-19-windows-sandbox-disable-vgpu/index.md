@@ -4,7 +4,7 @@ date: "2025-01-19T00:00:00Z"
 tags:
     - Windows
 slug: windows-sandbox-disable-vgpu
-title: Windows Sandbox 在默认启用 vGPU 的状态下无法启用，报错 0x80072746
+title: Windows Sandbox 在默认启用 vGPU 的状态下无法启动，报错 0x80072746
 ---
 
 有[报告](https://answers.microsoft.com/en-us/windows/forum/all/windows-sandbox-no-longer-working-after-kb5046740/70cc9a3c-03e8-4cc0-82b1-5c95fa551f66)称，安装 KB5046740 更新后，Windows Sandbox 报错 0x80072746。
