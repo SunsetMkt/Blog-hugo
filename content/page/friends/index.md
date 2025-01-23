@@ -5,7 +5,7 @@ links:
     - title: Cascade Kobayashi
       description: "工程师猫娘"
       website: https://cascade.moe/
-      image: cascade.webp
+      image: Cascade.webp
     - title: Cedaros
       description: "In solitude, where we are least alone."
       website: https://angelkawaii.xyz/
