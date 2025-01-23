@@ -113,3 +113,9 @@ title: 我的软件清单
 -   开源的远程控制工具 [RustDesk](https://rustdesk.com/zh-cn/)
 -   为游戏设计的开源远程控制工具 [Sunshine](https://github.com/LizardByte/Sunshine)
 -   为游戏设计的闭源远程控制工具 [Parsec](https://parsec.app/)
+
+## 网络
+
+-   开源的虚拟组网服务 [Tailscale](https://tailscale.com/)
+-   反网络审查 Clash GUI [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
+-   反网络审查 [GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI)
