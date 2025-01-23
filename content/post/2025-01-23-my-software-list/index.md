@@ -92,11 +92,15 @@ title: 我的软件清单
 -   杀毒软件 [Bitdefender](https://www.bitdefender.com/en-us/consumer/free-antivirus)
 -   杀毒软件 [Kaspersky](https://www.kaspersky.com/downloads/free-antivirus)
 -   开源密码管理器 [Bitwarden](https://bitwarden.com/)
+-   GPG [Gpg4win](https://www.gpg4win.org/)
+-   文件加密 [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
+-   沙箱 [Sandboxie](https://github.com/sandboxie-plus/Sandboxie)
 
 ## 体验优化/运行库/杂项
 
 -   Windows 工具 [PowerToys](https://github.com/microsoft/PowerToys)
 -   Microsoft Visual C++ Redistributable Runtimes [vcredist](https://github.com/abbodi1406/vcredist)
+-   Windows 工具 [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite)
 
 ## 文件系统/硬盘工具/启动
 
