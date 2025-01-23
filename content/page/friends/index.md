@@ -38,3 +38,10 @@ slug: friends
 ---
 
 按字母表顺序排列，CJK 字符置后。
+
+```plain
+名称（标题）：Sunset Mikoto
+描述（副标题）：Lead Programmer of Sunset Edu. & Tech. Group.
+链接（主页）：https://sunmkt.uk/
+图片（不支持站外引用）：https://sunmkt.uk/images/icon/logo_pride.png
+```
