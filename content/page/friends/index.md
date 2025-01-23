@@ -10,6 +10,10 @@ links:
       description: "In solitude, where we are least alone."
       website: https://angelkawaii.xyz/
       image: Cedaros.png
+    - title: Cynosura
+      description: "Feel free to contact me."
+      website: https://cynosura.one/
+      image: Cynosura.webp
     - title: Delta Maya
       description: "Problem Solver. Life Enthusiast."
       website: https://delm.dev/
