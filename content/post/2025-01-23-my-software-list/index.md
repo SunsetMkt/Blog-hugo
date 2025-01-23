@@ -24,6 +24,11 @@ title: 我的软件清单
 -   [Microsoft Office](https://gravesoft.dev/office_c2r_links)
 -   兼容性替代 [WPS Office](https://raincandy.tech/wpsoffice_umrse/)
 -   开源的办公套件 [LibreOffice](https://www.libreoffice.org/)
+-   语音识别 [faster-whisper-GUI](https://github.com/CheshireCC/faster-whisper-GUI)
+-   手机连接 [KDE Connect](https://kdeconnect.kde.org/)
+-   将文件分享到附近的设备 [LocalSend](https://github.com/localsend/localsend)
+-   截图 [PixPin](https://pixpin.cn/)
+-   OCR [Umi-OCR](https://github.com/hiroi-sora/Umi-OCR)
 
 ## 多媒体
 
@@ -33,6 +38,7 @@ title: 我的软件清单
 -   开源的媒体播放器 [VLC media player](https://www.videolan.org/vlc/)
 -   易用的媒体播放器 [Potplayer](https://potplayer.daum.net/)
 -   杰出且开源的三维图形编辑器 [Blender](https://www.blender.org/)
+-   视频压制 [小丸工具箱](https://maruko.appinn.me/)
 
 ## 命令行
 
@@ -68,6 +74,12 @@ title: 我的软件清单
 -   闭源重量级 IDE [Visual Studio](https://visualstudio.microsoft.com/)
 -   可携带的文本编辑器 [Notepad++](https://notepad-plus-plus.org/)
 -   免费 AI 代码补全 [Codeium](https://codeium.com/)
+-   开源逆向工程工具 [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
+-   闭源逆向工程工具 [IDA Pro](https://web.archive.org/web/20250115023908/https://kaede.jp.net/fkhexrays/)
+-   简单加密实验 [CyberChef](https://github.com/gchq/CyberChef)
+-   API 抓包调试 [Reqable](https://reqable.com/zh-CN/)
+-   Android 提权 [Magisk](https://github.com/topjohnwu/Magisk)
+-   基于内核的 Android 提权 [KernelSU](https://github.com/tiann/KernelSU)
 
 ## 虚拟化
 
@@ -89,7 +101,13 @@ title: 我的软件清单
 ## 文件系统/硬盘工具/启动
 
 -   7-Zip 优化 [NanaZip](https://github.com/M2Team/NanaZip)
+-   下载器 [Gopeed](https://github.com/GopeedLab/gopeed)
 -   快速文件搜索 [Everything](https://www.voidtools.com/zh-cn/)
 -   快速文件空间占用分析 [WizTree](https://diskanalyzer.com/)
 -   轻松创建 USB 启动盘 [Rufus](https://rufus.ie/zh/)
 -   制作可启动 U 盘 [Ventoy](https://ventoy.net/cn/index.html)
+
+## 远程控制
+
+-   [AnyDesk](https://anydesk.com/zhs)
+-   [RustDesk](https://rustdesk.com/zh-cn/)
