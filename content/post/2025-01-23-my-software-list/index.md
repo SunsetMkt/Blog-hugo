@@ -19,6 +19,12 @@ title: 我的软件清单
 -   小型服务器 [Ubuntu](https://ubuntu.com/)
 -   探索新特性 [Manjaro](https://manjaro.org/)
 
+## 办公
+
+-   [Microsoft Office](https://gravesoft.dev/office_c2r_links)
+-   兼容性替代 [WPS Office](https://raincandy.tech/wpsoffice_umrse/)
+-   开源的办公套件 [LibreOffice](https://www.libreoffice.org/)
+
 ## 多媒体
 
 -   多媒体处理套件 [Adobe Creative Cloud](https://www.reddit.com/r/GenP/wiki/redditgenpguides/)
@@ -38,7 +44,7 @@ title: 我的软件清单
 
 -   杰出的开源浏览器 [Firefox](https://www.mozilla.org/zh-CN/firefox/new/)
 -   基于 Chromium 的隐私友好浏览器 [Brave](https://brave.com/) [brave-debullshitinator](https://github.com/MulesGaming/brave-debullshitinator)
--   兼容性备用 Microsoft Edge & Chrome
+-   兼容性替代 Microsoft Edge & Chrome
 -   危险的 Flash 兼容性 [CefFlashBrowser](https://github.com/Mzying2001/CefFlashBrowser) [CleanFlash](https://gitlab.com/cleanflash/installer)
 
 ## 硬件&驱动程序
@@ -66,6 +72,7 @@ title: 我的软件清单
 ## 虚拟化
 
 -   杰出且免费的虚拟机 [VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
+-   为游戏设计的 Android 虚拟机，充满了广告，但目前没有更优选择 [BlueStacks](https://www.bluestacks.com/bluestacks-5.html)
 
 ## 安全
 
@@ -74,6 +81,15 @@ title: 我的软件清单
 -   杀毒软件 [Kaspersky](https://www.kaspersky.com/downloads/free-antivirus)
 -   开源密码管理器 [Bitwarden](https://bitwarden.com/)
 
-## 体验优化
+## 体验优化/运行库/杂项
 
 -   Windows 工具 [PowerToys](https://github.com/microsoft/PowerToys)
+-   Microsoft Visual C++ Redistributable Runtimes [vcredist](https://github.com/abbodi1406/vcredist)
+
+## 文件系统/硬盘工具/启动
+
+-   7-Zip 优化 [NanaZip](https://github.com/M2Team/NanaZip)
+-   快速文件搜索 [Everything](https://www.voidtools.com/zh-cn/)
+-   快速文件空间占用分析 [WizTree](https://diskanalyzer.com/)
+-   轻松创建 USB 启动盘 [Rufus](https://rufus.ie/zh/)
+-   制作可启动 U 盘 [Ventoy](https://ventoy.net/cn/index.html)
