@@ -1,0 +1,79 @@
+---
+categories: Original
+date: "2025-01-23T00:00:00Z"
+tags:
+    - Windows
+    - Linux
+    - 信息技术
+    - 游戏
+    - 软件
+slug: my-software-list
+title: 我的软件清单
+---
+
+这是一个可能会持续更新的软件推荐清单，一般情况下不会包含 Web 应用，可能包含 SaaS 应用。
+
+## 操作系统
+
+-   生产力、游戏 [Windows](https://www.microsoft.com/zh-cn/software-download/windows11) [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
+-   小型服务器 [Ubuntu](https://ubuntu.com/)
+-   探索新特性 [Manjaro](https://manjaro.org/)
+
+## 多媒体
+
+-   多媒体处理套件 [Adobe Creative Cloud](https://www.reddit.com/r/GenP/wiki/redditgenpguides/)
+-   屏幕录制和直播 [OBS Studio](https://obsproject.com/)
+-   快速剪辑视频 [lossless-cut](https://github.com/mifi/lossless-cut)
+-   开源的媒体播放器 [VLC media player](https://www.videolan.org/vlc/)
+-   易用的媒体播放器 [Potplayer](https://potplayer.daum.net/)
+-   杰出且开源的三维图形编辑器 [Blender](https://www.blender.org/)
+
+## 命令行
+
+-   Windows 下的命令行工具管理 [Scoop](https://github.com/ScoopInstaller/Scoop)
+-   多媒体处理 [FFmpeg](https://www.ffmpeg.org/)
+-   优秀的解释性语言 [Python](https://www.python.org/)
+
+## 浏览器
+
+-   杰出的开源浏览器 [Firefox](https://www.mozilla.org/zh-CN/firefox/new/)
+-   基于 Chromium 的隐私友好浏览器 [Brave](https://brave.com/) [brave-debullshitinator](https://github.com/MulesGaming/brave-debullshitinator)
+-   兼容性备用 Microsoft Edge & Chrome
+-   危险的 Flash 兼容性 [CefFlashBrowser](https://github.com/Mzying2001/CefFlashBrowser) [CleanFlash](https://gitlab.com/cleanflash/installer)
+
+## 硬件&驱动程序
+
+-   巨大的驱动程序库 [Snappy Driver Installer Origin](https://www.glenn.delahoy.com/snappy-driver-installer-origin/)
+-   屏幕显示性能监控 [MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
+-   复合工具 [图拉丁吧工具箱](https://www.tbtool.cn/)
+-   主要针对游戏的性能测试 [3DMark](https://www.3dmark.com/)
+
+## 游戏
+
+-   游戏分发平台 [Steam](https://store.steampowered.com/about)
+-   游戏分发平台 [Epic Games](https://store.epicgames.com/zh-CN/)
+-   游戏 [Minecraft](https://github.com/HMCL-dev/HMCL)
+-   开源游戏引擎 [Unreal Engine](https://www.unrealengine.com/zh-CN)
+-   闭源游戏引擎 [Unity Engine](https://github.com/tylearymf/UniHacker)
+
+## 编辑器/IDE/开发工具
+
+-   开源轻量级 IDE [Visual Studio Code](https://code.visualstudio.com/)
+-   闭源重量级 IDE [Visual Studio](https://visualstudio.microsoft.com/)
+-   可携带的文本编辑器 [Notepad++](https://notepad-plus-plus.org/)
+-   免费 AI 代码补全 [Codeium](https://codeium.com/)
+
+## 虚拟化
+
+-   杰出且免费的虚拟机 [VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
+
+## 安全
+
+-   杀毒软件 Microsoft Defender
+-   杀毒软件 [Bitdefender](https://www.bitdefender.com/en-us/consumer/free-antivirus)
+-   杀毒软件 [Kaspersky](https://www.kaspersky.com/downloads/free-antivirus)
+-   开源密码管理器 [Bitwarden](https://bitwarden.com/)
+
+## 体验优化
+
+-   Windows 工具 [PowerToys](https://github.com/microsoft/PowerToys)
