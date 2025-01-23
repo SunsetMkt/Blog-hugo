@@ -24,7 +24,7 @@ title: 我的软件清单
 -   [Microsoft Office](https://gravesoft.dev/office_c2r_links)
 -   兼容性替代 [WPS Office](https://raincandy.tech/wpsoffice_umrse/)
 -   开源的办公套件 [LibreOffice](https://www.libreoffice.org/)
--   语音识别 [faster-whisper-GUI](https://github.com/CheshireCC/faster-whisper-GUI)
+-   语音转文字 [faster-whisper-GUI](https://github.com/CheshireCC/faster-whisper-GUI)
 -   手机连接 [KDE Connect](https://kdeconnect.kde.org/)
 -   将文件分享到附近的设备 [LocalSend](https://github.com/localsend/localsend)
 -   截图 [PixPin](https://pixpin.cn/)
