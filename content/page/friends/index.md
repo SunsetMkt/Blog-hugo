@@ -18,6 +18,10 @@ links:
       description: "Stop Doing IT Jobs!!!!!"
       website: https://www.xzc-meina.top/
       image: 79711420.jpg
+    - title: qwq233
+      description: "女子高中生 | 给岁月以文明，而不是给文明以岁月。"
+      website: https://qwq2333.top/
+      image: 20317838.jpg
     - title: Tokyo Hacker Girls
       description: "Asahi Lina and Cyan Nyan, a VTuber yuri couple spreading love, knowledge, and positivity!"
       website: https://blog.thgirls.yt/
