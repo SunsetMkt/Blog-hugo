@@ -11,7 +11,7 @@ slug: my-software-list
 title: 我的软件清单
 ---
 
-这是一个可能会持续更新的软件推荐清单，一般情况下不会包含 Web 应用，可能包含 SaaS 应用。
+这是一个可能会持续更新的软件推荐清单，主要针对 PC 端，一般情况下不会包含 Web 应用，可能包含 SaaS 应用。
 
 ## 操作系统
 
@@ -109,5 +109,7 @@ title: 我的软件清单
 
 ## 远程控制
 
--   [AnyDesk](https://anydesk.com/zhs)
--   [RustDesk](https://rustdesk.com/zh-cn/)
+-   闭源的远程控制工具 [AnyDesk](https://anydesk.com/zhs)
+-   开源的远程控制工具 [RustDesk](https://rustdesk.com/zh-cn/)
+-   为游戏设计的开源远程控制工具 [Sunshine](https://github.com/LizardByte/Sunshine)
+-   为游戏设计的闭源远程控制工具 [Parsec](https://parsec.app/)
