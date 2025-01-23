@@ -18,6 +18,10 @@ links:
       description: "Problem Solver. Life Enthusiast."
       website: https://delm.dev/
       image: 118270686.jpg
+    - title: lz 差不多是条咸鱼了
+      description: "鱼类观测研究所"
+      website: https://with.fish/
+      image: 32504382.png
     - title: Melancholie
       description: "愿阳光照亮我的脸，玫瑰盛开在我的脚边。"
       website: https://melanastra.xyz/
