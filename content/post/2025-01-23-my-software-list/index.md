@@ -21,7 +21,7 @@ title: 我的软件清单
 
 ## 办公
 
--   [Microsoft Office](https://gravesoft.dev/office_c2r_links)
+-   经典办公软件 [Microsoft Office](https://gravesoft.dev/office_c2r_links)
 -   兼容性替代 [WPS Office](https://raincandy.tech/wpsoffice_umrse/)
 -   开源的办公套件 [LibreOffice](https://www.libreoffice.org/)
 -   语音转文字 [faster-whisper-GUI](https://github.com/CheshireCC/faster-whisper-GUI)
@@ -121,5 +121,6 @@ title: 我的软件清单
 ## 网络
 
 -   开源的虚拟组网服务 [Tailscale](https://tailscale.com/)
+-   开源的虚拟组网服务 [ZeroTier](https://www.zerotier.com/)
 -   反网络审查 Clash GUI [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
 -   反网络审查 [GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI)
