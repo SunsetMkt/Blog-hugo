@@ -2,6 +2,10 @@
 title: 友情链接
 date: 2024-11-18
 links:
+    - title: Cascade Kobayashi
+      description: "工程师猫娘"
+      website: https://cascade.moe/
+      image: cascade.webp
     - title: Cedaros
       description: "In solitude, where we are least alone."
       website: https://angelkawaii.xyz/
