@@ -18,6 +18,7 @@ title: 我的软件清单
 -   生产力、游戏 [Windows](https://www.microsoft.com/zh-cn/software-download/windows11) [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
 -   小型服务器 [Ubuntu](https://ubuntu.com/)
 -   探索新特性 [Manjaro](https://manjaro.org/)
+-   无 Snap 的 Ubuntu，适用于桌面端 [Linux Mint](https://linuxmint.com/)
 
 ## 办公
 
@@ -29,6 +30,9 @@ title: 我的软件清单
 -   将文件分享到附近的设备 [LocalSend](https://github.com/localsend/localsend)
 -   截图 [PixPin](https://pixpin.cn/)
 -   OCR [Umi-OCR](https://github.com/hiroi-sora/Umi-OCR)
+-   Markdown 编辑器 [Typora](https://typora.io/)
+-   知识库和笔记 [Obsidian](https://obsidian.md/)
+-   开源的知识库和笔记 [siyuan](https://github.com/siyuan-note/siyuan)
 
 ## 多媒体
 
