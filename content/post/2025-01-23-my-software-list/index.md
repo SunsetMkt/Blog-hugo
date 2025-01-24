@@ -29,6 +29,7 @@ title: 我的软件清单
 -   手机连接 [KDE Connect](https://kdeconnect.kde.org/)
 -   将文件分享到附近的设备 [LocalSend](https://github.com/localsend/localsend)
 -   截图 [PixPin](https://pixpin.cn/)
+-   开源截图 [ShareX](https://github.com/ShareX/ShareX)
 -   OCR [Umi-OCR](https://github.com/hiroi-sora/Umi-OCR)
 -   Markdown 编辑器 [Typora](https://typora.io/)
 -   知识库和笔记 [Obsidian](https://obsidian.md/)
