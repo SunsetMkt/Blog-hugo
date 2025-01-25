@@ -19,6 +19,7 @@ title: 我的软件清单
 -   小型服务器 [Ubuntu](https://ubuntu.com/)
 -   探索新特性 [Manjaro](https://manjaro.org/)
 -   无 Snap 的 Ubuntu，适用于桌面端 [Linux Mint](https://linuxmint.com/)
+-   RHEL 兼容性替代 [AlmaLinux](https://almalinux.org/)
 
 ## 办公
 
