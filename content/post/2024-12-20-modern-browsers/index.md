@@ -21,10 +21,14 @@ title: 获取现代浏览器
 
 [Deb x64](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb) [Rpm x86](https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm)
 
+## Brave
+
+[主页](https://brave.com/) [全部平台](https://github.com/brave/brave-browser/releases)
+
 ## Edge
 
 [Windows](https://www.microsoft.com/zh-cn/edge/download)
 
-## Kiwi Browser
+## ~~Kiwi Browser~~（停止维护）
 
-[Android](https://github.com/kiwibrowser/src.next/releases)
+~~[Android](https://github.com/kiwibrowser/src.next/releases)~~
