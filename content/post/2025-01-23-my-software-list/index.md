@@ -45,6 +45,7 @@ title: 我的软件清单
 -   易用的媒体播放器 [Potplayer](https://potplayer.daum.net/)
 -   杰出且开源的三维图形编辑器 [Blender](https://www.blender.org/)
 -   视频压制 [小丸工具箱](https://maruko.appinn.me/)
+-   人声去除 [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui)
 
 ## 命令行
 
