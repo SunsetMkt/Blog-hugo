@@ -12,4 +12,4 @@ title: Virt-a-Mate
 
 一个娱乐性的性行为沙箱。
 
-[Doc1](https://hub.virtamate.com/threads/how-to-officially-get-vam.39231/) [Doc2](https://vamjapan.com/setting-in-free/) [VaM_Updater](https://cdn.virtamate.com/Release/VaM_Updater.zip) [C91927](https://kemono.su/patreon/user/5932666/post/77429610)
+[Doc1](https://hub.virtamate.com/threads/how-to-officially-get-vam.39231/) [Doc2](https://www.patreon.com/posts/downloading-and-32794384) [VaM_Updater](https://cdn.virtamate.com/Release/VaM_Updater.zip) [C91927](https://kemono.su/patreon/user/5932666/post/77429610)
