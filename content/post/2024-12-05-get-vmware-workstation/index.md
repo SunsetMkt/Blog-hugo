@@ -9,6 +9,10 @@ title: 获取 VMware Workstation Pro 的下载链接
 
 自从 VMware 被 Broadcom 收购并允许个人免费使用[VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)后，用户必须注册 Broadcom 账号才能下载安装程序，这引发了我的隐私担忧。
 
+## TL;DR
+
+点开[这个链接](https://softwareupdate.vmware.com/cds/vmw-desktop/ws/)然后自行寻找。通过此方法下载的 Workstation 可能不包含 VMware Tools，它在相同位置的另一个目录下。
+
 ## 快速开始
 
 打开[ws-windows.xml](https://softwareupdate.vmware.com/cds/vmw-desktop/ws-windows.xml)并手动找到最新的版本号对应的 metadata，例如：
