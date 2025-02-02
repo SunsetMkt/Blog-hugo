@@ -5,7 +5,6 @@ tags:
     - 社会科学
 slug: logical-fallacy-list
 title: 逻辑谬误列表
-draft: true
 ---
 
 [Source](https://github.com/MrBenWang/mrbenwang.github.io)
