@@ -171,3 +171,9 @@ if __name__ == "__main__":
         ],
     )
 ```
+
+## 附：移动端安装
+
+[How to download Kaspersky apps on Android and iOS](https://support.kaspersky.com/common/beforeinstall/16085)
+
+没有发现在移动端安装杀毒软件的必要性。
