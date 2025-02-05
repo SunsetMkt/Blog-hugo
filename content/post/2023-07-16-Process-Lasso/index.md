@@ -17,3 +17,5 @@ title: Process Lasso：实时进程CPU占用调整（付费/功能限制）
 ## Update
 
 如果在*未来*安装它，并且在*过去*使用，也不会超出试用期。
+
+[这里](https://appnee.com/process-lasso/)有一些关于`prolasso.key`的有趣文件。
