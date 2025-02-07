@@ -90,9 +90,11 @@ URL 参数`eruda=true`。
     <a class="link" onclick="localStorage.removeItem('LXGW-WenKai');location.reload();">关闭</a>
 </div>
 
-## Firefox H.265/MPEG-H HEVC 视频播放 for Windows
+## Firefox H.265/MPEG-H HEVC 视频播放
 
-在`about:config`将`media.wmf.hevc.enabled`设为`1`。
+For Windows：在`about:config`将`media.wmf.hevc.enabled`设为`1`（在最新版本已默认）。
+
+For Linux：使用[zhaohappy/libmedia 提供的 Web 媒体播放器 Demo](https://zhaohappy.github.io/libmedia/product/player/player.html)作为临时替代方案。
 
 ## 默认图片作者
 
