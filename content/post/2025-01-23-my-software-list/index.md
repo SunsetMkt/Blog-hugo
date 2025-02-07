@@ -108,6 +108,7 @@ title: 我的软件清单
 -   Windows 工具 [PowerToys](https://github.com/microsoft/PowerToys)
 -   Microsoft Visual C++ Redistributable Runtimes [vcredist](https://github.com/abbodi1406/vcredist)
 -   Windows 工具 [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite)
+-   不可逆也不推荐用于宿主机的 Windows 优化 [Atlas](https://github.com/Atlas-OS/Atlas)
 
 ## 文件系统/硬盘工具/启动
 
