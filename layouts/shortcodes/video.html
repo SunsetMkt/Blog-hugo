@@ -1,9 +1,11 @@
 {{- $src := .Get "src" | default (.Get 0) -}}
-<div class="video-wrapper">
+<div class="video-links">
     <p>
         <a href="{{- $src -}}" download>下载视频</a>
         <a href="/debug/#firefox-h265mpeg-h-hevc-视频播放" target="_blank">不支持的格式？</a>
     </p>
+</div>
+<div class="video-wrapper">
     <video
     controls
     src="{{- $src -}}"

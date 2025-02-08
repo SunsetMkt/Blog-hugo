@@ -1,8 +1,10 @@
 {{- $src := .Get "src" | default (.Get 0) -}}
-<div class="audio-wrapper">
+<div class="audio-links">
     <p>
         <a href="{{- $src -}}" download>下载音频</a>
     </p>
+</div>
+<div class="audio-wrapper">
     <audio
     controls
     src="{{- $src -}}"
