@@ -1,0 +1,2 @@
+import ts from 'typescript';
+export default function mergeOperator2Operator(operator: ts.SyntaxKind): ts.SyntaxKind.PlusToken | ts.SyntaxKind.MinusToken | ts.SyntaxKind.AsteriskToken | ts.SyntaxKind.AsteriskAsteriskToken | ts.SyntaxKind.SlashToken | ts.SyntaxKind.PercentToken | ts.SyntaxKind.LessThanLessThanToken | ts.SyntaxKind.GreaterThanGreaterThanToken | ts.SyntaxKind.GreaterThanGreaterThanGreaterThanToken | ts.SyntaxKind.AmpersandToken | ts.SyntaxKind.BarToken | ts.SyntaxKind.CaretToken | ts.SyntaxKind.EqualsToken;

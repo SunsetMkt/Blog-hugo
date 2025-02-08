@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="origin-trial" content="AvVVD0vRFcVG5+Z0vn8wrVPWUt98Q6/e73ZIicw+Noko1IwIrkB1siQlxc+IdvM0nISlKulUqzx2QflMi1YgFA8AAABieyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlKU1Byb21pc2VJbnRlZ3JhdGlvbiIsImV4cGlyeSI6MTczOTkyMzE5OX0=">
+    <title>在线本地播放器</title>
+    <meta name="description" content="Online Local Player">
+    <meta name="description" content="在线的本地播放器，支持多种视频格式，多种编码格式">
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      #app {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #background-video {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .avplayer-ui-container {
+        --libmedia-ui-background-color: rgba(0, 0, 0, 0.3);
+      }
+      .avplayer-ui-container .avplayer-ui-folder-container {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+      }
+      .avplayer-ui-container .avplayer-ui-folder-container .avplayer-ui-folder {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.1) !important;
+      }
+      .avplayer-ui-container .avplayer-ui-folder-container .avplayer-ui-folder-toggle {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.1) !important;
+      }
+      .button-fullscreen-mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        display: none;
+        top: 0;
+        left: 0;
+      }
+      #button-fullscreen {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        width: 400px;
+        height: 120px;
+        border-radius: 20px;
+        font-size: 40px;
+        line-height: 120px;
+        color: #fff;
+        background-color: #23ade5;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <video id="background-video" loop muted poster="./background.png"></video>
+  <div id="app"></div>
+  <div class="button-fullscreen-mask">
+    <div id="button-fullscreen">点击进入全屏</div>
+  </div>
+  <script>
+    window.CHEAP_DISABLE_THREAD = false
+    const ua = navigator.userAgent.toLowerCase()
+    if (ua.indexOf('android') > -1 || ua.indexOf('iphone') > -1) {
+      window.CHEAP_HEAP_MAXIMUM = 16384
+    }
+  </script>
+  <script src="./sw.js"></script>
+  <script src="../../dist/cheap-polyfill.js"></script>
+  <script src="../../dist/avplayer-ui/avplayer.js"></script>
+
+  <script>
+
+    let supportAtomic = false
+    let supportSimd = false
+    let useWasm64 = false
+
+    let player
+
+    function run() {
+      const backgroundVideo = document.querySelector('#background-video')
+
+      player = new AVPlayer({
+        container: document.querySelector('#app'),
+        getWasm: (type, codecId) => {
+          switch (type) {
+            case 'decoder': {
+
+              if (codecId >= 65536 && codecId <= 65572) {
+                return `../../dist/decode/pcm${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+              }
+
+              switch (codecId) {
+                // mpeg1/2
+                case 2:
+                  return `../../dist/decode/mpeg2video${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // H264
+                case 27:
+                  return `../../dist/decode/h264${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // theora
+                case 30:
+                  return `../../dist/decode/theora${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // AAC
+                case 86018:
+                  return `../../dist/decode/aac${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // ac3
+                case 86019:
+                  return `../../dist/decode/ac3${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // eac3
+                case 86056:
+                  return `../../dist/decode/eac3${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // dts
+                case 86020:
+                  return `../../dist/decode/dca${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                  // MP3
+                case 86017:
+                  return `../../dist/decode/mp3${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // HEVC
+                case 173:
+                  return `../../dist/decode/hevc${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // VVC
+                case 196:
+                  return `../../dist/decode/vvc${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // Mpeg4
+                case 12:
+                  return `../../dist/decode/mpeg4${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // AV1
+                case 225:
+                  return `../../dist/decode/av1${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // Speex
+                case 86051:
+                  return `../../dist/decode/speex${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // Opus
+                case 86076:
+                  return `../../dist/decode/opus${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // flac
+                case 86028:
+                  return `../../dist/decode/flac${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // vorbis
+                case 86021:
+                  return `../../dist/decode/vorbis${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // vp8
+                case 139:
+                  return `../../dist/decode/vp8${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                // vp9
+                case 167:
+                  return `../../dist/decode/vp9${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+                default:
+                  return null
+              }
+              break
+            }
+            case 'resampler':
+              return `../../dist/resample/resample${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+            case 'stretchpitcher':
+              return `../../dist/stretchpitch/stretchpitch${useWasm64 ? '-64' : (supportSimd ? '-simd' : (supportAtomic ? '-atomic' : ''))}.wasm`
+          }
+        },
+        enableHardware: !AVPlayer.Util.os.android,
+        jitterBufferMax: 4,
+        jitterBufferMin: 1,
+        lowLatency: true,
+        enableWorker: true,
+        indicatorUrl: './img/indicator.svg',
+        pauseStateUrl: './img/state.svg',
+        errorStateUrl: './img/error.svg',
+        fullscreenDom: document.body,
+        ui: {
+          hasFolder: true,
+          hasHeader: true
+        }
+      })
+
+      if (typeof VideoDecoder === 'function' && (AVPlayer.Util.os.windows || AVPlayer.Util.os.mac || AVPlayer.Util.os.linux)) {
+        const support = VideoDecoder.isConfigSupported({
+          codec: 'avc1.640034',
+          codedWidth: 3840,
+          codedHeight: 2160,
+          hardwareAcceleration: 'prefer-hardware'
+        }).then((support) => {
+          if (support.supported) {
+            if (screen.availWidth * screen.availHeight <= 2560 * 1440) {
+              backgroundVideo.src = './background_2k_30fps.mp4'
+            }
+            else {
+              backgroundVideo.src = './background_4k_30fps.mp4'
+            }
+
+            backgroundVideo.play()
+
+            player.on('played', () => {
+              if (player.hasVideo()) {
+                if (!backgroundVideo.paused) {
+                  backgroundVideo.pause()
+                }
+              }
+              else if (backgroundVideo.paused) {
+                backgroundVideo.play()
+              }
+            })
+            player.on('stopped', () => {
+              if (backgroundVideo.paused) {
+                backgroundVideo.play()
+              }
+            })
+            let playBeforeHidden = false
+            document.addEventListener('visibilitychange', (event) => {
+              if (document.visibilityState === 'hidden') {
+                playBeforeHidden = !backgroundVideo.paused
+                if (!backgroundVideo.paused) {
+                  backgroundVideo.pause()
+                }
+              }
+              else {
+                if (playBeforeHidden) {
+                  backgroundVideo.play()
+                }
+              }
+            })
+          }
+        })
+      }
+
+      function testSupportWasmAtomic() {
+        const asm = 'AGFzbQEAAAABBgFgAX8BfwISAQNlbnYGbWVtb3J5AgMBgIACAwIBAAcJAQVsb2FkOAAACgoBCAAgAP4SAAAL'
+        const binaryData = atob(asm)
+        const uint8Array = new Uint8Array(binaryData.length)
+        for (let i = 0; i < binaryData.length; i++) {
+          uint8Array[i] = binaryData.charCodeAt(i)
+        }
+
+        const instance = WebAssembly.compile(uint8Array).then(() => {
+          console.log('wasm atomic support')
+          supportAtomic = true
+        }, () => {
+          supportAtomic = false
+          console.log('wasm atomic not support')
+        })
+      }
+
+      function testSupportWasmSimd() {
+        const asm = 'AGFzbQEAAAABBQFgAAF7AhIBA2VudgZtZW1vcnkCAwGAgAIDAgEACgoBCABBAP0ABAAL'
+        const binaryData = atob(asm)
+        const uint8Array = new Uint8Array(binaryData.length)
+        for (let i = 0; i < binaryData.length; i++) {
+          uint8Array[i] = binaryData.charCodeAt(i)
+        }
+
+        const instance = WebAssembly.compile(uint8Array).then(() => {
+          console.log('wasm simd support')
+          supportSimd = true
+        }, () => {
+          supportSimd = false
+          console.log('wasm simd not support')
+        })
+      }
+
+      testSupportWasmAtomic()
+      testSupportWasmSimd()
+
+      AVPlayer.setLogLevel(1)
+    }
+
+    if (!(AVPlayer.Util.os.windows || AVPlayer.Util.os.mac || AVPlayer.Util.os.linux)) {
+      if (screen.orientation && screen.orientation.lock) {
+        const button = document.querySelector('#button-fullscreen')
+        button.onclick = () => {
+          document.body.requestFullscreen().then(() => {
+            screen.orientation.lock('landscape')
+              .then(() => {
+                if (!player) {
+                  run()
+                }
+              })
+              .catch(err => {
+                if (!player) {
+                  run()
+                }
+              })
+          })
+        }
+        
+        window.addEventListener('orientationchange', function() {
+          if (window.orientation === 0 || window.orientation === 180) {
+            document.querySelector('.button-fullscreen-mask').style.display = 'block'
+          }
+          else if (window.orientation === 90 || window.orientation === -90) {
+            document.querySelector('.button-fullscreen-mask').style.display = 'none'
+          }
+        })
+
+        document.addEventListener('fullscreenchange', () => {
+          if (document.fullscreenElement) {
+            document.querySelector('.button-fullscreen-mask').style.display = 'none'
+          }
+          else {
+            document.querySelector('.button-fullscreen-mask').style.display = 'block'
+          }
+        })
+
+        if (window.orientation === 0 || window.orientation === 180) {
+          document.querySelector('.button-fullscreen-mask').style.display = 'block'
+        }
+      }
+      else {
+        run()
+      }
+    }
+    else {
+      run()
+    }
+
+    if (typeof crossOriginIsolated === 'boolean' && !crossOriginIsolated) {
+      navigator.serviceWorker.ready.then(function(reg) {
+        if (!crossOriginIsolated && !navigator.serviceWorker.controller) {
+          window.location.reload()
+        }
+      })
+    }
+
+    if (navigator.wakeLock) {
+      navigator.wakeLock.request('screen')
+    }
+  </script>
+</body>
+</html>

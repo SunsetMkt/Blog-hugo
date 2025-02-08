@@ -1,0 +1,15 @@
+export declare function makeSharedPtr<T extends BuiltinType, args = [T]>(): SharedPtr<T>;
+export declare function makeSharedPtr<T extends BuiltinType, args = [T]>(deleter: deleter<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends BuiltinType, args = [T]>(value: T): SharedPtr<T>;
+export declare function makeSharedPtr<T extends BuiltinType, args = [T, undefined, true]>(value: pointer<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends BuiltinType, args = [T]>(value: T, deleter: deleter<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends BuiltinType, args = [T, true]>(value: pointer<T>, deleter: deleter<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(deleter: deleter<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(init: Partial<SetOmitFunctions<T>>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(init: pointer<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(init: T): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(init: pointer<T>, deleter: deleter<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(init: T, deleter: deleter<T>): SharedPtr<T>;
+export declare function makeSharedPtr<T extends {}, args = [T]>(init: Partial<SetOmitFunctions<T>>, deleter: deleter<T>): SharedPtr<T>;
+export declare function deTransferableSharedPtr<T extends (BuiltinType | {})>(transfer: SharedPtrTransferable<T>, deleter?: deleter<T>): SharedPtr<T>;

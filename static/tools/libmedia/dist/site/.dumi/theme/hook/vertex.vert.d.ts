@@ -1,0 +1,2 @@
+declare const _default: "precision highp float;\n\nattribute vec3 point;\nattribute vec4 color;\nvarying vec4 v_color;\n\nuniform mat4 rotateMatrix;\n\nvoid main(void){\n  gl_Position = rotateMatrix * vec4(point, 1.0);\n  v_color = color;\n}\n";
+export default _default;

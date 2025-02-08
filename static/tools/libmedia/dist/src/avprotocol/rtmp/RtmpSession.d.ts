@@ -1,0 +1,56 @@
+import IOReader from 'common/io/IOReader';
+import IOWriter from 'common/io/IOWriter';
+import { RtmpPacket } from './RtmpPacket';
+export interface RtmpSessionOptions {
+    isPull: boolean;
+    isLive: boolean;
+    clientBufferTime?: int32;
+}
+export default class RtmpSession {
+    private ioReader;
+    private ioWriter;
+    private prevReadPacket;
+    private prevWritePacket;
+    private inChunkSize;
+    private outChunkSize;
+    private seq;
+    private bufferWriter;
+    private bufferReader;
+    private requestMap;
+    private state;
+    private maxSentUnacked;
+    private receiveReportSize;
+    private duration;
+    private options;
+    private streamIdMap;
+    private sendAsync;
+    onMediaPacket: (packet: RtmpPacket, streamName: string) => Promise<void> | void;
+    onError: () => void;
+    constructor(ioReader: IOReader, ioWriter: IOWriter, options: RtmpSessionOptions);
+    handshake(): Promise<void>;
+    private sendPacket;
+    private readPacket;
+    private handleChunkSize;
+    private handleUserControl;
+    private handleSetPeerBW;
+    private handleWindowSizeACK;
+    private handleInvoke;
+    private handleNotify;
+    private readRtmpPacket;
+    private sendPong;
+    private sendWindowAckSize;
+    private sendBufferTime;
+    private sendFCSubscribe;
+    private sendFCPublish;
+    private sendReleaseStream;
+    private sendCheckBW;
+    private request;
+    connect(appName: string, url: string): Promise<void>;
+    private createStream;
+    play(streamName: string): Promise<void>;
+    publish(streamName: string): Promise<void>;
+    sendStreamPacket(packet: RtmpPacket, streamName: string): Promise<void>;
+    seek(timestamp: number): Promise<void>;
+    pause(paused: boolean, timestamp: number): Promise<void>;
+    getDuration(): double;
+}

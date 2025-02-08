@@ -1,0 +1,18 @@
+import SafeUint8Array from './buffer/SafeUint8Array';
+export declare function memcpy(dst: anyptr, src: anyptr, size: size): void;
+export declare function memcpyFromUint8Array(dst: pointer<void>, max: size, data: Uint8Array): void;
+export declare function memmove(dst: anyptr, src: anyptr, size: size): void;
+export declare function memset(src: anyptr, c: uint8, n: size): void;
+export declare function mapSafeUint8Array(src: pointer<void>, n: size): SafeUint8Array;
+export declare function mapUint8Array(src: pointer<void>, n: size): Uint8Array<ArrayBufferLike>;
+export declare function mapInt8Array(src: pointer<int8>, n: size): Int8Array<ArrayBufferLike>;
+export declare function mapUint16Array(src: pointer<uint16>, n: size): Uint16Array<ArrayBufferLike>;
+export declare function mapInt16Array(src: pointer<int16>, n: size): Int16Array<ArrayBufferLike>;
+export declare function mapUint32Array(src: pointer<uint32>, n: size): Uint32Array<ArrayBufferLike>;
+export declare function mapInt32Array(src: pointer<int32>, n: size): Int32Array<ArrayBufferLike>;
+export declare function mapUint64Array(src: pointer<uint64>, n: size): BigUint64Array<ArrayBufferLike>;
+export declare function mapInt64Array(src: pointer<int64>, n: size): BigInt64Array<ArrayBufferLike>;
+export declare function mapFloat32Array(src: pointer<float>, n: size): Float32Array<ArrayBufferLike>;
+export declare function mapFloat64Array(src: pointer<double>, n: size): Float64Array<ArrayBufferLike>;
+export declare function readCString(pointer: pointer<char>, max?: uint32): string;
+export declare function writeCString(dst: pointer<void>, str: string, max?: uint32, addNull?: boolean): void;

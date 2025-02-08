@@ -1,0 +1,30 @@
+import AVStream from 'avutil/AVStream';
+import { AVIFormatContext } from '../AVFormatContext';
+import AVPacket from 'avutil/struct/avpacket';
+import { PagePayload } from './ogg/OggPage';
+import IFormat from './IFormat';
+import { AVFormat } from 'avutil/avformat';
+export default class IOggFormat extends IFormat {
+    type: AVFormat;
+    headerPagesPayload: PagePayload[];
+    private page;
+    private curSegIndex;
+    private curSegStart;
+    private segCount;
+    private segIndex;
+    private currentPts;
+    private firstPos;
+    private firstGranulePosition;
+    private paddingPayload;
+    constructor();
+    init(formatContext: AVIFormatContext): void;
+    private estimateTotalBlock;
+    private getNextSegment;
+    private addComment;
+    private createStream;
+    readHeader(formatContext: AVIFormatContext): Promise<number>;
+    readAVPacket(formatContext: AVIFormatContext, avpacket: pointer<AVPacket>): Promise<number>;
+    private syncPage;
+    seek(formatContext: AVIFormatContext, stream: AVStream, timestamp: int64, flags: int32): Promise<int64>;
+    getAnalyzeStreamsCount(): number;
+}

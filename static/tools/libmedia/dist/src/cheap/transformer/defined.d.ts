@@ -1,0 +1,12 @@
+import { CTypeEnum } from '..//typedef';
+export declare const BuiltinType: string[];
+export declare const BuiltinAtomicType: string[];
+export declare const BuiltinDecorator: string[];
+export declare const AtomicCall: string[];
+export declare const BuiltinFloat: string[];
+export declare const BuiltinBigInt: string[];
+export declare const BuiltinUint: string[];
+export declare const BuiltinBool: string[];
+export declare const CTypeEnum2Type: Record<CTypeEnum, string>;
+export declare const Type2CTypeEnum: Record<string, CTypeEnum>;
+export declare const BuiltinNumber: any[];

@@ -1,0 +1,17 @@
+import { AVBuffer, AVBufferPool, AVBufferRef } from '../struct/avbuffer';
+export declare function bufferCreate(buf: pointer<AVBuffer>, data: pointer<uint8>, size: size, free?: pointer<(opaque: pointer<void>, data: pointer<uint8>) => void>, opaque?: pointer<void>, flags?: int32): pointer<AVBufferRef>;
+export declare function avbufferCreate(data: pointer<uint8>, size: size, free?: pointer<(opaque: pointer<void>, data: pointer<uint8>) => void>, opaque?: pointer<void>, flags?: int32): pointer<AVBufferRef>;
+export declare function avbufferAlloc(size: size): pointer<AVBufferRef>;
+export declare function avbufferAllocz(size: size): pointer<AVBufferRef>;
+export declare function avbufferRef(buf: pointer<AVBufferRef>): pointer<AVBufferRef>;
+export declare function bufferReplace(dst: pointer<pointer<AVBufferRef>>, src: pointer<pointer<AVBufferRef>>): void;
+export declare function avbufferUnref(buf: pointer<pointer<AVBufferRef>>): void;
+export declare function avbufferIsWritable(buf: pointer<AVBufferRef>): 0 | 1;
+export declare function avbufferGetOpaque(buf: pointer<AVBufferRef>): pointer<void>;
+export declare function avbufferGetRefCount(buf: pointer<AVBufferRef>): uint32;
+export declare function avbufferMakeWritable(pbuf: pointer<pointer<AVBufferRef>>): 0 | -1;
+export declare function avbufferReplace(pdst: pointer<pointer<AVBufferRef>>, src: pointer<AVBufferRef>): number;
+export declare function avbufferRealloc(pdst: pointer<pointer<AVBufferRef>>, size: size): any;
+export declare function bufferPoolFlush(pool: pointer<AVBufferPool>): void;
+export declare function bufferPoolFree(pool: pointer<AVBufferPool>): void;
+export declare function poolReleaseBuffer(opaque: pointer<void>, data: pointer<void>): void;

@@ -1,0 +1,2 @@
+import ts from 'typescript';
+export default function isMergeOperator(operator: ts.SyntaxKind): operator is ts.SyntaxKind.PlusEqualsToken | ts.SyntaxKind.MinusEqualsToken | ts.SyntaxKind.AsteriskEqualsToken | ts.SyntaxKind.AsteriskAsteriskEqualsToken | ts.SyntaxKind.SlashEqualsToken | ts.SyntaxKind.PercentEqualsToken | ts.SyntaxKind.LessThanLessThanEqualsToken | ts.SyntaxKind.GreaterThanGreaterThanEqualsToken | ts.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken | ts.SyntaxKind.AmpersandEqualsToken | ts.SyntaxKind.BarEqualsToken | ts.SyntaxKind.CaretEqualsToken;
