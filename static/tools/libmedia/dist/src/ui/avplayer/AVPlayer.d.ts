@@ -11,6 +11,7 @@ export interface AVPlayerUIOptions extends AVPlayerOptions {
     ui?: {
         hasFolder?: boolean;
         hasHeader?: boolean;
+        hasFooter?: boolean;
     };
 }
 export default class AVPlayerUI extends AVPlayer {
@@ -19,5 +20,7 @@ export default class AVPlayerUI extends AVPlayer {
     constructor(options: AVPlayerUIOptions);
     foldFolder(): void;
     unfoldFolder(): void;
+    toggleFolder(): void;
+    addUrl(url: string, isLive: boolean, playAfterAdded: boolean): void;
     destroy(): Promise<void>;
 }

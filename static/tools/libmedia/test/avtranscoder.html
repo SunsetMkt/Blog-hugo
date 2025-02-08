@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>avtranscoder</title>
+  <link rel="stylesheet" href="./element-ui.css" crossorigin>
+  <meta http-equiv="origin-trial" content="AvVVD0vRFcVG5+Z0vn8wrVPWUt98Q6/e73ZIicw+Noko1IwIrkB1siQlxc+IdvM0nISlKulUqzx2QflMi1YgFA8AAABieyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlKU1Byb21pc2VJbnRlZ3JhdGlvbiIsImV4cGlyeSI6MTczOTkyMzE5OX0=">
+  <style>
+    .el-input {
+      width: 100px;
+    }
+    .el-input input {
+      height: 28px;
+    }
+    .el-input input::-webkit-outer-spin-button,
+    .el-input input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .el-input input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outputFormat">
+    <span class="label">output format: </span>
+    <div id="outputFormat" style="display: inline-block;">
+      <el-radio v-model="radio" label="flv">flv</el-radio>
+      <el-radio v-model="radio" label="mp4">mp4</el-radio>
+      <el-radio v-model="radio" label="ts">mpegts</el-radio>
+      <el-radio v-model="radio" label="mkv">matroska</el-radio>
+      <el-radio v-model="radio" label="ogg">ogg</el-radio>
+      <el-radio v-model="radio" label="mp3">mp3</el-radio>
+    </div>
+  </div>
+
+  <div id="start">
+    start:
+    <el-input v-model="start" type="number" placeholder="auto"></el-input>
+    ms
+  </div>
+  <div id="duration">
+    duration:
+    <el-input v-model="duration" type="number" placeholder="auto"></el-input>
+    ms
+  </div>
+
+  <br>
+
+  <div id="audioDisable">
+    disable audio output: <el-checkbox v-model="disable"></el-checkbox>
+  </div>
+
+  <div class="audioCodec">
+    <span class="label">output audio codec: </span>
+    <div id="outputAudioCodec" style="display: inline-block;">
+      <el-radio v-model="radio" label="copy">copy</el-radio>
+      <el-radio v-model="radio" label="aac">aac</el-radio>
+      <el-radio v-model="radio" label="mp3">mp3</el-radio>
+      <el-radio v-model="radio" label="opus">opus</el-radio>
+      <el-radio v-model="radio" label="vorbis">vorbis</el-radio>
+      <el-radio v-model="radio" label="flac">flac</el-radio>
+      <el-radio v-model="radio" label="speex">speex</el-radio>
+      <el-radio v-model="radio" label="ac3">ac3</el-radio>
+      <el-radio v-model="radio" label="eac3">eac3</el-radio>
+      <el-radio v-model="radio" label="dca">dts</el-radio>
+      <el-radio v-model="radio" label="pcm_alaw">pcm_alaw</el-radio>
+      <el-radio v-model="radio" label="pcm_mulaw">pcm_mulaw</el-radio>
+    </div>
+  </div>
+
+  <div id="audio-bitrate">
+    output audio bitrate:
+    <el-input v-model="bitrate" type="number" placeholder="auto"></el-input>
+    bps
+  </div>
+  <div id="audio-samplerate">
+    output audio samplerate:
+    <el-input v-model="samplerate" type="number" placeholder="auto"></el-input>
+  </div>
+  
+  <br>
+
+  <div id="videoDisable">
+    disable video output: <el-checkbox v-model="disable"></el-checkbox>
+  </div>
+
+  <div class="videoCodec">
+    <span class="label">output video codec: </span>
+    <div id="outputVideoCodec" style="display: inline-block;">
+      <el-radio v-model="radio" label="copy">copy</el-radio>
+      <el-radio v-model="radio" label="h264">h264</el-radio>
+      <el-radio v-model="radio" label="hevc">hevc</el-radio>
+      <el-radio v-model="radio" label="av1">av1</el-radio>
+      <el-radio v-model="radio" label="vp9">vp9</el-radio>
+      <el-radio v-model="radio" label="vp8">vp8</el-radio>
+      <el-radio v-model="radio" label="mpeg4">mpeg4</el-radio>
+    </div>
+  </div>
+
+  <div id="enableWebCodecs">
+    enable webcodecs: <el-checkbox v-model="enableWebCodecs"></el-checkbox>
+  </div>
+  <div id="enableHardwareAcceleration">
+    enable hardwareAcceleration: <el-checkbox v-model="enableHardwareAcceleration"></el-checkbox>
+  </div>
+
+  <div id="video-width">
+    output video width:
+    <el-input v-model="width" type="number" placeholder="auto"></el-input>
+  </div>
+  <div id="video-height">
+    output video height:
+    <el-input v-model="height" type="number" placeholder="auto"></el-input>
+  </div>
+  <div id="video-bitrate">
+    output video bitrate:
+    <el-input v-model="bitrate" type="number" placeholder="auto"></el-input>
+    bps
+  </div>
+  <div id="video-framerate">
+    output video framerate:
+    <el-input v-model="framerate" type="number" placeholder="auto"></el-input>
+  </div>
+
+  <br>
+
+  <input id="file" type="file" />
+  <button onclick="openWriteFile()">open output file</button>
+
+  <textarea name="logcatbox" class="logcatBox" rows="10" readonly style="display: block; margin-top: 20px; width: 800px;"></textarea>
+
+  <script>
+    window.CHEAP_DISABLE_THREAD = false
+  </script>
+  <script src="../dist/avtranscoder/avtranscoder.js"></script>
+  <script src="./vue.js" crossorigin></script>
+  <script src="./element-ui.js" crossorigin></script>
+  <script>
+
+    let inputFormatComp;
+    let outputFormatComp;
+
+    let enableWebcodecComponent;
+    let enableHardwareComponent;
+    let outputAudioCodecComp;
+    let outputVideoCodecComp;
+    let audioBitrateComp;
+    let audioSamplerateComp;
+    let videoWidthComp;
+    let videoHeightComp;
+    let videoBitrateComp;
+    let videoFramerateComp;
+    let audioDisableComp;
+    let videoDisableComp;
+
+    let startComp;
+    let durationComp;
+    let defaultVersion = '-simd.wasm'
+
+    audioDisableComp = new Vue({
+      el: '#audioDisable',
+      data: function () {
+        return {
+          disable: false
+        }
+      }
+    })
+
+    audioBitrateComp = new Vue({
+      el: '#audio-bitrate',
+      data: function () {
+        return {
+          bitrate: ''
+        }
+      }
+    })
+    audioSamplerateComp = new Vue({
+      el: '#audio-samplerate',
+      data: function () {
+        return {
+          samplerate: ''
+        }
+      }
+    })
+
+    outputFormatComp = new Vue({
+      el: '#outputFormat',
+      data: function () {
+        return {
+          radio: 'mp4',
+        }
+      }
+    })
+
+    videoDisableComp = new Vue({
+      el: '#videoDisable',
+      data: function () {
+        return {
+          disable: false
+        }
+      }
+    })
+
+    videoWidthComp = new Vue({
+      el: '#video-width',
+      data: function () {
+        return {
+          width: '',
+        }
+      }
+    })
+
+    videoHeightComp = new Vue({
+      el: '#video-height',
+      data: function () {
+        return {
+          height: '',
+        }
+      }
+    })
+
+    videoBitrateComp = new Vue({
+      el: '#video-bitrate',
+      data: function () {
+        return {
+          bitrate: ''
+        }
+      }
+    })
+    videoFramerateComp = new Vue({
+      el: '#video-framerate',
+      data: function () {
+        return {
+          framerate: ''
+        }
+      }
+    })
+
+    startComp = new Vue({
+      el: '#start',
+      data: function () {
+        return {
+          start: '',
+        }
+      }
+    })
+
+    durationComp = new Vue({
+      el: '#duration',
+      data: function () {
+        return {
+          duration: '',
+        }
+      }
+    })
+
+    outputAudioCodecComp = new Vue({
+      el: '#outputAudioCodec',
+      data: function () {
+        return {
+          radio: 'copy',
+        }
+      }
+    })
+
+    outputVideoCodecComp = new Vue({
+      el: '#outputVideoCodec',
+      data: function () {
+        return {
+          radio: 'copy',
+        }
+      }
+    })
+
+    enableWebcodecComponent = new Vue({
+      el: '#enableWebCodecs',
+      data: function () {
+        return {
+          enableWebCodecs: true
+        }
+      }
+    })
+
+    enableHardwareComponent = new Vue({
+      el: '#enableHardwareAcceleration',
+      data: function () {
+        return {
+          enableHardwareAcceleration: true
+        }
+      }
+    })
+
+    let openReadPromise;
+    let openWritePromise;
+    let supportAtomic = true
+    let transcoder
+
+    function process() {
+      Promise.all([openWritePromise]).then(async (value) => {
+
+        const writeFileHandler = value[0]
+
+        if (!transcoder) {
+          transcoder = new AVTranscoder({
+            getWasm: (type, codecId) => {
+              switch (type) {
+                case 'decoder': {
+
+                  if (codecId >= 65536 && codecId <= 65572) {
+                    return '../dist/decode/pcm' + defaultVersion
+                  }
+
+                  switch (codecId) {
+                    // mpeg1/2
+                    case 2:
+                      return `../dist/decode/mpeg2video` + defaultVersion
+                    // H264
+                    case 27:
+                      return '../dist/decode/h264' + defaultVersion
+                    // theora
+                    case 30:
+                      return '../dist/decode/theora' + defaultVersion
+                    // AAC
+                    case 86018:
+                      return '../dist/decode/aac' + defaultVersion
+                    // ac3
+                    case 86019:
+                      return '../dist/decode/ac3' + defaultVersion
+                    // eac3
+                    case 86056:
+                      return '../dist/decode/eac3' + defaultVersion
+                    // dts
+                    case 86020:
+                      return '../dist/decode/dca' + defaultVersion
+                    // MP3
+                    case 86017:
+                      return '../dist/decode/mp3' + defaultVersion
+                    // HEVC
+                    case 173:
+                      return '../dist/decode/hevc' + defaultVersion
+                    // VVC
+                    case 196:
+                      return '../dist/decode/vvc' + defaultVersion
+                    // Mpeg4
+                    case 12:
+                      return '../dist/decode/mpeg4' + defaultVersion
+                    // AV1
+                    case 225:
+                      return '../dist/decode/av1' + defaultVersion
+                    // Speex
+                    case 86051:
+                      return '../dist/decode/speex' + defaultVersion
+                    // Opus
+                    case 86076:
+                      return '../dist/decode/opus' + defaultVersion
+                    // flac
+                    case 86028:
+                      return '../dist/decode/flac' + defaultVersion
+                    // vorbis
+                    case 86021:
+                      return '../dist/decode/vorbis' + defaultVersion
+                    // vp8
+                    case 139:
+                      return '../dist/decode/vp8' + defaultVersion
+                    // vp9
+                    case 167:
+                      return '../dist/decode/vp9' + defaultVersion
+                    default:
+                      return null
+                  }
+                  return null
+                }
+                case 'encoder': {
+
+                  if (codecId >= 65536 && codecId <= 65572) {
+                    return '../dist/encode/pcm' + defaultVersion
+                  }
+
+                  switch (codecId) {
+                    // H264
+                    case 27:
+                      return '../dist/encode/x264' + defaultVersion
+                    // theora
+                    case 30:
+                      return '../dist/encode/theora' + defaultVersion
+                    // AAC
+                    case 86018:
+                      return '../dist/encode/aac' + defaultVersion
+                    // ac3
+                    case 86019:
+                      return '../dist/encode/ac3' + defaultVersion
+                    // eac3
+                    case 86056:
+                      return '../dist/encode/eac3' + defaultVersion
+                    // dts
+                    case 86020:
+                      return '../dist/encode/dca' + defaultVersion
+                      // MP3
+                    case 86017:
+                      return '../dist/encode/mp3lame' + defaultVersion
+                    // HEVC
+                    case 173:
+                      return '../dist/encode/x265' + defaultVersion
+                    // // VVC
+                    // case 196:
+                    //   return '../dist/encode/vvc' + defaultVersion
+                    // Mpeg4
+                    case 12:
+                      return '../dist/encode/mpeg4' + defaultVersion
+                    // AV1
+                    case 225:
+                      return '../dist/encode/av1' + defaultVersion
+                    // Speex
+                    case 86051:
+                      return '../dist/encode/speex' + defaultVersion
+                    // Opus
+                    case 86076:
+                      return '../dist/encode/opus' + defaultVersion
+                    // flac
+                    case 86028:
+                      return '../dist/encode/flac' + defaultVersion
+                    // vorbis
+                    case 86021:
+                      return '../dist/encode/vorbis' + defaultVersion
+                    // vp8
+                    case 139:
+                      return '../dist/encode/vp8' + defaultVersion
+                    // vp9
+                    case 167:
+                      return '../dist/encode/vp9' + defaultVersion
+                    default:
+                      return null
+                  }
+                  return null
+                }
+                case 'resampler':
+                  return '../dist/resample/resample' + defaultVersion
+                case 'scaler':
+                  return '../dist/scale/scale' + defaultVersion
+                case 'stretchpitcher':
+                  return '../dist/stretchpitch/stretchpitch' + defaultVersion
+                }
+            },
+          })
+
+          transcoder.setLogLevel(1)
+
+          transcoder.on('task-ended', (taskId) => {
+            console.log('task', taskId, 'transcode ended')
+          })
+          await transcoder.ready()
+        }
+
+        const file = document.querySelector('#file').files[0]
+
+        transcoder.addTask({
+          input: {
+            file,
+            enableWebCodecs: enableWebcodecComponent.enableWebCodecs,
+            enableHardware: enableHardwareComponent.enableHardwareAcceleration,
+          },
+          start: startComp.start,
+          duration: durationComp.duration,
+          output: {
+            file: writeFileHandler,
+            format: outputFormatComp.radio,
+            audio: {
+              disable: audioDisableComp.disable,
+              codec: outputAudioCodecComp.radio,
+              bitrate: audioBitrateComp.bitrate,
+              sampleRate: audioSamplerateComp.samplerate
+            },
+            video: {
+              disable: videoDisableComp.disable,
+              codec: outputVideoCodecComp.radio,
+              width: videoWidthComp.width,
+              height: videoHeightComp.height,
+              bitrate: videoBitrateComp.bitrate,
+              framerate: videoFramerateComp.framerate,
+              enableWebCodecs: enableWebcodecComponent.enableWebCodecs,
+              enableHardware: enableHardwareComponent.enableHardwareAcceleration,
+              encoderOptions: {
+                preset: 'fast'
+              }
+            }
+          }
+        }).then((taskId) => {
+          transcoder.startTask(taskId)
+        })
+      })
+    }
+    
+    function openWriteFile() {
+
+      const file = document.querySelector('#file').files[0]
+
+      if (!file) {
+        alert('open input file first')
+        return
+      }
+
+      openWritePromise = window.showSaveFilePicker({
+        suggestedName: 'test_muxing.' + outputFormatComp.radio
+      })
+      process()
+    }
+
+    const logcatbox = document.getElementsByName('logcatbox')[0];
+    const log = console.log
+    console.log = function(tag, msg, style) {
+      log(tag, msg)
+      logcatbox.value = logcatbox.value + (msg || tag) + '\n';
+      logcatbox.scrollTop = logcatbox.scrollHeight;
+    }
+  </script>
+</body>
+</html>
