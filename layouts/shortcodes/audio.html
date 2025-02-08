@@ -1,0 +1,17 @@
+{{- $src := .Get "src" | default (.Get 0) -}}
+<div class="audio-wrapper">
+    <p>
+        <a href="{{- $src -}}" download>下载音频</a>
+    </p>
+    <audio
+    controls
+    src="{{- $src -}}"
+    {{ with .Get "autoplay" }}autoplay{{ end }}
+    preload="metadata"
+    >
+        <p>
+            Your browser doesn't support HTML5 audio. Here is a
+            <a href="{{- $src -}}">link to the audio</a> instead.
+        </p>
+    </audio>
+</div>
