@@ -1,8 +1,33 @@
 {{- $src := .Get "src" | default (.Get 0) -}}
+{{ $uniqueID := substr ($src | md5) 0 8 }}
 <div class="video-links">
     <p>
         <a href="{{- $src -}}" download>下载视频</a>
-        <a href="/debug/#firefox-h265mpeg-h-hevc-视频播放" target="_blank">不支持的格式？</a>
+        <a
+            href="/tools/libmedia/product/player/player.html?isLive=0&hasFolder=1&hasHeader=1&hasFooter=1&foldFolder=1&url="
+            target="_blank"
+            id="video-link-libmedia-{{ $uniqueID }}"
+            >不支持的格式？</a
+        >
+        <script>
+            (function () {
+              var uniqueID = "{{ $uniqueID }}";
+              var origSrc = "{{ $src }}";
+              var link = document.getElementById("video-link-libmedia-" + uniqueID);
+              var currentPageLocation = window.location.toString();
+              if (currentPageLocation.endsWith("/") == false) {
+                currentPageLocation += "/";
+              }
+              if (origSrc.includes("://")) {
+                var src = origSrc;
+              } else {
+                var src = currentPageLocation + origSrc;
+              }
+              src = encodeURI(src);
+              var href = "/tools/libmedia/product/player/player.html?isLive=0&hasFolder=1&hasHeader=1&hasFooter=1&foldFolder=1&url=" + src;
+              link.href = href;
+            })();
+        </script>
     </p>
 </div>
 <div class="video-wrapper">
