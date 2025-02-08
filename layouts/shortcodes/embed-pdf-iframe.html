@@ -1,6 +1,6 @@
 {{ $uniqueID := substr (.Get "file" | md5) 0 8 }} 
 
-{{ $pdfFile := .Get "file" | relURL }}
+{{ $pdfFile := .Get "file" }}
 
 <div>
   <p>
@@ -14,7 +14,7 @@
   </p>
   <iframe
     src="/tools/pdf-js/web/viewer.html?file="
-    style="height: 500px; width: 100%; border: none; overflow: hidden"
+    style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
     id="embed-pdf-iframe-{{ $uniqueID }}"
   ></iframe>
   <script>
@@ -24,9 +24,16 @@
       var iframe = document.getElementById("embed-pdf-iframe-" + uniqueID);
       var link = document.getElementById("embed-pdf-link-" + uniqueID);
       var download = document.getElementById("embed-pdf-download-" + uniqueID);
-      var currentPagePath = window.location.pathname;
-      var src = currentPagePath + filepath;
-      src = src.replace("//", "/");
+      var currentPageLocation = window.location.toString();
+      if (currentPageLocation.endsWith("/") == false) {
+        currentPageLocation += "/";
+      }
+      if (filepath.includes("://")) {
+        var src = filepath;
+      } else {
+        var src = currentPageLocation + filepath;
+      }
+      src = encodeURI(src);
       var href = "/tools/pdf-js/web/viewer.html?file=" + src;
       iframe.src = href;
       link.href = href;
