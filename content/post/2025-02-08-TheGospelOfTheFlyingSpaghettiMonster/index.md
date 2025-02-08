@@ -1,6 +1,6 @@
 ---
 categories: Repost
-date: "2025-02-07T00:00:00Z"
+date: "2025-02-08T00:00:00Z"
 tags:
     - 宗教
 slug: TheGospelOfTheFlyingSpaghettiMonster
