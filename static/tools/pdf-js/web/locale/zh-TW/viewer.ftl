@@ -335,6 +335,10 @@ pdfjs-editor-stamp-add-image-button-label = 新增圖片
 pdfjs-editor-free-highlight-thickness-input = 線條粗細
 pdfjs-editor-free-highlight-thickness-title =
     .title = 更改強調文字以外的項目時的線條粗細
+# .default-content is used as a placeholder in an empty text editor.
+pdfjs-free-text2 =
+    .aria-label = 文字編輯器
+    .default-content = 請打字…
 pdfjs-free-text =
     .aria-label = 文本編輯器
 pdfjs-free-text-default-content = 在此打字…
@@ -345,8 +349,9 @@ pdfjs-ink-canvas =
 
 ## Alt-text dialog
 
-# Alternative text (alt text) helps when people can't see the image.
 pdfjs-editor-alt-text-button-label = 替代文字
+pdfjs-editor-alt-text-edit-button =
+    .aria-label = 編輯替代文字
 pdfjs-editor-alt-text-edit-button-label = 編輯替代文字
 pdfjs-editor-alt-text-dialog-label = 挑選一種
 pdfjs-editor-alt-text-dialog-description = 替代文字可協助盲人，或於圖片無法載入時提供說明。
@@ -360,6 +365,9 @@ pdfjs-editor-alt-text-decorative-tooltip = 已標示為裝飾性內容
 # .placeholder: This is a placeholder for the alt text input area
 pdfjs-editor-alt-text-textarea =
     .placeholder = 例如：「有一位年輕男人坐在桌子前面吃飯」
+# Alternative text (alt text) helps when people can't see the image.
+pdfjs-editor-alt-text-button =
+    .aria-label = 替代文字
 
 ## Editor resizers
 ## This is used in an aria label to help to understand the role of the resizer.
@@ -441,10 +449,16 @@ pdfjs-editor-new-alt-text-error-close-button = 關閉
 pdfjs-editor-new-alt-text-ai-model-downloading-progress = 正在下載替代文字 AI 模型（{ $downloadedSize } / { $totalSize } MB）
     .aria-valuetext = 正在下載替代文字 AI 模型（{ $downloadedSize } / { $totalSize } MB）
 # This is a button that users can click to edit the alt text they have already added.
+pdfjs-editor-new-alt-text-added-button =
+    .aria-label = 已新增替代文字
 pdfjs-editor-new-alt-text-added-button-label = 已新增替代文字
 # This is a button that users can click to open the alt text editor and add alt text when it is not present.
+pdfjs-editor-new-alt-text-missing-button =
+    .aria-label = 缺少替代文字
 pdfjs-editor-new-alt-text-missing-button-label = 缺少替代文字
 # This is a button that opens up the alt text modal where users should review the alt text that was automatically generated.
+pdfjs-editor-new-alt-text-to-review-button =
+    .aria-label = 確認替代文字
 pdfjs-editor-new-alt-text-to-review-button-label = 確認替代文字
 # "Created automatically" is a prefix that will be added to the beginning of any alt text that has been automatically generated. After the colon, the user will see/hear the actual alt text description. If the alt text has been edited by a human, this prefix will not appear.
 # Variables:
@@ -471,3 +485,19 @@ pdfjs-editor-alt-text-settings-editor-title = 替代文字編輯器
 pdfjs-editor-alt-text-settings-show-dialog-button-label = 新增圖片後立即顯示替代文字編輯器
 pdfjs-editor-alt-text-settings-show-dialog-description = 幫助您確保所有圖片都有替代文字。
 pdfjs-editor-alt-text-settings-close-button = 關閉
+
+## "Annotations removed" bar
+
+pdfjs-editor-undo-bar-message-highlight = 已移除強調
+pdfjs-editor-undo-bar-message-freetext = 已移除文字
+pdfjs-editor-undo-bar-message-ink = 已移除繪圖
+pdfjs-editor-undo-bar-message-stamp = 已移除圖片
+# Variables:
+#   $count (Number) - the number of removed annotations.
+pdfjs-editor-undo-bar-message-multiple = 已移除 { $count } 筆註解
+pdfjs-editor-undo-bar-undo-button =
+    .title = 還原
+pdfjs-editor-undo-bar-undo-button-label = 還原
+pdfjs-editor-undo-bar-close-button =
+    .title = 關閉
+pdfjs-editor-undo-bar-close-button-label = 關閉
