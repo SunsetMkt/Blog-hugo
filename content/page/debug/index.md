@@ -94,7 +94,7 @@ URL 参数`eruda=true`。
 
 For Windows：确保安装[来自设备制造商的 HEVC 视频扩展](ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq)，在`about:config`将`media.wmf.hevc.enabled`设为`1`（在最新版本已默认）。
 
-For Linux/Others：使用[zhaohappy/libmedia 提供的 Web 媒体播放器 Demo](https://zhaohappy.github.io/libmedia/product/player/player.html)作为临时替代方案。
+For Linux/Others：使用[zhaohappy/libmedia 提供的 Web 媒体播放器](/tools/libmedia/product/player/player.html)作为临时替代方案。
 
 ## 默认图片作者
 
