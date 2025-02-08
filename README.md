@@ -31,6 +31,7 @@ ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k ou
 
 # scoop install extras/handbrake
 # Use preset HandBrake-WebM-AV1-Opus-Reasonable.json
+# TODO: Make it better than H265.
 ```
 
 ## Cloudflare Pages enforce file size

@@ -96,6 +96,8 @@ For Windows：确保安装[来自设备制造商的 HEVC 视频扩展](ms-window
 
 For Linux/Others：使用[zhaohappy/libmedia 提供的 Web 媒体播放器](/tools/libmedia/product/player/player.html)作为临时替代方案。
 
+Shame on [MPEG LA](https://en.wikipedia.org/wiki/MPEG_LA#Criticism).
+
 ## 默认图片作者
 
 -   [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
