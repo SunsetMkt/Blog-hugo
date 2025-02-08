@@ -24,6 +24,7 @@ export declare const LOADING_MESSAGE_LOAD_AUDIO_DECODER = "loading audio decoder
 export declare const LOADING_MESSAGE_LOAD_VIDEO_DECODER = "loading video decoder(${decoder})...";
 export declare const LOADING_MESSAGE_LOAD_END = "readied (`\uFF65\u03C9\uFF65\u00B4)\u309E";
 export declare const LOADING_MESSAGE_LOAD_FAILED = "failed (\u2229\uFE35\u2229)";
+export declare const LOADING_MESSAGE_RESUME = "Click on the screen or volume button in footer to unmute audio";
 export declare const INFO_TITLE = "Stats Info";
 export declare const MENU_STATS = "Source Stats Info";
 export declare const SETTINGS_TITLE = "Settings";

@@ -25,6 +25,7 @@ export declare const LOADING_MESSAGE_LOAD_AUDIO_DECODER = "\u6B63\u5728\u52A0\u8
 export declare const LOADING_MESSAGE_LOAD_VIDEO_DECODER = "\u6B63\u5728\u52A0\u8F7D\u89C6\u9891\u89E3\u7801\u5668(${decoder})...";
 export declare const LOADING_MESSAGE_LOAD_END = "\u5DF2\u5C31\u7EEA (`\uFF65\u03C9\uFF65\u00B4)\u309E";
 export declare const LOADING_MESSAGE_LOAD_FAILED = "\u52A0\u8F7D\u5931\u8D25 (\u2229\uFE35\u2229)";
+export declare const LOADING_MESSAGE_RESUME = "\u70B9\u51FB\u753B\u9762\u5904\u6216\u8005\u5E95\u90E8\u97F3\u91CF\u6309\u94AE\u53D6\u6D88\u9759\u97F3";
 export declare const INFO_TITLE = "\u7EDF\u8BA1\u4FE1\u606F";
 export declare const MENU_STATS = "\u6E90\u7EDF\u8BA1\u4FE1\u606F";
 export declare const SETTINGS_TITLE = "\u8BBE\u7F6E";

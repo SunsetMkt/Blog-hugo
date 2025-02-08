@@ -455,6 +455,10 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      */
     resume(): Promise<void>;
     /**
+     * audioContext 是否是 suspended 状态
+     */
+    isSuspended(): boolean;
+    /**
      * 获取播放音量
      *
      * @returns

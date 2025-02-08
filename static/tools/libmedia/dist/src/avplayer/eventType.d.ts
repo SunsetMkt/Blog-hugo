@@ -13,6 +13,7 @@ export declare const TIMEOUT = "timeout";
 export declare const ERROR = "error";
 export declare const TIME = "time";
 export declare const RESUME = "resume";
+export declare const AUDIO_CONTEXT_RUNNING = "audioContextRunning";
 export declare const FIRST_AUDIO_RENDERED = "firstAudioRendered";
 export declare const FIRST_VIDEO_RENDERED = "firstVideoRendered";
 export declare const STREAM_UPDATE = "streamUpdate";
