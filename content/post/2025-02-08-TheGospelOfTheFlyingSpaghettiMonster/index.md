@@ -11,4 +11,4 @@ title: 飞天意面神怪的福音 (The Gospel of the Flying Spaghetti Monster)
 
 {{< embed-pdf-iframe file="The Gospel Of The Flying Spaghetti Monster.pdf" >}}
 
-{{< embed-pdf-iframe file="fmsj-c-66-6.pdf" >}}
+{{< embed-pdf-iframe file="fmsj-c-66.pdf" >}}
