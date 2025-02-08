@@ -6,14 +6,14 @@
   <p>
     <a href="#" id="embed-pdf-download-{{ $uniqueID }}" download>下载PDF</a>
     <a
-      href="/js/pdf-js/web/viewer.html?file="
+      href="/tools/pdf-js/web/viewer.html?file="
       target="_blank"
       id="embed-pdf-link-{{ $uniqueID }}"
       >在新页面打开</a
     >
   </p>
   <iframe
-    src="/js/pdf-js/web/viewer.html?file="
+    src="/tools/pdf-js/web/viewer.html?file="
     style="height: 500px; width: 100%; border: none; overflow: hidden"
     id="embed-pdf-iframe-{{ $uniqueID }}"
   ></iframe>
@@ -27,7 +27,7 @@
       var currentPagePath = window.location.pathname;
       var src = currentPagePath + filepath;
       src = src.replace("//", "/");
-      var href = "/js/pdf-js/web/viewer.html?file=" + src;
+      var href = "/tools/pdf-js/web/viewer.html?file=" + src;
       iframe.src = href;
       link.href = href;
       download.href = src;

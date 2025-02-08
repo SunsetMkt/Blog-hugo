@@ -2,7 +2,7 @@
 
 <!--https://github.com/anvithks/hugo-embed-pdf-shortcode/blob/master/layouts/shortcodes/embed-pdf.html-->
 
-<!--<script type="text/javascript" src='/js/pdf-js/build/pdf.js'></script>-->
+<!--<script type="text/javascript" src='/tools/pdf-js/build/pdf.js'></script>-->
 
 <style>
   #embed-pdf-container {
@@ -118,7 +118,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr (.Get 
 </noscript>
 
 <script type="module">
-    import '/js/pdf-js/build/pdf.mjs';
+    import '/tools/pdf-js/build/pdf.mjs';
     (function(){
     var url = '{{ .Get "url" }}';
 
