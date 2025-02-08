@@ -10,6 +10,7 @@ export interface AVPlayerUIOptions extends AVPlayerOptions {
     fullscreenDom?: HTMLElement;
     ui?: {
         hasFolder?: boolean;
+        folderFolded?: boolean;
         hasHeader?: boolean;
         hasFooter?: boolean;
     };
