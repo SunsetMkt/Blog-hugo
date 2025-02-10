@@ -7,10 +7,7 @@
             "label": "Serve Drafts",
             "type": "shell",
             "command": "hugo server -D",
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            },
+            "group": { "kind": "test", "isDefault": true },
             "isBackground": true,
             "problemMatcher": [
                 {
@@ -54,10 +51,7 @@
             "label": "Build",
             "type": "shell",
             "command": "hugo",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": { "kind": "build", "isDefault": true },
             "problemMatcher": []
         },
         {

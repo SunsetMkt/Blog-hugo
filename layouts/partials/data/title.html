@@ -14,7 +14,7 @@
         <!-- Paginated. Append page number to title -->
         {{ $title = printf "Page %d - %s" .Paginator.PageNumber $siteTitle }}
     {{ else }}
-        {{ $title = $siteTitle}}
+        {{ $title = $siteTitle }}
     {{ end }}
 {{- else if eq .Kind "term" -}}
     <!-- Taxonomy page -->
@@ -23,13 +23,14 @@
     {{ $notHidden := where .Pages "Params.hidden" "!=" true }}
     {{ $pag := .Paginate ($notHidden) }}
 
+
     <!-- {TAXONOMY_TYPE}: {TAXONOMY_TERM} -->
     {{ $title = slice (title .Data.Singular) ": " $title }}
 
     {{ if .Paginator.HasPrev }}
         <!-- Add page number-->
         {{ $title = $title | append " - " .Paginator }}
-    {{ end }} 
+    {{ end }}
 
     {{ $title = $title | append " - " $siteTitle }}
     {{ $title = delimit $title "" }}

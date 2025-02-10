@@ -9,7 +9,7 @@ ul,
 ol,
 a,
 tr {
-	page-break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 // Orphans and widows
@@ -18,8 +18,8 @@ h3,
 h4,
 p,
 a {
-	orphans: 3; // minimum number of lines that must be left at the bottom of a page
-	widows: 3; // minimum number of lines that must be left at the top of a page
+    orphans: 3; // minimum number of lines that must be left at the bottom of a page
+    widows: 3; // minimum number of lines that must be left at the top of a page
 }
 
 // Avoid breaking inside or just after titles
@@ -29,25 +29,25 @@ h3,
 h4,
 h5,
 h6 {
-	page-break-after: avoid;
-	page-break-inside: avoid;
+    page-break-after: avoid;
+    page-break-inside: avoid;
 }
 
 // Avoid breaking before a paragraph if header before
 h1 + p,
 h2 + p,
 h3 + p {
-	page-break-before: avoid;
+    page-break-before: avoid;
 }
 
 // Avoid to break inside an image
 img {
-	page-break-after: auto;
-	page-break-before: auto;
-	page-break-inside: avoid;
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
 }
 
 pre {
-	white-space: pre-wrap !important;
-	word-wrap: break-word;
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
 }

@@ -1,43 +1,43 @@
 .page-break,
 .break-before,
 .page-break-before {
-	page-break-before: always;
+    page-break-before: always;
 }
 
 .break-after,
 .page-break-after {
-	page-break-after: always;
+    page-break-after: always;
 }
 
 .avoid-break-inside {
-	page-break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 .no-print {
-	display: none;
+    display: none;
 }
 
 a {
-	&.no-reformat:after {
-		content: '';
-	}
+    &.no-reformat:after {
+        content: "";
+    }
 }
 
 abbr,
 acronym {
-	&[title] {
-		&.no-reformat:after {
-			content: '';
-		}
-	}
+    &[title] {
+        &.no-reformat:after {
+            content: "";
+        }
+    }
 }
 
 .no-reformat {
-	abbr,
-	acronym,
-	a {
-		&:after {
-			content: '';
-		}
-	}
+    abbr,
+    acronym,
+    a {
+        &:after {
+            content: "";
+        }
+    }
 }

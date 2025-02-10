@@ -6,3 +6,4 @@ public
 resources
 .hugo_build.lock
 node_modules/
+*.pdf

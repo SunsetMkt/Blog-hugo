@@ -8,7 +8,8 @@
 @import "lxgw-wenkai-web";
 
 // 为元素添加过渡效果
-aside, article {
+aside,
+article {
     transition: all 0.5s ease-in-out;
 }
 

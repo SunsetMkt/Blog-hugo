@@ -1,18 +1,18 @@
 backend:
-  name: github
-  repo: SunsetMkt/Blog-hugo
-  branch: main
-  use_graphql: true
-  site_domain: https://blog.sunmkt.uk
-  base_url: https://blog.sunmkt.uk
-  auth_endpoint: /api/auth
-  commit_messages:
-    create: "cms: create {{collection}} {{slug}}"
-    update: "cms: update {{collection}} {{slug}}"
-    delete: "cms: delete {{collection}} {{slug}}"
-    uploadMedia: "cms: uploadMedia {{path}}"
-    deleteMedia: "cms: deleteMedia {{path}}"
-    openAuthoring: "cms: openAuthoring {{message}}"
+    name: github
+    repo: SunsetMkt/Blog-hugo
+    branch: main
+    use_graphql: true
+    site_domain: https://blog.sunmkt.uk
+    base_url: https://blog.sunmkt.uk
+    auth_endpoint: /api/auth
+    commit_messages:
+        create: "cms: create {{collection}} {{slug}}"
+        update: "cms: update {{collection}} {{slug}}"
+        delete: "cms: delete {{collection}} {{slug}}"
+        uploadMedia: "cms: uploadMedia {{path}}"
+        deleteMedia: "cms: deleteMedia {{path}}"
+        openAuthoring: "cms: openAuthoring {{message}}"
 
 locale: "zh_Hans"
 
@@ -21,39 +21,39 @@ media_folder: "static/admin/uploads" # Media files will be stored in the repo un
 public_folder: "/admin/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "post" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "content/post" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    identifier_field: "slug"
-    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index" # Filename template, e.g., YYYY-MM-DD-title.md
-    media_folder: ""
-    public_folder: ""
-    fields: # The fields for each document, usually in front matter
-      - {
-          label: "Categories",
-          name: "categories",
-          widget: "select",
-          options: ["Original", "Repost"],
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Files", name: "files", widget: "file" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "page" # Used in routes, e.g., /admin/collections/blog
-    label: "Page" # Used in the UI
-    folder: "content/page" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    identifier_field: "slug"
-    path: "{{slug}}/index" # Filename template, e.g., YYYY-MM-DD-title.md
-    media_folder: ""
-    public_folder: ""
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Files", name: "files", widget: "file" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    - name: "post" # Used in routes, e.g., /admin/collections/blog
+      label: "Post" # Used in the UI
+      folder: "content/post" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      identifier_field: "slug"
+      path: "{{year}}-{{month}}-{{day}}-{{slug}}/index" # Filename template, e.g., YYYY-MM-DD-title.md
+      media_folder: ""
+      public_folder: ""
+      fields: # The fields for each document, usually in front matter
+          - {
+                label: "Categories",
+                name: "categories",
+                widget: "select",
+                options: ["Original", "Repost"],
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "Tags", name: "tags", widget: "list" }
+          - { label: "Files", name: "files", widget: "file" }
+          - { label: "Body", name: "body", widget: "markdown" }
+    - name: "page" # Used in routes, e.g., /admin/collections/blog
+      label: "Page" # Used in the UI
+      folder: "content/page" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      identifier_field: "slug"
+      path: "{{slug}}/index" # Filename template, e.g., YYYY-MM-DD-title.md
+      media_folder: ""
+      public_folder: ""
+      fields: # The fields for each document, usually in front matter
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "Files", name: "files", widget: "file" }
+          - { label: "Body", name: "body", widget: "markdown" }

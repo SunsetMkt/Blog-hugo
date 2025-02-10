@@ -1,22 +1,22 @@
-{{ $uniqueID := substr (.Get "file" | md5) 0 8 }} 
-
+{{ $uniqueID := substr (.Get "file" | md5) 0 8 }}
 {{ $pdfFile := .Get "file" }}
 
+
 <div>
-  <p>
-    <a href="#" id="embed-pdf-download-{{ $uniqueID }}" download>下载PDF</a>
-    <a
-      href="/tools/pdf-js/web/viewer.html?file="
-      target="_blank"
-      id="embed-pdf-link-{{ $uniqueID }}"
-      >在新页面打开</a
-    >
-  </p>
-  <iframe
-    src="/tools/pdf-js/web/viewer.html?file="
-    style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
-    id="embed-pdf-iframe-{{ $uniqueID }}"
-  ></iframe>
+    <p>
+        <a href="#" id="embed-pdf-download-{{ $uniqueID }}" download>下载PDF</a>
+        <a
+            href="/tools/pdf-js/web/viewer.html?file="
+            target="_blank"
+            id="embed-pdf-link-{{ $uniqueID }}"
+            >在新页面打开</a
+        >
+    </p>
+    <iframe
+        src="/tools/pdf-js/web/viewer.html?file="
+        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        id="embed-pdf-iframe-{{ $uniqueID }}"
+    ></iframe>
   <script>
     (function () {
       var uniqueID = "{{ $uniqueID }}";
