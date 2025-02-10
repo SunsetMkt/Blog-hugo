@@ -24,18 +24,18 @@ title: 原神私服Grasscutter部署备忘
 
 假定操作系统为 Windows 10/11
 
--   安装 MongoDB Community 版本，默认设置（安装为服务）
--   安装[JDK17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
--   安装 Git（可选，推荐）
--   安装 Python，勾选“将 Python 加入`PATH`”，执行`pip install mitmproxy`（可选，推荐）
--   `git clone https://github.com/Grasscutters/Grasscutter.git`或者直接下载 zip 代码库（development 分支）
--   进入代码库
--   `git checkout development`
--   `.\gradlew.bat`
--   `.\gradlew jar`
--   用上面提到的的方法，把[这个仓库里的](https://github.com/Koko-boya/Grasscutter_Resources)Resource 文件夹放进去
--   `java -jar grasscutter-版本号-dev.jar`运行服务器
--   如果无法连接数据库，使用 任务管理器-服务-找到 MongoDB 项目，启动它
+- 安装 MongoDB Community 版本，默认设置（安装为服务）
+- 安装[JDK17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- 安装 Git（可选，推荐）
+- 安装 Python，勾选“将 Python 加入`PATH`”，执行`pip install mitmproxy`（可选，推荐）
+- `git clone https://github.com/Grasscutters/Grasscutter.git`或者直接下载 zip 代码库（development 分支）
+- 进入代码库
+- `git checkout development`
+- `.\gradlew.bat`
+- `.\gradlew jar`
+- 用上面提到的的方法，把[这个仓库里的](https://github.com/Koko-boya/Grasscutter_Resources)Resource 文件夹放进去
+- `java -jar grasscutter-版本号-dev.jar`运行服务器
+- 如果无法连接数据库，使用 任务管理器-服务-找到 MongoDB 项目，启动它
 
 ## 获取并配置客户端
 

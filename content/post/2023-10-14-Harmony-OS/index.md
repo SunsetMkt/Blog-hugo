@@ -10,9 +10,9 @@ title: 有关HarmonyOS的误区
 
 不是所有名字里有“Harmony”的都是“自主开发”。
 
--   [HarmonyOS](https://consumer.huawei.com/cn/harmonyos-4/)（华为的 to C 移动端操作系统）是基于 [AOSP](https://source.android.com/?hl=zh-cn) 修改的操作系统，包括华为的私有软件。（非自研）
--   [OpenHarmony](https://gitee.com/openharmony)（开源项目）是为 IoT 设备设计的操作系统。（自研）
--   HarmonyOS Next（目前仅面向合作的企业开发者发布）（华为未发布的 to C 移动端操作系统），根据公开信息，不是基于 AOSP 修改的操作系统，但不排除使用 Linux 内核。（半自研）
+- [HarmonyOS](https://consumer.huawei.com/cn/harmonyos-4/)（华为的 to C 移动端操作系统）是基于 [AOSP](https://source.android.com/?hl=zh-cn) 修改的操作系统，包括华为的私有软件。（非自研）
+- [OpenHarmony](https://gitee.com/openharmony)（开源项目）是为 IoT 设备设计的操作系统。（自研）
+- HarmonyOS Next（目前仅面向合作的企业开发者发布）（华为未发布的 to C 移动端操作系统），根据公开信息，不是基于 AOSP 修改的操作系统，但不排除使用 Linux 内核。（半自研）
 
 华为有意不澄清“HarmonyOS（华为的 to C 移动端操作系统）不是基于 AOSP 修改的操作系统”这一谣言，是作为企业的失信。使用开源项目并注明来源是道德要求。
 

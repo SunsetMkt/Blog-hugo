@@ -28,8 +28,8 @@ Run [FModel](https://github.com/4sval/FModel), select the game folder `C:\PathTo
 
 Export the following folders (as raw files):
 
--   `Client/Content/Aki/Movies`
--   `Client/Content/Aki/WwiseAudio_Generated`
+- `Client/Content/Aki/Movies`
+- `Client/Content/Aki/WwiseAudio_Generated`
 
 You may also need `Client/Content/Aki/ConfigDB` to know which audio is needed for the video (the videos do not have audio). But it's easy to guess from the filenames. So we just skip it. If you are curious, they are just standard SQLite database files. Use [sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser) to open them.
 

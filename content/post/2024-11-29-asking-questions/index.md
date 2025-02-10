@@ -116,6 +116,6 @@ title: "如何（有效地！）提问技术问题"
 
 ## 有用的链接和进一步阅读
 
--   [https://stackoverflow.com/help/how-to-ask](https://stackoverflow.com/help/how-to-ask)
--   [https://www.catb.org/~esr/faqs/smart-questions.html](https://www.catb.org/~esr/faqs/smart-questions.html)
--   [https://dontasktoask.com/](https://dontasktoask.com/)
+- [https://stackoverflow.com/help/how-to-ask](https://stackoverflow.com/help/how-to-ask)
+- [https://www.catb.org/~esr/faqs/smart-questions.html](https://www.catb.org/~esr/faqs/smart-questions.html)
+- [https://dontasktoask.com/](https://dontasktoask.com/)

@@ -174,9 +174,9 @@ WinRAR 在做完 SHA1 计算后，采用大数 ![h-inlined] 作为 ECC 签名时
 
 1. 设 6 个 32 位整数为 ![](http://latex.codecogs.com/svg.latex?%5Cinline%20g_0%2Cg_1%2Cg_2%2Cg_3%2Cg_4%2Cg_5)，则有
 
-    <p align="center">
-        <img src="http://latex.codecogs.com/svg.latex?g_j%3D%5Csum_%7Bi%3D0%7D%5E%7B3%7Dg_%7Bj%2Ci%7D%20%5Ccdot%202%5E%7B8i%7D%20%5Cquad%20%5Cquad%20g_%7Bj%2Ci%7D%5Cin%5B0%2C256%29">
-    </p>
+ <p align="center">
+     <img src="http://latex.codecogs.com/svg.latex?g_j%3D%5Csum_%7Bi%3D0%7D%5E%7B3%7Dg_%7Bj%2Ci%7D%20%5Ccdot%202%5E%7B8i%7D%20%5Cquad%20%5Cquad%20g_%7Bj%2Ci%7D%5Cin%5B0%2C256%29">
+ </p>
 
 2. 令 ![](http://latex.codecogs.com/svg.latex?%5Cinline%20g_0%3D0)。
 
@@ -206,9 +206,9 @@ WinRAR 在做完 SHA1 计算后，采用大数 ![h-inlined] 作为 ECC 签名时
 
 6. 重复执行完后会得到 ![](http://latex.codecogs.com/svg.latex?%5Cinline%20k_1%2Ck_2%2Ck_3%2C%5Cldots%2Ck_%7B15%7D)，则输出私钥
 
-    <p align="center">
-        <img src="http://latex.codecogs.com/svg.latex?k%3D%5Csum_%7Bi%3D1%7D%5E%7B15%7Dk_i%20%5Ccdot%202%5E%7B16i%7D">
-    </p>
+ <p align="center">
+     <img src="http://latex.codecogs.com/svg.latex?k%3D%5Csum_%7Bi%3D1%7D%5E%7B15%7Dk_i%20%5Ccdot%202%5E%7B16i%7D">
+ </p>
 
 ## 6. WinRAR 的公钥和私钥
 
@@ -232,15 +232,15 @@ WinRAR 的私钥 ![k-inlined] 为：
 
 1. 用户名的 ANSI 字符串，不包括 null-terminator；记为
 
-    <p align="center">
-        <img src="http://latex.codecogs.com/svg.latex?U%3Du_0u_1%20%5Cldots%20u_%7Bl-1%7D">
-    </p>
+ <p align="center">
+     <img src="http://latex.codecogs.com/svg.latex?U%3Du_0u_1%20%5Cldots%20u_%7Bl-1%7D">
+ </p>
 
 2. 授权类型的 ANSI 字符串，不包括 null-terminator；记为
 
-    <p align="center">
-        <img src="http://latex.codecogs.com/svg.latex?L%3Dl_0l_1%20%5Cldots%20l_%7Bl-1%7D">
-    </p>
+ <p align="center">
+     <img src="http://latex.codecogs.com/svg.latex?L%3Dl_0l_1%20%5Cldots%20l_%7Bl-1%7D">
+ </p>
 
 `rarreg.key` 的生成算法如下：
 
@@ -250,9 +250,9 @@ WinRAR 的私钥 ![k-inlined] 为：
 
 2. 令字符串 ![Data3-inlined]为
 
-    <p align="center">
-        <img src="http://latex.codecogs.com/svg.latex?Data%5E3%3D%5Ctexttt%7B%2260%22%7D%7C%7CTemp_0%7C%7CTemp_1%7C%7C%5Cldots%7C%7CTemp_%7B47%7D">
-    </p>
+ <p align="center">
+     <img src="http://latex.codecogs.com/svg.latex?Data%5E3%3D%5Ctexttt%7B%2260%22%7D%7C%7CTemp_0%7C%7CTemp_1%7C%7C%5Cldots%7C%7CTemp_%7B47%7D">
+ </p>
 
 3. 使用 ![Data3-inlined] 通过算法 5 计算出私钥 ![](http://latex.codecogs.com/svg.latex?%5Cinline%20k_%7BData%5E3%7D) 以及公钥 ![](http://latex.codecogs.com/svg.latex?%5Cinline%20P_%7BData%5E3%7D)，并将公钥 ![](http://latex.codecogs.com/svg.latex?%5Cinline%20P_%7BData%5E3%7D) 按照 SM2 压缩公钥格式以 Hex 字符串（ASCII 编码）的形式输出。得到的 Hex 字符串记为 ![Data0-inlined]。
 
@@ -260,9 +260,9 @@ WinRAR 的私钥 ![k-inlined] 为：
 
 4. 令字符串 ![UID-inlined]为
 
-    <p align="center">
-        <img src="http://latex.codecogs.com/svg.latex?UID%3DTemp_%7B48%7D%7C%7CTemp_%7B49%7D%7C%7C%5Cldots%7C%7CTemp_%7B63%7D%7C%7CData%5E0_0%7C%7CData%5E0_1%7C%7CData%5E0_2%7C%7CData%5E0_3">
-    </p>
+ <p align="center">
+     <img src="http://latex.codecogs.com/svg.latex?UID%3DTemp_%7B48%7D%7C%7CTemp_%7B49%7D%7C%7C%5Cldots%7C%7CTemp_%7B63%7D%7C%7CData%5E0_0%7C%7CData%5E0_1%7C%7CData%5E0_2%7C%7CData%5E0_3">
+ </p>
 
 5. 对授权类型 ![LL-inlined] 使用算法 4 得到签名 ![](http://latex.codecogs.com/svg.latex?%5Cinline%20%28r_L%2Cs_L%29)，其中私钥见第 6 节。
 
@@ -274,9 +274,9 @@ WinRAR 的私钥 ![k-inlined] 为：
 
 7. 令字符串 ![Data1-inlined]为
 
-    <p align="center">
-        <img src="http://latex.codecogs.com/svg.latex?Data%5E1%3D%5Ctexttt%7B%2260%22%7D%7C%7CSZ%5E%7Bs_L%7D%7C%7CSZ%5E%7Br_L%7D">
-    </p>
+ <p align="center">
+     <img src="http://latex.codecogs.com/svg.latex?Data%5E1%3D%5Ctexttt%7B%2260%22%7D%7C%7CSZ%5E%7Bs_L%7D%7C%7CSZ%5E%7Br_L%7D">
+ </p>
 
 8. 令字符串 ![Temp-inlined]为
 
@@ -322,9 +322,9 @@ WinRAR 的私钥 ![k-inlined] 为：
 
     - UID，占一行：
 
-        <p align="center">
-          <img src="http://latex.codecogs.com/svg.latex?%5Ctexttt%7B%22UID%3D%22%7D%7C%7CUID">
-        </p>
+          <p align="center">
+            <img src="http://latex.codecogs.com/svg.latex?%5Ctexttt%7B%22UID%3D%22%7D%7C%7CUID">
+          </p>
 
     - 将 ![Data-inlined] 按照每行 54 个字符输出。
 

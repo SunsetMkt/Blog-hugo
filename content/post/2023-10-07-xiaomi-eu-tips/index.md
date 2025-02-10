@@ -16,10 +16,10 @@ title: 关于MIUI EU的备忘
 
 参阅：
 
--   [目前基本可以认为小米已经禁止 BL 解锁了 - V2EX](https://www.v2ex.com/t/998253)
--   [各 Android 手机厂商 Bootloader 解锁 / 内核开源 / 解锁后保修情况](https://github.com/KHwang9883/MobileModels/blob/master/misc/bootloader-kernel-source.md)
--   [利用漏洞绕过小米 HyperOS 对 BootLoader 解锁账户绑定限制社区等级](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass)
--   [小米 BootLoader《解锁资格答题测试》更新记录](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire)
+- [目前基本可以认为小米已经禁止 BL 解锁了 - V2EX](https://www.v2ex.com/t/998253)
+- [各 Android 手机厂商 Bootloader 解锁 / 内核开源 / 解锁后保修情况](https://github.com/KHwang9883/MobileModels/blob/master/misc/bootloader-kernel-source.md)
+- [利用漏洞绕过小米 HyperOS 对 BootLoader 解锁账户绑定限制社区等级](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass)
+- [小米 BootLoader《解锁资格答题测试》更新记录](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire)
 
 ---
 
@@ -37,9 +37,9 @@ MIUI EU 大多修改自对应的 MIUI 中国版，但移除了只针对中国大
 
 尽管网页有警告“解锁后指纹识别、查找手机等服务将变得不安全”，但实际上影响不大：
 
--   无论如何，长按电源键 10 秒都会强制关闭设备，查找手机将无法定位/响铃，Bootloader 锁只能保证此手机不会被刷入第三方系统从而绕过小米的防盗，但设备仍然可以被拆解售卖。
--   现代 Android 会默认启动存储加密，只要设置锁定密码，个人信息将无法被解密。
--   指纹识别硬件的安全性能理论上没有改变，除非第三方软件故意检测解锁从而拒绝使用指纹。
+- 无论如何，长按电源键 10 秒都会强制关闭设备，查找手机将无法定位/响铃，Bootloader 锁只能保证此手机不会被刷入第三方系统从而绕过小米的防盗，但设备仍然可以被拆解售卖。
+- 现代 Android 会默认启动存储加密，只要设置锁定密码，个人信息将无法被解密。
+- 指纹识别硬件的安全性能理论上没有改变，除非第三方软件故意检测解锁从而拒绝使用指纹。
 
 但也确实会创造可能被利用的通道，例如：攻击者可以通过**物理接触设备**的方式刷入被恶意修改的系统镜像，当用户没有察觉并输入锁屏密码后，利用镜像中预先植入的恶意软件窃取用户数据。
 

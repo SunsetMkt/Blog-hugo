@@ -12,11 +12,11 @@ Project Gutenberg Australia
 Title: Nineteen eighty-four
 Author: George Orwell (pseudonym of Eric Blair) (1903-1950)
 
--   A Project Gutenberg of Australia eBook \*
-    eBook No.: 0100021.txt
-    Language: English
-    Date first posted: August 2001
-    Date most recently updated: November 2008
+- A Project Gutenberg of Australia eBook \*
+  eBook No.: 0100021.txt
+  Language: English
+  Date first posted: August 2001
+  Date most recently updated: November 2008
 
 Project Gutenberg of Australia eBooks are created from printed editions
 which are in the public domain in Australia, unless a copyright notice

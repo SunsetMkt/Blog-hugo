@@ -65,6 +65,6 @@ title: 锟斤拷锟斤拷锟斤拷锟斤拷
 >
 > #### Usage notes
 >
-> -   The traditional form 錕斤拷 is a back-formation of the simplified form [锟斤拷](https://en.wiktionary.org/wiki/锟斤拷#Chinese). In reality only the simplified form appears in this mojibake.
+> - The traditional form 錕斤拷 is a back-formation of the simplified form [锟斤拷](https://en.wiktionary.org/wiki/锟斤拷#Chinese). In reality only the simplified form appears in this mojibake.
 >
 > From: https://en.wiktionary.org/wiki/%E9%8C%95%E6%96%A4%E6%8B%B7

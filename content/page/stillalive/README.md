@@ -12,5 +12,5 @@ This repository is only for **archive purpose only**, means it's **NOT INTENTED*
 
 ## Copyright
 
--   Portal ⓒ Valve Corporation, see "Copyright" section in [Valve Legal Info](https://store.steampowered.com/legal/)
--   `still-alive-web` made by [SD SkyKlouD](https://twitter.com/_SDSkyKlouD)
+- Portal ⓒ Valve Corporation, see "Copyright" section in [Valve Legal Info](https://store.steampowered.com/legal/)
+- `still-alive-web` made by [SD SkyKlouD](https://twitter.com/_SDSkyKlouD)

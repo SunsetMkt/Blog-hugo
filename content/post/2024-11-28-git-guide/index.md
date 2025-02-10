@@ -195,16 +195,16 @@ _1b2e1d63ff_ 是你想要标记的提交 ID 的前 10 位字符。可以使用�
 
 ### 图形化客户端
 
--   [GitX (L) (OSX, 开源软件)](http://gitx.laullon.com/)
--   [Tower (OSX)](http://www.git-tower.com/)
--   [Source Tree (OSX, 免费)](http://www.sourcetreeapp.com/)
--   [GitHub for Mac (OSX, 免费)](http://mac.github.com/)
--   [GitBox (OSX, App Store)](https://itunes.apple.com/gb/app/gitbox/id403388357?mt=12)
+- [GitX (L) (OSX, 开源软件)](http://gitx.laullon.com/)
+- [Tower (OSX)](http://www.git-tower.com/)
+- [Source Tree (OSX, 免费)](http://www.sourcetreeapp.com/)
+- [GitHub for Mac (OSX, 免费)](http://mac.github.com/)
+- [GitBox (OSX, App Store)](https://itunes.apple.com/gb/app/gitbox/id403388357?mt=12)
 
 ### 指南和手册
 
--   [Git 社区参考书](http://book.git-scm.com/)
--   [专业 Git](http://progit.org/book/)
--   [像 git 那样思考](http://think-like-a-git.net/)
--   [GitHub 帮助](http://help.github.com/)
--   [图解 Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
+- [Git 社区参考书](http://book.git-scm.com/)
+- [专业 Git](http://progit.org/book/)
+- [像 git 那样思考](http://think-like-a-git.net/)
+- [GitHub 帮助](http://help.github.com/)
+- [图解 Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)

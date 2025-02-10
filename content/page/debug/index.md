@@ -100,10 +100,10 @@ Shame on [MPEG LA](https://en.wikipedia.org/wiki/MPEG_LA#Criticism).
 
 ## 默认图片作者
 
--   [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
--   [mymind](https://unsplash.com/@mymind)
--   [Luke Chesser](https://unsplash.com/@lukechesser)
--   [Codioful (Formerly Gradienta)](https://unsplash.com/@codioful)
+- [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
+- [mymind](https://unsplash.com/@mymind)
+- [Luke Chesser](https://unsplash.com/@lukechesser)
+- [Codioful (Formerly Gradienta)](https://unsplash.com/@codioful)
 
 ## 调试信息
 
