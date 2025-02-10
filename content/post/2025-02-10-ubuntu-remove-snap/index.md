@@ -8,9 +8,9 @@ slug: ubuntu-remove-snap
 title: 从 Ubuntu 中移除 Snap
 ---
 
-参考[How to Remove and Disable Snap | Baeldung on Linux](https://www.baeldung.com/linux/snap-remove-disable)。
+参考[How to Remove and Disable Snap | Baeldung on Linux](https://www.baeldung.com/linux/snap-remove-disable)和[Completely remove Snap from Ubuntu 24.04? : r/Ubuntu](https://www.reddit.com/r/Ubuntu/comments/1chilj4/completely_remove_snap_from_ubuntu_2404/)
 
-在 Ubuntu 24.04 (Server & WSL) 上测试通过。
+在 Ubuntu 24.04 (Server & WSL) 上测试通过，社区报告 18.04, 20.04, 22.04 也可行。
 
 ## 步骤
 
@@ -38,11 +38,11 @@ snapd                2.67           23545  latest/stable  canonical✓  snapd
 根据`snap list`的输出，逐个移除所有 Snap 包。
 
 ```bash
-sudo snap remove canonical-livepatch
-sudo snap remove lxd
-sudo snap remove core20
-sudo snap remove core22
-sudo snap remove snapd
+sudo snap remove --purge canonical-livepatch
+sudo snap remove --purge lxd
+sudo snap remove --purge core20
+sudo snap remove --purge core22
+sudo snap remove --purge snapd
 ```
 
 确保已移除所有包。
@@ -88,7 +88,7 @@ snapd set on hold.
 
 注意：Server 版本中，`ubuntu-server-minimal`可能会被自动移除。在 24.04 版本中，这没有影响。
 
-## 移除 Snap 包目录
+### 移除 Snap 包目录
 
 ```bash
 rm -rf ~/snap
@@ -97,7 +97,7 @@ sudo rm -rf /var/snap
 sudo rm -rf /var/lib/snapd
 ```
 
-## 阻止 snapd 通过依赖（Canonical 的 Snap 包装器）安装
+### 阻止 snapd 通过依赖（Canonical 的 Snap 包装器）安装
 
 ```bash
 sudo cat <<EOF | sudo tee /etc/apt/preferences.d/nosnap.pref
@@ -124,3 +124,7 @@ The following packages have unmet dependencies:
  chromium-browser : PreDepends: snapd but it is not installable
 E: Unable to correct problems, you have held broken packages.
 ```
+
+## 可选：使用假 snapd 包修复依赖关系
+
+Internet Archive 上有一个[社区贡献的假 snapd 包](https://archive.org/details/snapd-dummy)（[文件备份](snapd-dummy.zip)），可以用来修复依赖关系。
