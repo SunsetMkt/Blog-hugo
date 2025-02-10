@@ -3,12 +3,14 @@
 <div class="video-links">
     <p>
         <a href="{{- $src -}}" download>下载视频</a>
+        |
         <a
             href="/tools/libmedia/product/player/player.html?isLive=0&hasFolder=1&hasHeader=1&hasFooter=1&foldFolder=1&url="
             target="_blank"
             id="video-link-libmedia-{{ $uniqueID }}"
             >不支持的格式？</a
         >
+        |
         <a
             class="kantcshit-btn"
             href="javascript:kantcshit();remove_kantcshit_btn();"
