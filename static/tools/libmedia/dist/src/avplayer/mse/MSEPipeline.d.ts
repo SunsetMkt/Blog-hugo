@@ -84,8 +84,8 @@ export default class MSEPipeline extends Pipeline {
     private createLoop;
     private startMux;
     private resetResource;
-    addStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, startPTS: int64, pullIPCPort: MessagePort): Promise<void>;
-    reAddStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, startPTS: int64): Promise<void>;
+    addStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, startPTS: int64, pullIPCPort: MessagePort, matrix?: number[]): Promise<void>;
+    reAddStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, startPTS: int64, matrix?: number[]): Promise<void>;
     pause(taskId: string): Promise<void>;
     unpause(taskId: string): Promise<void>;
     beforeSeek(taskId: string): Promise<void>;
