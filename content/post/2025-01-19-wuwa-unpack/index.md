@@ -10,9 +10,7 @@ slug: wuwa-unpack
 title: 《鸣潮》的资源文件解包（和其他逆向工程）
 ---
 
-使用[FModel](https://github.com/4sval/FModel)工具和[wuwa-aes-archive](https://github.com/ClostroOffi/wuwa-aes-archive)的 AES Key 打开 Pak 文件。
-
-《鸣潮》使用标准 Unreal 资源文件加密。
+使用[FModel](https://github.com/4sval/FModel)工具（或[xavo95/repak](https://github.com/xavo95/repak.git)）和[wuwa-aes-archive](https://github.com/ClostroOffi/wuwa-aes-archive)的 AES Key 打开 Pak 文件。
 
 ## 可能会有帮助的其他工具
 
