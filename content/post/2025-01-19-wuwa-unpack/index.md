@@ -24,7 +24,7 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 - 作弊 <https://github.com/chadlrnsn/wuwa-moonlight>
 - 图像配置优化 <https://github.com/AlteriaX/WuWa-Configs>
 - 自动化 <https://github.com/ok-oldking/ok-wuthering-waves>
-- FPS 调节 <https://github.com/WakuWakuPadoru/WuWa_Simple_FPSUnlocker>
+- FPS 调节和在官方不支持的设备上启用光线追踪 <https://github.com/WakuWakuPadoru/WuWa_Simple_FPSUnlocker>
 - 私服 <https://github.com/thexeondev/WutheringWaves>
 - Mod 加载 <https://github.com/SpectrumQT/WWMI-Package>
 - 解包数据 <https://github.com/Arikatsu/WutheringWaves_Data>
