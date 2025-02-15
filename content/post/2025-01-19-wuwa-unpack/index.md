@@ -17,6 +17,7 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 - Wwise 事件提取 <https://github.com/bnnm/wwiser>
 - Unreal 模型提取 <https://www.gildor.org/en/projects/umodel>
 - Wwise 音频转码 <https://github.com/vgmstream/vgmstream>
+- 自`2.1`版本，提取的视频文件似乎有问题，不排除加密。
 
 ## 其他值得注意的项目
 
