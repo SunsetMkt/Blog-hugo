@@ -1,5 +1,5 @@
 # PDF.js
 
-[Download](https://mozilla.github.io/pdf.js/getting_started/#download)
+[Download](https://github.com/mozilla/pdf.js/releases)
 
-Version: `Prebuilt (modern browsers)` - `Stable (v4.10.38)`
+Version: `v4.10.38`

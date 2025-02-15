@@ -1,15 +1,15 @@
 export interface WebAssemblyResource {
-    tableSize?: number;
-    tableAlign?: number;
-    dataSize?: number;
-    dataAlign?: number;
-    bssSize?: number;
-    initFuncs?: string[];
+    tableSize: number;
+    tableAlign: number;
+    dataSize: number;
+    dataAlign: number;
+    bssSize: number;
+    initFuncs: string[];
     module: WebAssembly.Module;
-    buffer?: ArrayBuffer;
+    buffer: ArrayBuffer;
     threadModule?: {
         module: WebAssembly.Module;
-        initFuncs?: string[];
+        initFuncs: string[];
     };
     /**
      * 提前创建好的 worker pool

@@ -13,7 +13,7 @@ export interface ColorTransformOptions {
     metadata?: HdrMetadata;
     dstSdrMaxLuminanceNits?: float;
     dstMaxLuminanceRelative?: float;
-    ndwl?: float;
+    sdrWhiteLevel?: float;
     maxContentLightLevel?: float;
     maxFrameAverageLightLevel?: float;
     outputRGB?: boolean;
