@@ -36,7 +36,7 @@ stp x29, x30, [sp, #-16]!  ; 把 x29, x30的值存到 sp-16的地址上，并且
 ldp x29, x30, [sp], #16    ; 从sp地址取出 16 byte数据，分别存入x29, x30. 然后 sp+=16;
 ```
 
-本文中检索不到，全面的可以查看[ARM 官网文档](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.arm.com%2Farchitectures)。如果想看中文版的资料可以看[《汇编器指南》— 第二章、第四章](https://links.jianshu.com/go?to=http%3A%2F%2Finfocenter.arm.com%2Fhelp%2Findex.jsp%3Ftopic%3D%2Fcom.arm.doc.dui0204ic%2FCegbgefe.html)：
+本文中检索不到，全面的可以查看[ARM 官网文档](https://developer.arm.com/architectures)。如果想看中文版的资料可以看[《汇编器指南》— 第二章、第四章](https://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204ic/Cegbgefe.html)：
 
 ## 一、跳转指令
 
