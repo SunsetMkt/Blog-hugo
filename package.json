@@ -2,7 +2,7 @@
   "name": "sunset-blog-hugo",
   "description": "Blog refactored.",
   "devDependencies": {
-    "prettier": "^3.5.0",
+    "prettier": "^3.5.1",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-lint-md": "^1.0.1"
   },
@@ -12,7 +12,7 @@
     "cloudflare-pages-build": "hugo --minify --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \\;"
   },
   "engines": {
-    "node": "~22",
+    "node": "~23",
     "npm": "~10"
   }
 }
