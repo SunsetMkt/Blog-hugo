@@ -7,7 +7,7 @@ tags:
     - JavaScript
     - CSS
 slug: auto-greyscale
-title: 取决于日期的自动网页黑白滤镜Demo
+title: 取决于日期的自动网页黑白滤镜 Demo
 ---
 
 ```javascript

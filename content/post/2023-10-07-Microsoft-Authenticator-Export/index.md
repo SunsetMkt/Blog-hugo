@@ -5,7 +5,7 @@ tags:
     - Microsoft
     - Android
 slug: Microsoft-Authenticator-Export
-title: 在Root设备中导出Microsoft Authenticator中的TOTP密钥
+title: 在 Root 设备中导出 Microsoft Authenticator 中的 TOTP 密钥
 ---
 
 > 由于 Microsoft Authenticator 不提供手工导出功能，不建议将其用于除 Microsoft 账号外的 2FA 验证软件。

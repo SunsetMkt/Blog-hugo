@@ -6,7 +6,7 @@ tags:
     - Demo
     - 前端
 slug: latex-test
-title: LaTex测试
+title: LaTex 测试
 ---
 
 $$

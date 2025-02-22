@@ -5,7 +5,7 @@ tags:
     - Android
     - 小米
 slug: miflash
-title: 小米刷机工具MiFlashPro和小米妙享的下载URL以及更多杂项
+title: 小米刷机工具 MiFlashPro 和小米妙享的下载 URL 以及更多杂项
 ---
 
 **本站呼吁抵制小米的任何搭载 Android 系统的产品，直到其允许任何用户在购买手机后的 7 天内简单地解锁 Bootloader。**

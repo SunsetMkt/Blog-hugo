@@ -4,7 +4,7 @@ date: "2023-06-17T00:00:00Z"
 tags:
     - 时事评论
 slug: 996icu
-title: 有关996ICU项目的辟谣
+title: 有关 996ICU 项目的辟谣
 ---
 
 大多数人**假定**认可的信源，Twitter 用户`@MindyShi227`明确了[判决书内容](https://twitter.com/MindyShi227/status/1668491636026884097) （有[第三方证实](https://github.com/996icu/996.ICU/pull/26101#issuecomment-1593400100)）和[“程渊并不是 996icu 的发起人”](https://twitter.com/MindyShi227/status/1669463128445263872)。

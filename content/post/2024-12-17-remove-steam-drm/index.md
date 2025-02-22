@@ -6,7 +6,7 @@ tags:
     - 逆向工程
     - 游戏
 slug: remove-steam-drm
-title: 移除游戏的Steam验证
+title: 移除游戏的 Steam 验证
 ---
 
 只考虑不使用第三方 DRM 和非完全联机的游戏。[了解更多](https://rentry.org/pgames)

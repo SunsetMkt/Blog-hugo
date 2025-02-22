@@ -5,7 +5,7 @@ tags:
     - 前端
     - Vercel
 slug: hoppscotch-vercel
-title: 在Vercel上部署Hoppscotch（仅前端）
+title: 在 Vercel 上部署 Hoppscotch（仅前端）
 ---
 
 代码仓库：`https://github.com/hoppscotch/hoppscotch`

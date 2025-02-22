@@ -5,7 +5,7 @@ tags:
     - 原创角色
     - Sunset
 slug: sunset-character
-title: 原创角色Sunset的设定草案
+title: 原创角色 Sunset 的设定草案
 ---
 
 ## 由热心群众们提供的第一版草案

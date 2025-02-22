@@ -5,8 +5,10 @@ tags:
     - 杀毒软件
     - Kaspersky
 slug: ksc-chinese
-title: 安装Kaspersky Security Cloud Free中文版
+title: 安装 Kaspersky Security Cloud Free 中文版
 ---
+
+> 此信息已过时。
 
 Kaspersky Security Cloud Free 是个人认为卡巴斯基系列免费版的最优产品，但是官方提供的下载渠道不包括中文版，本文介绍如何安装中文版。
 

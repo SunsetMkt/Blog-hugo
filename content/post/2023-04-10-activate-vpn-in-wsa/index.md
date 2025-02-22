@@ -5,7 +5,7 @@ tags:
     - Windows
     - Android
 slug: activate-vpn-in-wsa
-title: 在适用于 Android™️ 的 Windows 子系统中启用VPN应用程序
+title: 在适用于 Android™️ 的 Windows 子系统中启用 VPN 应用程序
 ---
 
 虽然 WSA 似乎已提供`VpnDialogs`应用程序，但它似乎仍然不能正常显示 VPN 应用授权对话。

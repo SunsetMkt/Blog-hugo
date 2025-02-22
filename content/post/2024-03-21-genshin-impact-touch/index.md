@@ -5,7 +5,7 @@ tags:
     - 游戏
     - 原神
 slug: genshin-impact-touch
-title: 在《原神》PC端使用移动端界面
+title: 在《原神》PC 端使用移动端界面
 ---
 
 这是一个未公开的行为，不保证在未来可用。

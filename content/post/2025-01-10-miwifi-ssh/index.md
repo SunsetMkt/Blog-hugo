@@ -5,7 +5,7 @@ tags:
     - 路由器
     - 小米
 slug: miwifi-ssh
-title: 小米路由器开启SSH
+title: 小米路由器开启 SSH
 ---
 
 [xmir-patcher](https://github.com/openwrt-xiaomi/xmir-patcher)提供了非常易用的漏洞利用方法，可以在小米路由器上开启 SSH，也参考[SSH 密码生成的前端方案](https://github.com/ddawx123/miwifi_sshpwd_generator)。

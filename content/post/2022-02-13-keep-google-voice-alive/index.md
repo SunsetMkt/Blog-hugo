@@ -4,7 +4,7 @@ date: "2022-02-13T00:00:00Z"
 tags:
     - Google
 slug: keep-google-voice-alive
-title: 保持Google Voice活性避免被回收的方法备忘
+title: 保持 Google Voice 活性避免被回收的方法备忘
 ---
 
 ## 参考材料

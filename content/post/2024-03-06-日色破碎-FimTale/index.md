@@ -5,7 +5,7 @@ tags:
     - MyLittlePony
     - 小说
 slug: 日色破碎-FimTale
-title: 日色破碎 Markdown格式 导出自fimtale.com
+title: 日色破碎 Markdown 格式 导出自 fimtale.com
 ---
 
 ## 日色破碎

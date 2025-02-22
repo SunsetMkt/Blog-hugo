@@ -8,7 +8,7 @@ tags:
     - 游戏
     - 时事评论
 slug: sunset-s-small-speech
-title: Sunset的一场小型线上讲演（文字版）
+title: Sunset 的一场小型线上讲演（文字版）
 ---
 
 ## 开场

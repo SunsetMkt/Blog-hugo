@@ -5,7 +5,7 @@ tags:
     - ARM
     - 信息技术
 slug: Arm64-Handbook
-title: ARM64指令简易手册
+title: ARM64 指令简易手册
 ---
 
 本文采用[Crative Commons 4.0 许可协议](http://creativecommons.org/licenses/by-nc/4.0/)进行许可，[来源](https://github.com/Tenloy/tenloy.github.io/blob/master/source/_posts/2021-04-17-ARM64%E6%8C%87%E4%BB%A4%E7%AE%80%E6%98%93%E6%89%8B%E5%86%8C.md)。

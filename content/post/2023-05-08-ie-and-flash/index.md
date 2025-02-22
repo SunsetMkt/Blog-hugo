@@ -6,7 +6,7 @@ tags:
     - Flash
     - Windows
 slug: ie-and-flash
-title: 在Windows 10/11上使用Internet Explorer和Flash
+title: 在 Windows 10/11 上使用 Internet Explorer 和 Flash
 ---
 
 > 本文描述了使用已弃用软件的方法，这在一些情况下会导致安全问题。如果您正在使用的服务强制要求您使用这些软件，您应首先质疑服务的安全性。

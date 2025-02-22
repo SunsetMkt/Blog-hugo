@@ -5,7 +5,7 @@ tags:
     - JavaScript
     - Cloudflare
 slug: serverless-dns
-title: "serverless-dns: 在Cloudflare Workers和其他Serverless平台上运行的RethinkDNS服务器"
+title: "serverless-dns: 在 Cloudflare Workers 和其他 Serverless 平台上运行的 RethinkDNS 服务器"
 ---
 
 [Source](https://github.com/serverless-dns/serverless-dns)

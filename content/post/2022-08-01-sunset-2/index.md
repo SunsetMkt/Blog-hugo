@@ -5,7 +5,7 @@ tags:
     - 原创角色
     - Sunset
 slug: sunset-2
-title: 原创角色Sunset的设定草案第二版
+title: 原创角色 Sunset 的设定草案第二版
 ---
 
 |        ![Sunset的暂定头像](/sunset2_compressed.jpg)         |

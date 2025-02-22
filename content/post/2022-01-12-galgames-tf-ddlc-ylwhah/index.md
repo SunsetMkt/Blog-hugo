@@ -5,7 +5,7 @@ tags:
     - 游戏
     - 视觉小说
 slug: galgames-tf-ddlc-ylwhah
-title: 几个Galgame/视觉小说赏析
+title: 几个 Galgame/视觉小说赏析
 ---
 
 假期无事，搞了几个 Galgame/视觉小说玩玩。

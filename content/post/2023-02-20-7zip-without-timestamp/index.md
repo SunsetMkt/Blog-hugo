@@ -4,7 +4,7 @@ date: "2023-02-20T00:00:00Z"
 tags:
     - "7-Zip"
 slug: 7zip-without-timestamp
-title: 使用7-Zip创建无时间戳的压缩文件
+title: 使用 7-Zip 创建无时间戳的压缩文件
 ---
 
 来自 7-Zip 开发者的回答：

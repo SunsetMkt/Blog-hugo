@@ -4,7 +4,7 @@ date: "2024-05-17T00:00:00Z"
 tags:
     - Windows
 slug: edge-enable-copilot
-title: 在MS Edge上显示Copilot按钮
+title: 在 MS Edge 上显示 Copilot 按钮
 ---
 
 启发：[如何解决 Edge 浏览器 Copilot 入口消失的问题](https://zhuanlan.zhihu.com/p/676955257)

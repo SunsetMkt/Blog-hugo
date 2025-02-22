@@ -4,7 +4,7 @@ date: "2021-11-29T00:00:00Z"
 tags:
     - Vocaloid
 slug: lets-talk-about-vocaloid
-title: 让我们谈谈Vocaloid吧
+title: 让我们谈谈 Vocaloid 吧
 ---
 
 > VOCALOID（日文名：ボーカロイド，日文简称：ボカロ，英文简称：VOCALO，中文名称：博歌乐）是由日本 Yamaha 株式会社开发的电子歌声合成（Singing Synthesis）技术，以及应用该技术的软件的合称。

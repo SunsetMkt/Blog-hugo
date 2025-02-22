@@ -5,7 +5,7 @@ tags:
     - 原创角色
     - Sunset
 slug: sunset-profile
-title: 原创角色Sunset的设定集
+title: 原创角色 Sunset 的设定集
 ---
 
 |        ![Sunset的暂定头像](/sunset2_compressed.jpg)         |

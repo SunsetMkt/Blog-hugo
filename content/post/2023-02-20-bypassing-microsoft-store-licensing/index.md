@@ -5,7 +5,7 @@ tags:
     - Windows
     - 逆向工程
 slug: bypassing-microsoft-store-licensing
-title: 【部分翻译】绕过Microsoft Store应用的运行前正版验证
+title: 【部分翻译】绕过 Microsoft Store 应用的运行前正版验证
 ---
 
 > 不鼓励盗版行为，但微软声称这是预期设计，不打算修复。

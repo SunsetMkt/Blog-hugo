@@ -5,8 +5,8 @@ description: 虽然希望你永远都不要用到，但是万一哪一天有需�
 tags:
     - 公益
     - 医学
-slug: QPR四步自杀预防
-title: QPR四步自杀预防
+slug: QPR 四步自杀预防
+title: QPR 四步自杀预防
 ---
 
 [来源](https://weibo.com/ttarticle/x/m/show/id/2309404285239156452369) by [Bell\_叶世知](https://weibo.com/u/6505749524)

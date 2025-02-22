@@ -4,7 +4,7 @@ date: "2024-12-13T00:00:00Z"
 tags:
     - 社会评论
 slug: i4smnnqaca1g
-title: "林三土: “政治正确”与“言论自由” | C讲坛"
+title: "林三土: “政治正确”与“言论自由” | C 讲坛"
 ---
 
 [Source](https://matters.town/a/i4smnnqaca1g) CC BY-NC-ND 2.0 授权

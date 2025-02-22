@@ -5,7 +5,7 @@ tags:
     - SCP基金会
     - 小说
 slug: scp-words
-title: 摘录自「SCP基金会」中的一些句子
+title: 摘录自「SCP 基金会」中的一些句子
 ---
 
 作者：智子酱 & unknown

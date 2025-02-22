@@ -5,7 +5,7 @@ tags:
     - Clash
     - 开源
 slug: clash-removed
-title: Clash供应链上多个仓库删库
+title: Clash 供应链上多个仓库删库
 ---
 
 2023-11-02 至 2023-11-03 (UTC+8)，Clash 供应链上多个开源/闭源项目删库。

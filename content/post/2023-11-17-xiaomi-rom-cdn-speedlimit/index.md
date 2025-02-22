@@ -5,7 +5,7 @@ tags:
     - Android
     - 小米
 slug: xiaomi-rom-cdn-speedlimit
-title: 小米ROM下载限速解决方案
+title: 小米 ROM 下载限速解决方案
 ---
 
 **本站呼吁抵制小米的任何搭载 Android 系统的产品，直到其允许任何用户在购买手机后的 7 天内简单地解锁 Bootloader。**

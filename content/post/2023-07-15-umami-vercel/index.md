@@ -5,10 +5,10 @@ tags:
     - 后端
     - Vercel
 slug: umami-vercel
-title: 使用Vercel和PlanetScale部署Umami统计（备忘）
+title: 使用 Vercel 部署 Umami 统计（备忘）
 ---
 
-免费数据库：[PlanetScale](https://planetscale.com/features)
+~~免费数据库：[PlanetScale](https://planetscale.com/features)~~
 
 部署文档：[Vercel](https://umami.is/docs/running-on-vercel) [PlanetScale](https://umami.is/docs/running-on-planetscale)
 

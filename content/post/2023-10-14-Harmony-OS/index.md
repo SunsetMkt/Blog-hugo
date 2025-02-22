@@ -5,7 +5,7 @@ tags:
     - Android
     - 华为
 slug: Harmony-OS
-title: 有关HarmonyOS的误区
+title: 有关 HarmonyOS 的误区
 ---
 
 不是所有名字里有“Harmony”的都是“自主开发”。

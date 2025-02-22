@@ -4,7 +4,7 @@ date: "2022-04-07T00:00:00Z"
 tags:
     - 信息安全
 slug: my-guideline-of-cyber-security
-title: Sunset的简易信息安全指引
+title: Sunset 的简易信息安全指引
 ---
 
 ## 关于本指引

@@ -9,7 +9,7 @@ tags:
     - 免责声明
     - Sunset
 slug: my-disclaimer-to-never-met
-title: 致从未谋面的阁下：一份来自Sunset的免责声明
+title: 致从未谋面的阁下：一份来自 Sunset 的免责声明
 ---
 
 [English translation by ChatGPT for reference only]({{< ref "2024-05-14-my-disclaimer-to-never-met-en" >}}). Please notice that the translation may be not up-to-date or inaccurate.

@@ -5,7 +5,7 @@ tags:
     - Windows
     - 信息技术
 slug: Process-Lasso
-title: Process Lasso：实时进程CPU占用调整（付费/功能限制）
+title: Process Lasso：实时进程 CPU 占用调整（付费/功能限制）
 ---
 
 [Process Lasso](https://bitsum.com/)*据称*可以缓解高 CPU 占用时的响应堵塞问题。

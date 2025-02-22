@@ -5,7 +5,7 @@ tags:
     - QQ
     - Windows
 slug: QQ-UWP
-title: 获取QQ微软商店版安装包
+title: 获取 QQ 微软商店版安装包
 ---
 
 - 复制此链接：`https://www.microsoft.com/zh-cn/p/qq桌面版/9nhlgf0zwc5s` （`https://www.microsoft.com/9nhlgf0zwc5s`亦可）。

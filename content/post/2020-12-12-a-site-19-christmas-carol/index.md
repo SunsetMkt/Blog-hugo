@@ -5,7 +5,7 @@ tags:
     - SCP基金会
     - 小说
 slug: a-site-19-christmas-carol
-title: Site-19圣诞颂歌
+title: Site-19 圣诞颂歌
 ---
 
 本页内容采用以下授权方式： [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/)

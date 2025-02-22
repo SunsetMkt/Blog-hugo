@@ -4,7 +4,7 @@ date: "2023-08-20T00:00:00Z"
 tags:
     - ASUS
 slug: tx-mascot
-title: ASUS品牌桌面宠物“天选姬”（TXMascot）下载地址
+title: ASUS 品牌桌面宠物“天选姬”（TXMascot）下载地址
 ---
 
 > ~~此应用似乎仅在 ASUS 中国站点中可见。~~

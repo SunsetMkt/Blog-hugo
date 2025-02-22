@@ -5,7 +5,7 @@ tags:
     - Windows
     - Office
 slug: windows-installation-cheat-table
-title: 标准Windows安装速查表
+title: 标准 Windows 安装速查表
 ---
 
 ## 推荐的方案

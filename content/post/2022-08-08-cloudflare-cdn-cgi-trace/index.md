@@ -7,7 +7,7 @@ tags:
     - JavaScript
     - Cloudflare
 slug: cloudflare-cdn-cgi-trace
-title: Cloudflare接口/cdn-cgi/trace查询节点信息
+title: Cloudflare 接口 /cdn-cgi/trace 查询节点信息
 ---
 
 ```html

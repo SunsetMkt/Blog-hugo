@@ -4,7 +4,7 @@ date: "2023-10-15T00:00:00Z"
 tags:
     - EA
 slug: EA-credentials-expired
-title: EA账号登录提示Your credentials are incorrect or have expired
+title: EA 账号登录提示 Your credentials are incorrect or have expired
 ---
 
 EA 会禁止被多人使用的可疑 IP 地址登录（例如 VPN），在这个 IP 上登录的账号会被要求重置密码而且没有明确提示。

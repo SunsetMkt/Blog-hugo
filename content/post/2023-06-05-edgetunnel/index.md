@@ -5,7 +5,7 @@ tags:
     - JavaScript
     - Cloudflare
 slug: edgetunnel
-title: "edgetunnel: 在Cloudflare Workers上运行的VLESS服务器"
+title: "edgetunnel: 在 Cloudflare Workers 上运行的 VLESS 服务器"
 ---
 
 > 这里提供的信息已经过时了。

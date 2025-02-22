@@ -6,7 +6,7 @@ tags:
     - 前端
     - JavaScript
 slug: edit-them-all
-title: 任意编辑网页文字Demo
+title: 任意编辑网页文字 Demo
 ---
 
 A simple JavaScript trick.

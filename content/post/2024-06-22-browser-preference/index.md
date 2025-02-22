@@ -5,7 +5,7 @@ tags:
     - Mozilla
     - 浏览器
 slug: browser-preference
-title: 提案：在Manifest V3和Google的推动下向Firefox和Brave移动
+title: 提案：在 Manifest V3 和 Google 的推动下向 Firefox 和 Brave 移动
 ---
 
 ## TL;DR

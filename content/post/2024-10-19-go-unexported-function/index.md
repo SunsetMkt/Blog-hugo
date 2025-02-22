@@ -4,7 +4,7 @@ date: "2024-10-19T00:00:00Z"
 tags:
     - Go
 slug: go-unexported-function
-title: 在Go中使用未导出的函数
+title: 在 Go 中使用未导出的函数
 ---
 
 [Docs](https://pkg.go.dev/cmd/compile)

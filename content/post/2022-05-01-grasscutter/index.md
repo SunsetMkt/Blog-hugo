@@ -7,7 +7,7 @@ tags:
     - 游戏
     - 逆向工程
 slug: grasscutter
-title: 原神私服Grasscutter部署备忘
+title: 原神私服 Grasscutter 部署备忘
 ---
 
 > 这里记录的信息已经过时了，请直接参考[项目文档](https://github.com/Grasscutters/Grasscutter)。

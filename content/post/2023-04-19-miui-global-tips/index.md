@@ -5,7 +5,7 @@ tags:
     - Android
     - 小米
 slug: miui-global-tips
-title: 关于MIUI国际版的备忘
+title: 关于 MIUI 国际版的备忘
 ---
 
 **本站呼吁抵制小米的任何搭载 Android 系统的产品，直到其允许任何用户在购买手机后的 7 天内简单地解锁 Bootloader。**

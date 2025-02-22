@@ -5,7 +5,7 @@ tags:
     - 时事评论
     - 华为
 slug: 反思问界M7事故：“夸张宣传”遭反噬，“遥遥领先”的代价不应该是生命
-title: 反思问界M7事故：“夸张宣传”遭反噬，“遥遥领先”的代价不应该是生命
+title: 反思问界 M7 事故：“夸张宣传”遭反噬，“遥遥领先”的代价不应该是生命
 ---
 
 [Source](https://web.archive.org/web/20240428113744/https://www.21jingji.com/article/20240428/herald/91e557787fbdabd5ee3a21d85759d41a.html)

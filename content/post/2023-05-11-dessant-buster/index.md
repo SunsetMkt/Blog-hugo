@@ -5,10 +5,10 @@ tags:
     - Google
     - 信息技术
 slug: dessant-buster
-title: buster：适用于人类的reCAPTCHA自动解决工具
+title: buster：适用于人类的 reCAPTCHA 自动解决工具
 ---
 
-https://github.com/dessant/buster
+<https://github.com/dessant/buster>
 
 申请私人使用的 Wit.ai API 后使用体验良好。
 

@@ -4,7 +4,7 @@ date: "2024-04-19T00:00:00Z"
 tags:
     - Windows
 slug: ms-codecs
-title: 微软在Microsoft Store发布的解码器列表
+title: 微软在 Microsoft Store 发布的解码器列表
 ---
 
 [HEVC Video Extensions](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us)

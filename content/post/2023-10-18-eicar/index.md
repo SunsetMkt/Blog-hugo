@@ -1,7 +1,7 @@
 ---
 categories: Original
 date: "2023-10-18T00:00:00Z"
-title: EICAR标准反病毒测试文件
+title: EICAR 标准反病毒测试文件
 tags:
     - 杀毒软件
 slug: eicar
