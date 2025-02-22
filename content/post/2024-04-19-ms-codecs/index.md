@@ -39,7 +39,7 @@ title: 微软在 Microsoft Store 发布的解码器列表
 
 [Dolby Vision](https://apps.microsoft.com/store/detail/9mvmz93n61t9?hl=en-us)
 
-[Dolby-Features-FoD-Package for 24H2](https://uupdump.net/getfile.php?id=567055f8-90ea-40ea-8c62-3bad6cc395ec&file=Microsoft-Windows-Dolby-Features-FoD-Package-amd64.cab)
+微软发布的，但在 24H2 不自动安装：[Dolby-Features-FoD-Package for 24H2](https://uupdump.net/getfile.php?id=567055f8-90ea-40ea-8c62-3bad6cc395ec&file=Microsoft-Windows-Dolby-Features-FoD-Package-amd64.cab)
 
 ## DTS
 
@@ -50,3 +50,9 @@ title: 微软在 Microsoft Store 发布的解码器列表
 ## 安装包
 
 如果 Microsoft Store 不显示安装按钮，在[这里](https://store.rg-adguard.net/)获取安装包。
+
+## 第三方
+
+不是由微软发布的，在 Microsoft Store 中也不可用。
+
+[K-Lite Codec Pack Mega](https://www.codecguide.com/download_k-lite_codec_pack_mega.htm)
