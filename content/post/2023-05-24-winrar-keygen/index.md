@@ -6,7 +6,7 @@ tags:
     - 逆向工程
     - 密码学
 slug: winrar-keygen
-title: '"rarreg.key"是如何生成的？'
+title: “rarreg.key”是如何生成的？
 ---
 
 [来源](https://github.com/bitcookies/winrar-keygen)

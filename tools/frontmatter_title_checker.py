@@ -1,16 +1,15 @@
 # 检查 content\post 下的 index.md 的 title 内的中英混合空格
 # pip install python-frontmatter
+# pip install pangu
 import os
-import re
 
 import frontmatter
+import pangu
 
 
 def check_space_between_chinese_and_english(text):
-    # 用正则表达式检查中英文字符间是否没有空格
-    pattern = re.compile(r"([a-zA-Z])([^a-zA-Z\s])|([^a-zA-Z\s])([a-zA-Z])")
-    # 如果匹配到符合条件的字符对，说明中英文之间没有空格，返回 False
-    if pattern.search(text):
+    spaced = pangu.spacing(text)
+    if spaced != text:
         return False
     return True
 

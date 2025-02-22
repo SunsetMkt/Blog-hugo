@@ -6,7 +6,7 @@ tags:
     - 虚拟主播
     - "Kizuna AI"
 slug: kizuna-ai-the-last-live
-title: 后会有期：“世界上第一个虚拟 Youtuber”Kizuna AI 正式无期限休眠
+title: 后会有期：“世界上第一个虚拟 Youtuber” Kizuna AI 正式无期限休眠
 ---
 
 今日（2022-02-26）20 时许，随着演唱会“hello, world 2022”的结束，Kizuna AI 正式开始了她/他/它/祂的无期限休眠。据报道，Kizuna AI（绊爱）（キズナアイ）在虚拟 YouTuber 行业有着开创性的意义，我们会永远记得她和全体幕后工作者的努力和付出。他们不仅展示了虚拟演播技术的完美应用，更开创了一种全新的表演模式。

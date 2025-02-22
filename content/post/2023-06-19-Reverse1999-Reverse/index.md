@@ -6,7 +6,7 @@ tags:
     - Unity
     - 重返未来：1999
 slug: Reverse1999-Reverse
-title: 重返未来：1999的可能逆向工程方案
+title: 重返未来：1999 的可能逆向工程方案
 ---
 
 [相关项目](https://github.com/66hh/1999decrypt)

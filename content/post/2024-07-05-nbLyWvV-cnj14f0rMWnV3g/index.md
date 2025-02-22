@@ -4,7 +4,7 @@ date: "2024-07-05T00:00:00Z"
 tags:
     - 时事评论
 slug: nbLyWvV-cnj14f0rMWnV3g
-title: 2014~2024，仅仅10年
+title: 2014~2024，仅仅 10 年
 ---
 
 [Source](https://web.archive.org/web/20240703230701/https://mp.weixin.qq.com/s/nbLyWvV-cnj14f0rMWnV3g)

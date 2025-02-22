@@ -5,7 +5,7 @@ tags:
     - 时事评论
     - 小说
 slug: 404-building
-title: 404大厦
+title: 404 大厦
 ---
 
 > 作者：格桑
