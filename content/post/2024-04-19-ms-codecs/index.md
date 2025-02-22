@@ -33,6 +33,8 @@ title: 微软在 Microsoft Store 发布的解码器列表
 
 [Dolby Access](https://apps.microsoft.com/store/detail/9n0866fs04w8?hl=en-us)
 
+[Dolby Access OEM](https://apps.microsoft.com/detail/9nxrntflmptf?hl=en-US)
+
 [Dolby Digital Plus decoder for PC OEMs](https://apps.microsoft.com/detail/9nvjqjbdkn97?hl=en-us)
 
 [Dolby AC-4 decoder for PC OEMs](https://apps.microsoft.com/detail/9p7646qph1q0?hl=en-us)
