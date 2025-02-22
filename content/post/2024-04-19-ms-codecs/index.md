@@ -33,13 +33,13 @@ title: 微软在 Microsoft Store 发布的解码器列表
 
 [Dolby Access](https://apps.microsoft.com/store/detail/9n0866fs04w8?hl=en-us)
 
-[Dolby Access OEM](https://apps.microsoft.com/detail/9nxrntflmptf?hl=en-US)
+~~[Dolby Access OEM](https://apps.microsoft.com/detail/9nxrntflmptf?hl=en-US)~~（没用，除非硬件支持，和零售版 Access 冲突）
 
 [Dolby Digital Plus decoder for PC OEMs](https://apps.microsoft.com/detail/9nvjqjbdkn97?hl=en-us)
 
 [Dolby AC-4 decoder for PC OEMs](https://apps.microsoft.com/detail/9p7646qph1q0?hl=en-us)
 
-[Dolby Vision](https://apps.microsoft.com/store/detail/9mvmz93n61t9?hl=en-us)
+~~[Dolby Vision](https://apps.microsoft.com/store/detail/9mvmz93n61t9?hl=en-us)~~（不是解码器）
 
 微软发布的，但在 24H2 不自动安装：[Dolby-Features-FoD-Package for 24H2](https://uupdump.net/getfile.php?id=567055f8-90ea-40ea-8c62-3bad6cc395ec&file=Microsoft-Windows-Dolby-Features-FoD-Package-amd64.cab)
 
