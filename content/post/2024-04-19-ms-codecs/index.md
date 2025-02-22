@@ -7,6 +7,8 @@ slug: ms-codecs
 title: 微软在 Microsoft Store 发布的解码器列表
 ---
 
+<!--https://www.codecguide.com/media_foundation_codecs.htm-->
+
 [HEVC Video Extensions](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us)
 
 [VP9 Video Extensions](https://apps.microsoft.com/detail/9n4d0msmp0pt?hl=en-us)
@@ -25,6 +27,10 @@ title: 微软在 Microsoft Store 发布的解码器列表
 
 [HEVC Video Extensions from Device Manufacturer](https://apps.microsoft.com/detail/9n4wgh0z6vhq?hl=en-us)
 
+## Dolby
+
+不是由微软发布的，但是在 Microsoft Store 中可用。
+
 [Dolby Access](https://apps.microsoft.com/store/detail/9n0866fs04w8?hl=en-us)
 
 [Dolby Digital Plus decoder for PC OEMs](https://apps.microsoft.com/detail/9nvjqjbdkn97?hl=en-us)
@@ -33,8 +39,14 @@ title: 微软在 Microsoft Store 发布的解码器列表
 
 [Dolby Vision](https://apps.microsoft.com/store/detail/9mvmz93n61t9?hl=en-us)
 
+[Dolby24H2](https://forums.mydigitallife.net/threads/ltsc-and-iot-variant-2021-2024-restore-missing-features-add-dolby-onedrive-common-features.86260/#post-1767766)
+
+## DTS
+
+不是由微软发布的，但是在 Microsoft Store 中可用。
+
 [DTS Sound Unbound](https://apps.microsoft.com/detail/9pj0nkl8mcsj?hl=en-US)
 
-[Microsoft Dolby Digital Atmos Pack standalone installer](https://github.com/SimonMacer/AnWave/releases/tag/AnWave-Split)
+## 安装包
 
-在[这里](https://store.rg-adguard.net/)获取安装包。
+如果 Microsoft Store 不显示安装按钮，在[这里](https://store.rg-adguard.net/)获取安装包。
