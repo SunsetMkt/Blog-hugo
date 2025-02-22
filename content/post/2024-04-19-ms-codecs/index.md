@@ -39,7 +39,7 @@ title: 微软在 Microsoft Store 发布的解码器列表
 
 [Dolby Vision](https://apps.microsoft.com/store/detail/9mvmz93n61t9?hl=en-us)
 
-[Dolby24H2](https://forums.mydigitallife.net/threads/ltsc-and-iot-variant-2021-2024-restore-missing-features-add-dolby-onedrive-common-features.86260/#post-1767766)
+[Dolby-Features-FoD-Package for 24H2](https://uupdump.net/getfile.php?id=567055f8-90ea-40ea-8c62-3bad6cc395ec&file=Microsoft-Windows-Dolby-Features-FoD-Package-amd64.cab)
 
 ## DTS
 
