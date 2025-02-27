@@ -1,0 +1,50 @@
+name: Hugo CI
+
+on:
+    # Runs on pushes targeting the default branch
+    push:
+        branches: [$default-branch, main]
+
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+
+jobs:
+    ci:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Cache Hugo resources
+              uses: actions/cache@v4
+              env:
+                  cache-name: cache-hugo-resources
+              with:
+                  path: resources
+                  key: ${{ env.cache-name }}
+
+            - uses: actions/setup-go@v5
+              with:
+                  go-version: "stable"
+            - run: go version
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v3
+              with:
+                  hugo-version: "latest"
+                  extended: true
+
+            - name: Build
+              run: hugo --minify --gc --logLevel info
+
+            - name: Check for big files
+              run: find public -type f -size +25M -print -exec ls -alh {} \;
+
+            - name: Upload artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: public
+                  path: "public/"
+                  compression-level: 9
+                  include-hidden-files: true
