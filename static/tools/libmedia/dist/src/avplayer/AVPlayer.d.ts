@@ -15,7 +15,7 @@ import MSEPipeline from './mse/MSEPipeline';
 import { AVStreamInterface } from 'avutil/AVStream';
 import { AVFormatContextInterface } from 'avformat/AVFormatContext';
 import { Data, Fn } from 'common/types/type';
-import { playerEventChanged, playerEventChanging, playerEventError, playerEventNoParam, playerEventTime } from './type';
+import { playerEventChanged, playerEventChanging, playerEventError, playerEventNoParam, playerEventProgress, playerEventSubtitleDelayChange, playerEventTime, playerEventVolumeChange } from './type';
 import FetchIOLoader from 'avnetwork/ioLoader/FetchIOLoader';
 import FileIOLoader from 'avnetwork/ioLoader/FileIOLoader';
 import CustomIOLoader from 'avnetwork/ioLoader/CustomIOLoader';
@@ -768,6 +768,7 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     on(event: typeof eventType.STOPPED, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: typeof eventType.ENDED, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: typeof eventType.SEEKING, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
+    on(event: typeof eventType.SEEKED, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: typeof eventType.CHANGING, listener: typeof playerEventChanging, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: typeof eventType.CHANGED, listener: typeof playerEventChanged, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: typeof eventType.RESUME, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
@@ -777,6 +778,10 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     on(event: typeof eventType.FIRST_VIDEO_RENDERED, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: typeof eventType.ERROR, listener: typeof playerEventError, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: typeof eventType.TIMEOUT, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
+    on(event: typeof eventType.AUDIO_CONTEXT_RUNNING, listener: typeof playerEventNoParam, options?: Partial<EmitterOptions>): AVPlayer;
+    on(event: typeof eventType.PROGRESS, listener: typeof playerEventProgress, options?: Partial<EmitterOptions>): AVPlayer;
+    on(event: typeof eventType.VOLUME_CHANGE, listener: typeof playerEventVolumeChange, options?: Partial<EmitterOptions>): AVPlayer;
+    on(event: typeof eventType.SUBTITLE_DELAY_CHANGE, listener: typeof playerEventSubtitleDelayChange, options?: Partial<EmitterOptions>): AVPlayer;
     on(event: string, listener: Fn, options?: Partial<EmitterOptions>): AVPlayer;
     one(event: string, listener: Fn, options?: Partial<EmitterOptions>): this;
 }

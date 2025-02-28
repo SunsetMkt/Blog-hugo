@@ -130,7 +130,7 @@ export default class Matrix4 {
      */
     preTranslate(vector3: Vector3): Matrix4;
     /**
-     * 右乘平移变换矩阵
+     * 左乘平移变换矩阵
      * @param vector3 平移因子
      */
     postTranslate(vector3: Vector3): Matrix4;
