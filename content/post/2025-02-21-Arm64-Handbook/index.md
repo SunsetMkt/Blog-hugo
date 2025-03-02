@@ -760,9 +760,9 @@ strsb = Store signed Byte
 - CPSR 的低 8 位（包括 I、F、T 和 M[4:0]）称为`控制位`，程序无法修改，除非 CPU 运行于特权模式下，程序才能修改控制位。
 - N、Z、C、V 均为`条件标志位`，分别代表运算过程中产生的状态。它们的内容可被算术或逻辑运算的结果所改变，并且可以决定某条指令是否被执行。
 
-<img src="/images/OS/arm64/CPSR01.png" style="zoom:75%">
+![CPSR01](CPSR01.png)
 
-<img src="/images/OS/arm64/CPSR02.png" style="zoom:70%">
+![CPSR02](CPSR02.png)
 
 此外，还有**多个寄存器加载和存储指令**，此类指令可从内存加载通用寄存器的任何子集，或者在内存中存储这样的子集。
 
