@@ -9,6 +9,10 @@ slug: kfa
 title: 卡巴斯基免费版的 Windows 安装包下载 URL 获取
 ---
 
+> [卡巴斯基中国大陆官方网站现已提供最新版卡巴斯基免费版应用程序下载，点击这里跳转到下载页面。](https://www.kaspersky.com.cn/downloads/free-antivirus)
+>
+> 这里提供的部分或全部信息已过时。
+
 ## 下载页面
 
 目前，KFA 仅通过 Kaspersky Global 站点提供，且不公开提供下载页面。

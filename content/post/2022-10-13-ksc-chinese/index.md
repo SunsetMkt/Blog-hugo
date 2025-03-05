@@ -8,7 +8,9 @@ slug: ksc-chinese
 title: 安装 Kaspersky Security Cloud Free 中文版
 ---
 
-> 此信息已过时。
+> [卡巴斯基中国大陆官方网站现已提供最新版卡巴斯基免费版应用程序下载，点击这里跳转到下载页面。](https://www.kaspersky.com.cn/downloads/free-antivirus)
+>
+> 这里提供的部分或全部信息已过时。
 
 Kaspersky Security Cloud Free 是个人认为卡巴斯基系列免费版的最优产品，但是官方提供的下载渠道不包括中文版，本文介绍如何安装中文版。
 
