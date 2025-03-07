@@ -17,6 +17,8 @@ EndNote 是著名的文献管理软件。
 
 搜索关键词：`EndNote 大学图书馆`。
 
+或者[利用互联网档案馆](https://web.archive.org/web/*/https://download.endnote.com/site/*)。
+
 查找可以通过校外网络下载的版本（例如[此 Mac 版本](https://lib.shu.edu.cn/info/1023/4894.htm)），无论最终使用哪个操作系统。
 
 此步骤的目的是获取密钥文件，它是通用的。
