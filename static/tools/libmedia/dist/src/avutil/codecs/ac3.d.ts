@@ -1,4 +1,4 @@
-import { AV_CH_LAYOUT } from '../audiosamplefmt';
+import { AVCHLayout } from '../audiosamplefmt';
 import { Uint8ArrayInterface } from 'common/io/interface';
 export declare const enum AC3DeltaStrategy {
     DBA_REUSE = 0,
@@ -46,7 +46,7 @@ export declare const enum EAC3FrameType {
     EAC3_FRAME_TYPE_AC3_CONVERT = 2,
     EAC3_FRAME_TYPE_RESERVED = 3
 }
-export declare const AC3ChannelLayout: AV_CH_LAYOUT[];
+export declare const AC3ChannelLayout: AVCHLayout[];
 export interface AC3HeaderInfo {
     syncWord: uint16;
     crc1: uint16;

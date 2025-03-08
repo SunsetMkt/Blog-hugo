@@ -165,7 +165,7 @@ export declare const enum AVAudioServiceType {
     AV_AUDIO_SERVICE_TYPE_KARAOKE = 8,
     AV_AUDIO_SERVICE_TYPE_NB = 9
 }
-export declare const enum AV_CH_LAYOUT {
+export declare const enum AVCHLayout {
     AV_CH_FRONT_LEFT = 1,
     AV_CH_FRONT_RIGHT = 2,
     AV_CH_FRONT_CENTER = 4,
