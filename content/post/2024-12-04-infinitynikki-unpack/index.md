@@ -26,6 +26,8 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 
 ## 配置 Fmodel（推荐）
 
+请确保使用[特定版本的 Fmodel](https://github.com/LukeFZ/FModel)，忽略弹出的任何更新提示。
+
 Archive Directory: 包含 `InfinityNikki.exe` 的目录
 
 UE Versions: `GAME_InfinityNikki`
