@@ -5,7 +5,7 @@ rssFullContent = false
 favicon = "/favicon.ico"
 
 [footer]
-since = 2024
+since = 2019
 customText = "作者对于因使用或解读所提供内容而导致的任何直接或间接后果不承担任何责任。"
 
 [dateFormat]
