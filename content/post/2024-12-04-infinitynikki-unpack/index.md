@@ -12,21 +12,19 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 
 ## 有用的链接
 
-- [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594)（基础）by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
+- [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594) by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
 - [特定版本的 Fmodel](https://github.com/LukeFZ/FModel)（推荐）by [LukeFZ](https://github.com/LukeFZ)
 - [有关 AES Key 的讨论](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204) 和[主要 Key](https://cs.rin.ru/forum/viewtopic.php?t=100672)
-- [在 GitHub 上的 AES Key](https://github.com/kanren3/InfinityNikki)
-- [在 GitHub 上的 Mapping](https://github.com/CRiQSCLAN/Infinity-Nikki-SDK)
+- ~~[在 GitHub 上的 AES Key](https://github.com/kanren3/InfinityNikki)~~
+- ~~[在 GitHub 上的 Mapping](https://github.com/CRiQSCLAN/Infinity-Nikki-SDK)~~
 - [配置文件序列化实现](https://github.com/NikkiTools/perfect) by [LukeFZ](https://github.com/LukeFZ)
 - [已提取资源](https://www.xivmodarchive.com/modid/123983) by [Crow](https://www.xivmodarchive.com/user/158572)
-- ~~[制作 Mod 存在的技术问题](#https://gamebanana.com/threads/226150)~~ 由于厌女评论和无价值讨论，已移除。
-- [AutoHotkey 脚本](https://github.com/Kramar1337/InfinityNikki-AHK-flex)
 
 > 下面有关 AES Key 的部分仅在[Infinity Nikki](https://store.epicgames.com/en-US/p/infinity-nikki-71fc64)（国际版）上测试过。
 >
 > 在中国大陆发布的版本目前也有效。
 
-## 获取用于 umodel 的 AES Key 列表（基础）
+## ~~获取用于 umodel 的 AES Key 列表~~
 
 感谢[LukeFZ](https://github.com/LukeFZ)创建了这个 API。
 
@@ -48,7 +46,7 @@ with open("keys.txt", "w", encoding="utf-8") as f:
 
 ## 配置 Fmodel（推荐）
 
-Archive Directory: 包含 InfinityNikki.exe 的目录
+Archive Directory: 包含 `InfinityNikki.exe` 的目录
 
 UE Versions: `GAME_InfinityNikki`
 
@@ -70,7 +68,17 @@ Endpoint: `https://gacha.lukefz.xyz/infinitynikki/mappings`
 
 Expression: `$['url','filename']`
 
+## 提取游戏音频
+
+《无限暖暖》的所有游戏内音频使用 Wwise 的特定格式保存和播放。
+
+使用 Fmodel 提取完整的`X6Game/Content/Audio`并使用[wwiser](https://github.com/bnnm/wwiser)生成音频事件`.txtp`。
+
+`.txtp`描述了当一个游戏事件发生时，对应音频的播放逻辑，内容为纯文本。使用[vgmstream](https://github.com/vgmstream/vgmstream)根据`.txtp`生成相应的`.wav`音频。
+
 ## 手动获取 AES Key（TODO）
+
+可以使用[Reqable](https://reqable.com/en-US/)调试游戏客户端的 HTTP 网络活动。
 
 客户端获取 Key 的过程可能与对`https://api.infoldgames.com/v1/gameconfig/parameter`的请求有关，关键词包含`PACDKC`。
 
@@ -93,19 +101,16 @@ Expression: `$['url','filename']`
 
 解密后的反序列化方案尚未找到。
 
-## 通用工具
+## 手动获取 Mapping
 
-- [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
-- [AESDumpster](https://github.com/GHFear/AESDumpster)
-- [Reqable](https://reqable.com/en-US/)
+请注意：由于游戏（不必要地）使用内核级反作弊，有必要使用针对反作弊的注入/转储工具。
+
 - [Dumper-7](https://github.com/Encryqed/Dumper-7)
 - [RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS)
-- [UnrealMappingsDumper](https://github.com/TheNaeem/UnrealMappingsDumper)
-- [UE Viewer](https://www.gildor.org/en/projects/umodel)
-- [FModel](https://github.com/4sval/FModel)
+- [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
+
+## 极低可能有用的通用工具
+
+- [AESDumpster](https://github.com/GHFear/AESDumpster)
 - [UnrealPak](https://github.com/EpicGames/UnrealEngine)
 - [UnrealPakViewer](https://github.com/jashking/UnrealPakViewer)
-- [wwiser](https://github.com/bnnm/wwiser)
-- [vgmstream](https://github.com/vgmstream/vgmstream)
-- [FFmpeg](https://github.com/FFmpeg/FFmpeg)
-- [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/)
