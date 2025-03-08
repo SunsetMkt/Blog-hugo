@@ -24,26 +24,6 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 >
 > 在中国大陆发布的版本目前也有效。
 
-## ~~获取用于 umodel 的 AES Key 列表~~
-
-感谢[LukeFZ](https://github.com/LukeFZ)创建了这个 API。
-
-```python
-import requests
-
-# From https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204
-keys = requests.get("https://gacha.lukefz.xyz/infinitynikki/keys").json()
-keys_dict = []
-keys_dict.append(keys["mainKey"])
-
-for key in keys["dynamicKeys"]:
-    keys_dict.append(key["key"])
-
-with open("keys.txt", "w", encoding="utf-8") as f:
-    for key in keys_dict:
-        f.write("0x" + key + "\n")
-```
-
 ## 配置 Fmodel（推荐）
 
 Archive Directory: 包含 `InfinityNikki.exe` 的目录
@@ -108,6 +88,26 @@ Expression: `$['url','filename']`
 - [Dumper-7](https://github.com/Encryqed/Dumper-7)
 - [RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS)
 - [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
+
+## ~~获取用于 umodel 的 AES Key 列表~~
+
+感谢[LukeFZ](https://github.com/LukeFZ)创建了这个 API。
+
+```python
+import requests
+
+# From https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204
+keys = requests.get("https://gacha.lukefz.xyz/infinitynikki/keys").json()
+keys_dict = []
+keys_dict.append(keys["mainKey"])
+
+for key in keys["dynamicKeys"]:
+    keys_dict.append(key["key"])
+
+with open("keys.txt", "w", encoding="utf-8") as f:
+    for key in keys_dict:
+        f.write("0x" + key + "\n")
+```
 
 ## 极低可能有用的通用工具
 
