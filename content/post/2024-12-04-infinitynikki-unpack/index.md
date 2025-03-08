@@ -12,13 +12,12 @@ title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 
 ## 有用的链接
 
-- [特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594) by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)
+- ~~[特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594) by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)~~
 - [特定版本的 Fmodel](https://github.com/LukeFZ/FModel)（推荐）by [LukeFZ](https://github.com/LukeFZ)
 - [有关 AES Key 的讨论](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204) 和[主要 Key](https://cs.rin.ru/forum/viewtopic.php?t=100672)
-- ~~[在 GitHub 上的 AES Key](https://github.com/kanren3/InfinityNikki)~~
-- ~~[在 GitHub 上的 Mapping](https://github.com/CRiQSCLAN/Infinity-Nikki-SDK)~~
 - [配置文件序列化实现](https://github.com/NikkiTools/perfect) by [LukeFZ](https://github.com/LukeFZ)
-- [已提取资源](https://www.xivmodarchive.com/modid/123983) by [Crow](https://www.xivmodarchive.com/user/158572)
+- [已提取资源](https://www.xivmodarchive.com/modid/123983) by [Crow](https://www.xivmodarchive.com/user/158572) [CrowMods on X](https://x.com/CrowMods)
+- 基于已提取资源的[暖暖默认服装 Blender 模型](https://www.patreon.com/posts/nikki-2-0-for-4-119702068) by [thorru](https://www.patreon.com/c/thorru/posts) [thorru\_ on X](https://x.com/thorru_)
 
 > 下面有关 AES Key 的部分仅在[Infinity Nikki](https://store.epicgames.com/en-US/p/infinity-nikki-71fc64)（国际版）上测试过。
 >
@@ -81,7 +80,53 @@ Expression: `$['url','filename']`
 
 解密过程大概是[这样的](<https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',false,false)AES_Decrypt(%7B'option':'Hex','string':'0xF0F2BA714FE32FACC23CD332BF35E8A00F73937BA4BB6D26659276A31E714E84'%7D,%7B'option':'Hex','string':''%7D,'ECB','Raw','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D)>)。
 
-解密后的反序列化方案尚未找到。
+感谢[LukeFZ](https://github.com/LukeFZ)提供了解密后二进制的反序列化方案：
+
+```python
+def read_u32(io: BytesIO):
+    return u32(io.read(4))
+
+
+def read_u64(io: BytesIO):
+    return u64(io.read(8))
+
+
+def read_fstring(io: BytesIO):
+    length = read_u32(io)
+    return io.read(length).decode().rstrip("\x00")
+
+
+def read_guid(io: BytesIO):
+    # return uuid.UUID(bytes=io.read(16)).hex
+    a = u32(io.read(4), "little")
+    b = u32(io.read(4), "little")
+    c = u32(io.read(4), "little")
+    d = u32(io.read(4), "little")
+    return (
+        int.to_bytes(a, 4, "big").hex()
+        + int.to_bytes(b, 4, "big").hex()
+        + int.to_bytes(c, 4, "big").hex()
+        + int.to_bytes(d, 4, "big").hex()
+    )
+
+
+count = read_u32(f)
+entries = [None] * count
+for j in range(count):
+    guid = read_guid(f)
+    name = read_fstring(f)
+    key_length = read_u32(f)
+    assert key_length == 32
+    aes_key = f.read(key_length).hex()
+
+    entries[j] = {
+        "enc_guid": guid,
+        "name": name,
+        "key": aes_key,
+    }  # (guid, name, aes_key)
+```
+
+其他或许有用的项目：[uasset-parser-py](https://github.com/ay27/uasset-parser-py)
 
 ## 手动获取 Mapping
 
