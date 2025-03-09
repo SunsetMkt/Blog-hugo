@@ -1,0 +1,78 @@
+---
+categories: Original
+date: "2025-03-09T00:00:00Z"
+tags:
+    - Windows
+    - JavaScript
+    - 前端
+slug: SegoeBootSemilight
+title: 基于 Segoe Boot Semilight 字体的 Windows 10/11 加载动画
+---
+
+<style>
+    @font-face {
+        font-family: "Segoe Boot Semilight";
+        src: url("segoe_slboot.ttf") format("truetype");
+    }
+
+    .SegoeBootSemilight {
+        font-family: "Segoe Boot Semilight";
+        font-size: 100px;
+        user-select: none;
+    }
+</style>
+
+<p>
+    字体来源于
+    <a href="https://www.microsoft.com/zh-cn/software-download/windows11"
+        >Windows 11 安装 ISO</a
+    >。
+</p>
+<p>
+    <span class="SegoeBootSemilight" id="Windows10Spinner"></span>
+    <span class="SegoeBootSemilight" id="Windows11Spinner"></span>
+</p>
+
+<script>
+    // Get chars from U+E052 to U+E0CB
+    var win10_spinner = [];
+    try {
+        for (let i = 0xe052; i <= 0xe0cb; i++) {
+            const char = String.fromCharCode(i);
+            win10_spinner.push(char);
+        }
+    } catch (error) {
+        console.error("Error generating win10_spinner:", error);
+    }
+
+    // Get chars from U+E100 to U+E176
+    var win11_spinner = [];
+    try {
+        for (let i = 0xe100; i <= 0xe176; i++) {
+            const char = String.fromCharCode(i);
+            win11_spinner.push(char);
+        }
+    } catch (error) {
+        console.error("Error generating win11_spinner:", error);
+    }
+
+    var counter10 = 0;
+    var interval = setInterval(() => {
+        document.getElementById("Windows10Spinner").innerHTML =
+            win10_spinner[counter10];
+        counter10++;
+        if (counter10 >= win10_spinner.length) {
+            counter10 = 0;
+        }
+    }, 30);
+
+    var counter11 = 0;
+    var interval = setInterval(() => {
+        document.getElementById("Windows11Spinner").innerHTML =
+            win11_spinner[counter11];
+        counter11++;
+        if (counter11 >= win11_spinner.length) {
+            counter11 = 0;
+        }
+    }, 30);
+</script>
