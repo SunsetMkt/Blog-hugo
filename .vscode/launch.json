@@ -19,6 +19,12 @@
             "type": "node-terminal"
             // don't worry it says 'node-terminal', it should work out-of-the-box in VS Code
             // https://stackoverflow.com/a/75957773
+        },
+        {
+            "command": "hugo server -D",
+            "name": "Run hugo server -D",
+            "request": "launch",
+            "type": "node-terminal"
         }
     ]
 }
