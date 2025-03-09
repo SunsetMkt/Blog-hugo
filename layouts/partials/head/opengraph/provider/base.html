@@ -1,0 +1,88 @@
+{{- $title := partialCached "data/title" . .RelPermalink -}}
+{{- $description := partialCached "data/description" . .RelPermalink -}}
+
+
+<meta property="og:title" {{ printf "content=%q" $title | safeHTMLAttr }} />
+<meta
+    property="og:description"
+    {{ printf "content=%q" $description | safeHTMLAttr }}
+/>
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta
+    property="og:type"
+    content="
+    {{- if .IsPage -}}
+        article
+    {{- else -}}
+        website
+    {{- end -}}
+"
+/>
+
+{{- with .Params.locale -}}
+    <meta property="og:locale" content="{{ . }}" />
+{{- end -}}
+
+{{- if .IsPage -}}
+    <meta property="article:section" content="{{ .Section | title }}" />
+    {{- range .Params.tags -}}
+        <meta property="article:tag" content="{{ . }}" />
+    {{- end -}}
+{{- end -}}
+
+{{- if .IsPage -}}
+    {{- if not .Date.IsZero -}}
+        <meta
+            property="article:published_time"
+            content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"
+        />
+    {{- end -}}
+    {{- if not .Lastmod.IsZero -}}
+        <meta
+            property="article:modified_time"
+            content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"
+        />
+    {{- end -}}
+{{- else -}}
+    {{- if not .Site.Lastmod.IsZero -}}
+        <meta
+            property="og:updated_time"
+            content="{{ .Site.Lastmod.Format " 2006-01-02T15:04:05-07:00 " | safeHTML }}"
+        />
+    {{- end -}}
+{{- end -}}
+
+{{- if .IsPage -}}
+    <!-- https://aarol.dev/posts/hugo-og-image/ -->
+    {{ $base := resources.Get "/ogimage/og_base.png" }}
+    {{ $boldFont := resources.Get "/ogimage/HarmonyOS_SansSC_Medium.ttf" }}
+    {{ $mediumFont := resources.Get "/ogimage/HarmonyOS_SansSC_Regular.ttf" }}
+    {{ $img := $base.Filter (images.Text .Site.Title (dict
+        "color" "#ffffff"
+        "size" 64
+        "linespacing" 2
+        "x" 141
+        "y" 117
+        "font" $boldFont
+        ))
+    }}
+    {{ $img = $img.Filter (images.Text .Page.Title (dict
+        "color" "#ffffff"
+        "size" 64
+        "linespacing" 2
+        "x" 141
+        "y" 291
+        "font" $mediumFont
+        ))
+    }}
+    {{ $img = resources.Copy (path.Join .Page.RelPermalink "og.png") $img }}
+    <meta property="og:image" content="{{ $img.Permalink }}" />
+    <meta property="og:image:width" content="{{ $img.Width }}" />
+    <meta property="og:image:height" content="{{ $img.Height }}" />
+{{- else }}
+    {{ $image := partialCached "helper/image" (dict "Context" . "Type" "opengraph") .RelPermalink "opengraph" }}
+    {{- if $image.exists -}}
+        <meta property="og:image" content="{{ absURL $image.permalink }}" />
+    {{- end -}}
+{{- end -}}
