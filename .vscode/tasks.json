@@ -50,7 +50,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "hugo",
+            "command": "hugo --minify --gc --logLevel info",
             "group": { "kind": "build", "isDefault": true },
             "problemMatcher": []
         },
