@@ -20,10 +20,9 @@
 // JetBrains Mono
 @import "JetBrainsMono";
 
-// 为元素添加过渡效果
-aside,
-article {
-    transition: all 0.5s ease-in-out;
+// 为全部未配置过渡效果的元素添加过渡效果
+* {
+    transition: all 0.3s ease-in-out;
 }
 
 // 打印优化
