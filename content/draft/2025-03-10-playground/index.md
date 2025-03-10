@@ -5,6 +5,8 @@ slug: playground
 title: 测试页面
 ---
 
+<span style="font-family: Twemoji;">📎📎📎📎📎</span>
+
 ~~foo~~
 
 ++bar++
