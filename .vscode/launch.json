@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "command": "hugo server -D -O",
+            "name": "Run hugo server -D -O",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
             "name": "Launch Server and Open Firefox",
             "type": "firefox",
             "request": "launch",
@@ -19,12 +25,6 @@
             "type": "node-terminal"
             // don't worry it says 'node-terminal', it should work out-of-the-box in VS Code
             // https://stackoverflow.com/a/75957773
-        },
-        {
-            "command": "hugo server -D",
-            "name": "Run hugo server -D",
-            "request": "launch",
-            "type": "node-terminal"
         }
     ]
 }
