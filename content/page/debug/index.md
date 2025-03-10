@@ -79,6 +79,7 @@ URL 参数`eruda=true`。
     <a class="link" href="javascript:void(0)" onclick="RmDisableAnalysis();location.reload();">删除禁用标记</a>
 </div>
 
+<!--
 ## 字体功能
 
 ### 使用霞鹜文楷字体
@@ -89,6 +90,7 @@ URL 参数`eruda=true`。
     <a class="link" onclick="localStorage.setItem('LXGW-WenKai','true');location.reload();">打开</a>&nbsp;
     <a class="link" onclick="localStorage.removeItem('LXGW-WenKai');location.reload();">关闭</a>
 </div>
+-->
 
 ## Firefox H.265/MPEG-H HEVC 视频播放
 
