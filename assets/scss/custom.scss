@@ -13,7 +13,7 @@
 
 // font-family: 'HarmonyOS Sans SC';
 // @import url("https://unpkg.com/@lobehub/webfont-harmony-sans-sc@1.0.0/css/index-full.css");
-// Added in layouts/partials/head/custom.html
+@import "HarmonyOSSansSC";
 
 // 为元素添加过渡效果
 aside,
@@ -53,4 +53,17 @@ article {
     }
 
     @import "gutenberg/gutenberg";
+}
+
+:root {
+    /* Based on theme default */
+    --zh-font-family:
+        "HarmonyOS Sans SC", "PingFang SC", "Hiragino Sans GB",
+        "Droid Sans Fallback", "Microsoft YaHei";
+    --base-font-family:
+        "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
+        var(--zh-font-family), sans-serif, "Twemoji";
+    --code-font-family:
+        Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace;
+    font-display: swap; /* 避免文字消失 */
 }
