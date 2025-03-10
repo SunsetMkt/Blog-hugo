@@ -6,18 +6,30 @@
     >.
 </noscript>
 
-<!--
-<script>
-    if (localStorage.getItem("LXGW-WenKai")) {
-        var link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href =
-            "https://unpkg.com/lxgw-wenkai-screen-web@1.501.0/style.css";
-        document.head.appendChild(link);
-        document.body.classList.add("lxgw-wenkai");
-    }
-</script>
--->
+<!-- Development Environment Warning -->
+{{- if hugo.IsDevelopment -}}
+    <style>
+        .development-warning-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 165, 0, 0.5); /* 橙色半透明 */
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            user-select: none;
+            cursor: pointer;
+        }
+    </style>
+    <div class="development-warning-bar" onclick="this.remove()">
+        开发环境 | Development Environment
+    </div>
+{{- end -}}
+
 
 <script>
     (function () {

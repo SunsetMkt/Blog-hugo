@@ -79,19 +79,6 @@ URL 参数`eruda=true`。
     <a class="link" href="javascript:void(0)" onclick="RmDisableAnalysis();location.reload();">删除禁用标记</a>
 </div>
 
-<!--
-## 字体功能
-
-### 使用霞鹜文楷字体
-
-使用[LXGW WenKai Screen / 霞鹜文楷屏幕阅读版](https://github.com/CMBill/lxgw-wenkai-screen-web)。
-
-<div class="LXGW-WenKai-btns">
-    <a class="link" onclick="localStorage.setItem('LXGW-WenKai','true');location.reload();">打开</a>&nbsp;
-    <a class="link" onclick="localStorage.removeItem('LXGW-WenKai');location.reload();">关闭</a>
-</div>
--->
-
 ## Firefox H.265/MPEG-H HEVC 视频播放
 
 For Windows：确保安装[来自设备制造商的 HEVC 视频扩展](ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq)，在`about:config`将`media.wmf.hevc.enabled`设为`1`（在最新版本已默认）。
