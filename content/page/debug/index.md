@@ -104,6 +104,7 @@ Shame on [MPEG LA](https://en.wikipedia.org/wiki/MPEG_LA#Criticism).
 - [mymind](https://unsplash.com/@mymind)
 - [Luke Chesser](https://unsplash.com/@lukechesser)
 - [Codioful (Formerly Gradienta)](https://unsplash.com/@codioful)
+- [OpenGraph Image Background](https://unsplash.com/photos/an-abstract-black-background-with-a-curved-curve-pC8e7FFONcI)
 
 ## 调试信息
 
