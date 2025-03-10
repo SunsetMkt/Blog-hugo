@@ -7,6 +7,12 @@ disablePathToLower = true
 # Build timeout
 timeout = "300s"
 
+# GitInfo
+# https://gohugo.io/methods/page/gitinfo/
+# https://gohugo.io/configuration/front-matter/#dates
+# lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+enableGitInfo = true
+
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage = "zh-cn"

@@ -17,6 +17,12 @@ hugo --minify --gc --logLevel info
 
 This blog is migrated from Jekyll with `/article/:slug/` URL pattern (allow uppercase). The migrated slugs are defined explicitly in the front matter.
 
+## GitInfo
+
+When hosting your site in a [CI/CD](https://gohugo.io/quick-reference/glossary/#cicd) environment, the step that clones your project repository must perform a deep clone. If the clone is shallow, the Git information for a given file may not be accurate—it may reflect the most recent repository commit, not the commit that last modified the file.
+
+[Change Build Settings](https://gohugo.io/methods/page/gitinfo/#hosting-considerations)
+
 ## Compress media
 
 All files in final release should < 25 MB to make Cloudflare Pages happy.
