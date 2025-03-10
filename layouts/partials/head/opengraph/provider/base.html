@@ -56,23 +56,23 @@
 {{- if .IsPage -}}
     <!-- https://aarol.dev/posts/hugo-og-image/ -->
     {{ $base := resources.Get "/ogimage/og_base.png" }}
-    {{ $boldFont := resources.Get "/ogimage/HarmonyOS_SansSC_Medium.ttf" }}
-    {{ $mediumFont := resources.Get "/ogimage/HarmonyOS_SansSC_Regular.ttf" }}
+    {{ $boldFont := resources.Get "/ogimage/HarmonyOS_SansSC_Bold.ttf" }}
+    {{ $mediumFont := resources.Get "/ogimage/HarmonyOS_SansSC_Medium.ttf" }}
     {{ $img := $base.Filter (images.Text .Site.Title (dict
         "color" "#ffffff"
         "size" 64
-        "linespacing" 2
-        "x" 141
-        "y" 117
+        "linespacing" 25.6
+        "x" 60
+        "y" 500
         "font" $boldFont
         ))
     }}
     {{ $img = $img.Filter (images.Text .Page.Title (dict
         "color" "#ffffff"
-        "size" 64
-        "linespacing" 2
-        "x" 141
-        "y" 291
+        "size" 72
+        "linespacing" 28.8
+        "x" 60
+        "y" 100
         "font" $mediumFont
         ))
     }}
