@@ -74,3 +74,9 @@ article {
         "Twemoji", sans-serif;
     font-display: swap; /* 避免文字消失 */
 }
+
+code,
+kbd,
+samp {
+    font-family: var(--code-font-family);
+}
