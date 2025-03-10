@@ -73,10 +73,6 @@ article {
         var(--zh-font-family), "Noto Color Emoji", "Twemoji", sans-serif;
 }
 
-body {
-    font-display: swap; /* 避免文字消失 */
-}
-
 .custom-footer-code {
     color: var(--code-text-color);
     background-color: var(--code-background-color);
