@@ -14,3 +14,7 @@ title: 测试页面
 H~2~O
 
 1^st^
+
+{{< details >}}
+Collapsed text
+{{< /details >}}

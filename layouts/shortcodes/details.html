@@ -1,0 +1,5 @@
+<!-- https://stackoverflow.com/a/71703912 -->
+<details>
+    <summary>{{ (.Get 0) | default "展开" | markdownify }}</summary>
+    {{ .Inner | markdownify }}
+</details>
