@@ -11,9 +11,11 @@
 // Twemoji
 @import "twemoji";
 
-// font-family: 'HarmonyOS Sans SC';
-// @import url("https://unpkg.com/@lobehub/webfont-harmony-sans-sc@1.0.0/css/index-full.css");
+// HarmonyOS Sans SC
 @import "HarmonyOSSansSC";
+
+// JetBrains Mono
+@import "JetBrainsMono";
 
 // 为元素添加过渡效果
 aside,
@@ -64,6 +66,7 @@ article {
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
         var(--zh-font-family), sans-serif, "Twemoji";
     --code-font-family:
-        Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace;
+        "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New",
+        var(--zh-font-family), monospace;
     font-display: swap; /* 避免文字消失 */
 }
