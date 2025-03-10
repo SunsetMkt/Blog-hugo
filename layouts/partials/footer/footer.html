@@ -12,12 +12,21 @@
 
     <section class="powerby">
         {{ $commitHash := partialCached "getCommitHash.html" "git-commit-hash" }}
-        提交: <code>{{ $commitHash | safeHTML }}</code>&nbsp;&nbsp; 环境:
-        <code>{{ hugo.Environment | safeHTML }}</code>&nbsp;&nbsp; Hugo:
-        <code>{{ hugo.Version | safeHTML }}</code>&nbsp;&nbsp; 主题:
-        <code>{{ $ThemeVersion | safeHTML }}</code>&nbsp;&nbsp; 时间:
-        <code>{{ time.Now.UnixMicro | safeHTML }}</code>&nbsp;&nbsp; 语言:
-        <code>{{ .Site.Language.LanguageCode | safeHTML }}</code>
+        提交:
+        <code class="custom-footer-code">{{ $commitHash | safeHTML }}</code
+        >&nbsp; 环境:
+        <code class="custom-footer-code">{{ hugo.Environment | safeHTML }}</code
+        >&nbsp; Hugo:
+        <code class="custom-footer-code">{{ hugo.Version | safeHTML }}</code
+        >&nbsp; 主题:
+        <code class="custom-footer-code">{{ $ThemeVersion | safeHTML }}</code
+        >&nbsp; 时间:
+        <code class="custom-footer-code"
+            >{{ time.Now.UnixMicro | safeHTML }}</code
+        >&nbsp; 语言:
+        <code class="custom-footer-code"
+            >{{ .Site.Language.LanguageCode | safeHTML }}</code
+        >
         <br />
 
         {{ with .Site.Params.footer.customText }}

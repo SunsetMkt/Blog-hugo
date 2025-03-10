@@ -70,13 +70,17 @@ article {
         var(--zh-font-family), "Noto Color Emoji", "Twemoji", monospace;
     --base-font-family:
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), var(--code-font-family), "Noto Color Emoji",
-        "Twemoji", sans-serif;
+        var(--zh-font-family), "Noto Color Emoji", "Twemoji", sans-serif;
+}
+
+body {
     font-display: swap; /* 避免文字消失 */
 }
 
-code,
-kbd,
-samp {
+.custom-footer-code {
+    color: var(--code-text-color);
+    background-color: var(--code-background-color);
+    padding: 1px 2px;
+    border-radius: var(--tag-border-radius);
     font-family: var(--code-font-family);
 }
