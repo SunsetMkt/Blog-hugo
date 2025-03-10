@@ -25,6 +25,12 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
+// 强制为 class 内的所有元素添加/覆盖过渡效果
+.force-transition-all,
+.force-transition-all :is(*) {
+    transition: all 0.3s ease-in-out !important;
+}
+
 // 打印优化
 @media print {
     aside {
