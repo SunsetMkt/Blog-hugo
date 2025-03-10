@@ -21,6 +21,10 @@ enable = true
 [goldmark.extensions.extras.superscript]
 enable = true
 
+[goldmark.parser]
+autoDefinitionTermID = true
+attribute.block = true
+
 # LaTeX math support
 # https://gohugo.io/content-management/mathematics/
 [goldmark.extensions.passthrough.delimiters]
