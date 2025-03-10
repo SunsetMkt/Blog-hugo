@@ -2,7 +2,23 @@
 [goldmark.renderer]
 unsafe = true
 
+[goldmark.extensions]
+# To avoid a conflict when enabling the “subscript” feature of the Extras extension
+strikethrough = false
+
 [goldmark.extensions.passthrough]
+enable = true
+
+[goldmark.extensions.extras]
+[goldmark.extensions.extras.delete]
+enable = true
+[goldmark.extensions.extras.insert]
+enable = true
+[goldmark.extensions.extras.mark]
+enable = true
+[goldmark.extensions.extras.subscript]
+enable = true
+[goldmark.extensions.extras.superscript]
 enable = true
 
 # LaTeX math support
