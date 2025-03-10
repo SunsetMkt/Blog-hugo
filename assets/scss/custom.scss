@@ -11,6 +11,9 @@
 // Twemoji
 @import "twemoji";
 
+// Noto Color Emoji
+@import "NotoColorEmoji";
+
 // HarmonyOS Sans SC
 @import "HarmonyOSSansSC";
 
@@ -64,9 +67,9 @@ article {
         "Droid Sans Fallback", "Microsoft YaHei";
     --base-font-family:
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), sans-serif, "Twemoji";
+        var(--zh-font-family), sans-serif, "Noto Color Emoji", "Twemoji";
     --code-font-family:
         "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New",
-        var(--zh-font-family), monospace;
+        var(--zh-font-family), monospace, "Noto Color Emoji", "Twemoji";
     font-display: swap; /* 避免文字消失 */
 }
