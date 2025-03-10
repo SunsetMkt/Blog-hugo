@@ -5,7 +5,7 @@ title = "Sunset 的重构博客"
 disablePathToLower = true
 
 # Build timeout
-timeout = "300s"
+timeout = "600s"
 
 # GitInfo
 # https://gohugo.io/methods/page/gitinfo/
