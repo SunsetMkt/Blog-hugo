@@ -2,14 +2,18 @@
     You can add your own custom styles here.
 */
 
-// 萌娘百科 黑幕CSS
+// 萌娘百科 黑幕 CSS
 @import "heimu";
 
 // lxgw-wenkai Webfont
-@import "lxgw-wenkai-web";
+// @import "lxgw-wenkai-web";
 
 // Twemoji
 @import "twemoji";
+
+// font-family: 'HarmonyOS Sans SC';
+// @import url("https://unpkg.com/@lobehub/webfont-harmony-sans-sc@1.0.0/css/index-full.css");
+// Added in layouts/partials/head/custom.html
 
 // 为元素添加过渡效果
 aside,
