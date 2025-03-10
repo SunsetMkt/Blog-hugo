@@ -5,7 +5,7 @@ title = "Sunset 的重构博客"
 disablePathToLower = true
 
 # Build timeout
-timeout = "180s"
+timeout = "300s"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
