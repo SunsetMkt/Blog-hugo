@@ -5,7 +5,7 @@ slug: rip
 ---
 
 <style>
-    html {
+    main {
         filter: grayscale(100%);
     }
 </style>
@@ -99,6 +99,7 @@ slug: rip
 ## DarlinChit
 
 {{< details 展开 >}}
+
 > Gravelle 咲夜ャ 🍥🏳️‍⚧️
 >
 > 喵呜~我是白纸，想和大家贴贴抱抱！
