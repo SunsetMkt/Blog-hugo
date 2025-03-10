@@ -65,11 +65,12 @@ article {
     --zh-font-family:
         "HarmonyOS Sans SC", "PingFang SC", "Hiragino Sans GB",
         "Droid Sans Fallback", "Microsoft YaHei";
-    --base-font-family:
-        "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), sans-serif, "Noto Color Emoji", "Twemoji";
     --code-font-family:
         "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New",
-        var(--zh-font-family), monospace, "Noto Color Emoji", "Twemoji";
+        var(--zh-font-family), "Noto Color Emoji", "Twemoji", monospace;
+    --base-font-family:
+        "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
+        var(--zh-font-family), var(--code-font-family), "Noto Color Emoji",
+        "Twemoji", sans-serif;
     font-display: swap; /* 避免文字消失 */
 }
