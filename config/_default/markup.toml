@@ -33,6 +33,8 @@ ordered = true
 startLevel = 2
 
 [highlight]
+anchorLineNos = true
+lineAnchors = true
 noClasses = false
 codeFences = true
 guessSyntax = true
