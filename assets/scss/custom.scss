@@ -17,8 +17,11 @@
 // JetBrains Mono
 @import "JetBrainsMono";
 
-// 为全部未配置过渡效果的元素添加过渡效果
-* {
+// 为部分未配置过渡效果的元素添加过渡效果
+aside,
+main,
+header,
+footer {
     transition: all 0.3s ease-in-out;
 }
 
