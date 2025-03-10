@@ -16,7 +16,7 @@
 {{- if .IsPage -}}
     <!-- https://aarol.dev/posts/hugo-og-image/ -->
     <!-- Already generated in base.html -->
-    {{- $img := path.Join .Page.RelPermalink "og.png" -}}
+    {{- $img := path.Join .Page.RelPermalink "ogimage_hugo_generated.png" -}}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="{{ absURL $img }}" />
 {{- else }}
