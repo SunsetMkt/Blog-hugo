@@ -3,6 +3,7 @@ categories: Original
 date: "2025-03-07T00:00:00Z"
 tags:
     - EndNote
+    - 软件
 slug: EndNote
 title: 获取（几乎是免费的）EndNote
 ---
