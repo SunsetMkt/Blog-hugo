@@ -87,14 +87,6 @@ For Linux/Others：使用[zhaohappy/libmedia 提供的 Web 媒体播放器](/too
 
 Shame on [MPEG LA](https://en.wikipedia.org/wiki/MPEG_LA#Criticism).
 
-## 默认图片作者
-
-- [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
-- [mymind](https://unsplash.com/@mymind)
-- [Luke Chesser](https://unsplash.com/@lukechesser)
-- [Codioful (Formerly Gradienta)](https://unsplash.com/@codioful)
-- [OpenGraph Image Background](https://unsplash.com/photos/an-abstract-black-background-with-a-curved-curve-pC8e7FFONcI)
-
 ## 调试信息
 
 Git 提交和构建信息请参考页脚。
