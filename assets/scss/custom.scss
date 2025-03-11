@@ -99,7 +99,7 @@ footer {
     @import "Debug/ct";
 
     @import "Debug/holmes";
-    html {
+    body {
         @extend .holmes-debug;
     }
 */
