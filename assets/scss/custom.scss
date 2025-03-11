@@ -87,3 +87,19 @@ footer {
     border-radius: var(--tag-border-radius);
     font-family: var(--code-font-family);
 }
+
+/*
+    Debug/Diagnose Styles
+    Do NOT enable in production 
+    Do NOT enable more than one at a time
+*/
+/*
+    @import "Debug/checka11y";
+
+    @import "Debug/ct";
+
+    @import "Debug/holmes";
+    html {
+        @extend .holmes-debug;
+    }
+*/
