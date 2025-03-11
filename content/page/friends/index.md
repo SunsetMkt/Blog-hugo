@@ -46,6 +46,14 @@ links:
       description: 永远相信美好的事情即将发生
       website: http://worable.cncloud.cloud/
       image: worable.jpg
+    - title: "开往 Travellings"
+      description: 「开往 Travellings」是一个友链接力项目，旨在通过网络跳转的方式将流量引入那些鲜为人知的独立站点，从而推动网络的开放性和多元性。由于其要求不得“涉政”，难以理解，故不加入。放置此链接仅为公益目的。
+      website: https://www.travellings.cn/go.html
+      image: travelling.png
+    - title: "中文独立博客列表"
+      description: 这个列表是一个开始，先把独立博客们收集起来。
+      website: https://github.com/timqian/chinese-independent-blogs
+      image: 5512552.jpg
 menu:
     main:
         weight: 4
