@@ -72,10 +72,10 @@ footer {
         "Droid Sans Fallback", "Microsoft YaHei";
     --code-font-family:
         "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New",
-        var(--zh-font-family), monospace, "Noto Color Emoji";
+        var(--zh-font-family), "Noto Color Emoji", monospace;
     --base-font-family:
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), sans-serif, "Noto Color Emoji";
+        var(--zh-font-family), "Noto Color Emoji", sans-serif;
 }
 
 .custom-footer-code {
