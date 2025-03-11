@@ -6,7 +6,7 @@
 @import "heimu";
 
 // Twemoji
-@import "twemoji";
+// @import "twemoji";
 
 // Noto Color Emoji
 @import "NotoColorEmoji";
@@ -72,10 +72,10 @@ footer {
         "Droid Sans Fallback", "Microsoft YaHei";
     --code-font-family:
         "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New",
-        var(--zh-font-family), "Noto Color Emoji", "Twemoji", monospace;
+        var(--zh-font-family), monospace, "Noto Color Emoji";
     --base-font-family:
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), "Noto Color Emoji", "Twemoji", sans-serif;
+        var(--zh-font-family), sans-serif, "Noto Color Emoji";
 }
 
 .custom-footer-code {
