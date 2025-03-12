@@ -14,6 +14,22 @@ EndNote 是著名的文献管理软件。
 
 众所周知，很多中国大陆的教学机构似乎不太重视信息安全，很多大学图书馆提供的正版都可以被搜索引擎检索并通过外部网络下载。
 
+### 快速的最简步骤
+
+- 假设要在 Windows 上安装 EndNote 21。
+- 下载[EndNote 21 msi 安装包](https://download.endnote.com/downloads/21/EN21Inst.msi)
+- 下载[EndNote21SiteInstaller.dmg](https://download.endnote.com/site/17f114bef8b911ed8a38b0dce7da8761/EndNote21SiteInstaller.dmg)
+- 用压缩文件查看器打开`EndNote21SiteInstaller.dmg`，获取`EndNote 21.4 Installer/Install EndNote 21.app/Contents/Resources/.license.dat`，复制里面的内容。
+- 新建一个名为`License.dat`、`UTF-16 LE`编码、`CRLF`换行的纯文本文件，写入下面的内容：
+
+```ini
+[GOLDENTK]
+PIDKEY=从.license.dat复制的内容
+```
+
+- 保存这个文件，和 msi 安装包放在同一目录下。
+- 执行 msi 安装包。
+
 ## 搜索
 
 搜索关键词：`EndNote 大学图书馆`。
@@ -46,7 +62,7 @@ EndNote 是著名的文献管理软件。
 
 `UTF-16 LE`编码，`CRLF`换行，纯文本。
 
-```plain
+```ini
 
 [GOLDENTK]
 NAME=机构名，如果和PIDKEY不一致，会显示PIDKEY的实际机构
@@ -54,6 +70,13 @@ PIDKEY=内容为263个大写字母和数字
 [VERSION]
 INFO="Contact your EndNote License administrator for more information."
 
+```
+
+最简可接受版本：
+
+```ini
+[GOLDENTK]
+PIDKEY=内容为263个大写字母和数字
 ```
 
 请注意：无论最终程序生成的`C:\Program Files (x86)\EndNote 21\License.dat`是何种格式，安装程序只接受此格式。
