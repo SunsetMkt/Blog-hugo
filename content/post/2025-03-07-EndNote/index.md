@@ -19,7 +19,7 @@ EndNote 是著名的文献管理软件。
 - 假设要在 Windows 上安装 EndNote 21。
 - 下载[EndNote 21 msi 安装包](https://download.endnote.com/downloads/21/EN21Inst.msi)
 - 下载[EndNote21SiteInstaller.dmg](https://download.endnote.com/site/17f114bef8b911ed8a38b0dce7da8761/EndNote21SiteInstaller.dmg)
-- 用压缩文件查看器打开`EndNote21SiteInstaller.dmg`，获取`EndNote 21.4 Installer/Install EndNote 21.app/Contents/Resources/.license.dat`，复制里面的内容。
+- 用压缩文件查看器打开`EndNote21SiteInstaller.dmg`，获取`EndNote 21.4 Installer/Install EndNote 21.app/Contents/Resources/.license.dat`。以文本格式打开`.license.dat`，复制里面的内容。
 - 新建一个名为`License.dat`、`UTF-16 LE`编码、`CRLF`换行的纯文本文件，写入下面的内容：
 
 ```ini
