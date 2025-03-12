@@ -1,6 +1,6 @@
 {
     "name": "harmonyos-sans-sc-webfont-splitted",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "HarmonyOS Sans SC Webfont Splitted.",
     "files": [
         "dist/",
@@ -20,7 +20,7 @@
         "url": "git+https://github.com/SunsetMkt/HarmonyOS_Sans_SC_Webfont_Splitted.git"
     },
     "author": "SunsetMkt",
-    "license": "ISC",
+    "license": "Unlicense",
     "bugs": {
         "url": "https://github.com/SunsetMkt/HarmonyOS_Sans_SC_Webfont_Splitted/issues"
     },
