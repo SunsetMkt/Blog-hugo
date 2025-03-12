@@ -61,9 +61,10 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 ### 字体
 
-- [HarmonyOS Sans](https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001) ([HarmonyOS_Sans_SC_Webfont_Splitted](https://github.com/SunsetMkt/HarmonyOS_Sans_SC_Webfont_Splitted))
-- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-- [Noto Color Emoji](https://github.com/googlefonts/noto-emoji)
+- [HarmonyOS Sans SC](https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001) ([HarmonyOS_Sans_SC_Webfont_Splitted](https://github.com/SunsetMkt/HarmonyOS_Sans_SC_Webfont_Splitted))
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/) distributed by Fontsource
+- [Noto Color Emoji](https://github.com/googlefonts/noto-emoji) distributed by Fontsource
+- [MiSans L3](https://hyperos.mi.com/font/zh/rare-word/) ([misans-webfont](https://github.com/mobeicanyue/misans-webfont))
 - [Fontsource](https://github.com/fontsource/fontsource)
 - [cn-font-split](https://github.com/KonghaYao/cn-font-split)
 
