@@ -11,14 +11,15 @@ slug: my-software-list
 title: 我的软件清单
 ---
 
-这是一个可能会持续更新的软件推荐清单，主要针对 PC 端，一般情况下不会包含 Web 应用，可能包含 SaaS 应用。
+这是一个可能会持续更新的软件推荐清单 ~~，主要针对 PC 端~~ ，一般情况下不会包含 Web 应用，可能包含 SaaS 应用。
 
 ## 操作系统
 
 - 生产力、游戏 [Windows](https://www.microsoft.com/zh-cn/software-download/windows11) [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
+- 默认仅包含自由软件，Ubuntu 的上游 [Debian](https://www.debian.org/)
 - 小型服务器 [Ubuntu](https://ubuntu.com/)
 - 探索新特性 [Manjaro](https://manjaro.org/)
-- 无 Snap 的 Ubuntu，适用于桌面端 [Linux Mint](https://linuxmint.com/)
+- 无 Snap 和其他商业化部分的 Ubuntu，适用于桌面端 [Linux Mint](https://linuxmint.com/)
 - RHEL 兼容性替代 [AlmaLinux](https://almalinux.org/)
 
 ## 办公
@@ -99,7 +100,7 @@ title: 我的软件清单
 - 杀毒软件 [Bitdefender](https://www.bitdefender.com/en-us/consumer/free-antivirus)
 - 杀毒软件 [Kaspersky](https://www.kaspersky.com/downloads/free-antivirus)
 - 开源密码管理器 [Bitwarden](https://bitwarden.com/)
-- GPG [Gpg4win](https://www.gpg4win.org/)
+- GPG for Windows [Gpg4win](https://www.gpg4win.org/)
 - 文件加密 [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
 - 沙箱 [Sandboxie](https://github.com/sandboxie-plus/Sandboxie)
 
@@ -121,7 +122,7 @@ title: 我的软件清单
 
 ## 远程控制
 
-- 闭源的远程控制工具 [AnyDesk](https://anydesk.com/zhs)
+- ~~闭源的远程控制工具 [AnyDesk](https://anydesk.com/zhs)~~
 - 开源的远程控制工具 [RustDesk](https://rustdesk.com/zh-cn/)
 - 为游戏设计的开源远程控制工具 [Sunshine](https://github.com/LizardByte/Sunshine)
 - 为游戏设计的闭源远程控制工具 [Parsec](https://parsec.app/)
@@ -131,4 +132,23 @@ title: 我的软件清单
 - 开源的虚拟组网服务 [Tailscale](https://tailscale.com/)
 - 开源的虚拟组网服务 [ZeroTier](https://www.zerotier.com/)
 - 反网络审查 Clash GUI [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
+- 反网络审查 服务器端 [Marzban](https://github.com/Gozargah/Marzban)
 - 反网络审查 [GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI)
+
+## 浏览器扩展
+
+- 去广告 [uBlock Origin](https://github.com/gorhill/uBlock)
+- 去广告 [隐私獾](https://privacybadger.org/zh-cn/)
+- 用户脚本加载器 [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
+- 代理设置切换 [SmartProxy](https://github.com/salarcode/SmartProxy)
+- 媒体资源嗅探 [cat-catch](https://github.com/xifangczy/cat-catch)
+- 对照翻译 [沉浸式翻译](https://immersivetranslate.com/zh-Hans/)
+- 开源的对照翻译 [kiss-translator](https://github.com/fishjar/kiss-translator)
+- 本地保存网页快照 [SingleFile](https://github.com/gildas-lormeau/SingleFile)
+- Flash 播放器模拟器 [Ruffle](https://ruffle.rs/)
+- 展示网站技术栈 [Wappalyzer](https://www.wappalyzer.com/)
+- GitHub 体验优化 [refined-github](https://github.com/refined-github/refined-github)
+- 导出 Cookies [Get-cookies.txt-LOCALLY](https://github.com/kairi003/Get-cookies.txt-LOCALLY)
+- reCAPTCHA 快速完成 [buster](https://github.com/dessant/buster)
+- 无需登录的拼写错误检查 [LanguageTool](https://languagetool.org/)
+- 复制为 Markdown 及其他格式 [Copycat](https://github.com/BlackGlory/Copycat)
