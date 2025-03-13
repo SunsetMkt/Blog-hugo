@@ -26,7 +26,7 @@ Valve Archive 有一个使用 HTML5 的[更好的版本](https://valvearchive.co
 
 ## 反编译的 ActionScript 源代码
 
-由于此 Flash 使用了一个用于生成随机 ID 和采集表单数据的`gdxt.php`，而我们不打算模拟此 API，所以它的一些功能没有正常运作，例如 ID 显示和表单提交 ID 检验功能。
+由于此 Flash 使用了一个用于生成随机 ID 和采集表单数据的`gdxt.php`，而我们不打算模拟此 API，所以它的一些功能没有正常运作，例如 ID 显示功能。
 
 对于这些问题，您可自行阅读反编译 ActionScript 以便想象它的实际执行结果。
 
