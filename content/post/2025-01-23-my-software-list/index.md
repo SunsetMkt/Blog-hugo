@@ -130,8 +130,8 @@ title: 我的软件清单
 
 ## 网络
 
-- 开源的虚拟组网服务 [Tailscale](https://tailscale.com/)
-- 开源的虚拟组网服务 [ZeroTier](https://www.zerotier.com/)
+- 开源的 Layer-3 虚拟组网服务，不支持多播，提供精细的权限控制 [Tailscale](https://tailscale.com/)
+- 开源的 Layer-2 虚拟组网服务，支持多播 [ZeroTier](https://www.zerotier.com/)
 - 反网络审查 Clash GUI [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
 - 反网络审查 服务器端 [Marzban](https://github.com/Gozargah/Marzban)
 - 仅需客户端的反网络审查 [GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI)
