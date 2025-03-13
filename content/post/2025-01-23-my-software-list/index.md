@@ -85,6 +85,7 @@ title: 我的软件清单
 - 开源逆向工程工具 [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
 - 闭源逆向工程工具 [IDA Pro](https://web.archive.org/web/20250115023908/https://kaede.jp.net/fkhexrays/)
 - 简单加密实验 [CyberChef](https://github.com/gchq/CyberChef)
+- API 调试 [Hoppscotch](https://github.com/hoppscotch/hoppscotch)
 - API 抓包调试 [Reqable](https://reqable.com/zh-CN/)
 - Android 提权 [Magisk](https://github.com/topjohnwu/Magisk)
 - 基于内核的 Android 提权 [KernelSU](https://github.com/tiann/KernelSU)
