@@ -16,8 +16,8 @@ title: 我的软件清单
 ## 操作系统
 
 - 生产力、游戏 [Windows](https://www.microsoft.com/zh-cn/software-download/windows11) [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
-- 默认仅包含自由软件，Ubuntu 的上游 [Debian](https://www.debian.org/)
-- 小型服务器 [Ubuntu](https://ubuntu.com/)
+- 非常稳定的发行版，默认仅包含自由软件，Ubuntu 的上游 [Debian](https://www.debian.org/)
+- Desktop 版本不推荐，Server 版本推荐用于小型服务器，Linux Mint 的上游 [Ubuntu](https://ubuntu.com/)
 - 探索新特性 [Manjaro](https://manjaro.org/)
 - 无 Snap 和其他商业化部分的 Ubuntu，适用于桌面端 [Linux Mint](https://linuxmint.com/)
 - RHEL 兼容性替代 [AlmaLinux](https://almalinux.org/)
