@@ -134,7 +134,7 @@ title: 我的软件清单
 - 开源的虚拟组网服务 [ZeroTier](https://www.zerotier.com/)
 - 反网络审查 Clash GUI [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
 - 反网络审查 服务器端 [Marzban](https://github.com/Gozargah/Marzban)
-- 反网络审查 [GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI)
+- 仅需客户端的反网络审查 [GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI)
 
 ## 浏览器扩展
 
