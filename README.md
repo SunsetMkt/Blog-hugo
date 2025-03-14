@@ -32,11 +32,15 @@ scoop install main/ffmpeg
 # https://stackoverflow.com/a/26109838
 ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
 # https://gist.github.com/lukehedger/277d136f68b028e22bed?permalink_comment_id=4436587#gistcomment-4436587
+
+# Deprecated HEVC codec
 # ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k output.mp4
 # Firefox: media.wmf.hevc.enabled = 1 to play.
 
 scoop install extras/handbrake
-# Use preset HandBrake-VP9_720P_OrigFPS_35CQ_Opus_160_WebM.json
+scoop install main/handbrake-cli
+# Use preset VP9_720P_OrigFPS_40CQ_Faster_Opus_160_WebM.json
+handbrakecli --preset-import-file VP9_720P_OrigFPS_40CQ_Faster_Opus_160_WebM.json --preset VP9_720P_OrigFPS_40CQ_Faster_Opus_160_WebM -i input.mp4 -o output.webm
 ```
 
 ### Choose a good codec
