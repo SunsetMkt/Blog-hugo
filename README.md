@@ -40,6 +40,14 @@ ffmpeg -i input.mp4 -c:v libx265 -preset ultrafast -crf 30 -c:a aac -b:a 250k ou
 # TODO: Make it better than H265.
 ```
 
+### Choose a good codec
+
+Read [网页视频编码指南](https://developer.mozilla.org/zh-CN/docs/Web/Media/Guides/Formats/Video_codecs).
+
+The codec should be generally supported by all major modern browsers ([VP9](https://caniuse.com/?search=VP9)) and royalty-free.
+
+MDN suggests "A WebM container using the VP9 codec for video and the Opus codec for audio".
+
 ## Cloudflare Pages enforce file size
 
 ```bash
