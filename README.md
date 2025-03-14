@@ -39,8 +39,12 @@ ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
 
 scoop install extras/handbrake
 scoop install main/handbrake-cli
-# Use preset VP9_720P_OrigFPS_40CQ_Faster_Opus_160_WebM.json
-handbrakecli --preset-import-file VP9_720P_OrigFPS_40CQ_Faster_Opus_160_WebM.json --preset VP9_720P_OrigFPS_40CQ_Faster_Opus_160_WebM -i input.mp4 -o output.webm
+# Use preset:
+# VP9_720P_OrigFPS_40CQ_Faster_Opus_160_WebM for modern videos.
+# VP9_720P_24FPS_50CQ_Faster_Opus_160_WebM for ancient videos.
+# VP9_720P_30FPS_45CQ_Faster_Opus_160_WebM as a medium choice.
+handbrakecli --preset-import-file <preset>.json --preset <preset> -i input.mp4 -o output.webm
+# Or use the GUI.
 ```
 
 ### Choose a good codec
