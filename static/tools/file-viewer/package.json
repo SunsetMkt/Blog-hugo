@@ -25,7 +25,7 @@
     },
     "dependencies": {
         "@handsontable/vue": "^12.0.1",
-        "axios": "^0.27.2",
+        "axios": "^1.8.3",
         "core-js": "^3.22.7",
         "d3": "^3.5.17",
         "docx-preview": "^0.1.11",
@@ -34,7 +34,7 @@
         "jquery": "^3.6.0",
         "jszip": "^3.10.0",
         "nvd3": "^1.8.6",
-        "pdfjs-dist": "^2.15.349",
+        "pdfjs-dist": "^4.10.38",
         "qs": "^6.10.3",
         "tinycolor2": "^1.4.2",
         "v-viewer": "^1.6.4"
@@ -52,8 +52,8 @@
         "eslint": "^6.8.0",
         "eslint-plugin-vue": "^7.20.0",
         "fs-extra": "^9.1.0",
-        "highlight.js": "^9.17.1",
-        "node-sass": "^4.14.1",
+        "highlight.js": "^11.11.1",
+        "node-sass": "^9.0.0",
         "prettier": "^1.19.1",
         "prettier-eslint": "^9.0.1",
         "sass-loader": "^7.1.0",
