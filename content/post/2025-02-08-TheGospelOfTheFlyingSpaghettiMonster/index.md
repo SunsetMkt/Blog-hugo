@@ -17,4 +17,4 @@ title: 飞天意面神怪的福音 (The Gospel of the Flying Spaghetti Monster)
 
 {{< embed-pdf-iframe file="逸本正经.pdf" >}}
 
-{{< video "BV1dt411e7Yv.mp4" >}}
+{{< video "Bv1dt411e7yv_VP9_720P_24FPS_50CQ_Faster_Opus_160_WebM.webm" >}}
