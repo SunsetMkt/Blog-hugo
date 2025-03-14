@@ -27,7 +27,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>那种黑暗又压抑的故事，我不想要。</span
@@ -39,7 +38,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span
@@ -52,7 +50,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span style="font-size: 1.6em"
@@ -66,7 +63,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span
@@ -79,7 +75,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>靠着友情共渡苦难</span
@@ -87,7 +82,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>努力就能得到回报</span
@@ -97,7 +91,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>难过时会有安慰，和朋友相互支撑！</span
@@ -109,7 +102,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>就算有过痛苦的事……所有人到最后还是能展露出笑容！</span
@@ -121,7 +113,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span style="font-size: 1.6em"
@@ -135,7 +126,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>不论别人怎么讲，我还是会这么说！</span
@@ -147,7 +137,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>我们的故事是怎样的走向，由我们自己来决定！</span
@@ -159,7 +148,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span style="font-size: 1.6em"
@@ -173,7 +161,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>把我们的故事……</span
@@ -181,7 +168,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span style="font-size: 1.6em"
@@ -212,7 +198,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span
@@ -226,7 +211,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span
@@ -240,7 +224,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>我喜欢平凡就好！</span
@@ -250,7 +233,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span
@@ -263,7 +245,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>用友情克服苦难……</span
@@ -271,7 +252,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>付出的努力不被贬低……</span
@@ -279,7 +259,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>就算被说幼稚也好，大家都能笑著迎接结局的故事！</span
@@ -291,7 +270,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>而且是所有人都越来越幸福的故事！</span
@@ -303,7 +281,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span
@@ -319,7 +296,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>没有人可以强迫我们接受！！</span
@@ -331,7 +307,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>我们要创造什么样的故事，我们会自己决定！！</span
@@ -343,7 +318,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>所以，现在就要开始了！</span
@@ -353,7 +327,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>我们的故事！</span
@@ -361,7 +334,6 @@ title: 《蔚蓝档案》日步美的青春宣言
             </div>
         </div>
         <br />
-
         <div>
             <div>
                 <span>学园之间的青春故事！</span
