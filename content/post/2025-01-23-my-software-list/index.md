@@ -51,8 +51,9 @@ title: 我的软件清单
 ## 命令行
 
 - Windows 下的命令行工具管理 [Scoop](https://github.com/ScoopInstaller/Scoop)
+- 版本管理工具 [Git](https://git-scm.com/)
 - 多媒体处理 [FFmpeg](https://www.ffmpeg.org/)
-- 优秀的解释性语言 [Python](https://www.python.org/)
+- 优秀且易于使用的解释性语言 [Python](https://www.python.org/)
 
 ## 浏览器
 
