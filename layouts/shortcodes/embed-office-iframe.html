@@ -1,0 +1,44 @@
+{{ $uniqueID := substr (.Get "file" | md5) 0 8 }}
+{{ $officeFile := .Get "file" }}
+
+
+<div>
+    <p>
+        <a href="#" id="embed-office-download-{{ $uniqueID }}" download>下载文档</a>
+        |
+        <a
+            href="/tools/file-viewer/index.html?fileUrl="
+            target="_blank"
+            id="embed-office-link-{{ $uniqueID }}"
+            >在新页面打开</a
+        >
+    </p>
+    <iframe
+        src="/tools/file-viewer/index.html?fileUrl="
+        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        id="embed-office-iframe-{{ $uniqueID }}"
+    ></iframe>
+  <script>
+    (function () {
+      var uniqueID = "{{ $uniqueID }}";
+      var filepath = "{{ $officeFile }}";
+      var iframe = document.getElementById("embed-office-iframe-" + uniqueID);
+      var link = document.getElementById("embed-office-link-" + uniqueID);
+      var download = document.getElementById("embed-office-download-" + uniqueID);
+      var currentPageLocation = window.location.toString();
+      if (currentPageLocation.endsWith("/") == false) {
+        currentPageLocation += "/";
+      }
+      if (filepath.includes("://")) {
+        var src = filepath;
+      } else {
+        var src = currentPageLocation + filepath;
+      }
+      src = encodeURI(src);
+      var href = "/tools/file-viewer/index.html?fileUrl=" + src;
+      iframe.src = href;
+      link.href = href;
+      download.href = src;
+    })();
+  </script>
+</div>

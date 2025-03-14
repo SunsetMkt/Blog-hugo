@@ -1,0 +1,89 @@
+{
+    "name": "@zuiyouliao/vue-file-viewer",
+    "version": "1.2.7",
+    "private": false,
+    "author": "zhanghan <294333196@qq.com>",
+    "license": "MIT",
+    "description": "一个基于vue的跨框架、多格式、纯前端渲染的文件浏览解决方案（支持格式：pptx,docx,xlsx,pdf,视频,音频,纯文本和图片）",
+    "directories": {
+        "doc": "docs",
+        "example": "examples",
+        "lib": "lib"
+    },
+    "files": [
+        "packages",
+        "lib"
+    ],
+    "main": "lib/index",
+    "scripts": {
+        "serve": "vue-cli-service serve  --mode dev --open",
+        "build": "vue-cli-service build --mode pro",
+        "build:iframe": "vue-cli-service build --mode iframe",
+        "doc:dev": "vue-cli-service serve --mode docdev --open",
+        "doc:build": "vue-cli-service build --mode docpro",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "@handsontable/vue": "^12.0.1",
+        "axios": "^0.27.2",
+        "core-js": "^3.22.7",
+        "d3": "^3.5.17",
+        "docx-preview": "^0.1.11",
+        "exceljs": "^4.3.0",
+        "handsontable": "^12.0.1",
+        "jquery": "^3.6.0",
+        "jszip": "^3.10.0",
+        "nvd3": "^1.8.6",
+        "pdfjs-dist": "^2.15.349",
+        "qs": "^6.10.3",
+        "tinycolor2": "^1.4.2",
+        "v-viewer": "^1.6.4"
+    },
+    "peerDependencies": {
+        "vue": "^2.6.14"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.16",
+        "@babel/eslint-parser": "^7.19.1",
+        "@vue/cli-plugin-babel": "^4.5.19",
+        "@vue/cli-plugin-eslint": "^4.5.19",
+        "@vue/cli-service": "^4.5.19",
+        "copy-webpack-plugin": "^5.1.2",
+        "eslint": "^6.8.0",
+        "eslint-plugin-vue": "^7.20.0",
+        "fs-extra": "^9.1.0",
+        "highlight.js": "^9.17.1",
+        "node-sass": "^4.14.1",
+        "prettier": "^1.19.1",
+        "prettier-eslint": "^9.0.1",
+        "sass-loader": "^7.1.0",
+        "screenfull": "^5.0.0",
+        "vue": "^2.6.14",
+        "vue-router": "^3.1.3",
+        "vue-template-compiler": "^2.6.14",
+        "worker-loader": "^3.0.8"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zyl-ui/vue-file-viewer.git"
+    },
+    "keywords": [
+        "vue",
+        "zyl-ui"
+    ],
+    "bugs": {
+        "url": "https://github.com/zyl-ui/vue-file-viewer/issues"
+    },
+    "homepage": "https://github.com/zyl-ui/vue-file-viewer#readme",
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8",
+        "iOS >= 8",
+        "Firefox >= 20",
+        "Android >= 4.4"
+    ],
+    "engines": {
+        "node": ">=12.18.0"
+    }
+}
