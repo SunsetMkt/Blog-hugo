@@ -49,7 +49,7 @@ handbrakecli --preset-import-file <preset>.json --preset <preset> -i input.mp4 -
 
 ### Choose a good codec
 
-Read [网页视频编码指南](https://developer.mozilla.org/zh-CN/docs/Web/Media/Guides/Formats/Video_codecs).
+Read [Web video codec guide by MDN](https://developer.mozilla.org/zh-CN/docs/Web/Media/Guides/Formats/Video_codecs).
 
 The codec should be generally supported by all major modern browsers ([VP9](https://caniuse.com/?search=VP9)) and royalty-free.
 
@@ -70,6 +70,23 @@ git fetch --unshallow && hugo --minify --gc --logLevel info && find public -type
 ## CMS & OAuth
 
 [netlify-cms-cloudflare-pages](https://github.com/i40west/netlify-cms-cloudflare-pages)
+
+## CDN
+
+This blog used to use [unpkg.com](https://unpkg.com/), but after [an outage](https://github.com/unpkg/unpkg/issues/412) (on 2025-03-15 UTC+8) which affected the CDN for 17 hours+, it was migrated to `fastly.jsdelivr.net`.
+
+The Chinese (PRC) government's [Internet censorship system](https://en.wikipedia.org/wiki/Internet_censorship_in_China) blocked [jsDelivr](https://www.jsdelivr.com/)'s `cdn.jsdelivr.net` domain without explicit legal basis or notification [in 2022](https://github.com/jsdelivr/jsdelivr/issues/18397). This system itself is not legally recognized, lacks transparency and accountability, and severely harms Internet openness and technological development.
+
+Currently, `fastly.jsdelivr.net` is not blocked in [Mainland China](https://en.wikipedia.org/wiki/Mainland_China), which seems to be a good choice.
+
+To easily switch to jsDelivr:
+
+Replace `unpkg.com` to `fastly.jsdelivr.net/npm`
+
+```plain
+https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js
+https://fastly.jsdelivr.net/npm/react-dom@16.7.0/umd/react-dom.production.min.js
+```
 
 ---
 
