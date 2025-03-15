@@ -75,12 +75,18 @@ footer {
     --zh-font-family:
         "HarmonyOS Sans SC", "MiSans L3", "PingFang SC", "Hiragino Sans GB",
         "Droid Sans Fallback", "Microsoft YaHei";
+    /* This list is from emojipedia.org */
+    --emoji-font-family:
+        "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+        "Android Emoji", "EmojiSymbols", "EmojiOne Mozilla", "Twemoji Mozilla",
+        "Segoe UI Symbol", "Noto Color Emoji Compat", "emoji", "notoEmoji",
+        "notoEmoji Fallback";
     --code-font-family:
-        "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New",
-        var(--zh-font-family), "Noto Color Emoji", monospace;
+        "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New",
+        var(--zh-font-family), monospace;
     --base-font-family:
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), "Noto Color Emoji", sans-serif;
+        var(--zh-font-family), var(--emoji-font-family), sans-serif;
 }
 
 .custom-footer-code {
