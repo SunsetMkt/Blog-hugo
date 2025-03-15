@@ -77,13 +77,12 @@ footer {
         "Droid Sans Fallback", "Microsoft YaHei";
     /* This list is from emojipedia.org */
     --emoji-font-family:
-        "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+        "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
         "Android Emoji", "EmojiSymbols", "EmojiOne Mozilla", "Twemoji Mozilla",
-        "Segoe UI Symbol", "Noto Color Emoji Compat", "emoji", "notoEmoji",
-        "notoEmoji Fallback";
+        "Segoe UI Symbol", "Noto Color Emoji Compat", "emoji";
     --code-font-family:
         "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New",
-        var(--zh-font-family), monospace;
+        var(--zh-font-family), var(--emoji-font-family), monospace;
     --base-font-family:
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
         var(--zh-font-family), var(--emoji-font-family), sans-serif;
