@@ -21,7 +21,7 @@ Valve Archive 有一个使用 HTML5 的[更好的版本](https://valvearchive.co
     >
         <embed src="ApertureScience17.swf" width="550" height="400" />
     </object>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script src="https://fastly.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
 </div>
 
 ## 反编译的 ActionScript 源代码
