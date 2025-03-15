@@ -13,15 +13,36 @@ Valve Archive 有一个使用 HTML5 的[更好的版本](https://valvearchive.co
 
 ## Ruffle 模拟的 Flash 播放器
 
+<!-- https://web.archive.org/web/20210425151959/https://helpx.adobe.com/animate/kb/object-tag-syntax.html -->
 <div>
-    <object
-        class="flash-container"
-        data="ApertureScience17.swf"
-        type="application/x-shockwave-flash"
-    >
-        <embed src="ApertureScience17.swf" width="550" height="400" />
-    </object>
-    <script src="https://fastly.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
+   <object
+      classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+      width="100%"
+      height="100%"
+      id="ApertureScience17"
+      align="middle"
+   >
+      <param name="movie" value="ApertureScience17.swf" />
+      <!--[if !IE]>-->
+      <object
+         type="application/x-shockwave-flash"
+         data="ApertureScience17.swf"
+         width="550"
+         height="400"
+      >
+         <param name="movie" value="ApertureScience17.swf" />
+         <!--<![endif]-->
+         <a href="http://www.adobe.com/go/getflash">
+               <img
+                  src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+                  alt="Get Adobe Flash player"
+               />
+         </a>
+         <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+   </object>
+   <script src="https://fastly.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
 </div>
 
 ## 反编译的 ActionScript 源代码
