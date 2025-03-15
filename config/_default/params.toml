@@ -112,12 +112,12 @@ autoCreateIssue = false
 serverURL = "https://waline.sunmkt.uk"
 # lang = "zh-CN"
 # avatar = ""
-emoji = ["https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"]
+emoji = ["https://fastly.jsdelivr.net/npm/@waline/emojis@1.2.0/tw-emoji"]
 reaction = [
-    "https://unpkg.com/@waline/emojis@1.2.0/tw-emoji/1f60d.png",
-    "https://unpkg.com/@waline/emojis@1.2.0/tw-emoji/1f642.png",
-    "https://unpkg.com/@waline/emojis@1.2.0/tw-emoji/1f641.png",
-    "https://unpkg.com/@waline/emojis@1.2.0/tw-emoji/1f62d.png",
+    "https://fastly.jsdelivr.net/npm/@waline/emojis@1.2.0/tw-emoji/1f60d.png",
+    "https://fastly.jsdelivr.net/npm/@waline/emojis@1.2.0/tw-emoji/1f642.png",
+    "https://fastly.jsdelivr.net/npm/@waline/emojis@1.2.0/tw-emoji/1f641.png",
+    "https://fastly.jsdelivr.net/npm/@waline/emojis@1.2.0/tw-emoji/1f62d.png",
 ]
 requiredMeta = ["name"]
 search = false

@@ -18,7 +18,7 @@
 
 <script data-cfasync="false">
     (function () {
-        var src = "//unpkg.com/eruda@latest/eruda.js";
+        var src = "//fastly.jsdelivr.net/npm/eruda@latest/eruda.js";
         if (
             !/eruda=true/.test(window.location) &&
             localStorage.getItem("active-eruda") != "true"
@@ -28,7 +28,7 @@
         document.write("<scr" + "ipt>eruda.init();</scr" + "ipt>");
     })();
     (function () {
-        var src = "//unpkg.com/vconsole@latest/dist/vconsole.min.js";
+        var src = "//fastly.jsdelivr.net/npm/vconsole@latest/dist/vconsole.min.js";
         if (
             !/vconsole=true/.test(window.location) &&
             localStorage.getItem("active-vconsole") != "true"
