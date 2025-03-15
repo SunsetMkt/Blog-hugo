@@ -32,10 +32,10 @@ Valve Archive 有一个使用 HTML5 的[更好的版本](https://valvearchive.co
       >
          <param name="movie" value="ApertureScience17.swf" />
          <!--<![endif]-->
-         <a href="http://www.adobe.com/go/getflash">
+         <a href="https://ruffle.rs/downloads">
                <img
-                  src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
-                  alt="Get Adobe Flash player"
+                  src="https://ruffle.rs/logo.svg"
+                  alt="Get Ruffle - An open source Flash Player emulator"
                />
          </a>
          <!--[if !IE]>-->
