@@ -35,14 +35,25 @@ collections:
                 name: "categories",
                 widget: "select",
                 options: ["Original", "Repost"],
+                required: false,
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - {
+                label: "Publish Date",
+                name: "date",
+                widget: "datetime",
+                required: false,
+            }
+          - {
+                label: "Description",
+                name: "description",
+                widget: "string",
+                required: false,
+            }
           - { label: "Slug", name: "slug", widget: "string" }
-          - { label: "Tags", name: "tags", widget: "list" }
-          - { label: "Files", name: "files", widget: "file" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: "tags", widget: "list", required: false }
+          - { label: "Files", name: "files", widget: "file", required: false }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
     - name: "page" # Used in routes, e.g., /admin/collections/blog
       label: "Page" # Used in the UI
       folder: "content/page" # The path to the folder where the documents are stored
@@ -52,8 +63,13 @@ collections:
       media_folder: ""
       public_folder: ""
       fields: # The fields for each document, usually in front matter
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - {
+                label: "Publish Date",
+                name: "date",
+                widget: "datetime",
+                required: false,
+            }
           - { label: "Slug", name: "slug", widget: "string" }
-          - { label: "Files", name: "files", widget: "file" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Files", name: "files", widget: "file", required: false }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
