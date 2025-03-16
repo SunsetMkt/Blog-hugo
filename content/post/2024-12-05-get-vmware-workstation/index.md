@@ -11,7 +11,18 @@ title: 获取 VMware Workstation Pro 的下载链接
 
 ## TL;DR
 
-点开[这个链接](https://softwareupdate.vmware.com/cds/vmw-desktop/ws/)然后自行寻找。通过此方法下载的 Workstation 可能不包含 VMware Tools，它在相同位置的另一个目录下。
+点开[这个链接](https://softwareupdate.vmware.com/cds/vmw-desktop/ws/)然后自行寻找。通过此方法下载的 Workstation 可能不包含 VMware Tools，它在邻近位置的另一个目录下。
+
+示例：
+
+```plain
+https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.3/24583834/windows/core/
+https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.3/24583834/windows/core/VMware-workstation-17.6.3-24583834.exe.tar
+https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.3/24583834/windows/packages/
+https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.3/24583834/windows/packages/tools-windows-x86.tar
+https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.3/24583834/windows/packages/tools-windows.tar
+（Linux 版本的 Tools 已弃用并被 open-vm-tools 代替）
+```
 
 ## 快速开始
 
