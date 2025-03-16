@@ -11,7 +11,7 @@ title: 获取 VMware Workstation Pro 的下载链接
 
 ## TL;DR
 
-点开[这个链接](https://softwareupdate.vmware.com/cds/vmw-desktop/ws/)然后自行寻找。通过此方法下载的 Workstation 可能不包含 VMware Tools，它在邻近位置的另一个目录下。
+点开[这个链接](https://softwareupdate.vmware.com/cds/vmw-desktop/ws/)然后自行寻找。通过此方法下载的 Workstation 不包含 VMware Tools，它在邻近位置的另一个目录下。
 
 示例：
 
