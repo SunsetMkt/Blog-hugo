@@ -47,9 +47,10 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 此网站的运行依赖于第三方服务，包括但不限于:
 
+- [GitHub](https://github.com/)
 - [Cloudflare](https://www.cloudflare.com/zh-cn/)
-- [UNPKG](https://unpkg.com/)
 - [jsDelivr](https://www.jsdelivr.com/)
+- [UNPKG](https://unpkg.com/)
 
 ### 开源软件
 
@@ -63,7 +64,7 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 - [HarmonyOS Sans SC](https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001) ([HarmonyOS_Sans_SC_Webfont_Splitted](https://github.com/SunsetMkt/HarmonyOS_Sans_SC_Webfont_Splitted))
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/) distributed by [Fontsource](https://github.com/fontsource/fontsource)
-- [Noto Color Emoji](https://github.com/googlefonts/noto-emoji) distributed by [infolektuell](https://github.com/infolektuell/noto-color-emoji)
+- [Noto Color Emoji](https://github.com/googlefonts/noto-emoji) distributed by [infolektuell](https://github.com/infolektuell/noto-color-emoji) and [Fontsource](https://www.npmjs.com/package/@fontsource/noto-color-emoji)
 - [MiSans L3](https://hyperos.mi.com/font/zh/rare-word/) ([misans-webfont](https://github.com/mobeicanyue/misans-webfont))
 - [Fontsource](https://github.com/fontsource/fontsource)
 - [cn-font-split](https://github.com/KonghaYao/cn-font-split)

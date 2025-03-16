@@ -9,7 +9,8 @@
 // @import "twemoji";
 
 // Noto Color Emoji
-@import "NotoColorEmoji";
+@import "NotoColorEmoji"; // COLRv1 for Chromium
+@import "NotoColorEmojiSVG"; // color-SVG for Safari
 
 // HarmonyOS Sans SC
 @import "HarmonyOSSansSCSplitted/Light";
