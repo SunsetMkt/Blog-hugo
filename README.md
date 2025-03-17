@@ -31,6 +31,8 @@ All files in final release should < 25 MB to make Cloudflare Pages happy.
 scoop install main/ffmpeg
 # https://stackoverflow.com/a/26109838
 ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
+# Or to Opus
+ffmpeg -i input.wav -c:a libopus -b:a 160k output.opus
 # https://gist.github.com/lukehedger/277d136f68b028e22bed?permalink_comment_id=4436587#gistcomment-4436587
 
 # Deprecated HEVC codec
