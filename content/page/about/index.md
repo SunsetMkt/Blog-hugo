@@ -25,6 +25,10 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 目前，全站主要内容中 AIGC 小于 10%，且在未来也不会增加。
 
+了解为什么 LLM 的生成结果需要有相关知识的人工检查和事实核查：[ChatGPT 是胡说八道]({{< ref "2025-03-17-ChatGPT-is-bullshit-chs" >}})。
+
+> TL;DR：LLM 完全没有任何语义理解，它的生成结果取决于训练数据并产生统计学上合理的结果，它不保证也不理解产物的正确性。对于人类使用者，更多地假定它一定会犯错会更有利于使用它。
+
 [![真人撰写，非 AI 生成](Written-By-Human-Not-By-AI-Badge-white.svg)](https://notbyai.fyi)
 
 ## 关于网站
