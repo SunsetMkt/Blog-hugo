@@ -8,7 +8,7 @@ slug: 我决定陪儿子重新长成一名女性
 title: 我决定陪儿子重新长成一名女性
 ---
 
-Original 猫雨 [丁香医生](https://mp.weixin.qq.com/s/JWvsNP8As3pmzHfZq5xTGg) _2023-05-23 04:03_ _Posted on 北京_
+Original 猫雨 [丁香医生](https://mp.weixin.qq.com/s/JWvsNP8As3pmzHfZq5xTGg) _2023-05-23 04:03_ _Posted on 北京_ 文章插图未转载
 
 今年 22 岁的李薇是一位跨性别女性：生物学性别是男性，性别认同为女性。
 
