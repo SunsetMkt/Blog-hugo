@@ -50,6 +50,10 @@ links:
       description: 「开往 Travellings」是一个友链接力项目，旨在通过网络跳转的方式将流量引入那些鲜为人知的独立站点，从而推动网络的开放性和多元性。由于其要求不得“涉政”，难以理解，故不加入。放置此链接仅为公益目的。
       website: https://www.travellings.cn/go.html
       image: travelling.png
+    - title: "异次元之旅"
+      description: "每一颗小行星都蕴含着与众不同的绚丽彩虹一般的色彩，有些是生活的甜蜜，有些是科技的火花，有些则披着一层神秘而厚重的大气层，令人捉摸不透，你愿意开启这一场旅行吗？"
+      website: https://travel.moe/
+      image: travel_moe.png
     - title: "中文独立博客列表"
       description: 这个列表是一个开始，先把独立博客们收集起来。
       website: https://github.com/timqian/chinese-independent-blogs
