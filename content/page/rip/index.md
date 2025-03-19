@@ -10,13 +10,11 @@ slug: rip
     }
 </style>
 
-谨以此页面永远纪念那些曾经对他人产生深远影响、为开源事业作出巨大贡献、无私分享知识的伙伴们。虽然他们已经不在我们身边，但他们的灵魂和成就仍然存在于我们的记忆中。他们可能是开源社区的一份子，或者是我们亲近的朋友、同事、导师、偶像，或者激发我们前进的人。我们深感痛惜他们的离世。
+为纪念那些曾深刻影响他人、并以各种方式丰富我们生命的已故之人，特设此页。
 
-如果您正在经历健康问题，请尽早咨询医疗专家。
+若您遇到健康问题，请及时就医。
 
-这个页面会一直得到维护，如果需要做出修改，请随时与我们联系。
-
-也请参考[那些秋叶 - One Among Us](https://one-among.us/)，这里的一些图片引用自此。
+本页将持续更新，如有任何建议或更正，请与我们联系。
 
 ## QianMo
 
@@ -139,6 +137,10 @@ slug: rip
 <!--
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1yt4wO7dKCwsfjch8SN9aU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 -->
+
+## 致谢
+
+- 也请参考[那些秋叶 - One Among Us](https://one-among.us/)，这里的一些图片引用自此。
 
 <!--
 
