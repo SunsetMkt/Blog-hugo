@@ -1,4 +1,9 @@
-# Drafts
+---
+title: Drafts
+draft: true
+---
+
+## Drafts
 
 This folder means nothing for Hugo.
 
