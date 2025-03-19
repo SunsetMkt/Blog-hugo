@@ -16,13 +16,15 @@ slug: rip
 
 这个页面会一直得到维护，如果需要做出修改，请随时与我们联系。
 
-也请参考[那些秋叶 - One Among Us](https://one-among.us/)。
+也请参考[那些秋叶 - One Among Us](https://one-among.us/)，这里的一些图片引用自此。
 
 ## QianMo
 
 > 毛星云（1991 年—2021 年 12 月 11 日），湖北宜昌人，中华人民共和国程序员、专栏作家，网名“浅墨”。生前任腾讯游戏引擎组组长。南京航空航天大学硕士毕业，2014 年微软最有价值专家奖得主。出版有书籍《OpenCV3 编程入门》，《逐梦旅程：Windows 游戏编程之从零开始》。
 
 [GitHub Profile](https://github.com/QianMo) [Zhihu](https://zhuanlan.zhihu.com/game-programming)
+
+{{< gallery match="QianMo/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
 
 ## HomoYamakaze
 
@@ -31,6 +33,8 @@ slug: rip
 > Via [One Among Us](https://one-among.us/profile/homoyamakaze/)
 
 [GitHub Profile](https://github.com/HomoYamakaze) [Twitter](https://web.archive.org/web/20221209083008/https://twitter.com/homoyamakaze) [One Among Us](https://one-among.us/profile/homoyamakaze/)
+
+{{< gallery match="HomoYamakaze/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
 
 ## ArtsEpiphany
 
@@ -58,11 +62,15 @@ slug: rip
 
 [GitHub Profile](https://github.com/ArtsEpiphany) [Twitter](https://web.archive.org/web/20230526074730/https://twitter.com/ArtsEpiphany1)
 
+{{< gallery match="ArtsEpiphany/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
+
 ## haoel
 
 > [记录您对左耳朵耗子（陈皓）的点滴回忆](https://github.com/megaease/Remembering-Haoel)
 
 [GitHub Profile](https://github.com/haoel) [Twitter](https://web.archive.org/web/20230526075708/https://twitter.com/haoel)
+
+{{< gallery match="haoel/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
 
 ## brammool
 
@@ -75,6 +83,8 @@ slug: rip
 > [Source](https://github.com/vim/vim/issues/12730)
 
 [GitHub Profile](https://github.com/brammool)
+
+{{< gallery match="brammool/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
 
 ## 查尔斯·托马斯·芒格
 
@@ -96,6 +106,8 @@ slug: rip
 
 [Twitter](https://archive.ph/7l6Vm)
 
+{{< gallery match="XingZ60/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
+
 ## DarlinChit
 
 {{< details 展开 >}}
@@ -116,10 +128,31 @@ slug: rip
 
 [Twitter](https://web.archive.org/web/20240125113323/https://nitter.tux.pizza/DarlinChit) [One Among Us](https://one-among.us/profile/DarlinChit/)
 
+{{< gallery match="DarlinChit/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
+
 ## Sayuri
 
 > Sayuri（日语：さユり，1996 年 6 月 7 日—2024 年 9 月 20 日）为来自日本福冈县福冈市的 J-pop 创作歌手，又常被称为缺氧少女 Sayuri（日语：酸欠少女さユり）。
 >
 > [Via 维基百科](https://zh.wikipedia.org/zh-cn/Sayuri)
 
+<!--
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1yt4wO7dKCwsfjch8SN9aU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+-->
+
+<!--
+
+简单的收录条件：
+
+- 任何人：有一个 GitHub 账号。
+- 任何人：是我的 follower 和 following。
+- 我曾经关注的社会事件的参与者。
+- 任何人：对我的工作直接或间接起到了很大的帮助。
+- 任何人：是本站美术/技术资源的作者。
+- 或许：没有列出的情况。
+
+仅限已离世者。如果还活着且符合以上条件，应该去 friends 页面。
+
+非常知名的人物不会配图，因为非常容易找到，除非图片具有特殊意义。
+
+-->
