@@ -6,3 +6,6 @@ path = "github.com/martignoni/hugo-notice"
 
 [[imports]]
 path = "github.com/martignoni/hugo-loremipsum"
+
+[[imports]]
+path = "github.com/mfg92/hugo-shortcode-gallery"

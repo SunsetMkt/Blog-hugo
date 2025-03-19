@@ -4,3 +4,5 @@ github.com/martignoni/hugo-loremipsum v0.0.0-20190329085906-45d74b1d7376 h1:Cpyy
 github.com/martignoni/hugo-loremipsum v0.0.0-20190329085906-45d74b1d7376/go.mod h1:9UQfCm325ok3xilk1wmagmFWLqqRbWqpWzxrBDg7LD0=
 github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4 h1:lxS0B1ta9/uW+orrnvsGHMCC0TgN4DymEgdlb0PL/uU=
 github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4/go.mod h1:MIQPOMgEcbyRC0gNLzQFSgrS+wIy3RuQ/HbaZYtTOKU=
+github.com/mfg92/hugo-shortcode-gallery v1.3.0 h1:7wiUUu7adN3JbcshZfZ+Q0ZLDilPoGkquoor0ZcdJVU=
+github.com/mfg92/hugo-shortcode-gallery v1.3.0/go.mod h1:SEdbeBGSMX2lP+4nCqqy9AyTWWktUMWXYnR3r1l01Rw=
