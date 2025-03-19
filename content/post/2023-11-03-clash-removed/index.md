@@ -2,7 +2,7 @@
 categories: Original
 date: "2023-11-03T00:00:00Z"
 tags:
-    - Clash
+    - 反网络审查
     - 开源
 slug: clash-removed
 title: Clash 供应链上多个仓库删库

@@ -2,7 +2,7 @@
 categories: Original
 date: "2025-01-14T00:00:00Z"
 tags:
-    - Clash
+    - 反网络审查
     - 开源
 slug: upgrade-clash-to-mihomo
 title: 所有使用 Clash 的用户应当升级到 Meta Kernel
