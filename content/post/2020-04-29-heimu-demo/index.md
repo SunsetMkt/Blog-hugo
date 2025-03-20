@@ -1,11 +1,10 @@
 ---
 categories: Original
-date: "2020-04-29T00:00:00Z"
+date: 2020-04-29T00:00:00Z
 tags:
-    - Demo
-    - 前端
-    - 萌娘百科
-    - CSS
+  - Demo
+  - 前端
+  - 萌娘百科
 slug: heimu-demo
 title: 黑幕 Demo
 ---
