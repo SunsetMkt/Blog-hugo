@@ -1,10 +1,9 @@
 ---
 categories: Original
-date: "2020-06-24T00:00:00Z"
+date: 2020-06-24T00:00:00Z
 description: 人脑可用的信息加密和传递方案
 tags:
-    - 文档
-    - 密码学
+  - 密码学
 slug: a-method-of-safely-delivering-information-in-the-campus
 title: 一种在校园内较安全地传递信息的方法
 ---

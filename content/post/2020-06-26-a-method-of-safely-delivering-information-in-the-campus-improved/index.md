@@ -1,11 +1,10 @@
 ---
 categories: Repost
-date: "2020-06-26T00:00:00Z"
+date: 2020-06-26T00:00:00Z
 description: unknown加密方案改进版，达到安全、方便、可行性高的目的。
 tags:
-    - 文档
-    - Melancholie
-    - 密码学
+  - Melancholie
+  - 密码学
 slug: a-method-of-safely-delivering-information-in-the-campus-improved
 title: 在校园中安全传递信息的方法改进版
 ---
