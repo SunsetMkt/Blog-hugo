@@ -1,9 +1,8 @@
 ---
 categories: Original
-date: "2022-08-01T00:00:00Z"
+date: 2022-08-01T00:00:00Z
 tags:
-    - 原创角色
-    - Sunset
+  - Sunset
 slug: sunset-2
 title: 原创角色 Sunset 的设定草案第二版
 ---

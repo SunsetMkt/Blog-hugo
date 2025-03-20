@@ -1,9 +1,8 @@
 ---
 categories: Original
-date: "2021-12-30T00:00:00Z"
+date: 2021-12-30T00:00:00Z
 tags:
-    - 原创角色
-    - Sunset
+  - Sunset
 slug: sunset-character
 title: 原创角色 Sunset 的设定草案
 ---

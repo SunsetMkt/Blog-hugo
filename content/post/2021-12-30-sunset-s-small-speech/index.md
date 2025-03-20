@@ -4,7 +4,6 @@ date: 2021-12-30T00:00:00Z
 tags:
   - Melancholie
   - Sunset
-  - 原创角色
   - 游戏
   - 社会评论
 slug: sunset-s-small-speech
