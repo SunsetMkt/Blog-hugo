@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2025-02-20T00:00:00Z"
+date: 2025-02-20T00:00:00Z
 tags:
-    - Windows
-    - 信息技术
-    - 软件
+  - Windows
+  - 信息技术
+  - 医学
+  - 软件
 slug: sogou-pinyin-yisheng
 title: 搜狗输入法医生版
 ---
