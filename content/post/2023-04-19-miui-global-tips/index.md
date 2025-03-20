@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-04-19T00:00:00Z"
+date: 2023-04-19T00:00:00Z
 tags:
-    - Android
-    - 小米
+  - Android
+  - 信息技术
+  - 小米
 slug: miui-global-tips
 title: 关于 MIUI 国际版的备忘
 ---

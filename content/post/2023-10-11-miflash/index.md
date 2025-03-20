@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-10-11T00:00:00Z"
+date: 2023-10-11T00:00:00Z
 tags:
-    - Android
-    - 小米
+  - Android
+  - 信息技术
+  - 小米
 slug: miflash
 title: 小米刷机工具 MiFlashPro 和小米妙享的下载 URL 以及更多杂项
 ---

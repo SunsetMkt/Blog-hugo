@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2024-02-17T00:00:00Z"
+date: 2024-02-17T00:00:00Z
 tags:
-    - Windows
-    - 杀毒软件
-    - Kaspersky
+  - Kaspersky
+  - Windows
+  - 信息技术
+  - 杀毒软件
 slug: kfa
 title: 卡巴斯基免费版的 Windows 安装包下载 URL 获取
 ---

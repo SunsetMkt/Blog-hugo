@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2023-02-06T00:00:00Z"
+date: 2023-02-06T00:00:00Z
 tags:
-    - Python
-    - Shell
-    - 纸备份
+  - Python
+  - Shell
+  - 信息技术
+  - 纸备份
 slug: paper-backup
 title: 二进制文件纸备份项目推荐
 ---

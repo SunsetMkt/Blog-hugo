@@ -1,8 +1,9 @@
 ---
 categories: Repost
-date: "2023-04-25T00:00:00Z"
+date: 2023-04-25T00:00:00Z
 tags:
-    - 拼多多
+  - 信息技术
+  - 拼多多
 slug: pinduoduo_backdoor_detailed_report
 title: 拼多多恶意行为分析报告
 ---

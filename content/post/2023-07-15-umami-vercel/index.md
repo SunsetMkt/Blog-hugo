@@ -3,6 +3,7 @@ categories: Original
 date: 2023-07-15T00:00:00Z
 tags:
   - Vercel
+  - 信息技术
   - 前端
   - 后端
 slug: umami-vercel

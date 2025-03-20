@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2024-04-10T00:00:00Z"
+date: 2024-04-10T00:00:00Z
 tags:
-    - Adobe
+  - Adobe
+  - 信息技术
 slug: adobe-cc
 title: 安装 Adobe Creative Cloud 的便捷方法
 ---

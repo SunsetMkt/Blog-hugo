@@ -1,8 +1,9 @@
 ---
 categories: Repost
-date: "2023-10-10T00:00:00Z"
+date: 2023-10-10T00:00:00Z
 tags:
-    - 时事评论
+  - 信息技术
+  - 时事评论
 slug: oss-and-gfw
 title: GFW, 开源与社会主义
 ---

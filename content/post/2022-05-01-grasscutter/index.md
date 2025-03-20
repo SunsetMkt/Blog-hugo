@@ -1,11 +1,12 @@
 ---
 categories: Original
-date: "2022-05-01T00:00:00Z"
+date: 2022-05-01T00:00:00Z
 tags:
-    - 原神
-    - Java
-    - 游戏
-    - 逆向工程
+  - Java
+  - 信息技术
+  - 原神
+  - 游戏
+  - 逆向工程
 slug: grasscutter
 title: 原神私服 Grasscutter 部署备忘
 ---

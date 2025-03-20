@@ -1,8 +1,9 @@
 ---
 categories: Repost
-date: "2025-02-21T00:00:00Z"
+date: 2025-02-21T00:00:00Z
 tags:
-    - Windows
+  - Windows
+  - 信息技术
 slug: optimize-rdp
 title: 优化 Windows RDP
 ---

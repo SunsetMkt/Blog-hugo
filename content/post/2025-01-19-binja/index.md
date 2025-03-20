@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2025-01-19T00:00:00Z"
+date: 2025-01-19T00:00:00Z
 tags:
-    - 逆向工程
+  - 信息技术
+  - 逆向工程
 slug: binja
 title: binaryninja 4.1.5902 已泄露（含破解）
 ---

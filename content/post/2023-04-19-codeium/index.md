@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2023-04-19T00:00:00Z"
+date: 2023-04-19T00:00:00Z
 tags:
-    - AI
+  - AI
+  - 信息技术
 slug: codeium
 title: Codeium 是新兴的免费 AI 代码补全服务
 ---

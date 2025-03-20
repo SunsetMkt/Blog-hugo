@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2024-03-21T00:00:00Z"
+date: 2024-03-21T00:00:00Z
 tags:
-    - 游戏
-    - 原神
+  - 信息技术
+  - 原神
+  - 游戏
 slug: genshin-impact-touch
 title: 在《原神》PC 端使用移动端界面
 ---

@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-04-07T00:00:00Z"
+date: 2023-04-07T00:00:00Z
 tags:
-    - Windows
-    - Office
+  - Office
+  - Windows
+  - 信息技术
 slug: windows-installation-cheat-table
 title: 标准 Windows 安装速查表
 ---

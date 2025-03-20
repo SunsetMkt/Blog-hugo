@@ -3,6 +3,7 @@ categories: Original
 date: 2024-06-22T00:00:00Z
 tags:
   - Mozilla
+  - 信息技术
   - 前端
   - 浏览器
 slug: browser-preference

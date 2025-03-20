@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2025-03-11T00:00:00Z"
+date: 2025-03-11T00:00:00Z
 tags:
-    - Mathematica
-    - 软件
+  - Mathematica
+  - 信息技术
+  - 软件
 slug: Wolfram-Mathematica
 title: 获取 Wolfram Mathematica
 ---

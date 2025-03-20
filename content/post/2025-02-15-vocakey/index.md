@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2025-02-15T00:00:00Z"
+date: 2025-02-15T00:00:00Z
 tags:
-    - Vocaloid
-    - SynthesizerV
+  - SynthesizerV
+  - Vocaloid
+  - 信息技术
 slug: vocakey
 title: vocakey.info 镜像站和其他有用的链接
 ---

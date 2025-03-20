@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2024-12-17T00:00:00Z"
+date: 2024-12-17T00:00:00Z
 tags:
-    - Steam
-    - 逆向工程
-    - 游戏
+  - Steam
+  - 信息技术
+  - 游戏
+  - 逆向工程
 slug: remove-steam-drm
 title: 移除游戏的 Steam 验证
 ---

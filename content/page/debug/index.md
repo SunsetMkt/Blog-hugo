@@ -11,6 +11,7 @@ menu:
     params:
       icon: tool
 tags:
+  - 信息技术
   - 前端
 ---
 

@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2023-07-23T00:00:00Z"
+date: 2023-07-23T00:00:00Z
 tags:
-    - Windows
-    - 杀毒软件
-    - Kaspersky
+  - Kaspersky
+  - Windows
+  - 信息技术
+  - 杀毒软件
 slug: ksc-kfa-chinese
 title: 安装 Kaspersky Security Cloud Free 简体中文版或卡巴斯基免费版
 ---

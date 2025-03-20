@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2022-07-15T00:00:00Z"
+date: 2022-07-15T00:00:00Z
 tags:
-    - WPS
+  - WPS
+  - 信息技术
 slug: wps-oem
 title: WPS Office Pro（金山 WPS 企业版）和金山 PDF 专业版的 OEM 配置方法
 ---

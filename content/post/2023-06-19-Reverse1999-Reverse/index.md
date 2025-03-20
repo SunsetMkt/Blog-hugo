@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2023-06-19T00:00:00Z"
+date: 2023-06-19T00:00:00Z
 tags:
-    - 逆向工程
-    - Unity
-    - 重返未来：1999
+  - Unity
+  - 信息技术
+  - 逆向工程
+  - 重返未来：1999
 slug: Reverse1999-Reverse
 title: 重返未来：1999 的可能逆向工程方案
 ---

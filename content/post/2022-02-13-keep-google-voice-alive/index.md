@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2022-02-13T00:00:00Z"
+date: 2022-02-13T00:00:00Z
 tags:
-    - Google
+  - Google
+  - 信息技术
 slug: keep-google-voice-alive
 title: 保持 Google Voice 活性避免被回收的方法备忘
 ---

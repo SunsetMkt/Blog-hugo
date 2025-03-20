@@ -5,6 +5,7 @@ tags:
   - Flash
   - InternetExplorer
   - Windows
+  - 信息技术
   - 前端
 slug: ie-and-flash
 title: 在 Windows 10/11 上使用 Internet Explorer 和 Flash

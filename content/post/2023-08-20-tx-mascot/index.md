@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2023-08-20T00:00:00Z"
+date: 2023-08-20T00:00:00Z
 tags:
-    - ASUS
+  - ASUS
+  - 信息技术
 slug: tx-mascot
 title: ASUS 品牌桌面宠物“天选姬”（TXMascot）下载地址
 ---

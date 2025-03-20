@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-11-17T00:00:00Z"
+date: 2023-11-17T00:00:00Z
 tags:
-    - Android
-    - 小米
+  - Android
+  - 信息技术
+  - 小米
 slug: xiaomi-rom-cdn-speedlimit
 title: 小米 ROM 下载限速解决方案
 ---

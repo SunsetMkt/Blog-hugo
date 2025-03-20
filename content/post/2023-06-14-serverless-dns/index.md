@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-06-14T00:00:00Z"
+date: 2023-06-14T00:00:00Z
 tags:
-    - JavaScript
-    - Cloudflare
+  - Cloudflare
+  - JavaScript
+  - 信息技术
 slug: serverless-dns
 title: "serverless-dns: 在 Cloudflare Workers 和其他 Serverless 平台上运行的 RethinkDNS 服务器"
 ---

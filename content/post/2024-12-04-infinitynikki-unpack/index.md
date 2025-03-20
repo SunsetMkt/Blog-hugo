@@ -1,11 +1,12 @@
 ---
 categories: Original
-date: "2024-12-04T00:00:00Z"
+date: 2024-12-04T00:00:00Z
 tags:
-    - 无限暖暖
-    - Unreal
-    - 逆向工程
-    - 游戏
+  - Unreal
+  - 信息技术
+  - 无限暖暖
+  - 游戏
+  - 逆向工程
 slug: infinitynikki-unpack
 title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 ---

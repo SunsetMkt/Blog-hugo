@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2025-01-31T00:00:00Z"
+date: 2025-01-31T00:00:00Z
 tags:
-    - 华为
-    - 操作系统
+  - 信息技术
+  - 华为
+  - 操作系统
 slug: harmonyos-next-oss-license
 title: HarmonyOS NEXT 的开源许可
 ---

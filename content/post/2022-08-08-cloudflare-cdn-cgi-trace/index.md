@@ -1,11 +1,12 @@
 ---
 categories: Original
-date: "2022-08-08T00:00:00Z"
+date: 2022-08-08T00:00:00Z
 tags:
-    - Demo
-    - 前端
-    - JavaScript
-    - Cloudflare
+  - Cloudflare
+  - Demo
+  - JavaScript
+  - 信息技术
+  - 前端
 slug: cloudflare-cdn-cgi-trace
 title: Cloudflare 接口 /cdn-cgi/trace 查询节点信息
 ---

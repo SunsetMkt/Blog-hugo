@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2024-01-24T00:00:00Z"
+date: 2024-01-24T00:00:00Z
 tags:
-    - Minecraft
-    - 游戏
+  - Minecraft
+  - 信息技术
+  - 游戏
 slug: minecraft-bedrock-viewdistance-limit
 title: Minecraft Bedrock 的区块渲染距离限制
 ---

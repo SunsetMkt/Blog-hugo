@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2025-01-18T00:00:00Z"
+date: 2025-01-18T00:00:00Z
 tags:
-    - 逆向工程
+  - 信息技术
+  - 逆向工程
 slug: ida-pro
 title: IDA Pro 9.0.241217 SP1 已泄露（含破解）
 ---

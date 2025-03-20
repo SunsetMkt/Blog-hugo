@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2024-12-05T00:00:00Z"
+date: 2024-12-05T00:00:00Z
 tags:
-    - VMware
-    - 软件
+  - VMware
+  - 信息技术
+  - 软件
 slug: get-vmware-workstation
 title: 获取 VMware Workstation Pro 的下载链接
 ---

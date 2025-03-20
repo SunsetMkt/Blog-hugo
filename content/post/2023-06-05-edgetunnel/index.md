@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-06-05T00:00:00Z"
+date: 2023-06-05T00:00:00Z
 tags:
-    - JavaScript
-    - Cloudflare
+  - Cloudflare
+  - JavaScript
+  - 信息技术
 slug: edgetunnel
 title: "edgetunnel: 在 Cloudflare Workers 上运行的 VLESS 服务器"
 ---

@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-10-07T00:00:00Z"
+date: 2023-10-07T00:00:00Z
 tags:
-    - Microsoft
-    - Android
+  - Android
+  - Microsoft
+  - 信息技术
 slug: Microsoft-Authenticator-Export
 title: 在 Root 设备中导出 Microsoft Authenticator 中的 TOTP 密钥
 ---

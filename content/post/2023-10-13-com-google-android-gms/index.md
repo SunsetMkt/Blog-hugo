@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-10-13T00:00:00Z"
+date: 2023-10-13T00:00:00Z
 tags:
-    - Android
-    - Google
+  - Android
+  - Google
+  - 信息技术
 slug: com-google-android-gms
 title: Google Play 服务的 Play 商店链接
 ---

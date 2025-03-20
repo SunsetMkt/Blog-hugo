@@ -1,9 +1,10 @@
 ---
 categories: Repost
-date: "2024-11-07T00:00:00Z"
+date: 2024-11-07T00:00:00Z
 tags:
-    - LLM
-    - AI
+  - AI
+  - LLM
+  - 信息技术
 slug: LouisShark-chatgpt_system_prompt
 title: ChatGPT_system_prompt
 ---

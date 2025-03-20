@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2024-12-05T00:00:00Z"
+date: 2024-12-05T00:00:00Z
 tags:
-    - Windows
+  - Windows
+  - 信息技术
 slug: use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files
 title: Windows：使用系统文件检查器工具修复丢失或损坏的系统文件
 ---

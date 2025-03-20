@@ -1,11 +1,12 @@
 ---
 categories: Original
-date: "2024-10-18T00:00:00Z"
+date: 2024-10-18T00:00:00Z
 tags:
-    - 鸣潮
-    - Unreal
-    - 逆向工程
-    - 游戏
+  - Unreal
+  - 信息技术
+  - 游戏
+  - 逆向工程
+  - 鸣潮
 slug: WuWa-Cutscenes
 title: 《鸣潮》的过场动画提取
 ---

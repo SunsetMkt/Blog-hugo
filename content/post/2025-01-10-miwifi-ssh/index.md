@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2025-01-10T00:00:00Z"
+date: 2025-01-10T00:00:00Z
 tags:
-    - 路由器
-    - 小米
+  - 信息技术
+  - 小米
+  - 路由器
 slug: miwifi-ssh
 title: 小米路由器开启 SSH
 ---

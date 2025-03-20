@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2023-04-10T00:00:00Z"
+date: 2023-04-10T00:00:00Z
 tags:
-    - 信息安全
+  - 信息安全
+  - 信息技术
 slug: GoodbyeDPI
 title: 【未测试】GoodbyeDPI
 ---
