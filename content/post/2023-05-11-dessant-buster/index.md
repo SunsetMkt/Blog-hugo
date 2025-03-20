@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-05-11T00:00:00Z"
+date: 2023-05-11T00:00:00Z
 tags:
-    - Google
-    - 信息技术
+  - Google
+  - 信息技术
+  - 前端
 slug: dessant-buster
 title: buster：适用于人类的 reCAPTCHA 自动解决工具
 ---

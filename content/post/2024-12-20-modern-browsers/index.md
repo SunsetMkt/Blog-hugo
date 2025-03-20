@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2024-12-20T00:00:00Z"
+date: 2024-12-20T00:00:00Z
 tags:
-    - 信息技术
-    - Firefox
-    - Chrome
+  - Chrome
+  - Firefox
+  - 信息技术
+  - 前端
 slug: modern-browsers
 title: 获取现代浏览器
 ---

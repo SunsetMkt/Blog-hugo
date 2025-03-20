@@ -1,8 +1,9 @@
 ---
 categories: Original
-date: "2023-03-26T00:00:00Z"
+date: 2023-03-26T00:00:00Z
 tags:
-    - Cloudflare
+  - Cloudflare
+  - 前端
 slug: cf-ns
 title: Cloudflare 中国的 /cdn-cgi/trace 接口
 ---

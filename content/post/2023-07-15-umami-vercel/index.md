@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2023-07-15T00:00:00Z"
+date: 2023-07-15T00:00:00Z
 tags:
-    - 后端
-    - Vercel
+  - Vercel
+  - 前端
+  - 后端
 slug: umami-vercel
 title: 使用 Vercel 部署 Umami 统计（备忘）
 ---

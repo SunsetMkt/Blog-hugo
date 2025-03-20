@@ -1,10 +1,11 @@
 ---
 categories: Repost
-date: "2025-03-13T00:00:00Z"
+date: 2025-03-13T00:00:00Z
 tags:
-    - 游戏
+  - 前端
+  - 游戏
 slug: ApertureScience-com
-title: "ApertureScience.com 的历史版本"
+title: ApertureScience.com 的历史版本
 ---
 
 从[Web Archive](https://web.archive.org/web/20101212041243/https://www.aperturescience.com/)获取的历史版本。

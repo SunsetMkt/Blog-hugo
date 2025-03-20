@@ -1,10 +1,11 @@
 ---
 categories: Original
-date: "2023-05-08T00:00:00Z"
+date: 2023-05-08T00:00:00Z
 tags:
-    - InternetExplorer
-    - Flash
-    - Windows
+  - Flash
+  - InternetExplorer
+  - Windows
+  - 前端
 slug: ie-and-flash
 title: 在 Windows 10/11 上使用 Internet Explorer 和 Flash
 ---

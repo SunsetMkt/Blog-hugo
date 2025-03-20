@@ -1,15 +1,17 @@
 ---
-title: "开发人员工具"
+title: 开发人员工具
 date: 2024-11-18
 slug: debug
 aliases:
-    - /dev/
-    - /developer/
+  - /dev/
+  - /developer/
 menu:
-    main:
-        weight: 7
-        params:
-            icon: tool
+  main:
+    weight: 7
+    params:
+      icon: tool
+tags:
+  - 前端
 ---
 
 ## 快捷链接

@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2024-06-22T00:00:00Z"
+date: 2024-06-22T00:00:00Z
 tags:
-    - Mozilla
-    - 浏览器
+  - Mozilla
+  - 前端
+  - 浏览器
 slug: browser-preference
 title: 提案：在 Manifest V3 和 Google 的推动下向 Firefox 和 Brave 移动
 ---

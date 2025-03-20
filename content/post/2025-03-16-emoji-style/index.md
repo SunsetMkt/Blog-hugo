@@ -1,10 +1,11 @@
-﻿---
+---
 categories: Repost
-date: "2025-03-16T00:00:00Z"
+date: 2025-03-16T00:00:00Z
 tags:
-    - 信息技术
+  - 信息技术
+  - 前端
 slug: emoji-style
-title: "Emoji Default Style Values, v16.0"
+title: Emoji Default Style Values, v16.0
 ---
 
 [Source](https://unicode.org/emoji/charts/emoji-style.txt)
