@@ -52,7 +52,7 @@
       "path": "[[workspace]]/content"
     }
   ],
-  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.publicFolder": "[[workspace]]/content",
   "frontMatter.framework.id": "hugo",
   "frontMatter.preview.host": "http://localhost:1313"
 }
