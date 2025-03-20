@@ -1,10 +1,10 @@
 ---
 categories: Repost
-date: "2025-03-17T00:00:00Z"
+date: 2025-03-17T00:00:00Z
 tags:
-    - 信息技术
-    - 翻译
-    - 人工智能
+  - AI
+  - 信息技术
+  - 翻译
 slug: ChatGPT-is-bullshit-chs
 title: ChatGPT 是胡说八道
 ---
