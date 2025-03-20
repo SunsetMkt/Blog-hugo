@@ -1,8 +1,9 @@
 ---
 categories: Repost
-date: "2023-06-22T00:00:00Z"
+date: 2023-06-22T00:00:00Z
 tags:
-    - v2ex
+  - v2ex
+  - 社会评论
 slug: v2ex950868
 title: 就事论事，不要开群体炮，是保持有意义沟通的基本准则
 ---

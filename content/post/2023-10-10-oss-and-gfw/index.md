@@ -4,6 +4,7 @@ date: 2023-10-10T00:00:00Z
 tags:
   - 信息技术
   - 时事评论
+  - 社会评论
 slug: oss-and-gfw
 title: GFW, 开源与社会主义
 ---

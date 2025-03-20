@@ -1,11 +1,12 @@
 ---
 categories: Original
-date: "2022-04-18T00:00:00Z"
+date: 2022-04-18T00:00:00Z
 description: Do your part. Wear a mask.
 tags:
-    - COVID19
-    - 公益
-    - 医学
+  - COVID19
+  - 公益
+  - 医学
+  - 社会评论
 slug: do-your-part-wear-a-mask
 title: 【公益广告】保护自己 戴好口罩
 ---

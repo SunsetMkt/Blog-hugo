@@ -1,12 +1,13 @@
 ---
 categories: Original
-date: "2021-12-30T00:00:00Z"
+date: 2021-12-30T00:00:00Z
 tags:
-    - 原创角色
-    - Sunset
-    - Melancholie
-    - 游戏
-    - 时事评论
+  - Melancholie
+  - Sunset
+  - 原创角色
+  - 时事评论
+  - 游戏
+  - 社会评论
 slug: sunset-s-small-speech
 title: Sunset 的一场小型线上讲演（文字版）
 ---
