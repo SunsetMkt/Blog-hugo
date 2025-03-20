@@ -5,6 +5,7 @@ tags:
   - VMware
   - 信息技术
   - 软件
+  - 逆向工程
 slug: get-vmware-workstation
 title: 获取 VMware Workstation Pro 的下载链接
 ---

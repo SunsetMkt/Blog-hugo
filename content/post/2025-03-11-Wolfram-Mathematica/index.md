@@ -5,6 +5,7 @@ tags:
   - Mathematica
   - 信息技术
   - 软件
+  - 逆向工程
 slug: Wolfram-Mathematica
 title: 获取 Wolfram Mathematica
 ---

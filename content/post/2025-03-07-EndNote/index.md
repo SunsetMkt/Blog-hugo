@@ -5,6 +5,7 @@ tags:
   - EndNote
   - 信息技术
   - 软件
+  - 逆向工程
 slug: EndNote
 title: 获取（几乎是免费的）EndNote
 ---

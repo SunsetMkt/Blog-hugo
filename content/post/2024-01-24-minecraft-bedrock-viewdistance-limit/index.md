@@ -5,6 +5,7 @@ tags:
   - Minecraft
   - 信息技术
   - 游戏
+  - 逆向工程
 slug: minecraft-bedrock-viewdistance-limit
 title: Minecraft Bedrock 的区块渲染距离限制
 ---
