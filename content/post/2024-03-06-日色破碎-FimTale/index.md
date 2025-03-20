@@ -2,6 +2,7 @@
 categories: Repost
 date: "2024-03-06T00:00:00Z"
 tags:
+    - LGBTQIA
     - MyLittlePony
     - 小说
 slug: 日色破碎-FimTale

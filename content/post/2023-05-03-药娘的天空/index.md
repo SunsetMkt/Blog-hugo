@@ -1,8 +1,9 @@
 ---
 categories: Repost
-date: "2023-05-03T00:00:00Z"
+date: 2023-05-03T00:00:00Z
 tags:
-    - 小说
+  - LGBTQIA
+  - 小说
 slug: 药娘的天空
 title: 药娘的天空
 ---
