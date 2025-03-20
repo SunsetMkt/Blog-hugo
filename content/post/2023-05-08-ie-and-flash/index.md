@@ -2,8 +2,7 @@
 categories: Original
 date: 2023-05-08T00:00:00Z
 tags:
-  - Flash
-  - InternetExplorer
+  - Microsoft
   - Windows
   - 信息技术
   - 前端
