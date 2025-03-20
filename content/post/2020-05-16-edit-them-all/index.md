@@ -3,7 +3,6 @@ categories: Original
 date: 2020-05-16T00:00:00Z
 tags:
   - Demo
-  - JavaScript
   - 信息技术
   - 前端
 slug: edit-them-all

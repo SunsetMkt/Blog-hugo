@@ -4,7 +4,6 @@ date: 2022-08-08T00:00:00Z
 tags:
   - Cloudflare
   - Demo
-  - JavaScript
   - 信息技术
   - 前端
 slug: cloudflare-cdn-cgi-trace

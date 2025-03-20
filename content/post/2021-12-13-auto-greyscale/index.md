@@ -4,7 +4,6 @@ date: 2021-12-13T00:00:00Z
 tags:
   - CSS
   - Demo
-  - JavaScript
   - 信息技术
   - 前端
 slug: auto-greyscale
