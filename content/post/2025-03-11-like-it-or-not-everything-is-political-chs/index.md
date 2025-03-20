@@ -2,7 +2,6 @@
 categories: Repost
 date: 2025-03-11T00:00:00Z
 tags:
-  - 政治
   - 社会评论
   - 翻译
 slug: like-it-or-not-everything-is-political-chs
