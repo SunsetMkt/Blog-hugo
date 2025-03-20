@@ -5,6 +5,7 @@ slug: playground
 title: 测试页面
 draft: true
 tags:
+  - Demo
   - 前端
 ---
 
