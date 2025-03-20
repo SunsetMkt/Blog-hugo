@@ -2,11 +2,11 @@
 categories: Original
 date: 2024-12-04T00:00:00Z
 tags:
-  - Unreal
-  - 信息技术
-  - 无限暖暖
-  - 游戏
-  - 逆向工程
+    - Unreal
+    - 信息技术
+    - 无限暖暖
+    - 游戏
+    - 逆向工程
 slug: infinitynikki-unpack
 title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 ---
@@ -133,9 +133,8 @@ for j in range(count):
 
 请注意：由于游戏（不必要地）使用内核级反作弊，有必要使用针对反作弊的注入/转储工具。
 
-- [Dumper-7](https://github.com/Encryqed/Dumper-7)
 - [RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS)
-- [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
+- [Dumper-7](https://github.com/Encryqed/Dumper-7)
 
 ## ~~获取用于 umodel 的 AES Key 列表~~
 
@@ -159,6 +158,7 @@ with open("keys.txt", "w", encoding="utf-8") as f:
 
 ## 极低可能有用的通用工具
 
+- [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
 - [AESDumpster](https://github.com/GHFear/AESDumpster)
 - [UnrealPak](https://github.com/EpicGames/UnrealEngine)
 - [UnrealPakViewer](https://github.com/jashking/UnrealPakViewer)
