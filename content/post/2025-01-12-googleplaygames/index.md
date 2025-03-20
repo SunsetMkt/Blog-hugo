@@ -6,6 +6,7 @@ tags:
   - Android
   - Google
   - 信息技术
+  - 软件
 slug: googleplaygames
 title: Google Play 游戏电脑版
 ---

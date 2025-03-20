@@ -4,6 +4,7 @@ date: 2024-04-10T00:00:00Z
 tags:
   - Adobe
   - 信息技术
+  - 软件
   - 逆向工程
 slug: adobe-cc
 title: 安装 Adobe Creative Cloud 的便捷方法

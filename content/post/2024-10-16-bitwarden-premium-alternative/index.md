@@ -5,6 +5,7 @@ tags:
   - Bitwarden
   - 信息技术
   - 密码管理器
+  - 软件
 slug: bitwarden-premium-alternative
 title: Bitwarden Premium 的免费替代方案
 ---

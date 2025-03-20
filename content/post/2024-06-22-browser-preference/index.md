@@ -6,6 +6,7 @@ tags:
   - 信息技术
   - 前端
   - 浏览器
+  - 软件
 slug: browser-preference
 title: 提案：在 Manifest V3 和 Google 的推动下向 Firefox 和 Brave 移动
 ---

@@ -5,6 +5,7 @@ tags:
   - Android
   - Google
   - 信息技术
+  - 软件
 slug: com-google-android-gms
 title: Google Play 服务的 Play 商店链接
 ---

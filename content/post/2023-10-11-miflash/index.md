@@ -5,6 +5,7 @@ tags:
   - Android
   - 信息技术
   - 小米
+  - 软件
 slug: miflash
 title: 小米刷机工具 MiFlashPro 和小米妙享的下载 URL 以及更多杂项
 ---

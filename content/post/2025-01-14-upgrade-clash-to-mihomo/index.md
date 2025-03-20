@@ -5,6 +5,7 @@ tags:
   - 信息技术
   - 反网络审查
   - 开源
+  - 软件
 slug: upgrade-clash-to-mihomo
 title: 所有使用 Clash 的用户应当升级到 Meta Kernel
 description: 停止使用自 2023-11-02 停止支持的 Clash 并将其无缝升级到 Meta Kernel！

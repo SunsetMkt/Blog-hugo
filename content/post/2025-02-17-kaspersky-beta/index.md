@@ -6,6 +6,7 @@ tags:
   - Windows
   - 信息技术
   - 杀毒软件
+  - 软件
 slug: kaspersky-beta
 title: 安装 Kaspersky Beta 版本
 ---

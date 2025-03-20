@@ -5,6 +5,7 @@ tags:
   - Kaspersky
   - 信息技术
   - 杀毒软件
+  - 软件
 slug: ksc-chinese
 title: 安装 Kaspersky Security Cloud Free 中文版
 ---

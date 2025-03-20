@@ -6,6 +6,7 @@ tags:
   - Windows
   - 信息技术
   - 杀毒软件
+  - 软件
 slug: kfa
 title: 卡巴斯基免费版的 Windows 安装包下载 URL 获取
 ---

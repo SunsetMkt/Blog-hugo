@@ -6,6 +6,7 @@ tags:
   - Shell
   - 信息技术
   - 纸备份
+  - 软件
 slug: paper-backup
 title: 二进制文件纸备份项目推荐
 ---

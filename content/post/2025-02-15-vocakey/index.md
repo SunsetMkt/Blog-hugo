@@ -5,6 +5,7 @@ tags:
   - SynthesizerV
   - Vocaloid
   - 信息技术
+  - 软件
   - 逆向工程
 slug: vocakey
 title: vocakey.info 镜像站和其他有用的链接

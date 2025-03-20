@@ -5,6 +5,7 @@ tags:
   - QQ
   - Windows
   - 信息技术
+  - 软件
 slug: QQ-UWP
 title: 获取 QQ 微软商店版安装包
 ---

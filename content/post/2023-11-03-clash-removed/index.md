@@ -5,6 +5,7 @@ tags:
   - 信息技术
   - 反网络审查
   - 开源
+  - 软件
 slug: clash-removed
 title: Clash 供应链上多个仓库删库
 ---

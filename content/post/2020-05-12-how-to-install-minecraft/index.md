@@ -1,9 +1,10 @@
 ---
 categories: Original
-date: "2020-05-12T00:00:00Z"
+date: 2020-05-12T00:00:00Z
 tags:
-    - 教程
-    - Minecraft
+  - Minecraft
+  - 教程
+  - 软件
 slug: how-to-install-minecraft
 title: 教程：如何安装并运行 Minecraft 国际版
 ---

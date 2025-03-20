@@ -5,6 +5,7 @@ tags:
   - Google
   - 信息技术
   - 前端
+  - 软件
 slug: dessant-buster
 title: buster：适用于人类的 reCAPTCHA 自动解决工具
 ---

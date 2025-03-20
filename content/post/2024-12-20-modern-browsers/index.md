@@ -6,6 +6,7 @@ tags:
   - Firefox
   - 信息技术
   - 前端
+  - 软件
 slug: modern-browsers
 title: 获取现代浏览器
 ---
