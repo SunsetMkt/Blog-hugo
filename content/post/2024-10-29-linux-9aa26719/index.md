@@ -6,6 +6,7 @@ tags:
   - 信息技术
   - 开源
   - 时事评论
+  - 翻译
 slug: linux-9aa26719
 title: "Re: [PATCH] MAINTAINERS: Remove some entries due to various compliance requirements."
 ---
