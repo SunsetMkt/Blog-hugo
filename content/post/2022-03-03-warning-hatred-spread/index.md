@@ -5,7 +5,6 @@ description: "Be wary of the spread of hate: People should NOT be hurt just beca
 tags:
   - 公益
   - 和平
-  - 时事评论
   - 社会评论
 slug: warning-hatred-spread
 title: 警惕仇恨散布：不应该因为一群人受到伤害就人为让另一群人受伤

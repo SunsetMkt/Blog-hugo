@@ -1,9 +1,9 @@
 ---
 categories: Repost
-date: "2020-03-11T00:00:00Z"
+date: 2020-03-11T00:00:00Z
 tags:
-    - 时事评论
-    - 小说
+  - 小说
+  - 社会评论
 slug: 404-building
 title: 404 大厦
 ---

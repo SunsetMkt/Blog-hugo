@@ -1,8 +1,8 @@
 ---
 categories: Repost
-date: "2024-07-05T00:00:00Z"
+date: 2024-07-05T00:00:00Z
 tags:
-    - 时事评论
+  - 社会评论
 slug: nbLyWvV-cnj14f0rMWnV3g
 title: 2014~2024，仅仅 10 年
 ---

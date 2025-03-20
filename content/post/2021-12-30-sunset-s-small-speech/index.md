@@ -5,7 +5,6 @@ tags:
   - Melancholie
   - Sunset
   - 原创角色
-  - 时事评论
   - 游戏
   - 社会评论
 slug: sunset-s-small-speech

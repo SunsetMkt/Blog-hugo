@@ -5,7 +5,7 @@ tags:
   - Linux
   - 信息技术
   - 开源
-  - 时事评论
+  - 社会评论
 slug: condemnation-of-the-linux-foundation-and-its-employees
 title: 安同开源社区有关 Linux 基金会及其职员不当行为的谴责
 ---

@@ -3,7 +3,6 @@ categories: Repost
 date: 2024-02-03T00:00:00Z
 tags:
   - 小说
-  - 时事评论
   - 社会评论
 slug: 整个鲁镇都洋溢着乐观向上的氛围
 title: 整个鲁镇都洋溢着乐观向上的氛围

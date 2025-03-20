@@ -1,9 +1,9 @@
 ---
 categories: Original
-date: "2023-02-07T00:00:00Z"
+date: 2023-02-07T00:00:00Z
 tags:
-    - SCP基金会
-    - 时事评论
+  - SCP基金会
+  - 社会评论
 slug: Hannah
 title: 有关 SCP 基金会中文社区部分管理行为的不完全且可能有偏见的讨论
 ---

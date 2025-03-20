@@ -3,7 +3,6 @@ categories: Repost
 date: 2022-05-23T00:00:00Z
 tags:
   - ASoul
-  - 时事评论
   - 社会评论
   - 虚拟主播
 slug: as-long-as-there-are-crowds

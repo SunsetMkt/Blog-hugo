@@ -3,7 +3,6 @@ categories: Repost
 date: 2020-03-10T00:00:00Z
 tags:
   - 人物传记
-  - 时事评论
   - 社会评论
 slug: nameltsihw
 title: 人的子哨发

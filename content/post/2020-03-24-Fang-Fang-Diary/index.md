@@ -2,7 +2,6 @@
 categories: Repost
 date: 2020-03-24T00:00:00Z
 tags:
-  - 时事评论
   - 社会评论
 slug: Fang-Fang-Diary
 title: 方方日记
