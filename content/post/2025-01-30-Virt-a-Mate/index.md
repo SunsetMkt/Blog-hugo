@@ -1,9 +1,8 @@
 ---
 categories: Original
-date: "2025-01-30T00:00:00Z"
+date: 2025-01-30T00:00:00Z
 tags:
-    - NSFW
-    - 游戏
+  - 游戏
 slug: Virt-a-Mate
 title: Virt-a-Mate
 ---
