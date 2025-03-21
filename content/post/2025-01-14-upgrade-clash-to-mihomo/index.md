@@ -2,10 +2,10 @@
 categories: Original
 date: 2025-01-14T00:00:00Z
 tags:
-  - 信息技术
-  - 反网络审查
-  - 开源
-  - 软件
+    - 信息技术
+    - 反网络审查
+    - 开源
+    - 软件
 slug: upgrade-clash-to-mihomo
 title: 所有使用 Clash 的用户应当升级到 Meta Kernel
 description: 停止使用自 2023-11-02 停止支持的 Clash 并将其无缝升级到 Meta Kernel！
@@ -18,6 +18,8 @@ description: 停止使用自 2023-11-02 停止支持的 Clash 并将其无缝升
 [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
 
 ## Android GUI 客户端
+
+[FlClash](https://github.com/chen08209/FlClash)
 
 [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)
 
