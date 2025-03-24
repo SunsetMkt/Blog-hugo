@@ -10,6 +10,10 @@ links:
       description: "In solitude, where we are least alone."
       website: https://angelkawaii.xyz/
       image: Cedaros.png
+    - title: Chise Hachiroku
+      description: "朝向明日的辉迹！"
+      website: https://chise.hachiroku.uk/zh/
+      image: 73808043.png
     - title: Cynosura
       description: "Feel free to contact me."
       website: https://cynosura.one/
@@ -76,6 +80,7 @@ slug: friends
 名称（标题）：Sunset Mikoto
 描述（副标题）：Lead Programmer of Sunset Edu. & Tech. Group.
 链接/URL（主页）：https://sunmkt.uk/
+友情链接展示页：https://blog.sunmkt.uk/friends/
 图片（Pride Flag 背景）：https://blog.sunmkt.uk/avatar/avatar_pride.png
 图片（透明背景）：https://blog.sunmkt.uk/avatar/avatar.png
 图片（矢量图透明背景）：https://blog.sunmkt.uk/avatar/avatar.svg
