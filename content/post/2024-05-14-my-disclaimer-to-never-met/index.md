@@ -2,7 +2,6 @@
 categories: Original
 date: "2024-05-14T00:00:00Z"
 aliases:
-    - /privacy/
     - /disclaimer/
 tags:
     - 站务
