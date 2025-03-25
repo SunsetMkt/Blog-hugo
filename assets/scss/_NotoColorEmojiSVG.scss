@@ -1,4 +1,4 @@
-/* https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/index.css */
+/* https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/index.css */
 /* color-SVG colored fonts are not supported by Chromium. */
 /* noto-color-emoji-[0]-400-normal */
 @font-face {
@@ -6,7 +6,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-0-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-0-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range: U+1f1e6-1f1ff;
 }
@@ -17,7 +17,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-1-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-1-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1,
@@ -31,7 +31,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-2-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-2-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122,
@@ -60,7 +60,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-3-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-3-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694,
@@ -85,7 +85,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-4-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-4-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf,
@@ -106,7 +106,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-5-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-5-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708,
@@ -125,7 +125,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-6-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-6-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382,
@@ -139,7 +139,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-7-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-7-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5,
@@ -158,7 +158,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-8-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-8-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764,
@@ -179,7 +179,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-9-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-9-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728,
@@ -200,7 +200,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-10-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-10-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+200d, U+2194-2195, U+2640, U+2642, U+26d3, U+27a1, U+fe0f, U+1f344,
@@ -215,7 +215,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(https://fastly.jsdelivr.net/npm/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-11-400-normal.woff2)
+    src: url(https://unpkg.com/@fontsource/noto-color-emoji@5.2.6/files/noto-color-emoji-11-400-normal.woff2)
         format("woff2") tech(color-SVG);
     unicode-range:
         U+1fa89, U+1fa8f, U+1fabe, U+1fac6, U+1fadc, U+1fadf, U+1fae9;
