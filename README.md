@@ -90,7 +90,7 @@ https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js
 https://fastly.jsdelivr.net/npm/react-dom@16.7.0/umd/react-dom.production.min.js
 ```
 
-Update on 2025-03-25: [unpkg.com](https://unpkg.com/) is back to normal with a new architecture which is believed to be more stable. I decide to give it another chance.
+Update on 2025-03-25: [unpkg.com](https://unpkg.com/) is back to normal with a new architecture which is believed to be more stable. I decide to give it another chance. `unpkg.com` has a much shorter load time than `fastly.jsdelivr.net` when the cache is hit.
 
 ---
 
