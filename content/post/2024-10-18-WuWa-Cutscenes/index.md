@@ -2,16 +2,29 @@
 categories: Original
 date: 2024-10-18T00:00:00Z
 tags:
-  - Unreal
-  - 信息技术
-  - 游戏
-  - 逆向工程
-  - 鸣潮
+    - Unreal
+    - 信息技术
+    - 游戏
+    - 逆向工程
+    - 鸣潮
 slug: WuWa-Cutscenes
-title: 《鸣潮》的过场动画提取
+title: 【需要帮助】《鸣潮》的过场动画提取
 ---
 
-For source code and automatic generation, [check here](https://github.com/SunsetMkt/WuWa-Cutscenes).
+Source: <https://github.com/SunsetMkt/WuWa-Cutscenes>
+
+2.1 及之后版本的视频 (\*.mp4) 已加密。需要帮助对解密解决方案进行逆向工程，[在这里讨论](https://github.com/SunsetMkt/WuWa-Cutscenes/issues/1)。
+
+## 过时的指南
+
+> [!WARNING]  
+> Movies (\*.mp4) in 2.1 and after are encrypted. Help needed to reverse engineer the decryption solution. See issues.
+>
+> [What we know about WuWa's Media Player](HELP.md)
+
+A method to export Wuthering Waves cutscenes/movies.
+
+**~~Currently, there's only manual exports available.~~ But it's not hard to automate. PRs are welcome.**
 
 ## Steps
 
