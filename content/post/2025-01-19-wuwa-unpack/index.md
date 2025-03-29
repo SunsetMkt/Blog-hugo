@@ -27,7 +27,7 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 - 图像配置优化 <https://github.com/AlteriaX/WuWa-Configs>
 - 自动化 <https://github.com/ok-oldking/ok-wuthering-waves>
 - FPS 调节和在官方不支持的设备上启用光线追踪 <https://github.com/WakuWakuPadoru/WuWa_Simple_FPSUnlocker>
-- 私服 <https://github.com/thexeondev/WutheringWaves>
+- ~~私服 <https://github.com/thexeondev/WutheringWaves>~~
 - Mod 加载 <https://github.com/SpectrumQT/WWMI-Package>
 - 解包数据 <https://github.com/Arikatsu/WutheringWaves_Data>
 - 抽卡数据收集等 <https://github.com/leck995/WutheringWavesTool>
@@ -35,4 +35,4 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 - 解包数据 <https://github.com/Dimbreath/WutheringData>
 - 自动化 <https://github.com/babalae/better-wuthering-waves>
 - 自动化 <https://github.com/EMCJava/WuWaOpt>
-- 私服 <https://git.xeondev.com/wickedwaifus/wicked-waifus-rs> [教程~~（大概吧）~~](https://www.youtube.com/watch?v=jGISWOXrZks)
+- 私服 <https://git.xeondev.com/wickedwaifus/wicked-waifus-rs> [教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)
