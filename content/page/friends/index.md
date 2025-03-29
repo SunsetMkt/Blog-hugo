@@ -13,7 +13,7 @@ links:
     - title: Chise Hachiroku
       description: "朝向明日的辉迹！"
       website: https://chise.hachiroku.uk/zh/
-      image: 73808043.png
+      image: ChiseHachiroku.png
     - title: Cynosura
       description: "Feel free to contact me."
       website: https://cynosura.one/
