@@ -2,11 +2,11 @@
 categories: Original
 date: 2025-01-19T00:00:00Z
 tags:
-  - Unreal
-  - 信息技术
-  - 游戏
-  - 逆向工程
-  - 鸣潮
+    - Unreal
+    - 信息技术
+    - 游戏
+    - 逆向工程
+    - 鸣潮
 slug: wuwa-unpack
 title: 《鸣潮》的资源文件解包（和其他逆向工程）
 ---
@@ -35,3 +35,4 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 - 解包数据 <https://github.com/Dimbreath/WutheringData>
 - 自动化 <https://github.com/babalae/better-wuthering-waves>
 - 自动化 <https://github.com/EMCJava/WuWaOpt>
+- 私服 <https://git.xeondev.com/wickedwaifus/wicked-waifus-rs> [教程~~（大概吧）~~](https://www.youtube.com/watch?v=jGISWOXrZks)
