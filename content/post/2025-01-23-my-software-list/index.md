@@ -58,7 +58,7 @@ title: 我的软件清单
 
 ## 浏览器
 
-- 杰出的开源浏览器 [Firefox](https://www.mozilla.org/zh-CN/firefox/new/)
+- 非 Chromium 的开源浏览器 [Firefox](https://www.mozilla.org/zh-CN/firefox/new/)
 - 基于 Chromium 的隐私友好浏览器 [Brave](https://brave.com/) [brave-debullshitinator](https://github.com/MulesGaming/brave-debullshitinator)
 - 兼容性替代 Microsoft Edge & Chrome
 - 危险的 Flash 兼容性 [CefFlashBrowser](https://github.com/Mzying2001/CefFlashBrowser) [CleanFlash](https://gitlab.com/cleanflash/installer)

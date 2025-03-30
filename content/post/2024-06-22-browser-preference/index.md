@@ -2,14 +2,16 @@
 categories: Original
 date: 2024-06-22T00:00:00Z
 tags:
-  - Mozilla
-  - 信息技术
-  - 前端
-  - 浏览器
-  - 软件
+    - Mozilla
+    - 信息技术
+    - 前端
+    - 浏览器
+    - 软件
 slug: browser-preference
 title: 提案：在 Manifest V3 和 Google 的推动下向 Firefox 和 Brave 移动
 ---
+
+> 由于 Mozilla [最近陷入的争议](https://connect.mozilla.org/t5/discussions/information-about-the-new-terms-of-use-and-updated-privacy/m-p/87735)，暂时中止对 Firefox 的推荐。
 
 ## TL;DR
 
