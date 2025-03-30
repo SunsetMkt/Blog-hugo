@@ -26,10 +26,12 @@
         <code class="custom-footer-code"
             >{{ time.Now.UnixMicro | safeHTML }}</code
         >
+        <!--
         语言:
         <code class="custom-footer-code"
             >{{ .Site.Language.LanguageCode | safeHTML }}</code
         >
+        -->
         <br />
 
         {{ with .Site.Params.footer.customText }}
