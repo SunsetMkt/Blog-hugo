@@ -11,7 +11,7 @@ slug: browser-preference
 title: 提案：在 Manifest V3 和 Google 的推动下向 Firefox 和 Brave 移动
 ---
 
-> 由于 Mozilla [最近陷入的争议](https://connect.mozilla.org/t5/discussions/information-about-the-new-terms-of-use-and-updated-privacy/m-p/87735)，暂时中止对 Firefox 的推荐。
+> 由于 Mozilla [最近陷入的争议](https://connect.mozilla.org/t5/discussions/information-about-the-new-terms-of-use-and-updated-privacy/m-p/87735)，暂时降低对 Firefox 的推荐，但难以找到更优选择。
 
 ## TL;DR
 
