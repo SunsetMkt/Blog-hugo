@@ -27,4 +27,4 @@ Extracted from game version 1.4.
 
 <p class="jiting">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
 
-<p class="jiting">A quick brown fox jumps over the lazy dog.</p>
+<p class="jiting">The quick brown fox jumps over the lazy dog.</p>
