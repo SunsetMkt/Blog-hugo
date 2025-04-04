@@ -6,7 +6,7 @@ tags:
     - 鸣潮
     - 逆向工程
 slug: wuwa-ps
-title: 《鸣潮》的 xeondev 私服简要运行教程
+title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 ---
 
 > 当前，`CN 2.3.0`测试服已发布。此文档及上游项目已支持此版本。感谢 [xavo95](https://github.com/xavo95) 和 xeondev。
