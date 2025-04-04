@@ -154,6 +154,10 @@ cargo run --bin wicked-waifus-game-server
 
 ### 通过`launcher`运行游戏客户端
 
+> 一些教程会建议您在此关闭所有的代理软件，您可以这样操作。
+>
+> 实际上，如果您的代理软件可以正确处理`127.0.0.1`，那么或许可以不关闭它们。
+
 在`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`右键`launcher.exe`，选择“以管理员身份运行”。
 
 或者：
@@ -209,4 +213,4 @@ unlock_all_tutorials = false
 unlock_all_teleporter = false
 ```
 
-`[default_unlocks]`下的配置可以修改为`true`已实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。
+`[default_unlocks]`下的配置可以修改为`true`以实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。
