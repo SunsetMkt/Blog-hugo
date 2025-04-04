@@ -9,7 +9,7 @@ slug: wuwa-ps
 title: 《鸣潮》的 xeondev 私服简要运行教程
 ---
 
-> 当前，`CN 2.3.0`测试服已发布。此文档及上游项目已支持此版本。感谢 xavo95 和 xeondev。
+> 当前，`CN 2.3.0`测试服已发布。此文档及上游项目已支持此版本。感谢 [xavo95](https://github.com/xavo95) 和 xeondev。
 
 此文档针对`CN 2.3.0`测试服，不保证在未来正确无误。
 
