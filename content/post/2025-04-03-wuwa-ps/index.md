@@ -166,3 +166,47 @@ cd "D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Bi
 ```
 
 如果没有发生任何错误，应该可以使用任意 ID 进入游戏。
+
+### 配置游戏服务器
+
+第一次运行后，`D:\WuWaPS\wicked-waifus-rs`下会自动生成服务器配置文件。其中，`gameserver.toml`用于配置实际的游戏体验。
+
+```toml
+service_id = 2
+
+[database]
+host = "localhost:5432"
+user_name = "postgres"
+password = ""
+db_name = "shorekeeper"
+
+[service_end_point]
+addr = "tcp://127.0.0.1:10004"
+
+[gateway_end_point]
+addr = "tcp://127.0.0.1:10003"
+
+[game_server_config]
+resources_path = "data/assets/game-data"
+load_textmaps = true
+# Do not change yet, issues to be solved
+quadrant_size = 1000000
+
+[asset_config]
+asset_url = "https://git.xeondev.com/wickedwaifus/wicked-waifus-data/releases/download/pioneer_2.3.1/bundle.zip"
+buffer_size = 268435456
+
+[default_unlocks]
+unlock_all_roles = true
+unlock_all_roles_max_level = false
+unlock_all_roles_all_sequences = false
+unlock_all_mc_elements = true
+unlock_all_weapons = false
+unlock_all_adventures = false
+unlock_all_functions = true
+unlock_all_guides = false
+unlock_all_tutorials = false
+unlock_all_teleporter = false
+```
+
+`[default_unlocks]`下的配置可以修改为`true`已实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。
