@@ -97,7 +97,7 @@ cd wicked-waifus-win-patch
 
 ### 构建服务器并试运行
 
-在`D:\WuWaPS\wicked-waifus-rs`下打开终端。
+在`D:\WuWaPS\wicked-waifus-rs`下打开终端（在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”）。
 
 逐个执行，并在服务器构建完成并运行时按下 Ctrl + C 终止运行服务器：
 
