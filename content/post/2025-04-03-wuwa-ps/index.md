@@ -9,11 +9,9 @@ slug: wuwa-ps
 title: 《鸣潮》的 xeondev 私服简要运行教程
 ---
 
-> 当前，`CN 2.3.0`测试服已发布。此文档及上游项目尚未支持此版本，请等待适配。
->
-> 此时，您仍可执行“下载测试版游戏客户端”步骤。
+> 当前，`CN 2.3.0`测试服已发布。此文档及上游项目已支持此版本。感谢 xavo95 和 xeondev。
 
-此文档针对`CN 2.2.0`测试服，不保证在未来正确无误。
+此文档针对`CN 2.3.0`测试服，不保证在未来正确无误。
 
 目前，私服仅支持基本操作和抽卡，不支持怪物自然生成和任务。请确认您真的需要私服，时间和精力同样昂贵。
 
@@ -75,7 +73,7 @@ pg_ctl start
 
 这里安装的数据库超级用户为`postgres`，密码为空。
 
-### 克隆源码并构建 Patch
+### 克隆源码并构建 Patch DLL
 
 在`D:`下新建文件夹`WuWaPS`，在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”。
 
@@ -89,13 +87,15 @@ cd wicked-waifus-win-patch
 .\build.bat
 ```
 
-构建 Patch 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_2_1-regular.dll`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`下。
+构建 Patch DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_3_0-regular.dll`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`下。
+
+<https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch/releases>或许有已构建的 DLL，可直接使用。
 
 ### 下载补丁 Pak
 
-在<https://git.xeondev.com/wickedwaifus/wicked-waifus-pak/releases/tag/2.2.0>下载补丁 Pak，将下载的`rr_fixes_100_p.pak`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Content\Paks`。
+在<https://git.xeondev.com/wickedwaifus/wicked-waifus-pak/releases/tag/2.3.0>下载补丁 Pak，将下载的`rr_fixes_100_p.pak`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Content\Paks`。
 
-### 构建服务器并尝试启动
+### 构建服务器并试运行
 
 在`D:\WuWaPS\wicked-waifus-rs`下打开终端。
 
@@ -130,7 +130,7 @@ cargo run --bin wicked-waifus-game-server
 executable_file = 'Client-Win64-Shipping.exe'
 cmd_line_args = '-fileopenlog'
 current_dir = 'D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64'
-dll_list = ['D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_2_1-regular.dll']
+dll_list = ['D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_3_0-regular.dll']
 
 [environment]
 #environment = ['TESTVAR1=AAAAAA', 'TESTVAR2=AAAAAA']
