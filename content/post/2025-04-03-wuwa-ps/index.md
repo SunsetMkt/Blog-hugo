@@ -33,11 +33,24 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 
 ## 必要的工具
 
-请提前安装这些工具，不提供教程。
+请提前安装这些工具，不提供详细教程。
 
-- [Scoop](https://scoop.sh/) 命令行应用管理器
-- [VSCode](https://code.visualstudio.com/) 文本编辑器
-- [Visual Studio](https://visualstudio.microsoft.com/zh-hans/)（使用 C++ 的桌面开发） Rust/C++ 编译环境需求
+### [Scoop](https://scoop.sh/) 命令行应用管理器
+
+终端（PowerShell）执行：
+
+```pwsh
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+
+### [VSCode](https://code.visualstudio.com/) 文本编辑器
+
+从[主页](https://code.visualstudio.com/)下载。
+
+### [Visual Studio](https://visualstudio.microsoft.com/zh-hans/)（使用 C++ 的桌面开发） Rust/C++ 编译环境需求
+
+[Visual Studio 2022 生成工具](https://visualstudio.microsoft.com/zh-hans/downloads/#build-tools-for-visual-studio-2022)或许也有用。
 
 ## 步骤
 
