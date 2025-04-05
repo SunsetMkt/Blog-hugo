@@ -268,6 +268,32 @@ cargo run --bin wicked-waifus-game-server
 - `launcher`（`xavo95/launcher`）：DLL 注入工具
 - 服务器主项目（`wicked-waifus-rs`）：基于逆向工程的游戏服务器实现
 
+### 默认角色配队
+
+根据[WuWa Character IDs](https://github.com/donutman07/Wuthering-Waves-WuWa-Character-IDs/blob/main/WuWaCharacterIDs.md)修改`wicked-waifus-game-server\src\logic\role\formation.rs`：
+
+```rust
+// Will be updated every version
+const DEFAULT_FORMATION: &[i32] = &[5101, 1407, 1507];
+```
+
+### 默认角色效果
+
+参考`data\assets\game-data\BinData\Buff.json`修改`wicked-waifus-game-server\src\logic\ecs\buf.rs`：
+
+```rust
+impl BufManager {
+    const PERMANENT_ROLE_BUFFS: &'static [i64] = &[
+        3003,      // Remove wall run prohibition
+        3004,      // Remove gliding prohibition
+        1213,      // Reduce stamina while flying
+        1214,      // Reduce stamina while flying in sprint
+        1215,      // Reduce stamina while flying up in sprint
+        1216,      // Reduce stamina while flying down in sprint
+        640012051, // Allow flying -> tag: 1151923109
+    ];
+```
+
 ## 扩充资料
 
 也有一个其他人制作的[视频教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)，但以本文优先。
