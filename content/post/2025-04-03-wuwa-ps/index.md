@@ -98,6 +98,8 @@ pg_ctl start
 
 ### 克隆源码并构建补丁 DLL
 
+> 这里克隆的源码没有全部实际使用（因为下载了已构建的可执行文件），但为了研究方便，推荐克隆所有相关代码库。
+
 在`D:`下新建文件夹`WuWaPS`，在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”。
 
 执行：
@@ -122,6 +124,8 @@ cd wicked-waifus-win-patch
 
 ### 构建服务器并试运行
 
+> 这里只是试运行，确保构建成功即可。服务器程序运行后异常退出此时是正常的，因为尚未建立数据库。
+
 在`D:\WuWaPS\wicked-waifus-rs`下打开终端（在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”）。
 
 逐个执行，并在服务器构建完成并运行时按下 Ctrl + C 终止运行服务器：
@@ -137,6 +141,8 @@ cargo run --bin wicked-waifus-game-server
 此时，由于尚未建立对应的数据库，服务器程序可能会异常退出，暂时忽略。
 
 ### 新建数据库`shorekeeper`
+
+> 可以通过命令行创建数据库，但是为了用户友好，此处使用图形化界面。
 
 在开始菜单打开`pgAdmin 4`，选择`Add New Server`，`General-Name`和`Connection-Host name/address`均填入`127.0.0.1`，点击`Save`即可连接。
 
@@ -242,7 +248,7 @@ unlock_all_teleporter = false
 
 ### 再次启动服务器
 
-在`D:\WuWaPS\wicked-waifus-rs`打开六个终端（在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”），分别执行：
+部署成功并关闭服务器后，要再次启动服务器，在`D:\WuWaPS\wicked-waifus-rs`打开六个终端（在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”），分别执行：
 
 ```pwsh
 pg_ctl start
@@ -276,6 +282,8 @@ cargo run --bin wicked-waifus-game-server
 // Will be updated every version
 const DEFAULT_FORMATION: &[i32] = &[5101, 1407, 1507];
 ```
+
+任何对服务器端的修改都推荐清空数据库，至少新建玩家账户。
 
 ### 默认角色效果
 
