@@ -214,3 +214,16 @@ unlock_all_teleporter = false
 ```
 
 `[default_unlocks]`下的配置可以修改为`true`以实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。
+
+### 再次启动服务器
+
+在`D:\WuWaPS\wicked-waifus-rs`打开六个终端（在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”），分别执行：
+
+```pwsh
+pg_ctl start
+cargo run --bin wicked-waifus-config-server
+cargo run --bin wicked-waifus-hotpatch-server
+cargo run --bin wicked-waifus-login-server
+cargo run --bin wicked-waifus-gateway-server
+cargo run --bin wicked-waifus-game-server
+```
