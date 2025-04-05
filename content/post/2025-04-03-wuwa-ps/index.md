@@ -15,11 +15,11 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 
 目前，私服仅支持基本移动（“散步模拟器”）和抽卡，不支持怪物自然生成和任务。请确认您真的需要私服，时间和精力同样昂贵。
 
+私服只适用于新版本爆料、游戏开发分析、地图研究等用途，不适用于一般玩家。
+
 加入[私服作者的 Discord 服务器](https://discord.com/invite/reversedrooms)免费获取全部所需文件。
 
 [xeondev](https://github.com/thexeondev) 的私服是免费的，任何通过付费购买的软件都是诈骗。
-
-也有一个其他人制作的[视频教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)，可以与此教程相互补充，但以本文优先。
 
 ## 需求
 
@@ -27,7 +27,7 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 - 能操作 Windows 下的命令行
 - 理解 Windows 下路径、Git、命令行的基本概念
 - 访问国际互联网（如果使用代理软件，优先 TUN 模式）
-- 可选：有基本软件开发经验
+- 有基本软件开发经验
 
 为了确保万无一失，请确保用户文件夹名只包含 ASCII 字符。
 
@@ -241,3 +241,7 @@ cargo run --bin wicked-waifus-login-server
 cargo run --bin wicked-waifus-gateway-server
 cargo run --bin wicked-waifus-game-server
 ```
+
+## 扩充资料
+
+也有一个其他人制作的[视频教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)，但以本文优先。
