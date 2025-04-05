@@ -17,7 +17,7 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 
 **私服只适用于新版本爆料、游戏开发分析、地图研究等用途，不适用于一般玩家。**
 
-**为了高效地使用它，请确保您有基本的软件开发经验。**
+**为了高效而无误地部署它，请确保您有基本的软件开发经验。**
 
 加入[私服作者的 Discord 服务器](https://discord.com/invite/reversedrooms)免费获取全部所需文件。
 
@@ -52,7 +52,12 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ### [Visual Studio](https://visualstudio.microsoft.com/zh-hans/)（使用 C++ 的桌面开发） Rust/C++ 编译环境需求
 
-[Visual Studio 2022 生成工具](https://visualstudio.microsoft.com/zh-hans/downloads/#build-tools-for-visual-studio-2022)或许也有用。
+[Microsoft C++ 生成工具](https://visualstudio.microsoft.com/visual-cpp-build-tools/)或许也有用。
+
+> When installing build tools, these two components should be selected:
+>
+> - MSVC - VS C++ x64/x86 build tools
+> - Windows SDK
 
 ## 步骤
 
@@ -89,7 +94,9 @@ pg_ctl start
 
 这里安装的数据库超级用户为`postgres`，密码为空。
 
-### 克隆源码并构建 Patch DLL
+无需修改服务器配置文件中的数据库设置，因为此处的默认值与配置默认值相同。
+
+### 克隆源码并构建补丁 DLL
 
 在`D:`下新建文件夹`WuWaPS`，在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”。
 
@@ -103,7 +110,7 @@ cd wicked-waifus-win-patch
 .\build.bat
 ```
 
-构建 Patch DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_3_0-regular.dll`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`下。
+构建补丁 DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_3_0-regular.dll`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`下。
 
 或者：
 
