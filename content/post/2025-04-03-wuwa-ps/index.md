@@ -112,6 +112,7 @@ pg_ctl start
 git clone --recursive https://git.xeondev.com/wickedwaifus/wicked-waifus-rs.git
 git clone https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch.git
 git clone https://git.xeondev.com/xavo95/launcher.git
+
 cd wicked-waifus-win-patch
 .\build.bat
 ```
