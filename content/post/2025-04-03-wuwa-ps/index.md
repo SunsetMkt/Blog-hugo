@@ -71,7 +71,9 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ### 下载测试版游戏客户端
 
-> 若启动器强制更新，请根据更新版本动态调整补丁文件中`filechecklist.json`的内容。
+> ~~若启动器强制更新，请根据更新版本动态调整补丁文件中`filechecklist.json`的内容。~~
+>
+> 启动器似乎可以在删除`filechecklist.json`的情况下运行，此文件或许不是必需的。
 
 下载[CN 测试版启动器](https://pcdownload-aliyun.aki-game.com/pcstarter/prod/starter/10008_Pa0Q0EMFxukjEqX33pF9Uyvdc8MaGPSz/G152/2.0.0.0/vgu4E1bmg2r5GMCydmVPcIvKpVwqdqDl/installer.exe)，使用 Discord 中的文件（`filechecklist.json`、`krfeapp.dat`和`KRApp.conf`）修补启动器，即可免登录下载客户端：
 
