@@ -37,6 +37,10 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 
 请提前安装这些工具，不提供详细教程。
 
+### Windows 终端
+
+Windows 11 预装，但以防万一：[Microsoft Store](https://apps.microsoft.com/detail/9n0dx20hk701)
+
 ### [Scoop](https://scoop.sh/) 命令行应用管理器
 
 终端（PowerShell）执行：
