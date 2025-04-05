@@ -56,7 +56,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 所有涉及的 URL 都可以在[私服作者的 Discord 服务器](https://discord.com/channels/1154412462372818945/1283475673788452978)中的已标注消息找到。
 
-我们将使用 Windows 11 下的 Windows Terminal（终端）和 PowerShell，而非命令提示符。假定您的游戏安装和开发目录都位于`D:`下。
+我们将使用 Windows 11 下的 [Windows Terminal（终端）](ms-windows-store://pdp?productid=9n0dx20hk701&mode=mini)和 PowerShell，而非命令提示符。假定您的游戏安装和开发目录都位于`D:`下。
 
 ### 下载测试版游戏客户端
 
@@ -70,7 +70,7 @@ To work it new 2.0.0.0 place filechecklist.json and krfeapp.dat under <launcher_
 
 ### 准备环境
 
-打开 Windows 终端（不需要管理员权限），执行：
+打开 [Windows 终端](ms-windows-store://pdp?productid=9n0dx20hk701&mode=mini)（不需要管理员权限），执行：
 
 ```pwsh
 scoop install main/git
