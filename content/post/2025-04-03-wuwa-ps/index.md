@@ -253,6 +253,21 @@ cargo run --bin wicked-waifus-gateway-server
 cargo run --bin wicked-waifus-game-server
 ```
 
+## 技术细节
+
+### 技术栈
+
+- Rust
+- PostgreSQL
+
+### 部件功能
+
+- CN 测试版启动器和补丁：用于免登录下载测试版游戏客户端
+- 补丁 DLL（`wicked-waifus-win-patch`）：需要注入的 DLL，绕过 Pak 校验，修改服务器 URL，禁用 Kuro SDK
+- 补丁 Pak（`wicked-waifus-pak`）：需要绕过 Pak 校验，禁用 TpSafe，禁用 Kuro SDK，修改 VisionRecommendController，修改登录界面 BGM
+- `launcher`（`xavo95/launcher`）：DLL 注入工具
+- 服务器主项目（`wicked-waifus-rs`）：基于逆向工程的游戏服务器实现
+
 ## 扩充资料
 
 也有一个其他人制作的[视频教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)，但以本文优先。
