@@ -63,6 +63,7 @@ To work it new 2.0.0.0 place filechecklist.json and krfeapp.dat under <launcher_
 scoop install main/git
 scoop install main/rustup
 scoop install main/postgresql
+scoop bucket add extras
 scoop install extras/protobuf
 
 rustup update
