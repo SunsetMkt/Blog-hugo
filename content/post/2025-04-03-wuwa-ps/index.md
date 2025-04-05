@@ -17,7 +17,7 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 
 **私服只适用于新版本爆料、游戏开发分析、地图研究等用途，不适用于一般玩家。**
 
-**为了高效地使用它，请确保您有基本软件开发经验。**
+**为了高效地使用它，请确保您有基本的软件开发经验。**
 
 加入[私服作者的 Discord 服务器](https://discord.com/invite/reversedrooms)免费获取全部所需文件。
 
@@ -28,8 +28,8 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
 - 基本的英语阅读能力
 - 能操作 Windows 下的命令行
 - 理解 Windows 下路径、Git、命令行的基本概念
-- 访问国际互联网（如果使用代理软件，优先 TUN 模式）
-- 有基本软件开发经验
+- 访问国际互联网（如果使用代理软件，使用 TUN/虚拟网卡 模式）
+- 基本的软件开发经验
 
 为了确保万无一失，请确保用户文件夹名只包含 ASCII 字符。
 
@@ -104,6 +104,8 @@ cd wicked-waifus-win-patch
 ```
 
 构建 Patch DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_3_0-regular.dll`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`下。
+
+或者：
 
 <https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch/releases>或许有已构建的 DLL，可直接使用。
 
@@ -229,7 +231,7 @@ unlock_all_tutorials = false
 unlock_all_teleporter = false
 ```
 
-`[default_unlocks]`下的配置可以修改为`true`以实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。
+`[default_unlocks]`下的配置可以修改为`true`以实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。每次修改配置后，请新建玩家账号以应用新的配置。
 
 ### 再次启动服务器
 
