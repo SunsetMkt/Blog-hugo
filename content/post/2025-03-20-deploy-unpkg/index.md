@@ -8,7 +8,7 @@ slug: deploy-unpkg
 title: 在 Cloudflare Workers 上部署 UNPKG
 ---
 
-> UNPKG 弃用了 Cloudflare Workers 架构，此文档仅针对[a8ec3ec](https://github.com/unpkg/unpkg/commit/a8ec3ec1f3a036c3796339732ac77bd0e53bb726)版本。
+> 2025-04-06 更新：UNPKG 放弃了纯 Cloudflare Workers 架构，引入外部服务器上的`unpkg-files`用于处理 tar 包，此文档仅针对[a8ec3ec](https://github.com/unpkg/unpkg/commit/a8ec3ec1f3a036c3796339732ac77bd0e53bb726)版本。
 
 在 2025-03-15，[UNPKG 经历了 17 小时以上的崩溃](https://github.com/unpkg/unpkg/issues/412)，作者[mjackson](https://github.com/mjackson)随后宣布了新的纯 Workers 版本。
 
