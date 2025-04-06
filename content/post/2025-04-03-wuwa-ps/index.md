@@ -298,6 +298,8 @@ const DEFAULT_FORMATION: &[i32] = &[5101, 1407, 1507];
 
 任何对服务器端的修改都推荐清空数据库，至少新建玩家账户。
 
+修改默认角色可能会导致“网络问题”提示，此时，关闭`unlock_all_roles`或许有帮助。
+
 ### 默认角色效果
 
 参考`data\assets\game-data\BinData\Buff.json`修改`wicked-waifus-game-server\src\logic\ecs\buf.rs`：
