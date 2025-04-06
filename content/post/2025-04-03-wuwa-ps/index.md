@@ -289,7 +289,7 @@ cargo run --bin wicked-waifus-game-server
 
 ### 默认角色配队
 
-根据[WuWa Character IDs](https://github.com/donutman07/Wuthering-Waves-WuWa-Character-IDs/blob/main/WuWaCharacterIDs.md)和`data\assets\game-data\BinData\RoleInfo.json`修改`wicked-waifus-game-server\src\logic\role\formation.rs`：
+根据[Characters IDs](https://github.com/yuhkix/wuwa-ids/blob/main/characters.md)和`data\assets\game-data\BinData\RoleInfo.json`修改`wicked-waifus-game-server\src\logic\role\formation.rs`：
 
 ```rust
 // Will be updated every version
