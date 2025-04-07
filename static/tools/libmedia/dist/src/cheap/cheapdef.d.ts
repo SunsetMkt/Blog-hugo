@@ -120,7 +120,7 @@ declare const atomic_int32: atomic_int32;
 declare const atomic_int64: atomic_int64;
 declare const __LINE__: number;
 declare const __FILE__: string;
-declare const nullptr: nullptr;
+declare const nullptr: any;
 declare const typeptr: pointer<void>;
 declare type atomictype = atomic_char | atomic_uint8 | atomic_int8 | atomic_uint16 | atomic_int16 | atomic_uint32 | atomic_int32 | atomic_uint64 | atomic_int64 | atomic_bool;
 type PointerLevel<T, Y = T, Level extends number[] = []> = IsAny<T> extends true ? Level['length'] : (T extends pointer<infer U> ? PointerLevel<U, T, [1, ...Level]> : (T extends void ? Level['length'] : (Y extends BuiltinType ? (Level extends [any, ...infer U] ? U['length'] : never) : Level['length'])));
@@ -137,9 +137,9 @@ type IsBuiltinType<T> = IsPointer<T> extends true ? false : (Required<T> extends
 interface Number {
     [index: number]: {};
 }
-declare type pointer<T> = (IsPointer<T> extends true ? {} : (IsBuiltinType<T> extends true ? {} : (IsAny<T> extends true ? {} : (T extends void ? {} : Partial<{
+declare type pointer<T> = (IsPointer<T> extends true ? {} : (IsBuiltinType<T> extends true ? {} : (IsAny<T> extends true ? {} : (T extends void ? {} : {
     [K in keyof T]: T[K];
-}>)))) & {
+})))) & {
     zzzlevel__?: PointerLevel<pointer<T>>;
     zzztype__?: PointerType<pointer<T>>;
     indexOf?: (index: number) => T extends void ? any : T;

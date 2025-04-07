@@ -11,6 +11,7 @@ export declare function writeEbmlLength(writer: BytesWriterSync, length: number 
 export declare function writeEbmlLengthUnknown(writer: BytesWriterSync, bytes: int32): void;
 export declare function writeEbmlUid(writer: IOWriterSync, id: EBMLId, uid: uint64): void;
 export declare function writeEbmlUint(writer: IOWriterSync, id: EBMLId, value: number | bigint): void;
+export declare function writeEbmlSint(writer: IOWriterSync, id: EBMLId, value: number | bigint): void;
 export declare function writeEbmlFloat(writer: IOWriterSync, id: EBMLId, value: float): void;
 export declare function writeEbmlDouble(writer: IOWriterSync, id: EBMLId, value: double): void;
 export declare function writeEbmlBuffer(writer: IOWriterSync, id: EBMLId, value: Uint8ArrayInterface): void;

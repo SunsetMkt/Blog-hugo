@@ -15,7 +15,6 @@ export default class OMovFormat extends OFormat {
     private enableStreams;
     writeHeader(formatContext: AVOFormatContext): number;
     private updateCurrentChunk;
-    private checkMdat;
     private updateCurrentFragment;
     private handleEAC3;
     writeAVPacket(formatContext: AVOFormatContext, avpacket: pointer<AVPacket>): number;

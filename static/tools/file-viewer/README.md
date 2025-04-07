@@ -2,6 +2,6 @@
 
 [Download the whole repository](https://github.com/zyl-ui/vue-file-viewer)
 
-Extract `public/file-viewer` here, rm `fileTest` folder.
+Extract `public/file-viewer/file-viewer` here, rm `fileTest` folder.
 
-Version: `898f94dd40f43c359204f83c223744e03333155f`
+Version: `6baf9e4e21872732c0253119c6fa2598b38be068`

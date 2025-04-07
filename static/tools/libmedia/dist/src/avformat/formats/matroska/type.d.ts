@@ -139,6 +139,7 @@ export interface TrackEntry {
     needDecryption?: boolean;
     duration?: int64;
     maxPts?: int64;
+    lastPts?: int64;
 }
 export interface Tracks {
     entry: TrackEntry[];

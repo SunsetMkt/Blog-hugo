@@ -5,6 +5,12 @@ export declare const filesMeta: {
         demoIndex: any;
         textGetter: () => Promise<any>;
     };
+    'docs/guide/architecture.en-US': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
     'docs/guide/contribution.en-US': {
         frontmatter: any;
         toc: any;
@@ -101,6 +107,12 @@ export declare const filesMeta: {
         demoIndex: any;
         textGetter: () => Promise<any>;
     };
+    'docs/guide/architecture': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
     'docs/guide/contribution': {
         frontmatter: any;
         toc: any;
@@ -185,6 +197,12 @@ export declare const filesMeta: {
         demoIndex: any;
         textGetter: () => Promise<any>;
     };
+    'docs/guide/demo.en-US': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
     'docs/guide/javascript': {
         frontmatter: any;
         toc: any;
@@ -198,6 +216,12 @@ export declare const filesMeta: {
         textGetter: () => Promise<any>;
     };
     'docs/api/index.en-US': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
+    'docs/demo/seek.en-US': {
         frontmatter: any;
         toc: any;
         demoIndex: any;
@@ -287,6 +311,12 @@ export declare const filesMeta: {
         demoIndex: any;
         textGetter: () => Promise<any>;
     };
+    'docs/guide/demo': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
     'docs/guide/wasm': {
         frontmatter: any;
         toc: any;
@@ -294,6 +324,12 @@ export declare const filesMeta: {
         textGetter: () => Promise<any>;
     };
     'docs/api/index': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
+    'docs/demo/seek': {
         frontmatter: any;
         toc: any;
         demoIndex: any;

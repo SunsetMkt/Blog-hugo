@@ -28,6 +28,11 @@ export declare function getRoutes(): Promise<{
             readonly id: "docs/guide/struct-overview.en-US";
             readonly parentId: "DocLayout";
         };
+        readonly "docs/guide/architecture.en-US": {
+            readonly path: "en-US/guide/architecture";
+            readonly id: "docs/guide/architecture.en-US";
+            readonly parentId: "DocLayout";
+        };
         readonly "docs/guide/contribution.en-US": {
             readonly path: "en-US/guide/contribution";
             readonly id: "docs/guide/contribution.en-US";
@@ -108,6 +113,11 @@ export declare function getRoutes(): Promise<{
             readonly id: "docs/guide/threads.en-US";
             readonly parentId: "DocLayout";
         };
+        readonly "docs/guide/architecture": {
+            readonly path: "guide/architecture";
+            readonly id: "docs/guide/architecture";
+            readonly parentId: "DocLayout";
+        };
         readonly "docs/guide/contribution": {
             readonly path: "guide/contribution";
             readonly id: "docs/guide/contribution";
@@ -178,6 +188,11 @@ export declare function getRoutes(): Promise<{
             readonly id: "docs/demo/probe.en-US";
             readonly parentId: "DocLayout";
         };
+        readonly "docs/guide/demo.en-US": {
+            readonly path: "en-US/guide/demo";
+            readonly id: "docs/guide/demo.en-US";
+            readonly parentId: "DocLayout";
+        };
         readonly "docs/guide/javascript": {
             readonly path: "guide/javascript";
             readonly id: "docs/guide/javascript";
@@ -191,6 +206,11 @@ export declare function getRoutes(): Promise<{
         readonly "docs/api/index.en-US": {
             readonly path: "en-US/api";
             readonly id: "docs/api/index.en-US";
+            readonly parentId: "DocLayout";
+        };
+        readonly "docs/demo/seek.en-US": {
+            readonly path: "en-US/demo/seek";
+            readonly id: "docs/demo/seek.en-US";
             readonly parentId: "DocLayout";
         };
         readonly "docs/guide/faq.en-US": {
@@ -263,6 +283,11 @@ export declare function getRoutes(): Promise<{
             readonly id: "docs/demo/probe";
             readonly parentId: "DocLayout";
         };
+        readonly "docs/guide/demo": {
+            readonly path: "guide/demo";
+            readonly id: "docs/guide/demo";
+            readonly parentId: "DocLayout";
+        };
         readonly "docs/guide/wasm": {
             readonly path: "guide/wasm";
             readonly id: "docs/guide/wasm";
@@ -271,6 +296,11 @@ export declare function getRoutes(): Promise<{
         readonly "docs/api/index": {
             readonly path: "api";
             readonly id: "docs/api/index";
+            readonly parentId: "DocLayout";
+        };
+        readonly "docs/demo/seek": {
+            readonly path: "demo/seek";
+            readonly id: "docs/demo/seek";
             readonly parentId: "DocLayout";
         };
         readonly "docs/guide/faq": {
@@ -306,6 +336,7 @@ export declare function getRoutes(): Promise<{
         DocLayout: React.LazyExoticComponent<() => import("react/jsx-runtime").JSX.Element>;
         DemoLayout: React.LazyExoticComponent<() => import("react/jsx-runtime").JSX.Element>;
         'docs/guide/struct-overview.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/architecture.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/contribution.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/feature-list.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/audio-decode.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
@@ -322,6 +353,7 @@ export declare function getRoutes(): Promise<{
         'docs/guide/licence.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/package.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/threads.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/architecture': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/contribution': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/feature-list': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/player.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
@@ -336,9 +368,11 @@ export declare function getRoutes(): Promise<{
         'docs/demo/demux.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/index.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/probe.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/demo.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/javascript': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/wasm.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/api/index.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/demo/seek.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/faq.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/transcode': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/mux.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
@@ -353,8 +387,10 @@ export declare function getRoutes(): Promise<{
         'docs/demo/demux': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/index': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/probe': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/demo': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/wasm': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/api/index': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/demo/seek': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/faq': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/mux': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/io': React.LazyExoticComponent<React.ComponentType<any>>;
