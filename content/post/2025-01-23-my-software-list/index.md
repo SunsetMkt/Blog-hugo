@@ -95,8 +95,8 @@ title: 我的软件清单
 ## 虚拟化
 
 - 杰出且免费的虚拟机 [VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
-- 为游戏设计的 Android 虚拟机，充满了广告~~，但目前没有更优选择~~ [BlueStacks](https://www.bluestacks.com/bluestacks-5.html)
-- 另一个为游戏设计的 Android 虚拟机，似乎有更少的广告 [MuMuPlayer](https://www.mumuplayer.com/)
+- 为游戏设计的 Android 虚拟机，充满了广告~~，但目前没有更优选择~~ [BlueStacks](https://www.bluestacks.com/bluestacks-5.html)/[MSI App Player](https://www.msi.com/Landing/appplayer)
+- 另一个为游戏设计的 Android 虚拟机，似乎有更少的广告 [MuMuPlayer](https://www.mumuplayer.com/tw/)
 
 ## 安全
 
