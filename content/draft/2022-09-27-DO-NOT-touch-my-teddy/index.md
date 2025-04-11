@@ -1,7 +1,6 @@
 ---
 title: 別碰我小熊
 date: 2022-09-27
-tags: 小说
 categories: Repost
 draft: true
 slug: DO-NOT-touch-my-teddy

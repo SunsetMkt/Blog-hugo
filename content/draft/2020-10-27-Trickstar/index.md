@@ -1,7 +1,6 @@
 ---
 title: 小玩子
 date: 2020-10-27
-tags: 小说
 categories: Repost
 draft: true
 slug: Trickstar

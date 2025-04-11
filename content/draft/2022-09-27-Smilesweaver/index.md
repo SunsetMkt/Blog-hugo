@@ -1,7 +1,6 @@
 ---
 title: 虚拟玩伴
 date: 2022-09-27
-tags: 小说
 categories: Repost
 draft: true
 slug: Smilesweaver
