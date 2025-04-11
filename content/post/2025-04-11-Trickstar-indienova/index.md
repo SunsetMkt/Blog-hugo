@@ -1,5 +1,5 @@
 ---
-title: 【AI创作/游戏剧情素材】《小玩子（Trickstar）》
+title: 小玩子
 date: 2025-04-11
 tags:
     - 小说
@@ -8,6 +8,8 @@ tags:
 categories: Repost
 slug: Trickstar-indienova
 ---
+
+原文标题：【AI 创作/游戏剧情素材】《小玩子（Trickstar）》
 
 [来源](https://indienova.com/u/hoyoverse/blogread/36357)
 
