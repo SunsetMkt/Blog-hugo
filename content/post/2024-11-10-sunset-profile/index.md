@@ -7,7 +7,7 @@ slug: sunset-profile
 title: 原创角色 Sunset 的设定集
 ---
 
-|        ![Sunset的暂定头像](/sunset2_compressed.jpg)         |
+|        ![Sunset的暂定头像](sunset2_compressed.jpg)         |
 | :---------------------------------------------------------: |
 | 适用于原创角色 Sunset 的头像暂定稿，基于 Stable Diffusion。 |
 
