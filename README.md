@@ -65,6 +65,16 @@ git fetch --unshallow && hugo --minify --gc --logLevel info && find public -type
 # https://developers.cloudflare.com/pages/platform/limits/
 ```
 
+## Template Metrics
+
+The OG images are built on the fly, so the build time is very long than usual Hugo sites.
+
+But if you are still curious about the time consumption, you can run:
+
+```bash
+hugo --templateMetrics --templateMetricsHints
+```
+
 ## Icons
 
 [Tabler](https://tabler.io/icons)
