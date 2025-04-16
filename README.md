@@ -63,11 +63,13 @@ MDN suggests "A WebM container using the VP9 codec for video and the Opus codec 
 git fetch --unshallow && hugo --minify --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \;
 # The maximum file size for a single Cloudflare Pages site asset is 25 MiB.
 # https://developers.cloudflare.com/pages/platform/limits/
+# With metrics and more info:
+git fetch --unshallow && hugo --minify --gc --logLevel info --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates && find public -type f -size +25M -print -exec rm -vf {} \;
 ```
 
 ## Template Metrics
 
-The OG images are built on the fly, so the build time is very long than usual Hugo sites.
+The OG images are built on the fly, so the build time is much longer (about 6 minutes) than usual Hugo sites.
 
 But if you are still curious about the time consumption, you can run:
 
