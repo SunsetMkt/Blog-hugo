@@ -3,6 +3,7 @@ categories: Repost
 date: "2025-03-29T00:00:00Z"
 tags:
     - 信息技术
+    - 翻译
 slug: A-love-letter-to-the-CSV-format
 title: 致 CSV 格式的一封情书
 ---
