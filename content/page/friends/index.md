@@ -50,6 +50,10 @@ links:
       description: 永远相信美好的事情即将发生
       website: http://worable.cncloud.cloud/
       image: worable.jpg
+    - title: "羽蔚陌凜"
+      description: 誰說道士一定是來斬妖驅魔的？各位要知道了解科技也是種玄學
+      website: https://vtbmolin.live/
+      image: vtbmolin.jpg
     # - title: "开往 Travellings"
     #   description: 「开往 Travellings」是一个友链接力项目，旨在通过网络跳转的方式将流量引入那些鲜为人知的独立站点，从而推动网络的开放性和多元性。由于其要求不得“涉政”，难以理解，故不加入。放置此链接仅为公益目的。
     #   website: https://www.travellings.cn/go.html
@@ -74,7 +78,7 @@ license: false
 slug: friends
 ---
 
-按字母表顺序排列，CJK 字符置后。
+按字母表顺序排列，CJK 字符置后，团体或随机跳转页置后。
 
 ```plain
 名称（标题）：Sunset Mikoto
