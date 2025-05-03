@@ -40,7 +40,7 @@ title: 我的软件清单
 
 ## 多媒体
 
-- 多媒体处理套件 [Adobe Creative Cloud](https://www.reddit.com/r/GenP/wiki/redditgenpguides/)
+- 多媒体处理套件 [Adobe Creative Cloud](https://lemmy.dbzer0.com/c/GenP)
 - 屏幕录制和直播 [OBS Studio](https://obsproject.com/)
 - 快速剪辑视频 [lossless-cut](https://github.com/mifi/lossless-cut)
 - 开源的媒体播放器 [VLC media player](https://www.videolan.org/vlc/)
