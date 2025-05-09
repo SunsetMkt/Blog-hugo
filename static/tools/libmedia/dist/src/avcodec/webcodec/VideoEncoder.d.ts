@@ -29,9 +29,9 @@ export default class WebVideoEncoder {
     close(): void;
     getExtraData(): Uint8Array<ArrayBufferLike>;
     getColorSpace(): {
-        colorSpace: import("@libmedia/avutil/pixfmt").AVColorSpace;
-        colorPrimaries: import("@libmedia/avutil/pixfmt").AVColorPrimaries;
-        colorTrc: import("@libmedia/avutil/pixfmt").AVColorTransferCharacteristic;
+        colorSpace: import("avutil/pixfmt").AVColorSpace;
+        colorPrimaries: import("avutil/pixfmt").AVColorPrimaries;
+        colorTrc: import("avutil/pixfmt").AVColorTransferCharacteristic;
     };
     getQueueLength(): number;
     static isSupported(parameters: pointer<AVCodecParameters>, enableHardwareAcceleration: boolean): Promise<boolean>;

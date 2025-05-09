@@ -654,89 +654,85 @@ export declare const enum AVPixelFormat {
      */
     AV_PIX_FMT_BAYER_GRBG16BE = 150,
     /**
-     * XVideo Motion Acceleration via common packet passing
-     */
-    AV_PIX_FMT_XVMC = 151,
-    /**
      * planar YUV 4:4:0,20bpp, (1 Cr & Cb sample per 1x2 Y samples), little-endian
      */
-    AV_PIX_FMT_YUV440P10LE = 152,
+    AV_PIX_FMT_YUV440P10LE = 151,
     /**
      * planar YUV 4:4:0,20bpp, (1 Cr & Cb sample per 1x2 Y samples), big-endian
      */
-    AV_PIX_FMT_YUV440P10BE = 153,
+    AV_PIX_FMT_YUV440P10BE = 152,
     /**
      * planar YUV 4:4:0,24bpp, (1 Cr & Cb sample per 1x2 Y samples), little-endian
      */
-    AV_PIX_FMT_YUV440P12LE = 154,
+    AV_PIX_FMT_YUV440P12LE = 153,
     /**
      * planar YUV 4:4:0,24bpp, (1 Cr & Cb sample per 1x2 Y samples), big-endian
      */
-    AV_PIX_FMT_YUV440P12BE = 155,
+    AV_PIX_FMT_YUV440P12BE = 154,
     /**
      * packed AYUV 4:4:4,64bpp (1 Cr & Cb sample per 1x1 Y & A samples), little-endian
      */
-    AV_PIX_FMT_AYUV64LE = 156,
+    AV_PIX_FMT_AYUV64LE = 155,
     /**
      * packed AYUV 4:4:4,64bpp (1 Cr & Cb sample per 1x1 Y & A samples), big-endian
      */
-    AV_PIX_FMT_AYUV64BE = 157,
+    AV_PIX_FMT_AYUV64BE = 156,
     /**
      * hardware decoding through Videotoolbox
      */
-    AV_PIX_FMT_VIDEOTOOLBOX = 158,
+    AV_PIX_FMT_VIDEOTOOLBOX = 157,
     /**
      * like NV12, with 10bpp per component, data in the high bits, zeros in the low bits, little-endian
      */
-    AV_PIX_FMT_P010LE = 159,
+    AV_PIX_FMT_P010LE = 158,
     /**
      * like NV12, with 10bpp per component, data in the high bits, zeros in the low bits, big-endian
      */
-    AV_PIX_FMT_P010BE = 160,
+    AV_PIX_FMT_P010BE = 159,
     /**
      * planar GBR 4:4:4:4 48bpp, big-endian
      */
-    AV_PIX_FMT_GBRAP12BE = 161,
+    AV_PIX_FMT_GBRAP12BE = 160,
     /**
      * planar GBR 4:4:4:4 48bpp, little-endian
      */
-    AV_PIX_FMT_GBRAP12LE = 162,
+    AV_PIX_FMT_GBRAP12LE = 161,
     /**
      * planar GBR 4:4:4:4 40bpp, big-endian
      */
-    AV_PIX_FMT_GBRAP10BE = 163,
+    AV_PIX_FMT_GBRAP10BE = 162,
     /**
      * planar GBR 4:4:4:4 40bpp, little-endian
      */
-    AV_PIX_FMT_GBRAP10LE = 164,
+    AV_PIX_FMT_GBRAP10LE = 163,
     /**
      * hardware decoding through MediaCodec
      */
-    AV_PIX_FMT_MEDIACODEC = 165,
+    AV_PIX_FMT_MEDIACODEC = 164,
     /**
      * Y , 12bpp, big-endian
      */
-    AV_PIX_FMT_GRAY12BE = 166,
+    AV_PIX_FMT_GRAY12BE = 165,
     /**
      *  Y , 12bpp, little-endian
      */
-    AV_PIX_FMT_GRAY12LE = 167,
+    AV_PIX_FMT_GRAY12LE = 166,
     /**
      * Y , 10bpp, big-endian
      */
-    AV_PIX_FMT_GRAY10BE = 168,
+    AV_PIX_FMT_GRAY10BE = 167,
     /**
      * Y , 10bpp, little-endian
      */
-    AV_PIX_FMT_GRAY10LE = 169,
+    AV_PIX_FMT_GRAY10LE = 168,
     /**
      * like NV12, with 16bpp per component, little-endian
      */
-    AV_PIX_FMT_P016LE = 170,
+    AV_PIX_FMT_P016LE = 169,
     /**
      * like NV12, with 16bpp per component, big-endian
      */
-    AV_PIX_FMT_P016BE = 171,
+    AV_PIX_FMT_P016BE = 170,
     /**
      * Hardware surfaces for Direct3D11.
      *
@@ -747,244 +743,244 @@ export declare const enum AVPixelFormat {
      * texture array index of the frame as intptr_t if the ID3D11Texture2D is
      * an array texture (or always 0 if it's a normal texture).
      */
-    AV_PIX_FMT_D3D11 = 172,
+    AV_PIX_FMT_D3D11 = 171,
     /**
      * Y, 9bpp, big-endian
      */
-    AV_PIX_FMT_GRAY9BE = 173,
+    AV_PIX_FMT_GRAY9BE = 172,
     /**
      *  Y , 9bpp, little-endian
      */
-    AV_PIX_FMT_GRAY9LE = 174,
+    AV_PIX_FMT_GRAY9LE = 173,
     /**
      * IEEE-754 single precision planar GBR 4:4:4,     96bpp, big-endian
      */
-    AV_PIX_FMT_GBRPF32BE = 175,
+    AV_PIX_FMT_GBRPF32BE = 174,
     /**
      *  IEEE-754 single precision planar GBR 4:4:4,     96bpp, little-endian
      */
-    AV_PIX_FMT_GBRPF32LE = 176,
+    AV_PIX_FMT_GBRPF32LE = 175,
     /**
      * IEEE-754 single precision planar GBRA 4:4:4:4, 128bpp, big-endian
      */
-    AV_PIX_FMT_GBRAPF32BE = 177,
+    AV_PIX_FMT_GBRAPF32BE = 176,
     /**
      * IEEE-754 single precision planar GBRA 4:4:4:4, 128bpp, little-endian
      */
-    AV_PIX_FMT_GBRAPF32LE = 178,
+    AV_PIX_FMT_GBRAPF32LE = 177,
     /**
      * DRM-managed buffers exposed through PRIME buffer sharing.
      *
      * data[0] points to an AVDRMFrameDescriptor.
      */
-    AV_PIX_FMT_DRM_PRIME = 179,
+    AV_PIX_FMT_DRM_PRIME = 178,
     /**
      * Hardware surfaces for OpenCL.
      *
      * data[i] contain 2D image objects (typed in C as cl_mem, used
      * in OpenCL as image2d_t) for each plane of the surface.
      */
-    AV_PIX_FMT_OPENCL = 180,
+    AV_PIX_FMT_OPENCL = 179,
     /**
      * Y , 14bpp, big-endian
      */
-    AV_PIX_FMT_GRAY14BE = 181,
+    AV_PIX_FMT_GRAY14BE = 180,
     /**
      * Y 14bpp, little-endian
      */
-    AV_PIX_FMT_GRAY14LE = 182,
+    AV_PIX_FMT_GRAY14LE = 181,
     /**
      * IEEE-754 single precision Y, 32bpp, big-endian
      */
-    AV_PIX_FMT_GRAYF32BE = 183,
+    AV_PIX_FMT_GRAYF32BE = 182,
     /**
      * IEEE-754 single precision Y, 32bpp, little-endian
      */
-    AV_PIX_FMT_GRAYF32LE = 184,
+    AV_PIX_FMT_GRAYF32LE = 183,
     /**
      * lanar YUV 4:2:2,24bpp, (1 Cr & Cb sample per 2x1 Y samples), 12b alpha, big-endian
      */
-    AV_PIX_FMT_YUVA422P12BE = 185,
+    AV_PIX_FMT_YUVA422P12BE = 184,
     /**
      * planar YUV 4:2:2,24bpp, (1 Cr & Cb sample per 2x1 Y samples), 12b alpha, little-endian
      */
-    AV_PIX_FMT_YUVA422P12LE = 186,
+    AV_PIX_FMT_YUVA422P12LE = 185,
     /**
      * planar YUV 4:4:4,36bpp, (1 Cr & Cb sample per 1x1 Y samples), 12b alpha, big-endian
      */
-    AV_PIX_FMT_YUVA444P12BE = 187,
+    AV_PIX_FMT_YUVA444P12BE = 186,
     /**
      *  planar YUV 4:4:4,36bpp, (1 Cr & Cb sample per 1x1 Y samples), 12b alpha, little-endian
      */
-    AV_PIX_FMT_YUVA444P12LE = 188,
+    AV_PIX_FMT_YUVA444P12LE = 187,
     /**
      * planar YUV 4:4:4, 24bpp, 1 plane for Y and 1 plane for the UV components, which are interleaved (first byte U and the following byte V)
      */
-    AV_PIX_FMT_NV24 = 189,
+    AV_PIX_FMT_NV24 = 188,
     /**
      * as above, but U and V bytes are swapped
      */
-    AV_PIX_FMT_NV42 = 190,
+    AV_PIX_FMT_NV42 = 189,
     /**
      * Vulkan hardware images.
      *
      * data[0] points to an AVVkFrame
      */
-    AV_PIX_FMT_VULKAN = 191,
+    AV_PIX_FMT_VULKAN = 190,
     /**
      * packed YUV 4:2:2 like YUYV422, 20bpp, data in the high bits, big-endian
      */
-    AV_PIX_FMT_Y210BE = 192,
+    AV_PIX_FMT_Y210BE = 191,
     /**
      *  packed YUV 4:2:2 like YUYV422, 20bpp, data in the high bits, little-endian
      */
-    AV_PIX_FMT_Y210LE = 193,
+    AV_PIX_FMT_Y210LE = 192,
     /**
      * packed RGB 10:10:10, 30bpp, (msb)2X 10R 10G 10B(lsb), little-endian, X=unused/undefined
      */
-    AV_PIX_FMT_X2RGB10LE = 194,
+    AV_PIX_FMT_X2RGB10LE = 193,
     /**
      * packed RGB 10:10:10, 30bpp, (msb)2X 10R 10G 10B(lsb), big-endian, X=unused/undefined
      */
-    AV_PIX_FMT_X2RGB10BE = 195,
+    AV_PIX_FMT_X2RGB10BE = 194,
     /**
      *  packed BGR 10:10:10, 30bpp, (msb)2X 10B 10G 10R(lsb), little-endian, X=unused/undefined
      */
-    AV_PIX_FMT_X2BGR10LE = 196,
+    AV_PIX_FMT_X2BGR10LE = 195,
     /**
      * packed BGR 10:10:10, 30bpp, (msb)2X 10B 10G 10R(lsb), big-endian, X=unused/undefined
      */
-    AV_PIX_FMT_X2BGR10BE = 197,
+    AV_PIX_FMT_X2BGR10BE = 196,
     /**
      * interleaved chroma YUV 4:2:2, 20bpp, data in the high bits, big-endian
      */
-    AV_PIX_FMT_P210BE = 198,
+    AV_PIX_FMT_P210BE = 197,
     /**
      * interleaved chroma YUV 4:2:2, 20bpp, data in the high bits, little-endian
      */
-    AV_PIX_FMT_P210LE = 199,
+    AV_PIX_FMT_P210LE = 198,
     /**
      * interleaved chroma YUV 4:4:4, 30bpp, data in the high bits, big-endian
      */
-    AV_PIX_FMT_P410BE = 200,
+    AV_PIX_FMT_P410BE = 199,
     /**
      * interleaved chroma YUV 4:4:4, 30bpp, data in the high bits, little-endian
      */
-    AV_PIX_FMT_P410LE = 201,
+    AV_PIX_FMT_P410LE = 200,
     /**
      * interleaved chroma YUV 4:2:2, 32bpp, big-endian
      */
-    AV_PIX_FMT_P216BE = 202,
+    AV_PIX_FMT_P216BE = 201,
     /**
      * interleaved chroma YUV 4:2:2, 32bpp, little-endian
      */
-    AV_PIX_FMT_P216LE = 203,
+    AV_PIX_FMT_P216LE = 202,
     /**
      * interleaved chroma YUV 4:4:4, 48bpp, big-endian
      */
-    AV_PIX_FMT_P416BE = 204,
+    AV_PIX_FMT_P416BE = 203,
     /**
      * interleaved chroma YUV 4:4:4, 48bpp, little-endian
      */
-    AV_PIX_FMT_P416LE = 205,
+    AV_PIX_FMT_P416LE = 204,
     /**
      * packed VUYA 4:4:4, 32bpp, VUYAVUYA...
      */
-    AV_PIX_FMT_VUYA = 206,
+    AV_PIX_FMT_VUYA = 205,
     /**
      * IEEE-754 half precision packed RGBA 16:16:16:16, 64bpp, RGBARGBA..., big-endian
      */
-    AV_PIX_FMT_RGBAF16BE = 207,
+    AV_PIX_FMT_RGBAF16BE = 206,
     /**
      * IEEE-754 half precision packed RGBA 16:16:16:16, 64bpp, RGBARGBA..., little-endian
      */
-    AV_PIX_FMT_RGBAF16LE = 208,
+    AV_PIX_FMT_RGBAF16LE = 207,
     /**
      * packed VUYX 4:4:4, 32bpp, Variant of VUYA where alpha channel is left undefined
      */
-    AV_PIX_FMT_VUYX = 209,
+    AV_PIX_FMT_VUYX = 208,
     /**
      * like NV12, with 12bpp per component, data in the high bits, zeros in the low bits, little-endian
      */
-    AV_PIX_FMT_P012LE = 210,
+    AV_PIX_FMT_P012LE = 209,
     /**
      * like NV12, with 12bpp per component, data in the high bits, zeros in the low bits, big-endian
      */
-    AV_PIX_FMT_P012BE = 211,
+    AV_PIX_FMT_P012BE = 210,
     /**
      * packed YUV 4:2:2 like YUYV422, 24bpp, data in the high bits, zeros in the low bits, big-endian
      */
-    AV_PIX_FMT_Y212BE = 212,
+    AV_PIX_FMT_Y212BE = 211,
     /**
      * packed YUV 4:2:2 like YUYV422, 24bpp, data in the high bits, zeros in the low bits, little-endian
      */
-    AV_PIX_FMT_Y212LE = 213,
+    AV_PIX_FMT_Y212LE = 212,
     /**
      * packed XVYU 4:4:4, 32bpp, (msb)2X 10V 10Y 10U(lsb), big-endian, variant of Y410 where alpha channel is left undefined
      */
-    AV_PIX_FMT_XV30BE = 214,
+    AV_PIX_FMT_XV30BE = 213,
     /**
      * packed XVYU 4:4:4, 32bpp, (msb)2X 10V 10Y 10U(lsb), little-endian, variant of Y410 where alpha channel is left undefined
      */
-    AV_PIX_FMT_XV30LE = 215,
+    AV_PIX_FMT_XV30LE = 214,
     /**
      * packed XVYU 4:4:4, 48bpp, data in the high bits, zeros in the low bits, big-endian, variant of Y412 where alpha channel is left undefined
      */
-    AV_PIX_FMT_XV36BE = 216,
+    AV_PIX_FMT_XV36BE = 215,
     /**
      * packed XVYU 4:4:4, 48bpp, data in the high bits, zeros in the low bits, little-endian, variant of Y412 where alpha channel is left undefined
      */
-    AV_PIX_FMT_XV36LE = 217,
+    AV_PIX_FMT_XV36LE = 216,
     /**
      * IEEE-754 single precision packed RGB 32:32:32, 96bpp, RGBRGB..., big-endian
      */
-    AV_PIX_FMT_RGBF32BE = 218,
+    AV_PIX_FMT_RGBF32BE = 217,
     /**
      * IEEE-754 single precision packed RGB 32:32:32, 96bpp, RGBRGB..., little-endian
      */
-    AV_PIX_FMT_RGBF32LE = 219,
+    AV_PIX_FMT_RGBF32LE = 218,
     /**
      * IEEE-754 single precision packed RGBA 32:32:32:32, 128bpp, RGBARGBA..., big-endian
      */
-    AV_PIX_FMT_RGBAF32BE = 220,
+    AV_PIX_FMT_RGBAF32BE = 219,
     /**
      * IEEE-754 single precision packed RGBA 32:32:32:32, 128bpp, RGBARGBA..., little-endian
      */
-    AV_PIX_FMT_RGBAF32LE = 221,
+    AV_PIX_FMT_RGBAF32LE = 220,
     /**
      * interleaved chroma YUV 4:2:2, 24bpp, data in the high bits, big-endian
      */
-    AV_PIX_FMT_P212BE = 222,
+    AV_PIX_FMT_P212BE = 221,
     /**
      * interleaved chroma YUV 4:2:2, 24bpp, data in the high bits, little-endian
      */
-    AV_PIX_FMT_P212LE = 223,
+    AV_PIX_FMT_P212LE = 222,
     /**
      * interleaved chroma YUV 4:4:4, 36bpp, data in the high bits, big-endian
      */
-    AV_PIX_FMT_P412BE = 224,
+    AV_PIX_FMT_P412BE = 223,
     /**
      * interleaved chroma YUV 4:4:4, 36bpp, data in the high bits, little-endian
      */
-    AV_PIX_FMT_P412LE = 225,
+    AV_PIX_FMT_P412LE = 224,
     /**
      * planar GBR 4:4:4:4 56bpp, big-endian
      */
-    AV_PIX_FMT_GBRAP14BE = 226,
+    AV_PIX_FMT_GBRAP14BE = 225,
     /**
      * planar GBR 4:4:4:4 56bpp, little-endian
      */
-    AV_PIX_FMT_GBRAP14LE = 227,
+    AV_PIX_FMT_GBRAP14LE = 226,
     /**
      * Hardware surfaces for Direct3D 12.
      *
      * data[0] points to an AVD3D12VAFrame
      */
-    AV_PIX_FMT_D3D12 = 228,
+    AV_PIX_FMT_D3D12 = 227,
     /**
      * number of pixel formats, DO NOT USE THIS if you want to link with shared libav* because the number of formats might differ between versions
      */
-    AV_PIX_FMT_NB = 229
+    AV_PIX_FMT_NB = 228
 }
 /**
  * Chromaticity coordinates of the source primaries.

@@ -20,6 +20,7 @@ export default class WasmAudioEncoder {
     private frameSize;
     private audioFrameResizer;
     private encoderOptions;
+    private ptsQueue;
     constructor(options: WasmAudioEncoderOptions);
     private getAVPacket;
     private outputAVPacket;

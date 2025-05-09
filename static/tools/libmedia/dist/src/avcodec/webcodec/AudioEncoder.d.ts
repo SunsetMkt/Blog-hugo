@@ -15,6 +15,7 @@ export default class WebAudioEncoder {
     private timeBase;
     private currentError;
     private pts;
+    private ptsQueue;
     private avframeCache;
     private extradata;
     constructor(options: WebAudioEncoderOptions);

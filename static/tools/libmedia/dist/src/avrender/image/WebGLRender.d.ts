@@ -7,7 +7,7 @@ export interface WebGLRenderOptions extends ImageRenderOptions {
 export default abstract class WebGLRender extends ImageRender {
     protected options: WebGLRenderOptions;
     protected gl: WebGLRenderingContext | WebGL2RenderingContext;
-    protected VAO: WebGLBuffer;
+    protected vbo: WebGLBuffer;
     protected program: VideoProgram;
     protected vertex: number[];
     protected webglContextLostTimer: Timeout;

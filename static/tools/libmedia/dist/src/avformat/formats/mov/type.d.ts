@@ -112,7 +112,6 @@ export interface MOVStreamContext {
         pos: bigint;
         time: bigint;
     }[];
-    timescale: number;
     duration: bigint;
     trackId: number;
     layer: number;

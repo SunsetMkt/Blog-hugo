@@ -52,11 +52,11 @@ export default class AllocatorJS64 implements Allocator {
     removeUpdateHandle(handle: (buffer: ArrayBufferLike) => void): void;
     private malloc_;
     malloc(size: size): pointer<void>;
-    calloc_(num: size, size: size): pointer<void>;
+    private calloc_;
     calloc(num: size, size: size): pointer<void>;
-    realloc_(address: pointer<void>, size: size): pointer<void>;
+    private realloc_;
     realloc(address: pointer<void>, size: size): pointer<void>;
-    alignedAlloc_(alignment: size, size: size): pointer<void>;
+    private alignedAlloc_;
     alignedAlloc(alignment: size, size: size): pointer<void>;
     private free_;
     free(address: pointer<void>): void;

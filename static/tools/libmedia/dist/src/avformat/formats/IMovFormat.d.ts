@@ -7,6 +7,7 @@ import AVStream from 'avutil/AVStream';
 export default class IMovFormat extends IFormat {
     type: AVFormat;
     private context;
+    private firstAfterSeek;
     options: MovFormatOptions;
     constructor(options?: MovFormatOptions);
     init(formatContext: AVIFormatContext): void;

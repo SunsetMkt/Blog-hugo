@@ -5,6 +5,5 @@ export default class WebGPUExternalRender extends WebGPURender {
     private checkFrame;
     protected generateBindGroup(): void;
     render(frame: VideoFrame): void;
-    destroy(): void;
     static isSupport(frame: pointer<AVFrame> | VideoFrame | ImageBitmap): boolean;
 }

@@ -1,10 +1,15 @@
 import AVFrame from 'avutil/struct/avframe';
 import { WebGPURenderOptions } from './WebGPURender';
-import WebGPUYUVRender from './WebGPUYUVRender';
-export default class WebGPUYUV8Render extends WebGPUYUVRender {
+import WebGPUDefaultRender from './WebGPUDefaultRender';
+export default class WebGPUDefault16Render extends WebGPUDefaultRender {
+    private hdrMetadata;
+    private hdrMetadataBuffer;
     constructor(canvas: HTMLCanvasElement | OffscreenCanvas, options: WebGPURenderOptions);
     private generateFragmentSource;
+    init(): Promise<void>;
+    protected generateBindGroup(): void;
     protected checkFrame(frame: pointer<AVFrame>): void;
     render(frame: pointer<AVFrame>): void;
+    destroy(): void;
     static isSupport(frame: pointer<AVFrame> | VideoFrame | ImageBitmap): boolean;
 }

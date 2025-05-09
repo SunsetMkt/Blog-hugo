@@ -1,7 +1,6 @@
-import HdrMetadata from '../../../image/struct/HdrMetadata';
-import YUVProgram from './YUVProgram';
-export default class YUV16Program extends YUVProgram {
-    private maxUniformLocation;
+import HdrMetadata from '../../struct/HdrMetadata';
+import VideoProgram from './VideoProgram';
+export default class VideoProgram16 extends VideoProgram {
     private offsetLocation;
     private multiplierLocation;
     private pqTonemapALocation;
@@ -10,8 +9,7 @@ export default class YUV16Program extends YUVProgram {
     private hlgDstMaxLuminanceRelativeLocation;
     private nitsToSdrRelativeFactorLocation;
     private sdrRelativeToNitsFactorLocation;
-    constructor(yuvFragmentSource: string);
+    constructor(fragmentSource: string, vertexSource?: string);
     link(gl: WebGLRenderingContext): void;
-    setMax(max: number): void;
     setMetaData(data: HdrMetadata): void;
 }

@@ -1,5 +1,5 @@
 import { AVPixelFormat } from './pixfmt';
-export declare const enum PixelFormatFlags {
+export declare const enum AVPixelFormatFlags {
     /**
      * Pixel format is big-endian.
      */
@@ -40,8 +40,7 @@ export declare const enum PixelFormatFlags {
      */
     FLOAT = 512
 }
-export type PixelFormatDescriptor = {
-    nbComponents: number;
+export type AVPixelFormatDescriptor = {
     /**
      * Amount to shift the luma width right to find the chroma width.
      * For YV12 this is 1 for example.
@@ -97,4 +96,4 @@ export type PixelFormatDescriptor = {
         depth: number;
     }[];
 };
-export declare const PixelFormatDescriptorsMap: Partial<Record<AVPixelFormat, PixelFormatDescriptor>>;
+export declare function getAVPixelFormatDescriptor(format: AVPixelFormat): AVPixelFormatDescriptor;

@@ -1,7 +1,7 @@
 import { AVFormat, IOType } from './avformat';
 import { AVCodecID, AVMediaType } from './codec';
 import { AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic, AVPixelFormat } from './pixfmt';
-import { AVSampleFormat } from './audiosamplefmt';
+import { AVChannelLayout, AVSampleFormat } from './audiosamplefmt';
 import { AVDisposition } from './AVStream';
 export declare const CodecId2MimeType: {
     86017: string;
@@ -41,7 +41,7 @@ export declare const AudioCodecString2CodecId: {
     aac: AVCodecID;
     ac3: AVCodecID;
     eac3: AVCodecID;
-    dca: AVCodecID;
+    dts: AVCodecID;
     mp3: AVCodecID;
     opus: AVCodecID;
     flac: AVCodecID;
@@ -106,3 +106,4 @@ export declare const colorPrimaries2AVColorPrimaries: Record<string, AVColorPrim
 export declare const colorTrc2AVColorTransferCharacteristic: Record<string, AVColorTransferCharacteristic>;
 export declare const mediaType2AVMediaType: Record<string, AVMediaType>;
 export declare const disposition2AVDisposition: Record<string, AVDisposition>;
+export declare const layoutName2AVChannelLayout: Record<string, AVChannelLayout>;

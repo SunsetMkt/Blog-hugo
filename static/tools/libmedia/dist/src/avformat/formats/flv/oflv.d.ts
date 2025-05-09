@@ -1,27 +1,12 @@
-import Stream from 'avutil/AVStream';
+import { AVCodecID } from 'avutil/codec';
 import { AVPacketFlags } from 'avutil/struct/avpacket';
-import IOWriter from 'common/io/IOWriterSync';
-import { FlvTag, PacketTypeExt } from './flv';
-export declare function writeTagHeader(ioWriter: IOWriter, type: FlvTag, size: number, timestamp: bigint): void;
-/**
- *
- *   0  1  2  3    4    5      6         7
- *  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- *  |SoundFormat|SoundRate|SoundSize| SoundType| SoundData
- *  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- *
- * @param ioWriter
- * @param stream
- */
-export declare function writeAudioTagDataHeader(ioWriter: IOWriter, stream: Stream): void;
-/**
- *
- *   0 1  2  3  4 5 6 7
- *  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
- *  |FrameType|CodecID| VideoData
- *  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- * @param ioWriter
- * @param stream
- */
-export declare function writeVideoTagDataHeader(ioWriter: IOWriter, stream: Stream, flags: AVPacketFlags): void;
-export declare function writeVideoTagExtDataHeader(ioWriter: IOWriter, stream: Stream, type: PacketTypeExt, flags: AVPacketFlags): void;
+import IOWriterSync from 'common/io/IOWriterSync';
+import { FlvTag } from './flv';
+import { FlvContext } from './type';
+import { Rational } from 'avutil/struct/rational';
+import AVStream from 'avutil/AVStream';
+export declare function updateSize(ioWriter: IOWriterSync, pos: int64, size: int32): void;
+export declare function writeTag(ioWriter: IOWriterSync, type: FlvTag, timestamp: int64, dataHeader?: (ioWriter: IOWriterSync) => void, data?: Uint8Array | ((ioWriter: IOWriterSync) => void), previousTagSizeCallback?: (previousTagSize: int32) => void): void;
+export declare function isEnhancedCodecId(codecId: AVCodecID): boolean;
+export declare function writeVideoHeader(ioWriter: IOWriterSync, stream: AVStream, context: FlvContext, enhanced: boolean, type: uint8, flags: AVPacketFlags, timestamp: int64, timeBase: pointer<Rational>, ct?: int32): void;
+export declare function writeAudioHeader(ioWriter: IOWriterSync, stream: AVStream, context: FlvContext, enhanced: boolean, type: uint8, timestamp: int64, timeBase: pointer<Rational>): void;

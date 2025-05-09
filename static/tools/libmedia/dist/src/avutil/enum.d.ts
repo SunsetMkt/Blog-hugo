@@ -1,8 +1,8 @@
 export { AVCodecID, AVMediaType, AVPacketSideDataType } from './codec';
 export { AVDisposition, AVStreamMetadataKey } from './AVStream';
 export { AVFormat, AVSeekFlags, IOFlags, IOType } from './avformat';
-export { AVSampleFormat, AVAudioServiceType, AVChannel, AVChannelOrder, AVCHLayout } from './audiosamplefmt';
-export { PixelFormatFlags } from './pixelFormatDescriptor';
+export { AVSampleFormat, AVAudioServiceType, AVChannel, AVChannelOrder, AVChannelLayout } from './audiosamplefmt';
+export { AVPixelFormatFlags } from './pixelFormatDescriptor';
 export { AVChromaLocation, AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic, AVFieldOrder, AVPixelFormat } from './pixfmt';
 export { AV1Profile } from './codecs/av1';
 export { VP9Profile } from './codecs/vp9';

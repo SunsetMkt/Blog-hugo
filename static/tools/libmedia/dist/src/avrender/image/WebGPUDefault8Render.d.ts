@@ -1,8 +1,9 @@
 import AVFrame from 'avutil/struct/avframe';
 import { WebGPURenderOptions } from './WebGPURender';
-import WebGPURGBRender from './WebGPURGBRender';
-export default class WebGPURGB8Render extends WebGPURGBRender {
+import WebGPUDefaultRender from './WebGPUDefaultRender';
+export default class WebGPUDefault8Render extends WebGPUDefaultRender {
     constructor(canvas: HTMLCanvasElement | OffscreenCanvas, options: WebGPURenderOptions);
+    init(): Promise<void>;
     private generateFragmentSource;
     protected checkFrame(frame: pointer<AVFrame>): void;
     render(frame: pointer<AVFrame>): void;

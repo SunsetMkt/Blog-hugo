@@ -25,5 +25,6 @@ declare const support: {
     simd: boolean;
     wasmPlayerSupported: boolean;
     wasmBaseSupported: boolean;
+    trackGenerator: boolean;
 };
 export default support;

@@ -33,7 +33,8 @@ export default class Clock {
     private timeoutNext;
     private running;
     private highPerformance;
-    constructor(interval: number, highPerformance?: boolean);
+    private forceWorker;
+    constructor(interval: number, highPerformance?: boolean, forceWorker?: boolean);
     private compute;
     private timeoutTick;
     start(): void;

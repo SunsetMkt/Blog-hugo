@@ -177,7 +177,7 @@ export default class AVTranscoder extends Emitter implements ControllerObserver 
         FileIOLoader: typeof FileIOLoader;
     };
     /**
-     * @internal
+     * @hidden
      */
     static Resource: Map<string, WebAssemblyResource | ArrayBuffer>;
     private level;
@@ -225,7 +225,7 @@ export default class AVTranscoder extends Emitter implements ControllerObserver 
     destroy(): Promise<void>;
     setLogLevel(level: number): void;
     /**
-     * @internal
+     * @hidden
      */
     onGetDecoderResource(mediaType: AVMediaType, codecId: AVCodecID): Promise<WebAssemblyResource | ArrayBuffer>;
 }

@@ -10,6 +10,7 @@ export interface ControllerObserver {
     onMSESeek: (time: number) => void;
     onGetDecoderResource: (mediaType: AVMediaType, codecId: AVCodecID) => Promise<WebAssemblyResource | string | ArrayBuffer>;
     isPictureInPicture: () => boolean;
+    isMediaStreamMode: () => boolean;
 }
 export default class Controller {
     private videoRenderControlChannel;

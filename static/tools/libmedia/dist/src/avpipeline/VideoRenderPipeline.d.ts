@@ -14,7 +14,7 @@ declare enum AdjustStatus {
     Decelerate = 2
 }
 export interface VideoRenderTaskOptions extends TaskOptions {
-    canvas: HTMLCanvasElement | OffscreenCanvas;
+    canvas: HTMLCanvasElement | OffscreenCanvas | WritableStream<VideoFrame>;
     renderMode: RenderMode;
     renderRotate: double;
     flipHorizontal: boolean;

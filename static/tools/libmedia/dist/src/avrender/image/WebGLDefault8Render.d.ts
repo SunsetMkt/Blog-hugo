@@ -1,8 +1,9 @@
 import AVFrame from 'avutil/struct/avframe';
 import { WebGLRenderOptions } from './WebGLRender';
-import WebGLRGBRender from './WebGLRGBRender';
-export default class WebGLRGB8Render extends WebGLRGBRender {
+import WebGLDefaultRender from './WebGLDefaultRender';
+export default class WebGLDefault8Render extends WebGLDefaultRender {
     constructor(canvas: HTMLCanvasElement | OffscreenCanvas, options: WebGLRenderOptions);
+    init(): Promise<void>;
     private generateFragmentSource;
     protected checkFrame(frame: pointer<AVFrame>): void;
     render(frame: pointer<AVFrame>): void;

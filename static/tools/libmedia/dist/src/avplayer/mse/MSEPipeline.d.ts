@@ -12,6 +12,7 @@ import List from 'cheap/std/collection/List';
 import { Mutex } from 'cheap/thread/mutex';
 import SeekableWriteBuffer from 'common/io/SeekableWriteBuffer';
 import { AVCodecParametersSerialize } from 'avutil/util/serialize';
+import WorkerTimer from 'common/timer/WorkerTimer';
 export interface MSETaskOptions extends TaskOptions {
     isLive: boolean;
     avpacketList: pointer<List<pointer<AVPacketRef>>>;
@@ -68,6 +69,8 @@ type SelfTask = MSETaskOptions & {
     avpacketPool: AVPacketPool;
     maxBuffer: float;
     minBuffer: float;
+    visibilityHidden: boolean;
+    fakePlayTimer: WorkerTimer;
 };
 export default class MSEPipeline extends Pipeline {
     tasks: Map<string, SelfTask>;
@@ -96,6 +99,7 @@ export default class MSEPipeline extends Pipeline {
     private checkWaiting;
     getMediaSource(taskId: string): Promise<MediaSource>;
     private createTask;
+    setVisibilityHidden(taskId: string, visibilityHidden: boolean): Promise<void>;
     registerTask(options: MSETaskOptions, startTimestamp?: int64): Promise<number>;
     unregisterTask(id: string): Promise<void>;
 }

@@ -5,21 +5,24 @@ import { AVIFormatContext } from '../AVFormatContext';
 import AVStream from 'avutil/AVStream';
 import IFormat from './IFormat';
 import { AVFormat } from 'avutil/avformat';
-export interface FlvFormatOptions {
-    hasKeyframes?: boolean;
-    live?: boolean;
+export interface IFlvFormatOptions {
+    useNanoTimestamp?: boolean;
 }
 export default class IFlvFormat extends IFormat {
     type: AVFormat;
     header: FlvHeader;
     script: FlvScriptTag;
-    options: FlvFormatOptions;
+    options: IFlvFormatOptions;
     private firstTagPos;
-    constructor(options?: FlvFormatOptions);
+    constructor(options?: IFlvFormatOptions);
     init(formatContext: AVIFormatContext): void;
     readHeader(formatContext: AVIFormatContext): Promise<number>;
+    private readModEx;
     private readCodecConfigurationRecord;
     private readAVPacketData;
+    private parseColorInfo;
+    private findStream;
+    private createStream;
     private readAVPacket_;
     readAVPacket(formatContext: AVIFormatContext, avpacket: pointer<AVPacket>): Promise<number>;
     syncTag(formatContext: AVIFormatContext): Promise<void>;

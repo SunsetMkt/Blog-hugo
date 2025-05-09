@@ -127,7 +127,7 @@ export declare function generateAnnexbExtradata(data: Uint8ArrayInterface): Uint
  * 需要保证 data 是 safe 的
  */
 export declare function annexb2Avcc(data: Uint8ArrayInterface): {
-    bufferPointer: pointer<void>;
+    bufferPointer: pointer<uint8>;
     length: number;
     key: boolean;
     extradata: Uint8Array<ArrayBufferLike>;
@@ -143,7 +143,7 @@ export declare function annexb2Avcc(data: Uint8ArrayInterface): {
  * @returns
  */
 export declare function nalus2Annexb(spss: Uint8ArrayInterface[], ppss: Uint8ArrayInterface[], spsExts: Uint8ArrayInterface[], seis: Uint8ArrayInterface[], others: Uint8ArrayInterface[]): {
-    bufferPointer: pointer<void>;
+    bufferPointer: pointer<uint8>;
     length: number;
 };
 /**
@@ -153,7 +153,7 @@ export declare function nalus2Annexb(spss: Uint8ArrayInterface[], ppss: Uint8Arr
  * @param extradata
  */
 export declare function annexbAddExtradata(data: Uint8ArrayInterface, extradata: Uint8ArrayInterface): {
-    bufferPointer: pointer<void>;
+    bufferPointer: pointer<uint8>;
     length: number;
 };
 /**
@@ -163,7 +163,7 @@ export declare function annexbAddExtradata(data: Uint8ArrayInterface, extradata:
  */
 export declare function avcc2Annexb(data: Uint8ArrayInterface, extradata?: Uint8ArrayInterface): {
     key: boolean;
-    bufferPointer: pointer<void>;
+    bufferPointer: pointer<uint8>;
     length: number;
 };
 export declare function parseAVCodecParameters(stream: AVStream, extradata?: Uint8ArrayInterface): void;

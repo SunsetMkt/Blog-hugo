@@ -125,3 +125,11 @@ interface FileReaderSync {
 declare const FileReaderSync: {
     new (): FileReaderSync;
 };
+interface VideoFrameBufferInit {
+    rotation?: number;
+    flip?: boolean;
+}
+interface VideoFrameInit {
+    rotation?: number;
+    flip?: boolean;
+}

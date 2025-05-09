@@ -29,8 +29,8 @@ export default class WasmVideoEncoder {
     open(parameters: pointer<AVCodecParameters>, timeBase: Rational, threadCount?: number, opts?: Data): Promise<int32>;
     private preEncode;
     private postEncode;
-    encodeAsync(frame: pointer<AVFrame> | VideoFrame, key: boolean): Promise<int32>;
-    encode(frame: pointer<AVFrame> | VideoFrame, key: boolean): int32;
+    encodeAsync(frame: pointer<AVFrame>, key: boolean): Promise<int32>;
+    encode(frame: pointer<AVFrame>, key: boolean): int32;
     flush(): Promise<int32>;
     getExtraData(): Uint8Array<ArrayBufferLike>;
     getColorSpace(): {

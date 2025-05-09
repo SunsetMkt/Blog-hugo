@@ -15,7 +15,13 @@ export default class ColorSpace {
     isToneMappedByDefault(): boolean;
     isAffectedBySDRWhiteLevel(): boolean;
     fullRangeEncodedValues(): boolean;
-    getTransferMatrix(bitDepth: number): Matrix4;
+    /**
+     * yuv -> rgb 转换矩阵
+     *
+     * @param bitDepth
+     * @returns
+     */
+    getTransformMatrix(bitDepth: number): Matrix4;
     getRangeAdjustMatrix(bitDepth: number): Matrix4;
     private getTransferFunction_;
     getTransferFunction(sdrWhiteLevel?: float): {
@@ -39,5 +45,10 @@ export default class ColorSpace {
     hasExtendedSkTransferFn(): boolean;
     isValid(): boolean;
     private getColorSpacePrimaries;
+    /**
+     * rgb -> xyz 转换矩阵
+     *
+     * @returns
+     */
     getPrimaryMatrix(): Matrix4;
 }

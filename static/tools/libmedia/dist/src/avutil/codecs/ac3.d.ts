@@ -1,4 +1,3 @@
-import { AVCHLayout } from '../audiosamplefmt';
 import { Uint8ArrayInterface } from 'common/io/interface';
 export declare const enum AC3DeltaStrategy {
     DBA_REUSE = 0,
@@ -46,7 +45,7 @@ export declare const enum EAC3FrameType {
     EAC3_FRAME_TYPE_AC3_CONVERT = 2,
     EAC3_FRAME_TYPE_RESERVED = 3
 }
-export declare const AC3ChannelLayout: AVCHLayout[];
+export declare const AC3ChannelLayout: uint32[];
 export interface AC3HeaderInfo {
     syncWord: uint16;
     crc1: uint16;
@@ -70,4 +69,4 @@ export interface AC3HeaderInfo {
     channelLayout: uint64;
     ac3BitrateCode: int8;
 }
-export declare function parseHeader(buf: Uint8ArrayInterface): -5 | -1 | -4 | -3 | -2 | -7 | -6 | AC3HeaderInfo;
+export declare function parseHeader(buf: Uint8ArrayInterface): -3 | -5 | -1 | -4 | -2 | -7 | -6 | AC3HeaderInfo;

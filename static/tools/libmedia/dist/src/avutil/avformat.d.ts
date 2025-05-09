@@ -44,8 +44,20 @@ export declare const enum IOType {
 }
 export declare const enum IOFlags {
     NONE = 0,
+    /**
+     * 源可进行 seek 操作
+     */
     SEEKABLE = 1,
+    /**
+     * 源是切片类型的，如 hls 和 dash
+     */
     SLICE = 2,
+    /**
+     * 源来自于网络
+     */
     NETWORK = 4,
+    /**
+     * 源正在被 abort 标志
+     */
     ABORT = 8
 }

@@ -4,6 +4,7 @@ export declare const enum MenuAction {
     STATS = 0
 }
 export interface AVPlayerUIOptions extends AVPlayerOptions {
+    container: HTMLDivElement;
     indicatorUrl?: string;
     pauseStateUrl?: string;
     errorStateUrl?: string;

@@ -140,7 +140,7 @@ interface Number {
 declare type pointer<T> = (IsPointer<T> extends true ? {} : (IsBuiltinType<T> extends true ? {} : (IsAny<T> extends true ? {} : (T extends void ? {} : {
     [K in keyof T]: T[K];
 })))) & {
-    zzzlevel__?: PointerLevel<pointer<T>>;
+    zzzlevel__?: T extends void ? (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9) : PointerLevel<pointer<T>>;
     zzztype__?: PointerType<pointer<T>>;
     indexOf?: (index: number) => T extends void ? any : T;
     [index: number]: T extends void ? any : T;

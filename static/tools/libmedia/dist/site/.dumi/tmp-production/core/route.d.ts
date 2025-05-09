@@ -33,6 +33,11 @@ export declare function getRoutes(): Promise<{
             readonly id: "docs/guide/architecture.en-US";
             readonly parentId: "DocLayout";
         };
+        readonly "docs/guide/compile-wasm.en-US": {
+            readonly path: "en-US/guide/compile-wasm";
+            readonly id: "docs/guide/compile-wasm.en-US";
+            readonly parentId: "DocLayout";
+        };
         readonly "docs/guide/contribution.en-US": {
             readonly path: "en-US/guide/contribution";
             readonly id: "docs/guide/contribution.en-US";
@@ -116,6 +121,11 @@ export declare function getRoutes(): Promise<{
         readonly "docs/guide/architecture": {
             readonly path: "guide/architecture";
             readonly id: "docs/guide/architecture";
+            readonly parentId: "DocLayout";
+        };
+        readonly "docs/guide/compile-wasm": {
+            readonly path: "guide/compile-wasm";
+            readonly id: "docs/guide/compile-wasm";
             readonly parentId: "DocLayout";
         };
         readonly "docs/guide/contribution": {
@@ -337,6 +347,7 @@ export declare function getRoutes(): Promise<{
         DemoLayout: React.LazyExoticComponent<() => import("react/jsx-runtime").JSX.Element>;
         'docs/guide/struct-overview.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/architecture.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/compile-wasm.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/contribution.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/feature-list.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/demo/audio-decode.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
@@ -354,6 +365,7 @@ export declare function getRoutes(): Promise<{
         'docs/guide/package.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/threads.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/architecture': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/compile-wasm': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/contribution': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/feature-list': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/player.en-US': React.LazyExoticComponent<React.ComponentType<any>>;

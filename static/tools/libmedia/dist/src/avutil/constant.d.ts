@@ -3,6 +3,7 @@ export declare const NOPTS_VALUE_BIGINT: int64;
 export declare const NOPTS_VALUE: int32;
 export declare const AV_TIME_BASE: int32;
 export declare const AV_MILLI_TIME_BASE: int32;
+export declare const AV_NANO_TIME_BASE: int32;
 export declare const NTP_OFFSET = 2208988800n;
 export declare const NTP_OFFSET_US: bigint;
 /**
@@ -13,6 +14,10 @@ export declare const AV_TIME_BASE_Q: Rational;
  * 毫秒时间基
  */
 export declare const AV_MILLI_TIME_BASE_Q: Rational;
+/**
+ * 纳秒时间基
+ */
+export declare const AV_NANO_TIME_BASE_Q: Rational;
 /**
  * 秒时间基
  */

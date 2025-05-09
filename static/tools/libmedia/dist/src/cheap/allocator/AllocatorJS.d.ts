@@ -55,11 +55,11 @@ export default class AllocatorJS implements Allocator {
      * If allocation fails, returns 0.
      */
     malloc(size: size): pointer<void>;
-    calloc_(num: size, size: size): pointer<void>;
+    private calloc_;
     calloc(num: size, size: size): pointer<void>;
-    realloc_(address: pointer<void>, size: size): pointer<void>;
+    private realloc_;
     realloc(address: pointer<void>, size: size): pointer<void>;
-    alignedAlloc_(alignment: size, size: size): pointer<void>;
+    private alignedAlloc_;
     alignedAlloc(alignment: size, size: size): pointer<void>;
     private free_;
     /**

@@ -22,7 +22,7 @@ import CustomIOLoader from 'avnetwork/ioLoader/CustomIOLoader';
 import IODemuxPipelineProxy from './worker/IODemuxPipelineProxy';
 import AudioPipelineProxy from './worker/AudioPipelineProxy';
 import MSEPipelineProxy from './worker/MSEPipelineProxy';
-import WebSocketIOLoader from 'avnetwork/ioLoader/WebSocketIOLoader';
+import WebSocketIOLoader, { WebSocketOptions } from 'avnetwork/ioLoader/WebSocketIOLoader';
 import SocketIOLoader from 'avnetwork/ioLoader/SocketIOLoader';
 import WebTransportIOLoader from 'avnetwork/ioLoader/WebTransportIOLoader';
 export interface ExternalSubtitle {
@@ -42,8 +42,10 @@ export interface ExternalSubtitle {
 export interface AVPlayerOptions {
     /**
      * dom 挂载元素
+     *
+     * 也可以传一个 MediaStream 容器，AVPlayer 会将音视频写入 MediaStreamTrack 放入 MediaStream 可用于 webrtc 等应用
      */
-    container: HTMLDivElement;
+    container: HTMLDivElement | MediaStream;
     /**
      * 自定义 wasm 请求 base url
      *
@@ -80,7 +82,9 @@ export interface AVPlayerOptions {
      */
     enableWebCodecs?: boolean;
     /**
-     * 是否启用 worker
+     * 是否启用 worker，非多线程环境下使用
+     *
+     * 启用之后在非多线程下，io 和 demux 一个 worker；音频解码渲染一个 worker；视频解码渲染一个 worker
      */
     enableWorker?: boolean;
     /**
@@ -143,6 +147,10 @@ export interface AVPlayerLoadOptions {
         referrerPolicy?: ReferrerPolicy;
     };
     /**
+     * websocket 配置
+     */
+    websocket?: WebSocketOptions;
+    /**
      * webtransport 配置
      */
     webtransport?: WebTransportOptions;
@@ -195,7 +203,7 @@ export declare const enum AVPlayerProgress {
 }
 export default class AVPlayer extends Emitter implements ControllerObserver {
     /**
-     * @internal
+     * @hidden
      */
     static Instances: AVPlayer[];
     static Util: {
@@ -213,61 +221,61 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     };
     static level: number;
     /**
-     * @internal
+     * @hidden
      */
     static DemuxThreadReady: Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     static AudioThreadReady: Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     static VideoThreadReady: Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     static MSEThreadReady: Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     static IODemuxProxy: IODemuxPipelineProxy;
     /**
-     * @internal
+     * @hidden
      */
     static AudioPipelineProxy: AudioPipelineProxy;
     /**
-     * @internal
+     * @hidden
      */
     static MSEPipelineProxy: MSEPipelineProxy;
     /**
-     * @internal
+     * @hidden
      * 下面的线程所有 AVPlayer 实例共享
      */
     static IOThread: Thread<IOPipeline>;
     /**
-     * @internal
+     * @hidden
      */
     static DemuxerThread: Thread<DemuxPipeline>;
     /**
-     * @internal
+     * @hidden
      */
     static AudioDecoderThread: Thread<AudioDecodePipeline>;
     /**
-     * @internal
+     * @hidden
      */
     static AudioRenderThread: Thread<AudioRenderPipeline>;
     /**
-     * @internal
+     * @hidden
      */
     static VideoRenderThread: Thread<VideoRenderPipeline>;
     /**
-     * @internal
+     * @hidden
      */
     static MSEThread: Thread<MSEPipeline>;
     static audioContext: AudioContext;
     /**
-     * @internal
+     * @hidden
      */
     static Resource: Map<string, WebAssemblyResource | ArrayBuffer>;
     private VideoDecoderThread;
@@ -323,11 +331,11 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      */
     get currentTime(): int64;
     /**
-     * @internal
+     * @hidden
      */
     private isCodecIdSupported;
     /**
-     * @internal
+     * @hidden
      */
     private findBestStream;
     private checkUseMSE;
@@ -536,6 +544,10 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      */
     isMSE(): boolean;
     /**
+     * 是否是 MediaStream 模式
+     */
+    isMediaStreamMode(): boolean;
+    /**
      * 当前是否是 live 模式
      *
      * @returns
@@ -674,76 +686,76 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      */
     destroy(): Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     onVideoEnded(): void;
     /**
-     * @internal
+     * @hidden
      */
     onAudioEnded(): void;
     /**
-     * @internal
+     * @hidden
      */
     onCanvasUpdated(): void;
     /**
-     * @internal
+     * @hidden
      */
     onGetDecoderResource(mediaType: AVMediaType, codecId: AVCodecID): Promise<WebAssemblyResource | string | ArrayBuffer>;
     /**
-     * @internal
+     * @hidden
      */
     onFirstVideoRendered(): void;
     /**
-     * @internal
+     * @hidden
      */
     onFirstAudioRendered(): void;
     /**
-     * @internal
+     * @hidden
      */
     onAudioStutter(): void;
     /**
-     * @internal
+     * @hidden
      */
     onVideoStutter(): void;
     /**
-     * @internal
+     * @hidden
      */
     onVideoDiscard(): void;
     /**
-     * @internal
+     * @hidden
      */
     onFirstVideoRenderedAfterUpdateCanvas(): void;
     /**
-     * @internal
+     * @hidden
      */
     onTimeUpdate(pts: int64): void;
     /**
-     * @internal
+     * @hidden
      */
     onMSESeek(time: number): void;
     /**
-     * @internal
+     * @hidden
      */
     onMasterTimerUpdate(time: int64): void;
     /**
-     * @internal
+     * @hidden
      */
     onAudioContextStateChange(): void;
     private createVideoDecoderThread;
     /**
-     * @internal
+     * @hidden
      */
     static startDemuxPipeline(enableWorker?: boolean): Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     static startAudioPipeline(enableWorker?: boolean): Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     static startVideoRenderPipeline(enableWorker?: boolean): Promise<void>;
     /**
-     * @internal
+     * @hidden
      */
     static startMSEPipeline(enableWorker?: boolean): Promise<void>;
     /**

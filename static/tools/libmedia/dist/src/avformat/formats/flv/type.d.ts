@@ -1,3 +1,5 @@
+import { AVColorPrimaries, AVColorSpace, AVColorTransferCharacteristic } from 'avutil/pixfmt';
+import { Data } from 'common/types/type';
 export interface FlvMetaData {
     audiocodecid: number;
     audiodatarate: number;
@@ -27,6 +29,8 @@ export interface FlvMetaData {
     videodatarate: number;
     videosize: number;
     width: number;
+    audioTrackIdInfoMap?: Record<number, Data>;
+    videoTrackIdInfoMap?: Record<number, Data>;
 }
 export interface FlvContext {
     keyframeFilePositions: number[];
@@ -44,4 +48,35 @@ export interface FlvContext {
     frameCount: number;
     firstKeyframePositionWrote: boolean;
     videoMetadataWrote: boolean;
+    enableNanoTimestamp: boolean;
+    multiAudioTracks: boolean;
+    multiVideoTracks: boolean;
+    useLegacyHevc: boolean;
+}
+export interface FlvStreamContext {
+    trackId: uint8;
+}
+export interface FlvColorInfo {
+    colorConfig: {
+        bitDepth?: number;
+        colorPrimaries?: AVColorPrimaries;
+        transferCharacteristics?: AVColorTransferCharacteristic;
+        matrixCoefficients?: AVColorSpace;
+    };
+    hdrCll?: {
+        maxFall: number;
+        maxCLL: number;
+    };
+    hdrMdcv?: {
+        redX?: number;
+        redY?: number;
+        greenX?: number;
+        greenY?: number;
+        blueX?: number;
+        blueY?: number;
+        whitePointX?: number;
+        whitePointY?: number;
+        maxLuminance?: number;
+        minLuminance?: number;
+    };
 }

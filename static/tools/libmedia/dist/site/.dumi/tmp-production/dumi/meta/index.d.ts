@@ -11,6 +11,12 @@ export declare const filesMeta: {
         demoIndex: any;
         textGetter: () => Promise<any>;
     };
+    'docs/guide/compile-wasm.en-US': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
     'docs/guide/contribution.en-US': {
         frontmatter: any;
         toc: any;
@@ -108,6 +114,12 @@ export declare const filesMeta: {
         textGetter: () => Promise<any>;
     };
     'docs/guide/architecture': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
+    'docs/guide/compile-wasm': {
         frontmatter: any;
         toc: any;
         demoIndex: any;
