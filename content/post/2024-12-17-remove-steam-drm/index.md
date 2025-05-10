@@ -2,10 +2,10 @@
 categories: Original
 date: 2024-12-17T00:00:00Z
 tags:
-  - Steam
-  - 信息技术
-  - 游戏
-  - 逆向工程
+    - Steam
+    - 信息技术
+    - 游戏
+    - 逆向工程
 slug: remove-steam-drm
 title: 移除游戏的 Steam 验证
 ---
@@ -25,6 +25,10 @@ title: 移除游戏的 Steam 验证
 ## [Steamless](https://github.com/atom0s/Steamless)
 
 移除`SteamStub` DRM（若存在）。
+
+## [Steam-auto-crack](https://github.com/SteamAutoCracks/Steam-auto-crack)
+
+自动化应用破解。
 
 ## [SteamAutoCracker](https://github.com/BigBoiCJ/SteamAutoCracker)
 
