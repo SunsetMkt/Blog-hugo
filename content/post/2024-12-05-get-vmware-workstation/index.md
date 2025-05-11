@@ -2,13 +2,19 @@
 categories: Original
 date: 2024-12-05T00:00:00Z
 tags:
-  - VMware
-  - 信息技术
-  - 软件
-  - 逆向工程
+    - VMware
+    - 信息技术
+    - 软件
+    - 逆向工程
 slug: get-vmware-workstation
 title: 获取 VMware Workstation Pro 的下载链接
 ---
+
+> 更新：自[Mar 25, 2025](https://community.broadcom.com/vmware-cloud-foundation/question/certificate-error-is-occured-during-connecting-update-server)（[其他报告](https://community.broadcom.com/vmware-cloud-foundation/discussion/the-update-server-could-not-be-resolved)），Broadcom 已关闭`softwareupdate.vmware.com`，此方法不可用。
+>
+> 快速跳转到 Broadcom 下载页面（需要账号）：
+>
+> <https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro&freeDownloads=true>
 
 自从 VMware 被 Broadcom 收购并允许个人免费使用[VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)后，用户必须注册 Broadcom 账号才能下载安装程序，这引发了我的隐私担忧。
 
