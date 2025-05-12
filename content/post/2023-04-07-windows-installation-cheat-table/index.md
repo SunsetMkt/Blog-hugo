@@ -7,22 +7,24 @@ tags:
     - 信息技术
     - 软件
 slug: windows-installation-cheat-table
-title: 标准 Windows 安装速查表
+title: 标准 Windows & Office 安装速查表
 ---
 
 ## 推荐的方案
 
-对于任何可运行 Windows 11 的现代设备，推荐使用 Windows 11 专业工作站版（易于下载 ISO）或企业版（最多的特性，减少广告和遥测，不易下载 ISO，不支持在 OOBE 登录个人 Microsoft 账号）。
+对于任何可运行 Windows 11 的现代设备，**推荐使用 Windows 11 专业工作站版**（易于下载 ISO）或企业版（最多的特性，减少广告和遥测，不易下载 ISO，不支持在 OOBE 登录个人 Microsoft 账号）。
 
-不再建议安装 Windows 10，除非有必须这样做的原因。
+**不再建议安装 Windows 10**，除非有必须这样做的原因。
 
 若设备无法运行面向个人消费者的 Windows 10 版本，可使用 Windows 10 IoT Enterprise LTSC 2021（使用简体中文版 Enterprise LTSC 2021 安装，Microsoft-Activation-Scripts 会自动将其转换为 IoT 版本）。
 
-Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts 激活。
+**Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts 激活**。
+
+此文档使用免费且可信的方案，但不保证合规性。
 
 ## 系统镜像
 
-建议：[Windows 11 官方媒体制作工具/ISO 下载](https://www.microsoft.com/zh-cn/software-download/windows11) [ARM64](https://www.microsoft.com/zh-cn/software-download/windows11arm64)
+**建议：[Windows 11 官方媒体制作工具/ISO 下载](https://www.microsoft.com/zh-cn/software-download/windows11) [ARM64](https://www.microsoft.com/zh-cn/software-download/windows11arm64)**
 
 不建议：~~[Windows 10（October 14, 2025 停止支持）](https://www.microsoft.com/zh-cn/software-download/windows10)~~
 
@@ -30,7 +32,7 @@ Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts �
 
 如果您在俄罗斯，可以尝试由[massgravel](https://github.com/massgravel)提供的[msdl](https://msdl.gravesoft.dev/)。
 
-在安装中选择“没有序列号”可以跳过序列号输入。
+**在安装中选择“没有序列号”可以跳过序列号输入。**
 
 ### ISO 写入 USB 存储设备
 
@@ -55,13 +57,15 @@ https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProP
 
 需要安装特定版本：[Office Tool Plus](https://otp.landian.vip/zh-cn/)
 
+下载和激活 Mac 版本：[Office For Mac](https://massgrave.dev/office_for_mac)
+
 ## 激活
 
 > 虽然最好是支持正版的说...
-
+>
 > ~~微软官方客服使用的（[来源](https://twitter.com/TCNOco/status/1634620446002774018)，[网页存档](https://archive.is/kThLf)，[新闻报道](https://www.bleepingcomputer.com/news/security/microsoft-support-cracks-windows-for-customer-after-activation-fails/)）~~ 激活脚本：
 
-推荐：[Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
+**推荐：[Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)**
 
 或者直接在 Powershell 中执行（感谢 [massgravel](https://massgrave.dev/)）：
 
@@ -79,9 +83,9 @@ irm https://get.activated.win | iex
 
 你可以在[这里](https://massgrave.dev/)获得更多关于下载和安装 Windows 和 Office 的参考资料。此第三方提供的[Windows 和 Office 下载资源](https://massgrave.dev/genuine-installation-media)被认为是可靠的。
 
-不建议使用[UUPDump](https://uupdump.net/)获取镜像，除非有必须这样做的需求（例如获取特定的 Insider 版本、必须要强制升级到未推送的版本）。不推荐为 ARM64 设备安装 Insider 版本。在保留应用和数据的原地安装的情况下，UUPDump 的 ARM64 镜像有时会造成 UWP 工作故障（全部 UWP 无法启动或无法更新依赖，可能源于 24H2 中移除的对 ARM32 的支持，但 UUPDump 仍然嵌入不正确的 UWP 架构？）。
+**不建议使用[UUPDump](https://uupdump.net/)获取镜像**，除非有必须这样做的需求（例如获取特定的 Insider 版本、必须要强制升级到未推送的版本）。不推荐为 ARM64 设备安装 Insider 版本。在保留应用和数据的原地安装的情况下，UUPDump 的 ARM64 镜像有时会造成 UWP 工作故障（全部 UWP 无法启动或无法更新依赖，可能源于 24H2 中移除的对 ARM32 的支持，但 UUPDump 仍然嵌入不正确的 UWP 架构？）。
 
-有关下载 Windows 10/11 LTSC 的说明,请参考[这里](https://massgrave.dev/windows_ltsc_links)。对于可以安装消费者版本的设备，未见安装 LTSC 版本的明显必要性，不建议安装。
+有关下载 Windows 10/11 LTSC 的说明,请参考[这里](https://massgrave.dev/windows_ltsc_links)。**对于可以安装消费者版本的设备，未见安装 LTSC 版本的明显必要性，不建议安装。**
 
 LTSC 安装 Microsoft Store：管理员执行`wsreset -i`。
 
@@ -89,10 +93,10 @@ LTSC 安装 Microsoft Store：管理员执行`wsreset -i`。
 
 ### 下载企业版 ISO
 
-命令行启动媒体制作工具：
+命令行启动[媒体制作工具](https://go.microsoft.com/fwlink/?linkid=2156295)：
 
 ```pwsh
-.\MediaCreationTool_Win11_23H2.exe /Eula Accept /Retail /MediaArch x64 /MediaLangCode zh-CN /MediaEdition Enterprise
+.\mediacreationtool.exe /Eula Accept /Retail /MediaArch x64 /MediaLangCode zh-CN /MediaEdition Enterprise
 ```
 
 当工具询问激活码时，使用此通用激活码（不会激活）：`XGVPP-NMH47-7TTHJ-W3FW7-8HV2C`。
