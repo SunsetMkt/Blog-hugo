@@ -1,0 +1,41 @@
+---
+categories: Original
+date: "2025-05-12T00:00:00Z"
+tags:
+    - Demo
+    - 前端
+slug: sakana-demo
+title: "「Sakana!」石蒜模拟器"
+---
+
+<div class="sakana-box"></div>
+
+<script src="https://unpkg.com/sakana@1.0.8/html/sakana.min.js"></script>
+<script>
+    Sakana.setMute(false);
+    Sakana.init({
+        // 选项: 默认值
+        el: ".sakana-box", // 启动元素 node 或 选择器
+        character: "chisato", // 启动角色 'chisato','takina'
+        // inertia: 0.01, // 惯性
+        // decay: 0.99, // 衰减
+        // r: 60, // 启动角度
+        // y: 10, // 启动高度
+        // scale: 1, // 缩放倍数
+        // translateY: 0, // 位移高度
+        canSwitchCharacter: true, // 允许换角色
+        onSwitchCharacter(character) {
+            // 切换角色回调
+            console.log(`${character} dayo~`);
+        },
+    });
+</script>
+
+<style>
+    html .sakana-box {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transform-origin: 100% 100%; /* 从右下开始变换 */
+    }
+</style>
