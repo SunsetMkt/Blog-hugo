@@ -53,7 +53,7 @@ https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProP
 
 > 虽然最好是支持正版的说...
 
-> ~~微软官方客服使用的（[来源](https://twitter.com/TCNOco/status/1634620446002774018)，[网页存档](https://archive.is/kThLf)，[新闻报道](https://www.bleepingcomputer.com/news/security/microsoft-support-cracks-windows-for-customer-after-activation-fails/)）~~激活脚本：
+> ~~微软官方客服使用的（[来源](https://twitter.com/TCNOco/status/1634620446002774018)，[网页存档](https://archive.is/kThLf)，[新闻报道](https://www.bleepingcomputer.com/news/security/microsoft-support-cracks-windows-for-customer-after-activation-fails/)）~~ 激活脚本：
 
 推荐：[Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
 
@@ -89,7 +89,7 @@ LTSC 安装 Microsoft Store：管理员执行`wsreset -i`。
 
 命令行启动媒体制作工具：
 
-```shell
+```pwsh
 .\MediaCreationTool_Win11_23H2.exe /Eula Accept /Retail /MediaArch x64 /MediaLangCode zh-CN /MediaEdition Enterprise
 ```
 
