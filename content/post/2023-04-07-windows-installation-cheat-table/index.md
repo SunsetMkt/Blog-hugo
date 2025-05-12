@@ -38,7 +38,7 @@ Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts �
 
 ### Windows 11 OOBE 跳过在线检测
 
-~~按下`Shift + F10`，在弹出的 CMD 中执行`oobe\bypassnro`~~
+可能会在未来移除：~~按下`Shift + F10`，在弹出的 CMD 中执行`oobe\bypassnro`~~
 
 阅读[WinJS-Microsoft-Account-Bypass](https://github.com/the-P1neapple/WinJS-Microsoft-Account-Bypass)。
 
@@ -98,3 +98,13 @@ LTSC 安装 Microsoft Store：管理员执行`wsreset -i`。
 当工具询问激活码时，使用此通用激活码（不会激活）：`XGVPP-NMH47-7TTHJ-W3FW7-8HV2C`。
 
 [这里](https://github.com/AveYo/MediaCreationTool.bat)有一个第三方工具，尚未确定有效性。
+
+### `BypassNRO.cmd`的内容
+
+[下载 BypassNRO.cmd](BypassNRO.cmd)
+
+```batch
+@echo off
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f
+shutdown /r /t 0
+```
