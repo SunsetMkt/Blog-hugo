@@ -42,6 +42,8 @@ Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts �
 
 阅读[WinJS-Microsoft-Account-Bypass](https://github.com/the-P1neapple/WinJS-Microsoft-Account-Bypass)。
 
+TL;DR：按下`Shift + F10`，在弹出的 CMD 中执行`start ms-cxh:localonly`
+
 ## 安装 Office
 
 推荐：[官方 O365ProPlusRetail 简体中文在线安装程序](https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=zh-cn&version=O16GA)
