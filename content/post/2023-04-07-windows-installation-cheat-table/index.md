@@ -30,13 +30,17 @@ Office 版本一律推荐 O365ProPlus，并使用 Microsoft-Activation-Scripts �
 
 如果您在俄罗斯，可以尝试由[massgravel](https://github.com/massgravel)提供的[msdl](https://msdl.gravesoft.dev/)。
 
+在安装中选择“没有序列号”可以跳过序列号输入。
+
 ### ISO 写入 USB 存储设备
 
 [Rufus](https://rufus.ie/zh/)
 
-### Windows 11 OOBE 跳过在线账号
+### Windows 11 OOBE 跳过在线检测
 
-按下`Shift + F10`，在弹出的 CMD 中执行`oobe\bypassnro`
+~~按下`Shift + F10`，在弹出的 CMD 中执行`oobe\bypassnro`~~
+
+阅读[WinJS-Microsoft-Account-Bypass](https://github.com/the-P1neapple/WinJS-Microsoft-Account-Bypass)。
 
 ## 安装 Office
 
@@ -65,11 +69,7 @@ irm https://get.activated.win | iex
 
 支持永久数字激活 Windows 10/11，Ohook 激活 Office（包括 365），KMS 激活 Windows 和 Office（包括 365），并且可以切换 Windows 授权版本。
 
-或者，
-
-[CMWTAT_Digital_Edition](https://github.com/TGSAN/CMWTAT_Digital_Edition)
-
-有漂亮的 GUI，并且可以切换 Windows 授权版本。
+或者，[CMWTAT_Digital_Edition](https://github.com/TGSAN/CMWTAT_Digital_Edition)有漂亮的 GUI，并且可以切换 Windows 授权版本。
 
 ## 其他的
 
