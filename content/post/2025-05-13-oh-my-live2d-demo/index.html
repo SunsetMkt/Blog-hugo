@@ -1,0 +1,34 @@
+---
+categories: Original
+date: "2025-05-13T00:00:00Z"
+tags:
+    - Demo
+    - 前端
+slug: oh-my-live2d-demo
+title: "OhMyLive2D Demo"
+---
+
+<p>
+    <a href="https://github.com/oh-my-live2d/oh-my-live2d"
+        >Powered by OhMyLive2D</a
+    >
+</p>
+
+<script src="https://unpkg.com/oh-my-live2d@0.19.3/dist/index.min.js"></script>
+<script>
+    OML2D.loadOml2d({
+        dockedPosition: "right",
+        initialStatus: "active",
+        mobileDisplay: "true",
+        models: [
+            {
+                path: "https://fastly.jsdelivr.net/gh/oh-my-live2d/live2d-models/models/HK416-1-normal/model.json",
+                position: [0, 60],
+                scale: 0.08,
+                stageStyle: {
+                    height: 450,
+                },
+            },
+        ],
+    });
+</script>
