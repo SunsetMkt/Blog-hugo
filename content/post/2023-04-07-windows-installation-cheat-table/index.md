@@ -105,7 +105,7 @@ LTSC 安装 Microsoft Store：管理员执行`wsreset -i`。
 
 ### `BypassNRO.cmd`的内容
 
-[下载 BypassNRO.cmd](BypassNRO.cmd)
+[下载 BypassNRO.cmd](BypassNRO.zip)
 
 ```batch
 @echo off
