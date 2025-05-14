@@ -12,7 +12,7 @@ title: 《不恋爱就完蛋了》的资源文件提取和反编译
 
 > ~~注意：为了保护创作者权益，此教程在自游戏发布的 6 个月内会隐藏操作的关键细节。~~
 >
-> 游戏在 [2025-05-13 的更新](https://steamdb.info/patchnotes/18453168/)~~似乎完全针对本文~~更改了关键细节，我理解开发者不愿自己的美术资源被提取，所以不会提供明确的解决方案。聪明的读者应当自行研究游戏中附带的引擎源码中对`RPAv3ArchiveHandler`的定义。
+> 游戏在 [2025-05-13 的更新](https://steamdb.info/patchnotes/18453168/)~~似乎完全针对本文~~更改了关键细节，我理解开发者不愿自己的美术资源被提取，所以不会提供明确的解决方案。聪明的读者应当自行研究游戏中附带的引擎源码中对`RPAv3ArchiveHandler`的定义并修改`unrpyc`的`deobfuscate_entry`。
 >
 > 我想引用 [Ren'Py 文档](https://doc.renpy.cn/zh-CN/build.html#archives)中对归档文件的描述：
 >
