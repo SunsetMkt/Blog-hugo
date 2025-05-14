@@ -10,7 +10,15 @@ slug: love-curse-find-your-soulmate-unpack
 title: 《不恋爱就完蛋了》的资源文件提取和反编译
 ---
 
-> 注意：为了保护创作者权益，此教程在自游戏发布的 6 个月内会隐藏操作的关键细节。
+> ~~注意：为了保护创作者权益，此教程在自游戏发布的 6 个月内会隐藏操作的关键细节。~~
+>
+> 游戏在 [2025-05-13 的更新](https://steamdb.info/patchnotes/18453168/)~~似乎完全针对本文~~更改了关键细节，我理解开发者不愿自己的美术资源被提取，所以不会提供明确的解决方案。聪明的读者应当自行研究游戏中附带的引擎源码中对`RPAv3ArchiveHandler`的定义。
+>
+> 我想引用 [Ren'Py 文档](https://doc.renpy.cn/zh-CN/build.html#archives)中对归档文件的描述：
+>
+> _关于游戏归档的问题，请三思。使用开放文件可能有助于后人在未来的平台上运行你的游戏——那些你离开这个世界之后才出现的平台。_
+>
+> _Please think twice about archiving your game. Keeping files open will help others run your game on future platforms – platforms that may not exist until after you're gone._
 
 此文档也可作为其他 Ren'Py 游戏逆向工程的参考。
 
@@ -30,6 +38,8 @@ title: 《不恋爱就完蛋了》的资源文件提取和反编译
 《不恋爱就完蛋了》的 RPA 包使用自定义的后缀名和文件头，使用`--force`参数指定版本`[隐藏操作的关键细节]`即可提取。
 
 针对一般的 Ren'Py 游戏，打包文件的后缀名是`rpa`。
+
+> 需要修改工具源码来读取被修改的引擎打包格式，此指令不是开箱即用的。
 
 完整的命令是：
 
