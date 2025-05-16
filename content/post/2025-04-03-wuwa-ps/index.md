@@ -362,6 +362,25 @@ impl BufManager {
     ];
 ```
 
+### 角色技能充能
+
+修改`data\assets\game-data\BinData\BaseProperty.json`的每个`CdReduse`、`EnergyMax`和`Energy`为`0`、`0`、`1`。（感谢[荼蘼博客](https://blog.tomys.top/2025-02/ww-ps/)）
+
+```python
+import json
+
+with open("BaseProperty.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+for i in data:
+    i["CdReduse"] = 0
+    i["EnergyMax"] = 0
+    i["Energy"] = 1
+
+with open("output.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=4)
+```
+
 ## 扩充资料
 
 也有一个其他人制作的[视频教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)，但以本文优先。
