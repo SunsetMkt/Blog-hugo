@@ -99,6 +99,15 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 [*] Fetching index file...
 [+] Index file downloaded successfully
 [*] Found 642 files to download
+
+（下载完成）
+ DOWNLOAD COMPLETE
+
+[+] Successfully downloaded: 642
+[-] Failed downloads: 0
+[*] Files saved to: D:\WuWaPS\client
+
+[!] Press Enter to exit...
 ```
 
 #### `2.3`及之前的版本（已失效）
@@ -248,7 +257,7 @@ cd "D:\WuWaPS\client\Client\Binaries\Win64"
 .\launcher.exe
 ```
 
-如果没有发生任何错误，应该可以使用任意 ID 进入游戏。
+如果没有发生任何错误，应该可以使用任意 ID 进入游戏（不要使用快速新建/登录）。
 
 ### 配置游戏服务器
 
