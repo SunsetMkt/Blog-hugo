@@ -6,7 +6,7 @@ tags:
     - 鸣潮
     - 逆向工程
 slug: wuwa-ps
-title: 《鸣潮》的 xeondev 私服简要运行教程（2.4 版本）
+title: 《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（2.4 版本）
 ---
 
 > 当前，`CN 2.4.0`测试服已发布。此文档及上游项目已支持此版本。
@@ -23,7 +23,7 @@ title: 《鸣潮》的 xeondev 私服简要运行教程（2.4 版本）
 
 加入[私服作者的 Discord 服务器](https://discord.com/invite/reversedrooms)免费获取全部所需文件。
 
-[xeondev](https://github.com/thexeondev) 的私服是免费的，任何通过付费购买的软件都是诈骗。
+此私服是免费的，任何通过付费购买的软件都是诈骗。
 
 ## 需求
 
@@ -77,7 +77,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 下载[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader/releases)，在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将`wuwa-downloader.exe`放入`client`文件夹，运行它。
 
-> `wuwa-downloader.exe`在一些有互联网审查的地区可能需要开启全局代理才可以连接 GitHub 获取最新的下载地址。
+> `wuwa-downloader.exe`在一些有互联网审查的地区可能需要开启全局代理（TUN/虚拟网卡）才可以连接 GitHub 获取最新的下载地址。
 
 跟随下面的示例操作：
 
