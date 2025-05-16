@@ -6,14 +6,14 @@ tags:
     - 鸣潮
     - 逆向工程
 slug: wuwa-ps
-title: 《鸣潮》的 xeondev 私服简要运行教程（2.3 版本）
+title: 《鸣潮》的 xeondev 私服简要运行教程（2.4 版本）
 ---
 
-> 当前，`CN 2.4.0`测试服已发布。此文档及上游项目尚未支持此版本。
+> 当前，`CN 2.4.0`测试服已发布。此文档及上游项目已支持此版本。
 >
 > 此版本客户端可通过[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader)下载。
 
-此文档针对`CN 2.3.0`测试服，不保证在未来正确无误。
+此文档针对`CN 2.4.0`测试服，不保证在未来正确无误。
 
 **目前，私服仅支持基本移动（“散步模拟器”）和抽卡，不支持怪物自然生成和任务。请确认您真的需要私服，时间和精力同样昂贵。**
 
@@ -73,17 +73,47 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ### 下载测试版游戏客户端
 
+#### `2.4`版本
+
+下载[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader/releases)，在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将`wuwa-downloader.exe`放入`client`文件夹，运行它。
+
+> `wuwa-downloader.exe`在一些有互联网审查的地区可能需要开启全局代理才可以连接 GitHub 获取最新的下载地址。
+
+跟随下面的示例操作：
+
+```plain
+[*] Available versions:
+1. Live - OS
+2. Live - CN
+3. Beta - OS
+4. Beta - CN
+[?] Select version: 4（输入 4，并按下 Enter）
+
+[*] Fetching download configuration...
+[*] Using default.config
+[?] Enter download directory (Enter for current):（按下 Enter）
+
+（开始下载；不要担心它的下载速度，它是全速下载的；输出可能会卡顿，实际仍在下载）
+[*] Download folder: D:\WuWaPS\client\Client
+
+[*] Fetching index file...
+[+] Index file downloaded successfully
+[*] Found 642 files to download
+```
+
+#### `2.3`及之前的版本（已失效）
+
 > ~~若启动器强制更新，请根据更新版本动态调整补丁文件中`filechecklist.json`的内容。~~
 >
 > 启动器似乎可以在删除`filechecklist.json`的情况下运行，此文件或许不是必需的。
 
-下载[CN 测试版启动器](https://pcdownload-aliyun.aki-game.com/pcstarter/prod/starter/10008_Pa0Q0EMFxukjEqX33pF9Uyvdc8MaGPSz/G152/2.0.0.0/vgu4E1bmg2r5GMCydmVPcIvKpVwqdqDl/installer.exe)，使用 Discord 中的文件（`filechecklist.json`、`krfeapp.dat`和`KRApp.conf`）修补启动器，即可免登录下载客户端：
+~~下载[CN 测试版启动器](https://pcdownload-aliyun.aki-game.com/pcstarter/prod/starter/10008_Pa0Q0EMFxukjEqX33pF9Uyvdc8MaGPSz/G152/2.0.0.0/vgu4E1bmg2r5GMCydmVPcIvKpVwqdqDl/installer.exe)，使用 Discord 中的文件（`filechecklist.json`、`krfeapp.dat`和`KRApp.conf`）修补启动器，即可免登录下载客户端：~~
 
 ```plain
 To work it new 2.0.0.0 place filechecklist.json and krfeapp.dat under <launcher_folder/2.0.0.0> and KRApp.conf under <launcher_folder/2.0.0.0/Assets>
 ```
 
-假定启动器安装在`D:\Program Files\Wuthering Waves(Beta)`。
+~~假定启动器安装在`D:\Program Files\Wuthering Waves(Beta)`。~~
 
 ### 准备环境
 
@@ -112,7 +142,7 @@ pg_ctl start
 >
 > 此教程不包括维护这些代码库和保持更新的方法。
 
-在`D:`下新建文件夹`WuWaPS`，在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”。
+在`D:`下新建文件夹`WuWaPS`（在下载客户端步骤已完成），在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”。
 
 执行：
 
@@ -125,27 +155,28 @@ cd wicked-waifus-win-patch
 .\build.bat
 ```
 
-构建补丁 DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_3_0-regular.dll`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`下。
+构建补丁 DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_4_0-regular.dll`复制到`D:\WuWaPS\client\Client\Binaries\Win64`下。
 
 或者：
 
-<https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch/releases>或许有已构建的 DLL，可直接使用。
+<https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch/releases>或许有已构建的 DLL，可直接使用。请使用文件名类似`wicked-waifus-win-cn_beta_2_4_0-regular.dll`的 DLL。
 
 ### 下载补丁 Pak
 
-在<https://git.xeondev.com/wickedwaifus/wicked-waifus-pak/releases/tag/2.3.0>下载补丁 Pak，将下载的`rr_fixes_100_p.pak`复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Content\Paks`。
+在<https://git.xeondev.com/wickedwaifus/wicked-waifus-pak/releases/tag/2.4.0>下载补丁 Pak，将下载的`rr_fixes_100_p.pak`复制到`D:\WuWaPS\client\Client\Content\Paks`。
 
 ### 构建服务器并试运行
 
 > 这里只是试运行，确保构建成功即可。服务器程序运行后异常退出此时是正常的，因为尚未建立数据库。
 >
-> 使用`cargo build`可以一次性构建所有必要的部件，但试运行也有好处。
+> 使用`cargo update`并`cargo build`可以一次性构建所有必要的部件，但试运行也有好处。
 
 在`D:\WuWaPS\wicked-waifus-rs`下打开终端（在资源管理器中进入此文件夹，右键空白处，选择“在终端中打开”）。
 
 逐个执行，并在服务器构建完成并运行时按下 Ctrl + C 终止运行服务器：
 
 ```pwsh
+cargo update
 cargo run --bin wicked-waifus-config-server
 cargo run --bin wicked-waifus-hotpatch-server
 cargo run --bin wicked-waifus-login-server
@@ -158,6 +189,8 @@ cargo run --bin wicked-waifus-game-server
 ### 新建数据库`shorekeeper`
 
 > 可以通过命令行创建数据库，但是为了用户友好，此处使用图形化界面。
+>
+> 每次私服版本更新推荐删除并重新建立数据库。
 
 在开始菜单打开`pgAdmin 4`，选择`Add New Server`，`General-Name`和`Connection-Host name/address`均填入`127.0.0.1`，点击`Save`即可连接。
 
@@ -167,7 +200,7 @@ cargo run --bin wicked-waifus-game-server
 
 下载<https://git.xeondev.com/xavo95/launcher/src/branch/master/samples/ww.toml>和<https://git.xeondev.com/xavo95/launcher/releases>的最新版本`launcher.exe`。
 
-将它们复制到`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`下，并将`ww.toml`重命名为`config.toml`。
+将它们复制到`D:\WuWaPS\client\Client\Binaries\Win64`下，并将`ww.toml`重命名为`config.toml`。
 
 编辑`config.toml`并保存：
 
@@ -175,8 +208,8 @@ cargo run --bin wicked-waifus-game-server
 [launcher]
 executable_file = 'Client-Win64-Shipping.exe'
 cmd_line_args = '-fileopenlog'
-current_dir = 'D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64'
-dll_list = ['D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_3_0-regular.dll']
+current_dir = 'D:\WuWaPS\client\Client\Binaries\Win64'
+dll_list = ['D:\WuWaPS\client\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_4_0-regular.dll']
 
 [environment]
 #environment = ['TESTVAR1=AAAAAA', 'TESTVAR2=AAAAAA']
@@ -204,14 +237,14 @@ cargo run --bin wicked-waifus-game-server
 >
 > 实际上，如果您的代理软件可以正确处理`127.0.0.1`，那么或许可以不关闭它们。
 
-在`D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64`右键`launcher.exe`，选择“以管理员身份运行”。
+在`D:\WuWaPS\client\Client\Binaries\Win64`右键`launcher.exe`，选择“以管理员身份运行”。
 
 或者：
 
 右键开始菜单按钮，选择“终端管理员”，执行：
 
 ```pwsh
-cd "D:\Program Files\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64"
+cd "D:\WuWaPS\client\Client\Binaries\Win64"
 .\launcher.exe
 ```
 
@@ -243,7 +276,7 @@ load_textmaps = true
 quadrant_size = 1000000
 
 [asset_config]
-asset_url = "https://git.xeondev.com/wickedwaifus/wicked-waifus-data/releases/download/pioneer_2.3.1/bundle.zip"
+asset_url = "https://git.xeondev.com/wickedwaifus/wicked-waifus-data/releases/download/pioneer_2.4.1/bundle.zip"
 buffer_size = 268435456
 
 [default_unlocks]
@@ -257,6 +290,7 @@ unlock_all_functions = true
 unlock_all_guides = false
 unlock_all_tutorials = false
 unlock_all_teleporter = false
+
 ```
 
 `[default_unlocks]`下的配置可以修改为`true`以实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。每次修改配置后，请新建玩家账号以应用新的配置。
