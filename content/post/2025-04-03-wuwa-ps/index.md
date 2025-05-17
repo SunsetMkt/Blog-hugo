@@ -364,7 +364,7 @@ impl BufManager {
 
 ### 角色技能充能
 
-修改`data\assets\game-data\BinData\BaseProperty.json`的每个`CdReduse`、`EnergyMax`和`Energy`为`0`、`0`、`1`。（感谢[荼蘼博客](https://blog.tomys.top/2025-02/ww-ps/)）
+修改`data\assets\game-data\BinData\BaseProperty.json`的每个`CdReduse`、`EnergyMax`和`Energy`为`0`、`0`、`1`。（感谢[jiang0681](https://github.com/jiang0681/wwbeta/)）
 
 ```python
 import json
