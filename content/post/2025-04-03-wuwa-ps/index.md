@@ -159,14 +159,18 @@ pg_ctl start
 git clone --recursive https://git.xeondev.com/wickedwaifus/wicked-waifus-rs.git
 git clone https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch.git
 git clone https://git.xeondev.com/xavo95/launcher.git
+```
 
+然后构建补丁 DLL：
+
+```pwsh
 cd wicked-waifus-win-patch
 .\build.bat
 ```
 
 构建补丁 DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_4_0-regular.dll`复制到`D:\WuWaPS\client\Client\Binaries\Win64`下。
 
-或者：
+或者不手动构建：
 
 <https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch/releases>或许有已构建的 DLL，可直接使用。请使用文件名类似`wicked-waifus-win-cn_beta_2_4_0-regular.dll`的 DLL。
 
