@@ -21,6 +21,8 @@ title: 《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（
 
 **为了高效而无误地部署它，请确保您有基本的软件开发经验。**
 
+**请勿混用不同教程。**
+
 加入[私服作者的 Discord 服务器](https://discord.com/invite/reversedrooms)免费获取全部所需文件。
 
 此私服是免费的，任何通过付费购买的软件都是诈骗。
@@ -330,7 +332,8 @@ cargo run --bin wicked-waifus-game-server
 
 ### 部件功能
 
-- CN 测试版启动器和补丁：用于免登录下载测试版游戏客户端
+- ~~CN 测试版启动器和补丁：用于免登录下载测试版游戏客户端~~
+- 下载器（`wuwa-downloader`）：下载测试版游戏客户端
 - 补丁 DLL（`wicked-waifus-win-patch`）：需要注入的 DLL，绕过 Pak 校验，修改服务器 URL，禁用 Kuro SDK
 - 补丁 Pak（`wicked-waifus-pak`）：需要绕过 Pak 校验，禁用 TpSafe，禁用 Kuro SDK，修改 VisionRecommendController，修改登录界面 BGM
 - `launcher`（`xavo95/launcher`）：DLL 注入工具
