@@ -44,7 +44,7 @@ Valve Archive 有一个使用 HTML5 的[更好的版本](https://valvearchive.co
       </object>
       <!--<![endif]-->
    </object>
-   <script src="https://fastly.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
+   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </div>
 
 ## 反编译的 ActionScript 源代码

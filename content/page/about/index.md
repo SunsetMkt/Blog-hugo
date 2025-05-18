@@ -53,8 +53,8 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 - [GitHub](https://github.com/)
 - [Cloudflare](https://www.cloudflare.com/zh-cn/)
-- [jsDelivr](https://www.jsdelivr.com/)
 - [UNPKG](https://unpkg.com/)
+- [jsDelivr](https://www.jsdelivr.com/)
 
 ### 开源软件
 

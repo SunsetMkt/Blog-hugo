@@ -68,9 +68,9 @@ Of hopes and fears, being himself alone.
 但是公测的时候就换成改编版了，资源提取如下（还有无歌词的版本）：
 
 <div>
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
     <div id="aplayer"></div>
-    <script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
     <script>
         const ap = new APlayer({
             container: document.getElementById('aplayer'),
