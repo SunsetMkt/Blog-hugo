@@ -323,7 +323,7 @@ cargo run --bin wicked-waifus-gateway-server
 cargo run --bin wicked-waifus-game-server
 ```
 
-## 技术细节
+## 技术细节和专业资料
 
 ### 技术栈
 
@@ -388,17 +388,9 @@ with open("output.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4)
 ```
 
-## 扩充资料
+### 维护脚本
 
-**请勿混用不同教程。**
-
-也有一个[Sociophobia 的视频教程](https://www.youtube.com/watch?v=AUeqUA60lwI)（也是 Reversed Rooms 的推荐教程），但以本文优先。
-
-也有一个[jiang0681 的文本教程](https://github.com/jiang0681/wwbeta/)，但以本文优先。
-
-## 维护脚本
-
-### 快速在 Windows Terminal 的多选项卡启动每个服务器组件
+#### 快速在 Windows Terminal 的多选项卡启动每个服务器组件
 
 ```pwsh
 # 获取当前脚本所在目录，作为 cargo 项目的根目录
@@ -433,7 +425,7 @@ foreach ($i in 0..($servers.Count - 1)) {
 Start-Process wt -ArgumentList $wtArgs
 ```
 
-### 快速重建数据库
+#### 快速重建数据库
 
 ```pwsh
 # 启动数据库
@@ -453,3 +445,11 @@ while ($true) {
     Start-Sleep -Seconds 3600
 }
 ```
+
+## 扩充资料
+
+**请勿混用不同教程。**
+
+也有一个[Sociophobia 的视频教程](https://www.youtube.com/watch?v=AUeqUA60lwI)（也是 Reversed Rooms 的推荐教程），但以本文优先。
+
+也有一个[jiang0681 的文本教程](https://github.com/jiang0681/wwbeta/)，但以本文优先。
