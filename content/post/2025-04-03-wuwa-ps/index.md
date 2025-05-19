@@ -390,4 +390,8 @@ with open("output.json", "w", encoding="utf-8") as f:
 
 ## 扩充资料
 
+**请勿混用不同教程。**
+
 也有一个其他人制作的[视频教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)，但以本文优先。
+
+也有一个[jiang0681 的文本教程](https://github.com/jiang0681/wwbeta/)，但以本文优先。
