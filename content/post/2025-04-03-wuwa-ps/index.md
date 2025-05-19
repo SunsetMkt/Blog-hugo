@@ -392,6 +392,61 @@ with open("output.json", "w", encoding="utf-8") as f:
 
 **请勿混用不同教程。**
 
-也有一个其他人制作的[视频教程](https://www.youtube.com/watch?v=rOWBm-oJYT8)，但以本文优先。
+也有一个[Sociophobia 的视频教程](https://www.youtube.com/watch?v=AUeqUA60lwI)（也是 Reversed Rooms 的推荐教程），但以本文优先。
 
 也有一个[jiang0681 的文本教程](https://github.com/jiang0681/wwbeta/)，但以本文优先。
+
+## 维护脚本
+
+### 快速在 Windows Terminal 的多选项卡启动每个服务器组件
+
+```pwsh
+# 获取当前脚本所在目录，作为 cargo 项目的根目录
+$projectDir = Get-Location
+
+# 定义服务器列表
+$servers = @(
+    "wicked-waifus-config-server",
+    "wicked-waifus-hotpatch-server",
+    "wicked-waifus-login-server",
+    "wicked-waifus-gateway-server",
+    "wicked-waifus-game-server"
+)
+
+# 构建 wt 命令行参数
+$wtArgs = ""
+
+foreach ($i in 0..($servers.Count - 1)) {
+    $server = $servers[$i]
+    $title = $server
+    $command = "powershell -NoExit -Command `"cargo run --bin $server`""
+    $startDir = $projectDir.Path
+
+    if ($i -eq 0) {
+        $wtArgs += "new-tab --title `"$title`" --startingDirectory `"$startDir`" $command"
+    } else {
+        $wtArgs += " ; new-tab --title `"$title`" --startingDirectory `"$startDir`" $command"
+    }
+}
+
+# 启动 wt 并运行所有标签页
+Start-Process wt -ArgumentList $wtArgs
+```
+
+### 快速重建数据库
+
+```pwsh
+# 启动数据库
+pg_ctl start
+
+# 等待数据库启动
+Start-Sleep -Seconds 3
+
+# 删除数据库
+psql -U postgres -d postgres -c "DROP DATABASE IF EXISTS shorekeeper;"
+
+# 新建数据库
+psql -U postgres -d postgres -c "CREATE DATABASE shorekeeper;"
+
+Write-Host "数据库 shorekeeper 已重建，服务正在运行。"
+```
