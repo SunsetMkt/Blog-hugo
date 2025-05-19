@@ -448,5 +448,8 @@ psql -U postgres -d postgres -c "DROP DATABASE IF EXISTS shorekeeper;"
 # 新建数据库
 psql -U postgres -d postgres -c "CREATE DATABASE shorekeeper;"
 
-Write-Host "数据库 shorekeeper 已重建，服务正在运行。"
+# 维持运行
+while ($true) {
+    Start-Sleep -Seconds 3600
+}
 ```
