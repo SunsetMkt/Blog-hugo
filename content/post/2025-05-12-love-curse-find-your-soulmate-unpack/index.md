@@ -6,6 +6,7 @@ tags:
     - 信息技术
     - 游戏
     - 逆向工程
+    - LGBTQIA
 slug: love-curse-find-your-soulmate-unpack
 title: 《不恋爱就完蛋了》的资源文件提取和反编译
 ---
