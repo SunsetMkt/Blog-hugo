@@ -18,7 +18,7 @@ Warranty Disclaimer
 
 THE OPEN SOURCE SOFTWARE IN THIS PRODUCT IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY, WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. SEE THE APPLICABLE LICENSES FOR MORE DETAILS.
 
- 
+
 
 Written Offer
 
@@ -34,7 +34,7 @@ You may also find a copy of the source at https://consumer.huawei.com/en/opensou
 
 This offer is valid to anyone in receipt of this information.
 
- 
+
 
 THIS OFFER IS VALID FOR THREE YEARS FROM THE MOMENT WE DISTRIBUTED THE PRODUCT OR FIRMWARE.
 
@@ -5747,7 +5747,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -6268,8 +6268,8 @@ safest to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
-    
-    Copyright (C)   
+
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -9990,7 +9990,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -10208,7 +10208,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -10532,8 +10532,8 @@ safest to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
-    
-    Copyright (C)   
+
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -10897,7 +10897,7 @@ Mozilla Public License Version 2.0
     means any form of the work other than Source Code Form.
 
 1.7. "Larger Work"
-    means a work that combines Covered Software with other material, in 
+    means a work that combines Covered Software with other material, in
     a separate file or files, that is not Covered Software.
 
 1.8. "License"
@@ -11759,7 +11759,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -13474,7 +13474,7 @@ Copyright (C) 2002-present Jason Evans <jasone@canonware.com>.
 All rights reserved.
 Copyright (C) 2007-2012 Mozilla Foundation.  All rights reserved.
 Copyright (C) 2009-present Facebook, Inc.  All rights reserved.
- 
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice(s),
@@ -13482,7 +13482,7 @@ modification, are permitted provided that the following conditions are met:
 2. Redistributions in binary form must reproduce the above copyright notice(s),
    this list of conditions and the following disclaimer in the documentation
    and/or other materials provided with the distribution.
- 
+
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER(S) ``AS IS'' AND ANY EXPRESS
 OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
@@ -15685,7 +15685,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -16010,7 +16010,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -16334,8 +16334,8 @@ to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-    
-    Copyright (C)   
+
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16553,7 +16553,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -16877,8 +16877,8 @@ safest to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
-    
-    Copyright (C)   
+
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -16954,7 +16954,7 @@ Software: Cyrus SASL
  * Rob Earhart
  * Rob Siemborski
  */
-/* 
+/*
  * Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -16962,7 +16962,7 @@ Software: Cyrus SASL
  * are met:
  *
  * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer. 
+ *    notice, this list of conditions and the following disclaimer.
  *
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in
@@ -16972,7 +16972,7 @@ Software: Cyrus SASL
  * 3. The name "Carnegie Mellon University" must not be used to
  *    endorse or promote products derived from this software without
  *    prior written permission. For permission or any other legal
- *    details, please contact  
+ *    details, please contact
  *      Office of Technology Transfer
  *      Carnegie Mellon University
  *      5000 Forbes Avenue
@@ -17439,7 +17439,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18504,7 +18504,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -18579,7 +18579,7 @@ to us so you can easily use later releases and fixes.
 
 ## MIT License applied to libwebsockets
 
-https://opensource.org/licenses/MIT 
+https://opensource.org/licenses/MIT
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to
@@ -18602,28 +18602,30 @@ https://opensource.org/licenses/MIT
 ## BSD2
 
 ```
- *  Redistribution and use in source and binary forms, with or without 
- *  modification, are permitted provided that the following conditions are 
- *  met:
- *
- *     * Redistributions of source code must retain the above copyright 
- *       notice, this list of conditions and the following disclaimer.
- *     * Redistributions in binary form must reproduce the above copyright 
- *       notice, this list of conditions and the following disclaimer in 
- *       the documentation and/or other materials provided with the distribution
- *      
- *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- *  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- *  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- *  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
- *  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- *  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- *  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- *  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- *  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
- *  POSSIBILITY OF SUCH DAMAGE.
-```
+
+- Redistribution and use in source and binary forms, with or without
+- modification, are permitted provided that the following conditions are
+- met:
+
+- plain \* Redistributions of source code must retain the above copyright
+- plain notice, this list of conditions and the following disclaimer.
+- plain \* Redistributions in binary form must reproduce the above copyright
+- plain notice, this list of conditions and the following disclaimer in
+- plain the documentation and/or other materials provided with the distribution
+
+- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+- POSSIBILITY OF SUCH DAMAGE.
+
+```plain
 
 ## BSD3
 
@@ -18632,34 +18634,37 @@ distribution, this applies to builds with ws support enabled, and without
 `LWS_WITHOUT_BUILTIN_SHA1` at cmake.
 
 ```
-/*
- * Copyright (C) 1995, 1996, 1997, and 1998 WIDE Project.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. Neither the name of the project nor the names of its contributors
- *    may be used to endorse or promote products derived from this software
- *    without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE PROJECT AND CONTRIBUTORS ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED.  IN NO EVENT SHALL THE PROJECT OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
- * SUCH
-```
+
+/\*
+
+- Copyright (C) 1995, 1996, 1997, and 1998 WIDE Project.
+- All rights reserved.
+
+- Redistribution and use in source and binary forms, with or without
+- modification, are permitted provided that the following conditions
+- are met:
+-   1. Redistributions of source code must retain the above copyright
+- notice, this list of conditions and the following disclaimer.
+-   2. Redistributions in binary form must reproduce the above copyright
+- notice, this list of conditions and the following disclaimer in the
+- documentation and/or other materials provided with the distribution.
+-   3. Neither the name of the project nor the names of its contributors
+- may be used to endorse or promote products derived from this software
+- without specific prior written permission.
+
+- THIS SOFTWARE IS PROVIDED BY THE PROJECT AND CONTRIBUTORS ``AS IS'' AND
+- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+- ARE DISCLAIMED. IN NO EVENT SHALL THE PROJECT OR CONTRIBUTORS BE LIABLE
+- FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+- DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+- OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+- HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+- LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+- OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+- SUCH
+
+```plain
 
 ## ZLIB
 
@@ -18670,25 +18675,27 @@ default), and so avoid needing to observe the license for binary
 distribution that doesn't include the related code.
 
 ```
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
 
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
 
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
 
-  Jean-loup Gailly        Mark Adler
-  jloup@gzip.org          madler@alumni.caltech.edu
-```
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+
+Jean-loup Gailly Mark Adler
+jloup@gzip.org madler@alumni.caltech.edu
+
+```plain
 
 
 ## APACHE2
@@ -18700,20 +18707,22 @@ The canonical license application to source files uses the URL reference, so the
 whole is not reproduced here.
 
 ```
+
 // Copyright 2015-2016 Espressif Systems (Shanghai) PTE LTD
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 
-//     http://www.apache.org/licenses/LICENSE-2.0
+// http://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-```
+
+```plain
 
 ## CC0
 
@@ -18722,6 +18731,7 @@ The intention of this is to dedicate the examples to the public domain, so
 users can build off and modify them without any constraint.
 
 ```
+
 Statement of Purpose
 
 The laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an "owner") of an original work of authorship and/or a database (each, a "Work").
@@ -18750,7 +18760,8 @@ For these and/or other purposes and motivations, and without any expectation of 
     Affirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.
     Affirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person's Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.
     Affirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.
-```
+
+```plain
 
 
 
@@ -18795,12 +18806,12 @@ Notices for file(s):
 /system/lib64/liblame.z.so
 Notices for software(s):
 Software: Lame - Lame Aint an MP3 Encoder
-Can I use LAME in my commercial program?  
+Can I use LAME in my commercial program?
 
 Yes, you can, under the restrictions of the LGPL (see COPYING
 in this folder). The easiest way to do this is to:
 
-1. Link to LAME as separate library (libmp3lame.a on unix or 
+1. Link to LAME as separate library (libmp3lame.a on unix or
    lame_enc.dll or libmp3lame.dll on windows)
 
 2. Fully acknowledge that you are using LAME, and give a link
@@ -18944,7 +18955,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -19261,7 +19272,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Library General Public
@@ -20473,7 +20484,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20564,7 +20575,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 You must give any other recipients of the Work or Derivative Works a copy of this License; and
 You must cause any modified files to carry prominent notices stating that You changed the files; and
 You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
-If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License. 
+If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
 
 You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
 5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
@@ -21432,7 +21443,7 @@ meets their license requirements.
 Copyright 2002-2008 	Xiph.org Foundation
 Copyright 2002-2008 	Jean-Marc Valin
 Copyright 2005-2007	Analog Devices Inc.
-Copyright 2005-2008	Commonwealth Scientific and Industrial Research 
+Copyright 2005-2008	Commonwealth Scientific and Industrial Research
                         Organisation (CSIRO)
 Copyright 1993, 2002, 2006 David Rowe
 Copyright 2003 		EpicGames
@@ -21765,7 +21776,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22001,7 +22012,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -22326,7 +22337,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -24427,7 +24438,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -24944,7 +24955,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -25937,7 +25948,7 @@ Please note we provide an open source software notice along with this product an
 Warranty Disclaimer
 THE OPEN SOURCE SOFTWARE IN THIS PRODUCT IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY, WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. SEE THE APPLICABLE LICENSES FOR MORE DETAILS.
 
-Copyright Notice and License Texts 
+Copyright Notice and License Texts
 Software: openEuler:jsoncpp 1.9.5-3.oe2203sp1
 Copyright notice:
 Copyright (c) 2007-2010 by Baptiste Lepilleur and The JsonCpp Authors
@@ -25954,7 +25965,7 @@ Copyright 2007-2010 The JsonCpp Authors
 Copyright 2007 Baptiste Lepilleur and The JsonCpp Authors
 License: MIT License
 The MIT License
-Copyright (c) <year> 
+Copyright (c) <year>
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -25972,7 +25983,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 Written Offer
-This product contains software whose rights holders license it on the terms of the GNU General Public License, version 2 (GPLv2) and/or other open source software licenses. We will provide you and any third party with the source code of the software licensed under an open source software license if you send us a written request by mail or email to the following addresses: 
+This product contains software whose rights holders license it on the terms of the GNU General Public License, version 2 (GPLv2) and/or other open source software licenses. We will provide you and any third party with the source code of the software licensed under an open source software license if you send us a written request by mail or email to the following addresses:
 mobile@huawei.com
 detailing the name of the product and the firmware version for which you need the source code and indicating how we can contact you.
 
@@ -27149,7 +27160,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -27474,7 +27485,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -27871,7 +27882,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -28196,7 +28207,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright    
+    Copyright
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -29055,7 +29066,7 @@ is licensed under:
 
  - the Apache License, Version 2.0, with the LLVM Exception
    <LICENSE-Apache-2.0_WITH_LLVM-exception> or
-   
+
  - the Apache License, Version 2.0
     or
    ,
@@ -29222,7 +29233,7 @@ Copyright (c) 2014 Free Software Foundation, Inc.
 Copyright 1992-2018 Free Software Foundation, Inc.
 License: MIT License
 The MIT License
-Copyright (c) <year> 
+Copyright (c) <year>
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -29486,10 +29497,10 @@ Software: 7Zip
     - C/ZstdDec.c: the "BSD 3-clause License"
     - C/Xxh64.c: the "BSD 2-clause License"
     - Some files are "public domain" files, if "public domain" status is stated in source file.
-    - the "GNU LGPL" for all other files. If there is no license information in 
+    - the "GNU LGPL" for all other files. If there is no license information in
        some source file, that file is under the "GNU LGPL".
 
-  The "GNU LGPL" with "unRAR license restriction" means that you must follow both 
+  The "GNU LGPL" with "unRAR license restriction" means that you must follow both
   "GNU LGPL" rules and "unRAR license restriction" rules.
 
 
@@ -29509,7 +29520,7 @@ GNU LGPL information
     Lesser General Public License for more details.
 
     You should have received a copy of the GNU Lesser General Public
-    License along with this library; if not, 
+    License along with this library; if not,
     you can get a copy of the GNU Lesser General Public License from
     http://www.gnu.org/
 
@@ -30913,7 +30924,7 @@ The externally maintained libraries used by Node.js are:
   """
     SipHash reference C implementation
 
-    Copyright (c) 2016 Jean-Philippe Aumasson 
+    Copyright (c) 2016 Jean-Philippe Aumasson
 
     To the extent possible under law, the author(s) have dedicated all
     copyright and related and neighboring rights to this software to the public
@@ -31407,7 +31418,7 @@ The externally maintained libraries used by Node.js are:
 
 - ESLint, located at tools/node_modules/eslint, is licensed as follows:
   """
-    Copyright OpenJS Foundation and other contributors, 
+    Copyright OpenJS Foundation and other contributors,
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -31633,7 +31644,7 @@ The externally maintained libraries used by Node.js are:
   """
     ISC License
 
-    Copyright (c) 2012, Ben Noordhuis 
+    Copyright (c) 2012, Ben Noordhuis
 
     Permission to use, copy, modify, and/or distribute this software for any
     purpose with or without fee is hereby granted, provided that the above
@@ -31859,16 +31870,16 @@ are met:
 1. Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
 
-2. The origin of this software must not be misrepresented; you must 
-   not claim that you wrote the original software.  If you use this 
-   software in a product, an acknowledgment in the product 
+2. The origin of this software must not be misrepresented; you must
+   not claim that you wrote the original software.  If you use this
+   software in a product, an acknowledgment in the product
    documentation would be appreciated but is not required.
 
 3. Altered source versions must be plainly marked as such, and must
    not be misrepresented as being the original software.
 
-4. The name of the author may not be used to endorse or promote 
-   products derived from this software without specific prior written 
+4. The name of the author may not be used to endorse or promote
+   products derived from this software without specific prior written
    permission.
 
 THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
@@ -32614,7 +32625,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -32666,7 +32677,7 @@ Notices for file(s):
 /system/lib64/nlohmann_json_static.a
 Notices for software(s):
 Software: JSON for Modern C++
-MIT License 
+MIT License
 
 Copyright (c) 2013-2022 Niels Lohmann
 
@@ -33508,7 +33519,7 @@ convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the library's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -35460,7 +35471,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -35554,12 +35565,12 @@ Please note we provide an open source software notice along with this product an
 
 #### Software: UPnP SDK for Linux - libupnp 1.14.18
 
-##### Copyright notice: 
+##### Copyright notice:
 Copyright (c) 1996-2021 Free Software Foundation, Inc.
 
-Copyright (c) 2004 Scott James Remnant 
+Copyright (c) 2004 Scott James Remnant
 
-Copyright (c) 2012-2015 Dan Nicholson 
+Copyright (c) 2012-2015 Dan Nicholson
 
 Copyright (c) 2002-2021 Free Software Foundation, Inc.
 
@@ -35585,17 +35596,17 @@ Copyright (c) 2021 Free Software Foundation, Inc.
 
 Copyright (c) 2014 Free Software Foundation, Inc.
 
-Copyright (c) 2005-2007 Remi Turboult 
+Copyright (c) 2005-2007 Remi Turboult
 
 Copyright (c) 2000-2003 Intel Corporation
 
-Copyright (c) 2005 Remi Turboult 
+Copyright (c) 2005 Remi Turboult
 
 Copyright (c) 1994-2021 Free Software Foundation, Inc.
 
-Copyright (c) 2005-2006 Remi Turboult 
+Copyright (c) 2005-2006 Remi Turboult
 
-Copyright (c) 2006 Michel Pfeiffer and others 
+Copyright (c) 2006 Michel Pfeiffer and others
 
 Copyright (c) 2010-2021 Free Software Foundation, Inc.
 
@@ -35613,11 +35624,11 @@ Copyright (c) 2021 Vollstrecker (werner@vollstreckernet.de)
 
 Copyright (c) 2020 Marcelo Roberto Jimenez
 
-Copyright (c) 2005 Remi Turboult 
+Copyright (c) 2005 Remi Turboult
 
 Copyright (c) 2012 France Telecom
 
-Copyright (c) 2006 Remi Turboult 
+Copyright (c) 2006 Remi Turboult
 
 copyright (c) 1998 the designated
 
@@ -35625,13 +35636,13 @@ copyright (c) 1998 Rick Jelliffe and Computing Center, Academia
 
 Copyright 1998 Academia Sinica Computing Center
 
-Copyright (c) 2006 Guido U. Draheim 
+Copyright (c) 2006 Guido U. Draheim
 
-Copyright (c) 2008 Steven G. Johnson 
+Copyright (c) 2008 Steven G. Johnson
 
-Copyright (c) 2011 Daniel Richard G. 
+Copyright (c) 2011 Daniel Richard G.
 
-Copyright (c) 2008 Guido U. Draheim 
+Copyright (c) 2008 Guido U. Draheim
 
 Copyright (c) 1996-2001, 2003-2019, 2021-2022 Free Software Foundation, Inc.
 
@@ -35647,11 +35658,11 @@ Copyright (c) 2004-2005, 2007, 2009, 2011-2019, 2021-2022 Free Software Foundati
 
 Copyright (c) 2011-2012 France Telecom
 
-Copyright (c) 2006 Remi Turboult 
+Copyright (c) 2006 Remi Turboult
 
 Copyright (c) 2003-2008 aMule Team
 
-Copyright (c) 2007 Marcelo Roberto Jimenez 
+Copyright (c) 2007 Marcelo Roberto Jimenez
 
 Copyright (c) 1996-1999 by Internet Software Consortium
 
@@ -35661,13 +35672,13 @@ Copyright (c) 1989 by Hewlett-Packard Company, Palo Alto, Ca. & Digital Equipmen
 
 Copyright (c) 1998 Microsoft. To
 
-Copyright (c) 2018 Jean-Francois Dockes 
+Copyright (c) 2018 Jean-Francois Dockes
 
 
 
 ##### License: BSD 3-Clause License
 
-Copyright (c) , 
+Copyright (c) ,
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -35680,9 +35691,9 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-### Written Offer 
+### Written Offer
 
-This product contains software whose rights holders license it on the terms of the GNU General Public License, version 2 (GPLv2) and/or other open source software licenses. We will provide you and any third party with the source code of the software licensed under an open source software license if you send us a written request by mail or email to the following addresses: 
+This product contains software whose rights holders license it on the terms of the GNU General Public License, version 2 (GPLv2) and/or other open source software licenses. We will provide you and any third party with the source code of the software licensed under an open source software license if you send us a written request by mail or email to the following addresses:
 
 mobile@huawei.com
 
@@ -35694,7 +35705,7 @@ Please note you need to make a payment before you obtain the complete Correspond
 
 This offer is valid to anyone in receipt of this information.
 
-**THIS OFFER IS VALID FOR THREE YEARS FROM THE MOMENT WE DISTRIBUTED THE PRODUCT OR FIRMWARE.** 
+**THIS OFFER IS VALID FOR THREE YEARS FROM THE MOMENT WE DISTRIBUTED THE PRODUCT OR FIRMWARE.**
 
 
 
@@ -36169,7 +36180,7 @@ Section: pkg.m4 - Macros to locate and utilise pkg-config.
 
 
 Copyright © 2004 Scott James Remnant .
-Copyright © 2012-2015 Dan Nicholson 
+Copyright © 2012-2015 Dan Nicholson
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -36459,25 +36470,25 @@ Notices for file(s):
 Notices for software(s):
 Software: Khronos Group - OpenMAX IL
 /*
- * Copyright (c) 2016 The Khronos Group Inc. 
- * 
+ * Copyright (c) 2016 The Khronos Group Inc.
+ *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
  * "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish,
  * distribute, sublicense, and/or sell copies of the Software, and to
  * permit persons to whom the Software is furnished to do so, subject
- * to the following conditions: 
+ * to the following conditions:
  * The above copyright notice and this permission notice shall be included
- * in all copies or substantial portions of the Software. 
- * 
+ * in all copies or substantial portions of the Software.
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
  * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
  * CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+ * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
 
@@ -36951,7 +36962,7 @@ is licensed under:
 
  - the Apache License, Version 2.0, with the LLVM Exception
    <LICENSE-Apache-2.0_WITH_LLVM-exception> or
-   
+
  - the Apache License, Version 2.0
     or
    ,
@@ -37448,7 +37459,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -37633,7 +37644,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -37949,8 +37960,8 @@ safest to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
-    
-    Copyright (C)   
+
+    Copyright (C)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Library General Public
@@ -38191,7 +38202,7 @@ Software: OpenCV
 Copyright (c) 1988-1997 Sam Leffler
 Copyright (c) 1991-1997 Silicon Graphics, Inc.
 
-Permission to use, copy, modify, distribute, and sell this software and 
+Permission to use, copy, modify, distribute, and sell this software and
 its documentation for any purpose is hereby granted without fee, provided
 that (i) the above copyright notices and this permission notice appear in
 all copies of the software and related documentation, and (ii) the names of
@@ -38199,15 +38210,15 @@ Sam Leffler and Silicon Graphics may not be used in any advertising or
 publicity relating to the software without the specific, prior written
 permission of Sam Leffler and Silicon Graphics.
 
-THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND, 
-EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY 
-WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  
+THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND,
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 
 IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR
 ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,
 OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
-WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF 
-LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
+WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF
+LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE
 OF THIS SOFTWARE.
 
 
@@ -38479,7 +38490,7 @@ is licensed under:
 
  - the Apache License, Version 2.0, with the LLVM Exception
    <LICENSE-Apache-2.0_WITH_LLVM-exception> or
-   
+
  - the Apache License, Version 2.0
     or
    ,
@@ -39395,14 +39406,14 @@ Copyright: 2012, Canonical Ltd
 License: GPL-3
 
 Files: filter/pdf.h
-Copyright: 2018, Sahil Arora 
+Copyright: 2018, Sahil Arora
   2012, Canonical Ltd
 License: GPL-3
 
 Files: filter/bannertopdf.c
   filter/pdf.cxx
-Copyright: 2018, Sahil Arora 
-  2013, ALT Linux, Andrew V. Stepanov 
+Copyright: 2018, Sahil Arora
+  2013, ALT Linux, Andrew V. Stepanov
   2012, Canonical Ltd
 License: GPL-3
 
@@ -39410,7 +39421,7 @@ Files: filter/braille/*
  drv/generic-brf.drv
  drv/indexv*.drv
  mime/braille.*
-Copyright: 2015, Samuel Thibault 
+Copyright: 2015, Samuel Thibault
 License: Expat
 
 Files: filter/commandtoescpx.c
@@ -39436,8 +39447,8 @@ Copyright: 2007-2011, Apple Inc
 License: GPL-2
 
 Files: filter/foomatic-rip/*
-Copyright: 2008, Till Kamppeter 
-  2008, Lars Karlitski (formerly Übernickel) 
+Copyright: 2008, Till Kamppeter
+  2008, Lars Karlitski (formerly Übernickel)
 License: GPL-2+
 
 Files: filter/getline.c
@@ -39486,21 +39497,21 @@ Copyright: 2008, Tobias Hoffmann
 License: GPL-2
 
 Files: filter/rastertopclm
-Copyright: 2017 Sahil Arora 
+Copyright: 2017 Sahil Arora
 License: GPL-2+
 
 Files: filter/rastertopdf.cpp
-Copyright: 2010, Neil 'Superna' Armstrong 
- 2012 Tobias Hoffmann 
- 2014 Till Kamppeter 
- 2017 Sahil Arora 
+Copyright: 2010, Neil 'Superna' Armstrong
+ 2012 Tobias Hoffmann
+ 2014 Till Kamppeter
+ 2017 Sahil Arora
 License: GPL-3+
 
 Files: filter/rastertops.c
-Copyright: 2016 Pranjal Bhor 
- 2010 Neil 'Superna' Armstrong 
- 2012 Tobias Hoffmann 
- 2014 Till Kamppeter 
+Copyright: 2016 Pranjal Bhor
+ 2010 Neil 'Superna' Armstrong
+ 2012 Tobias Hoffmann
+ 2014 Till Kamppeter
 License: GPL-3+
 
 Files: filter/strcasestr.c
@@ -39529,16 +39540,16 @@ Copyright: 2008, 2012, Tobias Hoffmann
 License: GPL-2
 
 Files: filter/texttops filter/imagetops filter/gstopxl filter/gstopdf
-Copyright: 2012 Till Kamppeter 
+Copyright: 2012 Till Kamppeter
 License: GPL-2+
 
 Files: filter/unirast.h
-Copyright: 2010, Neil 'Superna' Armstrong 
+Copyright: 2010, Neil 'Superna' Armstrong
 License: GPL-3+
 
 Files: filter/urftopdf.cpp
-Copyright: 2010, Neil 'Superna' Armstrong 
- 2012 Tobias Hoffmann 
+Copyright: 2010, Neil 'Superna' Armstrong
+ 2012 Tobias Hoffmann
 License: GPL-3+
 
 Files: fontembed/*
@@ -39976,7 +39987,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -40323,10 +40334,10 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 19yy  
+    Copyright (C) 19yy
 
     This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License (version 2) 
+    it under the terms of the GNU General Public License (version 2)
     as published by the Free Software Foundation.
 
     This program is distributed in the hope that it will be useful,
@@ -41066,7 +41077,7 @@ convey the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C)   
+    Copyright (C)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -41120,44 +41131,44 @@ Notices for file(s):
 Notices for software(s):
 Software: mksh
 Copyright © 2020mirabilos <m@mirbsd.org>
-Copyright © 2011, 2014, 2015mirabilos 
-Copyright © 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020mirabilos 
-Copyright © 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020mirabilos 
-Copyright (c) 2013, 2015mirabilos 
-Copyright (c) 2016, 2020mirabilos 
-Copyright (c) 2017, 2020mirabilos 
-Copyright (c) 2017Giacomo Tesio 
-Copyright (c) 2015Daniel Richard G. 
-Copyright (c) 2013, 2015, 2019mirabilos 
-Copyright (c) 2013, 2015, 2020mirabilos 
-Copyright (c) 1998Todd C. Miller 
-Copyright (c) 2006, 2008, 2009, 2013mirabilos 
-Copyright (c) 2013, 2014, 2015, 2017mirabilos 
-Copyright (c) 2015, 2017, 2020KO Myung-Hun 
-Copyright (c) 2009, 2010, 2015, 2016, 2020mirabilos 
-Copyright (c) 2009, 2011, 2012, 2016, 2018mirabilos 
-Copyright (c) 2009, 2010, 2011, 2013, 2014, 2016mirabilos 
-Copyright (c) 2008, 2009, 2010, 2012, 2013, 2015, 2016, 2017, 2018mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2014, 2015, 2017mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016, 2017mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2015, 2016, 2017, 2018, 2019mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2015, 2016, 2017, 2018, 2019mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2020mirabilos 
-Copyright (c) 2002, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019mirabilos 
-Copyright (c) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020mirabilos 
-Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020mirabilos 
+Copyright © 2011, 2014, 2015mirabilos
+Copyright © 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020mirabilos
+Copyright © 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020mirabilos
+Copyright (c) 2013, 2015mirabilos
+Copyright (c) 2016, 2020mirabilos
+Copyright (c) 2017, 2020mirabilos
+Copyright (c) 2017Giacomo Tesio
+Copyright (c) 2015Daniel Richard G.
+Copyright (c) 2013, 2015, 2019mirabilos
+Copyright (c) 2013, 2015, 2020mirabilos
+Copyright (c) 1998Todd C. Miller
+Copyright (c) 2006, 2008, 2009, 2013mirabilos
+Copyright (c) 2013, 2014, 2015, 2017mirabilos
+Copyright (c) 2015, 2017, 2020KO Myung-Hun
+Copyright (c) 2009, 2010, 2015, 2016, 2020mirabilos
+Copyright (c) 2009, 2011, 2012, 2016, 2018mirabilos
+Copyright (c) 2009, 2010, 2011, 2013, 2014, 2016mirabilos
+Copyright (c) 2008, 2009, 2010, 2012, 2013, 2015, 2016, 2017, 2018mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2014, 2015, 2017mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016, 2017mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2015, 2016, 2017, 2018, 2019mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2015, 2016, 2017, 2018, 2019mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2020mirabilos
+Copyright (c) 2002, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019mirabilos
+Copyright (c) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020mirabilos
+Copyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020mirabilos
 
 
 mksh is covered by The MirOS Licence:
 
 /*-
  * Copyright (c) 2009, 2010, 2011, 2013, 2014, 2016
- *	mirabilos 
+ *	mirabilos
  *
  * Provided that these terms and disclaimer and all copyright notices
  * are retained or reproduced in an accompanying document, permission
@@ -41582,7 +41593,7 @@ Copyright (c) 2016, Microsoft Corporation, All rights reserved
 Copyright (c) 2010 Spectra Logic Corporation
 Copyright (c) 2016-2018, Intel Corporation. All rights reserved
 Copyright (c) 2011 - 2014, ARM Limited. All rights reserved
-(c) 2019, Pete Batard 
+(c) 2019, Pete Batard
 Copyright (c) 2020, Linaro, Ltd. All rights reserved
 Copyright (c) 2006 - 2008, Intel Corporation. All rights reserved
 Copyright (c) 2015, Hewlett-Packard Development Company, L.P.
@@ -41643,7 +41654,7 @@ Copyright 2016-2018 Dell Technologies
 Copyright (c) 2012 - 2020, ARM Limited. All rights reserved
 Copyright (c) 2022, Baruch Binyamin Doron
 Copyright (c) 2009 - 2018, Intel Corporation. All rights reserved
-Copyright (c) 2022, Konstantin Aladyshev 
+Copyright (c) 2022, Konstantin Aladyshev
 Copyright (c) 2007 - 2009, Intel Corporation. All rights reserved
 Copyright (c) Huawei Technologies Co., Ltd. All rights reserved
 Copyright (c) 2017 - 2022, ARM Limited. All rights reserved
@@ -41696,7 +41707,7 @@ Copyright (c) 2006 - 2010, Intel Corporation. All rights reserved
 Copyright (c) 2016 Microsoft Corporation. All Rights Reserved
 Copyright (c) 2018, American Megatrends, Inc. All rights reserved
 Copyright (c) 2013, Linaro Limited All rights reserved
-Copyright (c) 2019, Pete Batard 
+Copyright (c) 2019, Pete Batard
 Copyright (c) 2011-2015, ARM Limited. All rights reserved
 Copyright (c) 2010 - 2021, Intel Corporation. All rights reserved
 Copyright (c) 2014 - 2017, Intel Corporation. All rights reserved
@@ -41712,7 +41723,7 @@ Copyright (c) 2022, Pedro Falcato. All rights reserved
 (c) Copyright 2016-2017 Hewlett Packard Enterprise Development LP
 Copyright (c) 2008 - 2020, Intel Corporation. All rights reserved
 (c) Copyright 2016-2019 Hewlett Packard Enterprise Development LP
-Copyright (c) 2018, Andrei Warkentin 
+Copyright (c) 2018, Andrei Warkentin
 Copyright (c) 2008 - 2010, Intel Corporation. All rights reserved
 Copyright (c) 2011 - 2021, Intel Corporation. All rights reserved
 Copyright (c) 2013, ARM Ltd.
@@ -41734,7 +41745,7 @@ Copyright (c) 2011 - 2020, Intel Corporation. All rights reserved
 Copyright (c) 2008 - 2021, Intel Corporation. All rights reserved
 Copyright (c) 2008 - 2009, Intel Corporation. All rights reserved
 Copyright (c) 2014-2015, ARM Limited. All rights reserved
-Copyright (c) 2011, Andrei Warkentin 
+Copyright (c) 2011, Andrei Warkentin
 Portions copyright (c) 2013, ARM Ltd. All rights reserved
 Copyright (c) 2012-2015, ARM Ltd. All rights reserved
 Copyright (c) 2012-2015, ARM Limited. All rights reserved
@@ -41747,7 +41758,7 @@ Copyright 2010-2020 The OpenSSL Project Authors. All Rights Reserved
 Copyright (c) 2018 - 2021, Arm Limited. All rights reserved
 Copyright (c) 2015, ARM Ltd. All rights reserved
 Copyright (c) 2015 - 2016, Intel Corporation. All rights reserved
-Copyright (c) 2012, Bei Guan 
+Copyright (c) 2012, Bei Guan
 Copyright (c) 2009 - 2019, Intel Corporation. All rights reserved
 Copyright (c) 2020, ByoSoft Corporation. All rights reserved
 Copyright (c) 2009, Hewlett-Packard Company. All rights reserved
@@ -41807,7 +41818,7 @@ Copyright (c) 2020 - 2021, NUVIA Inc. All rights reserved
 Copyright 2012 Kim Phillips, Freescale Semiconductor
 Copyright (c) 2014 - 2021, Intel Corporation. All rights reserved
 Copyright (c) 2018, Red Hat Inc.
-Copyright (c) 2014 David Gibson 
+Copyright (c) 2014 David Gibson
 Copyright (c) 1998 John D. Polstra. All rights reserved
 Copyright (c) 2009 - 2022, Intel Corporation. All rights reserved
 Copyright (c) 2014 - 2021, ARM Ltd. All rights reserved
@@ -41909,7 +41920,7 @@ Copyright (c) 2020, SUSE LLC.
 Copyright (c) 2021, Advanced Micro Devices, Inc. All rights reserved
 Copyright (c) 2013, ARM Ltd
 Copyright (c) 2014-2018, Linaro Limited. All rights reserved
-Copyright (c) 2011, Bei Guan 
+Copyright (c) 2011, Bei Guan
 Copyright (c) 2014, ARM Limited All rights Reserved
 Copyright (c) 2017-2021, Arm Limited. All rights reserved
 Copyright (c) 2019, NVIDIA Corporation. All rights reserved
@@ -42016,7 +42027,7 @@ Copyright 2004-2020 The OpenSSL Project Authors. All Rights Reserved
 Copyright (c) 2018-2019, NVIDIA CORPORATION. All rights reserved
 Copyright (c) 1985 - 2022, American Megatrends International LLC.
 Copyright (c) 2006 - 2015, Intel Corporation. All rights reserved
-Copyright (c) 2014-2017 Paulo Alcantara 
+Copyright (c) 2014-2017 Paulo Alcantara
 Copyright (c) 2021, Hewlett Packard Enterprise Development LP. All rights reserved
 Copyright (c) 2020, Red Hat, Inc.
 Copyright (c) 2015, Nahanni Systems
@@ -42053,7 +42064,7 @@ Copyright (c) 2020, American Megatrends International LLC. All rights reserved
 Copyright (c) 2020 - 2021, Ampere Computing LLC. All rights reserved
 Copyright (c) 2017 - 2019, Intel Corporation. All rights reserved
 Copyright (c) 2005 - 2018, Intel Corporation. All rights reserved
-Copyright (c) 2020, Rebecca Cran 
+Copyright (c) 2020, Rebecca Cran
 Copyright (c) 2006, Cambridge University
 Copyright (c) 2018, ARM Limited. All rights reserved
 Copyright (c) 2014 - 2016, Linaro Ltd. All rights reserved
@@ -42107,7 +42118,7 @@ Copyright (c) 2018, Linaro Ltd. All rights reserved
 Copyright (c) 2019, Red Hat, Inc.
 Copyright 2007-2020 The OpenSSL Project Authors. All Rights Reserved
 Copyright (c) 2011 - 2020, Arm Limited. All rights reserved
-Copyright (c) 2009-2016 Petri Lehtinen 
+Copyright (c) 2009-2016 Petri Lehtinen
 Copyright (c) 2011, Apple, Inc. All rights reserved
 Copyright 2008 by Intel(R) Corporation
 Copyright (c) 2020, Citrix Systems, Inc.
@@ -42119,7 +42130,7 @@ Copyright (c) 2021, Semihalf All rights reserved
 Copyright (c) 2005 - 2006, Intel Corporation. All rights reserved
 Copyright (c) 2019 - 2020, Arm Limited. All rights reserved
 Copyright 2014 Apple Inc. All rights reserved
-Copyright (c) 2014, Gabriel L. Somlo 
+Copyright (c) 2014, Gabriel L. Somlo
 Copyright (c) 2015, Intel Corporation. All rights reserved
 Copyright (c) 2016 - 2018, ARM Limited. All rights reserved
 License: BSD-2-Clause Plus Patent
@@ -42131,7 +42142,7 @@ Copyright notice:
 Copyright (c) 2015 Andrew Gallant
 License: MIT License
 The MIT License
-Copyright (c) <year> 
+Copyright (c) <year>
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -47266,16 +47277,16 @@ Copyright (c) 2021 Huawei Technologies Co.,Ltd. All rights reserved
 Copyright (c) Erick Tryzelaar <erick.tryzelaar@gmail.com>
 Copyright (c) 2022 Huawei Technologies Co.,Ltd.
 Copyright (c) 2022 Huawei Technologies Co.,Ltd. All rights reserved
-Copyright (c) David Tolnay 
+Copyright (c) David Tolnay
 Copyright (c) 2017 arc-swap
 Copyright 2015 The Rust Project
 Copyright 2017 The Chromium OS Authors. All rights reserved
 Copyright (c) 2019 Intel Corporation. All Rights Reserved
 Copyright (c) 2015 David Cuddeback
-Copyright (c) Aleksey Kladov 
+Copyright (c) Aleksey Kladov
 Copyright (c) 2019 Alibaba Cloud Computing. All rights reserved
 Copyright (c) 2023 Huawei Technologies Co.,Ltd. All rights reserved
-Copyright (c) Alex Crichton 
+Copyright (c) Alex Crichton
 Copyright 2019 Intel Corporation. All Rights Reserved
 Portions Copyright 2017 The Chromium OS Authors. All rights reserved
 Copyright (c) 2015 Andrew Gallant
@@ -47301,16 +47312,16 @@ Copyright (c) 2021 Huawei Technologies Co.,Ltd. All rights reserved
 Copyright (c) Erick Tryzelaar <erick.tryzelaar@gmail.com>
 Copyright (c) 2022 Huawei Technologies Co.,Ltd.
 Copyright (c) 2022 Huawei Technologies Co.,Ltd. All rights reserved
-Copyright (c) David Tolnay 
+Copyright (c) David Tolnay
 Copyright (c) 2017 arc-swap
 Copyright 2015 The Rust Project
 Copyright 2017 The Chromium OS Authors. All rights reserved
 Copyright (c) 2019 Intel Corporation. All Rights Reserved
 Copyright (c) 2015 David Cuddeback
-Copyright (c) Aleksey Kladov 
+Copyright (c) Aleksey Kladov
 Copyright (c) 2019 Alibaba Cloud Computing. All rights reserved
 Copyright (c) 2023 Huawei Technologies Co.,Ltd. All rights reserved
-Copyright (c) Alex Crichton 
+Copyright (c) Alex Crichton
 Copyright 2019 Intel Corporation. All Rights Reserved
 Portions Copyright 2017 The Chromium OS Authors. All rights reserved
 Copyright (c) 2015 Andrew Gallant
@@ -47346,7 +47357,7 @@ Copyright (c) 2012-2020 Red Hat, Inc.
 Copyright 2017-2022 Red Hat, Inc. and/or its affiliates
 Copyright (c) 2016 Parallels IP Holdings GmbH
 Copyright (c) 2001-2008 Miklos Szeredi <miklos@szeredi.hu>
-Copyright (c) 2007 Free Software Foundation, Inc. 
+Copyright (c) 2007 Free Software Foundation, Inc.
 Copyright (c) 2019-2020 Red Hat, Inc.
 copyright show 2017
 Copyright (c) 2001-2007 Miklos Szeredi
