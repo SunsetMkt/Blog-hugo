@@ -17,7 +17,7 @@ title: 寂静之城 马伯庸
 >
 > maybe more.
 >
-> People tal king without speaking,
+> People talking without speaking,
 >
 > people hearing without listening.
 >
