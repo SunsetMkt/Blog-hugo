@@ -62,6 +62,8 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 [Microsoft C++ 生成工具](https://visualstudio.microsoft.com/visual-cpp-build-tools/)或许也有用。
 
+阅读[Rust 文档关于此步骤的说明](https://rust-lang.github.io/rustup/installation/windows-msvc.html)。
+
 > When installing build tools, these two components should be selected:
 >
 > - MSVC - VS C++ x64/x86 build tools
