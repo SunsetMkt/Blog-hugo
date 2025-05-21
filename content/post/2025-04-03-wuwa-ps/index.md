@@ -448,6 +448,41 @@ while ($true) {
 }
 ```
 
+#### 以管理员权限运行`launcher.exe`
+
+```pwsh
+# 获取当前脚本完整路径
+$scriptPath = $MyInvocation.MyCommand.Path
+
+# 检查是否以管理员身份运行
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    # 不是管理员，尝试以管理员权限重新运行脚本自身
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName = "powershell.exe"
+    $psi.Arguments = "-ExecutionPolicy Bypass -File `"$scriptPath`""
+    $psi.Verb = "runas"  # 请求管理员权限
+    try {
+        [System.Diagnostics.Process]::Start($psi) | Out-Null
+    }
+    catch {
+        Write-Host "Cannot run the script as an administrator."
+    }
+    exit
+}
+
+Write-Host "Running the target program as an administrator..."
+
+# 设置目标可执行文件路径
+$exePath = "D:\WuWaPS\client\Client\Binaries\Win64\launcher.exe"
+
+# 获取可执行文件所在目录并切换到该目录
+$exeDir = Split-Path -Path $exePath -Parent
+Set-Location -Path $exeDir
+
+# 启动目标程序
+Start-Process $exePath
+```
+
 ## 扩充资料
 
 **请勿混用不同教程。**
