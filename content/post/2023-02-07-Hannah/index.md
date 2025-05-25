@@ -2,12 +2,14 @@
 categories: Original
 date: 2023-02-07T00:00:00Z
 tags:
-  - SCP基金会
+    - SCP基金会
 slug: Hannah
 title: 有关 SCP 基金会中文社区部分管理行为的不完全且可能有偏见的讨论
 ---
 
 > 联合作者：Sunset，unknown，9c5a446d7852de572f319257dc58776e0a72937b8d4dd6cebf286693246f04a5，Melancholie（按第一次提供意见顺序排序）
+>
+> 阅读更新的简洁版本：[SCP 基金会中文站作者 Hannah_AI 的封禁争议]({{< ref "2025-03-23-Hannah-tldr" >}})
 
 ## 在一切之前
 
