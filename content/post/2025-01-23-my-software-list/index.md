@@ -91,6 +91,7 @@ title: 我的软件清单
 - API 抓包调试 [Reqable](https://reqable.com/zh-CN/)
 - Android 提权 [Magisk](https://github.com/topjohnwu/Magisk)
 - 基于内核的 Android 提权 [KernelSU](https://github.com/tiann/KernelSU)
+- JavaScript 反混淆 [webcrack](https://github.com/j4k0xb/webcrack)
 
 ## 虚拟化
 
