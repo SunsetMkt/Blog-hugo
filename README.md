@@ -10,7 +10,8 @@ Blog refactored.
 scoop install main/go
 scoop install main/hugo-extended
 hugo mod get
-hugo --minify --gc --logLevel info
+# hugo --minify --gc --logLevel info
+hugo --gc --logLevel info
 ```
 
 ## Migration notes
@@ -60,18 +61,14 @@ MDN suggests "A WebM container using the VP9 codec for video and the Opus codec 
 ## Cloudflare Pages enforce file size
 
 ```bash
-git fetch --unshallow && hugo --minify --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \;
+git fetch --unshallow && hugo --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \;
 # The maximum file size for a single Cloudflare Pages site asset is 25 MiB.
 # https://developers.cloudflare.com/pages/platform/limits/
 # With metrics and more info:
-git fetch --unshallow && hugo --minify --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates && find public -type f -size +25M -print -exec rm -vf {} \;
+git fetch --unshallow && hugo --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates && find public -type f -size +25M -print -exec rm -vf {} \;
 ```
 
 ## Template Metrics
-
-The OG images are built on the fly, so the build time is much longer (about 6 minutes) than usual Hugo sites.
-
-But if you are still curious about the time consumption, you can run:
 
 ```bash
 hugo --templateMetrics --templateMetricsHints

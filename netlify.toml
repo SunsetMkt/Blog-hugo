@@ -5,4 +5,4 @@ GO_VERSION = "1.23.3"
 
 [build]
 publish = "public"
-command = "hugo --minify --gc --logLevel info"
+command = "hugo --gc --logLevel info"

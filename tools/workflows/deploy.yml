@@ -52,7 +52,7 @@ jobs:
               uses: actions/configure-pages@v4
 
             - name: Build
-              run: hugo --minify --gc --logLevel info
+              run: hugo --gc --logLevel info
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3

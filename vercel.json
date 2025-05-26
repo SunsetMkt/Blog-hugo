@@ -1,5 +1,5 @@
 {
-    "buildCommand": "hugo --minify --gc --logLevel info",
+    "buildCommand": "hugo --gc --logLevel info",
     "installCommand": "dnf install -y golang",
     "devCommand": "hugo server -D -w -p $PORT",
     "outputDirectory": "public"
