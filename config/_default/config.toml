@@ -32,4 +32,4 @@ mediatype = "application/rss"
 baseName = "feed"
 
 [services.rss]
-limit = 15
+limit = 10
