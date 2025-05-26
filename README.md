@@ -72,6 +72,8 @@ git fetch --unshallow && hugo --gc --logLevel debug --templateMetrics --template
 
 **It turns out that `--minify` takes the longest time, especially for XML.**
 
+Actually, the long build time is caused by very long markdown content, very long XML feed and minify.
+
 ```bash
 hugo --templateMetrics --templateMetricsHints
 ```

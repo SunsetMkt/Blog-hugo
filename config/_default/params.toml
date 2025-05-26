@@ -67,7 +67,7 @@ card = "summary_large_image"
 enabled = true
 local = true
 src = "ogimage/og_base.png"
-generate = false # 分支特性：基于 src 图片和页面信息生成 ogimage
+generate = true # 分支特性：基于 src 图片和页面信息生成 ogimage
 
 [colorScheme]
 toggle = true
