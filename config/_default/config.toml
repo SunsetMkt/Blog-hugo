@@ -28,8 +28,8 @@ disqusShortname = "sunset-blog-hugo"
 pagerSize = 10
 
 [outputFormats.RSS]
-mediatype = "application/rss"
+# mediatype = "application/rss"
 baseName = "feed"
 
 [services.rss]
-limit = 10
+limit = 10 # RSS 仅包含最近的 10 篇
