@@ -30,3 +30,6 @@ pagerSize = 10
 [outputFormats.RSS]
 mediatype = "application/rss"
 baseName = "feed"
+
+[services.rss]
+limit = 15
