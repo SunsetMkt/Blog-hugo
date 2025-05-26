@@ -53,7 +53,7 @@
     {{- end -}}
 {{- end -}}
 
-{{- if .IsPage -}}
+{{- if and .IsPage .Site.Params.defaultImage.opengraph.generate -}}
     <!-- https://aarol.dev/posts/hugo-og-image/ -->
     {{ $base := resources.Get "/ogimage/og_base.png" }}
     {{ $boldFont := resources.Get "/ogimage/HarmonyOS_SansSC_Bold.ttf" }}

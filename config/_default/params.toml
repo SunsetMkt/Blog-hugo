@@ -67,6 +67,7 @@ card = "summary_large_image"
 enabled = true
 local = true
 src = "ogimage/og_base.png"
+generate = false # 分支特性：生成 ogimage，严重延长构建时间
 
 [colorScheme]
 toggle = true

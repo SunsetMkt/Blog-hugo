@@ -13,7 +13,7 @@
     {{ printf "content=%q" $description | safeHTMLAttr }}
 />
 
-{{- if .IsPage -}}
+{{- if and .IsPage .Site.Params.defaultImage.opengraph.generate -}}
     <!-- https://aarol.dev/posts/hugo-og-image/ -->
     <!-- Already generated in base.html -->
     {{- $img := path.Join .Page.RelPermalink "ogimage_hugo_generated.png" -}}
