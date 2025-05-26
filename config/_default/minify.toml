@@ -1,0 +1,36 @@
+# https://gohugo.io/configuration/minify/
+disableCSS = false
+disableHTML = false
+disableJS = false
+disableJSON = false
+disableSVG = false
+disableXML = true # Takes long to build
+minifyOutput = true
+[tdewolff]
+[tdewolff.css]
+inline = false
+keepCSS2 = true
+precision = 0
+[tdewolff.html]
+keepComments = false
+keepConditionalComments = false
+keepDefaultAttrVals = true
+keepDocumentTags = true
+keepEndTags = true
+keepQuotes = false
+keepSpecialComments = true
+keepWhitespace = false
+templateDelims = ['', '']
+[tdewolff.js]
+keepVarNames = false
+precision = 0
+version = 2022
+[tdewolff.json]
+keepNumbers = false
+precision = 0
+[tdewolff.svg]
+inline = false
+keepComments = false
+precision = 0
+[tdewolff.xml]
+keepWhitespace = false
