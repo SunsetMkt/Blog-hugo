@@ -70,6 +70,8 @@ git fetch --unshallow && hugo --gc --logLevel debug --templateMetrics --template
 
 ## Template Metrics
 
+**It turns out that `--minify` takes the longest time.**
+
 ```bash
 hugo --templateMetrics --templateMetricsHints
 ```
