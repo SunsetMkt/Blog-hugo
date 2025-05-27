@@ -11,4 +11,4 @@ title: HarmonyOS NEXT 的开源许可
 
 下面的许可信息是从一部华为 Mate 70 Pro 中复制的。
 
-{{< embed-office-iframe file="license.txt" >}}
+{{< embed-monaco-iframe file="license.txt" >}}

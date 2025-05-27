@@ -1,0 +1,44 @@
+{{ $uniqueID := substr (.Get "file" | md5) 0 8 }}
+{{ $monacoFile := .Get "file" }}
+
+
+<div>
+    <p>
+        <a href="#" id="embed-monaco-download-{{ $uniqueID }}" download>下载文档</a>
+        |
+        <a
+            href="/tools/embeddable-monaco/index.html?fileUrl="
+            target="_blank"
+            id="embed-monaco-link-{{ $uniqueID }}"
+            >在新页面打开</a
+        >
+    </p>
+    <iframe
+        src="/tools/embeddable-monaco/index.html?fileUrl="
+        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        id="embed-monaco-iframe-{{ $uniqueID }}"
+    ></iframe>
+  <script>
+    (function () {
+      var uniqueID = "{{ $uniqueID }}";
+      var filepath = "{{ $monacoFile }}";
+      var iframe = document.getElementById("embed-monaco-iframe-" + uniqueID);
+      var link = document.getElementById("embed-monaco-link-" + uniqueID);
+      var download = document.getElementById("embed-monaco-download-" + uniqueID);
+      var currentPageLocation = window.location.toString();
+      if (currentPageLocation.endsWith("/") == false) {
+        currentPageLocation += "/";
+      }
+      if (filepath.includes("://")) {
+        var src = filepath;
+      } else {
+        var src = currentPageLocation + filepath;
+      }
+      src = encodeURI(src);
+      var href = "/tools/embeddable-monaco/index.html?fileUrl=" + src;
+      iframe.src = href;
+      link.href = href;
+      download.href = src;
+    })();
+  </script>
+</div>

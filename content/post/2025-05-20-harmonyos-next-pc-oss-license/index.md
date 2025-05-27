@@ -11,4 +11,4 @@ title: HarmonyOS NEXT PC 的开源许可
 
 下面的许可信息是从一部华为 MateBook Pro 中复制的。
 
-{{< embed-office-iframe file="license.txt" >}}
+{{< embed-monaco-iframe file="license.txt" >}}
