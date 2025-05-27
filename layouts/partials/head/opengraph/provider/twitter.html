@@ -16,7 +16,9 @@
 {{- if and .IsPage .Site.Params.defaultImage.opengraph.generate -}}
     <!-- https://aarol.dev/posts/hugo-og-image/ -->
     <!-- Already generated in base.html -->
-    {{- $img := path.Join .Page.RelPermalink "ogimage_hugo_generated.png" -}}
+    {{ $url := urls.Parse .Page.RelPermalink }}
+    {{ $path := $url.Path }}
+    {{- $img := path.Join $path "ogimage_hugo_generated.png" -}}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="{{ absURL $img }}" />
 {{- else }}
