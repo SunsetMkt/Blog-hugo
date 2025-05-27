@@ -62,7 +62,8 @@ export interface AVPlayerOptions {
      */
     getWasm?: (type: 'decoder' | 'resampler' | 'stretchpitcher', codecId?: AVCodecID, mediaType?: AVMediaType) => string | ArrayBuffer | WebAssemblyResource;
     /**
-     * 是否是直播
+     * 是否是直播（已弃用，请在 load 方法中传递参数）
+     * @deprecated
      */
     isLive?: boolean;
     /**
@@ -183,6 +184,7 @@ export interface AVPlayerPlayOptions {
     subtitle?: boolean;
 }
 export declare const AVPlayerSupportedCodecs: AVCodecID[];
+export declare const AVPlayerMSESupportedCodecs: AVCodecID[];
 export declare const enum AVPlayerStatus {
     STOPPED = 0,
     DESTROYING = 1,

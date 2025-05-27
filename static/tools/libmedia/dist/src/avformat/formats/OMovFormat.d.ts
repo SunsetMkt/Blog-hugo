@@ -1,15 +1,23 @@
 import OFormat from './OFormat';
 import AVPacket from 'avutil/struct/avpacket';
 import { AVOFormatContext } from '../AVFormatContext';
-import { MovFormatOptions } from './mov/type';
+import { FragmentMode, MovMode } from './mov/mov';
 import { AVFormat } from 'avutil/avformat';
+export interface OMovFormatOptions {
+    fragmentMode?: FragmentMode;
+    movMode?: MovMode;
+    fragment?: boolean;
+    fastOpen?: boolean;
+    defaultBaseIsMoof?: boolean;
+    ignoreEditlist?: boolean;
+}
 export default class OMovFormat extends OFormat {
     type: AVFormat;
     private context;
-    options: MovFormatOptions;
+    options: OMovFormatOptions;
     private annexb2AvccFilter;
     private avpacket;
-    constructor(options?: MovFormatOptions);
+    constructor(options?: OMovFormatOptions);
     init(formatContext: AVOFormatContext): number;
     destroy(formatContext: AVOFormatContext): Promise<void>;
     private enableStreams;

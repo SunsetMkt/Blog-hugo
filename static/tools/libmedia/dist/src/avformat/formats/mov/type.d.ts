@@ -1,6 +1,5 @@
 import IOWriter from 'common/io/IOWriterSync';
 import { BoxType } from './boxType';
-import { FragmentMode, MovMode } from './mov';
 export interface BoxsPositionSizeInfo {
     pos: bigint;
     type: BoxType;
@@ -138,14 +137,6 @@ export interface MOVStreamContext {
     perStreamGrouping: boolean;
     index: number;
     flags: number;
-}
-export interface MovFormatOptions {
-    fragmentMode?: FragmentMode;
-    movMode?: MovMode;
-    fragment?: boolean;
-    fastOpen?: boolean;
-    defaultBaseIsMoof?: boolean;
-    ignoreEditlist?: boolean;
 }
 export interface ElstEntry {
     segmentDuration: int64;

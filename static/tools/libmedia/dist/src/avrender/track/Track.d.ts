@@ -13,7 +13,7 @@ export default class Track {
     onEnded?: () => void;
     constructor(options?: TrackOptions);
     setSourceBuffer(sourceBuffer: SourceBuffer): void;
-    changeMimeType(type: string): void;
+    changeMimeType(type: string, mode: AppendMode): void;
     enqueue(): void;
     addBuffer(buffer: Uint8Array, callback?: () => void): void;
     insertEnqueueCallback(callback: () => void): void;

@@ -27,6 +27,8 @@ type SelfTask = Omit<AudioDecodeTaskOptions, 'resource'> & {
     avframePool: AVFramePoolImpl;
     avpacketPool: AVPacketPool;
     wasmDecoderOptions?: Data;
+    pending?: Promise<void>;
+    pendingResolve?: () => void;
 };
 export default class AudioDecodePipeline extends Pipeline {
     tasks: Map<string, SelfTask>;
@@ -36,6 +38,7 @@ export default class AudioDecodePipeline extends Pipeline {
     private pullAVPacketInternal;
     private createTask;
     open(taskId: string, parameters: AVCodecParametersSerialize | pointer<AVCodecParameters>, wasmDecoderOptions?: Data): Promise<number>;
+    beforeReopenDecoder(taskId: string): Promise<void>;
     reopenDecoder(taskId: string, parameters: AVCodecParametersSerialize | pointer<AVCodecParameters>, resource?: string | ArrayBuffer | WebAssemblyResource, wasmDecoderOptions?: Data): Promise<number>;
     resetTask(taskId: string): Promise<void>;
     registerTask(options: AudioDecodeTaskOptions): Promise<number>;

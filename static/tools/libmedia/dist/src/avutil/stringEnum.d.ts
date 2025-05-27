@@ -11,6 +11,9 @@ export declare const CodecId2MimeType: {
     86076: string;
     65542: string;
     65543: string;
+    86019: string;
+    86056: string;
+    86020: string;
     225: string;
     27: string;
     173: string;

@@ -32,6 +32,7 @@ type SelfTask = DemuxTaskOptions & {
     iBuffer: pointer<uint8>;
     oBuffer: pointer<uint8>;
     cacheAVPackets: Map<number, pointer<AVPacketRef>[]>;
+    pendingAVPackets: Map<number, pointer<AVPacketRef>[]>;
     cacheRequests: Map<number, RpcMessage>;
     streamIndexFlush: Map<number, boolean>;
     realFormat: AVFormat;
@@ -52,7 +53,8 @@ export default class DemuxPipeline extends Pipeline {
     analyzeStreams(taskId: string): Promise<AVFormatContextInterface | int32>;
     private replyAVPacket;
     connectStreamTask(taskId: string, streamIndex: number, port: MessagePort): Promise<void>;
-    changeConnectStream(taskId: string, newStreamIndex: number, oldStreamIndex: number, force?: boolean): Promise<void>;
+    addPendingStream(taskId: string, streamIndex: number): Promise<void>;
+    changeConnectStream(taskId: string, newStreamIndex: number, oldStreamIndex: number, force?: boolean, start?: boolean): Promise<void>;
     private doDemux;
     startDemux(taskId: string, isLive: boolean, minQueueLength: int32): Promise<void>;
     seek(taskId: string, timestamp: int64, flags: int32, streamIndex?: int32): Promise<int64>;

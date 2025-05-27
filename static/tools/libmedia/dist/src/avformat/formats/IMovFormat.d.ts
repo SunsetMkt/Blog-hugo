@@ -1,15 +1,17 @@
 import AVPacket from 'avutil/struct/avpacket';
 import { AVIFormatContext } from '../AVFormatContext';
-import { MovFormatOptions } from './mov/type';
 import IFormat from './IFormat';
 import { AVFormat } from 'avutil/avformat';
 import AVStream from 'avutil/AVStream';
+export interface IMovFormatOptions {
+    ignoreEditlist?: boolean;
+}
 export default class IMovFormat extends IFormat {
     type: AVFormat;
     private context;
     private firstAfterSeek;
-    options: MovFormatOptions;
-    constructor(options?: MovFormatOptions);
+    options: IMovFormatOptions;
+    constructor(options?: IMovFormatOptions);
     init(formatContext: AVIFormatContext): void;
     readHeader(formatContext: AVIFormatContext): Promise<number>;
     private readAVPacket_;

@@ -4,4 +4,4 @@
 
 Keep `dist` and `product` only.
 
-Version: `69fcece258c13ed0dfb38f5ee89127a11e2b8491`
+Version: `94b1c7f48f51e6098436ce762ad4a2da8d59ec76`

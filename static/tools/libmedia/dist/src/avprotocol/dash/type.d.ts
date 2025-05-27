@@ -70,7 +70,9 @@ export interface Representation {
     maxHeight?: string;
     frameRate?: string;
     startWithSAP?: string;
-    BaseURL?: string;
+    BaseURL?: string | {
+        value: string;
+    };
     SegmentBase?: {
         indexRange: string;
         Initialization: {
@@ -95,7 +97,7 @@ export interface AdaptationSet {
     id: string;
     lang?: string;
     bitstreamSwitching: string;
-    contentType: 'audio' | 'video';
+    contentType: 'audio' | 'video' | 'text';
     mimeType?: string;
     codecs?: string;
     width?: string;
