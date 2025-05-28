@@ -11,7 +11,7 @@ title: HarmonyOS NEXT 的虚拟机镜像
 
 ## 获取镜像
 
-HarmonyOS NEXT 的虚拟机镜像可以通过[DevEco Studio](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-download)，它也包含为 HarmonyOS NEXT 开发软件的 IDE 和虚拟机。
+HarmonyOS NEXT 的虚拟机镜像可以通过[DevEco Studio](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-download)获取，它也包含为 HarmonyOS NEXT 开发软件的 IDE 和虚拟机。
 
 如果不想下载 DevEco Studio，这里有目前最新版本的[手机 x86 虚拟机镜像](https://update.dbankcdn.com/download/data/pub_13/HWHOTA_hota_900_9/4a/v3/SurZ60PYSryhwf0W4QEK1g/system-image-phone-x86.zip)和[二合一（电脑） x86 虚拟机镜像](https://update.dbankcdn.com/download/data/pub_13/HWHOTA_hota_900_9/4a/v3/SurZ60PYSryhwf0W4QEK1g/system-image-2in1-x86.zip)。
 
