@@ -19,7 +19,7 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 ## 关于 AIGC
 
-网站代码部分使用[Codeium](https://codeium.com/)的代码补全服务。
+网站代码部分使用[Windsurf](https://windsurf.com/)的代码补全服务。
 
 主要内容中基于 Stable Diffusion 的生成图片和使用 LLM 的翻译或生成的文本会明确标注。
 
