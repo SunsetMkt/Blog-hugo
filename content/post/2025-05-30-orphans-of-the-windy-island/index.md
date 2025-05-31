@@ -11,6 +11,12 @@ title: 风之岛的孤儿
 
 转载自[angelkawaii.xyz](https://angelkawaii.xyz/2025/05/25/orphans-of-the-windy-island/)，使用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议授权。
 
+本文包含对[物质滥用](https://zh.wikipedia.org/wiki/%E7%89%A9%E8%B3%AA%E6%BF%AB%E7%94%A8)的描写。
+
+本文包含对性的模糊描写。
+
+济州四·三事件（韩语：제주 4·3 사건），又称济州起义，济州岛在 1948 年 4 月 3 日－1954 年 9 月 21 日持续六年半的军、警在镇压与围剿叛乱事件，是朝鲜战争之前朝鲜近代史上（含日本殖民时代）最血腥的事件，但长期被阻止追究真相，至 2000 年方着手调查。[维基百科](https://zh.wikipedia.org/wiki/%E6%BF%9F%E5%B7%9E%E5%9B%9B%C2%B7%E4%B8%89%E4%BA%8B%E4%BB%B6)
+
 ---
 
 <blockquote>
