@@ -813,3 +813,5 @@ DMCA 的论点是，Chaffees 夫妇的低频滤波器规避了 CoxCom 的按次�
 [137] _参见_ _同上_；Randall Stross, _Hannah Montana Tickets on Sale! Oops, They’re Gone_, N.Y. Times (2007 年 12 月 16 日), http://www.nytimes.com/2007/12/16/business/16digi.html。
 
 [138] CoxCom, Inc. v. Chaffee, 536 F.3d 101 (1st Cir. 2008) (确认 CoxCom, Inc. v. Chaffee, No. CA05-107S, 2007 WL 1577708 (D.R.I. 20 0 7 年 5 月 41 日))。
+
+{{< embed-pdf-iframe file="unintendedconsequences2014.pdf" >}}
