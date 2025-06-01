@@ -18,11 +18,28 @@ title: pixi-live2d-display Demo
 <script src="https://unpkg.com/pixi.js@7.4.3/dist/pixi.min.js"></script>
 <script src="https://unpkg.com/pixi-live2d-display-lipsyncpatch@0.5.0-ls-7/dist/cubism4.min.js"></script>
 <!-- https://github.com/RaSan147/pixi-live2d-display -->
+<button id="fullscreen">Fullscreen</button>
 <canvas id="canvas"></canvas>
+
+<script>
+    document.getElementById("fullscreen").addEventListener("click", () => {
+        document.getElementById("canvas").classList.toggle("fullscreen");
+        document.getElementById("fullscreen").remove();
+    });
+</script>
 
 <style>
     #canvas {
         width: 100%;
+    }
+
+    .fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
     }
 </style>
 
