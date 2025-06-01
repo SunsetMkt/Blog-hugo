@@ -40,7 +40,7 @@
 			}
 		],
 		"Motions": {
-			"": [
+			"Idle": [
 				{
 					"File": "exp/idle.motion3.json"
 				}

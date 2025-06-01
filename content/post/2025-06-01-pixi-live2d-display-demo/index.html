@@ -17,6 +17,7 @@ title: pixi-live2d-display Demo
 <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
 <script src="https://unpkg.com/pixi.js@7.4.3/dist/pixi.min.js"></script>
 <script src="https://unpkg.com/pixi-live2d-display-lipsyncpatch@0.5.0-ls-7/dist/cubism4.min.js"></script>
+<!-- https://github.com/RaSan147/pixi-live2d-display -->
 <canvas id="canvas"></canvas>
 
 <style>
@@ -33,14 +34,19 @@ title: pixi-live2d-display Demo
             view: document.getElementById("canvas"),
             autoStart: true,
             resizeTo: window,
+            backgroundAlpha: 0,
         });
 
-        const model4 = await PIXI.live2d.Live2DModel.from(cubism4Model);
+        const model4 = await PIXI.live2d.Live2DModel.from(cubism4Model, {
+            motionPreload: PIXI.live2d.MotionPreloadStrategy.ALL,
+        });
 
         app.stage.addChild(model4);
 
         model4.scale.set(0.2);
 
         // model4.x = 300;
+
+        model4.expression("WaterMaker");
     })();
 </script>
