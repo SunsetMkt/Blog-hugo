@@ -1,0 +1,28 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "SGNU.moc3",
+		"Textures": [
+			"SGNU.4096/texture_00.png",
+			"SGNU.4096/texture_01.png"
+		],
+		"Physics": "SGNU.physics3.json",
+		"DisplayInfo": "SGNU.cdi3.json",
+		"MotionSync": "SGNU.motionsync3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

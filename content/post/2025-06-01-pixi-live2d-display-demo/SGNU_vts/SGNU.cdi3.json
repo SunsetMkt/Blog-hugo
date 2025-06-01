@@ -1,0 +1,811 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "ParamGroup",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "身体旋转　X"
+		},
+		{
+			"Id": "ParamBodyAngleX2",
+			"GroupId": "ParamGroup",
+			"Name": "身体旋转　X 2"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "身体旋转　Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "身体旋转　Z"
+		},
+		{
+			"Id": "ParamArmL1",
+			"GroupId": "ParamGroup",
+			"Name": "左臂 1"
+		},
+		{
+			"Id": "ParamArmL2",
+			"GroupId": "ParamGroup",
+			"Name": "左臂 2"
+		},
+		{
+			"Id": "ParamArmR1",
+			"GroupId": "ParamGroup",
+			"Name": "右臂 1"
+		},
+		{
+			"Id": "ParamArmR2",
+			"GroupId": "ParamGroup",
+			"Name": "右臂 2"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　开闭"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　微笑"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼　开闭"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼　微笑"
+		},
+		{
+			"Id": "ParamEyesL",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼 L"
+		},
+		{
+			"Id": "ParamEyesR",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼 R"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroup2",
+			"Name": "眼珠 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroup2",
+			"Name": "眼珠 Y"
+		},
+		{
+			"Id": "ParamEyeBallX2",
+			"GroupId": "ParamGroup2",
+			"Name": "眼珠 X 2"
+		},
+		{
+			"Id": "ParamEyeBallY2",
+			"GroupId": "ParamGroup2",
+			"Name": "眼珠 Y 2"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉　上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉　角度"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　角度"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉　左右"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　左右"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamMouthX",
+			"GroupId": "ParamGroup4",
+			"Name": "MouthX"
+		},
+		{
+			"Id": "ParamMouthX2",
+			"GroupId": "ParamGroup4",
+			"Name": "MouthX 2"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "ParamGroup4",
+			"Name": "嘴　变形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "ParamGroup4",
+			"Name": "嘴　开闭"
+		},
+		{
+			"Id": "ParamSilence",
+			"GroupId": "ParamGroup4",
+			"Name": "Silence"
+		},
+		{
+			"Id": "ParamA",
+			"GroupId": "ParamGroup4",
+			"Name": "A"
+		},
+		{
+			"Id": "ParamI",
+			"GroupId": "ParamGroup4",
+			"Name": "I"
+		},
+		{
+			"Id": "ParamU",
+			"GroupId": "ParamGroup4",
+			"Name": "U"
+		},
+		{
+			"Id": "ParamE",
+			"GroupId": "ParamGroup4",
+			"Name": "E"
+		},
+		{
+			"Id": "ParamO",
+			"GroupId": "ParamGroup4",
+			"Name": "O"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 前发 1"
+		},
+		{
+			"Id": "ParamHairFront2",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 前发 2"
+		},
+		{
+			"Id": "ParamHairFront3",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 前发 3"
+		},
+		{
+			"Id": "ParamHairFrontOtherSide",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 前发 1*"
+		},
+		{
+			"Id": "ParamHairFrontOtherSide2",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 前发 2*"
+		},
+		{
+			"Id": "ParamHairFrontY",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 前发 Y 1"
+		},
+		{
+			"Id": "ParamHairFrontY2",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 前发 Y 2"
+		},
+		{
+			"Id": "ParamHairSide_L",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 侧发 L 1"
+		},
+		{
+			"Id": "ParamHairSide_L2",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 侧发 L 2"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 1"
+		},
+		{
+			"Id": "ParamHairBack2",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 2"
+		},
+		{
+			"Id": "ParamHairBack3",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 3"
+		},
+		{
+			"Id": "ParamHairBack4",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 4"
+		},
+		{
+			"Id": "ParamHairBack5",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 5"
+		},
+		{
+			"Id": "ParamHairBackY",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 Y"
+		},
+		{
+			"Id": "ParamHairBackY2",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 Y"
+		},
+		{
+			"Id": "ParamHairBackY3",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动 后发 Y"
+		},
+		{
+			"Id": "ParamHeadgearL",
+			"GroupId": "ParamGroup6",
+			"Name": "头饰摇动L"
+		},
+		{
+			"Id": "ParamHeadgearL2",
+			"GroupId": "ParamGroup6",
+			"Name": "头饰摇动L"
+		},
+		{
+			"Id": "ParamHeadgearL3",
+			"GroupId": "ParamGroup6",
+			"Name": "头饰摇动L"
+		},
+		{
+			"Id": "ParamHeadgearR",
+			"GroupId": "ParamGroup6",
+			"Name": "头饰摇动R"
+		},
+		{
+			"Id": "ParamHeadgearR2",
+			"GroupId": "ParamGroup6",
+			"Name": "头饰摇动R"
+		},
+		{
+			"Id": "ParamHeadgearR3",
+			"GroupId": "ParamGroup6",
+			"Name": "头饰摇动R"
+		},
+		{
+			"Id": "Paramclothes_movex",
+			"GroupId": "ParamGroup8",
+			"Name": "衣服 x"
+		},
+		{
+			"Id": "Paramclothes_movex2",
+			"GroupId": "ParamGroup8",
+			"Name": "衣服 x"
+		},
+		{
+			"Id": "Paramclothes_movey",
+			"GroupId": "ParamGroup8",
+			"Name": "衣服 y"
+		},
+		{
+			"Id": "Paramclothes_movey2",
+			"GroupId": "ParamGroup8",
+			"Name": "衣服 y"
+		},
+		{
+			"Id": "ParamSkirtX",
+			"GroupId": "ParamGroup8",
+			"Name": "裙子X"
+		},
+		{
+			"Id": "ParamSkirtX2",
+			"GroupId": "ParamGroup8",
+			"Name": "裙子X"
+		},
+		{
+			"Id": "ParamSkirtX3",
+			"GroupId": "ParamGroup8",
+			"Name": "裙子X"
+		},
+		{
+			"Id": "ParamSkirtY",
+			"GroupId": "ParamGroup8",
+			"Name": "裙子Y"
+		},
+		{
+			"Id": "ParamSkirtY2",
+			"GroupId": "ParamGroup8",
+			"Name": "裙子Y"
+		},
+		{
+			"Id": "ParamTieX",
+			"GroupId": "ParamGroup8",
+			"Name": "领带X"
+		},
+		{
+			"Id": "ParamTieY",
+			"GroupId": "ParamGroup8",
+			"Name": "领带Y"
+		},
+		{
+			"Id": "ParamBowX",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结上X"
+		},
+		{
+			"Id": "ParamBowX2",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结上X"
+		},
+		{
+			"Id": "ParamBowY",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结上Y"
+		},
+		{
+			"Id": "ParamBowY2",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结上Y"
+		},
+		{
+			"Id": "ParamBowL",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结下L"
+		},
+		{
+			"Id": "ParamBowL2",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结下L"
+		},
+		{
+			"Id": "ParamBowR",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结下R"
+		},
+		{
+			"Id": "ParamBowR2",
+			"GroupId": "ParamGroup8",
+			"Name": "蝴蝶结下R"
+		},
+		{
+			"Id": "Paramsleeve_move_L",
+			"GroupId": "ParamGroup8",
+			"Name": "袖子 L"
+		},
+		{
+			"Id": "Paramsleeve_move_L2",
+			"GroupId": "ParamGroup8",
+			"Name": "袖子 L"
+		},
+		{
+			"Id": "Paramsleeve_move_R",
+			"GroupId": "ParamGroup8",
+			"Name": "袖子 R"
+		},
+		{
+			"Id": "Paramsleeve_move_R2",
+			"GroupId": "ParamGroup8",
+			"Name": "袖子 R"
+		},
+		{
+			"Id": "ParamDark",
+			"GroupId": "ParamGroup5",
+			"Name": "Dark"
+		},
+		{
+			"Id": "ParamBlack",
+			"GroupId": "ParamGroup5",
+			"Name": "Black"
+		},
+		{
+			"Id": "ParamMegane",
+			"GroupId": "ParamGroup5",
+			"Name": "Megane"
+		},
+		{
+			"Id": "ParamHeart",
+			"GroupId": "ParamGroup5",
+			"Name": "Heart"
+		},
+		{
+			"Id": "ParamHeartidle",
+			"GroupId": "ParamGroup5",
+			"Name": "Heart idle 1"
+		},
+		{
+			"Id": "ParamHeartidle2",
+			"GroupId": "ParamGroup5",
+			"Name": "Heart idle 2"
+		},
+		{
+			"Id": "ParamPhoframe",
+			"GroupId": "ParamGroup5",
+			"Name": "Phoframe"
+		},
+		{
+			"Id": "ParamHeadgear",
+			"GroupId": "ParamGroup5",
+			"Name": "Headgear"
+		},
+		{
+			"Id": "ParamWatermaker",
+			"GroupId": "ParamGroup5",
+			"Name": "Watermaker"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "角度"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "眼睛"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "眉毛"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "嘴巴"
+		},
+		{
+			"Id": "ParamGroup6",
+			"GroupId": "",
+			"Name": "头发物理"
+		},
+		{
+			"Id": "ParamGroup8",
+			"GroupId": "",
+			"Name": "身体物理"
+		},
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "追加"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part65",
+			"Name": "部件73"
+		},
+		{
+			"Id": "Part",
+			"Name": "遗照（按键）"
+		},
+		{
+			"Id": "Part2",
+			"Name": "头饰（按键）"
+		},
+		{
+			"Id": "Part7",
+			"Name": "头"
+		},
+		{
+			"Id": "Part20",
+			"Name": "身体"
+		},
+		{
+			"Id": "Part22",
+			"Name": "双腿"
+		},
+		{
+			"Id": "Part23",
+			"Name": "手臂"
+		},
+		{
+			"Id": "Part24",
+			"Name": "后发"
+		},
+		{
+			"Id": "Part37",
+			"Name": "黑白"
+		},
+		{
+			"Id": "Part36",
+			"Name": "部件37"
+		},
+		{
+			"Id": "Part35",
+			"Name": "部件37"
+		},
+		{
+			"Id": "Part8",
+			"Name": "蒙版"
+		},
+		{
+			"Id": "Part9",
+			"Name": "刘海"
+		},
+		{
+			"Id": "Part3",
+			"Name": "眼镜（按键）"
+		},
+		{
+			"Id": "Part4",
+			"Name": "黑线（按键）"
+		},
+		{
+			"Id": "Part10",
+			"Name": "鼻子"
+		},
+		{
+			"Id": "Part11",
+			"Name": "嘴巴"
+		},
+		{
+			"Id": "Part28",
+			"Name": "右眼"
+		},
+		{
+			"Id": "Part14",
+			"Name": "左眼"
+		},
+		{
+			"Id": "Part18",
+			"Name": "右耳朵"
+		},
+		{
+			"Id": "Part19",
+			"Name": "左耳朵"
+		},
+		{
+			"Id": "Part16",
+			"Name": "脸"
+		},
+		{
+			"Id": "Part21",
+			"Name": "蝴蝶结"
+		},
+		{
+			"Id": "Part13",
+			"Name": "部件32"
+		},
+		{
+			"Id": "Part12",
+			"Name": "部件32"
+		},
+		{
+			"Id": "Part25",
+			"Name": "头发"
+		},
+		{
+			"Id": "Part26",
+			"Name": "蝴蝶结"
+		},
+		{
+			"Id": "Part38",
+			"Name": "头"
+		},
+		{
+			"Id": "Part56",
+			"Name": "身体"
+		},
+		{
+			"Id": "Part59",
+			"Name": "手臂"
+		},
+		{
+			"Id": "Part62",
+			"Name": "后发"
+		},
+		{
+			"Id": "ArtMesh6_Skinning2",
+			"Name": "飘带(蒙皮)"
+		},
+		{
+			"Id": "ArtMesh7_Skinning2",
+			"Name": "飘带影(蒙皮)"
+		},
+		{
+			"Id": "ArtMesh6_Skinning",
+			"Name": "飘带(蒙皮)"
+		},
+		{
+			"Id": "ArtMesh7_Skinning",
+			"Name": "飘带影(蒙皮)"
+		},
+		{
+			"Id": "Part31",
+			"Name": "右眼"
+		},
+		{
+			"Id": "Part29",
+			"Name": "右眉毛"
+		},
+		{
+			"Id": "Part30",
+			"Name": "右眼珠"
+		},
+		{
+			"Id": "Part6",
+			"Name": "左眉毛"
+		},
+		{
+			"Id": "Part15",
+			"Name": "左眼珠"
+		},
+		{
+			"Id": "Part17",
+			"Name": "刘海影"
+		},
+		{
+			"Id": "Part27",
+			"Name": "部件35"
+		},
+		{
+			"Id": "ArtMesh72_Skinning2",
+			"Name": "手臂(蒙皮)"
+		},
+		{
+			"Id": "ArtMesh72_Skinning",
+			"Name": "手臂(蒙皮)"
+		},
+		{
+			"Id": "Part39",
+			"Name": "蒙版"
+		},
+		{
+			"Id": "Part43",
+			"Name": "刘海"
+		},
+		{
+			"Id": "Part44",
+			"Name": "鼻子"
+		},
+		{
+			"Id": "Part45",
+			"Name": "嘴巴"
+		},
+		{
+			"Id": "Part46",
+			"Name": "右眼"
+		},
+		{
+			"Id": "Part49",
+			"Name": "左眼"
+		},
+		{
+			"Id": "Part52",
+			"Name": "右耳朵"
+		},
+		{
+			"Id": "Part53",
+			"Name": "左耳朵"
+		},
+		{
+			"Id": "Part54",
+			"Name": "脸"
+		},
+		{
+			"Id": "Part57",
+			"Name": "蝴蝶结"
+		},
+		{
+			"Id": "Part60",
+			"Name": "部件32"
+		},
+		{
+			"Id": "Part61",
+			"Name": "部件32"
+		},
+		{
+			"Id": "Part63",
+			"Name": "头发"
+		},
+		{
+			"Id": "Part64",
+			"Name": "蝴蝶结"
+		},
+		{
+			"Id": "Part32",
+			"Name": "右眉毛"
+		},
+		{
+			"Id": "Part33",
+			"Name": "右眼珠"
+		},
+		{
+			"Id": "Part34",
+			"Name": "爱心（按键）"
+		},
+		{
+			"Id": "Part5",
+			"Name": "爱心（按键）"
+		},
+		{
+			"Id": "Part40",
+			"Name": "右眼"
+		},
+		{
+			"Id": "Part47",
+			"Name": "右眉毛"
+		},
+		{
+			"Id": "Part48",
+			"Name": "右眼珠"
+		},
+		{
+			"Id": "Part50",
+			"Name": "左眉毛"
+		},
+		{
+			"Id": "Part51",
+			"Name": "左眼珠"
+		},
+		{
+			"Id": "Part55",
+			"Name": "刘海影"
+		},
+		{
+			"Id": "Part58",
+			"Name": "部件35"
+		},
+		{
+			"Id": "ArtMesh72_Skinning3",
+			"Name": "手臂(蒙皮)"
+		},
+		{
+			"Id": "ArtMesh72_Skinning4",
+			"Name": "手臂(蒙皮)"
+		},
+		{
+			"Id": "Part41",
+			"Name": "右眉毛"
+		},
+		{
+			"Id": "Part42",
+			"Name": "右眼珠"
+		}
+	]
+}

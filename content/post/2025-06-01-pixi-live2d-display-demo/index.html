@@ -1,0 +1,46 @@
+---
+categories: Original
+date: "2025-06-01T00:00:00Z"
+tags:
+    - 前端
+    - 信息技术
+    - Demo
+slug: pixi-live2d-display-demo
+title: pixi-live2d-display Demo
+---
+
+<p>
+    Live2D Model by
+    <a href="https://www.youtube.com/watch?v=b0CXLcppJLE">reika_studio</a>. All
+    rights unrevered by this site.
+</p>
+<script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+<script src="https://unpkg.com/pixi.js@7.4.3/dist/pixi.min.js"></script>
+<script src="https://unpkg.com/pixi-live2d-display-lipsyncpatch@0.5.0-ls-7/dist/cubism4.min.js"></script>
+<canvas id="canvas"></canvas>
+
+<style>
+    #canvas {
+        width: 100%;
+    }
+</style>
+
+<script>
+    const cubism4Model = "SGNU_vts/SGNU.model3.json";
+
+    (async function main() {
+        const app = new PIXI.Application({
+            view: document.getElementById("canvas"),
+            autoStart: true,
+            resizeTo: window,
+        });
+
+        const model4 = await PIXI.live2d.Live2DModel.from(cubism4Model);
+
+        app.stage.addChild(model4);
+
+        model4.scale.set(0.2);
+
+        // model4.x = 300;
+    })();
+</script>
