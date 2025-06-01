@@ -8,7 +8,44 @@
 		],
 		"Physics": "SGNU.physics3.json",
 		"DisplayInfo": "SGNU.cdi3.json",
-		"MotionSync": "SGNU.motionsync3.json"
+		"MotionSync": "SGNU.motionsync3.json",
+		"Expressions": [
+			{
+				"Name": "Black",
+				"File": "exp/Black.exp3.json"
+			},
+			{
+				"Name": "Dark",
+				"File": "exp/Dark.exp3.json"
+			},
+			{
+				"Name": "Ghost",
+				"File": "exp/Ghost.exp3.json"
+			},
+			{
+				"Name": "Heart",
+				"File": "exp/Heart.exp3.json"
+			},
+			{
+				"Name": "Megane",
+				"File": "exp/Megane.exp3.json"
+			},
+			{
+				"Name": "Photoframe",
+				"File": "exp/Photoframe.exp3.json"
+			},
+			{
+				"Name": "WaterMaker",
+				"File": "exp/WaterMaker.exp3.json"
+			}
+		],
+		"Motions": {
+			"": [
+				{
+					"File": "exp/idle.motion3.json"
+				}
+			]
+		}
 	},
 	"Groups": [
 		{
@@ -24,5 +61,6 @@
 			"Name": "LipSync",
 			"Ids": []
 		}
-	]
+	],
+	"HitAreas": []
 }
