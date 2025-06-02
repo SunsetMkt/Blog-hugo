@@ -1,0 +1,17 @@
+<!-- https://www.brycewray.com/posts/2024/11/simple-hugo-shortcode-embedding-bluesky-posts/ -->
+<!-- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_shortcodes/x.html -->
+{{- $link := .Get "link" -}}
+{{- $query := querify "url" $link -}}
+{{- $request := printf "https://embed.bsky.app/oembed?%s" $query -}}
+
+{{- define "render-bluesky" -}}
+    {{- with try (resources.GetRemote $request) -}}
+        {{- with .Err -}}
+            {{- errorf "%s" . -}}
+        {{- else with .Value -}}
+            {{- (. | transform.Unmarshal).html | safeHTML -}}
+        {{- else -}}
+            {{- warnidf "shortcode-bluesky-getremote" "The %q shortcode was unable to retrieve the remote data. See %s" $.ctx.Name $.ctx.Position -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
