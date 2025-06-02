@@ -372,6 +372,11 @@
   --button-secondary-hover-bg-color:var(--csstools-light-dark-toggle--56, rgb(21 20 26 / 0.14));
   --button-secondary-hover-fg-color:var(--button-secondary-fg-color);
   --button-secondary-hover-border-color:var(--button-secondary-hover-bg-color);
+  --button-secondary-disabled-bg-color:var(--button-secondary-bg-color);
+  --button-secondary-disabled-border-color:var(
+    --button-secondary-border-color
+  );
+  --button-secondary-disabled-fg-color:var(--button-secondary-fg-color);
 
   --csstools-light-dark-toggle--57:var(--csstools-color-scheme--light) #0df;
 
@@ -387,9 +392,10 @@
   --button-primary-hover-bg-color:var(--csstools-light-dark-toggle--60, #0250bb);
   --button-primary-hover-fg-color:var(--button-primary-fg-color);
   --button-primary-hover-border-color:var(--button-primary-hover-bg-color);
-
-  --button-disabled-bg-color:color-mix(in srgb, currentcolor, transparent 60%);
-  --button-disabled-fg-color:var(--button-disabled-bg-color);
+  --button-primary-disabled-bg-color:var(--button-primary-bg-color);
+  --button-primary-disabled-border-color:var(--button-primary-border-color);
+  --button-primary-disabled-fg-color:var(--button-primary-fg-color);
+  --button-disabled-opacity:0.4;
 
   --csstools-light-dark-toggle--61:var(--csstools-color-scheme--light) #42414d;
 
@@ -513,6 +519,7 @@
 
 .dialog{
     --hover-filter:brightness(1.4);
+    --button-disabled-opacity:0.6;
 }
   }
 
@@ -547,6 +554,8 @@
     --button-secondary-hover-bg-color:HighlightText;
     --button-secondary-hover-fg-color:SelectedItem;
     --button-secondary-hover-border-color:SelectedItem;
+    --button-secondary-disabled-fg-color:GrayText;
+    --button-secondary-disabled-border-color:GrayText;
 
     --button-primary-bg-color:ButtonText;
     --button-primary-fg-color:HighlightText;
@@ -557,9 +566,10 @@
     --button-primary-hover-bg-color:SelectedItem;
     --button-primary-hover-fg-color:HighlightText;
     --button-primary-hover-border-color:SelectedItem;
-
-    --button-disabled-bg-color:GrayText;
-    --button-disabled-fg-color:ButtonFace;
+    --button-primary-disabled-bg-color:GrayText;
+    --button-primary-disabled-fg-color:ButtonFace;
+    --button-primary-disabled-border-color:GrayText;
+    --button-disabled-opacity:1;
 
     --input-text-bg-color:HighlightText;
     --input-text-fg-color:FieldText;
@@ -703,6 +713,13 @@
           border-color:var(--button-secondary-active-border-color);
         }
 
+.secondaryButton:is(:is(.dialog .mainContainer) button:not(:is(.toggle-button,.closeButton,.clearInputButton))):disabled{
+          background-color:var(--button-secondary-disabled-bg-color);
+          border-color:var(--button-secondary-disabled-border-color);
+          color:var(--button-secondary-disabled-fg-color);
+          opacity:var(--button-disabled-opacity);
+        }
+
 .primaryButton:is(:is(.dialog .mainContainer) button:not(:is(.toggle-button,.closeButton,.clearInputButton))){
         color:var(--button-primary-fg-color);
         background-color:var(--button-primary-bg-color);
@@ -722,10 +739,14 @@
           border-color:var(--button-primary-active-border-color);
         }
 
+.primaryButton:is(:is(.dialog .mainContainer) button:not(:is(.toggle-button,.closeButton,.clearInputButton))):disabled{
+          background-color:var(--button-primary-disabled-bg-color);
+          border-color:var(--button-primary-disabled-border-color);
+          color:var(--button-primary-disabled-fg-color);
+          opacity:var(--button-disabled-opacity);
+        }
+
 :is(:is(.dialog .mainContainer) button:not(:is(.toggle-button,.closeButton,.clearInputButton))):disabled{
-        color:var(--button-disabled-fg-color) !important;
-        background-color:var(--button-disabled-bg-color);
-        border-color:var(--button-disabled-bg-color);
         pointer-events:none;
       }
 
@@ -3002,6 +3023,10 @@
 .annotationEditorLayer.disabled{
   pointer-events:none;
 }
+
+.annotationEditorLayer.disabled.highlightEditing :is(.freeTextEditor,.inkEditor,.stampEditor,.signatureEditor){
+    pointer-events:auto;
+  }
 
 .annotationEditorLayer.freetextEditing{
   cursor:var(--editorFreeText-editing-cursor);

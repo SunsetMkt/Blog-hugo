@@ -20,6 +20,10 @@
  * JavaScript code in this page
  */
 
+/**
+ * pdfjsVersion = 5.3.31
+ * pdfjsBuild = 47ad820d9
+ */
 
 ;// ./src/shared/util.js
 const isNodeJS = typeof process === "object" && process + "" === "[object process]" && !process.versions.nw && !(process.versions.electron && process.type && process.type !== "browser");
@@ -488,25 +492,16 @@ class util_FeatureTest {
     return shadow(this, "isImageDecoderSupported", typeof ImageDecoder !== "undefined");
   }
   static get platform() {
-    if (typeof navigator !== "undefined" && typeof navigator?.platform === "string" && typeof navigator?.userAgent === "string") {
-      const {
-        platform,
-        userAgent
-      } = navigator;
-      return shadow(this, "platform", {
-        isAndroid: userAgent.includes("Android"),
-        isLinux: platform.includes("Linux"),
-        isMac: platform.includes("Mac"),
-        isWindows: platform.includes("Win"),
-        isFirefox: userAgent.includes("Firefox")
-      });
-    }
+    const {
+      platform,
+      userAgent
+    } = navigator;
     return shadow(this, "platform", {
-      isAndroid: false,
-      isLinux: false,
-      isMac: false,
-      isWindows: false,
-      isFirefox: false
+      isAndroid: userAgent.includes("Android"),
+      isLinux: platform.includes("Linux"),
+      isMac: platform.includes("Mac"),
+      isWindows: platform.includes("Win"),
+      isFirefox: userAgent.includes("Firefox")
     });
   }
   static get isCSSRoundSupported() {
@@ -724,7 +719,7 @@ class Util {
   }
 }
 const PDFStringTranslateTable = (/* unused pure expression or super */ null && ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2d8, 0x2c7, 0x2c6, 0x2d9, 0x2dd, 0x2db, 0x2da, 0x2dc, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2022, 0x2020, 0x2021, 0x2026, 0x2014, 0x2013, 0x192, 0x2044, 0x2039, 0x203a, 0x2212, 0x2030, 0x201e, 0x201c, 0x201d, 0x2018, 0x2019, 0x201a, 0x2122, 0xfb01, 0xfb02, 0x141, 0x152, 0x160, 0x178, 0x17d, 0x131, 0x142, 0x153, 0x161, 0x17e, 0, 0x20ac]));
-function stringToPDFString(str) {
+function stringToPDFString(str, keepEscapeSequence = false) {
   if (str[0] >= "\xEF") {
     let encoding;
     if (str[0] === "\xFE" && str[1] === "\xFF") {
@@ -747,7 +742,7 @@ function stringToPDFString(str) {
         });
         const buffer = stringToBytes(str);
         const decoded = decoder.decode(buffer);
-        if (!decoded.includes("\x1b")) {
+        if (keepEscapeSequence || !decoded.includes("\x1b")) {
           return decoded;
         }
         return decoded.replaceAll(/\x1b[^\x1b]*(?:\x1b|$)/g, "");
@@ -759,7 +754,7 @@ function stringToPDFString(str) {
   const strBuf = [];
   for (let i = 0, ii = str.length; i < ii; i++) {
     const charCode = str.charCodeAt(i);
-    if (charCode === 0x1b) {
+    if (!keepEscapeSequence && charCode === 0x1b) {
       while (++i < ii && str.charCodeAt(i) !== 0x1b) {}
       continue;
     }
@@ -1289,10 +1284,11 @@ class OutputScale {
   get symmetric() {
     return this.sx === this.sy;
   }
-  limitCanvas(width, height, maxPixels, maxDim) {
+  limitCanvas(width, height, maxPixels, maxDim, capAreaFactor = -1) {
     let maxAreaScale = Infinity,
       maxWidthScale = Infinity,
       maxHeightScale = Infinity;
+    maxPixels = OutputScale.capPixels(maxPixels, capAreaFactor);
     if (maxPixels > 0) {
       maxAreaScale = Math.sqrt(maxPixels / (width * height));
     }
@@ -1310,6 +1306,13 @@ class OutputScale {
   }
   static get pixelRatio() {
     return globalThis.devicePixelRatio || 1;
+  }
+  static capPixels(maxPixels, capAreaFactor) {
+    if (capAreaFactor >= 0) {
+      const winPixels = Math.ceil(window.screen.availWidth * window.screen.availHeight * this.pixelRatio ** 2 * (1 + capAreaFactor / 100));
+      return maxPixels > 0 ? Math.min(maxPixels, winPixels) : winPixels;
+    }
+    return maxPixels;
   }
 }
 const SupportedImageMimeTypes = ["image/apng", "image/avif", "image/bmp", "image/gif", "image/jpeg", "image/png", "image/svg+xml", "image/webp", "image/x-icon"];
@@ -2726,7 +2729,7 @@ class AnnotationEditorUIManager {
       return;
     }
     for (const editor of this.#allEditors.values()) {
-      if (editor.annotationElementId === editId) {
+      if (editor.annotationElementId === editId || editor.id === editId) {
         this.setSelected(editor);
         editor.enterInEditMode();
       } else {
@@ -2740,13 +2743,13 @@ class AnnotationEditorUIManager {
       this.currentLayer.addNewEditor();
     }
   }
-  updateToolbar(mode) {
-    if (mode === this.#mode) {
+  updateToolbar(options) {
+    if (options.mode === this.#mode) {
       return;
     }
     this._eventBus.dispatch("switchannotationeditormode", {
       source: this,
-      mode
+      ...options
     });
   }
   updateParams(type, value) {
@@ -3806,6 +3809,7 @@ class AnnotationEditor {
   #prevDragY = 0;
   #telemetryTimeouts = null;
   #touchManager = null;
+  isSelected = false;
   _isCopy = false;
   _editToolbar = null;
   _initialOptions = Object.create(null);
@@ -4548,7 +4552,7 @@ class AnnotationEditor {
     }
     const [tx, ty] = this.getInitialTranslation();
     this.translate(tx, ty);
-    bindEvents(this, div, ["keydown", "pointerdown"]);
+    bindEvents(this, div, ["keydown", "pointerdown", "dblclick"]);
     if (this.isResizable && this._uiManager._supportsPinchToZoom) {
       this.#touchManager ||= new TouchManager({
         container: div,
@@ -4625,9 +4629,6 @@ class AnnotationEditor {
       return;
     }
     this.#selectOnPointerEvent(event);
-  }
-  get isSelected() {
-    return this._uiManager.isSelected(this);
   }
   #selectOnPointerEvent(event) {
     const {
@@ -4774,10 +4775,20 @@ class AnnotationEditor {
     return false;
   }
   enableEditMode() {
+    if (this.isInEditMode()) {
+      return false;
+    }
+    this.parent.setEditingState(false);
     this.#isInEditMode = true;
+    return true;
   }
   disableEditMode() {
+    if (!this.isInEditMode()) {
+      return false;
+    }
+    this.parent.setEditingState(true);
     this.#isInEditMode = false;
+    return true;
   }
   isInEditMode() {
     return this.#isInEditMode;
@@ -4994,6 +5005,10 @@ class AnnotationEditor {
     this.div.focus();
   }
   select() {
+    if (this.isSelected && this._editToolbar) {
+      return;
+    }
+    this.isSelected = true;
     this.makeResizable();
     this.div?.classList.add("selectedEditor");
     if (!this._editToolbar) {
@@ -5008,6 +5023,10 @@ class AnnotationEditor {
     this.#altText?.toggleAltTextBadge(false);
   }
   unselect() {
+    if (!this.isSelected) {
+      return;
+    }
+    this.isSelected = false;
     this.#resizersDiv?.classList.add("hidden");
     this.div?.classList.remove("selectedEditor");
     if (this.div?.contains(document.activeElement)) {
@@ -5021,7 +5040,23 @@ class AnnotationEditor {
   updateParams(type, value) {}
   disableEditing() {}
   enableEditing() {}
-  enterInEditMode() {}
+  get canChangeContent() {
+    return false;
+  }
+  enterInEditMode() {
+    if (!this.canChangeContent) {
+      return;
+    }
+    this.enableEditMode();
+    this.div.focus();
+  }
+  dblclick(event) {
+    this.enterInEditMode();
+    this.parent.updateToolbar({
+      mode: this.constructor._editorType,
+      editId: this.id
+    });
+  }
   getElementForAltText() {
     return this.div;
   }
@@ -5710,6 +5745,94 @@ class FontFaceObject {
       objs.delete(objId);
     }
     return this.compiledGlyphs[character] = path;
+  }
+}
+
+;// ./src/display/api_utils.js
+
+function getUrlProp(val) {
+  if (val instanceof URL) {
+    return val.href;
+  }
+  if (typeof val === "string") {
+    if (isNodeJS) {
+      return val;
+    }
+    const url = URL.parse(val, window.location);
+    if (url) {
+      return url.href;
+    }
+  }
+  throw new Error("Invalid PDF url data: " + "either string or URL-object is expected in the url property.");
+}
+function getDataProp(val) {
+  if (isNodeJS && typeof Buffer !== "undefined" && val instanceof Buffer) {
+    throw new Error("Please provide binary data as `Uint8Array`, rather than `Buffer`.");
+  }
+  if (val instanceof Uint8Array && val.byteLength === val.buffer.byteLength) {
+    return val;
+  }
+  if (typeof val === "string") {
+    return stringToBytes(val);
+  }
+  if (val instanceof ArrayBuffer || ArrayBuffer.isView(val) || typeof val === "object" && !isNaN(val?.length)) {
+    return new Uint8Array(val);
+  }
+  throw new Error("Invalid PDF binary data: either TypedArray, " + "string, or array-like object is expected in the data property.");
+}
+function getFactoryUrlProp(val) {
+  if (typeof val !== "string") {
+    return null;
+  }
+  if (val.endsWith("/")) {
+    return val;
+  }
+  throw new Error(`Invalid factory url: "${val}" must include trailing slash.`);
+}
+const isRefProxy = v => typeof v === "object" && Number.isInteger(v?.num) && v.num >= 0 && Number.isInteger(v?.gen) && v.gen >= 0;
+const isNameProxy = v => typeof v === "object" && typeof v?.name === "string";
+const isValidExplicitDest = _isValidExplicitDest.bind(null, isRefProxy, isNameProxy);
+class LoopbackPort {
+  #listeners = new Map();
+  #deferred = Promise.resolve();
+  postMessage(obj, transfer) {
+    const event = {
+      data: structuredClone(obj, transfer ? {
+        transfer
+      } : null)
+    };
+    this.#deferred.then(() => {
+      for (const [listener] of this.#listeners) {
+        listener.call(this, event);
+      }
+    });
+  }
+  addEventListener(name, listener, options = null) {
+    let rmAbort = null;
+    if (options?.signal instanceof AbortSignal) {
+      const {
+        signal
+      } = options;
+      if (signal.aborted) {
+        warn("LoopbackPort - cannot use an `aborted` signal.");
+        return;
+      }
+      const onAbort = () => this.removeEventListener(name, listener);
+      rmAbort = () => signal.removeEventListener("abort", onAbort);
+      signal.addEventListener("abort", onAbort);
+    }
+    this.#listeners.set(listener, rmAbort);
+  }
+  removeEventListener(name, listener) {
+    const rmAbort = this.#listeners.get(listener);
+    rmAbort?.();
+    this.#listeners.delete(listener);
+  }
+  terminate() {
+    for (const [, rmAbort] of this.#listeners) {
+      rmAbort?.();
+    }
+    this.#listeners.clear();
   }
 }
 
@@ -7114,18 +7237,16 @@ class TilingPattern {
       current = graphics.current;
     switch (paintType) {
       case PaintType.COLORED:
-        const ctx = this.ctx;
-        context.fillStyle = ctx.fillStyle;
-        context.strokeStyle = ctx.strokeStyle;
-        current.fillColor = ctx.fillStyle;
-        current.strokeColor = ctx.strokeStyle;
+        const {
+          fillStyle,
+          strokeStyle
+        } = this.ctx;
+        context.fillStyle = current.fillColor = fillStyle;
+        context.strokeStyle = current.strokeColor = strokeStyle;
         break;
       case PaintType.UNCOLORED:
-        const cssColor = Util.makeHexColor(color[0], color[1], color[2]);
-        context.fillStyle = cssColor;
-        context.strokeStyle = cssColor;
-        current.fillColor = cssColor;
-        current.strokeColor = cssColor;
+        context.fillStyle = context.strokeStyle = color;
+        current.fillColor = current.strokeColor = color;
         break;
       default:
         throw new FormatError(`Unsupported paint type: ${paintType}`);
@@ -8080,13 +8201,12 @@ class CanvasGraphics {
     let maskX = layerOffsetX - maskOffsetX;
     let maskY = layerOffsetY - maskOffsetY;
     if (backdrop) {
-      const backdropRGB = Util.makeHexColor(...backdrop);
       if (maskX < 0 || maskY < 0 || maskX + width > maskCanvas.width || maskY + height > maskCanvas.height) {
         const canvas = this.cachedCanvases.getCanvas("maskExtension", width, height);
         const ctx = canvas.context;
         ctx.drawImage(maskCanvas, -maskX, -maskY);
         ctx.globalCompositeOperation = "destination-atop";
-        ctx.fillStyle = backdropRGB;
+        ctx.fillStyle = backdrop;
         ctx.fillRect(0, 0, width, height);
         ctx.globalCompositeOperation = "source-over";
         maskCanvas = canvas.canvas;
@@ -8099,7 +8219,7 @@ class CanvasGraphics {
         clip.rect(maskX, maskY, width, height);
         maskCtx.clip(clip);
         maskCtx.globalCompositeOperation = "destination-atop";
-        maskCtx.fillStyle = backdropRGB;
+        maskCtx.fillStyle = backdrop;
         maskCtx.fillRect(maskX, maskY, width, height);
         maskCtx.restore();
       }
@@ -8692,16 +8812,16 @@ class CanvasGraphics {
     this.current.fillColor = this.getColorN_Pattern(arguments);
     this.current.patternFill = true;
   }
-  setStrokeRGBColor(r, g, b) {
-    this.ctx.strokeStyle = this.current.strokeColor = Util.makeHexColor(r, g, b);
+  setStrokeRGBColor(color) {
+    this.ctx.strokeStyle = this.current.strokeColor = color;
     this.current.patternStroke = false;
   }
   setStrokeTransparent() {
     this.ctx.strokeStyle = this.current.strokeColor = "transparent";
     this.current.patternStroke = false;
   }
-  setFillRGBColor(r, g, b) {
-    this.ctx.fillStyle = this.current.fillColor = Util.makeHexColor(r, g, b);
+  setFillRGBColor(color) {
+    this.ctx.fillStyle = this.current.fillColor = color;
     this.current.patternFill = false;
   }
   setFillTransparent() {
@@ -10888,6 +11008,67 @@ class PDFNodeStreamFsRangeReader {
   }
 }
 
+;// ./src/display/pdf_objects.js
+const INITIAL_DATA = Symbol("INITIAL_DATA");
+class PDFObjects {
+  #objs = Object.create(null);
+  #ensureObj(objId) {
+    return this.#objs[objId] ||= {
+      ...Promise.withResolvers(),
+      data: INITIAL_DATA
+    };
+  }
+  get(objId, callback = null) {
+    if (callback) {
+      const obj = this.#ensureObj(objId);
+      obj.promise.then(() => callback(obj.data));
+      return null;
+    }
+    const obj = this.#objs[objId];
+    if (!obj || obj.data === INITIAL_DATA) {
+      throw new Error(`Requesting object that isn't resolved yet ${objId}.`);
+    }
+    return obj.data;
+  }
+  has(objId) {
+    const obj = this.#objs[objId];
+    return !!obj && obj.data !== INITIAL_DATA;
+  }
+  delete(objId) {
+    const obj = this.#objs[objId];
+    if (!obj || obj.data === INITIAL_DATA) {
+      return false;
+    }
+    delete this.#objs[objId];
+    return true;
+  }
+  resolve(objId, data = null) {
+    const obj = this.#ensureObj(objId);
+    obj.data = data;
+    obj.resolve();
+  }
+  clear() {
+    for (const objId in this.#objs) {
+      const {
+        data
+      } = this.#objs[objId];
+      data?.bitmap?.close();
+    }
+    this.#objs = Object.create(null);
+  }
+  *[Symbol.iterator]() {
+    for (const objId in this.#objs) {
+      const {
+        data
+      } = this.#objs[objId];
+      if (data === INITIAL_DATA) {
+        continue;
+      }
+      yield [objId, data];
+    }
+  }
+}
+
 ;// ./src/display/text_layer.js
 
 
@@ -11318,7 +11499,8 @@ class XfaText {
 
 
 
-const DEFAULT_RANGE_CHUNK_SIZE = 65536;
+
+
 const RENDERING_CANCELLED_TIMEOUT = 100;
 function getDocument(src = {}) {
   if (typeof src === "string" || src instanceof URL) {
@@ -11340,7 +11522,7 @@ function getDocument(src = {}) {
   const withCredentials = src.withCredentials === true;
   const password = src.password ?? null;
   const rangeTransport = src.range instanceof PDFDataRangeTransport ? src.range : null;
-  const rangeChunkSize = Number.isInteger(src.rangeChunkSize) && src.rangeChunkSize > 0 ? src.rangeChunkSize : DEFAULT_RANGE_CHUNK_SIZE;
+  const rangeChunkSize = Number.isInteger(src.rangeChunkSize) && src.rangeChunkSize > 0 ? src.rangeChunkSize : 2 ** 16;
   let worker = src.worker instanceof PDFWorker ? src.worker : null;
   const verbosity = src.verbosity;
   const docBaseUrl = typeof src.docBaseUrl === "string" && !isDataScheme(src.docBaseUrl) ? src.docBaseUrl : null;
@@ -11396,16 +11578,15 @@ function getDocument(src = {}) {
     })
   };
   if (!worker) {
-    const workerParams = {
+    worker = PDFWorker.create({
       verbosity,
       port: GlobalWorkerOptions.workerPort
-    };
-    worker = workerParams.port ? PDFWorker.fromPort(workerParams) : new PDFWorker(workerParams);
+    });
     task._worker = worker;
   }
   const docParams = {
     docId,
-    apiVersion: "5.2.133",
+    apiVersion: "5.3.31",
     data,
     password,
     disableAutoFetch,
@@ -11458,19 +11639,7 @@ function getDocument(src = {}) {
       if (!url) {
         throw new Error("getDocument - no `url` parameter provided.");
       }
-      let NetworkStream;
-      if (isNodeJS) {
-        if (isValidFetchUrl(url)) {
-          if (typeof fetch === "undefined" || typeof Response === "undefined" || !("body" in Response.prototype)) {
-            throw new Error("getDocument - the Fetch API was disabled in Node.js, see `--no-experimental-fetch`.");
-          }
-          NetworkStream = PDFFetchStream;
-        } else {
-          NetworkStream = PDFNodeStream;
-        }
-      } else {
-        NetworkStream = isValidFetchUrl(url) ? PDFFetchStream : PDFNetworkStream;
-      }
+      const NetworkStream = isValidFetchUrl(url) ? PDFFetchStream : isNodeJS ? PDFNodeStream : PDFNetworkStream;
       networkStream = new NetworkStream({
         url,
         length,
@@ -11496,48 +11665,6 @@ function getDocument(src = {}) {
   }).catch(task._capability.reject);
   return task;
 }
-function getUrlProp(val) {
-  if (val instanceof URL) {
-    return val.href;
-  }
-  if (typeof val === "string") {
-    if (isNodeJS) {
-      return val;
-    }
-    const url = URL.parse(val, window.location);
-    if (url) {
-      return url.href;
-    }
-  }
-  throw new Error("Invalid PDF url data: " + "either string or URL-object is expected in the url property.");
-}
-function getDataProp(val) {
-  if (isNodeJS && typeof Buffer !== "undefined" && val instanceof Buffer) {
-    throw new Error("Please provide binary data as `Uint8Array`, rather than `Buffer`.");
-  }
-  if (val instanceof Uint8Array && val.byteLength === val.buffer.byteLength) {
-    return val;
-  }
-  if (typeof val === "string") {
-    return stringToBytes(val);
-  }
-  if (val instanceof ArrayBuffer || ArrayBuffer.isView(val) || typeof val === "object" && !isNaN(val?.length)) {
-    return new Uint8Array(val);
-  }
-  throw new Error("Invalid PDF binary data: either TypedArray, " + "string, or array-like object is expected in the data property.");
-}
-function getFactoryUrlProp(val) {
-  if (typeof val !== "string") {
-    return null;
-  }
-  if (val.endsWith("/")) {
-    return val;
-  }
-  throw new Error(`Invalid factory url: "${val}" must include trailing slash.`);
-}
-const isRefProxy = v => typeof v === "object" && Number.isInteger(v?.num) && v.num >= 0 && Number.isInteger(v?.gen) && v.gen >= 0;
-const isNameProxy = v => typeof v === "object" && typeof v?.name === "string";
-const isValidExplicitDest = _isValidExplicitDest.bind(null, isRefProxy, isNameProxy);
 class PDFDocumentLoadingTask {
   static #docId = 0;
   _capability = Promise.withResolvers();
@@ -11572,57 +11699,57 @@ class PDFDocumentLoadingTask {
   }
 }
 class PDFDataRangeTransport {
+  #capability = Promise.withResolvers();
+  #progressiveDoneListeners = [];
+  #progressiveReadListeners = [];
+  #progressListeners = [];
+  #rangeListeners = [];
   constructor(length, initialData, progressiveDone = false, contentDispositionFilename = null) {
     this.length = length;
     this.initialData = initialData;
     this.progressiveDone = progressiveDone;
     this.contentDispositionFilename = contentDispositionFilename;
-    this._rangeListeners = [];
-    this._progressListeners = [];
-    this._progressiveReadListeners = [];
-    this._progressiveDoneListeners = [];
-    this._readyCapability = Promise.withResolvers();
   }
   addRangeListener(listener) {
-    this._rangeListeners.push(listener);
+    this.#rangeListeners.push(listener);
   }
   addProgressListener(listener) {
-    this._progressListeners.push(listener);
+    this.#progressListeners.push(listener);
   }
   addProgressiveReadListener(listener) {
-    this._progressiveReadListeners.push(listener);
+    this.#progressiveReadListeners.push(listener);
   }
   addProgressiveDoneListener(listener) {
-    this._progressiveDoneListeners.push(listener);
+    this.#progressiveDoneListeners.push(listener);
   }
   onDataRange(begin, chunk) {
-    for (const listener of this._rangeListeners) {
+    for (const listener of this.#rangeListeners) {
       listener(begin, chunk);
     }
   }
   onDataProgress(loaded, total) {
-    this._readyCapability.promise.then(() => {
-      for (const listener of this._progressListeners) {
+    this.#capability.promise.then(() => {
+      for (const listener of this.#progressListeners) {
         listener(loaded, total);
       }
     });
   }
   onDataProgressiveRead(chunk) {
-    this._readyCapability.promise.then(() => {
-      for (const listener of this._progressiveReadListeners) {
+    this.#capability.promise.then(() => {
+      for (const listener of this.#progressiveReadListeners) {
         listener(chunk);
       }
     });
   }
   onDataProgressiveDone() {
-    this._readyCapability.promise.then(() => {
-      for (const listener of this._progressiveDoneListeners) {
+    this.#capability.promise.then(() => {
+      for (const listener of this.#progressiveDoneListeners) {
         listener();
       }
     });
   }
   transportReady() {
-    this._readyCapability.resolve();
+    this.#capability.resolve();
   }
   requestDataRange(begin, end) {
     unreachable("Abstract method PDFDataRangeTransport.requestDataRange");
@@ -12168,53 +12295,14 @@ class PDFPageProxy {
     return this._stats;
   }
 }
-class LoopbackPort {
-  #listeners = new Map();
-  #deferred = Promise.resolve();
-  postMessage(obj, transfer) {
-    const event = {
-      data: structuredClone(obj, transfer ? {
-        transfer
-      } : null)
-    };
-    this.#deferred.then(() => {
-      for (const [listener] of this.#listeners) {
-        listener.call(this, event);
-      }
-    });
-  }
-  addEventListener(name, listener, options = null) {
-    let rmAbort = null;
-    if (options?.signal instanceof AbortSignal) {
-      const {
-        signal
-      } = options;
-      if (signal.aborted) {
-        warn("LoopbackPort - cannot use an `aborted` signal.");
-        return;
-      }
-      const onAbort = () => this.removeEventListener(name, listener);
-      rmAbort = () => signal.removeEventListener("abort", onAbort);
-      signal.addEventListener("abort", onAbort);
-    }
-    this.#listeners.set(listener, rmAbort);
-  }
-  removeEventListener(name, listener) {
-    const rmAbort = this.#listeners.get(listener);
-    rmAbort?.();
-    this.#listeners.delete(listener);
-  }
-  terminate() {
-    for (const [, rmAbort] of this.#listeners) {
-      rmAbort?.();
-    }
-    this.#listeners.clear();
-  }
-}
 class PDFWorker {
+  #capability = Promise.withResolvers();
+  #messageHandler = null;
+  #port = null;
+  #webWorker = null;
   static #fakeWorkerId = 0;
   static #isWorkerDisabled = false;
-  static #workerPorts;
+  static #workerPorts = new WeakMap();
   static {
     if (isNodeJS) {
       this.#isWorkerDisabled = true;
@@ -12234,6 +12322,13 @@ class PDFWorker {
         type: "text/javascript"
       }));
     };
+    this.fromPort = params => {
+      deprecated("`PDFWorker.fromPort` - please use `PDFWorker.create` instead.");
+      if (!params?.port) {
+        throw new Error("PDFWorker.fromPort - invalid method signature.");
+      }
+      return this.create(params);
+    };
   }
   constructor({
     name = null,
@@ -12243,44 +12338,40 @@ class PDFWorker {
     this.name = name;
     this.destroyed = false;
     this.verbosity = verbosity;
-    this._readyCapability = Promise.withResolvers();
-    this._port = null;
-    this._webWorker = null;
-    this._messageHandler = null;
     if (port) {
-      if (PDFWorker.#workerPorts?.has(port)) {
+      if (PDFWorker.#workerPorts.has(port)) {
         throw new Error("Cannot use more than one PDFWorker per port.");
       }
-      (PDFWorker.#workerPorts ||= new WeakMap()).set(port, this);
-      this._initializeFromPort(port);
-      return;
+      PDFWorker.#workerPorts.set(port, this);
+      this.#initializeFromPort(port);
+    } else {
+      this.#initialize();
     }
-    this._initialize();
   }
   get promise() {
-    return this._readyCapability.promise;
+    return this.#capability.promise;
   }
   #resolve() {
-    this._readyCapability.resolve();
-    this._messageHandler.send("configure", {
+    this.#capability.resolve();
+    this.#messageHandler.send("configure", {
       verbosity: this.verbosity
     });
   }
   get port() {
-    return this._port;
+    return this.#port;
   }
   get messageHandler() {
-    return this._messageHandler;
+    return this.#messageHandler;
   }
-  _initializeFromPort(port) {
-    this._port = port;
-    this._messageHandler = new MessageHandler("main", "worker", port);
-    this._messageHandler.on("ready", function () {});
+  #initializeFromPort(port) {
+    this.#port = port;
+    this.#messageHandler = new MessageHandler("main", "worker", port);
+    this.#messageHandler.on("ready", () => {});
     this.#resolve();
   }
-  _initialize() {
+  #initialize() {
     if (PDFWorker.#isWorkerDisabled || PDFWorker.#mainThreadWorkerMessageHandler) {
-      this._setupFakeWorker();
+      this.#setupFakeWorker();
       return;
     }
     let {
@@ -12299,14 +12390,14 @@ class PDFWorker {
         messageHandler.destroy();
         worker.terminate();
         if (this.destroyed) {
-          this._readyCapability.reject(new Error("Worker was destroyed"));
+          this.#capability.reject(new Error("Worker was destroyed"));
         } else {
-          this._setupFakeWorker();
+          this.#setupFakeWorker();
         }
       };
       const ac = new AbortController();
       worker.addEventListener("error", () => {
-        if (!this._webWorker) {
+        if (!this.#webWorker) {
           terminateEarly();
         }
       }, {
@@ -12318,9 +12409,9 @@ class PDFWorker {
           terminateEarly();
           return;
         }
-        this._messageHandler = messageHandler;
-        this._port = worker;
-        this._webWorker = worker;
+        this.#messageHandler = messageHandler;
+        this.#port = worker;
+        this.#webWorker = worker;
         this.#resolve();
       });
       messageHandler.on("ready", data => {
@@ -12332,7 +12423,7 @@ class PDFWorker {
         try {
           sendTest();
         } catch {
-          this._setupFakeWorker();
+          this.#setupFakeWorker();
         }
       });
       const sendTest = () => {
@@ -12344,46 +12435,43 @@ class PDFWorker {
     } catch {
       info("The worker has been disabled.");
     }
-    this._setupFakeWorker();
+    this.#setupFakeWorker();
   }
-  _setupFakeWorker() {
+  #setupFakeWorker() {
     if (!PDFWorker.#isWorkerDisabled) {
       warn("Setting up fake worker.");
       PDFWorker.#isWorkerDisabled = true;
     }
     PDFWorker._setupFakeWorkerGlobal.then(WorkerMessageHandler => {
       if (this.destroyed) {
-        this._readyCapability.reject(new Error("Worker was destroyed"));
+        this.#capability.reject(new Error("Worker was destroyed"));
         return;
       }
       const port = new LoopbackPort();
-      this._port = port;
+      this.#port = port;
       const id = `fake${PDFWorker.#fakeWorkerId++}`;
       const workerHandler = new MessageHandler(id + "_worker", id, port);
       WorkerMessageHandler.setup(workerHandler, port);
-      this._messageHandler = new MessageHandler(id, id + "_worker", port);
+      this.#messageHandler = new MessageHandler(id, id + "_worker", port);
       this.#resolve();
     }).catch(reason => {
-      this._readyCapability.reject(new Error(`Setting up fake worker failed: "${reason.message}".`));
+      this.#capability.reject(new Error(`Setting up fake worker failed: "${reason.message}".`));
     });
   }
   destroy() {
     this.destroyed = true;
-    this._webWorker?.terminate();
-    this._webWorker = null;
-    PDFWorker.#workerPorts?.delete(this._port);
-    this._port = null;
-    this._messageHandler?.destroy();
-    this._messageHandler = null;
+    this.#webWorker?.terminate();
+    this.#webWorker = null;
+    PDFWorker.#workerPorts.delete(this.#port);
+    this.#port = null;
+    this.#messageHandler?.destroy();
+    this.#messageHandler = null;
   }
-  static fromPort(params) {
-    if (!params?.port) {
-      throw new Error("PDFWorker.fromPort - invalid method signature.");
-    }
-    const cachedPort = this.#workerPorts?.get(params.port);
+  static create(params) {
+    const cachedPort = this.#workerPorts.get(params?.port);
     if (cachedPort) {
       if (cachedPort._pendingDestroy) {
-        throw new Error("PDFWorker.fromPort - the worker is being destroyed.\n" + "Please remember to await `PDFDocumentLoadingTask.destroy()`-calls.");
+        throw new Error("PDFWorker.create - the worker is being destroyed.\n" + "Please remember to await `PDFDocumentLoadingTask.destroy()`-calls.");
       }
       return cachedPort;
     }
@@ -12940,65 +13028,6 @@ class WorkerTransport {
     return this.#pageRefCache.get(refStr) ?? null;
   }
 }
-const INITIAL_DATA = Symbol("INITIAL_DATA");
-class PDFObjects {
-  #objs = Object.create(null);
-  #ensureObj(objId) {
-    return this.#objs[objId] ||= {
-      ...Promise.withResolvers(),
-      data: INITIAL_DATA
-    };
-  }
-  get(objId, callback = null) {
-    if (callback) {
-      const obj = this.#ensureObj(objId);
-      obj.promise.then(() => callback(obj.data));
-      return null;
-    }
-    const obj = this.#objs[objId];
-    if (!obj || obj.data === INITIAL_DATA) {
-      throw new Error(`Requesting object that isn't resolved yet ${objId}.`);
-    }
-    return obj.data;
-  }
-  has(objId) {
-    const obj = this.#objs[objId];
-    return !!obj && obj.data !== INITIAL_DATA;
-  }
-  delete(objId) {
-    const obj = this.#objs[objId];
-    if (!obj || obj.data === INITIAL_DATA) {
-      return false;
-    }
-    delete this.#objs[objId];
-    return true;
-  }
-  resolve(objId, data = null) {
-    const obj = this.#ensureObj(objId);
-    obj.data = data;
-    obj.resolve();
-  }
-  clear() {
-    for (const objId in this.#objs) {
-      const {
-        data
-      } = this.#objs[objId];
-      data?.bitmap?.close();
-    }
-    this.#objs = Object.create(null);
-  }
-  *[Symbol.iterator]() {
-    for (const objId in this.#objs) {
-      const {
-        data
-      } = this.#objs[objId];
-      if (data === INITIAL_DATA) {
-        continue;
-      }
-      yield [objId, data];
-    }
-  }
-}
 class RenderTask {
   #internalRenderTask = null;
   onContinue = null;
@@ -13167,8 +13196,8 @@ class InternalRenderTask {
     }
   }
 }
-const version = "5.2.133";
-const build = "4f7761353";
+const version = "5.3.31";
+const build = "47ad820d9";
 
 ;// ./src/shared/scripting_utils.js
 function makeColorComp(n) {
@@ -16264,12 +16293,9 @@ class FreeTextEditor extends AnnotationEditor {
     }
   }
   enableEditMode() {
-    if (this.isInEditMode()) {
-      return;
+    if (!super.enableEditMode()) {
+      return false;
     }
-    this.parent.setEditingState(false);
-    this.parent.updateToolbar(AnnotationEditorType.FREETEXT);
-    super.enableEditMode();
     this.overlayDiv.classList.remove("enabled");
     this.editorDiv.contentEditable = true;
     this._isDraggable = false;
@@ -16291,13 +16317,12 @@ class FreeTextEditor extends AnnotationEditor {
     this.editorDiv.addEventListener("paste", this.editorDivPaste.bind(this), {
       signal
     });
+    return true;
   }
   disableEditMode() {
-    if (!this.isInEditMode()) {
-      return;
+    if (!super.disableEditMode()) {
+      return false;
     }
-    this.parent.setEditingState(true);
-    super.disableEditMode();
     this.overlayDiv.classList.add("enabled");
     this.editorDiv.contentEditable = false;
     this.div.setAttribute("aria-activedescendant", this.#editorDivId);
@@ -16309,6 +16334,7 @@ class FreeTextEditor extends AnnotationEditor {
     });
     this.isEditing = false;
     this.parent.div.classList.add("freetextEditing");
+    return true;
   }
   focusin(event) {
     if (!this._focusEventsAllowed) {
@@ -16424,9 +16450,6 @@ class FreeTextEditor extends AnnotationEditor {
     this.enableEditMode();
     this.editorDiv.focus();
   }
-  dblclick(event) {
-    this.enterInEditMode();
-  }
   keydown(event) {
     if (event.target === this.div && event.key === "Enter") {
       this.enterInEditMode();
@@ -16452,6 +16475,9 @@ class FreeTextEditor extends AnnotationEditor {
   enableEditing() {
     this.editorDiv.setAttribute("role", "textbox");
     this.editorDiv.setAttribute("aria-multiline", true);
+  }
+  get canChangeContent() {
+    return true;
   }
   render() {
     if (this.div) {
@@ -16479,7 +16505,6 @@ class FreeTextEditor extends AnnotationEditor {
     this.overlayDiv = document.createElement("div");
     this.overlayDiv.classList.add("overlay", "enabled");
     this.div.append(this.overlayDiv);
-    bindEvents(this, this.div, ["dblclick", "keydown"]);
     if (this._isCopy || this.annotationElementId) {
       const [parentWidth, parentHeight] = this.parentDimensions;
       if (this.annotationElementId) {
@@ -20306,14 +20331,8 @@ class SignatureExtractor {
       const isteps = Math.floor(steps);
       steps = steps === isteps ? isteps - 1 : isteps;
       for (let i = 0; i < steps; i++) {
-        newWidth = prevWidth;
-        newHeight = prevHeight;
-        if (newWidth > maxDim) {
-          newWidth = Math.ceil(newWidth / 2);
-        }
-        if (newHeight > maxDim) {
-          newHeight = Math.ceil(newHeight / 2);
-        }
+        newWidth = Math.ceil(prevWidth / 2);
+        newHeight = Math.ceil(prevHeight / 2);
         const offscreen = new OffscreenCanvas(newWidth, newHeight);
         const ctx = offscreen.getContext("2d");
         ctx.drawImage(bitmap, 0, 0, prevWidth, prevHeight, 0, 0, newWidth, newHeight);
@@ -21018,7 +21037,9 @@ class StampEditor extends AnnotationEditor {
     return SupportedImageMimeTypes.includes(mime);
   }
   static paste(item, parent) {
-    parent.pasteEditor(AnnotationEditorType.STAMP, {
+    parent.pasteEditor({
+      mode: AnnotationEditorType.STAMP
+    }, {
       bitmapFile: item.getAsFile()
     });
   }
@@ -21717,8 +21738,8 @@ class AnnotationEditorLayer {
   get isInvisible() {
     return this.isEmpty && this.#uiManager.getMode() === AnnotationEditorType.NONE;
   }
-  updateToolbar(mode) {
-    this.#uiManager.updateToolbar(mode);
+  updateToolbar(options) {
+    this.#uiManager.updateToolbar(options);
   }
   updateMode(mode = this.#uiManager.getMode()) {
     this.#cleanup();
@@ -22067,9 +22088,9 @@ class AnnotationEditorLayer {
   canCreateNewEmptyEditor() {
     return this.#currentEditorType?.canCreateNewEmptyEditor();
   }
-  async pasteEditor(mode, params) {
-    this.#uiManager.updateToolbar(mode);
-    await this.#uiManager.updateMode(mode);
+  async pasteEditor(options, params) {
+    this.updateToolbar(options);
+    await this.#uiManager.updateMode(options.mode);
     const {
       offsetX,
       offsetY
@@ -22548,10 +22569,9 @@ class DrawLayer {
 
 
 
-const pdfjsVersion = "5.2.133";
-const pdfjsBuild = "4f7761353";
+
 {
-  globalThis.pdfjsTestingUtils = {
+  globalThis._pdfjsTestingUtils = {
     HighlightOutliner: HighlightOutliner
   };
 }
