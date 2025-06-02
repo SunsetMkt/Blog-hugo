@@ -1,10 +1,17 @@
 <!-- https://www.brycewray.com/posts/2024/11/simple-hugo-shortcode-embedding-bluesky-posts/ -->
 <!-- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_shortcodes/x.html -->
-{{- $link := .Get "link" -}}
-{{- $query := querify "url" $link -}}
-{{- $request := printf "https://embed.bsky.app/oembed?%s" $query -}}
+{{- $id := or (.Get "id") "" -}}
+{{- $user := or (.Get "user") "" -}}
+{{- if and $id $user -}}
+    {{- template "render-bluesky" (dict "id" $id "user" $user "ctx" .) -}}
+{{- else -}}
+    {{- errorf "The %q shortcode requires two named parameters: user and id. See %s" .Name .Position -}}
+{{- end -}}
 
 {{- define "render-bluesky" -}}
+    {{- $url := printf "https://bsky.app/profile/%v/post/%v" .user .id -}}
+    {{- $query := querify "url" $url -}}
+    {{- $request := printf "https://embed.bsky.app/oembed?%s" $query -}}
     {{- with try (resources.GetRemote $request) -}}
         {{- with .Err -}}
             {{- errorf "%s" . -}}
