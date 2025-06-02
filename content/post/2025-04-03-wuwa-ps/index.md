@@ -87,18 +87,18 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ```plain
 [*] Available versions:
-1. Live - OS
-2. Live - CN
-3. Beta - OS
-4. Beta - CN
+1. Live - OS (2.3.1)
+2. Live - CN (2.3.1)
+3. Beta - OS (2.4.0)
+4. Beta - CN (2.4.0)
 [?] Select version: 4（输入 4，并按下 Enter）
 
 [*] Fetching download configuration...
 [*] Using default.config
-[?] Enter download directory (Enter for current):（按下 Enter）
+[?] Please specify the directory where the game should be downloaded (press Enter to use the current directory):
 
 （开始下载；不要担心它的下载速度，它是全速下载的；输出可能会卡顿，实际仍在下载）
-[*] Download folder: D:\WuWaPS\client\Client
+[*] Download folder: D:\WuWaPS\client
 
 [*] Fetching index file...
 [+] Index file downloaded successfully
