@@ -83,6 +83,7 @@ slug: friends
 ```plain
 名称（标题）：Sunset Mikoto
 描述（副标题）：Lead Programmer of Sunset Edu. & Tech. Group.
+描述（副标题，简体中文）：Sunset Edu. & Tech. Group 的首席程序员。
 链接/URL（主页）：https://sunmkt.uk/
 友情链接展示页：https://blog.sunmkt.uk/friends/
 图片（Pride Flag 背景）：https://blog.sunmkt.uk/avatar/avatar_pride.png
