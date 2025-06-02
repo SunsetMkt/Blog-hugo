@@ -23,7 +23,7 @@ subtitle = "Sunset Edu. & Tech. Group 的首席程序员"
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/avatar.png"
+src = "img/avatar_pride.png"
 
 [article]
 headingAnchor = false
