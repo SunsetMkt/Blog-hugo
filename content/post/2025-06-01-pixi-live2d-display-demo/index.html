@@ -48,6 +48,7 @@ title: pixi-live2d-display Demo
 
     (async function main() {
         // Create app
+        PIXI.live2d.config.logLevel = PIXI.live2d.config.LOG_LEVEL_VERBOSE;
         const app = new PIXI.Application({
             view: document.getElementById("canvas"),
             autoStart: true,
