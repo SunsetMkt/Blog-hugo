@@ -24,6 +24,7 @@ And from the sublime to the ridiculous, here is a
 <li><b>Greek</b> (polytonic): Μπορῶ νὰ φάω σπασμένα γυαλιὰ χωρὶς νὰ πάθω τίποτα.
 
 <br><b>Etruscan</b>: (NEEDED)
+
 <li><b>Latin</b>:  Vitrum edere possum; mihi non nocet.
 <li><b>Old French</b>: Je puis mangier del voirre.  Ne me nuit.
 <li><b>French</b>: Je peux manger du verre, ça ne me fait pas <!--de--> mal.
@@ -118,7 +119,6 @@ schaadt. -->
 mĳ 
 geen kwaad.
 
-
 <LI><B>Kirchröadsj/Bôchesserplat</B>: Iech ken glaas èèse, mer 't deet miech
 jing pieng.</LI>
 
@@ -139,9 +139,10 @@ dudd merr ni wii.
 <li><b>Allemannisch</b>: I kaun Gloos essen, es tuat ma ned weh.
 
 <li><b>Schwyzerdütsch</b> (Zürich): Ich chan Glaas ässe, das schadt mir nöd. 
-<li><b>Schwyzerdütsch</b> (Luzern):  Ech cha Glâs ässe, das schadt mer ned. 
+<li><b>Schwyzerdütsch</b> (Luzern):  Ech cha Glâs ässe, das schadt mer ned.
 
 <br><b>Plautdietsch</b>: (NEEDED)
+
 <li><b>Hungarian</b>: Meg tudom enni az üveget, nem lesz tőle bajom.
 <li><b>Suomi / Finnish</b>: Voin syödä lasia, se ei vahingoita minua.
 <li><b>Sami (Northern)</b>: Sáhtán borrat lása, dat ii leat bávččas.
@@ -167,13 +168,13 @@ dudd merr ni wii.
 
 <!--
 <li><b>Croatian</b>: Ja mogu jesti staklo i ne boli me.
-Serbian translation is very poor. Infinitive used and sound as: "I can 
+Serbian translation is very poor. Infinitive used and sound as: "I can
 eating glass".
 <li><b>Serbian</b> <i>(Latin):</i> Mogu jesti staklo a da mi ne škodi.
-<li><b>Serbian</b> <i>(Cyrillic):</i> Могу јести стакло 
+<li><b>Serbian</b> <i>(Cyrillic):</i> Могу јести стакло
 а
-да ми 
-не 
+да ми
+не
 шкоди.
 <li><b>Serbian</b> <i>(Latin):</i> Ja mogu da jedem staklo.
 <li><b>Serbian</b> <i>(Cyrillic)</i>: Ја могу да једем стакло.
@@ -217,9 +218,7 @@ eating glass".
 
 <li><b>Kannada</b>:
 
-
 ನನಗೆ ಹಾನಿ ಆಗದೆ, ನಾನು ಗಜನ್ನು ತಿನಬಹುದು
-
 
 <!--
 
@@ -227,28 +226,20 @@ eating glass".
 
 -->
 
-
 <li>
 <b>Hindi</b> (masculine): मैं काँच खा सकता हूँ और मुझे उससे कोई चोट नहीं पहुंचती.
-
 
 <li>
 <b>Hindi</b> (feminine):&nbsp;&nbsp;
 मैं काँच खा सकती हूँ और मुझे उससे कोई चोट नहीं पहुंचती.
 
-
-
 <li><b>Malayalam</b>:
 
 എനിക്ക് ഗ്ലാസ് തിന്നാം. അതെന്നെ വേദനിപ്പിക്കില്ല.
 
-
-
 <li><b>Tamil</b>: நான் கண்ணாடி சாப்பிடுவேன், அதனால் எனக்கு ஒரு கேடும் வராது.
 
-
 <li><b>Telugu</b>: నేను గాజు తినగలను మరియు అలా చేసినా నాకు  ఏమి ఇబ్బంది  లేదు
-
 
 <li><b>Sinhalese</b>: මට වීදුරු කෑමට හැකියි. එයින් මට කිසි හානියක් සිදු නොවේ.
 
@@ -259,6 +250,7 @@ eating glass".
 <li id="arabic"><b>Arabic</b><a href="#notes">(3)</a>: <span dir="RTL" lang=AR>أنا قادر على أكل الزجاج و هذا لا يؤلمني.</span>
 
 <br><B>Aramaic</B>: (NEEDED)
+
 <li><b>Maltese</b>: Nista' niekol il-&#295;&#289;ie&#289; u ma jag&#295;milli xejn.
 <li id="hebrew"><B>Hebrew</B><a href="#notes">(3)</a>: <SPAN dir=rtl lang=HE>אני יכול לאכול זכוכית וזה לא מזיק לי.</SPAN>
 <li><B>Yiddish</B><a href="#notes">(3)</a>: <SPAN dir=rtl lang=YI>איך קען עסן גלאָז און עס טוט מיר נישט װײ.</SPAN>
@@ -304,11 +296,8 @@ eating glass".
 ខ្ញុំអាចញុំកញ្ចក់បាន
 ដោយគ្មានបញ្ហារ
 
-
 <li><b>Lao</b>:
 ຂອ້ຍກິນແກ້ວໄດ້ໂດຍທີ່ມັນບໍ່ໄດ້ເຮັດໃຫ້ຂອ້ຍເຈັບ.
-
-
 
 <li><b>Thai</b>: ฉันกินกระจกได้ แต่มันไม่ทำให้ฉันเจ็บ
 <li><b>Mongolian</b> <i>(Cyrillic):</i>   Би шил идэй чадна, надад хортой биш
@@ -393,7 +382,7 @@ than it is to enforce a strict interpretation of the word "hurt"!):
 This is the meaning I have translated to the Swabian dialect.
 
 However, I just have noticed that most of the German variants
-translate the "inflict pain" meaning. The German example should 
+translate the "inflict pain" meaning. The German example should
 read:
 
 <p>
@@ -430,7 +419,7 @@ to correct them:
 </ul>
 <p>
 
-In contrast, I deem the following translations *alright*:
+In contrast, I deem the following translations _alright_:
 
 <p>
 <ul>
@@ -481,8 +470,9 @@ That was from July 2004.  In December 2007, Otto writes again:
 Hello Frank,
 
 in days of yore, I had written:<br>
-&gt;     "Ich kann Glas essen ohne mir zu schaden." <br>
+&gt; "Ich kann Glas essen ohne mir zu schaden." <br>
 &gt; The comma fell victim to the 1996 orthographic reform,
+
 <p>
 cf. <a href="http://www.ids-mannheim.de/reform/e3-1.html#P76">http://www.ids-mannheim.de/reform/e3-1.html#P76</a>. 
 <p>
@@ -493,6 +483,7 @@ has revived the comma around infinitive clauses commencing with
 from an announcing demonstrative
 (<a href="http://www.ids-mannheim.de/reform/regeln2006.pdf">http://www.ids-mannheim.de/reform/regeln2006.pdf</a>, &sect;75).
 So, it's again: <i>Ich kann Glas essen, ohne mir zu schaden.</i>
+
 <p>
 Best wishes,<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Otto Stolz
@@ -518,7 +509,7 @@ should occupy one character cell.
 small 'e' with U+0329, Combining Vertical Line Below.  This displays
 correctly only if your Unicode font includes the U+0329 glyph and your
 browser supports combining diacritical marks.  The Lingala and Indic examples
-also include combining sequences.  
+also include combining sequences.
 
 <p>
 
