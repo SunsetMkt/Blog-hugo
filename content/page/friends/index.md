@@ -46,10 +46,10 @@ links:
     #   description: 太阳出来了 雾就会散的
     #   website: https://blog.vincy1230.net/
     #   image: vincy1230.jpg
-    - title: "worable's blog"
-      description: 永远相信美好的事情即将发生
-      website: http://worable.cncloud.cloud/
-      image: worable.jpg
+    - title: "𝗕𝗼𝗼𝗸💫🏳️‍⚧️（中考版）"
+      description: 🇨🇳｜🏳️‍⚧️｜MtF｜无证无糖｜未出柜｜初三牲 09
+      website: https://bsky.app/profile/cnbook.bsky.social
+      image: bafkreicm6jbpvgb65saoludrjvqo64qg4cxum657sedvkedhqi45go2jle.jpg
     - title: "羽蔚陌凜"
       description: 誰說道士一定是來斬妖驅魔的？各位要知道了解科技也是種玄學
       website: https://vtbmolin.live/
