@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- THE BIG META -->
+	<title>和焦虑一起冒险！</title>  <!-- TRANSLATE -->
+	<meta name="description" content="一个关于人类和TA的焦虑的叙事游戏。你来扮演焦虑。" />  <!-- TRANSLATE: content -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="和焦虑一起冒险！">  <!-- TRANSLATE: content -->
+	<meta name="twitter:description" content="一个关于人类和TA的焦虑的叙事游戏。你来扮演焦虑。">  <!-- TRANSLATE: content -->
+	<meta name="twitter:image" content="https://ncase.me/anxiety/sharing/thumb.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="和焦虑一起冒险！">  <!-- TRANSLATE: content -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/anxiety/">
+	<meta property="og:image" content="https://ncase.me/anxiety/sharing/thumb.png">
+	<meta property="og:description" content="一个关于人类和TA的焦虑的叙事游戏。你来扮演焦虑。">  <!-- TRANSLATE: content -->
+	<meta property="og:site_name" content="和焦虑一起冒险！">  <!-- TRANSLATE: content -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/game.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - -->
+<!-- THE GAME ITSELF, FRONT AND CENTER -->
+<!-- - - - - - - - - - - - - - - - - - -->
+
+<div id="game_container">
+
+	<!-- The main game -->
+	<canvas id="game_canvas"></canvas>
+	<div id="game_words"></div>
+	<div id="game_hp"></div>
+	<div id="game_choices"></div>
+
+	<!-- Click to Advance-->
+	<div id="click_to_advance">
+		<span id="cta_text1">
+			<div class="mini-icon" pic="click" style="top:3px;"></div>
+			<span id="instructions_if_not_mobile">
+				点击或按空格键 <!-- TRANSLATE THIS -->
+			</span>
+			<span id="instructions_if_mobile" style="display:none">
+				点击任意位置 <!-- TRANSLATE THIS -->
+			</span>
+		</span>
+		<span id="cta_text2">
+			<div class="mini-icon" pic="next"></div>
+		</span>
+	</div>
+
+	<!-- HACK: SPECIAL ATTACK -->
+	<div id="special_attack"></div>
+
+	<!-- Bottom Corner Tabs -->
+	<div id="gear" style="display:none" onclick="publish('show_options'); sfx('ui_button1');">
+		<div class="icon">
+			<div class="mini-icon" pic="gear"></div>
+		</div>
+	</div>
+	<div id="huh" style="display:none">
+		<div class="icon">
+			<div class="mini-icon" pic="about"></div>
+		</div>
+	</div>
+
+	<!-- Paused Screen -->
+	<div id="paused">
+		<div>
+			<!-- TRANSLATE THIS -->
+			已暂停
+			<div>点击任意位置即可继续抓狂</div>
+		</div>
+	</div>
+
+	<!-- LOADING -->
+	<div id="loading">
+		<div id="loading_bar">
+			<div id="loading_bar_bg"></div>
+			<div id="loading_pic"></div>
+		</div>
+	</div>
+
+	<!-- CONTENT NOTES -->
+	<div id="content_notes">
+
+		<!-- TRANSLATE THIS -->
+		<p style="margin-top: 0.6em;">
+			<i style="color:#ff4040">和焦虑一起冒险</i>是关于，呃，焦虑。
+		</p>
+		<p>
+			但我做这个游戏是<i>为了</i>和我一样有焦虑症的人。
+			我希望这能-带点幽默地-帮助你了解焦虑是如何运作的。
+			然后，也许，面对恐惧时不必再那么恐惧。
+		</p>
+		<p>
+			游戏里还有画得很糟的火柴人和一只过分活跃的狼。
+			游戏愉快！
+		</p>
+		<p style="color:#999; font-size: 16px; line-height: 1.3em;">
+			其他注意事项：酗酒，性<span class="hide-if-cuss-free">，很@✩$!多脏话</span>
+		</p>
+		<p>
+			<a target="_blank" href="https://ncase.me/mental-health/">心理健康小贴士&amp;资源</a>
+			&#x1f517;
+		</p>
+		<div id="cn_ok" onclick="publish('hide_cn');" style="float:none">
+			ok <div class="mini-icon" pic="ok" style="top: 3px;"></div>
+		</div>
+
+	</div>
+
+	<!-- ABOUT -->
+	<div id="about"><!-- about=yes-->
+		<div id="about_words">
+
+			<!-- TRANSLATE THIS -->
+			<div style="font-size: 40px; margin-top: 42px; line-height: 30px;">
+				心理健康
+				<a href="https://ncase.me/mental-health/" target="_blank">资源</a>
+			</div>
+
+			<div style="margin-top: 26px; color: #999;">
+				&mdash; 或 &mdash;
+			</div>
+
+			<div style="font-size: 25px; text-align: left; width: 170px;
+						margin-left: 165px; line-height: 25px; margin-top: 31px;">
+
+				<!-- TRANSLATE ALL THIS -->
+				<div>
+					游玩更多
+					<a href="https://ncase.me" target="_blank">我的游戏</a>
+				</div>
+				<div style="margin-top: 32px;">
+					<a href="https://www.patreon.com/ncase" target="_blank">在Patreon上</a>
+					朝我<br>丢硬币
+				</div>
+				<div style="margin-top: 28px;">
+					听Monplaisir的
+					<a href="https://chezmonplaisir.bandcamp.com/album/anxiety" target="_blank">OST</a>
+					以获得耳朵上的享受
+				</div>
+
+			</div>
+
+			<div id="replay"></div>
+
+			<div style="clear:both;"></div>
+			<div id="close_about" style="margin: 0; float: right; margin-top: 20px;">关闭</div> <!-- TRANSLATE -->
+
+		</div>
+	</div>
+
+	<!-- OPTIONS -->
+	<div id="options">
+		<div style="width: 150px; height: 63px; float: left;">
+			<div id="text_speed_preview"></div>
+			<input id="text_speed_slider" type="range" min=0 value=0.5 max=1 step="0.01"/>
+		</div>
+		<div style="float: right; width: 135px; height: 63px;">
+			<!-- TRANSLATE THIS -->
+			对话推进
+			<div id="text_automatic_toggle">单击</div>
+		</div>
+		<div style="clear:both"></div>
+		<span id="volume_options">
+			<div>音量：</div> <!-- TRANSLATE -->
+			<input id="volume_slider" type="range" min=0 max=1 value=1 step="0.01"/>
+		</span>
+		<div id="options_ok">
+			确定<div class="mini-icon" pic="ok" style="top: 3px;"></div> <!-- TRANSLATE -->
+		</div>
+	</div>
+
+	<!-- Dialogue position debugging elements -->
+	<div class='debug' style='position: absolute; width: 5px; height: 250px; background: red;'></div>
+	<div class='debug' style='position: absolute; width: 5px; height: 80px; background: white;'></div>
+
+</div>
+
+<div class="debug" id="section_debug_list"></div>
+
+<!-- - - - - - - - - - - - - - - - - - -->
+<!-- SHTUFF IN THE CORNER - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - -->
+
+<!-- TRANSLATE ALL OF THIS -->
+
+<div class="corner-text" id="topleft">
+制作：
+<a href="https://ncase.me/" target="_blank">Nicky Case</a>
+<br>
+音乐：
+<a href="https://loyaltyfreakmusic.com" target="_blank">Monplaisir</a>
+<br>
+额外代码：
+<a href="https://spacie.me/" target="_blank">Spacie</a>
+<br>
+<a href="https://github.com/ncase/anxiety#full-credits" target="_blank">完整名单</a>
+<br><br>
+汉化：
+棋山 ,
+<a href="https://weibo.com/MethodZylen" target="_blank">顾凉茶</a>
+<br>
+
+<br>
+游戏原地址：
+<br>
+<a href="https://ncase.me/anxiety/">English(original)</a>
+</div>
+
+<div class="corner-text" id="bottomleft">
+<img src="sprites/about/cc0.png" height="30" style="opacity:0.7"/>
+<br>
+你可以任意复用&amp;remix这个游戏！
+<a href="https://github.com/ncase/anxiety#public-domain" target="_blank">（哈？）</a>
+<br>
+<a href="https://github.com/ncase/anxiety" target="_blank">查看完整源代码</a>
+</div>
+
+<div class="corner-text" id="topright">
+在一个焦虑app上分享：
+<span id="sharing_title">
+	和焦虑一起冒险！
+</span>
+<span id="sharing_desc">
+	我刚刚玩了这个关于人类和TA的焦虑的剧情游戏！你来*扮演*焦虑。😱
+</span>
+<div id="share">
+	<a id="share_link_fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fncase.me%2Fanxiety%2F" target="_blank" class="no_deco">
+		<div id="share_fb"></div>
+	</a>
+	<a id="share_link_tw" href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fncase.me%2Fanxiety%2F&text=I%20just%20played%20this%20story-game%20about%20a%20human%20and%20their%20anxiety!%20You%20play%20*as*%20the%20anxiety.%20%F0%9F%98%B1%20https%3A%2F%2Fncase.me%2Fanxiety%2F"
+		target="_blank" class="no_deco">
+		<div id="share_tw"></div>
+	</a>
+	<a id="share_link_em" href="mailto:?subject=Adventures%20with%20Anxiety!&body=I%20just%20played%20this%20story-game%20about%20a%20human%20and%20their%20anxiety!%20You%20play%20*as*%20the%20anxiety.%20%F0%9F%98%B1%20https%3A%2F%2Fncase.me%2Fanxiety%2F"
+		target="_blank" class="no_deco">
+		<div id="share_em"></div>
+	</a>
+</div>
+<br>
+为了你能方便分享：<br>
+<a href="sharing" target="_blank">视频&amp;缩略图</a>
+</div>
+
+<div class="corner-text" id="bottomright">
+<a href="https://ncase.me/mental-health/" target="_blank">心理健康小贴士&amp;资源</a>
+<span class="hide-if-cuss-free">
+	<br><br>
+	<a href="?c=1">文明用语模式</a><br>
+	（为不想被家长找上门的教育工作者所准备）
+</span>
+</div>
+
+
+</body>
+</html>
+
+<!-- SCRIPTS -->
+<script src="scripts/lib/createImageBitmap.js"></script>
+<script src="scripts/lib/tickable_observer.js"></script>
+<script src="scripts/lib/helpers.js"></script>
+<script src="scripts/lib/rsvp.min.js"></script>
+<script src="scripts/lib/minpubsub.min.js"></script>
+<script src="scripts/lib/howler.min.js"></script>
+
+<script src="scripts/game/Loader.js"></script>
+<script src="scripts/game/Game.js"></script>
+<script src="scripts/game/Sprite.js"></script>
+<script src="scripts/game/HP.js"></script>
+<script src="scripts/game/BG_Anxiety.js"></script>
+<script src="scripts/game/Character.js"></script>
+<script src="scripts/game/Sounds.js"></script>
+<script src="scripts/game/Options.js"></script>
+<script src="scripts/game/About.js"></script>
+<script src="scripts/game/ContentNotes.js"></script>
+<script src="scripts/game/Sharing.js"></script>
+
+<!-- INTRO -->
+<script src="scripts/intro/Intro_SceneSetup.js"></script>
+<script src="scripts/intro/Intro_BG.js"></script>
+
+<!-- ACT I -->
+<script src="scripts/act1/Act1_SceneSetup.js"></script>
+<script src="scripts/act1/Act1_Hong.js"></script>
+<script src="scripts/act1/Act1_Beebee.js"></script>
+<script src="scripts/act1/Act1_Outro_BG.js"></script>
+
+<!-- ACT II -->
+<script src="scripts/act2/Act2_SceneSetup.js"></script>
+<script src="scripts/act2/Act2_BG.js"></script>
+<script src="scripts/act2/Act2_Hong.js"></script>
+<script src="scripts/act2/Act2_Beebee.js"></script>
+
+<!-- ACT III -->
+<script src="scripts/act3/Act3_SceneSetup.js"></script>
+<script src="scripts/act3/Act3_BG.js"></script>
+<script src="scripts/act3/Act3_Hong.js"></script>
+<script src="scripts/act3/Act3_Beebee.js"></script>
+
+<!-- ACT IV -->
+<script src="scripts/act4/Act4_SceneSetup.js"></script>
+<script src="scripts/act4/Act4_BG.js"></script>
+<script src="scripts/act4/Act4_Hong.js"></script>
+<script src="scripts/act4/Act4_Beebee.js"></script>
+
+<!-- CREDITS -->
+<script src="scripts/credits/Credits_SceneSetup.js"></script>
+<script src="scripts/credits/Credits_BG.js"></script>
+
+<!-- INTERMISSION -->
+<script src="scripts/intermission/Intermission_SceneSetup.js"></script>
+<script src="scripts/intermission/Intermission_BG.js"></script>
+
+<!-- LET'S GO! -->
+<script src="scripts/main.js"></script>
