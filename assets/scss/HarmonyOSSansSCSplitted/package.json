@@ -1,6 +1,6 @@
 {
     "name": "harmonyos-sans-sc-webfont-splitted",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "HarmonyOS Sans SC Webfont Splitted.",
     "files": [
         "dist/",
