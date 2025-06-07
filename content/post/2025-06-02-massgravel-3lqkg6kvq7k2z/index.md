@@ -1,9 +1,10 @@
 ---
 categories: Repost
-date: "2025-06-02T00:00:00Z"
+date: 2025-06-02T00:00:00Z
 tags:
-    - 社会评论
-    - 信息技术
+  - LGBTQIA
+  - 信息技术
+  - 社会评论
 slug: massgravel-3lqkg6kvq7k2z
 title: MAS 在 Bluesky 上：祝所有酷儿们骄傲月快乐！
 ---

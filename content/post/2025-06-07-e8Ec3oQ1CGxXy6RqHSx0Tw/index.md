@@ -1,8 +1,9 @@
 ---
 categories: Repost
-date: "2025-06-07T00:00:00Z"
+date: 2025-06-07T00:00:00Z
 tags:
-    - 社会评论
+  - LGBTQIA
+  - 社会评论
 slug: e8Ec3oQ1CGxXy6RqHSx0Tw
 title: 海棠作者被异地传唤：耽美作品涉罪的边界与争议
 ---
