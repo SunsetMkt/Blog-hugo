@@ -6,6 +6,7 @@ tags:
   - 软件
   - 逆向工程
 slug: binja
+draft: true
 title: binaryninja 4.1.5902 已泄露（含破解）
 ---
 
