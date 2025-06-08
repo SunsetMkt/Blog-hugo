@@ -6,7 +6,7 @@ tags:
     - 软件
     - 逆向工程
 slug: ida-pro
-title: IDA Pro 9.0.241217 SP1 已泄露（含破解）
+title: IDA Pro 9.1.250226 已泄露（含破解）
 ---
 
 [链接到种子下载页面](https://kaede.su/)（需要跟随页面上的链接以到达抗 DMCA 的页面）
