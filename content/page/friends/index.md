@@ -46,10 +46,6 @@ links:
     #   description: 太阳出来了 雾就会散的
     #   website: https://blog.vincy1230.net/
     #   image: vincy1230.jpg
-    - title: "𝗕𝗼𝗼𝗸💫🏳️‍⚧️（中考版）"
-      description: 🇨🇳｜🏳️‍⚧️｜MtF｜无证无糖｜未出柜｜初三牲 09
-      website: https://bsky.app/profile/cnbook.bsky.social
-      image: bafkreicm6jbpvgb65saoludrjvqo64qg4cxum657sedvkedhqi45go2jle.jpg
     - title: "羽蔚陌凜"
       description: 誰說道士一定是來斬妖驅魔的？各位要知道了解科技也是種玄學
       website: https://vtbmolin.live/
@@ -67,6 +63,10 @@ links:
       description: 这个列表是一个开始，先把独立博客们收集起来。
       website: https://github.com/timqian/chinese-independent-blogs
       image: 5512552.jpg
+    - title: "𝗕𝗼𝗼𝗸💫🏳️‍⚧️（中考版）"
+      description: 🇨🇳｜🏳️‍⚧️｜MtF｜无证无糖｜未出柜｜初三牲 09
+      website: https://bsky.app/profile/cnbook.bsky.social
+      image: bafkreicm6jbpvgb65saoludrjvqo64qg4cxum657sedvkedhqi45go2jle.jpg
 menu:
     main:
         weight: 4
@@ -78,7 +78,7 @@ license: false
 slug: friends
 ---
 
-按字母表顺序排列，CJK 字符置后，团体或随机跳转页置后。
+按字母表顺序排列，CJK 字符置后，团体或随机跳转页置后，长期网站故障占位置后。
 
 ```plain
 名称（标题）：Sunset Mikoto
