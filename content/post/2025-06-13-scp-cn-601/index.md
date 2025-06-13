@@ -1,6 +1,6 @@
 ---
 categories: Repost
-date: "2025-06-04T00:00:00Z"
+date: "2025-06-13T00:00:00Z"
 tags:
     - SCP基金会
     - 小说
