@@ -14,8 +14,6 @@ title: 公款旅游：梅花计划
 
 转载自[公款旅游：梅花计划](http://scp-wiki-cn.wikidot.com/travel-by-public-funds-hannah) By [Freedom Koo](http://www.wikidot.com/user:info/freedom-koo)
 
-© SCP 基金会
-
 [Source](https://web.archive.org/web/20180718100544/http://scp-wiki-cn.wikidot.com/travel-by-public-funds-hannah)
 
 _所谓闺蜜（百合）正是如此。_

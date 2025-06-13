@@ -12,8 +12,6 @@ title: Site-19 圣诞颂歌
 
 转载自[Site-19 圣诞颂歌](http://scp-wiki-cn.wikidot.com/a-site-19-christmas-carol) By [Freedom Koo](http://www.wikidot.com/user:info/freedom-koo)
 
-© SCP 基金会
-
 ---
 
 原作者：djkatus，插图：Dr.Parralax，译者：Freedom Koo

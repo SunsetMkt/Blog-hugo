@@ -12,8 +12,6 @@ title: 升起烟火的形状
 
 转载自[升起烟火的形状](http://scp-wiki-cn.wikidot.com/the-shape-of-fireworks) By [Dr.See](http://www.wikidot.com/user:info/drsee)
 
-© SCP 基金会
-
 ---
 
 <center><strong>无论是谁，看到烟火都会觉得很美丽吧……</strong></center>

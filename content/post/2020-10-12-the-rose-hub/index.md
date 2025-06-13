@@ -13,11 +13,11 @@ title: 玫瑰
 
 转载自[玫瑰](http://scp-wiki-cn.wikidot.com/the-rose-hub) By [Dr.Hannah](http://www.wikidot.com/user:info/hannah-ai)
 
-© SCP 基金会
-
 ---
 
-[![Hannahandherboy](http://scp-wiki-cn.wdfiles.com/local--resized-images/the-rose-hub/Hannahandherboy/medium.jpg)](http://scp-wiki-cn.wdfiles.com/local--files/the-rose-hub/Hannahandherboy)
+<!-- http://scp-wiki-cn.wdfiles.com/local--files/the-rose-hub/Hannahandherboy -->
+
+![Hannahandherboy](Hannahandherboy.jpg)
 
 ---
 

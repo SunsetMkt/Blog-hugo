@@ -14,8 +14,6 @@ title: 说你永远不会离我而去
 
 转载自[说你永远不会离我而去](http://scp-wiki-cn.wikidot.com/take-me-back-to-that-time) By [Dr.Hannah](http://www.wikidot.com/user:info/hannah-ai)
 
-© SCP 基金会
-
 ---
 
 “这真他妈是我，我和你，有史以来经过的最可怕日子了对吧？”Freedom 往地上吐了一口唾沫，血丝触目惊心，然后迅速地被干涸的大地所吸收。
