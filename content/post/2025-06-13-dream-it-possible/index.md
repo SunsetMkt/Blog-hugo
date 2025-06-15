@@ -10,6 +10,6 @@ slug: dream-it-possible
 title: 华为的 Dream It Possible 音乐
 ---
 
-Huawei Technologies Co., Ltd. 版权所有，[文件来源](https://archive.org/details/dream-it-possible_202407)。
+Huawei Technologies Co., Ltd. 版权所有，文件来源于任意近期非 HarmonyOS NEXT 手机。
 
-{{< audio "DREAM_IT_POSSIBLE.mp3" >}}
+{{< audio "Dream_It_Possible.flac" >}}
