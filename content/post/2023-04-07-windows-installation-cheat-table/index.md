@@ -6,6 +6,7 @@ tags:
     - Windows
     - 信息技术
     - 软件
+    - 操作系统
 slug: windows-installation-cheat-table
 title: 标准 Windows & Office 安装速查表
 ---
