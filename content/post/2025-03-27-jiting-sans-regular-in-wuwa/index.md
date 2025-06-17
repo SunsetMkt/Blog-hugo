@@ -29,6 +29,8 @@ Extracted from game version 1.4.
 
 <p class="jiting">The quick brown fox jumps over the lazy dog.</p>
 
+<textarea class="jiting">The quick brown fox jumps over the lazy dog.</textarea>
+
 ---
 
 Extracted from game version 2.3.

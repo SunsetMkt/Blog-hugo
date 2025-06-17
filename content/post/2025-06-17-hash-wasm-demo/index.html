@@ -95,12 +95,12 @@ title: 基于 hash-wasm 的文件哈希计算
             value="1048576"
             autocomplete="off"
         />
-        <small>范围: 1 KB - 100 MB</small>
+        <small>推荐范围: 1 KB - 100 MB</small>
     </div>
     <button id="calculateButton">计算哈希</button>
     <div class="result-section">
         <h2>计算结果：</h2>
-        <p>哈希值：<code id="hashResult">尚未完成计算</code></p>
+        <p>哈希值：<code id="hashResult">尚未开始计算</code></p>
         <p>进度：<span id="progressBar">0%</span></p>
     </div>
 </div>
@@ -146,7 +146,8 @@ title: 基于 hash-wasm 的文件哈希计算
         getChunkSize() {
             if (this.chunkSize.value === "custom") {
                 const customSize = parseInt(this.customChunkSize.value);
-                return Math.max(1024, Math.min(104857600, customSize)); // 限制在 1KB - 100MB
+                // return Math.max(1024, Math.min(104857600, customSize)); // 限制在 1KB - 100MB
+                return Math.max(1, customSize);
             }
             return parseInt(this.chunkSize.value);
         }
