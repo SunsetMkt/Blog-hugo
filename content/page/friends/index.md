@@ -6,10 +6,10 @@ links:
       description: "工程师猫娘"
       website: https://cascade.moe/
       image: Cascade.webp
-    - title: Cedaros
-      description: "In solitude, where we are least alone."
+    - title: Cedaros (Rain)
+      description: "我是小雨，或者你愿意的话，也可以叫我Rain。"
       website: https://angelkawaii.xyz/
-      image: Cedaros.png
+      image: 小雨.png
     - title: Chise Hachiroku
       description: "朝向明日的辉迹！"
       website: https://chise.hachiroku.uk/zh/
