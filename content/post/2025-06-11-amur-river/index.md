@@ -21,11 +21,6 @@ title: 远东行记
 
 ---
 
-<blockquote>
-<p>「You can’t see borders. They’re man‑made, nature couldn’t care less.」<br>（你看不见国境线。那不过是人造的，而大自然毫不在意。）</p>
-<p>——Jean Renoir</p>
-</blockquote>
-<p>——题记</p>
 <h3 id="第一章-种子"><a href="#第一章-种子" class="headerlink" title="第一章 | 种子"></a>第一章 | 种子</h3><p>俄罗斯啊。</p>
 <p>俄-罗斯。<br>Россия。</p>
 <p>似乎声音刚落下，<br>西伯利亚的寒风，<br>就从齿间吹过来。</p>
