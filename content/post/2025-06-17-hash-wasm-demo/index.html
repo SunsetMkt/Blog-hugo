@@ -1,0 +1,348 @@
+---
+categories: Original
+date: 2025-06-17T00:00:00Z
+tags:
+    - 信息技术
+    - 前端
+slug: hash-wasm-demo
+title: 基于 hash-wasm 的文件哈希计算
+---
+
+<div class="container">
+    <!--<h2>基于 hash-wasm 的文件哈希计算</h2>-->
+    <p>
+        基于 <a href="https://github.com/Daninet/hash-wasm">hash-wasm</a>，由
+        <a href="https://manus.im/">Manus</a> 开发。
+    </p>
+    <div class="input-section">
+        <label for="fileInput">选择文件：</label>
+        <input type="file" id="fileInput" autocomplete="off" />
+    </div>
+    <div class="hash-algorithm-section">
+        <label for="hashAlgorithm">选择哈希算法：</label>
+        <select id="hashAlgorithm" autocomplete="off">
+            <optgroup label="MD 系列">
+                <option value="md4">MD4</option>
+                <option value="md5">MD5</option>
+            </optgroup>
+            <optgroup label="SHA-1">
+                <option value="sha1">SHA-1</option>
+            </optgroup>
+            <optgroup label="SHA-2">
+                <option value="sha224">SHA-224</option>
+                <option value="sha256" selected>SHA-256</option>
+                <option value="sha384">SHA-384</option>
+                <option value="sha512">SHA-512</option>
+            </optgroup>
+            <optgroup label="SHA-3">
+                <option value="sha3-224">SHA3-224</option>
+                <option value="sha3-256">SHA3-256</option>
+                <option value="sha3-384">SHA3-384</option>
+                <option value="sha3-512">SHA3-512</option>
+            </optgroup>
+            <optgroup label="Keccak">
+                <option value="keccak224">Keccak-224</option>
+                <option value="keccak256">Keccak-256</option>
+                <option value="keccak384">Keccak-384</option>
+                <option value="keccak512">Keccak-512</option>
+            </optgroup>
+            <optgroup label="BLAKE">
+                <option value="blake2b">BLAKE2b</option>
+                <option value="blake2s">BLAKE2s</option>
+                <option value="blake3">BLAKE3</option>
+            </optgroup>
+            <optgroup label="xxHash">
+                <option value="xxhash32">xxHash32</option>
+                <option value="xxhash64">xxHash64</option>
+                <option value="xxhash3">xxHash3</option>
+                <option value="xxhash128">xxHash128</option>
+            </optgroup>
+            <optgroup label="CRC">
+                <option value="crc32">CRC32</option>
+                <option value="crc64">CRC64</option>
+            </optgroup>
+            <optgroup label="其他">
+                <option value="adler32">Adler-32</option>
+                <option value="ripemd160">RIPEMD-160</option>
+                <option value="sm3">SM3</option>
+                <option value="whirlpool">Whirlpool</option>
+            </optgroup>
+        </select>
+    </div>
+    <div class="chunk-size-section">
+        <label for="chunkSize">分块大小：</label>
+        <select id="chunkSize" autocomplete="off">
+            <option value="262144">256 KB</option>
+            <option value="524288">512 KB</option>
+            <option value="1048576" selected>1 MB</option>
+            <option value="2097152">2 MB</option>
+            <option value="5242880">5 MB</option>
+            <option value="10485760">10 MB</option>
+            <option value="custom">自定义</option>
+        </select>
+    </div>
+    <div
+        class="custom-chunk-section"
+        id="customChunkSection"
+        style="display: none;"
+    >
+        <label for="customChunkSize">自定义分块大小 (字节)：</label>
+        <input
+            type="number"
+            id="customChunkSize"
+            min="1024"
+            max="104857600"
+            value="1048576"
+            autocomplete="off"
+        />
+        <small>范围: 1 KB - 100 MB</small>
+    </div>
+    <button id="calculateButton">计算哈希</button>
+    <div class="result-section">
+        <h2>计算结果：</h2>
+        <p>哈希值：<code id="hashResult">尚未完成计算</code></p>
+        <p>进度：<span id="progressBar">0%</span></p>
+    </div>
+</div>
+<script src="https://unpkg.com/hash-wasm@4.12.0/dist/index.umd.js"></script>
+<script>
+    // 大文件哈希计算器 - 支持所有 hash-wasm 算法
+    class FileHashCalculator {
+        constructor() {
+            this.fileInput = document.getElementById("fileInput");
+            this.hashAlgorithm = document.getElementById("hashAlgorithm");
+            this.chunkSize = document.getElementById("chunkSize");
+            this.customChunkSection =
+                document.getElementById("customChunkSection");
+            this.customChunkSize = document.getElementById("customChunkSize");
+            this.calculateButton = document.getElementById("calculateButton");
+            this.hashResult = document.getElementById("hashResult");
+            this.progressBar = document.getElementById("progressBar");
+
+            this.defaultChunkSize = 1024 * 1024; // 1MB 默认分段大小
+            this.isCalculating = false;
+
+            this.initEventListeners();
+        }
+
+        initEventListeners() {
+            this.calculateButton.addEventListener("click", () => {
+                this.calculateHash();
+            });
+
+            this.chunkSize.addEventListener("change", () => {
+                this.toggleCustomChunkSection();
+            });
+        }
+
+        toggleCustomChunkSection() {
+            if (this.chunkSize.value === "custom") {
+                this.customChunkSection.style.display = "block";
+            } else {
+                this.customChunkSection.style.display = "none";
+            }
+        }
+
+        getChunkSize() {
+            if (this.chunkSize.value === "custom") {
+                const customSize = parseInt(this.customChunkSize.value);
+                return Math.max(1024, Math.min(104857600, customSize)); // 限制在 1KB - 100MB
+            }
+            return parseInt(this.chunkSize.value);
+        }
+
+        async calculateHash() {
+            const file = this.fileInput.files[0];
+            if (!file) {
+                alert("请选择一个文件");
+                return;
+            }
+
+            if (this.isCalculating) {
+                return;
+            }
+
+            this.isCalculating = true;
+            this.calculateButton.disabled = true;
+            this.calculateButton.textContent = "计算中...";
+            this.hashResult.textContent = "";
+            this.progressBar.textContent = "0%";
+
+            try {
+                const algorithm = this.hashAlgorithm.value;
+                const chunkSize = this.getChunkSize();
+                const hash = await this.calculateFileHash(
+                    file,
+                    algorithm,
+                    chunkSize,
+                );
+                this.hashResult.textContent = hash;
+                this.progressBar.textContent = "100%";
+            } catch (error) {
+                console.error("计算哈希时出错:", error);
+                this.hashResult.textContent = "计算失败: " + error.message;
+            } finally {
+                this.isCalculating = false;
+                this.calculateButton.disabled = false;
+                this.calculateButton.textContent = "计算哈希";
+            }
+        }
+
+        async calculateFileHash(file, algorithm, chunkSize) {
+            // 创建哈希实例
+            let hasher;
+
+            try {
+                switch (algorithm) {
+                    // MD 系列
+                    case "md4":
+                        hasher = await hashwasm.createMD4();
+                        break;
+                    case "md5":
+                        hasher = await hashwasm.createMD5();
+                        break;
+
+                    // SHA-1
+                    case "sha1":
+                        hasher = await hashwasm.createSHA1();
+                        break;
+
+                    // SHA-2
+                    case "sha224":
+                        hasher = await hashwasm.createSHA224();
+                        break;
+                    case "sha256":
+                        hasher = await hashwasm.createSHA256();
+                        break;
+                    case "sha384":
+                        hasher = await hashwasm.createSHA384();
+                        break;
+                    case "sha512":
+                        hasher = await hashwasm.createSHA512();
+                        break;
+
+                    // SHA-3
+                    case "sha3-224":
+                        hasher = await hashwasm.createSHA3(224);
+                        break;
+                    case "sha3-256":
+                        hasher = await hashwasm.createSHA3(256);
+                        break;
+                    case "sha3-384":
+                        hasher = await hashwasm.createSHA3(384);
+                        break;
+                    case "sha3-512":
+                        hasher = await hashwasm.createSHA3(512);
+                        break;
+
+                    // Keccak
+                    case "keccak224":
+                        hasher = await hashwasm.createKeccak(224);
+                        break;
+                    case "keccak256":
+                        hasher = await hashwasm.createKeccak(256);
+                        break;
+                    case "keccak384":
+                        hasher = await hashwasm.createKeccak(384);
+                        break;
+                    case "keccak512":
+                        hasher = await hashwasm.createKeccak(512);
+                        break;
+
+                    // BLAKE
+                    case "blake2b":
+                        hasher = await hashwasm.createBLAKE2b();
+                        break;
+                    case "blake2s":
+                        hasher = await hashwasm.createBLAKE2s();
+                        break;
+                    case "blake3":
+                        hasher = await hashwasm.createBLAKE3();
+                        break;
+
+                    // xxHash
+                    case "xxhash32":
+                        hasher = await hashwasm.createXXHash32();
+                        break;
+                    case "xxhash64":
+                        hasher = await hashwasm.createXXHash64();
+                        break;
+                    case "xxhash3":
+                        hasher = await hashwasm.createXXHash3();
+                        break;
+                    case "xxhash128":
+                        hasher = await hashwasm.createXXHash128();
+                        break;
+
+                    // CRC
+                    case "crc32":
+                        hasher = await hashwasm.createCRC32();
+                        break;
+                    case "crc64":
+                        hasher = await hashwasm.createCRC64();
+                        break;
+
+                    // 其他
+                    case "adler32":
+                        hasher = await hashwasm.createAdler32();
+                        break;
+                    case "ripemd160":
+                        hasher = await hashwasm.createRIPEMD160();
+                        break;
+                    case "sm3":
+                        hasher = await hashwasm.createSM3();
+                        break;
+                    case "whirlpool":
+                        hasher = await hashwasm.createWhirlpool();
+                        break;
+
+                    default:
+                        throw new Error("不支持的哈希算法: " + algorithm);
+                }
+            } catch (error) {
+                throw new Error("创建哈希实例失败: " + error.message);
+            }
+
+            hasher.init();
+
+            const totalSize = file.size;
+            let processedSize = 0;
+
+            // 分段读取文件
+            for (let offset = 0; offset < totalSize; offset += chunkSize) {
+                const chunk = file.slice(offset, offset + chunkSize);
+                const arrayBuffer = await this.readChunkAsArrayBuffer(chunk);
+                const uint8Array = new Uint8Array(arrayBuffer);
+
+                hasher.update(uint8Array);
+
+                processedSize += uint8Array.length;
+                const progress = Math.round((processedSize / totalSize) * 100);
+                this.progressBar.textContent = progress + "%";
+
+                // 让浏览器有机会更新 UI
+                // await this.sleep(1);
+            }
+
+            return hasher.digest("hex");
+        }
+
+        readChunkAsArrayBuffer(chunk) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = () => reject(reader.error);
+                reader.readAsArrayBuffer(chunk);
+            });
+        }
+
+        sleep(ms) {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+    }
+
+    // 初始化应用
+    document.addEventListener("DOMContentLoaded", () => {
+        new FileHashCalculator();
+    });
+</script>
