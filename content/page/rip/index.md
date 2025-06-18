@@ -166,6 +166,16 @@ For all other countries, [see Wikipedia's list](https://en.wikipedia.org/wiki/Li
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1yt4wO7dKCwsfjch8SN9aU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 -->
 
+## Susiethegamer
+
+> Susie 是一个可爱的跨性别女孩，非常喜欢《明日方舟》里的澄闪（本名为 Susie Glitter），她还喜欢很多很多电子游戏，这便是她曾常用的 ID - Susiethegamer 的由来。
+>
+> Via [One Among Us](https://one-among.us/profile/Susiethegamer)
+
+[Twitter](https://x.com/JR_YamanoteE235) [Bluesky](https://kagurazakasusie.bsky.social/) [One Among Us](https://one-among.us/profile/Susiethegamer)
+
+{{< gallery match="Susiethegamer/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
+
 ## TianqiChen666
 
 {{< details 展开 >}}
