@@ -16,6 +16,32 @@ slug: rip
 
 本页将持续更新，如有任何建议或更正，请与我们联系。
 
+## 帮助自己 (Help yourself)
+
+### 中文（简体）
+
+**如果您感觉想要伤害自己，请务必拨打心理咨询热线：**
+
+（希望 24 小时）全国生命危机干预热线：4001619995
+
+北京心理危机研究与干预中心：电话：800-810-1117，010-8295-1332。
+
+### 中文（臺灣）
+
+**如果您覺得想要傷害自己，請撥打 1925 衛生福利部安心專線（24 小時免費心理諮詢服務），或撥打生命線 1995 及張老師 1980。**
+
+### English
+
+**If you feel like you may harm yourself, please, please call a crisis hotline. They're free, confidential, and 24/7:**
+
+**US:** [National Suicide Prevention Lifeline](https://suicidepreventionlifeline.org) – 988
+
+**US:** [The Trevor Project (for LGBTQ youth)](https://www.thetrevorproject.org) – 1-866-488-7386
+
+**UK:** [Samaritans](https://www.samaritans.org) – 116 123
+
+For all other countries, [see Wikipedia's list](https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines).
+
 ## QianMo
 
 > 毛星云（1991 年—2021 年 12 月 11 日），湖北宜昌人，中华人民共和国程序员、专栏作家，网名“浅墨”。生前任腾讯游戏引擎组组长。南京航空航天大学硕士毕业，2014 年微软最有价值专家奖得主。出版有书籍《OpenCV3 编程入门》，《逐梦旅程：Windows 游戏编程之从零开始》。
