@@ -18,6 +18,8 @@ slug: rip
 
 ## 帮助自己 (Help yourself)
 
+此处文本参考了[Nicky Case 的心理健康资源](https://ncase.me/mental-health/)。
+
 ### 中文（简体）
 
 **如果您感觉想要伤害自己，请务必拨打心理咨询热线：**
