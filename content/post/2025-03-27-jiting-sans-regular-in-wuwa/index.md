@@ -21,7 +21,7 @@ Extracted from game version 1.4.
     }
 
     .jiting {
-        font-family: 'Jiting Regular';
+        font-family: 'Jiting Regular' !important;
     }
 </style>
 
@@ -29,7 +29,7 @@ Extracted from game version 1.4.
 
 <p class="jiting">The quick brown fox jumps over the lazy dog.</p>
 
-<textarea class="jiting">The quick brown fox jumps over the lazy dog.</textarea>
+<textarea class="jiting" style="width: 100%" rows="4">The quick brown fox jumps over the lazy dog.</textarea>
 
 ---
 
