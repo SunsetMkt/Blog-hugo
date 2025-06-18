@@ -133,6 +133,10 @@ title: 基于 hash-wasm 的文件哈希计算
             this.chunkSize.addEventListener("change", () => {
                 this.toggleCustomChunkSection();
             });
+
+            this.hashResult.addEventListener("click", () => {
+                this.copyToClipboard(this.hashResult.textContent);
+            });
         }
 
         toggleCustomChunkSection() {
@@ -339,6 +343,10 @@ title: 基于 hash-wasm 的文件哈希计算
 
         sleep(ms) {
             return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+
+        async copyToClipboard(text) {
+            await navigator.clipboard.writeText(text);
         }
     }
 
