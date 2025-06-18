@@ -66,6 +66,16 @@ For all other countries, [see Wikipedia's list](https://en.wikipedia.org/wiki/Li
 
 {{< details 展开 >}}
 
+> Arts 于 2023 年 03 月 13 日自杀。
+>
+> 与自杀无关地，留有一封公开信。下载地址<https://ArtsEpiphany.github.io/1.zip>
+>
+> 解压密码为`c-gfI:M}bz6v#Xutpku*RB)+aEVIanQC`
+>
+> Arts 祝福每一位善良美好的人。
+>
+> [Twitter](https://web.archive.org/web/20230526074730/https://twitter.com/ArtsEpiphany1)，有摘录。
+
 > 『3 月 15 日，大家传言清华一名学生离世了。
 >
 > 『第二天我在朋友圈看到别人转的死者公开信，得知死者是跨性别者 Arts，是自杀离世的。
