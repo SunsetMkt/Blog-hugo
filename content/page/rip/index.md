@@ -138,6 +138,28 @@ slug: rip
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1yt4wO7dKCwsfjch8SN9aU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 -->
 
+## TianqiChen666
+
+{{< details 展开 >}}
+
+> 大学生、06、🚹、中国人です🇨🇳、いま成都に住んでいる、自国を愛する。もちろん、みんなと仲良くしたい
+>
+> |日常|絡み重視|変な垢以外フォロバ💯|アニメ|ゲーム|kig 初心者|
+>
+> 興味：原神、アークナイツ、ブルアカ、ボカロ、着ぐるみ
+>
+> X：@TianqiChen666
+
+{{< /details >}}
+
+> めんま是一个善良温柔跨性别女孩，她很喜欢《我们仍未知道那年所见的那朵花的名字》的面码（即めんま）基本上她所有的社交平台都使用的这个 id。她和面码一样，离开了大家，这次，也许不会再有十年后 8 月的再见了。
+>
+> Via [One Among Us](https://one-among.us/profile/TianqiChen666/)
+
+[Twitter](https://x.com/TianqiChen666) [Bluesky](https://bsky.app/profile/tianqichen666.bsky.social) [One Among Us](https://one-among.us/profile/TianqiChen666/)
+
+{{< gallery match="TianqiChen666/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
+
 ## 致谢
 
 - 也请参考[那些秋叶 - One Among Us](https://one-among.us/)，这里的一些图片引用自此。
