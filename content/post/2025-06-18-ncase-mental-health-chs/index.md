@@ -1,5 +1,5 @@
 ---
-categories: Original
+categories: Repost
 date: 2025-06-18T00:00:00Z
 tags:
     - 医学
