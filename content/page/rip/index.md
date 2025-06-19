@@ -172,9 +172,7 @@ For all other countries, [see Wikipedia's list](https://en.wikipedia.org/wiki/Li
 >
 > [Via 维基百科](https://zh.wikipedia.org/zh-cn/Sayuri)
 
-<!--
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1yt4wO7dKCwsfjch8SN9aU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
--->
+{{< audio "Sayuri/TowerOfFlower.mp3" >}}
 
 ## Susiethegamer
 
