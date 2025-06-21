@@ -2,6 +2,7 @@
   "name": "sunset-blog-hugo",
   "description": "Blog refactored.",
   "devDependencies": {
+    "npm-check-updates": "^18.0.1",
     "prettier": "^3.5.3",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-lint-md": "^1.0.1"
