@@ -1,11 +1,11 @@
 [[imports]]
 path = "github.com/CaiJimmy/hugo-theme-stack/v3"
 
-[[imports]]
-path = "github.com/martignoni/hugo-notice"
+# [[imports]]
+# path = "github.com/martignoni/hugo-notice"
 
-[[imports]]
-path = "github.com/martignoni/hugo-loremipsum"
+# [[imports]]
+# path = "github.com/martignoni/hugo-loremipsum"
 
 [[imports]]
 path = "github.com/mfg92/hugo-shortcode-gallery"
