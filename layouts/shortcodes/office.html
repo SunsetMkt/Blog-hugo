@@ -2,6 +2,8 @@
 {{ $uniqueID := substr ($src | md5) 0 8 }}
 <div class="office-links">
     <p>
+        <code>{{ $src | safeHTML }}</code>
+        |
         <a href="{{- $src -}}" download>下载文档</a>
         |
         <a

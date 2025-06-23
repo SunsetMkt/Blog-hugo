@@ -1,6 +1,8 @@
 {{ with .Get 0 }}
     {{ with $.Page.Resources.Get . }}
         {{ with .Content | resources.FromString (path.Join $.Page.RelPermalink .Name) }}
+            <code>{{ $.Get 0 | safeHTML }}</code>
+            |
             <a href="{{ .RelPermalink }}" target="_blank">在新页面打开</a><br />
             <iframe
                 src="{{ .RelPermalink }}"
