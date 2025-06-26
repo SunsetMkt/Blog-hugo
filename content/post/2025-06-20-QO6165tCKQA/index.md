@@ -9,7 +9,7 @@ slug: QO6165tCKQA
 title: 《战双帕弥什》的《长路归航》歌曲
 ---
 
-{{< audio "长路归航.flac" >}}
+{{< audio "长路归航.mp3" >}}
 
 [YouTube](https://www.youtube.com/watch?v=QO6165tCKQA)
 
@@ -71,6 +71,6 @@ title: 《战双帕弥什》的《长路归航》歌曲
 
 为明天 为明天 为明天
 
-{{< audio "长路归航 伴奏.flac" >}}
+{{< audio "长路归航 伴奏.mp3" >}}
 
 <!-- {{< youtube QO6165tCKQA >}} -->
