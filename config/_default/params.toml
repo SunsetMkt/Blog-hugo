@@ -4,6 +4,9 @@ mainSections = ["post"]
 rssFullContent = false
 favicon = "/favicon.ico"
 
+# Edit on GitHub repo
+repository = "https://github.com/SunsetMkt/Blog-hugo"
+
 [footer]
 since = 2019
 customText = """\
