@@ -13,7 +13,7 @@ title: 腾讯浏览服务相关调试 URL
 
 一般地，在相应的 IM 软件内发送并点击链接即可启动调试工具。
 
-`inspect`相关的功能需要 USB 调试连接`chrome://inspect/`。
+Inspect 相关的功能需要 USB 调试连接并使用`chrome://inspect/`。
 
 ## 腾讯浏览服务
 
@@ -21,10 +21,11 @@ X5 网页引擎在 QQ 移动客户端（通常是 Android 端）中使用，也�
 
 [调试文档](https://x5.tencent.com/docs.html#debugx5)
 
-- DebugTBS（腾讯浏览服务）: <http://debugtbs.qq.com/>
-- DebugX5（X5 网页引擎）: <http://debugx5.qq.com/>（验证码为`debugx5`）
-- DebugTMF（腾讯移动开发平台）: <http://debugtmf.qq.com/>
-- 调试开启引导页: <https://res.imtt.qq.com/tbs_inspect/x5-debug.html>
+- DebugTBS（腾讯浏览服务）：<http://debugtbs.qq.com/>
+- DebugX5（X5 网页引擎）：<http://debugx5.qq.com/>（验证码为`debugx5`）
+- DebugTMF（腾讯移动开发平台）：<http://debugtmf.qq.com/>
+- Inspect 开启引导页：<https://res.imtt.qq.com/tbs_inspect/x5-debug.html>
+- 快速开启 X5 Inspect：<http://debugx5.qq.com/?inspector=true>
 
 ## 微信 XWeb 引擎
 
@@ -34,9 +35,9 @@ XWeb 的调试 URL 是<http://debugxweb.qq.com/>，但直接访问没有效果�
 
 一些示例：
 
-- <http://debugxweb.qq.com/?show_webview_version>
+- 显示调试信息：<http://debugxweb.qq.com/?show_webview_version>
 - <http://debugxweb.qq.com/?check_xwalk_update>
-- <http://debugxweb.qq.com/?inspector=true>
+- 开启 Inspect：<http://debugxweb.qq.com/?inspector=true>
 - <http://debugxweb.qq.com/?set_apkver=-1>
 - <http://debugxweb.qq.com/?set_config_url=https://dldir1.qq.com/weixin/android/wxweb/updateconfig_wmpftest.xml&check_xwalk_update&>
 
