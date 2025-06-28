@@ -6,14 +6,16 @@ tags:
     - 鸣潮
     - 逆向工程
 slug: wuwa-ps
-title: 《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（2.4 版本）
+title: 《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（2.5 版本）
 ---
 
-> 当前，`CN 2.4.0`测试服已发布。此文档及上游项目已支持此版本。
+> 当前，`CN 2.5.1`测试服已发布。此文档及上游项目已支持此版本。
 >
 > 此版本客户端可通过[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader)下载。
 
-此文档针对`CN 2.4.0`测试服，不保证在未来正确无误。
+此文档针对`CN 2.5.1`测试服，不保证在未来正确无误。
+
+本文在未来不一定实时更新，但每个版本的操作步骤基本相同，有开发经验的读者可轻松了解。
 
 **目前，私服仅支持基本移动（“散步模拟器”）和抽卡，不支持怪物自然生成和任务。请确认您真的需要私服，时间和精力同样昂贵。**
 
@@ -81,11 +83,13 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 测试版已启用新的 CDN 并全域验证`kr-token`（登录测试账号时由服务器返回给启动器），因此无法在没有合法测试服账号的情况下直接获取客户端。
 
-请自行在 Discord 群组内搜索第三方上传的客户端。
+**请自行在 Discord 群组内搜索第三方上传的客户端。**
+
+在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将下载的客户端解压到`client`文件夹，确保`Wuthering Waves.exe`在文件夹内。
 
 #### `2.4`版本（已失效）
 
-下载[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader/releases)，在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将`wuwa-downloader.exe`放入`client`文件夹，运行它。
+~~下载[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader/releases)，在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将`wuwa-downloader.exe`放入`client`文件夹，运行它。~~
 
 > `wuwa-downloader.exe`在一些有互联网审查的地区可能需要开启全局代理（TUN/虚拟网卡）才可以连接 GitHub 获取最新的下载地址。
 
@@ -178,15 +182,15 @@ cd wicked-waifus-win-patch
 .\build.bat
 ```
 
-构建补丁 DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_4_0-regular.dll`复制到`D:\WuWaPS\client\Client\Binaries\Win64`下。
+构建补丁 DLL 完成后，将`D:\WuWaPS\wicked-waifus-win-patch\build\regular\wicked-waifus-win-cn_beta_2_5_1-regular.dll`复制到`D:\WuWaPS\client\Client\Binaries\Win64`下。
 
 或者不手动构建：
 
-<https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch/releases>或许有已构建的 DLL，可直接使用。请使用文件名类似`wicked-waifus-win-cn_beta_2_4_0-regular.dll`的 DLL。
+<https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch/releases>或许有已构建的 DLL，可直接使用。请使用文件名类似`wicked-waifus-win-cn_beta_2_5_1-regular.dll`的 DLL。
 
 ### 下载补丁 Pak
 
-在<https://git.xeondev.com/wickedwaifus/wicked-waifus-pak/releases/tag/2.4.0>下载补丁 Pak，将下载的`rr_fixes_100_p.pak`复制到`D:\WuWaPS\client\Client\Content\Paks`。
+在<https://git.xeondev.com/wickedwaifus/wicked-waifus-pak/releases/tag/2.5.0>下载补丁 Pak，将下载的`rr_fixes_100_p.pak`复制到`D:\WuWaPS\client\Client\Content\Paks`。
 
 ### 构建服务器并试运行
 
@@ -232,7 +236,7 @@ cargo run --bin wicked-waifus-game-server
 executable_file = 'Client-Win64-Shipping.exe'
 cmd_line_args = '-fileopenlog'
 current_dir = 'D:\WuWaPS\client\Client\Binaries\Win64'
-dll_list = ['D:\WuWaPS\client\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_4_0-regular.dll']
+dll_list = ['D:\WuWaPS\client\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_5_1-regular.dll']
 
 [environment]
 #environment = ['TESTVAR1=AAAAAA', 'TESTVAR2=AAAAAA']
@@ -299,7 +303,7 @@ load_textmaps = true
 quadrant_size = 1000000
 
 [asset_config]
-asset_url = "https://git.xeondev.com/wickedwaifus/wicked-waifus-data/releases/download/pioneer_2.4.1/bundle.zip"
+asset_url = "https://git.xeondev.com/wickedwaifus/wicked-waifus-data/releases/download/pioneer_2.5.2/bundle.zip"
 buffer_size = 268435456
 
 [default_unlocks]
@@ -308,12 +312,21 @@ unlock_all_roles_max_level = false
 unlock_all_roles_all_sequences = false
 unlock_all_mc_elements = true
 unlock_all_weapons = false
+unlock_all_weapons_max_level = false
+unlock_all_weapons_all_reson = false
 unlock_all_adventures = false
 unlock_all_functions = true
 unlock_all_guides = false
 unlock_all_tutorials = false
 unlock_all_teleporter = false
-
+unlock_all_role_skins = false
+# TODO: Set this to the same value as unlock_all_role_skins, without it, it fails(maybe jinshi weapon skin problem??)
+unlock_all_weapon_skins = false
+unlock_all_fly_skins = false
+unlock_all_wing_skins = false
+unlock_all_echo_skins = false
+unlock_all_echo = false
+# TODO: Add max level here too??
 ```
 
 `[default_unlocks]`下的配置可以修改为`true`以实现对应的功能。修改后请停止并重新启动对应的服务器程序（这里是`wicked-waifus-game-server`）。每次修改配置后，请新建玩家账号以应用新的配置。
