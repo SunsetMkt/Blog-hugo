@@ -77,7 +77,13 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ### 下载测试版游戏客户端
 
-#### `2.4`版本
+#### `2.5`版本
+
+测试版已启用新的 CDN 并全域验证`kr-token`（登录测试账号时由服务器返回给启动器），因此无法在没有合法测试服账号的情况下直接获取客户端。
+
+请自行在 Discord 群组内搜索第三方上传的客户端。
+
+#### `2.4`版本（已失效）
 
 下载[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader/releases)，在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将`wuwa-downloader.exe`放入`client`文件夹，运行它。
 
