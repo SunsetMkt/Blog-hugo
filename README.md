@@ -65,7 +65,7 @@ git fetch --unshallow && hugo --gc --logLevel info && find public -type f -size 
 # The maximum file size for a single Cloudflare Pages site asset is 25 MiB.
 # https://developers.cloudflare.com/pages/platform/limits/
 # With metrics and more info:
-git fetch --unshallow && hugo --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates && find public -type f -size +25M -print -exec rm -vf {} \;
+git fetch --unshallow && hugo --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates && find public -type f -size +25M -print -exec rm -vf {} \; && find public -type f -print > public/filelist.txt
 ```
 
 ## Template Metrics

@@ -14,7 +14,8 @@
     "vercel-install-golang": "dnf install -y golang",
     "cloudflare-pages-build": "git fetch --unshallow && hugo --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \\;",
     "git-unshallow": "git fetch --unshallow",
-    "rm-25mb-public": "find public -type f -size +25M -print -exec rm -vf {} \\;"
+    "rm-25mb-public": "find public -type f -size +25M -print -exec rm -vf {} \\;",
+    "list-public": "find public -type f -print > public/filelist.txt"
   },
   "engines": {
     "node": "~23",
