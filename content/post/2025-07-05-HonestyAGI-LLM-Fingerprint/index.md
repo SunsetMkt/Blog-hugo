@@ -99,12 +99,12 @@ title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不�
 
 ![QKV 偏置分析](qkvbias.png)
 
-QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q、K、V）上都存在惊人的相似性。两个模型表现出几乎相同的模式，特别是在早期层出现的特征性尖峰以及随后的收敛行为。这一点尤为重要，因为 QKV 偏置是 Qwen 1-2.5 代的一个独特设计特点（如其技术报告中所述：https://arxiv.org/abs/2309.16609），而包括 Qwen3 在内的大多数开源模型已经放弃了这种方法。
+QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q、K、V）上都存在惊人的相似性。两个模型表现出几乎相同的模式，特别是在早期层出现的特征性尖峰以及随后的收敛行为。这一点尤为重要，因为 QKV 偏置是 Qwen 1-2.5 代的一个独特设计特点（如其技术报告中所述：<https://arxiv.org/abs/2309.16609> ），而包括 Qwen3 在内的大多数开源模型已经放弃了这种方法。
 
 参考链接：
 
-- https://github.com/huggingface/transformers/blob/037755ed54208eefa77673b0af2a0b13e51f2fb1/src/transformers/models/qwen2/modeling_qwen2.py#L136
-- https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/modeling_pangu_moe.py#L303
+- <https://github.com/huggingface/transformers/blob/037755ed54208eefa77673b0af2a0b13e51f2fb1/src/transformers/models/qwen2/modeling_qwen2.py#L136>
+- <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/modeling_pangu_moe.py#L303>
 
 ## 🔬 注意力层 LayerNorm 权重模式
 
@@ -116,7 +116,7 @@ QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q�
 
 ![在 Pile 数据集上的激活范数 LayerNorm 分析](pileactivation.png)
 
-我们正在分析每一层的激活范数。我们在 The Pile 测试集（https://pile.eleuther.ai/）中随机抽取了 1000 批次的样本，并计算了激活值的范数。我们同样使用了逐层归一化的方法。批处理大小为 8，序列长度为 1024。初步结果已发布于此。盘古模型*仍然*与 Qwen 相似。这表明它们的计算模式存在大量重叠。
+我们正在分析每一层的激活范数。我们在 The Pile 测试集（<https://pile.eleuther.ai/>）中随机抽取了 1000 批次的样本，并计算了激活值的范数。我们同样使用了逐层归一化的方法。批处理大小为 8，序列长度为 1024。初步结果已发布于此。盘古模型*仍然*与 Qwen 相似。这表明它们的计算模式存在大量重叠。
 
 \*请注意，对于基于 Pre-Norm 的大语言模型，由于残差连接的存在，激活范数随层数增加是常见现象。
 
@@ -132,23 +132,23 @@ QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q�
 
 我们诚挚地邀请大语言模型社区的研究人员为此案提供更多证据。
 
-💡最新消息：我们正在积极更新和补充我们的实验与分析。一些额外的结果**（例如 Qwen 1.5 MoE/Qwen 2 MoE）**可以在这个 issue 中找到：https://github.com/HonestAGI/LLM-Fingerprint/issues/8 。敬请关注 😁！
+💡最新消息：我们正在积极更新和补充我们的实验与分析。一些额外的结果 **（例如 Qwen 1.5 MoE/Qwen 2 MoE）**可以在这个 issue 中找到：<https://web.archive.org/web/20250704072239/https://github.com/HonestAGI/LLM-Fingerprint/issues/8> 。敬请关注 😁！
 
 ---
 
 ## 🤣 其他
 
 - 我们还注意到，盘古的官方仓库异常地包含了 Qwen 2024 的许可证：
-  https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/Open%20Source%20Software%20Notice
-  https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/configuration_pangu_moe.py#L3
-  https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/modeling_pangu_moe.py#L3
+  <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/Open%20Source%20Software%20Notice>
+  <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/configuration_pangu_moe.py#L3>
+  <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/modeling_pangu_moe.py#L3>
 
 由于 Qwen 2.5 系列是在 2024 年发布的，这与**我们的发现是一致的**。
 
 - 我们注意到了 issue 中揭露的欺诈行为，这与**我们的发现是一致的**。
 
-https://github.com/HonestAGI/LLM-Fingerprint/issues/2
-https://github.com/HonestAGI/LLM-Fingerprint/issues/4
+<https://web.archive.org/web/20250704010151/https://github.com/HonestAGI/LLM-Fingerprint/issues/2>
+<https://web.archive.org/web/20250704010209/https://github.com/HonestAGI/LLM-Fingerprint/issues/4>
 
 他们提到开发团队更改了模型的词表（vocabulary）。这可以解释为什么盘古和 Qwen 的词表大小不同（以及它们使用的 token）。开发者可能想通过这种刻意操作来掩盖他们的欺诈行为，因为使用相同的词表太容易被社区发现重叠了 🤣。这些 issue 还提到了通过在测试集上训练来进行基准测试作弊，但这不属于本项目的范围。
 
