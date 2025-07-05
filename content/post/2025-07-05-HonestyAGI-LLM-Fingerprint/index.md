@@ -87,7 +87,7 @@ title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不�
 
 ## 💪 为何这很重要
 
-在这个**“想偷模型，只靠继续训练可不够”**的时代，这项工作为 AI 社区提供了实用工具，以维护**公平竞争**和**保护创新**，同时促进技术的持续进步！🚀
+在这个 **“想偷模型，只靠继续训练可不够”**的时代，这项工作为 AI 社区提供了实用工具，以维护**公平竞争**和**保护创新**，同时促进技术的持续进步！🚀
 
 ---
 
@@ -99,7 +99,7 @@ title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不�
 
 ![QKV 偏置分析](qkvbias.png)
 
-QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q、K、V）上都存在惊人的相似性。两个模型表现出几乎相同的模式，特别是在早期层出现的特征性尖峰以及随后的收敛行为。这一点尤为重要，因为 QKV 偏置是 Qwen 1-2.5 代的一个独特设计特点（如其技术报告中所述：<https://arxiv.org/abs/2309.16609> ），而包括 Qwen3 在内的大多数开源模型已经放弃了这种方法。
+QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q、K、V）上都存在惊人的相似性。两个模型表现出几乎相同的模式，特别是在早期层出现的特征性尖峰以及随后的收敛行为。这一点尤为重要，因为 QKV 偏置是 Qwen 1-2.5 代的一个独特设计特点（如其技术报告中所述：<https://arxiv.org/abs/2309.16609>），而包括 Qwen3 在内的大多数开源模型已经放弃了这种方法。
 
 参考链接：
 
@@ -140,14 +140,17 @@ QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q�
 
 - 我们还注意到，盘古的官方仓库异常地包含了 Qwen 2024 的许可证：
   <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/Open%20Source%20Software%20Notice>
-  <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/configuration_pangu_moe.py#L3>
-  <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/modeling_pangu_moe.py#L3>
+
+    <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/configuration_pangu_moe.py#L3>
+
+    <https://gitcode.com/ascend-tribe/pangu-pro-moe-model/blob/main/modeling_pangu_moe.py#L3>
 
 由于 Qwen 2.5 系列是在 2024 年发布的，这与**我们的发现是一致的**。
 
 - 我们注意到了 issue 中揭露的欺诈行为，这与**我们的发现是一致的**。
 
 <https://web.archive.org/web/20250704010151/https://github.com/HonestAGI/LLM-Fingerprint/issues/2>
+
 <https://web.archive.org/web/20250704010209/https://github.com/HonestAGI/LLM-Fingerprint/issues/4>
 
 他们提到开发团队更改了模型的词表（vocabulary）。这可以解释为什么盘古和 Qwen 的词表大小不同（以及它们使用的 token）。开发者可能想通过这种刻意操作来掩盖他们的欺诈行为，因为使用相同的词表太容易被社区发现重叠了 🤣。这些 issue 还提到了通过在测试集上训练来进行基准测试作弊，但这不属于本项目的范围。
