@@ -19,11 +19,11 @@ title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不�
 
 ---
 
-# 诚实永不消亡
+## 诚实永不消亡
 
 先前的 GitHub 仓库莫名其妙地消失了。这是一个重新上传的版本。
 
-# 🔍 大语言模型的内在指纹：想偷模型？只靠继续训练可不够！
+## 🔍 大语言模型的内在指纹：想偷模型？只靠继续训练可不够！
 
 ## 🎯 核心问题
 
@@ -134,7 +134,7 @@ QKV 偏置分析揭示了盘古和 Qwen2.5-14B 在所有三种投影类型（Q�
 
 我们诚挚地邀请大语言模型社区的研究人员为此案提供更多证据。
 
-💡最新消息：我们正在积极更新和补充我们的实验与分析。一些额外的结果 **（例如 Qwen 1.5 MoE/Qwen 2 MoE）**可以在这个 issue 中找到：<https://web.archive.org/web/20250704072239/https://github.com/HonestAGI/LLM-Fingerprint/issues/8> 。敬请关注 😁！
+💡最新消息：我们正在积极更新和补充我们的实验与分析。一些额外的结果 **（例如 Qwen 1.5 MoE/Qwen 2 MoE）** 可以在这个 issue 中找到：<https://web.archive.org/web/20250704072239/https://github.com/HonestAGI/LLM-Fingerprint/issues/8> 。敬请关注 😁！
 
 ---
 
@@ -167,7 +167,7 @@ _🤝 由诚实 AGI 社区（Honest AGI Community）执行 - 致力于促进 AI 
 
 ---
 
-# 盘古之殇：华为诺亚盘古大模型研发历程的心酸与黑暗
+## 盘古之殇：华为诺亚盘古大模型研发历程的心酸与黑暗
 
 [Source](https://github.com/HW-whistleblower/True-Story-of-Pangu/blob/main/README.md)
 
