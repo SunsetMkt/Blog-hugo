@@ -79,7 +79,7 @@
 </script>
 
 <!-- cf-trace -->
-{{ with resources.Get "js/cf-trace.js" }}
+{{ with resources.Get "js/cf-trace.js" | minify }}
     <script src="{{ .RelPermalink }}"></script>
 {{ end }}
 <script>
