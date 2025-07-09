@@ -77,3 +77,11 @@
         }
     })();
 </script>
+
+<!-- cf-trace -->
+{{ with resources.Get "js/cf-trace.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+{{ end }}
+<script>
+    getCfCDNinfo("cf-trace");
+</script>
