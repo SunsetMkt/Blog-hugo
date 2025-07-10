@@ -1,0 +1,118 @@
+---
+categories: Original
+date: 2025-07-10T00:00:00Z
+tags:
+    - 信息技术
+    - 前端
+slug: doh-demo
+title: DoH DNS 查询
+---
+
+<p>DoH DNS 查询，由 <a href="https://manus.im/">Manus</a> 开发。</p>
+
+<form id="dohForm">
+    <label>域名:</label>
+    <input
+        type="text"
+        id="domain"
+        placeholder="example.com"
+        value="example.com"
+        required
+    />
+    <br />
+
+    <label>记录类型:</label>
+    <input type="text" id="recordType" placeholder="A" value="A" required />
+    <br />
+
+    <label>
+        <input type="checkbox" id="disableDnssec" />
+        禁用 DNSSEC 验证
+    </label>
+    <br />
+
+    <button type="submit">查询</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    document
+        .getElementById("dohForm")
+        .addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const domain = document.getElementById("domain").value.trim();
+            const recordType = document
+                .getElementById("recordType")
+                .value.trim()
+                .toUpperCase();
+            const disableDnssec =
+                document.getElementById("disableDnssec").checked;
+            const resultDiv = document.getElementById("result");
+
+            if (!domain || !recordType) {
+                resultDiv.innerHTML = "<p>请输入域名和记录类型</p>";
+                return;
+            }
+
+            resultDiv.innerHTML = "<p>查询中...</p>";
+
+            try {
+                let dohUrl = `https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(
+                    domain,
+                )}&type=${encodeURIComponent(recordType)}`;
+
+                if (disableDnssec) {
+                    dohUrl += "&cd=true";
+                } else {
+                    dohUrl += "&cd=false";
+                }
+
+                const response = await fetch(dohUrl, {
+                    method: "GET",
+                    headers: {
+                        Accept: "application/dns-json",
+                    },
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                let resultHtml = "<h3>查询结果</h3>";
+                resultHtml += `<p>域名: ${domain}</p>`;
+                resultHtml += `<p>记录类型: ${recordType}</p>`;
+                resultHtml += `<p>状态: ${data.Status}</p>`;
+
+                if (data.Answer && data.Answer.length > 0) {
+                    resultHtml += "<h4>DNS记录:</h4>";
+                    resultHtml += '<table border="1">';
+                    resultHtml +=
+                        "<tr><th>名称</th><th>类型</th><th>TTL</th><th>数据</th></tr>";
+
+                    data.Answer.forEach((record) => {
+                        resultHtml += `<tr>
+                            <td>${record.name}</td>
+                            <td>${record.type}</td>
+                            <td>${record.TTL}</td>
+                            <td>${record.data}</td>
+                        </tr>`;
+                    });
+
+                    resultHtml += "</table>";
+                } else {
+                    resultHtml += "<p>未找到记录</p>";
+                }
+
+                resultHtml += "<h4>原始响应:</h4>";
+                resultHtml += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+
+                resultDiv.innerHTML = resultHtml;
+            } catch (error) {
+                resultDiv.innerHTML = `<p>查询失败: ${error.message}</p>`;
+            }
+        });
+</script>
