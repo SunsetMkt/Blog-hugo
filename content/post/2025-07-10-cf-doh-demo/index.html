@@ -4,6 +4,7 @@ date: 2025-07-10T00:00:00Z
 tags:
     - 信息技术
     - 前端
+    - Cloudflare
 slug: cf-doh-demo
 title: Cloudflare DoH DNS 查询
 ---
@@ -28,8 +29,32 @@ title: Cloudflare DoH DNS 查询
     />
     <br />
 
-    <label>记录类型:</label>
-    <input type="text" id="recordType" placeholder="A" value="A" required />
+    <label for="recordType">记录类型:</label>
+    <select id="recordType" required>
+        <option selected="">A</option>
+        <option>AAAA</option>
+        <option>ANAME</option>
+        <option>CERT</option>
+        <option>CNAME</option>
+        <option>DNSKEY</option>
+        <option>HTTPS</option>
+        <option>IPSECKEY</option>
+        <option>LOC</option>
+        <option>MX</option>
+        <option>NS</option>
+        <option>OPENPGPKEY</option>
+        <option>PTR</option>
+        <option>RRSIG</option>
+        <option>SIG</option>
+        <option>SOA</option>
+        <option>SPF</option>
+        <option>SRV</option>
+        <option>SSHFP</option>
+        <option>TA</option>
+        <option>TXT</option>
+        <option>URI</option>
+        <option>ANY</option>
+    </select>
     <br />
 
     <label>
@@ -69,7 +94,9 @@ title: Cloudflare DoH DNS 查询
                 let dohUrl = `https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(
                     domain,
                 )}&type=${encodeURIComponent(recordType)}`;
-
+                // https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4
+                // DO bit - whether the client wants DNSSEC data (either empty or one of 0, false, 1, or true).
+                // CD bit - disable validation (either empty or one of 0, false, 1, or true).
                 if (disableDnssec) {
                     dohUrl += "&cd=true&do=false";
                 } else {
@@ -92,7 +119,7 @@ title: Cloudflare DoH DNS 查询
                 let resultHtml = "<h3>查询结果</h3>";
                 resultHtml += `<p>域名: ${domain}</p>`;
                 resultHtml += `<p>记录类型: ${recordType}</p>`;
-                resultHtml += `<p>状态: ${data.Status}</p>`;
+                // resultHtml += `<p>状态: ${data.Status}</p>`;
 
                 if (data.Answer && data.Answer.length > 0) {
                     resultHtml += "<h4>DNS记录:</h4>";
