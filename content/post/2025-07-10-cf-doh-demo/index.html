@@ -4,11 +4,18 @@ date: 2025-07-10T00:00:00Z
 tags:
     - 信息技术
     - 前端
-slug: doh-demo
-title: DoH DNS 查询
+slug: cf-doh-demo
+title: Cloudflare DoH DNS 查询
 ---
 
-<p>DoH DNS 查询，由 <a href="https://manus.im/">Manus</a> 开发。</p>
+<p>Cloudflare DoH DNS 查询，由 <a href="https://manus.im/">Manus</a> 开发。</p>
+<p>
+    <code>https://cloudflare-dns.com/dns-query</code>
+    <a
+        href="https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/"
+        >文档</a
+    >
+</p>
 
 <form id="dohForm">
     <label>域名:</label>
@@ -64,9 +71,9 @@ title: DoH DNS 查询
                 )}&type=${encodeURIComponent(recordType)}`;
 
                 if (disableDnssec) {
-                    dohUrl += "&cd=true";
+                    dohUrl += "&cd=true&do=false";
                 } else {
-                    dohUrl += "&cd=false";
+                    dohUrl += "&cd=false&do=true";
                 }
 
                 const response = await fetch(dohUrl, {
@@ -77,7 +84,7 @@ title: DoH DNS 查询
                 });
 
                 if (!response.ok) {
-                    throw new Error(`HTTP错误: ${response.status}`);
+                    // throw new Error(`HTTP 错误: ${response.status}`);
                 }
 
                 const data = await response.json();
