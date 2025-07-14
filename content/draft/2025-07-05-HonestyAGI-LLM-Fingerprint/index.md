@@ -9,6 +9,7 @@ tags:
     - 翻译
 slug: HonestyAGI-LLM-Fingerprint
 title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不够！
+draft: true
 ---
 
 来源：<https://github.com/HonestyAGI/LLM-Fingerprint>
