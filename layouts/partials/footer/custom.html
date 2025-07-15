@@ -105,6 +105,10 @@
     function launchEruda() {
         addScriptTag("//unpkg.com/eruda@latest/eruda.js", false, function () {
             eruda.init();
+            console.log(
+                "[launchEruda]",
+                "Console output before launch is not recorded",
+            );
         });
     }
 
