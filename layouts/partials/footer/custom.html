@@ -79,7 +79,7 @@
 </script>
 
 <!-- cf-trace -->
-{{ with resources.Get "js/cf-trace.js" | minify }}
+{{ with resources.Get "js/cf-trace.js" | minify | fingerprint }}
     <script src="{{ .RelPermalink }}"></script>
 {{ end }}
 <script>
