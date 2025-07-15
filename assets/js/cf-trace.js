@@ -1,7 +1,15 @@
 async function getCfCDNinfo(id) {
     const textElement = document.getElementById(id);
     const response = await fetch("/cdn-cgi/trace");
+    if (!response.ok) {
+        console.error("[getCfCDNinfo]", "Request error", response);
+        return;
+    }
     const data = await response.text();
+    if (!data.includes("visit_scheme=")) {
+        console.error("[getCfCDNinfo]", "Invalid trace", data);
+        return;
+    }
     const areas = [
         "Amsterdam, Netherlands - (AMS)",
         "Amman, Jordan - (AMM)",
@@ -358,7 +366,8 @@ async function getCfCDNinfo(id) {
     }
     console.log("[getCfCDNinfo]", trace);
     textElement.onclick = () => {
-        window.open("/cdn-cgi/trace", "_blank");
+        navigator.clipboard.writeText(data);
+        alert(data);
     };
     if (!trace.colo) {
         textElement.innerText = "Unknown";
