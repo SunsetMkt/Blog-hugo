@@ -5,7 +5,7 @@ async function getCfCDNinfo(id) {
         console.error("[getCfCDNinfo]", "Request error", response);
         return;
     }
-    const data = await response.text();
+    const data = (await response.text()).trim();
     if (!data.includes("visit_scheme=")) {
         console.error("[getCfCDNinfo]", "Invalid trace", data);
         return;
@@ -362,7 +362,7 @@ async function getCfCDNinfo(id) {
     var trace = {};
     for (const item of data.split("\n")) {
         const [key, value] = item.split("=");
-        trace[key] = value;
+        trace[key.trim()] = value.trim();
     }
     console.log("[getCfCDNinfo]", trace);
     textElement.onclick = () => {
