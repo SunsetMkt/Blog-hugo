@@ -117,14 +117,17 @@
         window.location.href = "/debug/";
     }
 
-    var debugTriggerCount = 0;
-    var debugTriggerBind = document.getElementsByClassName("site-footer")[0];
-    debugTriggerBind.addEventListener("click", function () {
-        debugTriggerCount++;
-        if (debugTriggerCount == 10) {
-            console.log("[debugTriggerBind]", "Launch Eruda");
-            launchEruda();
-            localStorage.setItem("active-eruda", "true");
-        }
-    });
+    (function () {
+        var debugTriggerCount = 0;
+        var debugTriggerBind =
+            document.getElementsByClassName("site-footer")[0];
+        debugTriggerBind.addEventListener("click", function () {
+            debugTriggerCount++;
+            if (debugTriggerCount == 5) {
+                console.log("[debugTriggerBind]", "Launch Eruda");
+                launchEruda();
+                // localStorage.setItem("active-eruda", "true");
+            }
+        });
+    })();
 </script>
