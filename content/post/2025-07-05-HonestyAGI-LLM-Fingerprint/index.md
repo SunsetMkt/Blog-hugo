@@ -11,7 +11,7 @@ slug: HonestyAGI-LLM-Fingerprint
 title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不够！
 ---
 
-来源：<https://github.com/HonestyAGI/LLM-Fingerprint>（已删除）
+来源：<https://github.com/HonestyAGI/LLM-Fingerprint>（已删除，[搜索 Fork](https://github.com/search?q=LLM-Fingerprint+fork%3Atrue&type=repositories&s=updated&o=desc)）
 
 翻译：`gemini-2.5-pro`
 
