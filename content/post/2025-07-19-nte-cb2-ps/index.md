@@ -8,6 +8,8 @@ slug: nte-cb2-ps
 title: Neverness To Everness Closed Beta II 的 xavo95/xeondev/Reversed Rooms 私服简要运行教程
 ---
 
+**目前，私服仅支持基本移动。请确认您真的需要私服，时间和精力同样昂贵。**
+
 加入[私服作者的 Discord 服务器](https://discord.com/invite/reversedrooms)免费获取全部所需文件。
 
 此私服是免费的，任何通过付费购买的软件都是诈骗。
@@ -35,3 +37,40 @@ title: Neverness To Everness Closed Beta II 的 xavo95/xeondev/Reversed Rooms �
 ### 运行客户端
 
 不要使用启动器，直接运行`D:\Neverness To Everness\Client\WindowsNoEditor\HT\Binaries\Win64\HTGame.exe`。
+
+游戏加载完成后，点击屏幕右上角自上而下的第三个图标，进入登录界面，输入任意用户名和密码，点击登录。
+
+### 维护脚本
+
+#### 快速在 Windows Terminal 的多选项卡启动每个服务器组件
+
+```pwsh
+# 获取当前脚本所在目录，作为 cargo 项目的根目录
+$projectDir = Get-Location
+
+# 定义服务器列表
+$servers = @(
+    "fadia-patchersdk-server",
+    "fadia-gamesdk-server",
+    "fadia-game-server"
+)
+
+# 构建 wt 命令行参数
+$wtArgs = ""
+
+foreach ($i in 0..($servers.Count - 1)) {
+    $server = $servers[$i]
+    $title = $server
+    $command = "powershell -NoExit -Command `"cargo run --bin $server`""
+    $startDir = $projectDir.Path
+
+    if ($i -eq 0) {
+        $wtArgs += "new-tab --title `"$title`" --startingDirectory `"$startDir`" $command"
+    } else {
+        $wtArgs += " ; new-tab --title `"$title`" --startingDirectory `"$startDir`" $command"
+    }
+}
+
+# 启动 wt 并运行所有标签页
+Start-Process wt -ArgumentList $wtArgs
+```
