@@ -1,3 +1,6 @@
+export declare const AVPALETTE_SIZE = 1024;
+export declare const AVPALETTE_COUNT = 256;
+export declare const AV_VIDEO_MAX_PLANES = 4;
 export declare const enum AVPixelFormat {
     AV_PIX_FMT_NONE = -1,
     /**

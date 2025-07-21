@@ -14,6 +14,7 @@ export default class IAacFormat extends IFormat {
     init(formatContext: AVIFormatContext): void;
     destroy(formatContext: AVIFormatContext): Promise<void>;
     private estimateTotalBlock;
+    private parseTransportStreamTimestamp;
     readHeader(formatContext: AVIFormatContext): Promise<number>;
     readAVPacket(formatContext: AVIFormatContext, avpacket: pointer<AVPacket>): Promise<number>;
     private syncFrame;

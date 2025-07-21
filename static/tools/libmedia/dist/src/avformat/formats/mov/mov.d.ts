@@ -56,7 +56,7 @@ export declare const tag2CodecId: {
     [x: number]: AVCodecID;
     1836253269: AVCodecID;
 };
-export declare const enum FragmentMode {
+export declare const enum MovFragmentMode {
     GOP = 0,
     FRAME = 1
 }

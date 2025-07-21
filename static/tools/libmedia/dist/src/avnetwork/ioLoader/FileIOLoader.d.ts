@@ -11,7 +11,7 @@ export default class FileIOLoader extends IOLoader {
     private endPos;
     private reader;
     private readerResolve;
-    open(info: FileInfo, range: Range): Promise<number>;
+    open(info: FileInfo, range?: Range): Promise<number>;
     private readBufferByReaderSync;
     private readBufferByReader;
     read(buffer: Uint8ArrayInterface): Promise<number>;

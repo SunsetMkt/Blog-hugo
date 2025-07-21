@@ -114,3 +114,4 @@ export declare function exclude(source: any[], exc: any[]): any[];
  */
 export declare function binarySearch<T>(array: T[], callback: (item: T) => -1 | 0 | 1): number;
 export declare function sortInsert<T>(array: T[], item: T, callback: (item: T) => -1 | 0 | 1): void;
+export declare function same<T extends ArrayLike<any>>(a: T, b: T): boolean;

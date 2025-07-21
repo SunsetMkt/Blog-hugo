@@ -25,6 +25,7 @@ import MSEPipelineProxy from './worker/MSEPipelineProxy';
 import WebSocketIOLoader, { WebSocketOptions } from 'avnetwork/ioLoader/WebSocketIOLoader';
 import SocketIOLoader from 'avnetwork/ioLoader/SocketIOLoader';
 import WebTransportIOLoader from 'avnetwork/ioLoader/WebTransportIOLoader';
+import { DRMType } from './drm/drm';
 export interface ExternalSubtitle {
     /**
      * 字幕源，支持 url 和 文件
@@ -38,6 +39,42 @@ export interface ExternalSubtitle {
      * 字幕标题
      */
     title?: string;
+}
+export interface DRMSystemOptions {
+    /**
+     * 音频 drm 级别
+     */
+    audioRobustness?: string;
+    /**
+     * 视频 drm 级别
+     */
+    videoRobustness?: string;
+    /**
+     * license 请求 url
+     */
+    requestUrl?: string;
+    /**
+     * license 请求需要附加的 header
+     */
+    header?: Data;
+    /**
+     * license 请求方法
+     */
+    method?: string;
+    /**
+     * 设置 license server 公钥
+     */
+    certificate?: BufferSource;
+    /**
+     * 自定义 license 请求
+     *
+     * @param drmSystemKey drm 系统
+     * @param messageType 请求类型
+     * @param message 请求 body
+     * @param url 附加的 license url（比如 dash 清单里面带有的 url）ClearKey 有这种场景
+     * @returns
+     */
+    onRequest?: (drmSystemKey: DRMType, messageType: MediaKeyMessageType, message: ArrayBuffer, url?: string) => Promise<BufferSource>;
 }
 export interface AVPlayerOptions {
     /**
@@ -93,6 +130,10 @@ export interface AVPlayerOptions {
      */
     loop?: boolean;
     /**
+     * 是否开启 jitter buffer
+     */
+    enableJitterBuffer?: boolean;
+    /**
      * 是否开启低延时模式（直播）开启之后会根据网络情况自动调整 buffer，尽量在不卡顿的情况下降低延时
      */
     lowLatency?: boolean;
@@ -119,6 +160,10 @@ export interface AVPlayerOptions {
      * 默认 桌面端 10 移动端 20
      */
     audioWorkletBufferLength?: int32;
+    /**
+     * DRM 配置
+     */
+    drmSystemOptions?: DRMSystemOptions;
 }
 export interface AVPlayerLoadOptions {
     /**
@@ -193,9 +238,10 @@ export declare const enum AVPlayerStatus {
     LOADED = 4,
     PLAYING = 5,
     PLAYED = 6,
-    PAUSED = 7,
-    SEEKING = 8,
-    CHANGING = 9
+    ENDED = 7,
+    PAUSED = 8,
+    SEEKING = 9,
+    CHANGING = 10
 }
 export declare const enum AVPlayerProgress {
     OPEN_FILE = 0,
@@ -319,6 +365,9 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     private playChannels;
     private seekedTimestamp;
     private isLive_;
+    private drmSystemKey;
+    private drmSession;
+    private stopPending;
     private statsController;
     private jitterBufferController;
     private selectedVideoStream;
@@ -345,6 +394,7 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     private createVideo;
     private createAudio;
     private handleTimeupdate;
+    private replayTo;
     private handleEnded;
     /**
      * 当前播放的源是否是 hls
@@ -406,10 +456,10 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
          * 媒体类型
          */
         mediaType: string;
-        codecparProxy: import("@libmedia/avutil/struct/avcodecparameters").default;
+        codecparProxy: import("avutil/struct/avcodecparameters").default;
         index: number;
         id: number;
-        codecpar: pointer<import("@libmedia/avutil/struct/avcodecparameters").default>;
+        codecpar: pointer<import("avutil/struct/avcodecparameters").default>;
         nbFrames: int64;
         metadata: Data;
         duration: int64;
@@ -452,7 +502,7 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      *
      * @returns
      */
-    stop(): Promise<void>;
+    stop(noEvent?: boolean): Promise<void>;
     setPlaybackRate(rate: number): void;
     /**
      * 获取倍数值
@@ -556,19 +606,19 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      */
     isLive(): boolean;
     /**
-     * 获取视频列表（ dash 使用）
+     * 获取视频列表（ dash 和 hls 使用）
      *
      * @returns
      */
     getVideoList(): Promise<import("@libmedia/avnetwork/ioLoader/IOLoader").IOLoaderVideoStreamInfo>;
     /**
-     * 获取音频列表（ dash 使用）
+     * 获取音频列表（ dash 和 hls 使用）
      *
      * @returns
      */
     getAudioList(): Promise<import("@libmedia/avnetwork/ioLoader/IOLoader").IOLoaderAudioStreamInfo>;
     /**
-     * 获取字幕列表（ dash 使用）
+     * 获取字幕列表（ dash 和 hls 使用）
      *
      * @returns
      */

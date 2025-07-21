@@ -19,12 +19,15 @@ export declare const enum MPEG4AudioObjectTypes {
      */
     AAC_SBR = 5,
     AAC_SCALABLE = 6,
+    AAC_LD = 23,
+    AAC_PS = 29,
     LAYER1 = 32,
     LAYER2 = 33,
     /**
      * MP3
      */
-    LAYER3 = 34
+    LAYER3 = 34,
+    AAC_ELD = 39
 }
 export declare const AACProfile2Name: Partial<Record<MPEG4AudioObjectTypes, string>>;
 export declare const MPEG4SamplingFrequencyIndex: {

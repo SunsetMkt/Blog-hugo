@@ -49,6 +49,7 @@ export default class WasmVideoDecoder {
     private parameters;
     private decoderOptions;
     private timeBase;
+    private dtsQueue;
     constructor(options: WasmVideoDecoderOptions);
     private getAVFrame;
     private outputAVFrame;

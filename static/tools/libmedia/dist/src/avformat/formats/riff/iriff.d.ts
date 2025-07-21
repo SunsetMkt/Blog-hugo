@@ -1,3 +1,12 @@
 import AVCodecParameters from 'avutil/struct/avcodecparameters';
 import IOReader from 'common/io/IOReader';
+import { AVCodecID } from 'avutil/codec';
+import { Data } from 'common/types/type';
+import AVStream from 'avutil/AVStream';
+export declare function getWavCodecId(tag: int32, bitsPerCodedSample: int32): AVCodecID;
+export declare function getGuidCodecId(guid: string): AVCodecID;
 export declare function readFormatTag(ioReader: IOReader, codecpar: pointer<AVCodecParameters>, size: int32): Promise<0 | -2>;
+export declare function readInfo(ioReader: IOReader, size: int64, metadata: Data): Promise<void>;
+export declare function readBmpHeader(ioReader: IOReader, stream: AVStream): Promise<number>;
+export declare function readWaveformatex(ioReader: IOReader, stream: AVStream): Promise<void>;
+export declare function readWavHeader(ioReader: IOReader, stream: AVStream, size: int32): Promise<0 | -2>;

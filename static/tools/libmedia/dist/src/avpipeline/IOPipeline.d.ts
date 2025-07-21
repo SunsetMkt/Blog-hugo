@@ -3,6 +3,7 @@ import Pipeline, { TaskOptions } from './Pipeline';
 import IOLoader, { IOLoaderOptions } from 'avnetwork/ioLoader/IOLoader';
 import IPCPort from 'common/network/IPCPort';
 import { IOType } from 'avutil/avformat';
+import { AVMediaType } from 'avutil/codec';
 export interface IOTaskOptions extends TaskOptions {
     type: IOType;
     options: IOLoaderOptions;
@@ -28,6 +29,7 @@ export default class IOPipeline extends Pipeline {
     selectVideo(taskId: string, index: number): Promise<void>;
     selectAudio(taskId: string, index: number): Promise<void>;
     selectSubtitle(taskId: string, index: number): Promise<void>;
+    getCurrentProtection(taskId: string, mediaType: AVMediaType): Promise<import("@libmedia/avprotocol/dash/type").Protection>;
     getMinBuffer(taskId: string): Promise<number>;
     registerTask(options: IOTaskOptions): Promise<number>;
     unregisterTask(id: string): Promise<void>;

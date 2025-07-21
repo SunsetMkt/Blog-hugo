@@ -292,6 +292,12 @@ export default class IOReaderSync implements BytesReaderSync {
      */
     setEndian(bigEndian: boolean): void;
     /**
+     * 当前读取模式是否是大端
+     *
+     * @returns
+     */
+    isBigEndian(): boolean;
+    /**
      * 获取源总字节长度
      *
      * @returns

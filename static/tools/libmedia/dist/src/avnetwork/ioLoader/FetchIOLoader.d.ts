@@ -21,14 +21,17 @@ export default class FetchIOLoader extends IOLoader {
     private reader;
     private buffers;
     private supportRange;
+    private abortSleep_;
+    private aborted;
     constructor(options?: FetchIOLoaderOptions);
     private getTotalSize;
-    open(info: FetchInfo, range: Range): Promise<number>;
+    open(info: FetchInfo, range?: Range): Promise<number>;
     private openReader;
     private readInterval;
     read(buffer: Uint8ArrayInterface): Promise<int32>;
     seek(pos: int64): Promise<0 | -9>;
     size(): Promise<int64 | 0n>;
+    abortSleep(): void;
     abort(): Promise<void>;
     stop(): Promise<void>;
     getUrl(): string;

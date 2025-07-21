@@ -17,7 +17,6 @@ export interface AVPacketSerialize {
     duration: int64;
     pos: int64;
     timeBase: Rational;
-    bitFormat: int32;
 }
 export interface AVCodecParametersSerialize {
     codecType: AVMediaType;
@@ -56,7 +55,7 @@ export interface AVCodecParametersSerialize {
     initialPadding: int32;
     trailingPadding: int32;
     seekPreroll: int32;
-    bitFormat: int32;
+    flags: int32;
 }
 export declare function serializeAVPacket(avpacket: pointer<AVPacket>): AVPacketSerialize;
 export declare function unserializeAVPacket(serialize: AVPacketSerialize, avpacket?: pointer<AVPacket>): pointer<AVPacket>;

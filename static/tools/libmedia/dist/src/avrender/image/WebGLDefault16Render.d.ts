@@ -3,6 +3,7 @@ import { WebGLRenderOptions } from './WebGLRender';
 import WebGLDefaultRender from './WebGLDefaultRender';
 import VideoProgram16 from './webgl/program/VideoProgram16';
 export default class WebGLDefault16Render extends WebGLDefaultRender {
+    private linesize;
     protected gl: WebGL2RenderingContext;
     protected program: VideoProgram16;
     private hdrMetadata;

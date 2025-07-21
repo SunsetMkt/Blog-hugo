@@ -35,7 +35,11 @@ export declare const enum AVPacketFlags {
     /**
      * The stream is end
      */
-    AV_PKT_FLAG_END = 32
+    AV_PKT_FLAG_END = 32,
+    /**
+     * 对于 h264/h265/h266 标记是否是 annexb 码流格式，未置此标志则为 avcc 格式
+     */
+    AV_PKT_FLAG_H26X_ANNEXB = 64
 }
 export declare class AVPacketSideData {
     data: pointer<uint8>;
@@ -109,11 +113,6 @@ export default class AVPacket {
      * Time base of the packet's timestamps.
      */
     timeBase: Rational;
-    /**
-     * 码流格式
-     * 对于 h264/h265/h266 标记是 annexb 还是 avcc 格式
-     */
-    bitFormat: int32;
 }
 export declare class AVPacketRef extends AVPacket {
     refCount: atomic_int32;

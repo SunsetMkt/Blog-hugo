@@ -20,6 +20,7 @@ export interface MpegtsStreamContext {
     filter: AVBSFilter;
     tsPacket: TSPacket;
     pes: PES;
+    pendingPES: PES;
     continuityCounter: number;
     pesSlices: {
         total: number;

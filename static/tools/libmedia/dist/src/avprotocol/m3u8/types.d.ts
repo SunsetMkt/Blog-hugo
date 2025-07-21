@@ -74,7 +74,8 @@ declare class MediaInitializationSection {
     uri: string;
     mimeType?: string;
     byterange?: Byterange;
-    constructor({ hint, uri, mimeType, byterange }: Partial<MediaInitializationSection> & {
+    key?: Key;
+    constructor({ hint, uri, mimeType, byterange, key }: Partial<MediaInitializationSection> & {
         uri: string;
     });
 }

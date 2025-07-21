@@ -13,6 +13,7 @@ import { Mutex } from 'cheap/thread/mutex';
 import SeekableWriteBuffer from 'common/io/SeekableWriteBuffer';
 import { AVCodecParametersSerialize } from 'avutil/util/serialize';
 import WorkerTimer from 'common/timer/WorkerTimer';
+import { Data } from 'common/types/type';
 export interface MSETaskOptions extends TaskOptions {
     isLive: boolean;
     avpacketList: pointer<List<pointer<AVPacketRef>>>;
@@ -52,6 +53,7 @@ interface MSEResource {
     pullQueue: PullQueue;
     enableRawMpeg: boolean;
     timestampOffsetUpdated: boolean;
+    ignoreEncryption: boolean;
 }
 type SelfTask = MSETaskOptions & {
     mediaSource: MediaSource;
@@ -80,6 +82,7 @@ export default class MSEPipeline extends Pipeline {
     private getMimeType;
     private createSourceBuffer;
     private mixExtradata;
+    private checkEnableEncryption;
     private pullAVPacketInternal;
     private pullAVPacket;
     private writeAVPacket;
@@ -87,8 +90,8 @@ export default class MSEPipeline extends Pipeline {
     private createLoop;
     private startMux;
     private resetResource;
-    addStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, startPTS: int64, pullIPCPort: MessagePort, matrix?: number[]): Promise<void>;
-    reAddStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, startPTS: int64, matrix?: number[]): Promise<void>;
+    addStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, metadata: Data, startPTS: int64, pullIPCPort: MessagePort): Promise<void>;
+    reAddStream(taskId: string, streamIndex: int32, parameters: pointer<AVCodecParameters> | AVCodecParametersSerialize, timeBase: Rational, metadata: Data, startPTS: int64): Promise<void>;
     pause(taskId: string): Promise<void>;
     unpause(taskId: string): Promise<void>;
     beforeSeek(taskId: string): Promise<void>;

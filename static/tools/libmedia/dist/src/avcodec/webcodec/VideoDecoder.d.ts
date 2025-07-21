@@ -13,6 +13,7 @@ export default class WebVideoDecoder {
     private currentError;
     private inputQueue;
     private outputQueue;
+    private dtsQueue;
     private sort;
     private keyframeRequire;
     private extradataRequire;

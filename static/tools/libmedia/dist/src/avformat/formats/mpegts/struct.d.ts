@@ -63,4 +63,5 @@ export declare class PES {
     payload: Uint8Array;
     data: Uint8Array;
     randomAccessIndicator: number;
+    flags: 0;
 }

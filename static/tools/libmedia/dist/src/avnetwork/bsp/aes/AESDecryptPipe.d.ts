@@ -1,5 +1,6 @@
 import { Uint8ArrayInterface } from 'common/io/interface';
 import AVBSPipe from '../AVBSPipe';
+import { AesMode } from 'common/crypto/aes/aes';
 export default class AESDecryptPipe extends AVBSPipe {
     private buffer;
     private aesSoftDecryptor;
@@ -11,12 +12,16 @@ export default class AESDecryptPipe extends AVBSPipe {
     private ended;
     private iv;
     private key;
-    constructor(size?: number);
+    private mode;
+    private pos;
+    constructor(mode?: AesMode, size?: number);
     remainingLength(): number;
     expandKey(key: ArrayBuffer, iv: ArrayBuffer): Promise<void>;
     private flush_;
     private flush;
     private removePadding;
-    private decrypt;
+    private decryptCBC;
+    private getCTRIv;
+    private decryptCTR;
     read(buffer: Uint8ArrayInterface): Promise<number>;
 }

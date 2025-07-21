@@ -13,6 +13,7 @@ export default class IMpegtsFormat extends IFormat {
     destroy(formatContext: AVIFormatContext): Promise<void>;
     readHeader(formatContext: AVIFormatContext): Promise<number>;
     private checkExtradata;
+    private handlePES;
     private parsePESSlice;
     private readAVPacket_;
     readAVPacket(formatContext: AVIFormatContext, avpacket: pointer<AVPacket>): Promise<number>;

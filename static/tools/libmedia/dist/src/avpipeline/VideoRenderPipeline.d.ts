@@ -28,6 +28,7 @@ export interface VideoRenderTaskOptions extends TaskOptions {
     avframeListMutex: pointer<Mutex>;
     enableJitterBuffer: boolean;
     isLive: boolean;
+    sar: number;
 }
 type SelfTask = VideoRenderTaskOptions & {
     leftIPCPort: IPCPort;

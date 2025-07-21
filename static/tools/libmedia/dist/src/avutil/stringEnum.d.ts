@@ -27,6 +27,14 @@ export declare const Ext2IOLoader: Record<string, IOType>;
 export declare const VideoCodecString2CodecId: {
     copy: AVCodecID;
     h264: AVCodecID;
+    h261: AVCodecID;
+    h263: AVCodecID;
+    h263i: AVCodecID;
+    h263p: AVCodecID;
+    mjpeg: AVCodecID;
+    wmv1: AVCodecID;
+    wmv2: AVCodecID;
+    wmv3: AVCodecID;
     avc: AVCodecID;
     hevc: AVCodecID;
     h265: AVCodecID;
@@ -38,6 +46,10 @@ export declare const VideoCodecString2CodecId: {
     mpeg4: AVCodecID;
     theora: AVCodecID;
     mpeg2video: AVCodecID;
+    rv10: AVCodecID;
+    rv20: AVCodecID;
+    rv30: AVCodecID;
+    rv40: AVCodecID;
 };
 export declare const AudioCodecString2CodecId: {
     copy: AVCodecID;
@@ -52,6 +64,11 @@ export declare const AudioCodecString2CodecId: {
     vorbis: AVCodecID;
     pcm_alaw: AVCodecID;
     pcm_mulaw: AVCodecID;
+    wmav1: AVCodecID;
+    wmav2: AVCodecID;
+    cook: AVCodecID;
+    sipr: AVCodecID;
+    ralf: AVCodecID;
 };
 export declare const SubtitleCodecString2CodecId: {
     webvtt: AVCodecID;

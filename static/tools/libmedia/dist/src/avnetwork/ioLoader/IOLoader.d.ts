@@ -12,21 +12,23 @@ export interface IOLoaderVideoStreamInfo {
         width: number;
         height: number;
         frameRate: number;
-        codecs: string;
+        codec: string;
+        bandwidth?: number;
     }[];
     selectedIndex: number;
 }
 export interface IOLoaderAudioStreamInfo {
     list: {
         lang: string;
-        codecs: string;
+        codec: string;
+        bandwidth?: number;
     }[];
     selectedIndex: number;
 }
 export interface IOLoaderSubtitleStreamInfo {
     list: {
         lang: string;
-        codecs: string;
+        codec: string;
     }[];
     selectedIndex: number;
 }
@@ -50,7 +52,7 @@ export default abstract class IOLoader {
      *
      * @returns 成功返回 0, 失败返回错误码（负值）
      */
-    abstract open(info: Data, range: Range): Promise<int32>;
+    abstract open(info: Data, range?: Range): Promise<int32>;
     /**
      * 读取数据到缓冲区
      *

@@ -17,6 +17,7 @@ export default class IOReader implements BytesReader {
     onSeek: (seek: bigint) => Promise<number> | number;
     onSize: () => Promise<bigint> | bigint;
     flags: number;
+    private flushResolve;
     /**
      * @param data 待读取的字节
      * @param bigEndian 是否按大端字节序读取，默认大端字节序（网络字节序）
@@ -293,6 +294,12 @@ export default class IOReader implements BytesReader {
      */
     setEndian(bigEndian: boolean): void;
     /**
+     * 当前读取模式是否是大端
+     *
+     * @returns
+     */
+    isBigEndian(): boolean;
+    /**
      * 获取源总字节长度
      *
      * @returns
@@ -311,4 +318,8 @@ export default class IOReader implements BytesReader {
      * @param length
      */
     pipe(ioWriter: IOWriter, length?: number): Promise<void>;
+    /**
+     * 中断 flush 操作
+     */
+    abort(): void;
 }

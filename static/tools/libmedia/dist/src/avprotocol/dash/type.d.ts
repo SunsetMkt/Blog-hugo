@@ -1,9 +1,17 @@
+import { Data } from 'common/types/type';
 export interface Segment {
     idx: number;
     start: number;
     end: number;
     url: string;
     segmentDuration: number;
+    pending: boolean;
+}
+export interface Protection {
+    scheme?: string;
+    kid?: Uint8Array;
+    url?: string;
+    systemId?: Uint8Array;
 }
 export interface Media {
     id: string;
@@ -23,11 +31,10 @@ export interface Media {
     bandwidth: number;
     timescale: number;
     duration: number;
-    encrypted?: boolean;
+    protection?: Protection;
     lang?: string;
 }
 export interface MPDMediaList {
-    source: string;
     mediaList: {
         audio: Media[];
         video: Media[];
@@ -39,6 +46,8 @@ export interface MPDMediaList {
     minBufferTime: number;
     maxSegmentDuration: number;
     minimumUpdatePeriod: number;
+    availabilityStartTime?: number;
+    timeShiftBufferDepth?: number;
     timestamp: number;
 }
 interface S {
@@ -55,6 +64,8 @@ export interface SegmentTemplate {
     startNumber?: string;
     timescale?: string;
     duration?: string;
+    presentationTimeOffset?: string;
+    availabilityTimeComplete?: string;
     SegmentTimeline: SegmentTimeline;
 }
 export interface Representation {
@@ -91,7 +102,7 @@ export interface Representation {
         };
     };
     SegmentTemplate?: SegmentTemplate | SegmentTemplate[];
-    ContentProtection?: any;
+    ContentProtection?: Data[];
 }
 export interface AdaptationSet {
     id: string;
@@ -110,30 +121,44 @@ export interface AdaptationSet {
     par?: string;
     segmentAlignment: string;
     startWithSAP: string;
-    BaseURL?: string;
+    BaseURL?: string | {
+        value: string;
+    };
+    duration?: string;
     Representation: Representation | Representation[];
     SegmentTemplate?: SegmentTemplate | SegmentTemplate[];
-    ContentProtection?: any;
+    ContentProtection?: Data[];
 }
 export interface Period {
     id: string;
     start: string;
     AdaptationSet: AdaptationSet | AdaptationSet[];
     duration?: string;
+    BaseURL?: string | {
+        value: string;
+    };
 }
 export interface MPD {
     type: 'static' | 'dynamic';
     ProgramInformation: string;
     maxSegmentDuration: string;
     mediaPresentationDuration: string;
+    availabilityStartTime?: string;
+    timeShiftBufferDepth?: string;
     minBufferTime: string;
     minimumUpdatePeriod?: string;
+    publishTime?: string;
     ServiceDescription?: {
         id: string;
     }[];
     Period: Period | Period[];
     BaseURL?: string | {
         value: string;
-    };
+    } | {
+        value: string;
+        serviceLocation?: string;
+        'dvb:priority'?: string;
+        'dvb:weight'?: string;
+    }[];
 }
 export {};

@@ -1,15 +1,20 @@
 import OFormat from './OFormat';
 import AVPacket from 'avutil/struct/avpacket';
 import { AVOFormatContext } from '../AVFormatContext';
-import { FragmentMode, MovMode } from './mov/mov';
+import { MovFragmentMode, MovMode } from './mov/mov';
+import { AVStreamMetadataEncryption } from 'avutil/AVStream';
 import { AVFormat } from 'avutil/avformat';
+export { MovFragmentMode, MovMode };
 export interface OMovFormatOptions {
-    fragmentMode?: FragmentMode;
+    fragmentMode?: MovFragmentMode;
     movMode?: MovMode;
     fragment?: boolean;
     fastOpen?: boolean;
     defaultBaseIsMoof?: boolean;
     ignoreEditlist?: boolean;
+    encryption?: AVStreamMetadataEncryption;
+    reverseSpsInAvcc?: boolean;
+    ignoreEncryption?: boolean;
 }
 export default class OMovFormat extends OFormat {
     type: AVFormat;

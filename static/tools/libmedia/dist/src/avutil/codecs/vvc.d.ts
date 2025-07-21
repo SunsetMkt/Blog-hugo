@@ -140,7 +140,7 @@ export declare function generateAnnexbExtradata(data: Uint8ArrayInterface): Uint
  * 需要保证 data 是 safe 的
  *
  */
-export declare function annexb2Avcc(data: Uint8ArrayInterface): {
+export declare function annexb2Avcc(data: Uint8ArrayInterface, reverseSps?: boolean): {
     bufferPointer: pointer<uint8>;
     length: number;
     extradata: Uint8Array<ArrayBufferLike>;

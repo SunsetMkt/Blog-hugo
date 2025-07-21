@@ -3,10 +3,6 @@ import AVStream from '../AVStream';
 import { Uint8ArrayInterface } from 'common/io/interface';
 export declare const H264_MAX_DPB_FRAMES = 16;
 export declare const NALULengthSizeMinusOne = 3;
-export declare const enum BitFormat {
-    AVCC = 1,
-    ANNEXB = 2
-}
 export declare const enum PictureType {
     I = 1,
     P = 2,
@@ -126,7 +122,7 @@ export declare function generateAnnexbExtradata(data: Uint8ArrayInterface): Uint
  *
  * 需要保证 data 是 safe 的
  */
-export declare function annexb2Avcc(data: Uint8ArrayInterface): {
+export declare function annexb2Avcc(data: Uint8ArrayInterface, reverseSps?: boolean): {
     bufferPointer: pointer<uint8>;
     length: number;
     key: boolean;
