@@ -17,11 +17,11 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 
 ## 可能会有帮助的其他工具
 
-- Wwise 事件提取 <https://github.com/bnnm/wwiser>
+- Wwise 音频事件提取 <https://github.com/bnnm/wwiser>
 - Unreal 模型提取 <https://www.gildor.org/en/projects/umodel>
 - Wwise 音频转码 <https://github.com/vgmstream/vgmstream>
 - 自`2.1`版本，视频文件已被加密，暂无解决方案。
-- 自`2.4`版本，`ConfigDB`似乎已被加密。参考[wicked-waifus-data](https://git.xeondev.com/wickedwaifus/wicked-waifus-data)。
+- 自`2.4`版本，`ConfigDB`似乎已被加密。参考[wicked-waifus-data](https://git.xeondev.com/wickedwaifus/wicked-waifus-data)，FModel 已实现解密。
 
 ## 其他值得注意的项目
 
@@ -34,7 +34,7 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 - Mod 加载 <https://github.com/SpectrumQT/WWMI-Package>
 - 解包数据 <https://github.com/Arikatsu/WutheringWaves_Data>
 - 抽卡数据收集等 <https://github.com/leck995/WutheringWavesTool>
-- 私服 <https://github.com/thexeondev/Shorekeeper>
+- ~~私服 <https://github.com/thexeondev/Shorekeeper>~~
 - 解包数据 <https://github.com/Dimbreath/WutheringData>
 - 自动化 <https://github.com/babalae/better-wuthering-waves>
 - 自动化 <https://github.com/EMCJava/WuWaOpt>
