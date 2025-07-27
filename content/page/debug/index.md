@@ -17,7 +17,7 @@ tags:
 
 ## 快捷链接
 
-[网站源码](https://github.com/SunsetMkt/Blog-hugo) | [主题源码](https://github.com/CaiJimmy/hugo-theme-stack) | [主题文档](https://stack.jimmycai.com/config/) | [Hugo 文档](https://gohugo.io/documentation/)
+[网站源码](https://github.com/SunsetMkt/Blog-hugo) | [主题源码](https://github.com/CaiJimmy/hugo-theme-stack) | [主题文档](https://stack.jimmycai.com/config/) | [Hugo 文档](https://gohugo.io/documentation/) | [Sitemap](/sitemap/)
 
 ## 调试功能
 
@@ -49,6 +49,8 @@ URL 参数`eruda=true`。
     <a class="link" onclick="localStorage.setItem('active-eruda','true');location.reload();">启动Eruda</a>&nbsp;
     <a class="link" onclick="localStorage.removeItem('active-eruda');location.reload();">关闭Eruda</a>
 </div>
+
+或点击 Footer 五次临时启动。
 
 ### Cloudflare Zaraz 标签管理器
 
