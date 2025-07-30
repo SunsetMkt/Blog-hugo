@@ -12,7 +12,7 @@ links:
       image: 小雨.png
     - title: Chise Hachiroku
       description: "朝向明日的辉迹！"
-      website: https://chise.hachiroku.uk/zh/
+      website: https://chise.hachiroku.com/zh/
       image: ChiseHachiroku.png
     - title: Cynosura
       description: "Feel free to contact me."
