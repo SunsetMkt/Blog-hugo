@@ -109,12 +109,13 @@ title: 我的软件清单
 - 文件加密 [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
 - 沙箱 [Sandboxie](https://github.com/sandboxie-plus/Sandboxie)
 
-## 体验优化/运行库/杂项
+## Windows 体验优化/运行库/杂项
 
 - Windows 工具 [PowerToys](https://github.com/microsoft/PowerToys)
 - Microsoft Visual C++ Redistributable Runtimes [vcredist](https://github.com/abbodi1406/vcredist)
 - Windows 工具 [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite)
 - 不可逆也不推荐用于宿主机的 Windows 优化 [Atlas](https://github.com/Atlas-OS/Atlas)
+- 适用于虚拟机 Guest OS 的优化 [Omnissa Horizon OS Optimization Tool](https://techzone.omnissa.com/resource/windows-os-optimization-tool-horizon-guide)
 
 ## 文件系统/硬盘工具/启动
 
