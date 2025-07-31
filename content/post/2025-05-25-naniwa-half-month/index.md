@@ -1,7 +1,7 @@
 ---
 categories: Repost
 date: "2025-05-25T00:00:00Z"
-description: "“权力之处，必有抵抗。” - 米歇尔·福柯"
+description: "权力之处，必有抵抗。"
 tags:
     - 社会评论
     - Cedaros

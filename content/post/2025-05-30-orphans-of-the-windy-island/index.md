@@ -1,7 +1,7 @@
 ---
 categories: Repost
 date: "2025-05-30T00:00:00Z"
-description: "「地已经露出她的血，不再遮掩被杀者。」"
+description: "地已经露出她的血，不再遮掩被杀者。"
 tags:
     - 社会评论
     - Cedaros

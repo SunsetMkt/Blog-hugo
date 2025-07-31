@@ -19,6 +19,8 @@ title: 阿穆尔河畔的囚徒
 
 [FSB](https://zh.wikipedia.org/wiki/%E4%BF%84%E7%BE%85%E6%96%AF%E8%81%AF%E9%82%A6%E5%AE%89%E5%85%A8%E5%B1%80)：俄罗斯联邦安全局（俄语：Федеральная служба безопасности Российской Федерации，罗马化：Federal'naya sluzhba bezopasnosti Rossiyskoy Federatsii），缩写为ФСБ（转写：FSB），是俄罗斯负责国内事务的情报机构，为前苏联时期克格勃的继承组织，目前总部位于莫斯科卢比扬卡广场。
 
+本文包含对性和物质滥用的描写。
+
 ---
 
 <h3 id="第一章-种子"><a href="#第一章-种子" class="headerlink" title="第一章 | 种子"></a>第一章 | 种子</h3><p>俄罗斯啊。</p>
