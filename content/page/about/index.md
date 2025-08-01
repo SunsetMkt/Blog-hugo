@@ -33,7 +33,7 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 ## 关于网站
 
-基于[Hugo](https://gohugo.io/)的静态网站，托管在[Cloudflare Pages](https://pages.cloudflare.com/)上。
+Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohugo.io/)的静态网站，托管在[Cloudflare Pages](https://pages.cloudflare.com/)上。
 
 这个域名下的大部分网站都是静态的。因此，为了节省您的宝贵时间，不要对此域名使用漏洞扫描器。
 
