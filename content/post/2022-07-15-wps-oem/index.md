@@ -2,10 +2,10 @@
 categories: Original
 date: 2022-07-15T00:00:00Z
 tags:
-  - WPS
-  - 信息技术
-  - 软件
-  - 逆向工程
+    - WPS
+    - 信息技术
+    - 软件
+    - 逆向工程
 slug: wps-oem
 title: WPS Office Pro（金山 WPS 企业版）和金山 PDF 专业版的 OEM 配置方法
 ---
@@ -294,3 +294,7 @@ UninstExeCount=1
 [2023 from 423down](https://www.423down.com/15937.html)
 
 [RainCandyTech/WPSOfficeConf](https://github.com/RainCandyTech/WPSOfficeConf)
+
+[2023 from mefcl](https://www.mefcl.com/wps-office-2019-gr.html)
+
+[PDF from mefcl](https://www.mefcl.com/kingsoft-pdf.html)
