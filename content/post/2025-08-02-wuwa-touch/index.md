@@ -20,6 +20,6 @@ Enabling touch input and UI for Wuthering Waves on PC.
 "C:\path\to\Wuthering Waves\Wuthering Waves Game\Client\Binaries\Win64\Client-Win64-Shipping.exe" -CloudGame -SkipSplash -CloudGamePlatform=Android
 ```
 
-需要真实的触屏输入。在此状态下，它不支持鼠标键盘输入。
+**需要真实的 Windows 触屏输入。**在此状态下，它不支持鼠标键盘输入。在进入游戏后，光标会被持续隐藏。可以使用[Sunshine](https://github.com/LizardByte/Sunshine)和[Moonlight](https://github.com/moonlight-stream)从其他设备上模拟触屏输入。
 
 其他可用的参数：`-Device=` `-Dpi=` `-DeviceScreenResolution=1920x1080` `-Res=1920x1080` `-IsWeb=1`
