@@ -10,6 +10,8 @@ slug: wuwa-touch
 title: 在《鸣潮》PC 端使用移动端界面
 ---
 
+Enabling touch input and UI for Wuthering Waves on PC.
+
 这是一个未公开的行为，不保证在未来可用。
 
 使用启动参数：
@@ -19,3 +21,5 @@ title: 在《鸣潮》PC 端使用移动端界面
 ```
 
 需要真实的触屏输入。在此状态下，它不支持鼠标键盘输入。
+
+其他可用的参数：`-Device=` `-Dpi=` `-DeviceScreenResolution=1920x1080` `-Res=1920x1080` `-IsWeb=1`
