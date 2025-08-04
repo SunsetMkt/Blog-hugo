@@ -2,14 +2,14 @@
 title: 友情链接
 date: 2024-11-18
 links:
+    - title: Ame (小雨/Rain/Cedaros)
+      description: "in solitude where we are least alone"
+      website: https://angelkawaii.xyz/
+      image: 小雨.png
     - title: Cascade Kobayashi
       description: "工程师猫娘"
       website: https://cascade.moe/
       image: Cascade.webp
-    - title: Cedaros (Rain)
-      description: "in solitude where we are least alone"
-      website: https://angelkawaii.xyz/
-      image: 小雨.png
     - title: Chise Hachiroku
       description: "朝向明日的辉迹！"
       website: https://chise.hachiroku.com/zh/
