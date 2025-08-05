@@ -2,11 +2,11 @@
 categories: Original
 date: 2024-02-17T00:00:00Z
 tags:
-  - Kaspersky
-  - Windows
-  - 信息技术
-  - 杀毒软件
-  - 软件
+    - Kaspersky
+    - Windows
+    - 信息技术
+    - 杀毒软件
+    - 软件
 slug: kfa
 title: 卡巴斯基免费版的 Windows 安装包下载 URL 获取
 ---
@@ -49,6 +49,12 @@ https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=50036
 
 ```plain
 https://api-router.kaspersky-labs.com/downloads/search/v3/b2c?productcodes=2911399&businesspurposes=Update&licensetiers=KSOS&sites=https%3A%2F%2Fwww.kaspersky.com.cn
+```
+
+KES（[引用](https://bbs.kafan.cn/thread-2283790-1-1.html)）:
+
+```plain
+https://api-router.kaspersky-labs.com/downloads/search/v3/b2b?productcode=2911379&sites=https%3A%2F%2Fwww.kaspersky.com.cn
 ```
 
 ## API（已弃用）
