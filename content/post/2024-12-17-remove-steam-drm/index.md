@@ -14,6 +14,8 @@ title: 移除游戏的 Steam 验证
 
 ## [goldberg_emulator](https://gitlab.com/Mr_Goldberg/goldberg_emulator)
 
+或者使用[Fork](https://github.com/Detanup01/gbe_fork)。
+
 绕过`Steamworks API`验证。
 
 替换`steam_api(64).dll`并期待它能工作。
