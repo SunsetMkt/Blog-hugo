@@ -15,7 +15,7 @@ title: Unity 游戏的通用解包和逆向工程工具
 - [AssetRipper](https://github.com/AssetRipper/AssetRipper)
 - [aelurum/AssetStudio](https://github.com/aelurum/AssetStudio)
 - [Perfare/AssetStudio](https://github.com/Perfare/AssetStudio)
-- [zhangjiequan/AssetStudio](github.com/zhangjiequan/AssetStudio)
+- [zhangjiequan/AssetStudio](https://github.com/zhangjiequan/AssetStudio)
 - [UnityPy](https://github.com/K0lb3/UnityPy)
 
 ## IL2CPP
