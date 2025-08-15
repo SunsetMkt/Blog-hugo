@@ -1,9 +1,10 @@
 ---
 categories: Repost
-date: "2024-11-28T00:00:00Z"
+date: 2024-11-28T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
+  - 信息技术
+  - 开源
+  - 指南
 slug: hacker-howto
 title: 如何成为黑客
 ---

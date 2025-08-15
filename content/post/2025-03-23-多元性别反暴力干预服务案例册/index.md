@@ -1,9 +1,10 @@
 ---
 categories: Repost
-date: "2025-03-23T00:00:00Z"
+date: 2025-03-23T00:00:00Z
 tags:
-    - 医学
-    - LGBTQIA
+  - LGBTQIA
+  - 医学
+  - 指南
 slug: 多元性别反暴力干预服务案例册
 title: 《多元性别反暴力干预服务案例册》
 ---

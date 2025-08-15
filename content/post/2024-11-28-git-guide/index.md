@@ -1,12 +1,13 @@
 ---
 categories: Repost
-date: "2024-11-28T00:00:00Z"
+date: 2024-11-28T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
-    - Git
+  - Git
+  - 信息技术
+  - 开源
+  - 指南
 slug: git-guide
-title: "git - 简明指南"
+title: git - 简明指南
 ---
 
 [Source](https://github.com/rogerdudler/git-guide/blob/gh-pages/index.zh.html)

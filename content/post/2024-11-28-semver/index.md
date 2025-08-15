@@ -1,12 +1,13 @@
 ---
 categories: Repost
-date: "2024-11-28T00:00:00Z"
+date: 2024-11-28T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
-    - Git
+  - Git
+  - 信息技术
+  - 开源
+  - 指南
 slug: semver
-title: "语义化版本 2.0.0"
+title: 语义化版本 2.0.0
 ---
 
 [Source](https://github.com/semver/semver.org/blob/gh-pages/lang/zh-CN/index.md) 知识共享 署名 3.0 (CC BY 3.0)

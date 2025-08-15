@@ -1,12 +1,13 @@
 ---
 categories: Repost
-date: "2024-11-29T00:00:00Z"
+date: 2024-11-29T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
-    - Mozilla
+  - Mozilla
+  - 信息技术
+  - 开源
+  - 指南
 slug: mozilla-participation
-title: "Mozilla 社区参与准则"
+title: Mozilla 社区参与准则
 ---
 
 [Source](https://www.mozilla.org/zh-CN/about/governance/policies/participation/)

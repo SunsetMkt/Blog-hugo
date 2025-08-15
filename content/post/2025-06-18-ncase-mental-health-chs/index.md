@@ -2,9 +2,10 @@
 categories: Repost
 date: 2025-06-18T00:00:00Z
 tags:
-    - 医学
+  - 医学
+  - 指南
 slug: ncase-mental-health-chs
-title: "心理健康小秘诀 feat. 焦虑之狼"
+title: 心理健康小秘诀 feat. 焦虑之狼
 ---
 
 [原文](https://github.com/ncase/mental-health/blob/master/zh-CN.md)，[CC0 1.0 Universal](https://github.com/ncase/mental-health/blob/master/LICENSE.txt)，[译者](https://github.com/TobbyLALALA)，此文档是[和焦虑一起冒险！](https://z-lyen.github.io/anxiety/)的补充材料。

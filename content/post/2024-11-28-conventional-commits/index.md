@@ -1,12 +1,13 @@
 ---
 categories: Repost
-date: "2024-11-28T00:00:00Z"
+date: 2024-11-28T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
-    - Git
+  - Git
+  - 信息技术
+  - 开源
+  - 指南
 slug: conventional-commits
-title: "约定式提交 1.0.0"
+title: 约定式提交 1.0.0
 ---
 
 [Source](https://github.com/conventional-commits/conventionalcommits.org/blob/master/content/v1.0.0/index.zh-hans.md) Creative Commons - CC BY 3.0

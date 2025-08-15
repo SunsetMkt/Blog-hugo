@@ -1,11 +1,12 @@
 ---
 categories: Repost
-date: "2024-11-29T00:00:00Z"
+date: 2024-11-29T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
+  - 信息技术
+  - 开源
+  - 指南
 slug: dontasktoask
-title: "不要问「有没有懂的人」，有问题直接问"
+title: 不要问「有没有懂的人」，有问题直接问
 ---
 
 [Source](https://github.com/maunium/dontasktoask.com) MIT license

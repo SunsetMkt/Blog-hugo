@@ -1,11 +1,12 @@
 ---
 categories: Repost
-date: "2024-11-29T00:00:00Z"
+date: 2024-11-29T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
+  - 信息技术
+  - 开源
+  - 指南
 slug: asking-questions
-title: "如何（有效地！）提问技术问题"
+title: 如何（有效地！）提问技术问题
 ---
 
 [Source](https://github.com/chipturner/asking-questions) CC0-1.0 license
