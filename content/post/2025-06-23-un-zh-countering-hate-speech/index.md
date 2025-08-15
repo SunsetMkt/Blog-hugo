@@ -3,7 +3,7 @@ categories: Repost
 date: 2025-06-23T00:00:00Z
 tags:
   - 指南
-  - 社会评论
+  - 联合国
 slug: un-zh-countering-hate-speech
 title: 联合国关于抵制仇恨言论的信息
 ---
