@@ -18,7 +18,7 @@
     <!-- Already generated in base.html -->
     {{ $url := urls.Parse .Page.RelPermalink }}
     {{ $path := $url.Path }}
-    {{- $img := path.Join $path "ogimage_hugo_generated.png" -}}
+    {{- $img := path.Join $path "ogimage_hugo_generated.jpg" -}}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="{{ absURL $img }}" />
 {{- else }}
