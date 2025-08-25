@@ -38,6 +38,10 @@ links:
       description: "女子高中生 | 给岁月以文明，而不是给文明以岁月。"
       website: https://qwq2333.top/
       image: 20317838.jpg
+    - title: steve02081504
+      description: "只是一个 blog"
+      website: https://steve02081504.github.io/
+      image: 31927825.jpg
     - title: Tokyo Hacker Girls
       description: "Asahi Lina and Cyan Nyan, a VTuber yuri couple spreading love, knowledge, and positivity!"
       website: https://blog.thgirls.yt/
