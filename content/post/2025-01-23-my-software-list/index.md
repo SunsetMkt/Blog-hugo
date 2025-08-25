@@ -74,9 +74,10 @@ title: 我的软件清单
 
 - 游戏分发平台 [Steam](https://store.steampowered.com/about)
 - 游戏分发平台 [Epic Games](https://store.epicgames.com/zh-CN/)
-- 游戏 [Minecraft](https://github.com/HMCL-dev/HMCL)
+- 游戏 Minecraft [HMCL](https://github.com/HMCL-dev/HMCL)/[Prism Launcher](https://github.com/PrismLauncher/PrismLauncher)
 - 开源游戏引擎 [Unreal Engine](https://www.unrealengine.com/zh-CN)
-- 闭源游戏引擎 [Unity Engine](https://github.com/tylearymf/UniHacker)
+- 开源游戏引擎 [Godot Engine](https://godotengine.org/zh-cn/)
+- 闭源游戏引擎 [Unity Engine](https://github.com/NoUnityCN/NoUnityCN)
 
 ## 编辑器/IDE/开发工具
 
