@@ -49,7 +49,7 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 
 ### 第三方服务
 
-此网站的运行依赖于第三方服务，包括但不限于:
+此网站的运行依赖于一些第三方服务，包括但不限于:
 
 - [GitHub](https://github.com/)
 - [Cloudflare](https://www.cloudflare.com/zh-cn/)
@@ -59,11 +59,15 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 
 ### 开源软件
 
-此网站依赖于来自第三方的开源软件，所有来源均标注在[源代码]({{< ref "debug" >}})中，您可自行下载整个代码库并手动检查。
+此网站基于众多开源软件，所有来源均标注在[源代码]({{< ref "debug" >}})中，您可自行下载整个代码库并手动检查。
 
 ### SSG
 
 - [Hugo](https://github.com/gohugoio/hugo)
+
+### CDN
+
+- [UNPKG](https://github.com/unpkg/unpkg)
 
 ### 评论
 
