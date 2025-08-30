@@ -61,6 +61,14 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 
 此网站依赖于来自第三方的开源软件，所有来源均标注在[源代码]({{< ref "debug" >}})中，您可自行下载整个代码库并手动检查。
 
+### SSG
+
+- [Hugo](https://github.com/gohugoio/hugo)
+
+### 评论
+
+- [Waline](https://github.com/walinejs/waline)
+
 ### Hugo 主题
 
 - [CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
