@@ -1,5 +1,8 @@
 async function getCfCDNinfo(id) {
+    // Get text element
     const textElement = document.getElementById(id);
+
+    // Get trace
     const response = await fetch("/cdn-cgi/trace");
     if (!response.ok) {
         console.error("[getCfCDNinfo]", "Request error", response);
@@ -10,6 +13,8 @@ async function getCfCDNinfo(id) {
         console.error("[getCfCDNinfo]", "Invalid trace", data);
         return;
     }
+
+    // Areas data
     const areas = [
         "Amsterdam, Netherlands - (AMS)",
         "Amman, Jordan - (AMM)",
@@ -359,26 +364,48 @@ async function getCfCDNinfo(id) {
         "Shijiazhuang, China - (SJW)",
         "Xining, China - (XNN)",
     ];
+
+    // Parse trace
     var trace = {};
     for (const item of data.split("\n")) {
         const [key, value] = item.split("=");
         trace[key.trim()] = value.trim();
     }
     console.log("[getCfCDNinfo]", trace);
+
+    // Set alert text
     textElement.onclick = () => {
         navigator.clipboard.writeText(data);
         alert(data);
     };
-    if (!trace.colo) {
-        textElement.innerText = "Unknown";
-        return;
-    }
+
+    // Get colo name
+    var coloName = trace.colo;
     for (const item of areas) {
         if (item.includes(trace.colo)) {
             const nameOnly = item.split("-")[0].trim();
-            textElement.innerText = nameOnly;
-            return;
+            coloName = nameOnly;
+            break;
         }
-        textElement.innerText = trace.colo;
     }
+
+    // Get other attributes
+    var attrs = [];
+    if (trace.warp != "off") {
+        attrs.push("WARP");
+    }
+    if (trace.sni == "encrypted") {
+        attrs.push("ECH");
+    }
+    if (trace.gateway != "off") {
+        attrs.push("Gateway");
+    }
+    // Get attrs strings in (A, B, C)
+    var attrsStr = "";
+    if (attrs.length > 0) {
+        attrsStr = " (" + attrs.join(", ") + ")";
+    }
+
+    var finalText = coloName + attrsStr;
+    textElement.innerText = finalText;
 }
