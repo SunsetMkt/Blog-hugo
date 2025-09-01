@@ -391,6 +391,7 @@ async function getCfCDNinfo(id) {
 
     // Get other attributes
     var attrs = [];
+    attrs.push(trace.colo);
     if (trace.warp != "off") {
         attrs.push("WARP");
     }
@@ -399,6 +400,9 @@ async function getCfCDNinfo(id) {
     }
     if (trace.gateway != "off") {
         attrs.push("Gateway");
+    }
+    if (trace.sliver != "none") {
+        attrs.push("Sliver");
     }
     // Get attrs strings in (A, B, C)
     var attrsStr = "";
