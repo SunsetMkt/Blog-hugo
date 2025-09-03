@@ -1,0 +1,48 @@
+{{ $uniqueID := substr (.Get "file" | md5) 0 8 }}
+{{ $epubFile := .Get "file" }}
+
+
+<div>
+    <p>
+        <code>{{ $epubFile | safeHTML }}</code>
+        |
+        <a href="#" id="embed-epub-download-{{ $uniqueID }}" download
+            >下载EPUB</a
+        >
+        |
+        <a
+            href="/tools/foliate-js/reader.html?file="
+            target="_blank"
+            id="embed-epub-link-{{ $uniqueID }}"
+            >在新页面打开</a
+        >
+    </p>
+    <iframe
+        src="/tools/foliate-js/reader.html?file="
+        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        id="embed-epub-iframe-{{ $uniqueID }}"
+    ></iframe>
+  <script>
+    (function () {
+      var uniqueID = "{{ $uniqueID }}";
+      var filepath = "{{ $epubFile }}";
+      var iframe = document.getElementById("embed-epub-iframe-" + uniqueID);
+      var link = document.getElementById("embed-epub-link-" + uniqueID);
+      var download = document.getElementById("embed-epub-download-" + uniqueID);
+      var currentPageLocation = window.location.toString();
+      if (currentPageLocation.endsWith("/") == false) {
+        currentPageLocation += "/";
+      }
+      if (filepath.includes("://")) {
+        var src = filepath;
+      } else {
+        var src = currentPageLocation + filepath;
+      }
+      src = encodeURI(src);
+      var href = "/tools/foliate-js/reader.html?file=" + src;
+      iframe.src = href;
+      link.href = href;
+      download.href = src;
+    })();
+  </script>
+</div>
