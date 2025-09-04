@@ -33,3 +33,14 @@ TL;DR: `.\Client-Win64-Shipping.exe -CloudGame -SkipSplash -CloudGamePlatform=An
 其他可用的参数：`-Device=` `-Dpi=` `-DeviceScreenResolution=1920x1080` `-Res=1920x1080` `-IsWeb=1`
 
 简单判断是否是 Windows 触屏输入：触碰时，屏幕上显示半透明圆形的触控指示器（[Touch indicator](https://support.microsoft.com/en-us/windows/make-windows-easier-to-see-c97c2b0d-cadb-93f0-5fd1-59ccfe19345d)）。
+
+<div>
+    <p>最近一次指针输入方式：<span id="pointerdown-status">未知</span></p>
+    <script>
+        const statusEl = document.getElementById("pointerdown-status");
+        window.addEventListener("pointerdown", (e) => {
+            var time = new Date().toLocaleTimeString();
+            statusEl.textContent = e.pointerType + " (" + time + ")";
+        });
+    </script>
+</div>
