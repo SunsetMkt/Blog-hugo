@@ -26,6 +26,10 @@ TL;DR: `.\Client-Win64-Shipping.exe -CloudGame -SkipSplash -CloudGamePlatform=An
 
 `-CloudGame`实际上与`-CloudGamePlatform=`功能重合，只是为了确保指令可读性。
 
-**需要真实的 Windows 触屏输入。** 在此状态下，它不支持鼠标键盘输入。在进入游戏后，光标会被持续隐藏。可以使用[Sunshine](https://github.com/LizardByte/Sunshine)和[Moonlight](https://github.com/moonlight-stream)从其他设备上模拟触屏输入。
+确保在官方启动器保持客户端更新。第一次以 CloudGame 启动后，会自动下载全部语言的语音包。
+
+**需要真实的 Windows 触屏（多点触控）输入。** 在此状态下，它不支持鼠标键盘输入。在进入游戏后，光标会被持续隐藏。可以使用[Sunshine](https://github.com/LizardByte/Sunshine)和[Moonlight](https://github.com/moonlight-stream)从其他设备上模拟触屏输入。需要注意，一些平台的 Sunshine 客户端[不默认支持](https://github.com/moonlight-stream/moonlight-android/issues/1271)此功能，已知[moonlight-qt](https://github.com/moonlight-stream/moonlight-qt)在有触摸屏的 Windows 设备上支持此功能。
 
 其他可用的参数：`-Device=` `-Dpi=` `-DeviceScreenResolution=1920x1080` `-Res=1920x1080` `-IsWeb=1`
+
+简单判断是否是 Windows 触屏输入：触碰时，屏幕上显示半透明圆形的触控指示器（[Touch indicator](https://support.microsoft.com/en-us/windows/make-windows-easier-to-see-c97c2b0d-cadb-93f0-5fd1-59ccfe19345d)）。
