@@ -36,11 +36,12 @@
       } else {
         var src = currentPageLocation + filepath;
       }
+      var raw_src = src.valueOf();
       src = encodeURI(src);
       var href = "/tools/embeddable-monaco/index.html?code=Error&lang=plaintext&theme=vs-dark&fileUrl=" + src;
       iframe.src = href;
       link.href = href;
-      download.href = src;
+      download.href = raw_src;
     })();
   </script>
 </div>
