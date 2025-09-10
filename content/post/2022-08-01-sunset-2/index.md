@@ -51,7 +51,7 @@ title: 原创角色 Sunset 的设定草案第二版
 
 ## 简介
 
-[Sunset](https://github.com/unknown)[^10]创作的原创角色及其创作的虚拟组织[余晖教育和科技集团（Sunset Edu. & Tech. Group）](https://github.com/Sunset-Edu-Tech-Group)的成员。
+[Sunset](https://github.com/SunsetMkt)[^10]创作的原创角色及其创作的虚拟组织[余晖教育和科技集团（Sunset Edu. & Tech. Group）](https://github.com/Sunset-Edu-Tech-Group)的成员。
 
 [^10]: 需要注意，这里提到的“Sunset”指现实存在的个体，且全文仅此一次。尽管同名，原则上，作者和此角色不可等同看待。
 
