@@ -6,7 +6,10 @@
     <p>
         <code>{{ $epubFile | safeHTML }}</code>
         |
-        <a href="#" id="embed-epub-download-{{ $uniqueID }}" download
+        <a
+            href="{{ $epubFile }}"
+            id="embed-epub-download-{{ $uniqueID }}"
+            download
             >下载EPUB</a
         >
         |
@@ -43,7 +46,7 @@
       var href = "/tools/foliate-js/reader.html?url=" + src;
       iframe.src = href;
       link.href = href;
-      download.href = raw_src;
+      // download.href = raw_src;
     })();
   </script>
 </div>

@@ -6,7 +6,12 @@
     <p>
         <code>{{ $pdfFile | safeHTML }}</code>
         |
-        <a href="#" id="embed-pdf-download-{{ $uniqueID }}" download>下载PDF</a>
+        <a
+            href="{{ $pdfFile }}"
+            id="embed-pdf-download-{{ $uniqueID }}"
+            download
+            >下载PDF</a
+        >
         |
         <a
             href="/tools/pdf-js/web/viewer.html?file="
@@ -41,7 +46,7 @@
       var href = "/tools/pdf-js/web/viewer.html?file=" + src;
       iframe.src = href;
       link.href = href;
-      download.href = raw_src;
+      // download.href = raw_src;
     })();
   </script>
 </div>
