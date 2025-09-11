@@ -4,6 +4,7 @@ date: "2025-06-01T00:00:00Z"
 tags:
     - 社会评论
     - 信息技术
+    - 翻译
 slug: unintended-consequences-fifteen-years-under-dmca
 title: 意外后果：DMCA 十五年回顾
 ---

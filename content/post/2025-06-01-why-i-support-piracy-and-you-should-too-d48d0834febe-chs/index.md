@@ -4,6 +4,7 @@ date: "2025-06-01T00:00:00Z"
 tags:
     - 社会评论
     - 信息技术
+    - 翻译
 slug: why-i-support-piracy-and-you-should-too-d48d0834febe-chs
 title: 我为何支持盗版（你也应该如此！）
 ---
