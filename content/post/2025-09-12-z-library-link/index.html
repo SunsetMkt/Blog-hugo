@@ -1,0 +1,326 @@
+---
+categories: Original
+date: 2025-09-12T00:00:00Z
+tags:
+    - Z-Library
+slug: z-library-link
+title: Z-Library 域名检查
+---
+
+<style>
+    .hidden {
+        display: none;
+    }
+    .loading {
+        font-weight: bold;
+    }
+    .no-available-domains {
+        color: red;
+    }
+</style>
+
+<div class="loading">Checking for available domains...</div>
+<div class="no-available-domains hidden">
+    <p>
+        No available domains found. Please contact
+        <a id="supportEmail" href="#"></a>.
+    </p>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const supportEmail = "support@z-lib.do";
+        const CORS_PROXY = "https://cors.sunmkt.uk/?";
+
+        function proxiedUrl(url) {
+            return CORS_PROXY ? CORS_PROXY + url : url;
+        }
+
+        const domains = {
+            staticList: [
+                "https://singlelogin.re",
+                "https://z-library.rs",
+                "https://z-library.do",
+                "https://z-lib.gs",
+                "https://z-lib.gd",
+                "https://z-lib.do",
+                "https://z-lib.fm",
+            ],
+            getLastAvailableDomain: function () {
+                return window.localStorage
+                    ? window.localStorage.getItem("ZLibraryAvailableDomain")
+                    : null;
+            },
+            getAll: function () {
+                try {
+                    const list = JSON.parse(
+                        window.localStorage.getItem("ZLibraryAllDomains"),
+                    );
+                    if (Array.isArray(list) && list.length) {
+                        for (let domain of domains.staticList) {
+                            if (list.indexOf(domain) === -1) {
+                                list.push(domain);
+                            }
+                        }
+                        return list;
+                    }
+                } catch (error) {}
+                return Array.from(domains.staticList);
+            },
+            updateList: function (availableDomain, callback) {
+                if (!window.localStorage) {
+                    return callback();
+                }
+                try {
+                    const currentTimestamp = Math.ceil(
+                        new Date().getTime() / 1000,
+                    );
+                    const lastUpdate = parseInt(
+                        window.localStorage.getItem("ZLibraryLastUpdate"),
+                    );
+                    if (
+                        isNaN(lastUpdate) ||
+                        currentTimestamp - lastUpdate > 86400
+                    ) {
+                        window.localStorage.setItem(
+                            "ZLibraryLastUpdate",
+                            currentTimestamp.toString(),
+                        );
+                    } else {
+                        return callback();
+                    }
+                } catch (error) {}
+
+                // update domains
+                const url = availableDomain + "/eapi/info/domains";
+                fetch(proxiedUrl(url), {
+                    method: "GET",
+                    credentials: "omit",
+                    cache: "no-store",
+                })
+                    .then((response) => response.json())
+                    .then((result) => {
+                        let list = Array.from(domains.staticList);
+                        if (
+                            result &&
+                            typeof result === "object" &&
+                            result.domains
+                        ) {
+                            for (let row of result.domains) {
+                                if (
+                                    row &&
+                                    typeof row === "object" &&
+                                    row.domain
+                                ) {
+                                    list.push("https://" + row.domain);
+                                }
+                            }
+                        }
+                        list = list.filter(function (itm, i, a) {
+                            return i === list.indexOf(itm);
+                        });
+                        window.localStorage.setItem(
+                            "ZLibraryAllDomains",
+                            JSON.stringify(list),
+                        );
+                        callback();
+                    })
+                    .catch(() => {
+                        callback();
+                    });
+            },
+        };
+
+        const domainsChecker = {
+            stop: false,
+            checkDomainTimeout: 15, // sec
+            checkInParts: 5,
+            checkInPartsDelay: 7, // sec
+            processes: {
+                list: {},
+                add: function (domain) {
+                    domainsChecker.processes.list[domain] = "start";
+                },
+                setAsCompleted: function (domain) {
+                    if (domainsChecker.processes.list[domain]) {
+                        domainsChecker.processes.list[domain] = "completed";
+                    }
+                },
+                clear: function () {
+                    domainsChecker.processes.list = {};
+                },
+                isEmpty: function () {
+                    for (let i in domainsChecker.processes.list) {
+                        if (domainsChecker.processes.list[i] === "start") {
+                            return false;
+                        }
+                    }
+                    return true;
+                },
+            },
+            results: {
+                availableDomain: null,
+            },
+            run: function (sendResponse) {
+                if (domainsChecker.stop) {
+                    return;
+                }
+
+                // fill processes
+                domainsChecker.processes.clear();
+                let domainsOriginal = domains.getAll();
+                for (let domain of domainsOriginal) {
+                    domainsChecker.processes.add(domain);
+                }
+
+                // slice domains and create queue
+                let domainsPart;
+                let counter = 0;
+                while (
+                    (domainsPart = domainsOriginal.splice(
+                        0,
+                        domainsChecker.checkInParts,
+                    )).length
+                ) {
+                    setTimeout(
+                        function (list) {
+                            for (let domain of list) {
+                                domainsChecker.checkDomain(
+                                    domain,
+                                    function (isAvailable) {
+                                        if (domainsChecker.stop) {
+                                            return;
+                                        }
+                                        if (
+                                            !isAvailable &&
+                                            domainsChecker.processes.isEmpty()
+                                        ) {
+                                            return sendResponse(
+                                                domainsChecker.results,
+                                            );
+                                        }
+                                        if (
+                                            isAvailable &&
+                                            !domainsChecker.results
+                                                .availableDomain
+                                        ) {
+                                            domainsChecker.stop = true;
+                                            domainsChecker.results.availableDomain =
+                                                domain;
+                                            return sendResponse(
+                                                domainsChecker.results,
+                                            );
+                                        }
+                                    },
+                                );
+                            }
+                        },
+                        counter * domainsChecker.checkInPartsDelay * 1000,
+                        Array.from(domainsPart),
+                    );
+                    counter += 1;
+                }
+            },
+            checkDomain: function (domain, callback) {
+                if (domainsChecker.stop) {
+                    return;
+                }
+                let url = domain + "/p/index.php?v=" + new Date().getTime();
+                let timedOut = false;
+                let tm = setTimeout(function () {
+                    timedOut = true;
+                    domainsChecker.processes.setAsCompleted(domain);
+                    callback(false);
+                }, domainsChecker.checkDomainTimeout * 1000);
+                fetch(proxiedUrl(url), {
+                    method: "GET",
+                    credentials: "omit",
+                    cache: "no-store",
+                })
+                    .then((response) =>
+                        response.text().then((txt) => {
+                            clearTimeout(tm);
+                            if (timedOut) return;
+                            domainsChecker.processes.setAsCompleted(domain);
+                            callback(response.status === 200 && txt.length > 0);
+                        }),
+                    )
+                    .catch(() => {
+                        clearTimeout(tm);
+                        if (timedOut) return;
+                        domainsChecker.processes.setAsCompleted(domain);
+                        callback(false);
+                    });
+            },
+            processResult: function (result) {
+                const availableDomain = (result || {}).availableDomain;
+                if (availableDomain) {
+                    window.localStorage &&
+                        window.localStorage.setItem(
+                            "ZLibraryAvailableDomain",
+                            availableDomain,
+                        );
+                    domains.updateList(availableDomain, function () {
+                        document.querySelector(".loading").textContent = "";
+                        var linkElem = document.createElement("a");
+                        linkElem.setAttribute("href", availableDomain);
+                        linkElem.textContent = availableDomain;
+                        document
+                            .querySelector(".loading")
+                            .appendChild(linkElem);
+                        /**
+                        domainsChecker.saveMetric(availableDomain, function () {
+                            window.open(availableDomain, "_blank");
+                            window.close();
+                        });
+                        **/
+                    });
+                } else {
+                    document.querySelector(".loading").classList.add("hidden");
+                    var emailElem = document.getElementById("supportEmail");
+                    emailElem.setAttribute("href", `mailto:${supportEmail}`);
+                    emailElem.textContent = supportEmail;
+                    document
+                        .querySelector(".no-available-domains")
+                        .classList.remove("hidden");
+                }
+            },
+            saveMetric: function (availableDomain, callback) {
+                const url = availableDomain + "/eapi/system/metric";
+                fetch(proxiedUrl(url), {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        name: "BrowserExtensionRedirect",
+                        value: 1,
+                        tags: { extension: "firefox" },
+                    }),
+                })
+                    .then(function () {
+                        callback();
+                    })
+                    .catch(function () {
+                        callback();
+                    });
+            },
+        };
+
+        const lastAvailableDomain = domains.getLastAvailableDomain();
+        if (lastAvailableDomain) {
+            domainsChecker.checkDomain(
+                lastAvailableDomain,
+                function (isAvailable) {
+                    if (isAvailable) {
+                        domainsChecker.results.availableDomain =
+                            lastAvailableDomain;
+                        domainsChecker.processResult(domainsChecker.results);
+                    } else {
+                        domainsChecker.run(domainsChecker.processResult);
+                    }
+                },
+            );
+        } else {
+            domainsChecker.run(domainsChecker.processResult);
+        }
+    });
+</script>
