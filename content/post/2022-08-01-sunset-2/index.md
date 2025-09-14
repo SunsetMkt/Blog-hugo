@@ -7,6 +7,8 @@ slug: sunset-2
 title: 原创角色 Sunset 的设定草案第二版
 ---
 
+> 已过时，请参考：[原创角色 Sunset 的设定集]({{< ref "2024-11-10-sunset-profile" >}})。
+
 |         ![Sunset的暂定头像](sunset2_compressed.jpg)         |
 | :---------------------------------------------------------: |
 | 适用于原创角色 Sunset 的头像暂定稿，基于 Stable Diffusion。 |
