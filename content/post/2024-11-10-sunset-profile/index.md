@@ -95,6 +95,8 @@ title: 原创角色 Sunset 的设定集
 
 ### SCP 基金会
 
+这不是官方设定。
+
 <span class="heimu" title="你知道的太多了">曾经有人注意到 Sunset 的私人物品中似乎有一个“[三个箭头指向圆心](<https://commons.wikimedia.org/wiki/File:SCP_Foundation_(emblem).svg>)”的金属徽章，那人在一场大病后却否认自己曾经见到过它。</span>
 
 没人知道 Sunset 究竟和这个组织有着怎样的联系。
