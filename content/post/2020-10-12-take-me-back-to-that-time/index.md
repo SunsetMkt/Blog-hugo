@@ -52,21 +52,21 @@ title: 说你永远不会离我而去
 
 “不，我说真的。人物角色可能不一样，性格也不一样，但是塑造角色的方式每个作者都是一样的。‘细节’，我说细节。刚刚我们的对话里所有的细节都在你身上，你的头发，你周围的天花板和纸板箱，你的动作。而我只是说话而已。”Freedom 稍微有些激动。
 
-“可以了吧。”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
+“可以了吧。”[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
 
 Freedom 一瞬间觉得自己眼花了，但事实上她没有。
 
 她很难说明到底发生了什么，总之她面前的人变得不一样了。
 
-“只有作者把自己写进小说，小说中的角色才有机会了解作者。”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
+“只有作者把自己写进小说，小说中的角色才有机会了解作者。”[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
 
 Freedom 明白她遇到了什么了。在基金会档案中见过的异常，会被以“高维生物”指代。生活在她无法想象的维度，但会因为某些原因来到更低的维度，也就是 Freedom 所在的维度。
 
-“我在等她醒来。”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。“用她的原创角色须要问过她的意见。我可能确实无法驾驭的住写你。那大不了就删了重来吧。”
+“我在等她醒来。”[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。“用她的原创角色须要问过她的意见。我可能确实无法驾驭的住写你。那大不了就删了重来吧。”
 
 “不。”几乎是下意识地，Freedom 说出了这个字。“如果你删了我和她是不是就从未存在过了？”
 
-“在这条世界线上是这样的。不过我们有很多世界线的，地球 012345.”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
+“在这条世界线上是这样的。不过我们有很多世界线的，地球 012345.”[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
 
 “你考虑过这对我们的意义吗？”Freedom 问她。
 
@@ -74,22 +74,22 @@ Freedom 明白她遇到了什么了。在基金会档案中见过的异常，会
 
 然后世界又回来了。
 
-“……我不知道意义何在。”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)回答她。“本来也没什么意义吧？”
+“……我不知道意义何在。”[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)回答她。“本来也没什么意义吧？”
 
 “有。”我可不适合灌鸡汤啊，Freedom 的脑子疯狂转着。我要怎么展示给她看意义，我 tm 自己都不知道意义是什么，还得是积极意义不能是消极意义，这真 tm 难爆了。
 
 她的脑子被各种各样的想法撑爆了。
 “我刚刚回想了我的一生，我是如何被收养的，我的母亲，我在 C.C 读书的时候食堂的饭菜，Hannah 的笔记本电脑的贴纸。”Freedom 说。
 
-[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)看着她。
+[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)看着她。
 
 “但你只要写一句’她的脑子被各种各样的想法撑爆了’。”Freedom 说。“你甚至连你自己的角色都不了解，我们有自己的生命，所以把我们的世界还给我们吧。”
 
-只是一个残破不堪，每天都有无数次 NK 级末日的世界。[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)想。
+只是一个残破不堪，每天都有无数次 NK 级末日的世界。[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)想。
 
 承载着我的一切和回忆的世界。Freedom 想。
 
-“你要知道这并不只取决于我。”[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1560099961)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
+“你要知道这并不只取决于我。”[![Hannah_AI](16a6da915961ed1965e3c1001f244aee.png)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)说。
 
 Hannah 醒来了，她找不到 Freedom。她从地上爬起来，四处寻找可能有人声的地方。
 

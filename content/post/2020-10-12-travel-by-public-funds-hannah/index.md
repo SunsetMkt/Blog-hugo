@@ -1,7 +1,6 @@
 ---
 categories: Repost
 date: "2020-10-12T00:00:00Z"
-description: Deleted by the author.
 tags:
     - SCP基金会
     - 小说
