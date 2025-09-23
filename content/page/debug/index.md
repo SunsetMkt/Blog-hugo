@@ -52,7 +52,7 @@ URL 参数`eruda=true`。
 
 或点击 Footer 五次临时启动。
 
-### Cloudflare Zaraz 标签管理器
+### 全域生效的 Cloudflare Zaraz 标签管理器
 
 <div class="zaraz-btns">
     <!--
@@ -113,6 +113,16 @@ For Linux/Others：使用[zhaohappy/libmedia 提供的 Web 媒体播放器](/too
 
 Shame on [MPEG LA](https://en.wikipedia.org/wiki/MPEG_LA#Criticism).
 -->
+
+### 全域生效的 URL 参数
+
+- `force_waf_challenge_please` 强制触发 WAF 质询
+- `force_waf_block_please` 强制触发 WAF 阻止
+- `no_polish_please` 禁用 Cloudflare Polish（自动图像压缩）
+
+### 全域生效的危险参数
+
+不予提供。
 
 ## 调试信息
 
