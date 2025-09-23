@@ -2,11 +2,11 @@
 categories: Original
 date: 2023-07-23T00:00:00Z
 tags:
-  - Kaspersky
-  - Windows
-  - 信息技术
-  - 杀毒软件
-  - 软件
+    - Kaspersky
+    - Windows
+    - 信息技术
+    - 杀毒软件
+    - 软件
 slug: ksc-kfa-chinese
 title: 安装 Kaspersky Security Cloud Free 简体中文版或卡巴斯基免费版
 ---
@@ -21,7 +21,7 @@ title: 安装 Kaspersky Security Cloud Free 简体中文版或卡巴斯基免费
 
 ## 卡巴斯基免费版（推荐）
 
-~~如果 Kaspersky 彻底移除了 Kaspersky Security Cloud 产品，~~您可以尝试下载卡巴斯基标准版（[在线安装链接](https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.15.8.493/startup.exe) [备用链接](zh_std_setup/startup.exe)）并使用激活码：
+~~如果 Kaspersky 彻底移除了 Kaspersky Security Cloud 产品，~~ 您可以尝试下载卡巴斯基标准版（[在线安装链接](https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.15.8.493/startup.exe) [备用链接](zh_std_setup/startup.exe)）并使用激活码：
 
 > 简体中文版在线安装包 URL 格式是：
 >
