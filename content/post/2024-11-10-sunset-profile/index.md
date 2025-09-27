@@ -109,6 +109,12 @@ Sunset 的女友（？），是在“余晖教育和科技集团”建立后第�
 
 <span class="heimu" title="你知道的太多了">这里暗示 Lumine 是 Sunset 的假身份，太多人看不出所以直接写出来了。</span>
 
+### 假名
+
+Sunset 经常使用假名，可能的中文假名包括 Zhao、Lee、Chang、Wang 等，有时也会使用日文假名[^12]。
+
+[^12]: 此设定可用于在行文中途引入 Sunset 角色。
+
 ## Stable Diffusion 提示词参考
 
 ### 基础外观
