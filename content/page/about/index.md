@@ -61,21 +61,12 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 
 此网站基于众多开源软件，所有来源均标注在[源代码]({{< ref "debug" >}})中，您可自行下载整个代码库并手动检查。
 
-### SSG
+这是一个不完整的列表：
 
-- [Hugo](https://github.com/gohugoio/hugo)
-
-### CDN
-
-- [UNPKG](https://github.com/unpkg/unpkg)
-
-### 评论
-
-- [Waline](https://github.com/walinejs/waline)
-
-### Hugo 主题
-
-- [CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
+- SSG: [Hugo](https://github.com/gohugoio/hugo)
+- CDN: [UNPKG](https://github.com/unpkg/unpkg)
+- 评论: [Waline](https://github.com/walinejs/waline)
+- Hugo 主题: [CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
 
 ### 字体
 
@@ -86,7 +77,7 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 - [Fontsource](https://github.com/fontsource/fontsource)
 - [cn-font-split](https://github.com/KonghaYao/cn-font-split)
 
-### 默认图片
+### 默认或占位图片
 
 - [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
 - [mymind](https://unsplash.com/@mymind)
@@ -98,3 +89,12 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 
 - [Vectorizer.AI](https://vectorizer.ai/)
 - [vectorizer.ai free download](https://greasyfork.org/zh-CN/scripts/497378-vectorizer-ai)
+
+### 人们
+
+- 所有已署名的创作者
+- 匿名的原创投稿者或合作创作者
+- 慷慨地使用了宽松许可证以允许我们转载的创作者
+- 尽管没有使用许可证但未对我们的转载提出异议的创作者
+- 维护了我们使用的开源项目的开发者
+- 正在阅读的您
