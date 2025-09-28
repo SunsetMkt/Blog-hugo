@@ -7,6 +7,8 @@ slug: sunset-character
 title: 原创角色 Sunset 的设定草案
 ---
 
+已过时，请参考：[原创角色 Sunset 的设定集]({{< ref "2024-11-10-sunset-profile" >}})。
+
 ## 由热心群众们提供的第一版草案
 
 - ~~亚麻色有卷~~（小小波浪的）的头发
