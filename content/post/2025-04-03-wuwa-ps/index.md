@@ -79,7 +79,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ### 下载测试版游戏客户端
 
-#### `2.5`版本
+#### `2.5`版本及以上
 
 测试版已启用新的 CDN 并全域验证`kr-token`（登录测试账号时由服务器返回给启动器），因此无法在没有合法测试服账号的情况下直接获取客户端。
 
@@ -93,7 +93,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 > `wuwa-downloader.exe`在一些有互联网审查的地区可能需要开启全局代理（TUN/虚拟网卡）才可以连接 GitHub 获取最新的下载地址。
 
-跟随下面的示例操作：
+~~跟随下面的示例操作：~~
 
 ```plain
 [*] Available versions:
@@ -128,7 +128,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 > ~~若启动器强制更新，请根据更新版本动态调整补丁文件中`filechecklist.json`的内容。~~
 >
-> 启动器似乎可以在删除`filechecklist.json`的情况下运行，此文件或许不是必需的。
+> ~~启动器似乎可以在删除`filechecklist.json`的情况下运行，此文件或许不是必需的。~~
 
 ~~下载[CN 测试版启动器](https://pcdownload-aliyun.aki-game.com/pcstarter/prod/starter/10008_Pa0Q0EMFxukjEqX33pF9Uyvdc8MaGPSz/G152/2.0.0.0/vgu4E1bmg2r5GMCydmVPcIvKpVwqdqDl/installer.exe)，使用 Discord 中的文件（`filechecklist.json`、`krfeapp.dat`和`KRApp.conf`）修补启动器，即可免登录下载客户端：~~
 
@@ -172,7 +172,7 @@ pg_ctl start
 ```pwsh
 git clone --recursive https://git.xeondev.com/wickedwaifus/wicked-waifus-rs.git
 git clone https://git.xeondev.com/wickedwaifus/wicked-waifus-win-patch.git
-git clone https://git.xeondev.com/xavo95/launcher.git
+git clone https://git.xeondev.com/ReversedRoomsMisc/process-launcher-rs.git
 ```
 
 然后构建补丁 DLL：
@@ -225,7 +225,7 @@ cargo run --bin wicked-waifus-game-server
 
 ### 下载并安置`launcher`
 
-下载<https://git.xeondev.com/xavo95/launcher/src/branch/master/samples/ww.toml>和<https://git.xeondev.com/xavo95/launcher/releases>的最新版本`launcher.exe`。
+下载<https://git.xeondev.com/ReversedRoomsMisc/process-launcher-rs/src/branch/master/samples/ww.toml>和<https://git.xeondev.com/ReversedRoomsMisc/process-launcher-rs/releases>的最新版本`launcher.exe`。
 
 将它们复制到`D:\WuWaPS\client\Client\Binaries\Win64`下，并将`ww.toml`重命名为`config.toml`。
 
@@ -357,7 +357,7 @@ cargo run --bin wicked-waifus-game-server
 - 下载器（`wuwa-downloader`）：下载测试版游戏客户端
 - 补丁 DLL（`wicked-waifus-win-patch`）：需要注入的 DLL，绕过 Pak 校验，修改服务器 URL，禁用 Kuro SDK
 - 补丁 Pak（`wicked-waifus-pak`）：需要绕过 Pak 校验，禁用 TpSafe，禁用 Kuro SDK，修改 VisionRecommendController，修改登录界面 BGM
-- `launcher`（`xavo95/launcher`）：DLL 注入工具
+- `launcher`（`ReversedRoomsMisc/process-launcher-rs`）：DLL 注入工具
 - 服务器主项目（`wicked-waifus-rs`）：基于逆向工程的游戏服务器实现
 
 ### 默认角色配队
