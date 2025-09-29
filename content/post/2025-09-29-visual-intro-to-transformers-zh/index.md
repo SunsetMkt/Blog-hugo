@@ -2,10 +2,11 @@
 categories: Repost
 date: "2025-09-29T00:00:00Z"
 title: "什么是 GPT？Transformer 工作原理的动画展示（2024）"
-slug: visual-intro-to-transformers
+slug: visual-intro-to-transformers-zh
 tags:
     - 翻译
     - AI
+    - 信息技术
 ---
 
 译者：<https://github.com/ArthurChiao>
