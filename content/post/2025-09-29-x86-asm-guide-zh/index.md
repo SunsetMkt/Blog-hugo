@@ -5,7 +5,6 @@ title: "简明 x86 汇编指南（2017）"
 slug: x86-asm-guide-zh
 tags:
     - 翻译
-    - AI
     - 信息技术
 ---
 
