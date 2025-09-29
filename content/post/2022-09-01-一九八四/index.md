@@ -5,7 +5,6 @@ tags:
     - 小说
 slug: 一九八四
 title: 一九八四
-toc: true
 ---
 
 英国 乔治·奥威尔
