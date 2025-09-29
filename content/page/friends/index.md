@@ -22,6 +22,10 @@ links:
       description: "Problem Solver. Life Enthusiast."
       website: https://delm.dev/
       image: 118270686.jpg
+    - title: Konnyaku
+      description: "舞台を創る。"
+      website: https://hee.ink/
+      image: 22572927.jpg
     # - title: lz 差不多是条咸鱼了
     #   description: "鱼类观测研究所"
     #   website: https://with.fish/
