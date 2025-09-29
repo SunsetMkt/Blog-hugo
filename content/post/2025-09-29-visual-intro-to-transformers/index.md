@@ -35,7 +35,7 @@ tags:
 - [如何训练一个企业级 GPT 助手（OpenAI，2023）](https://arthurchiao.art/blog/how-to-train-a-gpt-assistant-zh/)
 
 水平及维护精力所限，译文不免存在错误或过时之处，如有疑问，请查阅原视频。
-**<mark>传播知识，尊重劳动，年满十八周岁，转载请注明<a href="https://arthurchiao.art">出处</a></mark>**。
+**传播知识，尊重劳动，年满十八周岁，转载请注明<a href="https://arthurchiao.art">出处</a>**。
 
 以下是译文。
 
@@ -48,12 +48,12 @@ GPT 是 Generative Pre-trained Transformer 的缩写，直译为“生成式预�
 
 ## 1.1 Generative：生成式
 
-“Generative”（**<mark>生成式</mark>**）意思很直白，就是给定一段输入（例如，最常见的文本输入），
-模型就能**<mark>续写</mark>**（“编”）下去。
+“Generative”（**生成式**）意思很直白，就是给定一段输入（例如，最常见的文本输入），
+模型就能**续写**（“编”）下去。
 
 ### 1.1.1 可视化
 
-下面是个例子，给定 <mark>“The most effective way to learn computer science is”</mark> 作为输入，
+下面是个例子，给定 “The most effective way to learn computer science is” 作为输入，
 模型就开始续写后面的内容了。
 
 <p align="center"><img src="generative-meaning.gif" width="90%" height="90%"></p>
@@ -61,24 +61,24 @@ GPT 是 Generative Pre-trained Transformer 的缩写，直译为“生成式预�
 
 ### 1.1.2 生成式 vs. 判别式（译注）
 
-文本续写这种生成式模型，区别于 BERT 那种**<mark>判别式</mark>**模型（用于分类、完形填空等等），
+文本续写这种生成式模型，区别于 BERT 那种**判别式**模型（用于分类、完形填空等等），
 
-- [<mark>BERT：预训练深度双向 Transformers 做语言理解</mark>（Google，2019）](https://arthurchiao.art/blog/bert-paper-zh/)
+- [BERT：预训练深度双向 Transformers 做语言理解（Google，2019）](https://arthurchiao.art/blog/bert-paper-zh/)
 
 ## 1.2 Pre-trained：预训练
 
-"Pre-trained"（预训练）指的是模型是**<mark>用大量数据训练出来的</mark>**。
+"Pre-trained"（预训练）指的是模型是**用大量数据训练出来的**。
 
 ### 1.2.1 可视化
 
 <p align="center"><img src="pre-trained-meaning.gif" width="90%" height="90%"></p>
 <p align="center">“Pre-trained”：用大量数据进行训练。<br/>
-图中的大量旋钮/仪表盘就是所谓的<mark>“模型参数”</mark>，训练过程就是在不断优化这些参数，后面会详细介绍。</p>
+图中的大量旋钮/仪表盘就是所谓的“模型参数”，训练过程就是在不断优化这些参数，后面会详细介绍。</p>
 
 ### 1.2.2 预训练 vs. 增量训练（微调）
 
-**<mark>“预”</mark>**这个字也暗示了模型还有在特定任务中**<mark>进一步训练</mark>**的可能 ——
-也就是我们常说的**<mark>“微调”</mark>**（finetuning）。
+**“预”**这个字也暗示了模型还有在特定任务中**进一步训练**的可能 ——
+也就是我们常说的 **“微调”**（finetuning）。
 
 > 如何对预训练模型进行微调：
 > [InstructGPT：基于人类反馈训练语言模型遵从指令的能力（OpenAI，2022）](https://arthurchiao.art/blog/instructgpt-paper-zh/)。
@@ -87,10 +87,10 @@ GPT 是 Generative Pre-trained Transformer 的缩写，直译为“生成式预�
 ## 1.3 Transformer：一类神经网络架构
 
 “GPT” 三个词中最重要的其实是最后一个词 Transformer。
-Transformer 是一类**<mark>神经网络</mark>**/机器学习模型，作为近期 AI 领域的核心创新，
+Transformer 是一类**神经网络**/机器学习模型，作为近期 AI 领域的核心创新，
 推动着这个领域近几年的极速发展。
 
-> Transformer 直译为**<mark>“变换器”</mark>**或“转换器”，通过数学运算不断对输入数据进行变换/转换。另外，变压器、变形金刚也是这个词。
+> Transformer 直译为 **“变换器”** 或“转换器”，通过数学运算不断对输入数据进行变换/转换。另外，变压器、变形金刚也是这个词。
 > 译注。
 
 <p align="center"><img src="transformer-detailed-1.gif" width="90%" height="90%"></p>
@@ -119,13 +119,13 @@ Transformer 是一类**<mark>神经网络</mark>**/机器学习模型，作为�
 ## 2.1 Attention Is All You Need, Google, 2017，机器翻译
 
 Transformer 是 Google 2017 年在
-[<mark>Attention is all you need</mark>](https://arthurchiao.art/blog/attention-is-all-you-need-zh/)
+[Attention is all you need](https://arthurchiao.art/blog/attention-is-all-you-need-zh/)
 paper 中提出的，
-当时主要用于**<mark>文本翻译</mark>**：
+当时主要用于**文本翻译**：
 
 <p align="center"><img src="machine-translation.gif" width="85%" height="85%"></p>
 
-## 2.2 **<mark><code>Generative</code></mark>** Transformer
+## 2.2 **<code>Generative</code>** Transformer
 
 之后，Transformer 的应用场景扩展到了多个领域，例如 ChatGPT 背后也是 Transformer，
 这种 Transformer 接受一段文本（或图像/音频）作为输入，然后就能预测接下来的内容。
@@ -133,35 +133,35 @@ paper 中提出的，
 
 <p align="center"><img src="generative-transformer.gif" width="85%" height="85%"></p>
 
-但有了一个这样的**<mark>预测下一个单词</mark>**模型，就能通过如下步骤让它生成更长的文字，非常简单：
+但有了一个这样的**预测下一个单词**模型，就能通过如下步骤让它生成更长的文字，非常简单：
 
-1. 将**<mark>初始文本</mark>**输入模型；
-2. 模型**<mark>预测出下一个可能的单词列表及其概率</mark>**，然后通过某种算法（不一定挑概率最大的）
-   从中选一个作为下一个单词，这个过程称为**<mark>采样</mark>**（sampling）；
-3. **<mark>将新单词追加到文本结尾</mark>**，然后将整个文本**<mark>再次输入模型</mark>**；转 2；
+1. 将**初始文本**输入模型；
+2. 模型**预测出下一个可能的单词列表及其概率**，然后通过某种算法（不一定挑概率最大的）
+   从中选一个作为下一个单词，这个过程称为**采样**（sampling）；
+3. **将新单词追加到文本结尾**，然后将整个文本**再次输入模型**；转 2；
 
 以上 step 2 & 3 不断重复，得到的句子就越来越长。
 
-## 2.3 **<mark><code>GPT-2/GPT-3</code></mark>** 生成效果（文本续写）预览
+## 2.3 **<code>GPT-2/GPT-3</code>** 生成效果（文本续写）预览
 
 来看看生成的效果，这里拿 GPT-2 和 GPT-3 作为例子。
 
-下面是在我的笔记本电脑上运行 **<mark><code>GPT-2</code></mark>**，不断预测与采样，逐渐补全为一个故事。
-但**<mark>结果比较差</mark>**，生成的故事基本上没什么逻辑可言：
+下面是在我的笔记本电脑上运行 **<code>GPT-2</code>**，不断预测与采样，逐渐补全为一个故事。
+但**结果比较差**，生成的故事基本上没什么逻辑可言：
 
 <p align="center"><img src="gpt2-output-1.gif" width="75%" height="75%"></p>
 
-下面是换成 **<mark><code>GPT-3</code></mark>**（模型不再开源，所以是通过 API），
+下面是换成 **<code>GPT-3</code>**（模型不再开源，所以是通过 API），
 GPT-3 和 GPT-2 基本架构一样，只是规模更大，
-但**<mark>效果突然变得非常好</mark>**，
+但**效果突然变得非常好**，
 生成的故事不仅合乎逻辑，甚至还暗示 “物种 π” 居住在一个数学和计算王国：
 
 <p align="center"><img src="gpt3-output-1.gif" width="75%" height="75%"></p>
 
-## 2.4 **<mark><code>ChatGPT</code></mark>** 等交互式大模型
+## 2.4 **<code>ChatGPT</code>** 等交互式大模型
 
 以上这个不断重复“预测+选取”来生成文本的过程，就是 ChatGPT 或其他类似大语言模型（LLM）
-的底层工作原理 —— **<mark>逐单词（token）生成文本</mark>**。
+的底层工作原理 —— **逐单词（token）生成文本**。
 
 ## 2.5 小结
 
@@ -180,45 +180,45 @@ GPT-3 和 GPT-2 基本架构一样，只是规模更大，
 
 ## 3.1 Embedding：分词与向量表示
 
-首先，输入内容会被拆分成许多小片段（这个过程称为 tokenization），这些小片段称为 **<mark><code>token</code></mark>**，
+首先，输入内容会被拆分成许多小片段（这个过程称为 tokenization），这些小片段称为 **<code>token</code>**，
 
 - 对于文本：token 通常是单词、词根、标点符号，或者其他常见的字符组合；
 - 对于图片：token 可能是一小块像素区域；
 - 对于音频：token 可能是一小段声音。
 
-然后，将每个 token 用一个**<mark>向量（一维数组）</mark>**来表示。
+然后，将每个 token 用一个 **向量（一维数组）** 来表示。
 
 ### 3.1.1 token 的向量表示
 
-这实际上是以某种方式在**<mark>编码</mark>**该 token；
+这实际上是以某种方式在**编码**该 token；
 
 <p align="center"><img src="embedding-1.gif" width="80%" height="80%"></p>
 <p align="center">Embedding：每个 token 对应一个 <code>N*1</code> 维度的数值格式表示的向量。</p>
 
 ### 3.1.2 向量表示的直观解释
 
-如果把这些向量看作是在**<mark>高维空间中的坐标</mark>**， 那么含义相似的单词在这个高维空间中是**<mark>相邻的</mark>**。
+如果把这些向量看作是在**高维空间中的坐标**， 那么含义相似的单词在这个高维空间中是**相邻的**。
 
 <p align="center"><img src="embedding-2.gif" width="80%" height="80%"></p>
 <p align="center">词义相近的四个单词 “leap/jump/skip/hop” 在向量空间中是相邻的</p>
 
-将输入进行 tokenization 并转成向量表示之后，输入就从一个句子就变成了一个**<mark>向量序列</mark>**。
+将输入进行 tokenization 并转成向量表示之后，输入就从一个句子就变成了一个**向量序列**。
 接下来，这个向量序列会进行一个称为 attention 的运算。
 
 ## 3.2 Attention：embedding 向量间的语义交流
 
 ### 3.2.1 语义交流
 
-attention 使得**<mark>向量之间能够相互“交流”信息</mark>**。这个交流是双向的，在这个过程中，每个向量都会更新自身的值。
+attention 使得**向量之间能够相互“交流”信息**。这个交流是双向的，在这个过程中，每个向量都会更新自身的值。
 
 <p align="center"><img src="attention-1.gif" width="80%" height="80%"></p>
 
 这种信息“交流”是有上下文和语义理解能力的。
 
-### 3.2.2 例子："machine learning **<mark><code>model</code></mark>**" / "fashion **<mark><code>model</code></mark>**"
+### 3.2.2 例子："machine learning **<code>model</code>**" / "fashion **<code>model</code>**"
 
 例如，“model” 这个词在 “machine learning model”（机器学习模型）和在 “fashion model”（时尚模特）中的意思就完全不一样，
-因此**<mark>虽然是同一个单词（token），但对应的 embedding 向量是不同的</mark>**，
+因此**虽然是同一个单词（token），但对应的 embedding 向量是不同的**，
 
 <p align="center"><img src="attention-2.gif" width="80%" height="80%"></p>
 
@@ -231,7 +231,7 @@ Attention 模块让输入向量们彼此充分交换了信息（例如，单词 
 然后，这些向量会进入第三个处理阶段：
 
 <p align="center"><img src="mlp-1.gif" width="80%" height="80%"></p>
-<p align="center">第三阶段：多层感知机（<mark><code>multi-layer perceptron</code></mark>），也称为前馈层（<mark><code>feed-forward layer</code></mark>）。</p>
+<p align="center">第三阶段：多层感知机（<code>multi-layer perceptron</code>），也称为前馈层（<code>feed-forward layer</code>）。</p>
 
 ### 3.3.1 针对所有向量做一次性变换
 
@@ -241,12 +241,12 @@ Attention 模块让输入向量们彼此充分交换了信息（例如，单词 
 
 ### 3.3.2 直观解释
 
-后面会看，从直观上来说，这个步骤有点像**<mark>对每个向量都提出一组同样的问题</mark>**，然后**<mark>根据得到的回答来更新对应的向量</mark>**：
+后面会看，从直观上来说，这个步骤有点像**对每个向量都提出一组同样的问题**，然后**根据得到的回答来更新对应的向量**：
 
 <p align="center"><img src="mlp-3.gif" width="80%" height="80%"></p>
 
 以上解释中省略了归一化等一些中间步骤，但已经可以看出：
-attention 和 feed-forward 本质上都是**<mark>大量的矩阵乘法</mark>**，
+attention 和 feed-forward 本质上都是**大量的矩阵乘法**，
 
 <p align="center"><img src="matmul-1.gif" width="80%" height="80%"></p>
 
@@ -272,7 +272,7 @@ Transformer 基本上是不断复制 Attention 和 Feed-forward 这两个基本�
 
 <p align="center"><img src="last-vector.gif" width="80%" height="80%"></p>
 <p align="center">图：原始输入为 "To date, the cleverest thinker of all time was"，让模型预测下一个 token。经过多层 attention + feed-forward 之后，
-最后一层输出的<mark>最后一个向量已经学习到了输入句子表达的意思</mark>，（经过简单转换之后）就能作为<mark>下一个单词的概率</mark>。</p>
+最后一层输出的最后一个向量已经学习到了输入句子表达的意思，（经过简单转换之后）就能作为下一个单词的概率。</p>
 
 ### 3.4.2 下一个单词的选择
 
@@ -285,12 +285,12 @@ Transformer 基本上是不断复制 Attention 和 Feed-forward 这两个基本�
 
 以上就是 Transformer 内部的工作原理。
 
-前面已经提到，有了一个这样的**<mark>预测下一个单词</mark>**模型，就能通过如下步骤让它生成更长的文字，非常简单：
+前面已经提到，有了一个这样的**预测下一个单词**模型，就能通过如下步骤让它生成更长的文字，非常简单：
 
-1. 将**<mark>初始文本</mark>**输入模型；
-2. 模型**<mark>预测出下一个可能的单词列表及其概率</mark>**，然后通过某种算法（不一定挑概率最大的）
-   从中选一个作为下一个单词，这个过程称为**<mark>采样</mark>**（sampling）；
-3. **<mark>将新单词追加到文本结尾</mark>**，然后将整个文本**<mark>再次输入模型</mark>**；转 2；
+1. 将**初始文本**输入模型；
+2. 模型**预测出下一个可能的单词列表及其概率**，然后通过某种算法（不一定挑概率最大的）
+   从中选一个作为下一个单词，这个过程称为**采样**（sampling）；
+3. **将新单词追加到文本结尾**，然后将整个文本**再次输入模型**；转 2；
 
 # 4 GPT -> ChatGPT：从文本补全到交互式聊天助手
 
@@ -307,27 +307,27 @@ ChatGPT 的核心是 GPT 系列（GPT 3/3.5/4），但它怎么实现聊天这�
 
 <p align="center"><img src="system-prompt.gif" width="70%" height="70%"></p>
 
-这段文本设定用户是在与一个 AI 助手交互的场景，这就是所谓的系统提示词（**<mark><code>system prompt</code></mark>**）。
+这段文本设定用户是在与一个 AI 助手交互的场景，这就是所谓的系统提示词（**<code>system prompt</code>**）。
 
 ## 4.2 如何训练一个企业级 GPT 助手（译注）
 
 OpenAI 官方对 GPT->ChatGPT 有过专门分享：[如何训练一个企业级 GPT 助手（OpenAI，2023）](https://arthurchiao.art/blog/how-to-train-a-gpt-assistant-zh/)
 
-> **<mark>基础模型不是助手</mark>**，它们**<mark>不想回答问题，只想补全文档</mark>**。
+> **基础模型不是助手**，它们**不想回答问题，只想补全文档**。
 > 因此，如果让它们“写一首关于面包和奶酪的诗”，它们不仅不“听话”，反而会有样学样，列更多的任务出来，像下面左图这样，
 >
 > <p align="center"><img src="base-model-not-assistant.png" width="80%" height="80%"></p>
 >
-> 这是因为它只是在**<mark>忠实地补全文档</mark>**。
-> 但如果你能**<mark>成功地提示它</mark>**，例如，**<mark>开头就说“这是一首关于面包和奶酪的诗”</mark>**，
+> 这是因为它只是在**忠实地补全文档**。
+> 但如果你能**成功地提示它**，例如，**开头就说“这是一首关于面包和奶酪的诗”**，
 > 那它接下来就会真的补全一首这样的诗出来，如右图。
 >
-> 我们还可以通过 few-shot 来**<mark>进一步“欺骗”它</mark>**。把你想问的问题整理成一个**<mark>“提问+回答”的文档格式</mark>**，
+> 我们还可以通过 few-shot 来**进一步“欺骗”它**。把你想问的问题整理成一个 **“提问+回答”的文档格式**，
 > 前面给一点正常的论述，然后突然来个问题，它以为自己还是在补全文档，其实已经把问题回答了：
 >
 > <p align="center"><img src="base-model-not-assistant-2.png" width="80%" height="80%"></p>
 >
-> 这就是把基础模型**<mark>调教成一个 AI 助手</mark>**的过程。
+> 这就是把基础模型**调教成一个 AI 助手**的过程。
 
 # 5 总结
 
