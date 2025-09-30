@@ -21,7 +21,7 @@ Sunset 的[原创角色]({{< ref "2024-11-10-sunset-profile" >}})不明示或暗
 
 网站代码部分使用[Windsurf](https://windsurf.com/)的代码补全服务。
 
-主要内容中基于 Stable Diffusion 的生成图片和使用 LLM 的翻译或生成的文本会明确标注。
+主要内容中基于 GenAI 的图片或文本会明确标注。
 
 目前，全站主要内容中 AIGC 小于 10%，且在未来也不会增加。
 
