@@ -15,7 +15,9 @@ function handleZarazConsentAPIReady() {
     const isEUCountry = "{{ system.device.location.isEUCountry }}" === "1";
     const isUKCountry = "{{ system.device.location.country }}" === "GB";
     const isCalfornia = "{{ system.device.location.region }}" === "California";
-    const shouldConsent = isEUCountry || isUKCountry || isCalfornia;
+    const isSwitzerland = "{{ system.device.location.country }}" === "CH";
+    const shouldConsent =
+        isEUCountry || isUKCountry || isCalfornia || isSwitzerland;
     // Get current consents
     let currentConsents = {};
     if (consentCookie) {
@@ -52,6 +54,7 @@ function handleZarazConsentAPIReady() {
         isEUCountry: isEUCountry,
         isUKCountry: isUKCountry,
         isCalfornia: isCalfornia,
+        isSwitzerland: isSwitzerland,
         shouldConsent: shouldConsent,
         currentConsents: currentConsents,
         allConsents: allConsents,

@@ -17,6 +17,10 @@ title: Cloudflare Zaraz 同意管理脚本
 
 开启“启用同意管理”，关闭“显示同意模式”。
 
+工具: Custom HTML
+
+触发器: Pageview
+
 ```html
 <script>
     // This script is copied from
@@ -35,8 +39,11 @@ title: Cloudflare Zaraz 同意管理脚本
         // Get the current country, the variable will be injected by Zaraz
         const isEUCountry = "{{ system.device.location.isEUCountry }}" === "1";
         const isUKCountry = "{{ system.device.location.country }}" === "GB";
-        const isCalfornia = "{{ system.device.location.region }}" === "California";
-        const shouldConsent = isEUCountry || isUKCountry || isCalfornia;
+        const isCalfornia =
+            "{{ system.device.location.region }}" === "California";
+        const isSwitzerland = "{{ system.device.location.country }}" === "CH";
+        const shouldConsent =
+            isEUCountry || isUKCountry || isCalfornia || isSwitzerland;
         // Get current consents
         let currentConsents = {};
         if (consentCookie) {
@@ -73,6 +80,7 @@ title: Cloudflare Zaraz 同意管理脚本
             isEUCountry: isEUCountry,
             isUKCountry: isUKCountry,
             isCalfornia: isCalfornia,
+            isSwitzerland: isSwitzerland,
             shouldConsent: shouldConsent,
             currentConsents: currentConsents,
             allConsents: allConsents,
@@ -137,9 +145,24 @@ title: Cloudflare Zaraz 同意管理脚本
             Learn more about Cloudflare privacy policies.
         </a>
     </p>
+    <br />
     <p>
         This website does not target any specific audience, especially not EU,
-        UK or Californian audiences.
+        UK, Switzerland or Californian audiences.
     </p>
+</div>
+```
+
+```html
+<div>
+    <p>
+        由 Cloudflare 及其标签管理器创建的 Cookie
+        是网站正常运行所必需的，无法关闭。
+        <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">
+            了解更多关于 Cloudflare 隐私政策的信息。
+        </a>
+    </p>
+    <br />
+    <p>本网站不针对任何特定受众，特别是不面向欧盟、英国、瑞士或加州的受众。</p>
 </div>
 ```
