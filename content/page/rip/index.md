@@ -206,6 +206,10 @@ For all other countries, [see Wikipedia's list](https://en.wikipedia.org/wiki/Li
 
 {{< gallery match="TianqiChen666/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true thumbnailHoverEffect="enlarge" lastRow="nojustify" >}}
 
+## 珍·古道尔
+
+> 珍·古道尔于 1960 年首次前往贡贝溪国家公园展开田野研究，开创了非侵入式、具人性关怀的灵长类观察方法，改变了人类对黑猩猩甚至其他动物的理解与分类观念。除了对黑猩猩的研究，珍·古道尔也热心投入环境教育和公益事业，包含其创立国际珍古道尔教育及保育协会与根与芽。长期致力于自然保育动物福利及人道主义的推广工作。古道尔亦为非人类权利计划的董事会成员之一。[维基百科](https://zh.wikipedia.org/wiki/%E7%8F%8D%C2%B7%E5%8F%A4%E9%81%93%E5%B0%94)
+
 ## 致谢
 
 - 也请参考[那些秋叶 - One Among Us](https://one-among.us/)，这里的一些图片引用自此。
