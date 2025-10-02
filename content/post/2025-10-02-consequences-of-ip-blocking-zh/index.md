@@ -15,7 +15,7 @@ tags:
 
 8 月底，Cloudflare 客户支持团队开始收到奥地利方面有关我们网络上的网站宕机的投诉。我们的团队立即采取行动，试图确定从外部看像是奥地利部分互联网中断的源头。我们很快意识到这是奥地利当地互联网服务提供商的问题。
 
-![The unintended consequences of blocking IP addresses](https://cf-assets.www.cloudflare.com/zkvhlag99gkb/5XRs4hep0bF2DPlSc0NJPe/9c4f7666cc9570882d0b18fea2823124/image1-53.png)
+![The unintended consequences of blocking IP addresses](image1-53.png)
 
 但这一服务中断并不是技术问题造成的。正我们后来从[媒体报道](https://www.derstandard.de/story/2000138619757/ueberzogene-netzsperre-sorgt-fuer-probleme-im-oesterreichischen-internet)所知，我们看到的情况是一个法庭命令的结果。奥地利一家法院在没有通知 Cloudflare 的情况下，下令奥地利互联网服务提供商屏蔽 Cloudflare 的 11 个 IP 地址。
 
