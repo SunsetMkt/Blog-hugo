@@ -38,3 +38,11 @@ url = "https://github.com/SunsetMkt"
 
 [social.params]
 icon = "brand-github"
+
+[[social]]
+identifier = "keybase"
+name = "Keybase"
+url = "https://keybase.io/sunsetmkt"
+
+[social.params]
+icon = "key"
