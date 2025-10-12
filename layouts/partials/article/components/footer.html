@@ -26,8 +26,10 @@
         </section>
     {{- end -}}
 
+
+    <!-- https://discourse.gohugo.io/t/how-to-create-edit-on-github-links-while-disturbing-the-theme-as-little-as-possible/47753/2 -->
+    <!--
     {{ if .File }}
-        <!-- https://discourse.gohugo.io/t/how-to-create-edit-on-github-links-while-disturbing-the-theme-as-little-as-possible/47753/2 -->
         {{ $currFilePath := path.Split .File.Path }}
         <section class="article-github">
             {{ partial "helper/icon" "brand-github" }}
@@ -42,4 +44,5 @@
             </span>
         </section>
     {{ end }}
+    -->
 </footer>
