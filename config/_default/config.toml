@@ -33,3 +33,14 @@ baseName = "feed"
 
 [services.rss]
 limit = 10 # RSS 仅包含最近的 10 篇
+
+# Copy source code to output
+# Also see layouts\_default\single.source_hugo_generated.txt
+[outputs]
+page = ["HTML", "Source"]
+
+[outputFormats.Source]
+mediaType = "text/plain"
+baseName = "source_hugo_generated"
+isPlainText = true
+path = ""
