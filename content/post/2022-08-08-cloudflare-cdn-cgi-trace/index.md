@@ -2,13 +2,15 @@
 categories: Original
 date: 2022-08-08T00:00:00Z
 tags:
-  - Cloudflare
-  - Demo
-  - 信息技术
-  - 前端
+    - Cloudflare
+    - Demo
+    - 信息技术
+    - 前端
 slug: cloudflare-cdn-cgi-trace
 title: Cloudflare 接口 /cdn-cgi/trace 查询节点信息
 ---
+
+`https://www.cloudflare-cn.com/cdn-cgi/trace`似乎只会使用 CN 节点，`https://www.qualcomm.cn/cdn-cgi/trace`可以使用 CN 节点。
 
 ```html
 <p>当前CDN节点: <span id="cdn"></span></p>
