@@ -399,6 +399,7 @@ async function getCfCDNinfo(id) {
                     <style>
                         body {
                             font-family: "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+                            white-space: pre-wrap;
                         }
                     </style>
                 </head>
