@@ -375,8 +375,47 @@ async function getCfCDNinfo(id) {
 
     // Set alert text
     textElement.onclick = () => {
-        navigator.clipboard.writeText(data);
-        alert(data);
+        // navigator.clipboard.writeText(data);
+        // alert(data);
+        function openTextWindow(text, title = "Trace") {
+            const win = window.open(
+                "",
+                "_blank",
+                "width=600,height=400,resizable=yes,scrollbars=yes",
+            );
+
+            // If popup blocked, just alert
+            if (!win) {
+                alert(text);
+                return;
+            }
+
+            // Build dummy html
+            const html = `<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>${title}</title>
+                    <style>
+                        body {
+                            font-family: "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+                        }
+                    </style>
+                </head>
+                <body></body>
+                </html>`;
+            const blob = new Blob([html], { type: "text/html" });
+            const url = URL.createObjectURL(blob);
+
+            // Apply blob
+            win.location.href = url;
+            win.onload = () => {
+                // Apply text
+                const body = win.document.body;
+                body.textContent = text;
+            };
+        }
+        openTextWindow(data, "Trace");
     };
 
     // Get colo name
