@@ -378,43 +378,33 @@ async function getCfCDNinfo(id) {
         // navigator.clipboard.writeText(data);
         // alert(data);
         function openTextWindow(text, title = "Trace") {
-            const win = window.open(
-                "",
-                "_blank",
-                "width=600,height=400,resizable=yes,scrollbars=yes",
-            );
+            const safeText = text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;");
 
-            // If popup blocked, just alert
-            if (!win) {
-                alert(text);
-                return;
-            }
-
-            // Build dummy html
             const html = `<!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <title>${title}</title>
-                    <style>
-                        body {
-                            font-family: "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
-                            white-space: pre-wrap;
-                        }
-                    </style>
-                </head>
-                <body></body>
-                </html>`;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${title}</title>
+    <style>
+        body {
+            font-family: "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>${safeText}</body>
+</html>`;
             const blob = new Blob([html], { type: "text/html" });
             const url = URL.createObjectURL(blob);
 
-            // Apply blob
-            win.location.href = url;
-            win.onload = () => {
-                // Apply text
-                const body = win.document.body;
-                body.textContent = text;
-            };
+            window.open(
+                url,
+                "_blank",
+                "width=600,height=400,resizable=yes,scrollbars=yes",
+            );
         }
         openTextWindow(data, "Trace");
     };
