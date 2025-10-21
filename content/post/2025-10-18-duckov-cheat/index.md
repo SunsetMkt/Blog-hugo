@@ -1262,3 +1262,4 @@ TL;DR：在当前用户的文档文件夹（`%USERPROFILE%\Documents`）中写�
 - [Escape from Duckov](https://store.steampowered.com/app/3167020/)
 - [dotPeek](https://www.jetbrains.com/decompiler/)
 - [bitterbutt/DuckovMods](https://github.com/bitterbutt/DuckovMods)
+- [AssetRipper](https://github.com/AssetRipper/AssetRipper)
