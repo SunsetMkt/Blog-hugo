@@ -1,0 +1,4 @@
+{{ $sass := resources.Get "scss/style.scss" }}
+{{ $opts := dict "enableSourceMap" true "outputStyle" "compressed" }}
+{{ $style := $sass | toCSS $opts | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
