@@ -71,8 +71,24 @@ URL 参数`eruda=true`。
 
 ## 调试信息
 
+### Git、构建和环境
+
 Git 提交和构建信息请参考页脚。
 
-其他 Hugo 调试信息请参考 JavaScript 控制台。
+### Hugo
+
+为了输出美观，Hugo 调试信息请参考 JavaScript 控制台。
 
 {{< console-debug >}}
+
+### SunsetUUID
+
+<div>
+    <p><code id="SunsetUUID-display">undefined</code></p>
+    <script>
+        if (localStorage.SunsetUUID) {
+            document.getElementById("SunsetUUID-display").innerText =
+                localStorage.SunsetUUID;
+        }
+    </script>
+</div>
