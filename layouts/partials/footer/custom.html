@@ -80,12 +80,11 @@
 </script>
 
 <!-- cf-trace -->
-{{ with resources.Get "js/cf-trace.js" | minify | fingerprint }}
+{{- $opts := dict "minify" true "sourceMap" "linked" -}}
+{{ with resources.Get "js/cf-trace.js" | js.Build $opts | fingerprint }}
     <script src="{{ .RelPermalink }}"></script>
 {{ end }}
-<script>
-    getCfCDNinfo("cf-trace");
-</script>
+
 
 <!-- DevTools -->
 <script>

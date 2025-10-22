@@ -443,3 +443,5 @@ async function getCfCDNinfo(id) {
     var finalText = coloName + attrsStr;
     textElement.innerText = finalText;
 }
+
+getCfCDNinfo("cf-trace");
