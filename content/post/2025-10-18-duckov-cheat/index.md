@@ -19,1185 +19,1187 @@ TL;DR：在当前用户的文档文件夹（`%USERPROFILE%\Documents`）中写�
 
 ## 物品列表
 
-- 躯壳 (0, Character): 灵魂的载体。
-- 切肉刀 (1, 0_MeleeWeapon_Template): 看起来很粗犷的刀，不是很锋利。
-- 三级防弹衣 (2, ArmorLV3): 三级防弹衣，在某些时候能够保住你的小命。
-- 金色五角星 (3, Gem): 神秘物质构成的金色五角星。增加近战武器攻击力。
-- GunTemplate (4, 1_Rifle-A_template): \?
-- R6 电池 (8, BatteryR6): 在各种用电器中被广泛使用的电池。
-- 止血绷带 (10, Bandage): 可以止血,并回复微少生命值。
-- PP3 电池 (11, BatteryPP3): 通常用于烟雾探测器、遥控玩具发射器以及作为闹钟的后备电池。
-- 焗豆罐头 (12, BeanCan): 焗豆罐头。
-- 苏打饼干 (13, Biscuit): 一摞苏打饼干。
-- 可乐 (14, Cola): 有糖的可乐才有灵魂。
-- 大急救箱 (15, FirstAidKit_L): 可以恢复大量生命值。
-- 急救箱 (16, FirstAidKit_M): 可以恢复生命值。
-- 小急救箱 (17, FirstAidKit_S): 可以恢复少量生命值。
-- 水浸金枪鱼罐头 (18, TunaCan_1): 水浸金枪鱼罐头。
-- 油浸金枪鱼罐头 (19, TunaCan_2): 油浸金枪鱼罐头。
-- 阿司匹林 (20, Aspirin): 小剂量药品，回复血量，并提供镇痛效果。
-- 漂白剂 (21, Bleach): 一壶漂白剂。
-- 红条香烟 (22, Cigarette): 一盒普通的香烟。
-- 管状炸弹 (23, Dynamite): 一颗管状炸弹。
-- 集束管状炸弹 (24, DynamiteMultiple): 一束管状炸弹。
-- 手电 (25, Flashlight): 一只手电筒。
-- 防毒面具 (26, GasMask_01): 普通的防毒面具。
-- 滑雪镜 (27, Goggle): 滑雪眼镜。
-- 钉子 (28, Nail): 钉子。
-- 伏特加 (29, Vodka): 喝了会开心,然后脱水。
-- MD40 (30, WD40): 一瓶 MD40 除锈剂。
-- 扳手 (31, Wrench): 一个扳手。
-- 一级防弹衣 (32, ArmorLV1): 比纸还薄，能挡一发水弹枪。
-- 二级防弹衣 (33, ArmorLV2): 看起来很专业，能够提供心理层面的鼓励。
-- 四级防弹衣 (34, ArmorLV4): 有真正的防弹性能，可靠之选。
-- 五级防弹衣 (35, ArmorLV5): 提供终极的防护，子弹打在身上就像洒洒水。
-- 装饰包 (36, BackpackLV1): 也就能装点口红化妆品啥的。
-- 小学背包 (37, BackpackLV2): 能装很多的作业本。
-- 旅行包 (38, BackpackLV3): 多功能用途背包，旅行首选。
-- 生存者背包 (39, BackpackLV4): 杀哥联名，户外生存必备。
-- 行军背包 MAX (40, BackpackLV5): 使用蓝胖子口袋内衬同款材料，非常能装。
-- 摩托头盔 (41, HelmatLV1): 晶莹剔透，吹弹可破。
-- 老钢盔 (42, HelmatLV2): 没怎么保养的头盔，爷爷传下来的。里面有个洞。
-- 特警头盔 (43, HelmatLV3): 具有初级的防弹性能。
-- SightPRO 头盔 (44, HelmatLV4): 具有 AR+VR 功能，飞过来的子弹可能会眩晕从而打偏。
-- SCIFI 面罩 (45, HelmatLV5): 给予头部全方位的防护，科幻造型，非常的拉风。
-- 神之电焊头 (46, HelmatLV6): 古希腊掌管头盔的神打造，子弹看了会吓软。
-- 汽车扳手 (47, Wrench02): 更好用的扳手。
-- 大扩容箱 (48, ContinerL): 大型扩容箱，可用作扩展藏身处。重到拿不动。
-- 中扩容箱 (49, ContinerM): 中型扩容箱，可用作扩展藏身处。很重。
-- 小扩容箱 (50, ContinerS): 小型扩容箱，可用作扩展藏身处。
-- 闹钟 (51, Clock): 定格在了三点钟。
-- 洁厕灵 (52, Detergent): 一瓶洁厕灵。
-- 红色大桶 (53, Drum1): 一个大空桶。
-- 蓝色大桶 (54, Drum2): 一个大空桶。
-- 黄色大桶 (55, Drum3): 一个大空桶。
-- 金属油桶 (56, Drum4): 一个大空桶，装过汽油。
-- 高尔夫球棒 (57, GolfClub): 打人疼。
-- 墨水 (58, Ink): 钢笔墨水。
-- 锅 (59, Pot): 可以用来煮食物。
-- 卷纸 (60, Tissue): 一卷卫生纸。
-- Cippo (61, Zippo): Cippo 打火机。
-- 压力传感器 (62, PressionSencer): 踩上去就能感应到。
-- uPhone 手机 (63, uPhone): 已经坏掉了，从外观上看不出是第几代产品。
-- 对讲机 (64, Walkie_Talkie): 普通的对讲机。
-- 军用对讲机 (65, Walkie_Talkie02): 经过加密的军用对讲机。
-- 闪光手雷 (66, FlashGrenade): 眩晕敌人。
-- 手雷 (67, Grenade): 手雷。
-- 巧克力 (68, Chocalate): 有人说它能减肥。
-- 能量棒 (69, EnergyStick): 吃了就不饿了，但是会渴。
-- 蜂蜜 (70, Honey): 很甜很甜。
-- 番茄酱 (71, Ketchup): 酸酸甜甜的番茄酱。不好吃。
-- 书 (72, Book): 胡扯的书。
-- 信件 (73, Letter): 一封信件。
-- 安全屋隔间钥匙 (74, Key_BlueHouse): 能够打开仓库区中安全屋隔间的钥匙。
-- 飞机模型 (75, AirplaneToy): 航空公司售卖的飞机模型，做工劣质。
-- 足球 (76, Ball): 气不太够的足球。
-- 自行车模型 (77, BicyleToy): 精致的自行车模型。
-- 大炮 (78, Cannon): 玩具大炮。
-- 指南针 (79, Compass): 精致的指南针。
-- 骰子 (80, Dice 2): 一个外表十分正常的骰子，但是感觉有点偏坠。
-- 骰子 (81, Dice): 一个正常的骰子。
-- 玩具鱼 (82, Fish): 浓浓的塑料味。
-- 怀表 (83, Watch): 银色的怀表。
-- 鸭蛋 (84, Egg): 没人要的蛋。
-- 铝热剂 (85, Heat): 非常不易燃。
-- 丙烷 (86, Propane): 装满丙烷的罐子。
-- 绳子 (87, Rope): 攀登用的绳子。
-- 一堆药 (88, Drugs): 不能吃，里面什么都有。
-- 输液药品 (89, Lv): 一些静脉注射用的药品。
-- 扫帚 (90, Broom): 普通的扫帚。
-- 平头螺丝刀 (91, Driver): 平头螺丝刀。
-- 电锯 (92, ElectricSaw): 小巧的电锯。
-- 金属桶 (93, GasCanL): 盛装汽油的金属桶。
-- 塑料桶 (94, GasCanS): 盛装汽油的塑料桶。
-- 大锤子 (95, HammerL): 装修利器。
-- 锤子 (96, HammerS): 砸钉子好用。
-- 煤油灯 (97, Lantern): 没油了。
-- 铲子 (98, Shovel): 曾经有一位骑士用它打遍天下无敌手。但不算是一个好的武器。
-- 望远镜 (99, Telescope): 坏掉的望远镜，但镜片还是好的。
-- 捕兽陷阱 (100, Trap): 算是一块好废铁。
-- 撬棍 (101, Wrench03): 挥舞起来可以穿透几乎所有的护甲，在物理学上非常合理。
-- 配件模板 (102, 1_AccessoryTemplate): 可增加精确度。
-- 奶牛面具 (103, CowMask): 外表十分凶狠的奶牛头面具。
-- 牛仔帽 (104, Hat): 牛仔帽。
-- 可可奶 (105, CocoMilk): 带有巧克力味道的牛奶。
-- 苏打水 (106, Soda): 清爽的苏打水。
-- 水壶 (107, Waterbottle): 行军水壶，吨吨吨。
-- 威士忌 (108, Whisky): 上流，但是脱水。
-- 钢笔 (109, Pen): 没有墨水的钢笔。
-- 剪刀 (110, Scissors): 手工剪刀。
-- 奖杯 (111, Trophy): 金色的奖杯，有点掉漆。
-- 麦克风 (112, Mike): 卡拉 OK 麦克风，唱歌让人快乐。
-- 收音机 (113, Radio): 看起来像玩具，但确实也是个收音机。
-- TOMSUNG 手机 (114, TOMSUNGPhone): TOMSUNG 手机，看起来很久了。
-- 酸奶 (115, Yogurt): 疯味酸奶。
-- 报纸 (116, Newspaper): 一份报纸，有年头了。
-- 笔记 (117, Note): 上面记着各种让人看不懂的公式。
-- 口红 (118, Lipstick): 看起来很贵的口红，不知道是什么色号。
-- 金戒指 (119, Ring): 上面镶嵌着黄色的宝石。有点旧，但感觉价值不菲。
-- 花花戒指 (120, RingToy): 看起来像玩具，但是沉甸甸的。
-- 智能机器人 (121, Robot): 没电了。
-- 玩具火箭 (122, Rocket): 造型非常没有创意。
-- 头骨饰品 (123, Skull): 不知道是什么生物的头骨。
-- 手鼓 (124, Tambourine): 声音依然非常好听。
-- 小号 (125, Trumpet): 吹起来应该没问题。
-- 木琴 (126, Xylophone): 看起来音调不是很全。
-- 轮胎 (127, Wheel): 打打气就能用。
-- 线 (128, Yarn): 缝制衣服用的线。
-- 南瓜 (129, Pumpkin): 真的就是个南瓜。
-- 购物框 (130, Basket): 装不了多少东西。
-- 杯子 (131, Cup): 喝水用的杯子。
-- 蛋糕 (132, Cake): 不知道放了多久，但是看起来依然很好吃。
-- 胡萝卜 (133, Carrot): 富含营养，看起来很新鲜。
-- 骨头玩具 (134, Bone): 不知道给谁玩的。
-- 心 (135, Heart): 心形的饰物。
-- 注射器 (136, Injection): 没用过的注射器。
-- 黄针 (137, Injection_A): 提升 25%移动速度，持续 120s。
-- 头灯 (138, HeadLantern): 让你看的更远。
-- 子弹模板 (139, Bullet_Template): 子弹。
-- L-普通弹 (140, Bullet_AR_L_Normal): 制式大口径子弹。
-- L-燃烧弹 (141, Bullet_AR_L_Burn): 装填可持续燃烧的弹药，造成灼烧。有概率点燃。
-- L-穿甲弹 (142, Bullet_AR_L_Piercing3): 能够穿透一定的防护。
-- S-普通弹 (143, Bullet_AR_S_Normal): 制式小口径子弹。
-- S-达姆弹 (144, Bullet_AR_S_Dumdums): 对肉体造成更高的伤害，但更难以穿透护甲。
-- S-燃烧弹 (145, Bullet_AR_S_Burn): 装填可持续燃烧的弹药，造成灼烧。有概率点燃。
-- 霰弹-鹿弹 (146, Bullet_SHOT_Normal): 打猎用的鹿弹，杀伤距离较近。
-- 探索者的信 (153, Quest_Letter_Explorer): 先行来到 Duckov 的探索者的信件。
-- 宿舍楼 103 钥匙 (154, Key_Dormitory103): 一把宿舍楼的钥匙。也许可以打开 103 的门。
-- 宿舍楼 106 钥匙 (155, Key_Dormitory106): 一把宿舍楼的钥匙。也许可以打开 106 的门。
-- L-涂毒弹 (157, Bullet_AR_L_Poison): 子弹表面涂抹毒药。
-- L-高级穿甲弹 (158, Bullet_AR_L_Piercing5): 能够穿透大多数防护。
-- S-穿甲弹 (159, Bullet_AR_S_Piercing2): 能够穿透较低等级的护甲。
-- S-高级穿甲弹 (160, Bullet_AR_S_Piercing4): 能够穿透更高等级的护甲。
-- 霰弹-食人鱼 (161, Bullet_SHOT_Piranha): 穿甲能力弱，但对肉体造成更大伤害。
-- 霰弹-龙息 (162, Bullet_SHOT_Burn): 造成大量灼烧伤害。
-- 霰弹-箭形弹 (163, Bullet_SHOT_Piercing4): 有更高的穿甲等级。
-- 霰弹-电击 (164, Bullet_SHOT_Electric): 电能装药，能够造成电击伤害。
-- 狙击-普通弹 (165, Bullet_Sniper_Normal): 普通的狙击弹药。
-- 狙击-穿甲弹 (166, Bullet_Sniper_Piercing3): 能够穿透较低等级的护甲。
-- 狙击-电击弹 (167, Bullet_Sniper_Electric): 电能装药，能够造成电击伤害。
-- 狙击-空间弹 (168, Bullet_Sniper_Space): 具有空间属性的狙击弹药。
-- 狙击-高级穿甲弹 (169, Bullet_Sniper_Piercing5): 能够穿透大多数护甲。
-- 突击握把 Lv1 (174, Grip_AS_Lv_1): 增强稳定性。
-- 突击握把 Lv2 (175, Grip_AS_Lv_2): 增强稳定性。
-- 突击握把 Lv3 (176, Grip_AS_Lv_3): 增强稳定性。
-- 快拆握把 Lv1 (177, Grip_SP_Lv_1): 增强稳定性。
-- 快拆握把 Lv2 (178, Grip_SP_Lv_2): 增强稳定性。
-- 快拆握把 Lv3 (179, Grip_SP_Lv_3): 增强稳定性。
-- 垂直握把 Lv1 (180, Grip_Verticle_Lv_1): 增强稳定性。
-- 垂直握把 Lv2 (181, Grip_Verticle_Lv_2): 增强稳定性。
-- 垂直握把 Lv3 (182, Grip_Verticle_Lv_3): 增强稳定性。
-- 大口径制退器 Lv.1 (183, Muzzle_L_Type_1): 可增加精确度。
-- 大口径制退器 Lv.2 (184, Muzzle_L_Type_2): 可增加精确度。
-- 大口径制退器 Lv.3 (185, Muzzle_L_Type_3): 可增加精确度。
-- 霰弹枪集束器 Lv.1 (186, Muzzle_Shot_Type_1): 可增加精确度。
-- 霰弹枪集束器 Lv.2 (187, Muzzle_Shot_Type_2): 可增加精确度。
-- 霰弹枪集束器 Lv.3 (188, Muzzle_Shot_Type_3): 可增加精确度。
-- 狙击枪消音器 Lv.1 (189, Muzzle_Sniper_Type_1): 可增加精确度。
-- 狙击枪消音器 Lv.2 (190, Muzzle_Sniper_Type_2): 可增加精确度。
-- 狙击枪消音器 Lv.3 (191, Muzzle_Sniper_Type_3): 可增加精确度。
-- 小口径制退器 Lv.1 (192, Muzzle_S_Type_1): 可增加精确度。
-- 小口径制退器 Lv.2 (193, Muzzle_S_Type_2): 可增加精确度。
-- 小口径制退器 Lv.3 (194, Muzzle_S_Type_3): 可增加精确度。
-- 4 倍镜 Lv1 (195, Scope_4X_Lv_1): 可增加精确度。
-- 4 倍镜 Lv2 (196, Scope_4X_Lv_2): 可增加精确度。
-- 4 倍镜 Lv3 (197, Scope_4X_Lv_3): 可增加精确度。
-- 8 倍镜 Lv1 (198, Scope_8X_Lv_1): 可增加精确度。
-- 8 倍镜 Lv2 (199, Scope_8X_Lv_2): 可增加精确度。
-- 8 倍镜 Lv3 (200, Scope_8X_Lv_3): 可增加精确度。
-- 数字瞄具 Lv1 (201, Scope_Digit_Lv_1): 可增加精确度。
-- 数字瞄具 Lv2 (202, Scope_Digit_Lv_2): 可增加精确度。
-- 数字瞄具 Lv3 (203, Scope_Digit_Lv_3): 可增加精确度。
-- 全息瞄具 Lv1 (204, Scope_Holo_Lv_1): 可增加精确度。
-- 全息瞄具 Lv2 (205, Scope_Holo_Lv_2): 可增加精确度。
-- 全息瞄具 Lv3 (206, Scope_Holo_Lv_3): 可增加精确度。
-- 快速瞄具 Lv1 (207, Scope_Long_Lv_1): 可增加精确度。
-- 快速瞄具 Lv2 (208, Scope_Long_Lv_2): 可增加精确度。
-- 快速瞄具 Lv3 (209, Scope_Long_Lv_3): 可增加精确度。
-- 红点瞄具 Lv1 (210, Scope_RedDot_Lv_1): 可增加精确度。
-- 红点瞄具 Lv2 (211, Scope_RedDot_Lv_2): 可增加精确度。
-- 红点瞄具 Lv3 (212, Scope_RedDot_Lv_3): 可增加精确度。
-- 步枪枪托 Lv1 (213, Stock_Rifle_Lv_1): 增强稳定性。
-- 步枪枪托 Lv2 (214, Stock_Rifle_Lv_2): 增强稳定性。
-- 步枪枪托 Lv3 (215, Stock_Rifle_Lv_3): 增强稳定性。
-- 霰弹枪托 Lv1 (216, Stock_Shot_Lv_1): 增强稳定性。
-- 霰弹枪托 Lv2 (217, Stock_Shot_Lv_2): 增强稳定性。
-- 霰弹枪托 Lv3 (218, Stock_Shot_Lv_3): 增强稳定性。
-- 冲锋枪枪托 Lv1 (219, Stock_SMG_Lv_1): 增强稳定性。
-- 冲锋枪枪托 Lv2 (220, Stock_SMG_Lv_2): 增强稳定性。
-- 冲锋枪枪托 Lv3 (221, Stock_SMG_Lv_3): 增强稳定性。
-- 狙击枪枪托 Lv1 (222, Stock_Sniper_Lv_1): 增强稳定性。
-- 狙击枪枪托 Lv2 (223, Stock_Sniper_Lv_2): 增强稳定性。
-- 狙击枪枪托 Lv3 (224, Stock_Sniper_Lv_3): 增强稳定性。
-- 战术激光 Lv1 (225, Tec_Lazer_Lv_1): 更加精准的射击。
-- 战术激光 Lv2 (226, Tec_Lazer_Lv_2): 更加精准的射击。
-- 战术激光 Lv3 (227, Tec_Lazer_Lv_3): 更加精准的射击。
-- 战术手电 Lv1 (228, Tec_Light_Lv_1): 照射对方头部，使其变得脆弱。
-- 战术手电 Lv2 (229, Tec_Light_Lv_2): 照射对方头部，使其变得脆弱。
-- 战术手电 Lv3 (230, Tec_Light_Lv_3): 照射对方头部，使其变得脆弱。
-- 大口径扩容弹匣 Lv1 (231, Magazine_Rifle_Lv_1): 增加弹药数量。
-- 大口径扩容弹匣 Lv2 (232, Magazine_Rifle_Lv_2): 增加弹药数量。
-- 大口径扩容弹匣 Lv3 (233, Magazine_Rifle_Lv_3): 增加弹药数量。
-- 小口径扩容弹匣 Lv1 (234, Magazine_SMG_Lv_1): 增加弹药数量。
-- 小口径扩容弹匣 Lv2 (235, Magazine_SMG_Lv_2): 增加弹药数量。
-- 小口径扩容弹匣 Lv3 (236, Magazine_SMG_Lv_3): 增加弹药数量。
-- AK-103 (238, L_AK102_Lv_2): AK-47 的现代化版本，继承了其可靠性的同时，在各方面也有进一步的提升。
-- AK-47 (240, L_AK47_Lv_2): 经典的制式步枪，威力较大，结构简单，维护方便，但后座力较大，精度一般。
-- MF (242, L_MF_Lv_2): 装备非常广泛的制式武器，精度高，后坐力小的同时能支持大部分配件的安装。
-- RPK (244, L_RPK_Lv_2): 基于 AK-47 设计的轻型机枪，载弹量巨大，通常用于火力支援。
-- VPO-101 (246, Sniper_VPO): 射击精度高且有不俗的爆头伤害，虽然口径看上去是步枪，但在鸭科夫被当作狙击枪使用。
-- 土制猎枪 (248, Shot_Hand_Lv_2): 小作坊里手搓的霰弹枪，各方面的性能表现都非常一般。
-- MP-155 (250, Shot_MP155_Lv_2): 泵动式霰弹枪，虽然需要手动装填，但载弹量在霰弹枪中相当不错。
-- AK-74U (252, S_AK74_Lv_2): 基于 AK-47 进行了短管设计，因为威力下降，被鸭鸭们降格为了冲锋枪。
-- 格力克 (254, S_GLick_Lv_2): 重量轻，可靠性高，弹容量大，深受各路鸭鸭的喜欢。
-- MMG (256, S_MMG_Lv_2): MF 的前身，各方面都非常均衡的制式武器。
-- MP7 (258, S_MP7_Lv_2): 射程和稳定性都相当出色的制式冲锋枪，对配件的支持也相当好。
-- UP-45 (260, S_UAK45_Lv_2): 各方面表现都相当均衡的民用冲锋枪。
-- UZI (262, S_UZI_Lv_2): 非常紧凑轻巧的制式冲锋枪，相较于其他冲锋枪有非常高的爆头伤害。
-- 突击握把 Lv4 (263, Grip_AS_Lv_4): 增强稳定性。
-- 快拆握把 Lv4 (264, Grip_SP_Lv_4): 增强稳定性。
-- 垂直握把 Lv4 (265, Grip_Verticle_Lv_4): 增强稳定性。
-- 大口径扩容弹匣 Lv4 (266, Magazine_Rifle_Lv_4): 增加弹药数量。
-- 小口径扩容弹匣 Lv4 (267, Magazine_SMG_Lv_4): 增加弹药数量。
-- 大口径制退器 Lv.4 (268, Muzzle_L_Type_4): 可增加精确度。
-- 霰弹枪集束器 Lv.4 (269, Muzzle_Shot_Type_4): 可增加精确度。
-- 狙击枪消音器 Lv.4 (270, Muzzle_Sniper_Type_4): 可增加精确度。
-- 小口径制退器 Lv.4 (271, Muzzle_S_Type_4): 可增加精确度。
-- 4 倍镜 Lv4 (272, Scope_4X_Lv_4): 可增加精确度。
-- 8 倍镜 Lv4 (273, Scope_8X_Lv_4): 可增加精确度。
-- 数字瞄具 Lv4 (274, Scope_Digit_Lv_4): 可增加精确度。
-- 全息瞄具 Lv4 (275, Scope_Holo_Lv_4): 可增加精确度。
-- 快速瞄具 Lv4 (276, Scope_Long_Lv_4): 可增加精确度。
-- 红点瞄具 Lv4 (277, Scope_RedDot_Lv_4): 可增加精确度。
-- 步枪枪托 Lv4 (278, Stock_Rifle_Lv_4): 增强稳定性。
-- 霰弹枪托 Lv4 (279, Stock_Shot_Lv_4): 增强稳定性。
-- 冲锋枪枪托 Lv4 (280, Stock_SMG_Lv_4): 增强稳定性。
-- 狙击枪枪托 Lv4 (281, Stock_Sniper_Lv_4): 增强稳定性。
-- 战术激光 Lv4 (282, Tec_Lazer_Lv_4): 更加精准的射击。
-- 战术手电 Lv4 (283, Tec_Light_Lv_4): 照射对方头部，使其变得脆弱。
-- 蓝图模板 (284, 1_Blueprint): 用于研发武器：XXXX。
-- 蓝图：AK-103 (285, BP_AK102): 用于在工作台研发武器：AK-103。
-- 蓝图：AK-47 (286, BP_AK47): 用于在工作台研发武器：AK-47。
-- 蓝图：AK-74U (287, BP_AK74U): 用于在工作台研发武器：AK-74U。
-- 蓝图：土制猎枪 (289, BP_HAND): 用于在工作台研发武器：土制猎枪。
-- 蓝图：MF (290, BP_MF): 用于在工作台研发武器：MF。
-- 蓝图：MMG (291, BP_MMG): 用于在工作台研发武器：MMG。
-- 蓝图：MP-155 (292, BP_MP155): 用于在工作台研发武器：MP-155。
-- 蓝图：MP7 (293, BP_MP7): 用于在工作台研发武器：MP7。
-- 蓝图：RPK (294, BP_RPK): 用于在工作台研发武器：RPK。
-- 蓝图：VPO-101 (295, BP_VPO): 用于在工作台研发武器：VPO-101。
-- 蓝图：UAK-45 (296, BP_UAK45): 用于在工作台研发武器：UAK-45。
-- 蓝图：UZI (297, BP_UZI): 用于在工作台研发武器：UZI。
-- 移动硬盘 (298, HardDrive): 能够承载数据的移动硬盘，质量非常好。
-- 移动硬盘：宿舍楼 (299, Quest_HardDrive_Dormitory): 装有宿舍电脑数据的硬盘。
-- 移动硬盘：加油站录像 (300, Quest_HardDrive_GasStation): 装有加油站监控录像的硬盘。
-- J-Lab 软盘 (301, FloppyDisk): 装有加密数据的软盘。
-- 枪 (302, 1_EnemyGun_Template): 一挺机枪，高续航。
-- ??? (303, EGun_SHOT_Storm_NoGraphic): Item_EGun_SHOT_Storm_NoGraphic_Desc
-- ??? (304, EGun_AR_Storm_NoGraphic): Item_EGun_AR_Storm_NoGraphic_Desc
-- 切肉刀 (305, PigKnife): 看起来很粗犷的刀，不是很锋利。
-- 战斧 (306, Axe): 狂战士专用。
-- 一级防弹衣 (307, 1_Armor_Template): 比纸还薄，能挡一发水弹枪。
-- 冷核碎片 (308, ColdCore): 发出幽幽的蓝光。
-- 赤核碎片 (309, FlamingCore): 不稳定，散发巨大能量。
-- ??? (310, EGun_Magic): Item_EGun_Magic_Desc
-- ??? (311, EGun_SMG_Storm_NoGraphic): Item_EGun_SMG_Storm_NoGraphic_Desc
-- 工厂门禁卡 (312, Key_Card_Factory): 工厂员工的门禁卡。
-- 工厂门禁卡(加密) (313, Key_Card_Factory_Uncrack): 工厂员工的门禁卡（已被加密，无法使用）。
-- 武器蓝图：基础 (314, BP_Weapon_0_Basic): 用于研发武器的基础蓝图。
-- 武器蓝图：专业 (315, BP_Weapon_2_Pro): 用于研发武器的专业蓝图。
-- 武器蓝图：进阶 (316, BP_Weapon_1_Advanced): 用于研发武器的进阶蓝图。
-- 武器蓝图：终极 (317, BP_Weapon_3_Ultimate): 用于研发武器的终极蓝图。
-- 图腾:甲胄 Ⅱ (318, Totem_Armor 2): 大幅增强防护属性。
-- 图腾:甲胄 Ⅰ (319, Totem_Armor): 增强防护属性。
-- 图腾:进击 Ⅱ (320, Totem_GunDamage 2): 大幅提高枪械的伤害。
-- 图腾:进击 Ⅰ (321, Totem_GunDamage): 提高枪械的伤害。
-- 图腾:战士 II (322, Totem_MeleeAttack 2): 中幅增加近战输出。
-- 图腾:战士 I (323, Totem_MeleeAttack): 小幅增加近战输出。
-- 图腾:轻盈 Ⅱ (324, Totem_Speed 2): 增加移动能力。
-- 图腾:健壮 Ⅲ (325, Totem_Strong 3): 负重属性增强，背包容量增加。
-- 火箭弹 Lv1 (326, Bullet_Rocket): 发射器弹药。
-- RPG-7 (327, Rocket_RPG_Lv_1): 爆炸性伤害，咻~~~砰！
-- 显示卡 (328, GPU): 久经沙场的图形处理卡，布满灰尘。
-- 充电宝 (329, PowerBank): 物美价廉的充电宝，不过充不了几次。
-- 情报文件 (330, InformationFiles): 包含了各种机密信息的情报文件。
-- LEDX 皮肤透照仪 (331, LEDX): 血管显像仪，用于显示血管，便于注射。
-- 螺栓 (332, Bolt): 略微生锈的螺栓，硬度够用。
-- 灯泡 (333, Bulb): 普通的灯泡，看起来还能工作。
-- 节能灯 (334, Bulb2): 亮起来更加省电，不过看起来质量不太好。
-- 螺母 (335, Nut): 充满划痕的螺母。
-- 电源线 (336, Cable): 电脑用的电源线。
-- 电线 (337, Cables): 各种电线。
-- CD 驱动器 (338, CDDriver): 用来读取 CD 光盘。
-- 电路板 (339, CircuitBoard): 电脑主板。
-- 电子元件 (340, ElectricParts): 不知道是啥的奇怪电子零件。
-- ??? (341, EnemyGun_Spider_Rifle): Item_EnemyGun_Spider_Rifle_Desc
-- ??? (342, EnemyGun_Spider_Ring): Item_EnemyGun_Spider_Ring_Desc
-- 破旧鱼竿 (343, FishingRod): 又破又旧的钓竿。
-- Item_Bait1 (344, Bait1): Item_Bait1_Desc
-- Item_Bait2 (345, Bait2): Item_Bait2_Desc
-- 一级鱼 (346, Fish1): Item_Fish1_Desc
-- 二级鱼 (347, Fish2): Item_Fish2_Desc
-- Item_Bait3 (348, Bait3): Item_Bait3_Desc
-- 三级鱼 (349, Fish3): Item_Fish3_Desc
-- S-涂毒弹 (350, Bullet_AR_S_Poison): 子弹表面涂抹毒药。
-- S-电击弹 (351, Bullet_AR_S_Electric): 释放电流的子弹，有时候能麻痹敌人。
-- L-电击弹 (352, Bullet_AR_L_Electric): 集中的瞬间释放电力。
-- L-空间弹 (353, Bullet_AR_L_Space): 借助地核力量，能够扭曲空间，破坏坚硬的结构。
-- S-空间弹 (354, Bullet_AR_S_Space): 借助地核力量，能够扭曲空间，破坏坚硬的结构。
-- 霰弹-穿甲弹 (355, Bullet_SHOT_Piercing2): 能够穿透低级护甲。
-- 空手 (356, AnimalWeapon): Item_AnimalWeapon_Desc
-- 劣质弓 (357, A_Bow_Lv_1): 就是一根木棒中间绑了根绳子，可以凑合用用。
-- 木箭矢 (358, Bullet_Arrow_Normal): 用树枝制作的箭矢。
-- 灰房子钥匙 (359, Key_GroundZero_GHouse): 零号区域的一处民房钥匙。
-- 杂物围栏钥匙 (360, Key_GroundZero_Storage): 山丘一处不起眼的杂物堆放处。
-- 木料 (361, Wood): 经过了加工的木料。
-- 金属片 (362, MetalSlice): 略微生锈的金属片。
-- L-过期子弹 (363, Bullet_AR_L_Rusted): 已经过了使用年限，一碰就碎。甚至连纸都打不穿。打这种子弹会较快降低枪械耐久。
-- S-生锈子弹 (364, Bullet_AR_S_Rusted): 生了锈的小口径子弹。打不穿任何东西。打这种子弹会较快降低枪械耐久。
-- 木棍 (365, WoodStick): 可以挥来挥去的木棍，非常直。
-- 老朋友的信 (366, Quest_Letter_EquipmentMercent): 看见对面的营地没，后面有一块铁丝网坏掉了，然后他们用铁皮给补上了，但是一点也不牢靠，我用一个撬棍就能轻松打开。我之前从那进了不少货。
-- 武器零件 (367, WeaponParts): 一堆用来制造枪械的零件。
-- 虚化的羽毛 (368, Feather): 感觉很快就会消失。
-- 图腾:抗物 Ⅰ (369, Totem_PhysicResist): 免疫流血。
-- 图腾：马拉松 Ⅰ (370, Totem_FinalDash): 小幅减少耐力消耗。
-- 图腾：饥饿大师 (371, Totem_Hunger): 减少能量和水分的消耗。
-- 图腾：耐力 (372, Totem_Stamina): 增加耐力上限，并加快体力恢复速度。
-- 传送装置图纸 (373, Quest_Blueprint_TeleporterMachine): 详细描述了传送装置的制作过程，异常的简单。
-- 配方：MD40 (374, Formula_Template): 制作 MD40 的配方。
-- 农场镇传送密钥 (375, Quest_HardDrive_GroundZero_Signal): 有了这个，我们就可以传送到农场镇了。
-- 蓝图：RPG 发射器 (376, BP_RPG): 用于在工作台研发武器：RPG。
-- 配方：捕兽夹 (377, Formula_Trap): 制作捕兽陷阱的配方。
-- 配方：MD40 (378, Formula_WD40): 制作 MD40 的配方。
-- 背带衣 (379, ArmorCai): Music~
-- T.H 篮球 (380, Basketball): 气还很足。
-- 配方：背带衣 (381, Formula_ArmorCai): 谢谢。
-- 配方：撬棍 (382, Formula_Wrench03): 制作撬棍的配方。
-- 配方：电源线 (383, Formula_Cable): 制作电源线的配方。
-- 机械钥匙 (384, Key_Machine): 打开某个车门的钥匙。
-- 怀表 (385, Quest_Watch): 好像是锌合金做的。
-- 货物清单 (386, Quest_List_GroundZeroGoods): 武器运送货物清单。
-- 配方：电路板 (387, Formula_CircuitBoard): 在工作台制作电路板的配方。
-- 0.2BTC (388, BitCoin): 这玩意也有实体的？
-- 神秘留言 (389, Quest_Letter_InShop): 告诉你，售货机里的东西，都超贵！售卖价格翻了好几倍！而且回收价竟然只有原价的一半！奸商，奸商！
-- 小型能量弹 (390, Bullet_Energy_S): 为小型能量武器提供能量。
-- 方块枪 (391, Energy_CubeGun): 小巧的电属性能量发射武器。
-- 蓝图：方块枪 (392, BP_CubeGun): 用于研发能量武器：方块枪。
-- 蓝图：小型能量弹药 (393, BP_Bullet_Energy_S): 手工制作小型能量弹药的方法。
-- 计算核心 (394, ComputeCore): 蜘蛛型机器人的计算核心。
-- 黑色针剂 (395, Jinitaimei): 原型是 BeLand 公司研发的“脏水”生化药剂。J-Lab 经过两年半研究，对其进行改良，极大降低了对宿主造成的副作用。药物全称是 Ginius-PEP-Mg，也可称作基尼肽镁。
-- 配方：黑色药剂 (396, Formula_Jinitaimei): 在医疗站解锁黑色药剂的配方。
-- 比特币矿机 (397, BitcoinMiner): Item_BitcoinMiner_Desc
-- 负重针 (398, Injection_Weight): 增加负重，持续 240 秒。
-- 爆炸箭 (399, Bullet_Arrow_Explosion): 这玩意没有安全爆炸距离。
-- 蓝图：爆炸箭 (400, BP_ArrowExplosion): 在工作台制作爆炸箭的配方。
-- 蓝图：土豆显卡 (401, BP_GPU_Potato): 手搓土豆显卡的图纸，上面还画了大便的俯视图，不知是何用意。
-- 土豆显卡 (402, GPU_Potato): 真是一场奇迹。
-- 土豆 (403, Potato): 土豆的香气。
-- 霰弹-破烂 (404, Bullet_SHOT_Rusted): 弹壳已经老化了，里面的弹丸估计也好不到哪去。
-- 蓝图：防毒面具 (405, BP_GasMask): 制作防毒面具的蓝图。
-- 狙击-劣质子弹 (406, Bullet_Sniper_Rusted): 偷工减料的子弹。
-- M107 (407, Sniper_Balett): 很猛，甚至不像是用来与有机生物作战的武器，重量也相当夸张。
-- 电抗性针 (408, Injection_ElecResist): 一段时间内受到的电属性伤害降低。
-- 镇痛剂 (409, Injection_PainResist): 让你在一段时间内无视疼痛。
-- 配方：抗电性针 (410, Formula_Injection_ElecResist): 在医疗站制作抗电性针的配方。
-- 配方：镇痛剂 (411, Formula_Injection_PainResist): 在医疗站制作镇痛剂的配方。
-- 狙击枪弹匣 Lv1 (412, Magazine_Sniper_Lv_1): 扩容弹匣。
-- 狙击枪弹匣 Lv2 (413, Magazine_Sniper_Lv_2): 扩容弹匣。
-- 狙击枪弹匣 Lv3 (414, Magazine_Sniper_Lv_3): 扩容弹匣。
-- 狙击枪弹匣 Lv4 (415, Magazine_Sniper_Lv_4): 扩容弹匣。
-- 大口径消音器 Lv1 (416, Muzzle_L_Slience_1): 减弱声音传播距离。
-- 大口径消音器 Lv2 (417, Muzzle_L_Slience_2): 减弱声音传播距离。
-- 大口径消音器 Lv3 (418, Muzzle_L_Slience_3): 减弱声音传播距离。
-- 大口径消音器 Lv4 (419, Muzzle_L_Slience_4): 减弱声音传播距离。
-- 小口径消音器 Lv1 (420, Muzzle_S_Slience_1): 减弱声音传播距离。
-- 小口径消音器 Lv2 (421, Muzzle_S_Slience_2): 减弱声音传播距离。
-- 小口径消音器 Lv3 (422, Muzzle_S_Slience_3): 减弱声音传播距离。
-- 小口径消音器 Lv4 (423, Muzzle_S_Slience_4): 减弱声音传播距离。
-- 黑市联络笔记 (424, Note_BlackMarket): 沾满黑乎乎的东西，记录着各路商人的信息，但是用某种方式加密了。
-- 加密 U 盘 (425, UDisk): 可用于存储资料。
-- 地窖钥匙 (426, Key_HiddenWarehouse_Cellar): 通往某处地窖。
-- 隐居者的信 (427, Quest_Letter_HiddenWarehouse_Explorer): 我挖了条地道，直通对面的仓库后面。但是钥匙让我整丢了。
-- 瓶装水 (428, Water): 瓶装矿泉水，微微发绿。
-- 愿望单之力 (429, PowerOfWishlist): 奖励给添加愿望单的勇士。你一定已经添加愿望单了对吧？对吧？
-- 图腾:抗电 Ⅱ (430, Totem_ElecResist 2): 免疫触电。
-- 图腾:抗电 Ⅰ (431, Totem_ElecResist): 降低受到的电属性伤害。
-- 图腾:效率 Ⅱ (432, Totem_Efficiency 2): 医疗物品的效率提高。
-- 图腾:控枪 Ⅲ (433, Totem_GunControl 3): 降低枪械的后坐力与散布。
-- 图腾：战术换弹 (434, Totem_Reload): 巨幅提高换弹速度。
-- 图腾:忍者 Ⅱ (435, Totem_Ninja 2): 降低奔跑时的声音传播距离。
-- 图腾:忍者 Ⅰ (436, Totem_Ninja): 小幅降低奔跑时的声音传播距离。
-- VPO-劳登改 (437, Sniper_VPO_Deng): 经过劳登改造的 VPO 狙击步枪。
-- 热血针剂 (438, Injection_HotBlood): 变得易怒，受到伤害时移动速度与近战伤害会提高，持续 60 秒。
-- 配方：热血针剂 (439, Formula_Injection_HotBlood): 在医疗站制作热血针剂的配方。
-- 废弃加油站钥匙 (440, Key_GasStation_Warehouse): 某处废弃加油站的钥匙。
-- 厂区办公室钥匙 (441, Key_RedWareHosue_Warehouse): 打开位于工厂区的某处办公室。
-- 小隔间钥匙 (442, Key_SmallRoom_HiddenWarehouse): 打开某个房子的小隔间。
-- 地窖围栏钥匙 (443, Key_HiddenWarehouse_Cellar_Wire): 地窖中一处围栏的钥匙。
-- 红包 (444, RedBag): 四次元红包，里面不一定装着什么好东西，拆开看看？
-- 小纸条 (445, LuckyNote_1): 恭喜发财。
-- 铜钱串 (446, NewYear_AncientCoins): 好贵！
-- 中国结 (447, NewYear_ChineseKnot): 好看！
-- 红灯笼 (448, NewYear_Lantern): 好热闹！
-- 饺子 (449, Dumpling): 好吃！
-- 烂格力克 (450, S_GLick_Low): 残次品的格力克。
-- 现金 (451, Cash): 纸质现金。
-- 快速握把 A (452, Grip_ALL_ADS_1): 提高瞄准速度的握把。
-- 快速握把 B (453, Grip_ALL_ADS_2): 大幅提高瞄准速度的握把。
-- Item_Grip_ALL_MOV_1 (454, Grip_ALL_MOV_1): Item_Grip_ALL_MOV_1_Desc
-- 垂直握把 I (455, Grip_ALL_REC_1): 加强垂直后坐力控制的握把。
-- 水平握把 I (456, Grip_ALL_REC_2): 加强水平后坐力控制的握把。
-- 平衡握把 (457, Grip_ALL_REC_3): 加强后坐力控制的握把。
-- 垂直握把 II (458, Grip_ALL_REC_4): 极大幅加强垂直后坐力控制的握把。
-- 水平握把 II (459, Grip_ALL_REC_5): 极大幅加强水平后坐力控制的握把。
-- 腰射握把 I (460, Grip_ALL_SCA_1): 提高腰射控制与机动性的握把。
-- Item_Grip_ALL_SCA_2 (461, Grip_ALL_SCA_2): Item_Grip_ALL_SCA_2_Desc
-- 腰射握把 II (462, Grip_ALL_SCA_3): 大幅提高腰射控制与机动性的握把。
-- 手枪制退器-均衡 A (463, Muzzle_PST_REC_1): 加强后坐力控制与射程的手枪枪口。
-- 手枪制退器-均衡 B (464, Muzzle_PST_REC_2): 大幅加强后坐力控制的手枪枪口。
-- 手枪消音器 (465, Muzzle_PST_SIL_1): 降低开枪时声响的手枪枪口，但会损失少量子弹速度与射程。
-- 手枪延长枪口 (466, Muzzle_PST_DIS_1): 提高射程的手枪枪口，但会损失移动速度。
-- 手枪制退器-散布 (467, Muzzle_PST_SCA_1): 提高瞄准时散布控制的手枪枪口。
-- 冲锋枪制退器-均衡 A (468, Muzzle_SMG_REC_1): 加强后坐力控制与射程的冲锋枪枪口。
-- 冲锋枪制退器-均衡 B (469, Muzzle_SMG_REC_2): 大幅加强后坐力控制的冲锋枪枪口。
-- 冲锋枪垂直制退器 (470, Muzzle_SMG_REC_3): 极大幅加强垂直后坐力控制的冲锋枪枪口。
-- 冲锋枪水平制退器 (471, Muzzle_SMG_REC_4): 极大幅加强水平后坐力控制的冲锋枪枪口。
-- 冲锋枪制退器-散布 (472, Muzzle_SMG_SCA_1): 提高瞄准时散布控制的冲锋枪枪口。
-- 冲锋枪螺旋制退器 (473, Muzzle_SMG_SCA_2): 大幅提高瞄准时散布控制的冲锋枪枪口。
-- 冲锋枪消音器 (474, Muzzle_SMG_SIL_1): 降低开枪时声响的冲锋枪枪口，但会损失少量子弹速度与射程。
-- 步枪延长枪口 (475, Muzzle_AR_DIS_1): 提高射程的步枪枪口，但会损失移动速度。
-- 步枪制退器-均衡 A (476, Muzzle_AR_REC_1): 加强后坐力控制与射程的步枪枪口。
-- 步枪制退器-均衡 B (477, Muzzle_AR_REC_2): 大幅加强后坐力控制的步枪枪口。
-- 步枪垂直制退器 (478, Muzzle_AR_REC_3): 极大幅加强垂直后坐力控制的步枪枪口。
-- 步枪水平制退器 (479, Muzzle_AR_REC_4): 极大幅加强水平后坐力控制的步枪枪口。
-- 步枪制退器-散布 (480, Muzzle_AR_SCA_1): 提高瞄准时散布控制的步枪枪口。
-- 步枪螺旋制退器 (481, Muzzle_AR_SCA_2): 大幅提高瞄准时散布控制的步枪枪口。
-- 步枪消音器 (482, Muzzle_AR_SIL_1): 降低开枪时声响的步枪枪口，但会损失少量子弹速度与射程。
-- Item_Muzzle_AR_SIL_2 (483, Muzzle_AR_SIL_2): Item_Muzzle_AR_SIL_2_Desc
-- 狙击枪延长枪口 (484, Muzzle_SNP_DIS_1): 提高射程的狙击枪枪口，但会损失移动速度。
-- 狙击枪制退器-均衡 A (485, Muzzle_SNP_REC_1): 加强后坐力控制与射程的狙击枪枪口。
-- Item_Muzzle_SNP_REC_2 (486, Muzzle_SNP_REC_2): Item_Muzzle_SNP_REC_2_Desc
-- 狙击枪水平制退器 (487, Muzzle_SNP_REC_3): 极大幅加强水平后坐力控制的狙击枪枪口。
-- 狙击枪制退器-散布 (488, Muzzle_SNP_SCA_1): 提高瞄准时散布控制的狙击枪枪口。
-- 狙击枪制退器-机动 (489, Muzzle_SNP_SCA_2): 提高腰射控制的狙击枪枪口。
-- 狙击枪消音器 (490, Muzzle_SNP_SIL_1): 降低开枪时声响的狙击枪枪口，但会损失少量子弹速度与射程。
-- Item_Muzzle_SNP_SIL_2 (491, Muzzle_SNP_SIL_2): Item_Muzzle_SNP_SIL_2_Desc
-- Item_Muzzle_SNP_SIL_3 (492, Muzzle_SNP_SIL_3): Item_Muzzle_SNP_SIL_3_Desc
-- 霰弹枪制退器-均衡 A (493, Muzzle_SHT_REC_1): 加强后坐力控制与射程的霰弹枪枪口。
-- Item_Muzzle_SHT_REC_2 (494, Muzzle_SHT_REC_2): Item_Muzzle_SHT_REC_2_Desc
-- Item_Muzzle_SHT_REC_3 (495, Muzzle_SHT_REC_3): Item_Muzzle_SHT_REC_3_Desc
-- Item_Muzzle_SHT_REC_4 (496, Muzzle_SHT_REC_4): Item_Muzzle_SHT_REC_4_Desc
-- Item_Muzzle_SHT_SCA_1 (497, Muzzle_SHT_SCA_1): Item_Muzzle_SHT_SCA_1_Desc
-- Item_Stock_PST_MOV_1 (498, Stock_PST_MOV_1): Item_Stock_PST_MOV_1_Desc
-- Item_Stock_PST_REL_1 (499, Stock_PST_REL_1): Item_Stock_PST_REL_1_Desc
-- Item_Stock_PST_SCA_1 (500, Stock_PST_SCA_1): Item_Stock_PST_SCA_1_Desc
-- Item_Stock_PST_SCA_2 (501, Stock_PST_SCA_2): Item_Stock_PST_SCA_2_Desc
-- Item_Stock_SMG_MOV_1 (502, Stock_SMG_MOV_1): Item_Stock_SMG_MOV_1_Desc
-- Item_Stock_SMG_REC_1 (503, Stock_SMG_REC_1): Item_Stock_SMG_REC_1_Desc
-- Item_Stock_SMG_REL_1 (504, Stock_SMG_REL_1): Item_Stock_SMG_REL_1_Desc
-- Item_Stock_SMG_SCA_1 (505, Stock_SMG_SCA_1): Item_Stock_SMG_SCA_1_Desc
-- Item_Stock_SMG_SCA_2 (506, Stock_SMG_SCA_2): Item_Stock_SMG_SCA_2_Desc
-- Item_Stock_SMG_SCA_3 (507, Stock_SMG_SCA_3): Item_Stock_SMG_SCA_3_Desc
-- 快速枪托 (508, Stock_AR_MOV_1): 大幅提高瞄准速度与机动性的枪托。
-- 平衡枪托 I (509, Stock_AR_REC_1): 加强后坐力控制的枪托。
-- 平衡枪托 II (510, Stock_AR_REC_2): 大幅加强后坐力控制的枪托。
-- 轻型枪托 (511, Stock_AR_REL_1): 极大幅提高机动性的枪托。
-- Item_Stock_AR_SCA_1 (512, Stock_AR_SCA_1): Item_Stock_AR_SCA_1_Desc
-- Item_Stock_AR_SCA_2 (513, Stock_AR_SCA_2): Item_Stock_AR_SCA_2_Desc
-- 腰射枪托 I (514, Stock_AR_SCA_3): 加强腰射散布控制的枪托。
-- 控制枪托 (515, Stock_AR_SCA_4): 加强瞄准散布控制的枪托。
-- 腰射枪托 II (516, Stock_AR_SCA_5): 极大幅加强腰射散布控制的枪托。
-- Item_Stock_AR_SCA_6 (517, Stock_AR_SCA_6): Item_Stock_AR_SCA_6_Desc
-- Item_Stock_SNP_REC_1 (518, Stock_SNP_REC_1): Item_Stock_SNP_REC_1_Desc
-- 狙击枪平衡枪托 II (519, Stock_SNP_REC_2): 大幅加强后坐力控制的狙击枪枪托。
-- Item_Stock_SNP_SCA_1 (520, Stock_SNP_SCA_1): Item_Stock_SNP_SCA_1_Desc
-- 狙击枪控制枪托 I (521, Stock_SNP_SCA_2): 加强瞄准散布控制的狙击枪枪托。
-- Item_Stock_SNP_SCA_3 (522, Stock_SNP_SCA_3): Item_Stock_SNP_SCA_3_Desc
-- 狙击枪控制枪托 II (523, Stock_SNP_SCA_4): 极大幅加强瞄准散布控制的狙击枪枪托。
-- Item_Stock_SHT_MOV_1 (524, Stock_SHT_MOV_1): Item_Stock_SHT_MOV_1_Desc
-- Item_Stock_SHT_REC_1 (525, Stock_SHT_REC_1): Item_Stock_SHT_REC_1_Desc
-- Item_Stock_SHT_REL_1 (526, Stock_SHT_REL_1): Item_Stock_SHT_REL_1_Desc
-- Item_Stock_SHT_SCA_1 (527, Stock_SHT_SCA_1): Item_Stock_SHT_SCA_1_Desc
-- Item_Stock_SHT_SCA_2 (528, Stock_SHT_SCA_2): Item_Stock_SHT_SCA_2_Desc
-- Item_Stock_SHT_SCA_3 (529, Stock_SHT_SCA_3): Item_Stock_SHT_SCA_3_Desc
-- Item_Stock_SHT_SCA_4 (530, Stock_SHT_SCA_4): Item_Stock_SHT_SCA_4_Desc
-- 手枪快速弹匣 I (531, Magazine_PST_ADS_1): 提高瞄准速度的手枪弹匣。
-- 手枪快速弹匣 II (532, Magazine_PST_ADS_2): 大幅提高瞄准速度的手枪弹匣。
-- 手枪扩容弹匣 I (533, Magazine_PST_CAP_1): 提高枪械载弹量的手枪弹匣。
-- 手枪扩容弹匣 II (534, Magazine_PST_CAP_2): 大幅提高枪械载弹量的手枪弹匣。
-- Item_Magazine_PST_REL_1 (535, Magazine_PST_REL_1): Item_Magazine_PST_REL_1_Desc
-- 冲锋枪快速弹匣 (536, Magazine_SMG_ADS_1): 提高瞄准速度的冲锋枪弹匣。
-- 冲锋枪扩容弹匣 I (537, Magazine_SMG_CAP_1): 提高枪械载弹量的冲锋枪弹匣。
-- 冲锋枪扩容弹匣 II (538, Magazine_SMG_CAP_2): 大幅提高枪械载弹量的冲锋枪弹匣。
-- 冲锋枪扩容弹匣 III (539, Magazine_SMG_CAP_3): 极大幅提高枪械载弹量的冲锋枪弹匣。
-- Item_Magazine_SMG_REL_1 (540, Magazine_SMG_REL_1): Item_Magazine_SMG_REL_1_Desc
-- Item_Magazine_SMG_REL_2 (541, Magazine_SMG_REL_2): Item_Magazine_SMG_REL_2_Desc
-- Item_Magazine_SMG_REL_3 (542, Magazine_SMG_REL_3): Item_Magazine_SMG_REL_3_Desc
-- 步枪快速弹匣 I (543, Magazine_AR_ADS_1): 提高瞄准速度的步枪弹匣。
-- 步枪快速弹匣 II (544, Magazine_AR_ADS_2): 大幅提高瞄准速度的步枪弹匣。
-- Item_Magazine_AR_ADS_3 (545, Magazine_AR_ADS_3): Item_Magazine_AR_ADS_3_Desc
-- 步枪扩容弹匣 I (546, Magazine_AR_CAP_1): 提高枪械载弹量的步枪弹匣。
-- 步枪扩容弹匣 II (547, Magazine_AR_CAP_2): 大幅提高枪械载弹量的步枪弹匣。
-- 步枪扩容弹匣 III (548, Magazine_AR_CAP_3): 极大幅提高枪械载弹量的步枪弹匣。
-- Item_Magazine_AR_CAP_4 (549, Magazine_AR_CAP_4): Item_Magazine_AR_CAP_4_Desc
-- Item_Magazine_AR_REL_1 (550, Magazine_AR_REL_1): Item_Magazine_AR_REL_1_Desc
-- Item_Magazine_AR_REL_2 (551, Magazine_AR_REL_2): Item_Magazine_AR_REL_2_Desc
-- Item_Magazine_AR_REL_3 (552, Magazine_AR_REL_3): Item_Magazine_AR_REL_3_Desc
-- 狙击枪快速弹匣 I (553, Magazine_SNP_ADS_1): 提高瞄准速度的狙击枪弹匣。
-- 狙击枪快速弹匣 II (554, Magazine_SNP_ADS_2): 大幅提高瞄准速度的狙击枪弹匣。
-- Item_Magazine_SNP_ADS_3 (555, Magazine_SNP_ADS_3): Item_Magazine_SNP_ADS_3_Desc
-- 狙击枪扩容弹匣 I (556, Magazine_SNP_CAP_1): 提高枪械载弹量的狙击枪弹匣。
-- 狙击枪扩容弹匣 II (557, Magazine_SNP_CAP_2): 大幅提高枪械载弹量的狙击枪弹匣。
-- Item_Magazine_SNP_CAP_3 (558, Magazine_SNP_CAP_3): Item_Magazine_SNP_CAP_3_Desc
-- Item_Magazine_SNP_REL_1 (559, Magazine_SNP_REL_1): Item_Magazine_SNP_REL_1_Desc
-- Item_Magazine_SNP_REL_2 (560, Magazine_SNP_REL_2): Item_Magazine_SNP_REL_2_Desc
-- 霰弹枪扩容弹匣 I (561, Magazine_SHT_CAP_1): 提高枪械载弹量的霰弹枪弹匣。
-- 霰弹枪扩容弹匣 II (562, Magazine_SHT_CAP_2): 大幅提高枪械载弹量的霰弹枪弹匣。
-- 霰弹枪扩容弹匣 III (563, Magazine_SHT_CAP_3): 极大幅提高枪械载弹量的霰弹枪弹匣。
-- Item_Magazine_SHT_CAP_4 (564, Magazine_SHT_CAP_4): Item_Magazine_SHT_CAP_4_Desc
-- Item_Magazine_SHT_REL_1 (565, Magazine_SHT_REL_1): Item_Magazine_SHT_REL_1_Desc
-- Item_Magazine_SHT_REL_2 (566, Magazine_SHT_REL_2): Item_Magazine_SHT_REL_2_Desc
-- Item_Magazine_SHT_REL_3 (567, Magazine_SHT_REL_3): Item_Magazine_SHT_REL_3_Desc
-- 步枪 4 倍镜 (568, Scope_AR_4X_1): 大幅提高瞄准距离的步枪瞄准镜，但会损失一定后坐力控制与瞄准速度。
-- 狙击枪 8 倍镜 (569, Scope_SNP_8X_1): 极大幅提高瞄准距离的狙击枪瞄准镜，但会损失大量后坐力控制与瞄准速度。
-- 数字瞄具 (570, Scope_All_Digit_1): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。
-- 全息瞄具 (571, Scope_All_Holo_1): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。
-- 快速瞄具 (572, Scope_All_Long_1): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。
-- 红点瞄具 (573, Scope_All_RedDot_1): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。
-- 2 倍镜 (574, Scope_All_2X_1): 提高瞄准距离的瞄准镜，但会损失少量后坐力控制与瞄准速度。
-- Item_Tec_Laser_NON_1 (575, Tec_Laser_NON_1): Item_Tec_Laser_NON_1_Desc
-- 激光-机动 (576, Tec_Laser_ADS_1): 提高瞄准速度与机动性的激光指示器。
-- 激光-快反 (577, Tec_Laser_ADS_2): 大幅提高瞄准速度的激光指示器。
-- 激光-基础 (578, Tec_Laser_SCA_1): 提高腰射散布控制的激光指示器。
-- 激光-校准 (579, Tec_Laser_SCA_2): 大幅提高腰射散布控制的激光指示器。
-- 战术手电 (580, Tec_Flashlight_NON_1): 大幅提高夜间的视野范围。
-- Item_Muzzle_SHT_SCA_2 (583, Muzzle_SHT_SCA_2): Item_Muzzle_SHT_SCA_2_Desc
-- 霰弹枪制退器-机动 (584, Muzzle_SHT_SCA_3): 提高腰射控制的霰弹枪枪口。
-- S-生锈弹 (594, Bullet_SMG_Rusted): 已经略微生锈的制式轻型弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。
-- S-普通弹 (595, Bullet_SMG_Normal): 标准的制式轻型弹。
-- S-燃烧弹 (596, Bullet_SMG_Burn): 装填了可燃成分的轻型弹，造成火伤害。
-- S-穿甲弹 (597, Bullet_SMG_Piercing3): 能够穿透中级护甲的防护的轻型弹。
-- S-高级穿甲弹 (598, Bullet_SMG_Piercing5): 能够穿透高级护甲的防护的轻型弹。
-- S-毒性弹 (599, Bullet_SMG_Poison): 装填了毒性成分的轻型弹，造成毒伤害。
-- S-感电弹 (600, Bullet_SMG_Electric): 装填了金属粉末的轻型弹，造成电伤害。
-- S-空间弹 (601, Bullet_SMG_Space): 用外星科技制造的轻型弹，造成空间伤害。
-- S-肉伤弹 (602, Bullet_SMG_Dumdums): 对肉体能造成大量伤害的轻型弹，但没有穿透护甲的能力。
-- AR-生锈弹 (603, Bullet_AR_Rusted): 已经略微生锈的制式步枪弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。
-- AR-普通弹 (604, Bullet_AR_Normal): 标准的制式步枪弹。
-- AR-燃烧弹 (605, Bullet_AR_Burn): 装填了可燃成分的步枪弹，造成火伤害。
-- AR-穿甲弹 (606, Bullet_AR_Piercing3): 能够穿透中级护甲的防护的步枪弹。
-- AR-高级穿甲弹 (607, Bullet_AR_Piercing5): 能够穿透高级护甲的防护的步枪弹。
-- AR-毒性弹 (608, Bullet_AR_Poison): 装填了毒性成分的步枪弹，造成毒伤害。
-- AR-感电弹 (609, Bullet_AR_Electric): 装填了金属粉末的步枪弹，造成电伤害。
-- AR-空间弹 (610, Bullet_AR_Space): 用外星科技制造的步枪弹，造成空间伤害。
-- AR-肉伤弹 (611, Bullet_AR_Dumdums): 对肉体能造成大量伤害的步枪弹，但没有穿透护甲的能力。
-- L-生锈弹 (612, Bullet_BR_Rusted): 已经略微生锈的制式重型弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。
-- L-普通弹 (613, Bullet_BR_Normal): 标准的制式重型弹。
-- L-燃烧弹 (614, Bullet_BR_Burn): 装填了可燃成分的重型弹，造成火伤害。
-- L-穿甲弹 (615, Bullet_BR_Piercing3): 能够穿透中级护甲的防护的重型弹。
-- L-高级穿甲弹 (616, Bullet_BR_Piercing5): 能够穿透高级护甲的防护的重型弹。
-- L-毒性弹 (617, Bullet_BR_Poison): 装填了毒性成分的重型弹，造成毒伤害。
-- L-感电弹 (618, Bullet_BR_Electric): 装填了金属粉末的重型弹，造成电伤害。
-- L-空间弹 (619, Bullet_BR_Space): 用外星科技制造的重型弹，造成空间伤害。
-- L-肉伤弹 (620, Bullet_BR_Dumdums): 对肉体能造成大量伤害的重型弹，但没有穿透护甲的能力。
-- 生锈狙击弹 (621, Bullet_SNP_Rusted): 已经略微生锈的制式狙击弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。
-- 普通狙击弹 (622, Bullet_SNP_Normal): 标准的制式狙击弹。
-- 燃烧狙击弹 (623, Bullet_SNP_Burn): 装填了可燃成分的狙击弹，造成火伤害。
-- 中级穿甲狙击弹 (624, Bullet_SNP_Piercing3): 能够穿透中级护甲的防护的狙击弹。
-- 高级穿甲狙击弹 (625, Bullet_SNP_Piercing5): 能够穿透高级护甲的防护的狙击弹。
-- 毒性狙击弹 (626, Bullet_SNP_Poison): 装填了毒性成分的狙击弹，造成毒伤害。
-- 感电狙击弹 (627, Bullet_SNP_Electric): 装填了金属粉末的狙击弹，造成电伤害。
-- 空间狙击弹 (628, Bullet_SNP_Space): 用外星科技制造的狙击弹，造成空间伤害。
-- 肉伤狙击弹 (629, Bullet_SNP_Dumdums): 对肉体能造成大量伤害的狙击弹，但没有穿透护甲的能力。
-- 生锈霰弹 (630, Bullet_SHT_Rusted): 已经略微生锈的制式霰弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。
-- 普通霰弹 (631, Bullet_SHT_Normal): 标准的制式霰弹。
-- 燃烧霰弹 (632, Bullet_SHT_Burn): 装填了可燃成分的霰弹，造成火伤害。
-- 穿甲霰弹 (633, Bullet_SHT_Piercing3): 能够穿透中级护甲的防护的霰弹。
-- 高级穿甲霰弹 (634, Bullet_SHT_Piercing5): 能够穿透高级护甲的防护的霰弹。
-- 毒性霰弹 (635, Bullet_SHT_Poison): 装填了毒性成分的霰弹，造成毒伤害。
-- 感电霰弹 (636, Bullet_SHT_Electric): 装填了金属粉末的霰弹，造成电伤害。
-- 空间霰弹 (637, Bullet_SHT_Space): 用外星科技制造的霰弹，造成空间伤害。
-- 肉伤霰弹 (638, Bullet_SHT_Dumdums): 对肉体能造成大量伤害的霰弹，但没有穿透护甲的能力。
-- MAG-生锈弹 (639, Bullet_MAG_Rusted): 已经略微生锈的制式马格南弹药，几乎没有穿甲能力，对于枪械的耐久消耗也较高。
-- MAG-普通弹 (640, Bullet_MAG_Normal): 标准的制式马格南弹药。
-- MAG-燃烧弹 (641, Bullet_MAG_Burn): 装填了可燃成分的马格南弹药，造成火伤害。
-- MAG-中级穿甲弹 (642, Bullet_MAG_Piercing3): 能够穿透中级护甲的防护的马格南弹药。
-- MAG-高级穿甲弹 (643, Bullet_MAG_Piercing5): 能够穿透高级护甲的防护的马格南弹药。
-- MAG-毒性弹 (644, Bullet_MAG_Poison): 装填了毒性成分的马格南弹药，造成毒伤害。
-- MAG-感电弹 (645, Bullet_MAG_Electric): 装填了金属粉末的马格南弹药，造成电伤害。
-- MAG-空间弹 (646, Bullet_MAG_Space): 用外星科技制造的马格南弹药，造成空间伤害。
-- MAG-肉伤弹 (647, Bullet_MAG_Dumdums): 对肉体能造成大量伤害的马格南弹药，但没有穿透护甲的能力。
-- 木矢 (648, Bullet_ARR_Normal): 用树枝制作的箭矢。
-- 爆炸矢 (649, Bullet_ARR_Explosion): 这玩意没有安全爆炸距离。
-- 小能量弹 (650, Bullet_PWS_S): 为能量武器提供少量能量。
-- 激光-暴击 (651, Tec_Laser_CIT_1): 提高爆头伤害的激光指示器。
-- ADAR 2-15 (652, AR_ADAR_Normal): 制式武器的民用版本，虽然威力较低，但有着优秀的稳定性和更好的配件支持。
-- StG 77 (653, AR_AUGA1_Normal): 无托结构设计，短小紧凑后坐力较小，且自带光学瞄准镜。
-- StG 77A3 (654, AR_AUGA3_Normal): StG 77 的改进型，去掉了光学瞄准镜并提高了配件的支持。
-- MP5 (655, SMG_MP5_Normal): 高精度，低后座力的制式冲锋枪，相当适合腰射。
-- SKS-45 (656, BR_SKS_Normal): 结构简单，精度良好的制式步枪。在鸭科夫，威力较大的步枪被称为战斗步枪，即使口径相同也要使用不同的弹药，没人知道理由。
-- TOZ-66 (657, SHT_TOZ66_Normal): 手动装填的双管霰弹枪，一般用来自卫。
-- TOZ-106 (658, SHT_TOZ106_Normal): 单管霰弹枪，可以弹匣换弹。
-- VPO-136 (659, AR_VPO136_Normal): 基于 AK-47 设计的半自动民用步枪，可靠性很高。
-- 烟雾弹 (660, SmokeGrenade): 制造一团遮挡视野的烟雾。
-- 中级武器零件 (662, WeaponPartsLv2): 更高级的枪械零件，能制造更多枪械。
-- 高级武器零件 (663, WeaponPartsLv3): 顶级枪械零件，很多高端武器必不可少的材料。
-- 蓝图：ADAR 2-15 (665, BP_ADAR): 用于在工作台研发武器：ADAR 2-15。
-- 蓝图：StG 77 (666, BP_AUGA1): 用于在工作台研发武器：StG-77。
-- 蓝图：StG 77A3 (667, BP_AUGA3): 用于在工作台研发武器：StG-77A3。
-- 蓝图：MP5 (668, BP_MP5): 用于在工作台研发武器：MP5。
-- 蓝图：SKS (669, BP_SKS): 用于在工作台研发武器：SKS。
-- 蓝图：TOZ-66 (670, BP_TOZ66): 用于在工作台研发武器：TOZ-66。
-- 蓝图：TOZ-106 (671, BP_TOZ106): 用于在工作台研发武器：TOZ-106。
-- 蓝图：VPO-136 (672, BP_VPO136): 用于在工作台研发武器：VPO-136。
-- 蓝图：普通重型弹 (675, BP_Bullet_BR_Normal): 用于制造：L-普通弹。
-- 蓝图：普通狙击弹 (676, BP_Bullet_SNP_Normal): 用于制造：普通狙击弹。
-- 蓝图：普通霰弹 (677, BP_Bullet_SHT_Normal): 用于制造：普通霰弹。
-- 蓝图：MAG-普通弹 (678, BP_Bullet_MAG_Normal): 用于制造：普通反器材弹。
-- 耳机 (679, HeadsetLV1): 能够提高听觉灵敏度，可以听到声音来自于哪个方向。
-- VSS (680, BR_VSS_Normal): 自带消声器和光学瞄准镜，适合用来偷袭老同志，缺点是射程相对有限。
-- AS Val (681, AR_ASVAL_Normal): 自带消音器的特种步枪，射速快，精度高但载弹量有限。
-- DT MDR-556 (682, AR_DTMDR556_Normal): 还在测试阶段的制式步枪，模块化程度非常高，但不知什么原因，本来可以卸下的枪管和黄色的外壳绑定在了一起。
-- DT MDR-762 (683, BR_DTMDR762_Normal): 还在测试阶段的制式战斗步枪，模块化程度非常高，但不知什么原因，本来可以卸下的枪管和黑色的外壳绑定在了一起。
-- S-低级穿甲弹 (688, Bullet_SMG_Piercing2): 能够穿透低级护甲的防护的轻型弹。
-- S-中级穿甲弹 (689, Bullet_SMG_Piercing4): 能够穿透中级护甲的防护的轻型弹。
-- S-高级穿甲弹 (690, Bullet_SMG_Piercing6): 能够穿透高级护甲的防护的轻型弹。
-- S-特种弹 (691, Bullet_SMG_Break): 能够大幅消耗护甲耐久的轻型弹，虽然穿甲能力很低，但可以快速击碎敌人的护甲，使他失去护甲防护，并造成比普通子弹更高的伤害。
-- AR-低级穿甲弹 (692, Bullet_AR_Piercing2): 能够穿透低级护甲的防护的步枪弹。
-- AR-中级穿甲弹 (693, Bullet_AR_Piercing4): 能够穿透中级护甲的防护的步枪弹。
-- AR-特种穿甲弹 (694, Bullet_AR_Piercing6): 能够穿透几乎所有护甲的防护的步枪弹，造成的伤害也更高。
-- AR-碎甲弹 (695, Bullet_AR_Break): 能够大幅消耗护甲耐久的步枪弹，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。
-- L-低级穿甲弹 (696, Bullet_BR_Piercing2): 能够穿透低级护甲的防护的重型弹。
-- L-中级穿甲弹 (697, Bullet_BR_Piercing4): 能够穿透中级护甲的防护的重型弹。
-- L-特种穿甲弹 (698, Bullet_BR_Piercing6): 能够穿透几乎所有护甲的防护的重型弹，造成的伤害与爆头伤害也更高。
-- L-碎甲弹 (699, Bullet_BR_Break): 能够大幅消耗护甲耐久的重型弹，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。
-- 穿甲狙击弹 (700, Bullet_SNP_Piercing2): 能够穿透低级护甲的防护的狙击弹。
-- 高级穿甲狙击弹 (701, Bullet_SNP_Piercing4): 能够穿透中级护甲的防护的狙击弹。
-- 特种穿甲狙击弹 (702, Bullet_SNP_Piercing6): 能够穿透几乎所有护甲的防护的狙击弹，造成的爆头伤害也更高。
-- 碎甲狙击弹 (703, Bullet_SNP_Break): 能够大幅消耗护甲耐久的狙击弹，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。
-- 低级穿甲霰弹 (704, Bullet_SHT_Piercing2): 能够穿透低级护甲的防护的霰弹。
-- 中级穿甲霰弹 (705, Bullet_SHT_Piercing4): 能够穿透中级护甲的防护的霰弹。
-- 高级穿甲霰弹 (706, Bullet_SHT_Piercing6): 能够穿透高级护甲的防护的霰弹。
-- 特种霰弹 (707, Bullet_SHT_Break): 对肉体能造成大量伤害的霰弹，也非常容易使命中的敌人流血，但没有穿透护甲的能力。
-- MAG-穿甲弹 (708, Bullet_MAG_Piercing2): 能够穿透低级护甲的防护的马格南弹药。
-- MAG-高级穿甲弹 (709, Bullet_MAG_Piercing4): 能够穿透中级护甲的防护的马格南弹药。
-- MAG-特种穿甲弹 (710, Bullet_MAG_Piercing6): 能够穿透几乎所有护甲的防护的马格南弹药，造成的伤害与爆头伤害也更高。
-- MAG-碎甲弹 (711, Bullet_MAG_Break): 能够大幅消耗护甲耐久的马格南弹药，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。
-- 手枪增伤枪口 (712, Muzzle_PST_DAM_1): 大幅提高枪械伤害的手枪枪口，但会损失少量后坐力控制。
-- 冲锋枪增伤枪口 (713, Muzzle_SMG_DAM_1): 大幅提高枪械伤害的冲锋枪枪口，但会损失少量后坐力控制。
-- 步枪增伤枪口 (714, Muzzle_AR_DAM_1): 大幅提高枪械伤害的步枪枪口，但会损失少量后坐力控制。
-- 狙击枪增伤枪口 (715, Muzzle_SNP_DAM_1): 大幅提高枪械伤害的狙击枪枪口，但会损失少量后坐力控制。
-- 霰弹枪增伤枪口 (716, Muzzle_SHT_DAM_1): 大幅提高枪械伤害的霰弹枪枪口，但会损失少量后坐力控制。
-- 冲锋枪腰射枪托 II (717, Stock_SMG_SCA_4): 极大幅加强腰射散布控制的冲锋枪枪托。
-- GPNVG-18 夜视仪 (718, NightVisionGoggles): 视野很好的夜视仪。看起来像白天一样。
-- T-7 热成像目镜 (719, ThermalVisionGoggles): 这玩意凭啥这么贵？
-- 带电 MP7 (733, SMG_MP7_Electric): 缠了节电池的 MP7，发射的子弹为电属性。真是震撼人心的鸭星科技啊！
-- Bizon-2 (734, SMG_PP19Bizon_Normal): 使用螺旋弹匣，载弹量相当大，非常适合用于火力压制。
-- PPSh (735, SMG_PPSH_Normal): 非常均衡的制式冲锋枪。
-- SR-3M (736, SMG_SR3M_Normal): 换弹速度快，持续伤害能力相当不错的制式冲锋枪，但射程相对有限。常见的版本自带消音器，但这把好像卸了。
-- Vector (737, SMG_Vector9_Normal): 使用特殊设计，在保证射速和威力的同时，提高了后坐力控制与稳定性。
-- 配方：急救箱 (738, Formula_FirstAidKit_M): 在医疗站制造急救箱的配方。
-- 白大褂 (740, WhiteGown): J-LAB 研究人员穿的白大褂。
-- 黑色眼镜 (741, Glass): 看起来很有学问。
-- 闪光的眼镜 (742, GlassShiny): 散发着反派的气质。
-- 有机纤维 (743, fiber): 很结实的纤维线，可以用来制作很多东西。
-- 太阳镜 (744, SunGlass): 金边太阳镜，浮夸。
-- 维生系统线索 (745, Quest_Letter_LifeSupportClue): 线人留下的维生系统线索，字迹有些潦草，感觉只有杰夫能看得懂。
-- 标记器 (746, Marker): 持续发射坐标的装置，采用蛋清及太阳能双重供电模式，据说续航能达到 1 万年。
-- 空气循环单元 (747, Quest_AirCirculationUnit): 飞船维生系统的重要组成部分。
-- 高性能计算单元 (748, ComputingUnit): 算力高达 1EFLOPS。
-- 蓝图：高性能计算单元 (749, BP_ComputingUnit): 用于研发高性能计算单元。
-- 大型主板 (750, Quest_HugeMotherBoard): 可以发挥高性能计算单元的全部性能。
-- 爱狗的项圈 (751, Quest_DogCollar): 上面好像还残留了一些血迹。
-- 飞船推进器图纸（加密） (753, Quest_Blueprint_Thrusters_Encrypted): 非常复杂，不是专业人士完全看不懂。
-- J-Lab 一级凭证 (754, Key_Card_JLabLv1): J-Lab 实验人员持有的一次性凭证，只能进入最外围的区域。
-- J-Lab 二级凭证 (755, Key_Card_JLabLv2): 可以进入实验室的核心区域的一次性凭证。
-- J-Lab 三级凭证 (756, Key_Card_JLabLv3): 拥有实验室最高权限的一次性凭证，可以进入实验室的机密区域。
-- 矢量推进器研究日志 (757, Quest_ResearchDocument_Thrusters): 记录了矢量推进器实验进程，其中并没有写明实验结果，也没有看到推进器的图纸，但其余内容写的非常详细，让人觉得这人的记性不太好。
-- 矿长的虹膜信息 (758, Key_Eyeball_Jlab): 因为头没有被打爆，所以完好的保存了下来。
-- 工棚钥匙 (759, Key_ThrusterResearcherHome): 用来打开建筑工地工棚的钥匙。
-- 导航系统图纸 (760, Quest_Blueprint_NavigationSystem): 飞船导航系统的图纸。
-- 星图 (761, Quest_StarMap1): 宇宙星图，但并不完整。
-- 星图碎片 Part2 (762, Quest_StarMap2): 宇宙星图，但并不完整。
-- 星图碎片 Part3 (763, Quest_StarMap3): 宇宙星图，但并不完整。
-- 聚乙烯片 (764, Plastics): 很难降解的塑料碎片。
-- 胶带 (765, DuctTape): 胶带，用途广泛。
-- 宇宙级防御力场蓝图（加密） (766, Quest_Blueprint_DefenceShield_BlackMarket): 超绝防护力，星际旅行必备！
-- 能量重塑装置 (767, TransformDevice): 能够重塑蛋清能量的特殊装置，原理不明，来源不明。
-- 能源球 (768, EnergyBall): 重塑后更容易被利用的蛋清能源，能量巨大，性质稳定。
-- 蛋清能源碎片 (769, EggWhiteEnergyPieces): 从裂缝中溢出的物质，蕴含着巨大的能量，但很难直接利用。
-- 警棍 (772, PoliceStick): 守卫用的警棍。
-- 高性能计算单元蓝图（加密） (774, Quest_Blueprint_ComputingUnit_Encrypted): 用以开发高性能计算单元的蓝图，但被算法加密了，看不太懂。
-- 5000w 电源 (775, Quest_Power_ComputingUnit): 电源侧面印了一个大大的红星。
-- 霰弹枪重型消音器 (776, Muzzle_SHT_SIL_1): 降低开枪时声响并提高散布控制的霰弹枪枪口，但会损失移动速度。
-- 狙击枪快速枪托 (777, Stock_SNP_MOV_1): 大幅提高瞄准速度与机动性的狙击枪枪托。
-- 大型散热器 (778, Quest_Cooling_ComputingUnit): 拥有巨大的散热鳍片以及风扇，但好像只有两根热管。
-- 家门钥匙 01 (779, Key_Farm_JLabStaffHome): 不知道是谁的家。
-- M700 (780, Sniper_M700_Normal): 被广泛运用的狙击步枪。
-- Mosin-Nagant (781, Sniper_Mosin_Normal): 经典耐用的狙击步枪，爆头伤害非常高。
-- SV98 (782, Sniper_SV98_Normal): 各方面都非常优秀的狙击步枪，射程上更是相当突出。
-- TT-33 (783, PST_TT33_Normal): 各方面性能都非常一般的制式手枪，但由于结构相当简单，所以价格相当便宜。
-- PM (784, PST_PM_Normal): 轻巧便携的制式手枪。
-- 沙漠之鹰 (785, MAG_Desert_Normal): 虽然是手枪的尺寸用的也是手枪的配件，但使用大威力的马格南弹药。
-- M1A (786, BR_M1A_Normal): M14 的民用版本，射程远、精度高，但重量也较高。
-- M14 (787, BR_M14_Normal): 制式精准战斗步枪，虽然是半自动，但有很高的射速上限。
-- MCX Spear (788, AR_MCXSpear_Normal): 自带火控系统的战斗步枪，除了贵，很难找到缺点。
-- 一级防火服 (790, ArmorLV1Fire): 强化了防火性能的护甲，虽然对于子弹的防护能力提升不多，但可以大幅降低受到的火伤害。
-- 皮夹克 (791, Jacket): 用坚固的皮革制作，虽然是民用的衣服，但足够防护一些劣等子弹。
-- 配方：黄针 (793, Formula_Injection_A): 可以大幅提高移动速度的针剂的配方。
-- 配方：负重针 (794, Formula_Injection_Weight): 可以大幅提高负重的针剂的配方。
-- 民房钥匙 (795, Key_HiddenWarehouse_RBHouse): 仓库区某处民房的钥匙。
-- 蓝图：T-7 热成像目镜 (796, BP_ThermalVisionGoggles): 用于制造 T-7 热成像目镜的蓝图。
-- 硬化针 (797, Injection_StoneSkin): 使毛发与皮肤变硬，身体护甲提高 0.25，持续 120 秒。
-- 持久针 (798, Injection_Stamina): 提高耐力回复并降低耐力消耗，但会加快水分的消耗，持续 120 秒。
-- 紫外灯 (799, UVBulb2): 可以发射紫外线的灯，一定程度上可以代替太阳光。
-- 近战针 (800, Injection_MeleeDamage): 大幅提高近战伤害，但持续时间很短，效用过了还会萎靡一段时间。
-- J-Lab 门禁卡（黄） (801, Key_Card_Yellow): 可以进入 J-Lab 中的特殊区域。
-- J-Lab 门禁卡（红） (802, Key_Card_Red): 可以进入 J-Lab 中的特殊区域。
-- J-Lab 门禁卡（绿） (803, Key_Card_Green): 可以进入 J-Lab 中的特殊区域。
-- J-Lab 门禁卡（蓝） (804, Key_Card_Blue): 可以进入 J-Lab 中的特殊区域。
-- 蓝图：VSS (805, BP_VSS): 用于在工作台研发武器：VSS。
-- 蓝图：AS Val (806, BP_ASVAL): 用于在工作台研发武器：AS Val。
-- 蓝图：DT MDR-556 (807, BP_DTMDR556): 用于在工作台研发武器：DT MDR-556。
-- 蓝图：DT MDR-762 (808, BP_DTMDR762): 用于在工作台研发武器：DT MDR-762。
-- 蓝图：带电 MP7 (809, BP_MP7_Electric): 用于在工作台研发武器：带电 MP7。
-- 蓝图：Bizon-2 (810, BP_PP19Bizon): 用于在工作台研发武器：Bizon-2。
-- 蓝图：PPSh (811, BP_PPSH): 用于在工作台研发武器：PPSh。
-- 蓝图：SR-3M (812, BP_SR3M): 用于在工作台研发武器：SR-3M。
-- 蓝图：Vector (813, BP_Vector9): 用于在工作台研发武器：Vector。
-- 蓝图：M700 (814, BP_M700): 用于在工作台研发武器：M700。
-- 蓝图：Mosin-Nagant (815, BP_Mosin): 用于在工作台研发武器：Mosin-Nagant。
-- 蓝图：SV98 (816, BP_SV98): 用于在工作台研发武器：SV98。
-- 蓝图：TT-33 (817, BP_TT33): 用于在工作台研发武器：TT-33。
-- 蓝图：PM (818, BP_PM): 用于在工作台研发武器：PM。
-- 蓝图：沙漠之鹰 (819, BP_Desert): 用于在工作台研发武器：沙漠之鹰。
-- 蓝图：M1A (820, BP_M1A): 用于在工作台研发武器：M1A。
-- 蓝图：M14 (821, BP_M14): 用于在工作台研发武器：M14。
-- 蓝图：MCX Spear (822, BP_MCXSpear): 用于在工作台研发武器：MCX Spear。
-- MF 蓝图碎片 1 (823, Quest_BlueprintPieces_MF_1): 用于研发步枪：MF 的蓝图碎片。
-- MF 蓝图碎片 2 (824, Quest_BlueprintPieces_MF_2): 用于研发步枪：MF 的蓝图碎片。
-- MF 蓝图碎片 3 (825, Quest_BlueprintPieces_MF_3): 用于研发步枪：MF 的蓝图碎片。
-- 南厂区钥匙卡 (826, Key*Card* SouthFactory): 南厂区员工的门禁卡。
-- 神秘钥匙 X (827, Key_MysteryX): 一把神秘的钥匙，上面刻着奇怪的符号，看上去像字母 X。
-- 神秘钥匙 O (828, Key_MysteryO): 一把神秘的钥匙，上面刻着奇怪的符号，看上去像字母 O。
-- 神秘 Z 钥匙 (829, Key_MysteryZ): 一把神秘的钥匙，上面刻着奇怪的符号，看上去像字母 Z。
-- 蓝图：夜视仪 (830, BP_NightVisionGoggles): 用于制造夜视仪的蓝图。
-- 超市隔间钥匙 (831, Key_Farm_SuperMarketSmallRoom): 农场镇超市中小隔间的钥匙。
-- 餐厅隔间钥匙 (832, Key_Farm_RestaurantSmallRoom): 农场镇餐厅中小隔间的钥匙。
-- 万能胶 A (833, UniversalGlueA): 能够粘合一切的胶水，但需要与万能胶 B 配合使用才能发挥效用。
-- 万能胶 B (834, UniversalGlueB): 能够粘合一切的胶水，但需要与万能胶 A 配合使用才能发挥效用。
-- 快递 (835, Quest_DeliverBox_DestoryOnBase): 赶紧送到收货人那！可别带回基地了！
-- 钥匙包 (836, KeyRing): 可以放八把钥匙。
-- BR 快速弹匣 I (837, Magazine_BR_ADS_1): 提高瞄准速度的 BR 弹匣。
-- BR 快速弹匣 II (838, Magazine_BR_ADS_2): 大幅提高瞄准速度的 BR 弹匣。
-- BR 扩容弹匣 I (839, Magazine_BR_CAP_1): 提高枪械载弹量的 BR 弹匣。
-- BR 扩容弹鼓 II (840, Magazine_BR_CAP_2): 大幅提高枪械载弹量的 BR 弹匣。
-- 麻布头套 (841, Xing): 说是头套，其实是个麻袋，有人在上面写了个大大的“兴”字。
-- 配方：紫外灯 (842, Formula_UVBulb2): 在工作台制作紫外灯的配方。
-- 配方：红色大桶 (843, Formula_Drum1): 在工作台制作红色大桶的配方。
-- 配方：蓝色大桶 (844, Formula_Drum2): 在工作台制作蓝色大桶的配方。
-- 配方：黄色大桶 (845, Formula_Drum3): 在工作台制作黄色大桶的配方。
-- 配方：金属油桶 (846, Formula_Drum4): 在工作台制作金属大桶的配方。
-- 遮眼布 (848, Blindfold): 以眼盲，换明心。
-- 船票 (849, BoatTicket): 往返于零号区下水道与农场镇码头的船票。
-- Item_Bullet_Enemy_Piercing1 (850, Bullet_Enemy_Piercing1): Item_Bullet_Enemy_Piercing1_Desc
-- Item_Bullet_Enemy_Piercing2 (851, Bullet_Enemy_Piercing2): Item_Bullet_Enemy_Piercing2_Desc
-- Item_Bullet_Enemy_Piercing3 (852, Bullet_Enemy_Piercing3): Item_Bullet_Enemy_Piercing3_Desc
-- Item_Bullet_Enemy_Piercing4 (853, Bullet_Enemy_Piercing4): Item_Bullet_Enemy_Piercing4_Desc
-- Item_Bullet_Enemy_Piercing5 (854, Bullet_Enemy_Piercing5): Item_Bullet_Enemy_Piercing5_Desc
-- Item_Bullet_Enemy_Piercing6 (855, Bullet_Enemy_Piercing6): Item_Bullet_Enemy_Piercing6_Desc
-- 弱效空间风暴防护针 (856, Injection_StormProtection1): 可以抵御风暴早期扰动的针剂，持续 120 秒，配合防护装备使用，则可以抵御风暴。
-- 测试用空间风暴防护针 (857, Injection_StormProtection2): 测试用的强效空间针剂，可以抵抗扭曲，持续 120 秒。
-- 空间防护服 (858, ArmorLV4StormProtection): 经过 J-Lab 特殊改造的衣服，单独穿着就可以抵抗空间扰动，如果凑成一套，甚至可以抵抗空间扭曲。
-- 空间防护头盔 (859, HelmatLV3StormProtection): 经过 J-Lab 特殊改造的头盔，单独穿着就可以抵抗空间扰动，如果凑成一套，甚至可以抵抗空间扭曲。
-- 空间晶体 (860, SpaceCrystal): 只有在空间风暴中才会出现的晶体，J-Lab 曾对其做过长期研究，有传言他们的飞船技术就来源于此。
-- 被污染的武器零件 (861, WeaponPartsPolluted): 被空间风暴侵蚀的武器零件，但对于某些特殊的枪械来说是必不可少的材料。
-- 带火 AK-47 (862, AR_AK47_Fire): 被空间风暴侵蚀的 AK，觉醒了特殊的属性。
-- 蓝图：带火 AK47 (863, BP_AR_AK47_Fire): 用于在高级工作台研发武器：带火 AK-47。
-- 火药 (864, GunPowder): 易燃危险！
-- 配方：管状炸弹 (865, Formula_Dynamite): 在工作台制作管状炸弹的配方。
-- 配方：集束管状炸弹 (866, Formula_DynamiteMultiple): 在工作台制作集束管状炸弹的配方。
-- 蓝图：Glick (867, BP_GLick): 用于在工作台研发武器：格力克。
-- 挑战船票 (868, DemoChallengeTicket): 九死一生，一旦倒在那，掉落的东西会被立马收走，一件不剩。
-- 连珠弓 (869, ARR_BurstBow_Normal): 可以一次性射出三支箭的弓，咻咻咻！
-- 低级穿甲箭 (870, Bullet_ARR_Piercing2): 能够穿透低级护甲的防护的箭矢。
-- 中级穿甲箭 (871, Bullet_ARR_Piercing4): 能够穿透中级护甲的防护的箭矢。
-- 强翅针 (872, Injection_RecoilControl): 短时间内强化翅膀力量，提高后坐力与散布控制能力，持续 60 秒。
-- 配方：被污染的武器零件 (873, Formula_WeaponPartsPolluted): 在工作台制作被污染的武器零件的配方。
-- 配方：大扩容箱 (874, Formula_ContinerL): 在工作台制作大扩容箱的配方。
-- 恢复针 (875, Injection_Healing): 每秒恢复血量，持续 30 秒。
-- MP-155 ULTIMA (876, SHT_MP155M_Normal): 现代化版本的 MP-155，几乎在所有方面都有提升。
-- 蓝图：MP-155 ULTIMA (877, BP_MP155M): 用于在工作台研发武器：MP-155 ULTIMA。
-- 蘑菇 (878, mushroom): 红伞伞，白杆杆。
-- ??? (879, EGun_Magic_Ring): ???
-- Item_PaperBoxArmor (880, PaperBoxArmor): Item_PaperBoxArmor_Desc
-- 纸箱子 (881, PaperBox): 足够大的纸箱子。
-- 注射器收纳包 (882, InjectionBag): 可以装 6 种针，用的时候需要把针拿出来。
-- 蛋白粉 (883, ProteinPowder): 从鸭蛋中浓缩提取，是健身鸭们的好朋友。
-- 配方：蛋白粉 (884, Formula_ProteinPowder): 在工作台制作蛋白粉的配方。
-- 六级防弹衣 (885, ArmorLV6): 能提供无与伦比的防护力，但十分沉重。
-- J-Lab 门禁卡（黑） (886, Key_Card_Black): 可以进入 J-Lab 中的特殊区域。
-- J-Lab 门禁卡（紫） (887, Key_Card_Purple): 可以进入 J-Lab 中的特殊区域。
-- 苹果 (888, Apple): 一天一苹果。
-- 维达头盔 (889, Helmat_Vida): 维达的头盔，里头有点闷，视野也不太好。
-- 狗牌 (890, BlackDogTag): 雇佣兵身上带着的身份识别牌，但好像都是一样的。
-- 路障头盔 (891, Helmat_Roadblock): 不知道为什么，反正它就叫这个名字。
-- ??? (892, EnemyGun_RoadBlock_Rifle): ???
-- 空手 (893, AnimalWeapon_Invisable): Item_AnimalWeapon_Desc
-- 噗咙防弹衣 (894, Armor_SBossPhysical_ResPoison): 实验体噗咙噗咙穿着的防弹衣。噗咙噗咙的这套装备对物理和毒属性有很好的防御能力，但对其他属性的防护能力都非常堪忧。
-- 噗咙头盔 (895, Helmat_SBossPhysical_ResPoison): 实验体噗咙噗咙穿着的头盔。噗咙噗咙的这套装备对物理和毒属性有很好的防御能力，但对其他属性的防护能力都非常堪忧。
-- 咕噜防弹衣 (896, Armor_SBossPoison_LowDurResFire): 实验体咕噜咕噜穿着的防弹衣。咕噜咕噜的这套装备防护能力很强且对火和毒属性有很好的防御能力，但耐久度相当堪忧且极易被电属性伤害。
-- 咕噜头盔 (897, Helmat_SBossPoison_LowDurResFire): 实验体咕噜咕噜穿着的头盔。啪啦啪啦的这套装备防护能力很强且对火和毒属性有很好的防御能力，但耐久度相当堪忧且极易被电属性伤害。
-- ??? (898, EGun_StormBoss_1_BreakArmor): ???
-- Item_EGun_StormBoss_2_Poison (899, EGun_StormBoss_2_Poison): Item_EGun_StormBoss_2_Poison_Desc
-- Item_EGun_StormBoss_3_Fire (900, EGun_StormBoss_3_Fire): Item_EGun_StormBoss_3_Fire_Desc
-- Item_EGun_StormBoss_4_Electric (901, EGun_StormBoss_4_Electric): Item_EGun_StormBoss_4_Electric_Desc
-- \?\?\? (902, EGun_StormBoss_5_Space): Item_EGun_StormBoss_5_Space_Desc
-- 啪啦防弹衣 (908, Armor_SBossFire_ResElec): 实验体啪啦啪啦穿着的防弹衣。啪啦啪啦的这套装备对火和电属性有很好的防御能力，但极易被毒属性伤害。
-- 比利防弹衣 (909, Armor_SBossElec_ResSpace): 实验体比利比利穿着的防弹衣。比利比利的这套装备对电和空间属性有很好的防御能力，但极易被火属性伤害。
-- 口口防弹衣 (910, Armor_SBossSpace): Item_Armor_SBossSpace_Desc
-- 啪啦头盔 (911, Helmat_SBossFire_ResElec): 实验体啪啦啪啦穿着的头盔。啪啦啪啦的这套装备对火和电属性有很好的防御能力，但极易被毒属性伤害。
-- 比利头盔 (912, Helmat_SBossElec_ResSpace): 实验体比利比利穿着的头盔。比利比利的这套装备对电和空间属性有很好的防御能力，但极易被火属性伤害。
-- 口口头盔 (913, Helmat_SBossSpace): Item_Helmat_SBossSpace_Desc
-- 咕噜枪 (914, PST_StormBoss_Poison): 伤害虽然不高，但非常容易让命中的目标中毒。
-- 风暴枪 (915, BR_Storm_Space): 凝结了 J-lab 对于风暴的几乎所有研究。
-- 啪啦枪 (916, MG_StormBoss_Fire): 载弹量相当巨大，有极强的火力压制能力。
-- 比利枪 (917, SHT_StormBoss_Elec): 带着强力的电流，发出哔哩哔哩的声音。
-- 大型能量弹 (918, Bullet_PWL_L): 为大型能量枪提供能量。
-- 测试种子 (919, TestSeed): 能种出苹果、胡萝卜、土豆。
-- 空间防护服终极版 (920, ArmorLV5StormProtection): J-lab 空间防护服反复迭代后的最终产品。在保证原有抵抗风暴的性能同时，大幅提高了其防护性能与空间伤害的防护能力且每 1 秒会清除身上一层碎裂。
-- 空间防护头盔最终版 (921, HelmatLV5StormProtection): J-lab 空间防护头盔反复迭代后的最终产品。在保证原有抵抗风暴的性能同时，大幅提高了其防护性能与空间伤害的防护能力。
-- 蛇形武装 (922, Cartridge_Snake): 游戏卡带：蛇形武装，听说这游戏在蒸发平台上有 97%的好评！但总感觉这个“形”有点不太对劲。
-- 未来主机 (923, FutureConsole): 未来主机 Future Console，好像只能渲染 2D 游戏。
-- Item_GameTable (924, GameTable): Item_GameTable_Desc
-- 黑白显示器 (925, MonochromeMonitor): 只能显示黑白内容的显示器。
-- 加速卡 (926, AcceleratorCard): 可以让未来主机渲染 3D 画面。
-- 碳酸危鸭 (927, Cartridge_BubblePop): 游戏卡带：碳酸危鸭，游戏名字的灵感来源于 J-lab 的那些实验体。
-- Item_Cartridge_FactoryPanicShock (928, Cartridge_FactoryPanicShock): Item_Cartridge_FactoryPanicShock_Desc
-- 鸭鸭矿工 (929, Cartridge_GoldMiner): 游戏卡带：鸭鸭矿工，这下挖矿不需要显卡了。
-- 彩色显示器 (930, ColorMonitor): 可以显示彩色内容的显示器。
-- ??? (931, EGun_Magic_Ring_Mushroom): ???
-- 小石头 (932, Stone): 可以发出声响，吸引敌人。
-- 毒雾弹 (933, ToxGrenade): 可以放出毒烟，在烟雾中会中毒，受到持续伤害。
-- Item_Helmat_Soda_battery1 (934, Helmat_Soda_battery1): Item_Helmat_Soda_battery1_Desc
-- Item_Helmat_Soda_battery2 (935, Helmat_Soda_battery2): Item_Helmat_Soda_battery2_Desc
-- 罐子头盔 (936, Helmat_Soda_Bucket): 非常硬的头盔，但是戴上就看不见了，也挡不了几颗子弹。
-- Item_Helmat_Soda_Displayer (937, Helmat_Soda_Displayer): Item_Helmat_Soda_Displayer_Desc
-- 粑粑 (938, Shit): 臭臭的，但好像有东西喜欢这个。
-- 粑粑 (939, Shit_Fly): 臭臭的，但好像有东西喜欢这个。
-- 粑粑 (940, Shit_FlyBoss): 臭臭的，但好像有东西喜欢这个。
-- 燃烧弹 (941, FireGrenade): 内部装满了燃料，可以点燃地面。
-- 电击手雷 (942, ElecGrenade): 储存着电力的强力手雷，能造成无视护甲的电属性伤害，对机械类敌人特别有效。
-- 噗噗枪 (943, Poop_ShitGun_Poison): 蝇蝇队员携带的枪，使用的子弹有些特殊。
-- 粑粑弹 (944, Bullet_Poop_Normal): 将屎分成了小份，这样就能塞进枪里了。
-- 蝇蝇翅膀 (945, Backpack_Fly_Wing): 蝇蝇队所用的背包，重量相当轻，还能大幅提高负重能力，就是空间相当小。
-- 噗噗喷 (946, Poop_ShotShitGun_Poison): 蝇蝇队长携带的枪，使用的子弹有些特殊。
-- 图腾:甲胄 Ⅲ (947, Totem_Armor 3): 极大提高防护属性，但受到的属性伤害也会提高。
-- 图腾:攻击 II (948, Totem_Attack 2): 造成的基础伤害提高。
-- 图腾:攻击 Ⅲ (949, Totem_Attack 3): 造成的基础伤害大幅提高，但对枪械的后坐力控制下降。
-- 图腾:攻击 I (950, Totem_Attack): 造成的基础伤害小幅提高。
-- 图腾:抗电 Ⅲ (951, Totem_ElecResist 3): 免疫触电并略微降低受到的电属性伤害。
-- 图腾：马拉松 Ⅱ (952, Totem_FinalDash 2): 减少耐力消耗。
-- 图腾：马拉松 Ⅲ (953, Totem_FinalDash 3): 大幅减少耐力消耗。
-- 图腾:抗火 Ⅱ (954, Totem_FireResist 2): 免疫点燃。
-- 图腾:抗火 Ⅲ (955, Totem_FireResist 3): 免疫点燃并略微降低受到的火属性伤害。
-- 图腾:抗火 Ⅰ (956, Totem_FireResist): 降低受到的火属性伤害。
-- 图腾:进击 Ⅲ (957, Totem_GunDamage 3): 巨幅提高枪械的伤害，但会降低枪械的射程。
-- 图腾:恢复 Ⅱ (958, Totem_Healing 2): 若 10 秒内未受到伤害，缓慢中幅回复生命值。
-- 图腾:恢复 Ⅲ (959, Totem_Healing 3): 若 10 秒内未受到伤害，缓慢大幅回复生命值，但水分和能量的消耗速度会提高。
-- 图腾:恢复 Ⅰ (960, Totem_Healing): 若 10 秒内未受到伤害，缓慢小幅回复生命值。
-- 图腾:生命 Ⅱ (961, Totem_MaxHealth 2): 中幅提高最大生命值。
-- 图腾:生命 Ⅲ (962, Totem_MaxHealth 3): 巨幅提高最大生命值，但移动速度会略微下降。
-- 图腾:生命 Ⅰ (963, Totem_MaxHealth): 小幅提高最大生命值。
-- 图腾:忍者 Ⅲ (964, Totem_Ninja 3): 大幅降低奔跑时的声音传播距离。
-- 图腾:抗物 Ⅱ (965, Totem_PhysicResist 2): 降低受到的物理伤害。
-- 图腾:抗物 Ⅲ (966, Totem_PhysicResist 3): 免疫流血并小幅降低受到的物理伤害。
-- 图腾:抗毒 Ⅱ (967, Totem_PoisonResist 2): 免疫中毒。
-- 图腾:抗毒 Ⅲ (968, Totem_PoisonResist 3): 免疫中毒并小幅降低受到的毒属性伤害。
-- 图腾:抗毒 Ⅰ (969, Totem_PoisonResist): 降低受到的毒属性伤害。
-- 图腾:抗空间 Ⅱ (970, Totem_SpaceResist 2): 免疫因空间属性子弹而受到的碎裂效果，但无法免疫空间风暴，且最大生命值会降低。
-- 图腾:抗空间 Ⅲ (971, Totem_SpaceResist 3): 免疫因空间属性子弹而受到的碎裂效果，但无法免疫空间风暴。
-- 图腾:抗空间 Ⅰ (972, Totem_SpaceResist): 降低受到的空间伤害。
-- 蝇蝇眼镜 (973, FaceMask_Fly_Eye): 蝇蝇队戴着的眼镜，特殊的构造可以让他们更轻易地发现他们的食物。
-- 图腾:效率 Ⅲ (974, Totem_Efficiency 3): 食物和医疗物品的效果提高。
-- 图腾:效率 Ⅰ (975, Totem_Efficiency): 食物的效果提高。
-- 图腾:控枪 Ⅱ (976, Totem_GunControl 2): 大幅降低枪械的散布。
-- 图腾:控枪 Ⅲ (977, Totem_GunControl 3_N): 降低枪械的后坐力与散布。
-- 图腾:控枪 Ⅰ (978, Totem_GunControl): 大幅降低枪械的后坐力。
-- 图腾:爆头 Ⅱ (979, Totem_GunCritDamage 2): 大幅提高枪械的爆头伤害。
-- 图腾:爆头 Ⅲ (980, Totem_GunCritDamage 3): 巨幅提高枪械的爆头伤害，但枪械的散布会增加。
-- 图腾:爆头 Ⅰ (981, Totem_GunCritDamage): 提高枪械的爆头伤害。
-- 图腾:狙击 Ⅱ (982, Totem_GunDistance 2): 大幅提高枪械射程。
-- 图腾:狙击 Ⅲ (983, Totem_GunDistance 3): 大幅提高枪械的射程与视野距离，但移动速度会略微下降。
-- 图腾:狙击 Ⅰ (984, Totem_GunDistance): 大幅提高视野距离。
-- 图腾:战士 Ⅲ (985, Totem_MeleeAttack 3): 大幅增加近战输出，但近战的暴击伤害会降低。
-- 图腾:狂战 Ⅱ (986, Totem_MeleeCritRate 2): 近战暴击概率大幅提高。
-- 图腾:狂战 Ⅲ (987, Totem_MeleeCritRate 3): 近战暴击概率极大幅提高，但近战伤害倍率降低。
-- 图腾:狂战 Ⅰ (988, Totem_MeleeCritRate): 近战暴击概率提高。
-- 图腾:感知 Ⅱ (989, Totem_SenseRange 2): 提高感知能力。
-- 图腾:感知 Ⅲ (990, Totem_SenseRange 3): 当前感知能力越强提升越多的感知能力。
-- 图腾:感知 Ⅰ (991, Totem_SenseRange): 小幅提高感知能力。
-- 图腾:轻盈Ⅲ (992, Totem_Speed 3): 大幅提高移动速度，但会持续损失生命。
-- 图腾:轻盈 Ⅰ (993, Totem_Speed): 小幅增加移动能力。
-- 图腾:健壮 Ⅱ (994, Totem_Strong 2): 大幅增加背包容量。
-- 图腾:健壮 Ⅰ (995, Totem_Strong): 大幅提高负重能力。
-- 洋蓟 (996, Aritichoke): 高端的食材，烹饪方法也不太普通。
-- 茄子 (997, Aubergine): 请不要拿它做奇怪的事情。
-- 香蕉 (998, Banana): 可以快速补充能量。
-- 花椰菜 (999, Cauliflower): 热量很低，健身人士的最爱。
-- 樱桃 (1000, Cherry): 红红的，很甜。
-- 辣椒 (1001, Chilli): 看起来就相当辣。
-- 椰子 (1002, Coconut): 开个孔就能喝到清甜的椰子水。
-- 玉米 (1003, Corn): 非常好的能量来源，很适合拿来当作主食。
-- 黄瓜 (1004, Cucumber): 清醒爽脆，是相当著名的负卡食物。
-- 大蒜 (1005, Garlic): 跟肉是绝配。
-- 葡萄 (1006, Grape): 很好吃，还能用来酿酒。
-- 韭葱 (1007, Leek): 长得很像大葱，但味道更柔和一些。
-- 柠檬 (1008, Lemon): 很酸，但是没有它不能搭配的饮料。
-- 芒果 (1009, Mango): 很甜，非常适合做成甜品。
-- 洋葱 (1010, Onion): 一想到要切开它，眼泪就会不自主地流下来。
-- 橙子 (1011, Orange): 酸酸的，维生素含量很高。
-- 梨 (1012, Pear): 水分充足，听说还能润肺止咳。
-- 菠萝 (1013, Pineapple): 酸甜可口，但吃之前最好先用盐水浸泡一下。
-- 杨桃 (1015, Starfruit): 切开之后是个漂亮的五角星。
-- 草莓 (1016, Strawberry): 好看又好吃。
-- 西红柿 (1017, Tomato): 非常万能的蔬菜，能做各种各样的料理，直接吃味道也相当不错。
-- 西瓜 (1018, Watermelon): 没有西瓜的夏天是不完整的。
-- 苹果的种子 (1019, Seed_Apple): 能种出苹果。
-- 洋蓟的种子 (1020, Seed_Aritichoke): 能种出洋蓟。
-- 茄子的种子 (1021, Seed_Aubergine): 能种出茄子。
-- 香蕉的种子 (1022, Seed_Banana): 能种出香蕉。
-- 胡萝卜的种子 (1023, Seed_Carrot): 能种出胡萝卜。
-- 花椰菜的种子 (1024, Seed_Cauliflower): 能种出花椰菜。
-- 樱桃的种子 (1025, Seed_Cherry): 能种出樱桃。
-- 辣椒的种子 (1026, Seed_Chilli): 能种出辣椒。
-- 椰子的种子 (1027, Seed_Coconut): 能种出椰子。
-- 玉米的种子 (1028, Seed_Corn): 能种出玉米。
-- 黄瓜的种子 (1029, Seed_Cucumber): 能种出黄瓜。
-- 大蒜的种子 (1030, Seed_Garlic): 能种出大蒜。
-- 葡萄的种子 (1031, Seed_Grape): 能种出葡萄。
-- 韭葱的种子 (1032, Seed_Leek): 能种出韭葱。
-- 柠檬的种子 (1033, Seed_Lemon): 能种出柠檬。
-- 芒果的种子 (1034, Seed_Mango): 能种出芒果。
-- 洋葱的种子 (1035, Seed_Onion): 能种出洋葱。
-- 橙子的种子 (1036, Seed_Orange): 能种出橙子。
-- 梨的种子 (1037, Seed_Pear): 能种出梨。
-- 菠萝的种子 (1038, Seed_Pineapple): 能种出菠萝。
-- 土豆的种子 (1039, Seed_Potato): 能种出土豆。
-- 南瓜的种子 (1040, Seed_Pumpkin): 能种出南瓜。
-- 杨桃的种子 (1041, Seed_Starfruit): 能种出杨桃。
-- 草莓的种子 (1042, Seed_Strawberry): 能种出草莓。
-- 西红柿的种子 (1043, Seed_Tomato): 能种出西红柿。
-- 西瓜的种子 (1044, Seed_Watermelon): 能种出西瓜。
-- 保险箱钥匙 (1045, Key_GroundZero_NavigationBoss): 打开零号区某处保险箱的钥匙。
-- 防御力场发生器 (1046, Quest_DefenceShield): 能够产生高能防御力场，用于解决星际航行中的那些太空垃圾的威胁。
-- 快递 (1047, Quest_DeliverBox_DestoryOnBase_881): 赶紧送到收货人那！可别带回基地了！
-- 快递 (1048, Quest_DeliverBox_DestoryOnBase_882): 赶紧送到收货人那！可别带回基地了！
-- 快递 (1049, Quest_DeliverBox_DestoryOnBase_883): 赶紧送到收货人那！可别带回基地了！
-- 快递 (1050, Quest_DeliverBox_DestoryOnBase_884): 赶紧送到收货人那！可别带回基地了！
-- 快递 (1051, Quest_DeliverBox_DestoryOnBase_885): 赶紧送到收货人那！可别带回基地了！
-- 快递 (1052, Quest_DeliverBox_DestoryOnBase_886): 赶紧送到收货人那！可别带回基地了！
-- 快递 (1053, Quest_DeliverBox_DestoryOnBase_885_2): 赶紧送到收货人那！可别带回基地了！
-- 快递 (1054, Quest_DeliverBox_DestoryOnBase_887): 赶紧送到收货人那！可别带回基地了！
-- 特制 AK47 (1055, AR_AK47_Quest): 特制的 AK47，无法带回基地。
-- 特制 StG 77A3 (1056, AR_AUGA3_Quest): 特制的 StG 77A3，无法带回基地。
-- 特制 M14 (1057, BR_M14_Quest): 特制的 M14，无法带回基地。
-- 特制格力克 (1058, PST_Glick_Quest): 特制的格力克，无法带回基地。
-- 特制 MP-155 (1059, SHT_MP155_Quest): 特制的 MP-155，无法带回基地。
-- 特制 SR-3M (1060, SMG_SR3M_Quest): 特制的 SR-3M，无法带回基地。
-- 特制 Mosin-Nagant (1061, Sniper_Mosin_Quest): 特制的莫辛纳甘，无法带回基地。
-- 毕业生名单 (1062, Quest_Letter_StudentList): 这所学校的毕业生名单。
-- 校长室钥匙 (1063, Key_Farm_HeadMasterRoom): 农场镇学校校长室的钥匙。
-- 特种洁厕灵 (1064, Quest_NBDetergent): 使用了特殊配方，洗厕所特别干净。
-- 腿疼特效药 (1065, Quest_Farm_SpecialDrugs_1): 可以治疗腿疼的特效药，看成分好像就是钙片。
-- 手疼特效药 (1066, Quest_Farm_SpecialDrugs_2): 可以治疗手指尖疼的靶向药，但除了这个，标签上什么都没写。
-- 头疼特效药 (1067, Quest_Farm_SpecialDrugs_3): 对头疼特别有效的药，反正标签上是这么写的。
-- 特效止疼药 (1068, Quest_Farm_SpecialDrugs_4): 止疼的特效药，吃下去不只是疼，可以说所有感觉都会失去。
-- 强效蛋白粉 (1069, Quest_Farm_SpecialDrugs_5): 双倍吸收力的蛋白粉，说明书上这么写的。
-- 火抗性针 (1070, Injection_FireResist): 一段时间内受到的火属性伤害降低。
-- 毒抗性针 (1071, Injection_PoisonResist): 一段时间内受到的毒属性伤害降低。
-- 空间抗性针 (1072, Injection_SpaceResist): 一段时间内受到的空间属性伤害降低，但无法抵御空间风暴。
-- 沉重的轮胎 (1073, Quest_HeavyWheel): 非常重，无法带回基地。
-- 棒球棍 (1074, Bat): 很常见的木制棒球棍。
-- 带钉棒球棍 (1075, NailBat): 改造了的棒球棍，看着打人就很疼。
-- 蓝图：屎弹 (1076, BP_Bullet_Poop_Normal): 用于制造屎弹的蓝图。
-- 石棉工作服 (1077, Armor_FireLandProtect): 用石棉制成的防火工作服，穿着一整套可以不受到地面上火焰的伤害。
-- 石棉工作头盔 (1078, Helmat_FireLandProtect): 用石棉制成的防火工作头盔，穿着一整套可以不受到地面上火焰的伤害。
-- 橡胶工作服 (1079, Armor_ElecLandProtect): 用橡胶制成的防电工作服，穿上后可以不受到地面上电流的伤害。
-- 比利背包 (1080, Backpack_SBossElec_ResSpace): 实验体比利比利穿着的背包，能提高对电和空间属性的防御能力。
-- 啪啦背包 (1081, Backpack_SBossFire_ResElec): 实验体啪啦啪啦穿着的背包，能提高对火和电属性的防御能力。
-- 咕噜背包 (1082, Backpack_SBossPoison_LowDurResFire): 实验体咕噜咕噜穿着的背包，能提高对火和毒属性的防御能力。
-- 碎蛋壳 (1083, Helmat_Egg): 破碎的蛋壳，里面还残留了一些蛋清。相当大，可以戴在头上。
-- 员工公寓 102 钥匙 (1084, Key_Apartment102): 员工公寓的钥匙，应该可以打开 102 的门。
-- 员工公寓 105 钥匙 (1085, Key_Apartment105): 员工公寓的钥匙，应该可以打开 105 的门。
-- 员工公寓 101 钥匙 (1086, Key_Apartment101): 员工公寓的钥匙，应该可以打开 101 的门。
-- 宿舍楼 101 钥匙 (1087, Key_Dormitory101): 一把宿舍楼的钥匙。也许可以打开 101 的门。
-- 未来控制器 (1088, FutureConsoleController): 未来主机的手柄，把它安上才能开始玩游戏。
-- TOZ-66 龙息 (1089, SHT_TOZ66_Fire): 装备了龙息弹药的 TOZ-66，能够发射灼烧敌人的子弹。
-- 显示卡 SLI (1090, GPUSLI): 将 3 张显卡用相当先进的方法结合在一起，虽然会损失一些总体性能，但可以把它们装进一个矿机插槽里。
-- 显示卡 SLI (1091, BP_GPUSLI): 在工作台解锁显示卡 SLI 制作的蓝图，方法简单明了，即使没有电子工程知识也能看懂。
-- 一堆电子零件 (1092, Quest_916_ElectricParts_Ming): 一大堆电子原件。
-- 高手护甲 (1093, Armor_FC): 游戏高手的象征。
-- 蓝图：彩色显示器 (1094, BP_ColorMonitor): 用于在工作台制造彩色显示器的蓝图。
-- 好钓竿 (1095, FishingRod_LV2): 还算不错的钓竿。
-- 厉害钓竿 (1096, FishingRod_LV3): 非常厉害的钓竿。
-- 绿鲷鱼 (1097, Fish_Black_Snapper): 体型很平常，但深绿色相当少见。
-- 蓝雀鲷鱼 (1098, Fish_Blue_Damselfish): 很活泼，爱东游西窜的。
-- 青南乳鱼 (1099, Fish_Blue_Jack_Mackerel): 细细长长，一般成群活动。
-- 蓝鲭鱼 (1100, Fish_Blue_Mackerel): 身体呈流线型，游得非常快。
-- 蓝枪鱼 (1101, Fish_Blue_Marlin): 鱼嘴又长又粗，看起来很威风。
-- 蓝旗鱼 (1102, Fish_Blue_Sailfish): 尖尖的嘴巴，背鳍像旗子。
-- 蓝吊鱼 (1103, Fish_Blue_Tang): 通体是亮眼的蓝色，身体扁平，相当活泼。
-- 棕白石鲈 (1104, Fish_Brown_and_White_Grunt): 身体呈棕白色的斑纹，常成群活动。
-- 棕梭鱼 (1105, Fish_Brown_Mullet): 体型不大，但游起来很猛。
-- 棕沙丁鱼 (1106, Fish_Brown_Sardine): 在水里喜欢密密麻麻聚在一起，在水面上看着像一整条大鱼。
-- 黄金鱼 (1107, Fish_Golden_Fish): 虽然只是黄色的金鱼，但是名字非常讨喜。
-- 绿胖头鱼 (1108, Fish_Green_Cod): 圆滚滚的，肉嫩嫩的，吃起来口感不错。
-- 绿背鳙鱼 (1109, Fish_Green_Triggerfish): 鱼鳞硬硬的，嘴巴方方的，有点呆萌。
-- 绿黄鲀 (1110, Fish_Green_Yellow_Porcupinefish): 身体上绿一块黄一块的。
-- 蓝猫鲨鱼 (1111, Fish_Grey_Catshark): 体型不大，性子温和，看着不凶。
-- 橙青鳍鱼 (1112, Fish_Orange_Greenfin_Fish): 鱼鳍带点青绿色，与橙色的身体形成了鲜明的对比。
-- 橙金鳞鱼 (1113, Fish_Orange_Squirrelfish): 拥有亮晶晶的鳞片，很亮眼。
-- 粉金鱼 (1114, Fish_Pink_Clownfish): 看着特别可爱，让人忍不住多看几眼。
-- 紫雀鲷鱼 (1115, Fish_Purple_Damselfish): 体型很小，通体紫色，性情很活跃。
-- 粉鳍火焰鱼 (1116, Fish_Redfin_Flamefish): 鱼鳍形似火焰，观赏性很强。
-- 红鳍鲷鱼 (1117, Fish_Redfin_Snapper): 红色的鱼鳍相当显眼。
-- 红九间鱼 (1118, Fish_Red_Banded_Fish): 身上带几道深色条纹，喜欢成群结队。
-- 红金鱼 (1119, Fish_Red_Goldfish): 常见的观赏鱼，相当招人喜欢。
-- 大眼红鱼 (1120, Fish_Red_Grouper): 肉吃起来特别鲜美，味道很棒。
-- 红斑鱼 (1121, Fish_Red_Spotted_Grouper): 带点小斑点，是挺名贵的鱼。
-- 白燕鱼 (1122, Fish_White_Angelfish): 鱼鳍较宽，像燕子的翅膀。
-- 大头金鱼 (1123, Fish_White_Cod): 白白胖胖，肉特别鲜美。
-- 白扁鱼 (1124, Fish_White_Perch): 相当有名的食用鱼。
-- 黄绿鲷 (1125, Fish_Yellow_Green_Snapper): 黄绿相间，颜色相当特别。
-- 绿刺豚 (1126, Fish_Yellow_Porcupinefish): 身上带刺，受惊吓了会鼓成个刺球。
-- 蓝图：TOZ-66 龙息 (1127, BP_SHT_TOZ66_Fire): 用于在工作台研发武器：TOZ-66 龙息。
-- 空间格力克 (1128, PST_Glick_Space): 小明用特殊的方法注入了空间能量的格力克，虽然其他方面没有提升，但可以使射出的子弹变为空间属性。
-- 高手背包 (1130, Backpack_FC): 游戏高手的象征。
-- 洋蓟瓣 (1131, ArtichokeFloret): 一小簇洋蓟，很多鱼都很喜欢。
-- 玉米粒 (1132, CornKernel): Item_CornKernel_Desc
-- 芒果丁 (1133, DicedMango): Item_DicedMango_Desc
-- 蚯蚓 (1134, Earthworm): 活的。
-- 葡萄粒 (1135, GrapeGrain): Item_GrapeGrain_Desc
-- 鸭舌帽 (1136, Helmat_PeakedCap): 钓鱼佬的最爱。
-- 五级重型防弹衣 (1137, ArmorLV5_3): 重且结实。
-- 四级重型防弹衣 (1138, ArmorLV4_3): 耐久度很好，性价比很高的防弹衣，但在装载能力上做出了一定的妥协。
-- 三级重型防弹衣 (1139, ArmorLV3_2): 更重，但也更持久。
-- 四级作战防弹衣 (1140, ArmorLV4_2): 重量较轻，还拥有相当多的口袋。
-- 五级作战防弹衣 (1141, ArmorLV5_2): 各项能力都相当均衡，就感觉有点小贵。
-- 三级作战防弹衣 (1142, ArmorLV3_3): 在重量、耐久度方面表现相当平衡的防弹衣。
-- 坦克头盔 (1143, HelmatLV1_2): 有一定的防护能力，但因为把耳朵也罩住了，会影响听力。
-- 二级轻型头盔 (1144, HelmatLV2_2): 佩戴起来相当稳固。
-- 三级轻型头盔 (1145, HelmatLV3_2): 加厚了的制式装备，有更高的耐久度，但也会更重一些。
-- 维和头盔 (1146, HelmatLV3_UN): 特殊的轻量化设计，在保证了耐久度的同时，重量也更轻了。
-- 四级防弹头盔 (1147, HelmatLV4_2): 在防护性能和舒适度上表现都非常优秀。
-- 五级轻型头盔 (1148, HelmatLV5_1Hear): 在防护性能、轻量化、耐久性、成本方面表现都相当优秀，但特殊的造型使得佩戴耳机相当不便。
-- 五级作战头盔 (1149, HelmatLV5_2): 比较重，但防护性能相当出色的头盔。
-- 地窖岔路钥匙 (1150, Key_HiddenWarehouse_Cellar_Fork): 地窖中一处岔路的钥匙。
-- 防空系统密钥 (1151, Key_Defense_System): 用于激活防空系统的控制权限，防空系统就位于风暴区。
-- Item_Grenade_SpaceBoss (1152, Grenade_SpaceBoss): Item_Grenade_SpaceBoss_Desc
-- Item_Grenade_SpaceBoss (1153, Grenade_SpaceBoss_2): Item_Grenade_SpaceBoss_Desc
-- 鱼饵 (1154, FishingBait): 复合调配，各种鱼都很喜欢。
-- 蓝图：电击手雷 (1155, BP_ElecGrenade): 用于制造电击手雷的蓝图。
-- 蓝图：燃烧弹 (1156, BP_FireGrenade): 用于制造燃烧弹的蓝图。
-- 蓝图：毒雾弹 (1157, BP_ToxGrenade): 用于制造毒雾弹的蓝图。
-- 水族箱 (1158, Aquarium): Item_Aquarium_Desc
-- 蓝图：风暴枪 (1159, BP_BR_Storm_Space): 用于在工作台研发武器：风暴枪。
-- 配方：鱼饵 (1160, Formula_FishingBait): 在工作台制作鱼饵的配方。
-- 蓝图：大型能量弹 (1161, BP_Bullet_PWL_L): 用于制造大型能量弹的蓝图。
-- 强化小能量弹 (1162, Bullet_PWS_H): 强化了穿甲能力的小能量弹。
-- 风暴工作服 (1163, ArmorLV1StormProtection): 使用特殊材质制造的工作服，虽然抵挡子弹的能力很差，但穿上一整套可以抵御空间风暴早期的扰动。
-- 神秘飞船图纸 (1164, Quest_Blueprint_ShipSpace): 看不懂的图纸，好像是用来制造飞船的某个部件。
-- 蓝色方块 (1165, BlueCube): 神秘的蓝色方块，有种熟悉的感觉。
-- 方块收集装置 (1166, Backpack_Cubbe): 用来收集和储存蓝色方块的容器，使用说明书上写着可以存储灵魂能量。
-- 蓝图：好钓竿 (1167, BP_FishingRod_LV2): 用于在工作台制造好钓竿的蓝图。
-- 蓝图：厉害钓竿 (1168, BP_FishingRod_LV3): 用于在工作台制造厉害钓竿的蓝图。
-- J-Lab 放映室钥匙 (1169, Key_JLab_MiniGameCartriage): J-Lab 实验室内某处放映室的钥匙，平时研究员会在里面放松放松。
-- 高级有机纤维 (1170, fiber_Lv2): 更结实的有机纤维，经常被用来制作轻型防弹衣。
-- 顶级有机纤维 (1171, fiber_Lv3): 防护性能非常顶尖的有机纤维，常用来制造顶级的防弹衣与头盔。
-- 小直刀 (1172, Knife_01_Blade): 使用轻量化材料制作，非常轻便。
-- 木柄短刀 (1173, Knife_02_Short): 普通的木柄短刀。
-- 指虎刀 (1174, Knife_03_Knuckle): 带有弹簧刀刃的指虎。
-- 爪刀 (1175, Knife_04_Karambit): 刀刃全是蓝色，看上去就很贵。
-- 廓尔喀弯刀 (1176, Knife_06_Gurkhakukri): 经典的刀型很容易砍出血来。
-- 战术刺刀 (1177, Knife_07_Bayonet): 制式的军用刺刀。
-- 战术刀具箱 (1178, KnifeBox): 里面可能放着各种各样的刀具，请适度消费。
-- 配方：战术刀具箱 (1179, Formula_KnifeBox): 在工作台制作战术刀具箱的配方。
-- 自制糖果 (1180, CandyCan): 甜食令人快乐。
-- 棒棒糖 (1181, Candy): 比赛前舔一舔，甜甜的，好吃。
-- 和平星 (1182, PeaceStar): 愿世界和平！
-- 和平星 (1183, FakePeaceStar): 已经化作了粉末。
-- 高级火药 (1184, GunPowderLv5): 杂质更少，威力更高。
-- 蓝图：AR-特种穿甲弹 (1185, BP_Bullet_AR_Piercing6): 用于在工作台制造 AR-特种穿甲弹的蓝图。
-- 蓝图：L-特种穿甲弹 (1186, BP_Bullet_BR_Piercing6): 用于制造 L-特种穿甲弹的蓝图。
-- 蓝图：MAG-特种穿甲弹 (1187, BP_Bullet_MAG_Piercing6): 用于制造 MAG-特种穿甲弹的蓝图。
-- 蓝图：特种霰弹 (1188, BP_Bullet_SHT_Break): 用于制造特种霰弹的蓝图。
-- 蓝图：S-特种弹 (1189, BP_Bullet_SMG_Break): 用于制造 S-特种弹的蓝图。
-- 特种穿甲狙击弹 (1190, BP_Bullet_SNP_Piercing6): 用于制造特种穿甲狙击弹的蓝图。
-- 北厂区小屋钥匙 (1191, Key_Farm_NorthFactoryRoom): 能打开农场镇北厂区内小屋的门。
-- 罐装火药 (1192, GunPowder_Blue): 贴着蓝色标签的罐装火药。
-- 罐装火药 (1193, GunPowder_Green): 贴着绿色标签的罐装火药。
-- 罐装火药 (1194, GunPowder_Red): 贴着红色标签的罐装火药。
-- 蓝图：穿甲狙击弹 (1195, BP_Bullet_SNP_Piercing2): 用于制造穿甲狙击弹的蓝图。
-- 蓝图：AR-穿甲弹 (1196, BP_Bullet_AR_Piercing3): 用于制造 AR-穿甲弹的蓝图。
-- 蓝图：AR-高级穿甲弹 (1197, BP_Bullet_AR_Piercing5): 用于制造 AR-高级穿甲弹的蓝图。
-- 蓝图：L-穿甲弹 (1198, BP_Bullet_BR_Piercing3): 用于制造 L-穿甲弹的蓝图。
-- 蓝图：L-高级穿甲弹 (1199, BP_Bullet_BR_Piercing5): 用于制造 L-高级穿甲弹的蓝图。
-- 蓝图：MAG-穿甲弹 (1200, BP_Bullet_MAG_Piercing2): 用于制造 MAG-穿甲弹的蓝图。
-- 蓝图：MAG-高级穿甲弹 (1201, BP_Bullet_MAG_Piercing4): 用于制造 MAG-高级穿甲弹的蓝图。
-- 蓝图：穿甲霰弹 (1202, BP_Bullet_SHT_Piercing3): 用于制造穿甲霰弹的蓝图。
-- 蓝图：高级穿甲霰弹 (1203, BP_Bullet_SHT_Piercing5): 用于制造高级穿甲霰弹的蓝图。
-- 蓝图：S-穿甲弹 (1204, BP_Bullet_SMG_Piercing3): 用于制造 S-穿甲弹的蓝图。
-- 蓝图：S-高级穿甲弹 (1205, BP_Bullet_SMG_Piercing5): 用于制造 S-高级穿甲弹的蓝图。
-- 蓝图：高级穿甲狙击弹 (1206, BP_Bullet_SNP_Piercing4): 用于制造高级穿甲狙击弹的蓝图。
-- 战术咸鱼 (1207, SaltedFish): 一根腌的很透的咸鱼，梆硬。
-- 猪肉刀 (1208, ButcherKnife): 看上去很普通，但材质好像一点都不普通，甚至可以挡住子弹。
-- 玩具枪 (1209, SMG_ArcadeGun_Normal): 威力非常小。
-- 配方：可乐 (1210, Formula_Cola): 制造可乐的配方。
-- 风暴工作头盔 (1213, HelmatLV1StormProtection): 使用特殊材质制造的工作头盔，虽然抵挡子弹的能力很差，但穿上一整套可以抵御空间风暴早期的扰动。
-- 防御力场操作说明 (1214, Quest_DefenceShield_Text): 手写的防御力场操作说明，字迹有些潦草，但看着有些熟悉。
-- 蓝图：五级防弹衣 (1215, BP_ArmorLV5): 用于在工作台制作五级防弹衣的蓝图。
-- 蓝图：空间防护服终极版 (1216, BP_ArmorLV5StormProtection): 用于在工作台制作空间防护服终极版的蓝图。
-- 蓝图：五级作战防弹衣 (1217, BP_ArmorLV5_2): 用于在工作台制作五级作战防弹衣的蓝图。
-- 蓝图：五级重型防弹衣 (1218, BP_ArmorLV5_3): 用于在工作台制作五级重型防弹衣的蓝图。
-- 蓝图：六级防弹衣 (1219, BP_ArmorLV6): 用于在工作台制作六级防弹衣的蓝图。
-- 蓝图：行军背包 MAX (1220, BP_BackpackLV5): 用于在工作台制作行军背包 MAX 的蓝图。
-- 蓝图：SCIFI 面罩 (1221, BP_HelmatLV5): 用于在工作台制作 SCIFI 面罩的蓝图。
-- 蓝图：空间防护头盔最终版 (1222, BP_HelmatLV5StormProtection): 用于在工作台制作空间防护头盔最终版的蓝图。
-- 蓝图：五级轻型头盔 (1223, BP_HelmatLV5_1Hear): 用于在工作台制作五级轻型头盔的蓝图。
-- 蓝图：五级作战头盔 (1224, BP_HelmatLV5_2): 用于在工作台制作五级作战头盔的蓝图。
-- 蓝图：神之电焊头 (1225, BP_HelmatLV6): 用于在工作台制作神之电焊头的蓝图。
-- 疗养院机房钥匙 (1226, Key_Farm_Nursing_Computer): 能打开疗养院内机房的门。
-- 疗养院餐厅钥匙 (1227, Key_Farm_Nursing_Restaurant): 能打开疗养院内餐厅的门。
-- 疗养院房间钥匙-1 (1228, Key_Farm_Nursing_Room_1): 能打开疗养院内某个房间的门。
-- 疗养院房间钥匙-2 (1229, Key_Farm_Nursing_Room_2): 能打开疗养院内某个房间的门。
-- 加速器 (1230, Accelerator): 似乎是用来处理某种特殊晶体的机器。
-- 浓缩浆质 (1231, ConcentratedSlurry): 忍不住想尝一口。
-- 晶体电池 (1232, CrystalBattery): 储存着巨大的电力。
-- 晶体过滤单元 (1233, CrystalFiltrationUnit): 似乎是用来处理某种特殊晶体的机器。
-- 晶体增压器 (1234, CrystalBooster): 似乎是用来处理某种特殊晶体的机器。
-- 大块空间晶体 (1235, BulkSpaceCrystal): 空间晶体的聚合体，小心一点可以将它拆开。
-- 风暴眼 (1236, SpaceEye): 风暴虫的眼睛。
-- 配方：浓缩浆质 (1237, Formula_ConcentratedSlurry): 制造浓缩浆质的配方。
-- MF-毒液 (1238, AR_MF_Poison): 让射出的子弹裹上浓缩浆质，会让命中的目标中毒。
-- \?\?\? (1239, EGun_Magic_Red): \?\?\?
-- 蓝图：MF-毒液 (1240, BP_AR_MF_Poison): 用于在工作台研发武器：MF-毒液。
-- 汽车电池 (1241, CarBattery): 汽车用的高容量电池。
-- \?\?\? (1242, RedEye): 看起来不太稳定，不知道吃下去会怎么样？
-- 骨夹板 (1243, Splint): 用于快速治疗骨折。
-- 高级骨夹板 (1244, SplintAdvanced): 用于快速治疗骨折，可用多次。
-- 手术包 (1245, SurgicalKit): 用于治疗创伤。
-- 增强手术包 (1246, SurgicalKitL): 用于治疗创伤。
-- 止血针 (1247, Injection_BleedResist): 移除流血状态，且一段时间内免疫流血。
-- 斧子 (1248, SmallAxe): 平平无奇的斧子。
-- 休闲套装 (1249, Armor_Football_1): 条纹 Polo 衫配红短裤。
-- 运动背心 (1250, Armor_Football_2): 破了几个洞。
-- 金丝眼镜 (1251, FackMask_Football_Glass): 没有镜片。
-- 橘子耳机 (1252, HeadsetLV2): 能够大幅提高听觉灵敏度，可以听到声音来自于哪个方向。
-- 纯金徽章 (1253, GoldBadge): 纯金打造。
-- 皇冠 (1254, Crown): 欲戴王冠，必承其重。
-- 手提袋 (1255, ToteBag): 顶级奢侈品牌推出的手提袋。
-- 灵魂私酒 (1256, MoonShine): 使用秘密配方酿造的私酒，传闻加入了可乐。
+- `displayName` (`id`): `description` (`name`, `displayQuality`, `quality`, `priceEach`, `maxStackCount`)
+- 躯壳 (`0`): 灵魂的载体。 (`Character`, `0`, `999`, `0`, `1`)
+- 切肉刀 (`1`): 看起来很粗犷的刀，不是很锋利。 (`0_MeleeWeapon_Template`, `0`, `9`, `17501`, `1`)
+- 三级防弹衣 (`2`): 三级防弹衣，在某些时候能够保住你的小命。 (`ArmorLV3`, `0`, `3`, `1775`, `1`)
+- 金色五角星 (`3`): 神秘物质构成的金色五角星。增加近战武器攻击力。 (`Gem`, `0`, `4`, `4587`, `1`)
+- GunTemplate (`4`): ? (`1_Rifle-A_template`, `0`, `9`, `37500`, `1`)
+- R6 电池 (`8`): 在各种用电器中被广泛使用的电池。 (`BatteryR6`, `0`, `1`, `194`, `5`)
+- 止血绷带 (`10`): 可以止血,并回复微少生命值。 (`Bandage`, `0`, `1`, `80`, `3`)
+- PP3 电池 (`11`): 通常用于烟雾探测器、遥控玩具发射器以及作为闹钟的后备电池。 (`BatteryPP3`, `0`, `2`, `323`, `3`)
+- 焗豆罐头 (`12`): 焗豆罐头。 (`BeanCan`, `0`, `2`, `102`, `3`)
+- 苏打饼干 (`13`): 一摞苏打饼干。 (`Biscuit`, `0`, `1`, `51`, `3`)
+- 可乐 (`14`): 有糖的可乐才有灵魂。 (`Cola`, `0`, `4`, `1995`, `1`)
+- 大急救箱 (`15`): 可以恢复大量生命值。 (`FirstAidKit_L`, `0`, `4`, `1322`, `1`)
+- 急救箱 (`16`): 可以恢复生命值。 (`FirstAidKit_M`, `0`, `3`, `807`, `1`)
+- 小急救箱 (`17`): 可以恢复少量生命值。 (`FirstAidKit_S`, `0`, `2`, `206`, `1`)
+- 水浸金枪鱼罐头 (`18`): 水浸金枪鱼罐头。 (`TunaCan_1`, `0`, `2`, `172`, `3`)
+- 油浸金枪鱼罐头 (`19`): 油浸金枪鱼罐头。 (`TunaCan_2`, `0`, `3`, `376`, `3`)
+- 阿司匹林 (`20`): 小剂量药品，回复血量，并提供镇痛效果。 (`Aspirin`, `0`, `1`, `32`, `3`)
+- 漂白剂 (`21`): 一壶漂白剂。 (`Bleach`, `0`, `1`, `139`, `1`)
+- 红条香烟 (`22`): 一盒普通的香烟。 (`Cigarette`, `0`, `2`, `105`, `3`)
+- 管状炸弹 (`23`): 一颗管状炸弹。 (`Dynamite`, `0`, `1`, `140`, `1`)
+- 集束管状炸弹 (`24`): 一束管状炸弹。 (`DynamiteMultiple`, `0`, `5`, `302`, `1`)
+- 手电 (`25`): 一只手电筒。 (`Flashlight`, `0`, `3`, `560`, `1`)
+- 防毒面具 (`26`): 普通的防毒面具。 (`GasMask_01`, `0`, `3`, `535`, `1`)
+- 滑雪镜 (`27`): 滑雪眼镜。 (`Goggle`, `0`, `1`, `125`, `1`)
+- 钉子 (`28`): 钉子。 (`Nail`, `0`, `1`, `149`, `10`)
+- 伏特加 (`29`): 喝了会开心,然后脱水。 (`Vodka`, `0`, `3`, `902`, `1`)
+- MD40 (`30`): 一瓶 MD40 除锈剂。 (`WD40`, `0`, `3`, `216`, `1`)
+- 扳手 (`31`): 一个扳手。 (`Wrench`, `0`, `2`, `257`, `1`)
+- 一级防弹衣 (`32`): 比纸还薄，能挡一发水弹枪。 (`ArmorLV1`, `0`, `1`, `285`, `1`)
+- 二级防弹衣 (`33`): 看起来很专业，能够提供心理层面的鼓励。 (`ArmorLV2`, `0`, `2`, `784`, `1`)
+- 四级防弹衣 (`34`): 有真正的防弹性能，可靠之选。 (`ArmorLV4`, `0`, `4`, `3316`, `1`)
+- 五级防弹衣 (`35`): 提供终极的防护，子弹打在身上就像洒洒水。 (`ArmorLV5`, `0`, `5`, `5827`, `1`)
+- 装饰包 (`36`): 也就能装点口红化妆品啥的。 (`BackpackLV1`, `0`, `1`, `87`, `1`)
+- 小学背包 (`37`): 能装很多的作业本。 (`BackpackLV2`, `0`, `2`, `338`, `1`)
+- 旅行包 (`38`): 多功能用途背包，旅行首选。 (`BackpackLV3`, `0`, `3`, `995`, `1`)
+- 生存者背包 (`39`): 杀哥联名，户外生存必备。 (`BackpackLV4`, `0`, `4`, `2385`, `1`)
+- 行军背包 MAX (`40`): 使用蓝胖子口袋内衬同款材料，非常能装。 (`BackpackLV5`, `0`, `5`, `4706`, `1`)
+- 摩托头盔 (`41`): 晶莹剔透，吹弹可破。 (`HelmatLV1`, `0`, `1`, `97`, `1`)
+- 老钢盔 (`42`): 没怎么保养的头盔，爷爷传下来的。里面有个洞。 (`HelmatLV2`, `0`, `2`, `378`, `1`)
+- 特警头盔 (`43`): 具有初级的防弹性能。 (`HelmatLV3`, `0`, `3`, `1183`, `1`)
+- SightPRO 头盔 (`44`): 具有 AR+VR 功能，飞过来的子弹可能会眩晕从而打偏。 (`HelmatLV4`, `0`, `4`, `2551`, `1`)
+- SCIFI 面罩 (`45`): 给予头部全方位的防护，科幻造型，非常的拉风。 (`HelmatLV5`, `0`, `5`, `4855`, `1`)
+- 神之电焊头 (`46`): 古希腊掌管头盔的神打造，子弹看了会吓软。 (`HelmatLV6`, `0`, `6`, `8778`, `1`)
+- 汽车扳手 (`47`): 更好用的扳手。 (`Wrench02`, `0`, `4`, `1062`, `1`)
+- 大扩容箱 (`48`): 大型扩容箱，可用作扩展藏身处。重到拿不动。 (`ContinerL`, `0`, `5`, `8578`, `1`)
+- 中扩容箱 (`49`): 中型扩容箱，可用作扩展藏身处。很重。 (`ContinerM`, `0`, `4`, `4713`, `1`)
+- 小扩容箱 (`50`): 小型扩容箱，可用作扩展藏身处。 (`ContinerS`, `0`, `3`, `2484`, `1`)
+- 闹钟 (`51`): 定格在了三点钟。 (`Clock`, `0`, `2`, `667`, `1`)
+- 洁厕灵 (`52`): 一瓶洁厕灵。 (`Detergent`, `0`, `1`, `102`, `1`)
+- 红色大桶 (`53`): 一个大空桶。 (`Drum1`, `0`, `3`, `1277`, `1`)
+- 蓝色大桶 (`54`): 一个大空桶。 (`Drum2`, `0`, `3`, `1276`, `1`)
+- 黄色大桶 (`55`): 一个大空桶。 (`Drum3`, `0`, `3`, `1238`, `1`)
+- 金属油桶 (`56`): 一个大空桶，装过汽油。 (`Drum4`, `0`, `4`, `3578`, `1`)
+- 高尔夫球棒 (`57`): 打人疼。 (`GolfClub`, `0`, `4`, `2270`, `1`)
+- 墨水 (`58`): 钢笔墨水。 (`Ink`, `0`, `2`, `269`, `1`)
+- 锅 (`59`): 可以用来煮食物。 (`Pot`, `0`, `2`, `465`, `1`)
+- 卷纸 (`60`): 一卷卫生纸。 (`Tissue`, `0`, `1`, `55`, `1`)
+- Cippo (`61`): Cippo 打火机。 (`Zippo`, `0`, `1`, `242`, `1`)
+- 压力传感器 (`62`): 踩上去就能感应到。 (`PressionSencer`, `0`, `4`, `541`, `1`)
+- uPhone 手机 (`63`): 已经坏掉了，从外观上看不出是第几代产品。 (`uPhone`, `0`, `4`, `1867`, `1`)
+- 对讲机 (`64`): 普通的对讲机。 (`Walkie_Talkie`, `0`, `3`, `377`, `1`)
+- 军用对讲机 (`65`): 经过加密的军用对讲机。 (`Walkie_Talkie02`, `0`, `4`, `2312`, `1`)
+- 闪光手雷 (`66`): 眩晕敌人。 (`FlashGrenade`, `0`, `2`, `205`, `1`)
+- 手雷 (`67`): 手雷。 (`Grenade`, `0`, `2`, `300`, `1`)
+- 巧克力 (`68`): 有人说它能减肥。 (`Chocalate`, `0`, `3`, `433`, `3`)
+- 能量棒 (`69`): 吃了就不饿了，但是会渴。 (`EnergyStick`, `0`, `3`, `371`, `3`)
+- 蜂蜜 (`70`): 很甜很甜。 (`Honey`, `0`, `3`, `320`, `3`)
+- 番茄酱 (`71`): 酸酸甜甜的番茄酱。不好吃。 (`Ketchup`, `0`, `2`, `127`, `3`)
+- 书 (`72`): 胡扯的书。 (`Book`, `0`, `1`, `449`, `1`)
+- 信件 (`73`): 一封信件。 (`Letter`, `0`, `1`, `242`, `1`)
+- 安全屋隔间钥匙 (`74`): 能够打开仓库区中安全屋隔间的钥匙。 (`Key_BlueHouse`, `0`, `3`, `101`, `1`)
+- 飞机模型 (`75`): 航空公司售卖的飞机模型，做工劣质。 (`AirplaneToy`, `0`, `1`, `998`, `1`)
+- 足球 (`76`): 气不太够的足球。 (`Ball`, `0`, `1`, `845`, `1`)
+- 自行车模型 (`77`): 精致的自行车模型。 (`BicyleToy`, `0`, `2`, `1432`, `1`)
+- 大炮 (`78`): 玩具大炮。 (`Cannon`, `0`, `1`, `1045`, `1`)
+- 指南针 (`79`): 精致的指南针。 (`Compass`, `0`, `3`, `3070`, `1`)
+- 骰子 (`80`): 一个外表十分正常的骰子，但是感觉有点偏坠。 (`Dice 2`, `0`, `2`, `1570`, `1`)
+- 骰子 (`81`): 一个正常的骰子。 (`Dice`, `0`, `2`, `1195`, `1`)
+- 玩具鱼 (`82`): 浓浓的塑料味。 (`Fish`, `0`, `1`, `895`, `1`)
+- 怀表 (`83`): 银色的怀表。 (`Watch`, `0`, `4`, `4718`, `1`)
+- 鸭蛋 (`84`): 没人要的蛋。 (`Egg`, `0`, `1`, `87`, `4`)
+- 铝热剂 (`85`): 非常不易燃。 (`Heat`, `0`, `3`, `559`, `1`)
+- 丙烷 (`86`): 装满丙烷的罐子。 (`Propane`, `0`, `3`, `1006`, `1`)
+- 绳子 (`87`): 攀登用的绳子。 (`Rope`, `0`, `2`, `200`, `1`)
+- 一堆药 (`88`): 不能吃，里面什么都有。 (`Drugs`, `0`, `1`, `127`, `5`)
+- 输液药品 (`89`): 一些静脉注射用的药品。 (`Lv`, `0`, `2`, `192`, `1`)
+- 扫帚 (`90`): 普通的扫帚。 (`Broom`, `0`, `99`, `258`, `1`)
+- 平头螺丝刀 (`91`): 平头螺丝刀。 (`Driver`, `0`, `2`, `237`, `1`)
+- 电锯 (`92`): 小巧的电锯。 (`ElectricSaw`, `0`, `9`, `375`, `1`)
+- 金属桶 (`93`): 盛装汽油的金属桶。 (`GasCanL`, `0`, `5`, `3060`, `1`)
+- 塑料桶 (`94`): 盛装汽油的塑料桶。 (`GasCanS`, `0`, `4`, `1799`, `1`)
+- 大锤子 (`95`): 装修利器。 (`HammerL`, `0`, `4`, `2313`, `1`)
+- 锤子 (`96`): 砸钉子好用。 (`HammerS`, `0`, `2`, `459`, `1`)
+- 煤油灯 (`97`): 没油了。 (`Lantern`, `0`, `4`, `566`, `1`)
+- 铲子 (`98`): 曾经有一位骑士用它打遍天下无敌手。但不算是一个好的武器。 (`Shovel`, `0`, `3`, `459`, `1`)
+- 望远镜 (`99`): 坏掉的望远镜，但镜片还是好的。 (`Telescope`, `0`, `4`, `689`, `1`)
+- 捕兽陷阱 (`100`): 算是一块好废铁。 (`Trap`, `0`, `3`, `205`, `1`)
+- 撬棍 (`101`): 挥舞起来可以穿透几乎所有的护甲，在物理学上非常合理。 (`Wrench03`, `0`, `3`, `282`, `1`)
+- 配件模板 (`102`): 可增加精确度。 (`1_AccessoryTemplate`, `0`, `9`, `17000`, `1`)
+- 奶牛面具 (`103`): 外表十分凶狠的奶牛头面具。 (`CowMask`, `0`, `2`, `327`, `1`)
+- 牛仔帽 (`104`): 牛仔帽。 (`Hat`, `0`, `2`, `167`, `1`)
+- 可可奶 (`105`): 带有巧克力味道的牛奶。 (`CocoMilk`, `0`, `1`, `124`, `1`)
+- 苏打水 (`106`): 清爽的苏打水。 (`Soda`, `0`, `1`, `102`, `1`)
+- 水壶 (`107`): 行军水壶，吨吨吨。 (`Waterbottle`, `0`, `4`, `869`, `1`)
+- 威士忌 (`108`): 上流，但是脱水。 (`Whisky`, `0`, `5`, `3431`, `1`)
+- 钢笔 (`109`): 没有墨水的钢笔。 (`Pen`, `0`, `3`, `1368`, `1`)
+- 剪刀 (`110`): 手工剪刀。 (`Scissors`, `0`, `1`, `128`, `1`)
+- 奖杯 (`111`): 金色的奖杯，有点掉漆。 (`Trophy`, `0`, `4`, `2837`, `1`)
+- 麦克风 (`112`): 卡拉 OK 麦克风，唱歌让人快乐。 (`Mike`, `0`, `2`, `355`, `1`)
+- 收音机 (`113`): 看起来像玩具，但确实也是个收音机。 (`Radio`, `0`, `2`, `482`, `1`)
+- TOMSUNG 手机 (`114`): TOMSUNG 手机，看起来很久了。 (`TOMSUNGPhone`, `0`, `3`, `1063`, `1`)
+- 酸奶 (`115`): 疯味酸奶。 (`Yogurt`, `0`, `3`, `324`, `3`)
+- 报纸 (`116`): 一份报纸，有年头了。 (`Newspaper`, `0`, `2`, `347`, `1`)
+- 笔记 (`117`): 上面记着各种让人看不懂的公式。 (`Note`, `0`, `2`, `761`, `1`)
+- 口红 (`118`): 看起来很贵的口红，不知道是什么色号。 (`Lipstick`, `0`, `5`, `6587`, `1`)
+- 金戒指 (`119`): 上面镶嵌着黄色的宝石。有点旧，但感觉价值不菲。 (`Ring`, `0`, `4`, `3760`, `1`)
+- 花花戒指 (`120`): 看起来像玩具，但是沉甸甸的。 (`RingToy`, `0`, `1`, `1678`, `1`)
+- 智能机器人 (`121`): 没电了。 (`Robot`, `0`, `5`, `5783`, `1`)
+- 玩具火箭 (`122`): 造型非常没有创意。 (`Rocket`, `0`, `1`, `875`, `1`)
+- 头骨饰品 (`123`): 不知道是什么生物的头骨。 (`Skull`, `0`, `9`, `675`, `1`)
+- 手鼓 (`124`): 声音依然非常好听。 (`Tambourine`, `0`, `1`, `1265`, `1`)
+- 小号 (`125`): 吹起来应该没问题。 (`Trumpet`, `0`, `4`, `4015`, `1`)
+- 木琴 (`126`): 看起来音调不是很全。 (`Xylophone`, `0`, `1`, `984`, `1`)
+- 轮胎 (`127`): 打打气就能用。 (`Wheel`, `0`, `3`, `484`, `1`)
+- 线 (`128`): 缝制衣服用的线。 (`Yarn`, `0`, `2`, `270`, `1`)
+- 南瓜 (`129`): 真的就是个南瓜。 (`Pumpkin`, `0`, `3`, `420`, `1`)
+- 购物框 (`130`): 装不了多少东西。 (`Basket`, `0`, `2`, `176`, `1`)
+- 杯子 (`131`): 喝水用的杯子。 (`Cup`, `0`, `1`, `177`, `1`)
+- 蛋糕 (`132`): 不知道放了多久，但是看起来依然很好吃。 (`Cake`, `0`, `3`, `406`, `3`)
+- 胡萝卜 (`133`): 富含营养，看起来很新鲜。 (`Carrot`, `0`, `1`, `120`, `3`)
+- 骨头玩具 (`134`): 不知道给谁玩的。 (`Bone`, `0`, `1`, `780`, `1`)
+- 心 (`135`): 心形的饰物。 (`Heart`, `0`, `4`, `2552`, `1`)
+- 注射器 (`136`): 没用过的注射器。 (`Injection`, `0`, `2`, `295`, `3`)
+- 黄针 (`137`): 提升 25%移动速度，持续 120s。 (`Injection_A`, `0`, `3`, `629`, `3`)
+- 头灯 (`138`): 让你看的更远。 (`HeadLantern`, `0`, `3`, `238`, `1`)
+- 子弹模板 (`139`): 子弹。 (`Bullet_Template`, `0`, `9`, `60`, `60`)
+- L-普通弹 (`140`): 制式大口径子弹。 (`Bullet_AR_L_Normal`, `0`, `999`, `4`, `180`)
+- L-燃烧弹 (`141`): 装填可持续燃烧的弹药，造成灼烧。有概率点燃。 (`Bullet_AR_L_Burn`, `0`, `999`, `18`, `180`)
+- L-穿甲弹 (`142`): 能够穿透一定的防护。 (`Bullet_AR_L_Piercing3`, `0`, `999`, `10`, `180`)
+- S-普通弹 (`143`): 制式小口径子弹。 (`Bullet_AR_S_Normal`, `0`, `999`, `3`, `240`)
+- S-达姆弹 (`144`): 对肉体造成更高的伤害，但更难以穿透护甲。 (`Bullet_AR_S_Dumdums`, `0`, `999`, `10`, `240`)
+- S-燃烧弹 (`145`): 装填可持续燃烧的弹药，造成灼烧。有概率点燃。 (`Bullet_AR_S_Burn`, `0`, `999`, `15`, `240`)
+- 霰弹-鹿弹 (`146`): 打猎用的鹿弹，杀伤距离较近。 (`Bullet_SHOT_Normal`, `0`, `999`, `11`, `80`)
+- 探索者的信 (`153`): 先行来到 Duckov 的探索者的信件。 (`Quest_Letter_Explorer`, `0`, `2`, `1`, `1`)
+- 宿舍楼 103 钥匙 (`154`): 一把宿舍楼的钥匙。也许可以打开 103 的门。 (`Key_Dormitory103`, `0`, `1`, `350`, `1`)
+- 宿舍楼 106 钥匙 (`155`): 一把宿舍楼的钥匙。也许可以打开 106 的门。 (`Key_Dormitory106`, `0`, `2`, `578`, `1`)
+- L-涂毒弹 (`157`): 子弹表面涂抹毒药。 (`Bullet_AR_L_Poison`, `0`, `999`, `15`, `180`)
+- L-高级穿甲弹 (`158`): 能够穿透大多数防护。 (`Bullet_AR_L_Piercing5`, `0`, `999`, `35`, `180`)
+- S-穿甲弹 (`159`): 能够穿透较低等级的护甲。 (`Bullet_AR_S_Piercing2`, `0`, `999`, `8`, `240`)
+- S-高级穿甲弹 (`160`): 能够穿透更高等级的护甲。 (`Bullet_AR_S_Piercing4`, `0`, `999`, `18`, `240`)
+- 霰弹-食人鱼 (`161`): 穿甲能力弱，但对肉体造成更大伤害。 (`Bullet_SHOT_Piranha`, `0`, `999`, `30`, `80`)
+- 霰弹-龙息 (`162`): 造成大量灼烧伤害。 (`Bullet_SHOT_Burn`, `0`, `999`, `50`, `80`)
+- 霰弹-箭形弹 (`163`): 有更高的穿甲等级。 (`Bullet_SHOT_Piercing4`, `0`, `999`, `55`, `80`)
+- 霰弹-电击 (`164`): 电能装药，能够造成电击伤害。 (`Bullet_SHOT_Electric`, `0`, `999`, `60`, `80`)
+- 狙击-普通弹 (`165`): 普通的狙击弹药。 (`Bullet_Sniper_Normal`, `0`, `999`, `40`, `30`)
+- 狙击-穿甲弹 (`166`): 能够穿透较低等级的护甲。 (`Bullet_Sniper_Piercing3`, `0`, `999`, `80`, `30`)
+- 狙击-电击弹 (`167`): 电能装药，能够造成电击伤害。 (`Bullet_Sniper_Electric`, `0`, `999`, `180`, `30`)
+- 狙击-空间弹 (`168`): 具有空间属性的狙击弹药。 (`Bullet_Sniper_Space`, `0`, `999`, `600`, `30`)
+- 狙击-高级穿甲弹 (`169`): 能够穿透大多数护甲。 (`Bullet_Sniper_Piercing5`, `0`, `999`, `250`, `30`)
+- 突击握把 Lv1 (`174`): 增强稳定性。 (`Grip_AS_Lv_1`, `0`, `999`, `380`, `1`)
+- 突击握把 Lv2 (`175`): 增强稳定性。 (`Grip_AS_Lv_2`, `3`, `999`, `900`, `1`)
+- 突击握把 Lv3 (`176`): 增强稳定性。 (`Grip_AS_Lv_3`, `4`, `999`, `2100`, `1`)
+- 快拆握把 Lv1 (`177`): 增强稳定性。 (`Grip_SP_Lv_1`, `0`, `999`, `380`, `1`)
+- 快拆握把 Lv2 (`178`): 增强稳定性。 (`Grip_SP_Lv_2`, `3`, `999`, `900`, `1`)
+- 快拆握把 Lv3 (`179`): 增强稳定性。 (`Grip_SP_Lv_3`, `4`, `999`, `2100`, `1`)
+- 垂直握把 Lv1 (`180`): 增强稳定性。 (`Grip_Verticle_Lv_1`, `0`, `999`, `380`, `1`)
+- 垂直握把 Lv2 (`181`): 增强稳定性。 (`Grip_Verticle_Lv_2`, `3`, `999`, `900`, `1`)
+- 垂直握把 Lv3 (`182`): 增强稳定性。 (`Grip_Verticle_Lv_3`, `4`, `999`, `2100`, `1`)
+- 大口径制退器 Lv.1 (`183`): 可增加精确度。 (`Muzzle_L_Type_1`, `0`, `999`, `380`, `1`)
+- 大口径制退器 Lv.2 (`184`): 可增加精确度。 (`Muzzle_L_Type_2`, `3`, `999`, `900`, `1`)
+- 大口径制退器 Lv.3 (`185`): 可增加精确度。 (`Muzzle_L_Type_3`, `4`, `999`, `2100`, `1`)
+- 霰弹枪集束器 Lv.1 (`186`): 可增加精确度。 (`Muzzle_Shot_Type_1`, `0`, `999`, `380`, `1`)
+- 霰弹枪集束器 Lv.2 (`187`): 可增加精确度。 (`Muzzle_Shot_Type_2`, `3`, `999`, `900`, `1`)
+- 霰弹枪集束器 Lv.3 (`188`): 可增加精确度。 (`Muzzle_Shot_Type_3`, `4`, `999`, `2100`, `1`)
+- 狙击枪消音器 Lv.1 (`189`): 可增加精确度。 (`Muzzle_Sniper_Type_1`, `0`, `999`, `380`, `1`)
+- 狙击枪消音器 Lv.2 (`190`): 可增加精确度。 (`Muzzle_Sniper_Type_2`, `3`, `999`, `900`, `1`)
+- 狙击枪消音器 Lv.3 (`191`): 可增加精确度。 (`Muzzle_Sniper_Type_3`, `4`, `999`, `2100`, `1`)
+- 小口径制退器 Lv.1 (`192`): 可增加精确度。 (`Muzzle_S_Type_1`, `0`, `999`, `380`, `1`)
+- 小口径制退器 Lv.2 (`193`): 可增加精确度。 (`Muzzle_S_Type_2`, `3`, `999`, `900`, `1`)
+- 小口径制退器 Lv.3 (`194`): 可增加精确度。 (`Muzzle_S_Type_3`, `4`, `999`, `2100`, `1`)
+- 4 倍镜 Lv1 (`195`): 可增加精确度。 (`Scope_4X_Lv_1`, `0`, `999`, `380`, `1`)
+- 4 倍镜 Lv2 (`196`): 可增加精确度。 (`Scope_4X_Lv_2`, `3`, `999`, `900`, `1`)
+- 4 倍镜 Lv3 (`197`): 可增加精确度。 (`Scope_4X_Lv_3`, `4`, `999`, `2100`, `1`)
+- 8 倍镜 Lv1 (`198`): 可增加精确度。 (`Scope_8X_Lv_1`, `0`, `999`, `380`, `1`)
+- 8 倍镜 Lv2 (`199`): 可增加精确度。 (`Scope_8X_Lv_2`, `3`, `999`, `900`, `1`)
+- 8 倍镜 Lv3 (`200`): 可增加精确度。 (`Scope_8X_Lv_3`, `4`, `999`, `2100`, `1`)
+- 数字瞄具 Lv1 (`201`): 可增加精确度。 (`Scope_Digit_Lv_1`, `0`, `999`, `380`, `1`)
+- 数字瞄具 Lv2 (`202`): 可增加精确度。 (`Scope_Digit_Lv_2`, `3`, `999`, `900`, `1`)
+- 数字瞄具 Lv3 (`203`): 可增加精确度。 (`Scope_Digit_Lv_3`, `4`, `999`, `2100`, `1`)
+- 全息瞄具 Lv1 (`204`): 可增加精确度。 (`Scope_Holo_Lv_1`, `0`, `999`, `380`, `1`)
+- 全息瞄具 Lv2 (`205`): 可增加精确度。 (`Scope_Holo_Lv_2`, `3`, `999`, `900`, `1`)
+- 全息瞄具 Lv3 (`206`): 可增加精确度。 (`Scope_Holo_Lv_3`, `4`, `999`, `2100`, `1`)
+- 快速瞄具 Lv1 (`207`): 可增加精确度。 (`Scope_Long_Lv_1`, `0`, `999`, `380`, `1`)
+- 快速瞄具 Lv2 (`208`): 可增加精确度。 (`Scope_Long_Lv_2`, `3`, `999`, `900`, `1`)
+- 快速瞄具 Lv3 (`209`): 可增加精确度。 (`Scope_Long_Lv_3`, `4`, `999`, `2100`, `1`)
+- 红点瞄具 Lv1 (`210`): 可增加精确度。 (`Scope_RedDot_Lv_1`, `0`, `999`, `380`, `1`)
+- 红点瞄具 Lv2 (`211`): 可增加精确度。 (`Scope_RedDot_Lv_2`, `3`, `999`, `900`, `1`)
+- 红点瞄具 Lv3 (`212`): 可增加精确度。 (`Scope_RedDot_Lv_3`, `4`, `999`, `2100`, `1`)
+- 步枪枪托 Lv1 (`213`): 增强稳定性。 (`Stock_Rifle_Lv_1`, `0`, `999`, `380`, `1`)
+- 步枪枪托 Lv2 (`214`): 增强稳定性。 (`Stock_Rifle_Lv_2`, `3`, `999`, `900`, `1`)
+- 步枪枪托 Lv3 (`215`): 增强稳定性。 (`Stock_Rifle_Lv_3`, `4`, `999`, `2100`, `1`)
+- 霰弹枪托 Lv1 (`216`): 增强稳定性。 (`Stock_Shot_Lv_1`, `0`, `999`, `380`, `1`)
+- 霰弹枪托 Lv2 (`217`): 增强稳定性。 (`Stock_Shot_Lv_2`, `3`, `999`, `900`, `1`)
+- 霰弹枪托 Lv3 (`218`): 增强稳定性。 (`Stock_Shot_Lv_3`, `4`, `999`, `2100`, `1`)
+- 冲锋枪枪托 Lv1 (`219`): 增强稳定性。 (`Stock_SMG_Lv_1`, `0`, `999`, `380`, `1`)
+- 冲锋枪枪托 Lv2 (`220`): 增强稳定性。 (`Stock_SMG_Lv_2`, `3`, `999`, `900`, `1`)
+- 冲锋枪枪托 Lv3 (`221`): 增强稳定性。 (`Stock_SMG_Lv_3`, `4`, `999`, `2100`, `1`)
+- 狙击枪枪托 Lv1 (`222`): 增强稳定性。 (`Stock_Sniper_Lv_1`, `0`, `999`, `380`, `1`)
+- 狙击枪枪托 Lv2 (`223`): 增强稳定性。 (`Stock_Sniper_Lv_2`, `3`, `999`, `900`, `1`)
+- 狙击枪枪托 Lv3 (`224`): 增强稳定性。 (`Stock_Sniper_Lv_3`, `4`, `999`, `2100`, `1`)
+- 战术激光 Lv1 (`225`): 更加精准的射击。 (`Tec_Lazer_Lv_1`, `0`, `999`, `380`, `1`)
+- 战术激光 Lv2 (`226`): 更加精准的射击。 (`Tec_Lazer_Lv_2`, `3`, `999`, `900`, `1`)
+- 战术激光 Lv3 (`227`): 更加精准的射击。 (`Tec_Lazer_Lv_3`, `4`, `999`, `2100`, `1`)
+- 战术手电 Lv1 (`228`): 照射对方头部，使其变得脆弱。 (`Tec_Light_Lv_1`, `0`, `999`, `380`, `1`)
+- 战术手电 Lv2 (`229`): 照射对方头部，使其变得脆弱。 (`Tec_Light_Lv_2`, `3`, `999`, `900`, `1`)
+- 战术手电 Lv3 (`230`): 照射对方头部，使其变得脆弱。 (`Tec_Light_Lv_3`, `4`, `999`, `2100`, `1`)
+- 大口径扩容弹匣 Lv1 (`231`): 增加弹药数量。 (`Magazine_Rifle_Lv_1`, `0`, `999`, `380`, `1`)
+- 大口径扩容弹匣 Lv2 (`232`): 增加弹药数量。 (`Magazine_Rifle_Lv_2`, `3`, `999`, `900`, `1`)
+- 大口径扩容弹匣 Lv3 (`233`): 增加弹药数量。 (`Magazine_Rifle_Lv_3`, `4`, `999`, `2100`, `1`)
+- 小口径扩容弹匣 Lv1 (`234`): 增加弹药数量。 (`Magazine_SMG_Lv_1`, `0`, `999`, `380`, `1`)
+- 小口径扩容弹匣 Lv2 (`235`): 增加弹药数量。 (`Magazine_SMG_Lv_2`, `3`, `999`, `900`, `1`)
+- 小口径扩容弹匣 Lv3 (`236`): 增加弹药数量。 (`Magazine_SMG_Lv_3`, `4`, `999`, `2100`, `1`)
+- AK-103 (`238`): AK-47 的现代化版本，继承了其可靠性的同时，在各方面也有进一步的提升。 (`L_AK102_Lv_2`, `0`, `4`, `6049`, `1`)
+- AK-47 (`240`): 经典的制式步枪，威力较大，结构简单，维护方便，但后座力较大，精度一般。 (`L_AK47_Lv_2`, `0`, `3`, `3550`, `1`)
+- MF (`242`): 装备非常广泛的制式武器，精度高，后坐力小的同时能支持大部分配件的安装。 (`L_MF_Lv_2`, `0`, `3`, `3956`, `1`)
+- RPK (`244`): 基于 AK-47 设计的轻型机枪，载弹量巨大，通常用于火力支援。 (`L_RPK_Lv_2`, `0`, `5`, `12181`, `1`)
+- VPO-101 (`246`): 射击精度高且有不俗的爆头伤害，虽然口径看上去是步枪，但在鸭科夫被当作狙击枪使用。 (`Sniper_VPO`, `0`, `3`, `5086`, `1`)
+- 土制猎枪 (`248`): 小作坊里手搓的霰弹枪，各方面的性能表现都非常一般。 (`Shot_Hand_Lv_2`, `0`, `1`, `264`, `1`)
+- MP-155 (`250`): 泵动式霰弹枪，虽然需要手动装填，但载弹量在霰弹枪中相当不错。 (`Shot_MP155_Lv_2`, `0`, `2`, `1703`, `1`)
+- AK-74U (`252`): 基于 AK-47 进行了短管设计，因为威力下降，被鸭鸭们降格为了冲锋枪。 (`S_AK74_Lv_2`, `0`, `2`, `1510`, `1`)
+- 格力克 (`254`): 重量轻，可靠性高，弹容量大，深受各路鸭鸭的喜欢。 (`S_GLick_Lv_2`, `0`, `2`, `1030`, `1`)
+- MMG (`256`): MF 的前身，各方面都非常均衡的制式武器。 (`S_MMG_Lv_2`, `0`, `3`, `4242`, `1`)
+- MP7 (`258`): 射程和稳定性都相当出色的制式冲锋枪，对配件的支持也相当好。 (`S_MP7_Lv_2`, `0`, `3`, `4042`, `1`)
+- UP-45 (`260`): 各方面表现都相当均衡的民用冲锋枪。 (`S_UAK45_Lv_2`, `0`, `2`, `1678`, `1`)
+- UZI (`262`): 非常紧凑轻巧的制式冲锋枪，相较于其他冲锋枪有非常高的爆头伤害。 (`S_UZI_Lv_2`, `0`, `3`, `3473`, `1`)
+- 突击握把 Lv4 (`263`): 增强稳定性。 (`Grip_AS_Lv_4`, `5`, `999`, `5000`, `1`)
+- 快拆握把 Lv4 (`264`): 增强稳定性。 (`Grip_SP_Lv_4`, `5`, `999`, `5000`, `1`)
+- 垂直握把 Lv4 (`265`): 增强稳定性。 (`Grip_Verticle_Lv_4`, `5`, `999`, `5000`, `1`)
+- 大口径扩容弹匣 Lv4 (`266`): 增加弹药数量。 (`Magazine_Rifle_Lv_4`, `5`, `999`, `5000`, `1`)
+- 小口径扩容弹匣 Lv4 (`267`): 增加弹药数量。 (`Magazine_SMG_Lv_4`, `5`, `999`, `5000`, `1`)
+- 大口径制退器 Lv.4 (`268`): 可增加精确度。 (`Muzzle_L_Type_4`, `5`, `999`, `5000`, `1`)
+- 霰弹枪集束器 Lv.4 (`269`): 可增加精确度。 (`Muzzle_Shot_Type_4`, `5`, `999`, `5000`, `1`)
+- 狙击枪消音器 Lv.4 (`270`): 可增加精确度。 (`Muzzle_Sniper_Type_4`, `5`, `999`, `5000`, `1`)
+- 小口径制退器 Lv.4 (`271`): 可增加精确度。 (`Muzzle_S_Type_4`, `5`, `999`, `5000`, `1`)
+- 4 倍镜 Lv4 (`272`): 可增加精确度。 (`Scope_4X_Lv_4`, `5`, `999`, `5000`, `1`)
+- 8 倍镜 Lv4 (`273`): 可增加精确度。 (`Scope_8X_Lv_4`, `5`, `999`, `5000`, `1`)
+- 数字瞄具 Lv4 (`274`): 可增加精确度。 (`Scope_Digit_Lv_4`, `5`, `999`, `5000`, `1`)
+- 全息瞄具 Lv4 (`275`): 可增加精确度。 (`Scope_Holo_Lv_4`, `5`, `999`, `5000`, `1`)
+- 快速瞄具 Lv4 (`276`): 可增加精确度。 (`Scope_Long_Lv_4`, `5`, `999`, `5000`, `1`)
+- 红点瞄具 Lv4 (`277`): 可增加精确度。 (`Scope_RedDot_Lv_4`, `5`, `999`, `5000`, `1`)
+- 步枪枪托 Lv4 (`278`): 增强稳定性。 (`Stock_Rifle_Lv_4`, `5`, `999`, `5000`, `1`)
+- 霰弹枪托 Lv4 (`279`): 增强稳定性。 (`Stock_Shot_Lv_4`, `5`, `999`, `5000`, `1`)
+- 冲锋枪枪托 Lv4 (`280`): 增强稳定性。 (`Stock_SMG_Lv_4`, `5`, `999`, `5000`, `1`)
+- 狙击枪枪托 Lv4 (`281`): 增强稳定性。 (`Stock_Sniper_Lv_4`, `5`, `999`, `5000`, `1`)
+- 战术激光 Lv4 (`282`): 更加精准的射击。 (`Tec_Lazer_Lv_4`, `5`, `999`, `5000`, `1`)
+- 战术手电 Lv4 (`283`): 照射对方头部，使其变得脆弱。 (`Tec_Light_Lv_4`, `5`, `999`, `5000`, `1`)
+- 蓝图模板 (`284`): 用于研发武器：XXXX。 (`1_Blueprint`, `0`, `9`, `10500`, `1`)
+- 蓝图：AK-103 (`285`): 用于在工作台研发武器：AK-103。 (`BP_AK102`, `4`, `4`, `50`, `1`)
+- 蓝图：AK-47 (`286`): 用于在工作台研发武器：AK-47。 (`BP_AK47`, `3`, `3`, `50`, `1`)
+- 蓝图：AK-74U (`287`): 用于在工作台研发武器：AK-74U。 (`BP_AK74U`, `0`, `2`, `50`, `1`)
+- 蓝图：土制猎枪 (`289`): 用于在工作台研发武器：土制猎枪。 (`BP_HAND`, `0`, `1`, `50`, `1`)
+- 蓝图：MF (`290`): 用于在工作台研发武器：MF。 (`BP_MF`, `3`, `3`, `50`, `1`)
+- 蓝图：MMG (`291`): 用于在工作台研发武器：MMG。 (`BP_MMG`, `0`, `4`, `50`, `1`)
+- 蓝图：MP-155 (`292`): 用于在工作台研发武器：MP-155。 (`BP_MP155`, `0`, `2`, `50`, `1`)
+- 蓝图：MP7 (`293`): 用于在工作台研发武器：MP7。 (`BP_MP7`, `4`, `4`, `50`, `1`)
+- 蓝图：RPK (`294`): 用于在工作台研发武器：RPK。 (`BP_RPK`, `4`, `5`, `50`, `1`)
+- 蓝图：VPO-101 (`295`): 用于在工作台研发武器：VPO-101。 (`BP_VPO`, `5`, `6`, `50`, `1`)
+- 蓝图：UAK-45 (`296`): 用于在工作台研发武器：UAK-45。 (`BP_UAK45`, `3`, `3`, `50`, `1`)
+- 蓝图：UZI (`297`): 用于在工作台研发武器：UZI。 (`BP_UZI`, `4`, `4`, `50`, `1`)
+- 移动硬盘 (`298`): 能够承载数据的移动硬盘，质量非常好。 (`HardDrive`, `0`, `3`, `239`, `1`)
+- 移动硬盘：宿舍楼 (`299`): 装有宿舍电脑数据的硬盘。 (`Quest_HardDrive_Dormitory`, `0`, `2`, `1`, `1`)
+- 移动硬盘：加油站录像 (`300`): 装有加油站监控录像的硬盘。 (`Quest_HardDrive_GasStation`, `0`, `2`, `1`, `1`)
+- J-Lab 软盘 (`301`): 装有加密数据的软盘。 (`FloppyDisk`, `0`, `4`, `1200`, `1`)
+- 枪 (`302`): 一挺机枪，高续航。 (`1_EnemyGun_Template`, `5`, `9`, `95000`, `1`)
+- ??? (`303`): Item_EGun_SHOT_Storm_NoGraphic_Desc (`EGun_SHOT_Storm_NoGraphic`, `0`, `9`, `284`, `1`)
+- ??? (`304`): Item_EGun_AR_Storm_NoGraphic_Desc (`EGun_AR_Storm_NoGraphic`, `0`, `9`, `284`, `1`)
+- 切肉刀 (`305`): 看起来很粗犷的刀，不是很锋利。 (`PigKnife`, `0`, `1`, `175`, `1`)
+- 战斧 (`306`): 狂战士专用。 (`Axe`, `0`, `5`, `1975`, `1`)
+- 一级防弹衣 (`307`): 比纸还薄，能挡一发水弹枪。 (`1_Armor_Template`, `0`, `9`, `13000`, `1`)
+- 冷核碎片 (`308`): 发出幽幽的蓝光。 (`ColdCore`, `3`, `2`, `250`, `6`)
+- 赤核碎片 (`309`): 不稳定，散发巨大能量。 (`FlamingCore`, `5`, `2`, `500`, `6`)
+- ??? (`310`): Item_EGun_Magic_Desc (`EGun_Magic`, `0`, `9`, `284`, `1`)
+- ??? (`311`): Item_EGun_SMG_Storm_NoGraphic_Desc (`EGun_SMG_Storm_NoGraphic`, `0`, `9`, `284`, `1`)
+- 工厂门禁卡 (`312`): 工厂员工的门禁卡。 (`Key_Card_Factory`, `0`, `3`, `2185`, `1`)
+- 工厂门禁卡(加密) (`313`): 工厂员工的门禁卡（已被加密，无法使用）。 (`Key_Card_Factory_Uncrack`, `0`, `6`, `1`, `1`)
+- 武器蓝图：基础 (`314`): 用于研发武器的基础蓝图。 (`BP_Weapon_0_Basic`, `0`, `99`, `800`, `1`)
+- 武器蓝图：专业 (`315`): 用于研发武器的专业蓝图。 (`BP_Weapon_2_Pro`, `5`, `99`, `3000`, `1`)
+- 武器蓝图：进阶 (`316`): 用于研发武器的进阶蓝图。 (`BP_Weapon_1_Advanced`, `4`, `99`, `2000`, `1`)
+- 武器蓝图：终极 (`317`): 用于研发武器的终极蓝图。 (`BP_Weapon_3_Ultimate`, `6`, `99`, `3000`, `1`)
+- 图腾:甲胄 Ⅱ (`318`): 大幅增强防护属性。 (`Totem_Armor 2`, `3`, `3`, `2000`, `1`)
+- 图腾:甲胄 Ⅰ (`319`): 增强防护属性。 (`Totem_Armor`, `1`, `1`, `350`, `1`)
+- 图腾:进击 Ⅱ (`320`): 大幅提高枪械的伤害。 (`Totem_GunDamage 2`, `4`, `4`, `3500`, `1`)
+- 图腾:进击 Ⅰ (`321`): 提高枪械的伤害。 (`Totem_GunDamage`, `2`, `2`, `1000`, `1`)
+- 图腾:战士 II (`322`): 中幅增加近战输出。 (`Totem_MeleeAttack 2`, `3`, `3`, `2000`, `1`)
+- 图腾:战士 I (`323`): 小幅增加近战输出。 (`Totem_MeleeAttack`, `2`, `2`, `1000`, `1`)
+- 图腾:轻盈 Ⅱ (`324`): 增加移动能力。 (`Totem_Speed 2`, `4`, `4`, `3500`, `1`)
+- 图腾:健壮 Ⅲ (`325`): 负重属性增强，背包容量增加。 (`Totem_Strong 3`, `4`, `4`, `3500`, `1`)
+- 火箭弹 Lv1 (`326`): 发射器弹药。 (`Bullet_Rocket`, `0`, `5`, `500`, `5`)
+- RPG-7 (`327`): 爆炸性伤害，咻~~~砰！ (`Rocket_RPG_Lv_1`, `0`, `6`, `8531`, `1`)
+- 显示卡 (`328`): 久经沙场的图形处理卡，布满灰尘。 (`GPU`, `0`, `5`, `21436`, `1`)
+- 充电宝 (`329`): 物美价廉的充电宝，不过充不了几次。 (`PowerBank`, `3`, `3`, `810`, `1`)
+- 情报文件 (`330`): 包含了各种机密信息的情报文件。 (`InformationFiles`, `0`, `5`, `4176`, `1`)
+- LEDX 皮肤透照仪 (`331`): 血管显像仪，用于显示血管，便于注射。 (`LEDX`, `0`, `5`, `32514`, `1`)
+- 螺栓 (`332`): 略微生锈的螺栓，硬度够用。 (`Bolt`, `0`, `1`, `193`, `10`)
+- 灯泡 (`333`): 普通的灯泡，看起来还能工作。 (`Bulb`, `0`, `2`, `255`, `10`)
+- 节能灯 (`334`): 亮起来更加省电，不过看起来质量不太好。 (`Bulb2`, `0`, `3`, `827`, `3`)
+- 螺母 (`335`): 充满划痕的螺母。 (`Nut`, `0`, `1`, `222`, `10`)
+- 电源线 (`336`): 电脑用的电源线。 (`Cable`, `0`, `2`, `514`, `1`)
+- 电线 (`337`): 各种电线。 (`Cables`, `0`, `1`, `150`, `5`)
+- CD 驱动器 (`338`): 用来读取 CD 光盘。 (`CDDriver`, `0`, `2`, `579`, `1`)
+- 电路板 (`339`): 电脑主板。 (`CircuitBoard`, `0`, `2`, `496`, `1`)
+- 电子元件 (`340`): 不知道是啥的奇怪电子零件。 (`ElectricParts`, `0`, `1`, `235`, `5`)
+- ??? (`341`): Item_EnemyGun_Spider_Rifle_Desc (`EnemyGun_Spider_Rifle`, `0`, `9`, `218`, `1`)
+- ??? (`342`): Item_EnemyGun_Spider_Ring_Desc (`EnemyGun_Spider_Ring`, `0`, `9`, `229`, `1`)
+- 破旧鱼竿 (`343`): 又破又旧的钓竿。 (`FishingRod`, `0`, `1`, `287`, `1`)
+- Item_Bait1 (`344`): Item_Bait1_Desc (`Bait1`, `0`, `93`, `212`, `3`)
+- Item_Bait2 (`345`): Item_Bait2_Desc (`Bait2`, `0`, `94`, `212`, `3`)
+- 一级鱼 (`346`): Item_Fish1_Desc (`Fish1`, `0`, `92`, `83`, `1`)
+- 二级鱼 (`347`): Item_Fish2_Desc (`Fish2`, `0`, `93`, `83`, `1`)
+- Item_Bait3 (`348`): Item_Bait3_Desc (`Bait3`, `0`, `95`, `212`, `3`)
+- 三级鱼 (`349`): Item_Fish3_Desc (`Fish3`, `0`, `94`, `83`, `1`)
+- S-涂毒弹 (`350`): 子弹表面涂抹毒药。 (`Bullet_AR_S_Poison`, `0`, `999`, `12`, `240`)
+- S-电击弹 (`351`): 释放电流的子弹，有时候能麻痹敌人。 (`Bullet_AR_S_Electric`, `0`, `999`, `22`, `240`)
+- L-电击弹 (`352`): 集中的瞬间释放电力。 (`Bullet_AR_L_Electric`, `0`, `999`, `20`, `180`)
+- L-空间弹 (`353`): 借助地核力量，能够扭曲空间，破坏坚硬的结构。 (`Bullet_AR_L_Space`, `0`, `999`, `35`, `180`)
+- S-空间弹 (`354`): 借助地核力量，能够扭曲空间，破坏坚硬的结构。 (`Bullet_AR_S_Space`, `0`, `999`, `30`, `240`)
+- 霰弹-穿甲弹 (`355`): 能够穿透低级护甲。 (`Bullet_SHOT_Piercing2`, `0`, `999`, `30`, `80`)
+- 空手 (`356`): Item_AnimalWeapon_Desc (`AnimalWeapon`, `0`, `9`, `175`, `1`)
+- 劣质弓 (`357`): 就是一根木棒中间绑了根绳子，可以凑合用用。 (`A_Bow_Lv_1`, `0`, `1`, `218`, `1`)
+- 木箭矢 (`358`): 用树枝制作的箭矢。 (`Bullet_Arrow_Normal`, `0`, `999`, `25`, `20`)
+- 灰房子钥匙 (`359`): 零号区域的一处民房钥匙。 (`Key_GroundZero_GHouse`, `0`, `2`, `380`, `1`)
+- 杂物围栏钥匙 (`360`): 山丘一处不起眼的杂物堆放处。 (`Key_GroundZero_Storage`, `0`, `2`, `459`, `1`)
+- 木料 (`361`): 经过了加工的木料。 (`Wood`, `0`, `1`, `102`, `10`)
+- 金属片 (`362`): 略微生锈的金属片。 (`MetalSlice`, `0`, `1`, `89`, `10`)
+- L-过期子弹 (`363`): 已经过了使用年限，一碰就碎。甚至连纸都打不穿。打这种子弹会较快降低枪械耐久。 (`Bullet_AR_L_Rusted`, `0`, `999`, `1`, `180`)
+- S-生锈子弹 (`364`): 生了锈的小口径子弹。打不穿任何东西。打这种子弹会较快降低枪械耐久。 (`Bullet_AR_S_Rusted`, `0`, `999`, `1`, `240`)
+- 木棍 (`365`): 可以挥来挥去的木棍，非常直。 (`WoodStick`, `0`, `1`, `10`, `1`)
+- 老朋友的信 (`366`): 看见对面的营地没，后面有一块铁丝网坏掉了，然后他们用铁皮给补上了，但是一点也不牢靠，我用一个撬棍就能轻松打开。我之前从那进了不少货。 (`Quest_Letter_EquipmentMercent`, `0`, `2`, `1`, `1`)
+- 武器零件 (`367`): 一堆用来制造枪械的零件。 (`WeaponParts`, `0`, `1`, `128`, `5`)
+- 虚化的羽毛 (`368`): 感觉很快就会消失。 (`Feather`, `3`, `2`, `200`, `15`)
+- 图腾:抗物 Ⅰ (`369`): 免疫流血。 (`Totem_PhysicResist`, `2`, `2`, `1000`, `1`)
+- 图腾：马拉松 Ⅰ (`370`): 小幅减少耐力消耗。 (`Totem_FinalDash`, `2`, `2`, `1000`, `1`)
+- 图腾：饥饿大师 (`371`): 减少能量和水分的消耗。 (`Totem_Hunger`, `3`, `3`, `2000`, `1`)
+- 图腾：耐力 (`372`): 增加耐力上限，并加快体力恢复速度。 (`Totem_Stamina`, `3`, `3`, `1900`, `1`)
+- 传送装置图纸 (`373`): 详细描述了传送装置的制作过程，异常的简单。 (`Quest_Blueprint_TeleporterMachine`, `0`, `2`, `200`, `1`)
+- 配方：MD40 (`374`): 制作 MD40 的配方。 (`Formula_Template`, `0`, `99`, `253`, `1`)
+- 农场镇传送密钥 (`375`): 有了这个，我们就可以传送到农场镇了。 (`Quest_HardDrive_GroundZero_Signal`, `0`, `2`, `1`, `1`)
+- 蓝图：RPG 发射器 (`376`): 用于在工作台研发武器：RPG。 (`BP_RPG`, `5`, `6`, `50`, `1`)
+- 配方：捕兽夹 (`377`): 制作捕兽陷阱的配方。 (`Formula_Trap`, `0`, `99`, `253`, `1`)
+- 配方：MD40 (`378`): 制作 MD40 的配方。 (`Formula_WD40`, `0`, `99`, `253`, `1`)
+- 背带衣 (`379`): Music~ (`ArmorCai`, `0`, `9`, `350`, `1`)
+- T.H 篮球 (`380`): 气还很足。 (`Basketball`, `0`, `3`, `500`, `1`)
+- 配方：背带衣 (`381`): 谢谢。 (`Formula_ArmorCai`, `0`, `99`, `253`, `1`)
+- 配方：撬棍 (`382`): 制作撬棍的配方。 (`Formula_Wrench03`, `0`, `99`, `253`, `1`)
+- 配方：电源线 (`383`): 制作电源线的配方。 (`Formula_Cable`, `0`, `99`, `253`, `1`)
+- 机械钥匙 (`384`): 打开某个车门的钥匙。 (`Key_Machine`, `0`, `1`, `220`, `1`)
+- 怀表 (`385`): 好像是锌合金做的。 (`Quest_Watch`, `0`, `4`, `774`, `1`)
+- 货物清单 (`386`): 武器运送货物清单。 (`Quest_List_GroundZeroGoods`, `0`, `2`, `1`, `1`)
+- 配方：电路板 (`387`): 在工作台制作电路板的配方。 (`Formula_CircuitBoard`, `0`, `99`, `253`, `1`)
+- 0.2BTC (`388`): 这玩意也有实体的？ (`BitCoin`, `0`, `5`, `15631`, `1`)
+- 神秘留言 (`389`): 告诉你，售货机里的东西，都超贵！售卖价格翻了好几倍！而且回收价竟然只有原价的一半！奸商，奸商！ (`Quest_Letter_InShop`, `0`, `9`, `1`, `1`)
+- 小型能量弹 (`390`): 为小型能量武器提供能量。 (`Bullet_Energy_S`, `0`, `999`, `25`, `120`)
+- 方块枪 (`391`): 小巧的电属性能量发射武器。 (`Energy_CubeGun`, `0`, `9`, `1018`, `1`)
+- 蓝图：方块枪 (`392`): 用于研发能量武器：方块枪。 (`BP_CubeGun`, `5`, `6`, `50`, `1`)
+- 蓝图：小型能量弹药 (`393`): 手工制作小型能量弹药的方法。 (`BP_Bullet_Energy_S`, `5`, `6`, `50`, `1`)
+- 计算核心 (`394`): 蜘蛛型机器人的计算核心。 (`ComputeCore`, `5`, `2`, `500`, `5`)
+- 黑色针剂 (`395`): 原型是 BeLand 公司研发的“脏水”生化药剂。J-Lab 经过两年半研究，对其进行改良，极大降低了对宿主造成的副作用。药物全称是 Ginius-PEP-Mg，也可称作基尼肽镁。 (`Jinitaimei`, `0`, `6`, `34`, `3`)
+- 配方：黑色药剂 (`396`): 在医疗站解锁黑色药剂的配方。 (`Formula_Jinitaimei`, `0`, `99`, `253`, `1`)
+- 比特币矿机 (`397`): Item_BitcoinMiner_Desc (`BitcoinMiner`, `5`, `2`, `500`, `1`)
+- 负重针 (`398`): 增加负重，持续 240 秒。 (`Injection_Weight`, `0`, `3`, `648`, `3`)
+- 爆炸箭 (`399`): 这玩意没有安全爆炸距离。 (`Bullet_Arrow_Explosion`, `0`, `999`, `500`, `5`)
+- 蓝图：爆炸箭 (`400`): 在工作台制作爆炸箭的配方。 (`BP_ArrowExplosion`, `5`, `6`, `50`, `1`)
+- 蓝图：土豆显卡 (`401`): 手搓土豆显卡的图纸，上面还画了大便的俯视图，不知是何用意。 (`BP_GPU_Potato`, `0`, `6`, `50`, `1`)
+- 土豆显卡 (`402`): 真是一场奇迹。 (`GPU_Potato`, `0`, `9`, `800`, `1`)
+- 土豆 (`403`): 土豆的香气。 (`Potato`, `0`, `1`, `230`, `3`)
+- 霰弹-破烂 (`404`): 弹壳已经老化了，里面的弹丸估计也好不到哪去。 (`Bullet_SHOT_Rusted`, `0`, `999`, `3`, `80`)
+- 蓝图：防毒面具 (`405`): 制作防毒面具的蓝图。 (`BP_GasMask`, `5`, `99`, `50`, `1`)
+- 狙击-劣质子弹 (`406`): 偷工减料的子弹。 (`Bullet_Sniper_Rusted`, `0`, `999`, `19`, `30`)
+- M107 (`407`): 很猛，甚至不像是用来与有机生物作战的武器，重量也相当夸张。 (`Sniper_Balett`, `0`, `6`, `23102`, `1`)
+- 电抗性针 (`408`): 一段时间内受到的电属性伤害降低。 (`Injection_ElecResist`, `0`, `3`, `648`, `3`)
+- 镇痛剂 (`409`): 让你在一段时间内无视疼痛。 (`Injection_PainResist`, `0`, `3`, `648`, `3`)
+- 配方：抗电性针 (`410`): 在医疗站制作抗电性针的配方。 (`Formula_Injection_ElecResist`, `0`, `99`, `253`, `1`)
+- 配方：镇痛剂 (`411`): 在医疗站制作镇痛剂的配方。 (`Formula_Injection_PainResist`, `0`, `99`, `253`, `1`)
+- 狙击枪弹匣 Lv1 (`412`): 扩容弹匣。 (`Magazine_Sniper_Lv_1`, `0`, `999`, `1590`, `1`)
+- 狙击枪弹匣 Lv2 (`413`): 扩容弹匣。 (`Magazine_Sniper_Lv_2`, `3`, `999`, `3250`, `1`)
+- 狙击枪弹匣 Lv3 (`414`): 扩容弹匣。 (`Magazine_Sniper_Lv_3`, `4`, `999`, `5600`, `1`)
+- 狙击枪弹匣 Lv4 (`415`): 扩容弹匣。 (`Magazine_Sniper_Lv_4`, `5`, `999`, `9800`, `1`)
+- 大口径消音器 Lv1 (`416`): 减弱声音传播距离。 (`Muzzle_L_Slience_1`, `0`, `999`, `1200`, `1`)
+- 大口径消音器 Lv2 (`417`): 减弱声音传播距离。 (`Muzzle_L_Slience_2`, `3`, `999`, `2000`, `1`)
+- 大口径消音器 Lv3 (`418`): 减弱声音传播距离。 (`Muzzle_L_Slience_3`, `4`, `999`, `3250`, `1`)
+- 大口径消音器 Lv4 (`419`): 减弱声音传播距离。 (`Muzzle_L_Slience_4`, `5`, `999`, `6800`, `1`)
+- 小口径消音器 Lv1 (`420`): 减弱声音传播距离。 (`Muzzle_S_Slience_1`, `0`, `999`, `1200`, `1`)
+- 小口径消音器 Lv2 (`421`): 减弱声音传播距离。 (`Muzzle_S_Slience_2`, `3`, `999`, `2000`, `1`)
+- 小口径消音器 Lv3 (`422`): 减弱声音传播距离。 (`Muzzle_S_Slience_3`, `4`, `999`, `3250`, `1`)
+- 小口径消音器 Lv4 (`423`): 减弱声音传播距离。 (`Muzzle_S_Slience_4`, `5`, `999`, `6800`, `1`)
+- 黑市联络笔记 (`424`): 沾满黑乎乎的东西，记录着各路商人的信息，但是用某种方式加密了。 (`Note_BlackMarket`, `3`, `3`, `2541`, `1`)
+- 加密 U 盘 (`425`): 可用于存储资料。 (`UDisk`, `3`, `3`, `2466`, `1`)
+- 地窖钥匙 (`426`): 通往某处地窖。 (`Key_HiddenWarehouse_Cellar`, `0`, `2`, `220`, `1`)
+- 隐居者的信 (`427`): 我挖了条地道，直通对面的仓库后面。但是钥匙让我整丢了。 (`Quest_Letter_HiddenWarehouse_Explorer`, `0`, `2`, `1`, `1`)
+- 瓶装水 (`428`): 瓶装矿泉水，微微发绿。 (`Water`, `0`, `2`, `375`, `1`)
+- 愿望单之力 (`429`): 奖励给添加愿望单的勇士。你一定已经添加愿望单了对吧？对吧？ (`PowerOfWishlist`, `0`, `5`, `4580`, `1`)
+- 图腾:抗电 Ⅱ (`430`): 免疫触电。 (`Totem_ElecResist 2`, `4`, `4`, `3500`, `1`)
+- 图腾:抗电 Ⅰ (`431`): 降低受到的电属性伤害。 (`Totem_ElecResist`, `3`, `3`, `2000`, `1`)
+- 图腾:效率 Ⅱ (`432`): 医疗物品的效率提高。 (`Totem_Efficiency 2`, `2`, `2`, `1000`, `1`)
+- 图腾:控枪 Ⅲ (`433`): 降低枪械的后坐力与散布。 (`Totem_GunControl 3`, `3`, `3`, `2000`, `1`)
+- 图腾：战术换弹 (`434`): 巨幅提高换弹速度。 (`Totem_Reload`, `4`, `4`, `3500`, `1`)
+- 图腾:忍者 Ⅱ (`435`): 降低奔跑时的声音传播距离。 (`Totem_Ninja 2`, `2`, `2`, `1000`, `1`)
+- 图腾:忍者 Ⅰ (`436`): 小幅降低奔跑时的声音传播距离。 (`Totem_Ninja`, `1`, `1`, `350`, `1`)
+- VPO-劳登改 (`437`): 经过劳登改造的 VPO 狙击步枪。 (`Sniper_VPO_Deng`, `0`, `9`, `6046`, `1`)
+- 热血针剂 (`438`): 变得易怒，受到伤害时移动速度与近战伤害会提高，持续 60 秒。 (`Injection_HotBlood`, `0`, `4`, `2868`, `3`)
+- 配方：热血针剂 (`439`): 在医疗站制作热血针剂的配方。 (`Formula_Injection_HotBlood`, `0`, `99`, `253`, `1`)
+- 废弃加油站钥匙 (`440`): 某处废弃加油站的钥匙。 (`Key_GasStation_Warehouse`, `0`, `1`, `220`, `1`)
+- 厂区办公室钥匙 (`441`): 打开位于工厂区的某处办公室。 (`Key_RedWareHosue_Warehouse`, `0`, `1`, `220`, `1`)
+- 小隔间钥匙 (`442`): 打开某个房子的小隔间。 (`Key_SmallRoom_HiddenWarehouse`, `0`, `1`, `220`, `1`)
+- 地窖围栏钥匙 (`443`): 地窖中一处围栏的钥匙。 (`Key_HiddenWarehouse_Cellar_Wire`, `0`, `3`, `220`, `1`)
+- 红包 (`444`): 四次元红包，里面不一定装着什么好东西，拆开看看？ (`RedBag`, `0`, `3`, `1817`, `1`)
+- 小纸条 (`445`): 恭喜发财。 (`LuckyNote_1`, `0`, `9`, `10`, `10`)
+- 铜钱串 (`446`): 好贵！ (`NewYear_AncientCoins`, `0`, `5`, `13666`, `1`)
+- 中国结 (`447`): 好看！ (`NewYear_ChineseKnot`, `0`, `4`, `3885`, `1`)
+- 红灯笼 (`448`): 好热闹！ (`NewYear_Lantern`, `0`, `2`, `2373`, `1`)
+- 饺子 (`449`): 好吃！ (`Dumpling`, `0`, `2`, `212`, `3`)
+- 烂格力克 (`450`): 残次品的格力克。 (`S_GLick_Low`, `0`, `0`, `66`, `1`)
+- 现金 (`451`): 纸质现金。 (`Cash`, `0`, `1`, `1`, `1000000`)
+- 快速握把 A (`452`): 提高瞄准速度的握把。 (`Grip_ALL_ADS_1`, `0`, `2`, `500`, `1`)
+- 快速握把 B (`453`): 大幅提高瞄准速度的握把。 (`Grip_ALL_ADS_2`, `0`, `3`, `1100`, `1`)
+- Item_Grip_ALL_MOV_1 (`454`): Item_Grip_ALL_MOV_1_Desc (`Grip_ALL_MOV_1`, `0`, `999`, `1`, `1`)
+- 垂直握把 I (`455`): 加强垂直后坐力控制的握把。 (`Grip_ALL_REC_1`, `0`, `3`, `1100`, `1`)
+- 水平握把 I (`456`): 加强水平后坐力控制的握把。 (`Grip_ALL_REC_2`, `0`, `3`, `1100`, `1`)
+- 平衡握把 (`457`): 加强后坐力控制的握把。 (`Grip_ALL_REC_3`, `0`, `4`, `2400`, `1`)
+- 垂直握把 II (`458`): 极大幅加强垂直后坐力控制的握把。 (`Grip_ALL_REC_4`, `0`, `4`, `2400`, `1`)
+- 水平握把 II (`459`): 极大幅加强水平后坐力控制的握把。 (`Grip_ALL_REC_5`, `0`, `4`, `2400`, `1`)
+- 腰射握把 I (`460`): 提高腰射控制与机动性的握把。 (`Grip_ALL_SCA_1`, `0`, `3`, `1100`, `1`)
+- Item_Grip_ALL_SCA_2 (`461`): Item_Grip_ALL_SCA_2_Desc (`Grip_ALL_SCA_2`, `0`, `999`, `1`, `1`)
+- 腰射握把 II (`462`): 大幅提高腰射控制与机动性的握把。 (`Grip_ALL_SCA_3`, `0`, `4`, `2400`, `1`)
+- 手枪制退器-均衡 A (`463`): 加强后坐力控制与射程的手枪枪口。 (`Muzzle_PST_REC_1`, `0`, `3`, `1100`, `1`)
+- 手枪制退器-均衡 B (`464`): 大幅加强后坐力控制的手枪枪口。 (`Muzzle_PST_REC_2`, `0`, `3`, `1100`, `1`)
+- 手枪消音器 (`465`): 降低开枪时声响的手枪枪口，但会损失少量子弹速度与射程。 (`Muzzle_PST_SIL_1`, `0`, `2`, `500`, `1`)
+- 手枪延长枪口 (`466`): 提高射程的手枪枪口，但会损失移动速度。 (`Muzzle_PST_DIS_1`, `0`, `3`, `1100`, `1`)
+- 手枪制退器-散布 (`467`): 提高瞄准时散布控制的手枪枪口。 (`Muzzle_PST_SCA_1`, `0`, `2`, `500`, `1`)
+- 冲锋枪制退器-均衡 A (`468`): 加强后坐力控制与射程的冲锋枪枪口。 (`Muzzle_SMG_REC_1`, `0`, `3`, `1100`, `1`)
+- 冲锋枪制退器-均衡 B (`469`): 大幅加强后坐力控制的冲锋枪枪口。 (`Muzzle_SMG_REC_2`, `0`, `3`, `1100`, `1`)
+- 冲锋枪垂直制退器 (`470`): 极大幅加强垂直后坐力控制的冲锋枪枪口。 (`Muzzle_SMG_REC_3`, `0`, `4`, `2400`, `1`)
+- 冲锋枪水平制退器 (`471`): 极大幅加强水平后坐力控制的冲锋枪枪口。 (`Muzzle_SMG_REC_4`, `0`, `4`, `2400`, `1`)
+- 冲锋枪制退器-散布 (`472`): 提高瞄准时散布控制的冲锋枪枪口。 (`Muzzle_SMG_SCA_1`, `0`, `2`, `500`, `1`)
+- 冲锋枪螺旋制退器 (`473`): 大幅提高瞄准时散布控制的冲锋枪枪口。 (`Muzzle_SMG_SCA_2`, `0`, `3`, `1100`, `1`)
+- 冲锋枪消音器 (`474`): 降低开枪时声响的冲锋枪枪口，但会损失少量子弹速度与射程。 (`Muzzle_SMG_SIL_1`, `0`, `2`, `500`, `1`)
+- 步枪延长枪口 (`475`): 提高射程的步枪枪口，但会损失移动速度。 (`Muzzle_AR_DIS_1`, `0`, `3`, `1100`, `1`)
+- 步枪制退器-均衡 A (`476`): 加强后坐力控制与射程的步枪枪口。 (`Muzzle_AR_REC_1`, `0`, `3`, `1100`, `1`)
+- 步枪制退器-均衡 B (`477`): 大幅加强后坐力控制的步枪枪口。 (`Muzzle_AR_REC_2`, `0`, `3`, `1100`, `1`)
+- 步枪垂直制退器 (`478`): 极大幅加强垂直后坐力控制的步枪枪口。 (`Muzzle_AR_REC_3`, `0`, `4`, `2400`, `1`)
+- 步枪水平制退器 (`479`): 极大幅加强水平后坐力控制的步枪枪口。 (`Muzzle_AR_REC_4`, `0`, `4`, `2400`, `1`)
+- 步枪制退器-散布 (`480`): 提高瞄准时散布控制的步枪枪口。 (`Muzzle_AR_SCA_1`, `0`, `2`, `500`, `1`)
+- 步枪螺旋制退器 (`481`): 大幅提高瞄准时散布控制的步枪枪口。 (`Muzzle_AR_SCA_2`, `0`, `3`, `1100`, `1`)
+- 步枪消音器 (`482`): 降低开枪时声响的步枪枪口，但会损失少量子弹速度与射程。 (`Muzzle_AR_SIL_1`, `0`, `2`, `500`, `1`)
+- Item_Muzzle_AR_SIL_2 (`483`): Item_Muzzle_AR_SIL_2_Desc (`Muzzle_AR_SIL_2`, `0`, `999`, `1`, `1`)
+- 狙击枪延长枪口 (`484`): 提高射程的狙击枪枪口，但会损失移动速度。 (`Muzzle_SNP_DIS_1`, `0`, `3`, `1100`, `1`)
+- 狙击枪制退器-均衡 A (`485`): 加强后坐力控制与射程的狙击枪枪口。 (`Muzzle_SNP_REC_1`, `0`, `3`, `1100`, `1`)
+- Item_Muzzle_SNP_REC_2 (`486`): Item_Muzzle_SNP_REC_2_Desc (`Muzzle_SNP_REC_2`, `0`, `999`, `1`, `1`)
+- 狙击枪水平制退器 (`487`): 极大幅加强水平后坐力控制的狙击枪枪口。 (`Muzzle_SNP_REC_3`, `0`, `4`, `2400`, `1`)
+- 狙击枪制退器-散布 (`488`): 提高瞄准时散布控制的狙击枪枪口。 (`Muzzle_SNP_SCA_1`, `0`, `2`, `500`, `1`)
+- 狙击枪制退器-机动 (`489`): 提高腰射控制的狙击枪枪口。 (`Muzzle_SNP_SCA_2`, `0`, `3`, `1100`, `1`)
+- 狙击枪消音器 (`490`): 降低开枪时声响的狙击枪枪口，但会损失少量子弹速度与射程。 (`Muzzle_SNP_SIL_1`, `0`, `2`, `500`, `1`)
+- Item_Muzzle_SNP_SIL_2 (`491`): Item_Muzzle_SNP_SIL_2_Desc (`Muzzle_SNP_SIL_2`, `0`, `999`, `1`, `1`)
+- Item_Muzzle_SNP_SIL_3 (`492`): Item_Muzzle_SNP_SIL_3_Desc (`Muzzle_SNP_SIL_3`, `0`, `999`, `1`, `1`)
+- 霰弹枪制退器-均衡 A (`493`): 加强后坐力控制与射程的霰弹枪枪口。 (`Muzzle_SHT_REC_1`, `0`, `3`, `1100`, `1`)
+- Item_Muzzle_SHT_REC_2 (`494`): Item_Muzzle_SHT_REC_2_Desc (`Muzzle_SHT_REC_2`, `0`, `999`, `1`, `1`)
+- Item_Muzzle_SHT_REC_3 (`495`): Item_Muzzle_SHT_REC_3_Desc (`Muzzle_SHT_REC_3`, `0`, `999`, `1`, `1`)
+- Item_Muzzle_SHT_REC_4 (`496`): Item_Muzzle_SHT_REC_4_Desc (`Muzzle_SHT_REC_4`, `0`, `999`, `1`, `1`)
+- Item_Muzzle_SHT_SCA_1 (`497`): Item_Muzzle_SHT_SCA_1_Desc (`Muzzle_SHT_SCA_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_PST_MOV_1 (`498`): Item_Stock_PST_MOV_1_Desc (`Stock_PST_MOV_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_PST_REL_1 (`499`): Item_Stock_PST_REL_1_Desc (`Stock_PST_REL_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_PST_SCA_1 (`500`): Item_Stock_PST_SCA_1_Desc (`Stock_PST_SCA_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_PST_SCA_2 (`501`): Item_Stock_PST_SCA_2_Desc (`Stock_PST_SCA_2`, `0`, `999`, `1`, `1`)
+- Item_Stock_SMG_MOV_1 (`502`): Item_Stock_SMG_MOV_1_Desc (`Stock_SMG_MOV_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SMG_REC_1 (`503`): Item_Stock_SMG_REC_1_Desc (`Stock_SMG_REC_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SMG_REL_1 (`504`): Item_Stock_SMG_REL_1_Desc (`Stock_SMG_REL_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SMG_SCA_1 (`505`): Item_Stock_SMG_SCA_1_Desc (`Stock_SMG_SCA_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SMG_SCA_2 (`506`): Item_Stock_SMG_SCA_2_Desc (`Stock_SMG_SCA_2`, `0`, `999`, `1`, `1`)
+- Item_Stock_SMG_SCA_3 (`507`): Item_Stock_SMG_SCA_3_Desc (`Stock_SMG_SCA_3`, `0`, `999`, `1`, `1`)
+- 快速枪托 (`508`): 大幅提高瞄准速度与机动性的枪托。 (`Stock_AR_MOV_1`, `0`, `3`, `1100`, `1`)
+- 平衡枪托 I (`509`): 加强后坐力控制的枪托。 (`Stock_AR_REC_1`, `0`, `2`, `500`, `1`)
+- 平衡枪托 II (`510`): 大幅加强后坐力控制的枪托。 (`Stock_AR_REC_2`, `0`, `3`, `1100`, `1`)
+- 轻型枪托 (`511`): 极大幅提高机动性的枪托。 (`Stock_AR_REL_1`, `0`, `4`, `2400`, `1`)
+- Item_Stock_AR_SCA_1 (`512`): Item_Stock_AR_SCA_1_Desc (`Stock_AR_SCA_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_AR_SCA_2 (`513`): Item_Stock_AR_SCA_2_Desc (`Stock_AR_SCA_2`, `0`, `999`, `1`, `1`)
+- 腰射枪托 I (`514`): 加强腰射散布控制的枪托。 (`Stock_AR_SCA_3`, `0`, `2`, `500`, `1`)
+- 控制枪托 (`515`): 加强瞄准散布控制的枪托。 (`Stock_AR_SCA_4`, `0`, `2`, `500`, `1`)
+- 腰射枪托 II (`516`): 极大幅加强腰射散布控制的枪托。 (`Stock_AR_SCA_5`, `0`, `4`, `2400`, `1`)
+- Item_Stock_AR_SCA_6 (`517`): Item_Stock_AR_SCA_6_Desc (`Stock_AR_SCA_6`, `0`, `999`, `1`, `1`)
+- Item_Stock_SNP_REC_1 (`518`): Item_Stock_SNP_REC_1_Desc (`Stock_SNP_REC_1`, `0`, `999`, `1`, `1`)
+- 狙击枪平衡枪托 II (`519`): 大幅加强后坐力控制的狙击枪枪托。 (`Stock_SNP_REC_2`, `0`, `999`, `1100`, `1`)
+- Item_Stock_SNP_SCA_1 (`520`): Item_Stock_SNP_SCA_1_Desc (`Stock_SNP_SCA_1`, `0`, `999`, `1`, `1`)
+- 狙击枪控制枪托 I (`521`): 加强瞄准散布控制的狙击枪枪托。 (`Stock_SNP_SCA_2`, `0`, `999`, `500`, `1`)
+- Item_Stock_SNP_SCA_3 (`522`): Item_Stock_SNP_SCA_3_Desc (`Stock_SNP_SCA_3`, `0`, `999`, `1`, `1`)
+- 狙击枪控制枪托 II (`523`): 极大幅加强瞄准散布控制的狙击枪枪托。 (`Stock_SNP_SCA_4`, `0`, `999`, `2400`, `1`)
+- Item_Stock_SHT_MOV_1 (`524`): Item_Stock_SHT_MOV_1_Desc (`Stock_SHT_MOV_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SHT_REC_1 (`525`): Item_Stock_SHT_REC_1_Desc (`Stock_SHT_REC_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SHT_REL_1 (`526`): Item_Stock_SHT_REL_1_Desc (`Stock_SHT_REL_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SHT_SCA_1 (`527`): Item_Stock_SHT_SCA_1_Desc (`Stock_SHT_SCA_1`, `0`, `999`, `1`, `1`)
+- Item_Stock_SHT_SCA_2 (`528`): Item_Stock_SHT_SCA_2_Desc (`Stock_SHT_SCA_2`, `0`, `999`, `1`, `1`)
+- Item_Stock_SHT_SCA_3 (`529`): Item_Stock_SHT_SCA_3_Desc (`Stock_SHT_SCA_3`, `0`, `999`, `1`, `1`)
+- Item_Stock_SHT_SCA_4 (`530`): Item_Stock_SHT_SCA_4_Desc (`Stock_SHT_SCA_4`, `0`, `999`, `1`, `1`)
+- 手枪快速弹匣 I (`531`): 提高瞄准速度的手枪弹匣。 (`Magazine_PST_ADS_1`, `0`, `2`, `500`, `1`)
+- 手枪快速弹匣 II (`532`): 大幅提高瞄准速度的手枪弹匣。 (`Magazine_PST_ADS_2`, `0`, `3`, `1100`, `1`)
+- 手枪扩容弹匣 I (`533`): 提高枪械载弹量的手枪弹匣。 (`Magazine_PST_CAP_1`, `0`, `2`, `500`, `1`)
+- 手枪扩容弹匣 II (`534`): 大幅提高枪械载弹量的手枪弹匣。 (`Magazine_PST_CAP_2`, `0`, `3`, `1100`, `1`)
+- Item_Magazine_PST_REL_1 (`535`): Item_Magazine_PST_REL_1_Desc (`Magazine_PST_REL_1`, `0`, `999`, `1`, `1`)
+- 冲锋枪快速弹匣 (`536`): 提高瞄准速度的冲锋枪弹匣。 (`Magazine_SMG_ADS_1`, `0`, `2`, `500`, `1`)
+- 冲锋枪扩容弹匣 I (`537`): 提高枪械载弹量的冲锋枪弹匣。 (`Magazine_SMG_CAP_1`, `0`, `2`, `500`, `1`)
+- 冲锋枪扩容弹匣 II (`538`): 大幅提高枪械载弹量的冲锋枪弹匣。 (`Magazine_SMG_CAP_2`, `0`, `3`, `1100`, `1`)
+- 冲锋枪扩容弹匣 III (`539`): 极大幅提高枪械载弹量的冲锋枪弹匣。 (`Magazine_SMG_CAP_3`, `0`, `4`, `2400`, `1`)
+- Item_Magazine_SMG_REL_1 (`540`): Item_Magazine_SMG_REL_1_Desc (`Magazine_SMG_REL_1`, `0`, `999`, `1`, `1`)
+- Item_Magazine_SMG_REL_2 (`541`): Item_Magazine_SMG_REL_2_Desc (`Magazine_SMG_REL_2`, `0`, `999`, `1`, `1`)
+- Item_Magazine_SMG_REL_3 (`542`): Item_Magazine_SMG_REL_3_Desc (`Magazine_SMG_REL_3`, `0`, `999`, `1`, `1`)
+- 步枪快速弹匣 I (`543`): 提高瞄准速度的步枪弹匣。 (`Magazine_AR_ADS_1`, `0`, `2`, `500`, `1`)
+- 步枪快速弹匣 II (`544`): 大幅提高瞄准速度的步枪弹匣。 (`Magazine_AR_ADS_2`, `0`, `3`, `1100`, `1`)
+- Item_Magazine_AR_ADS_3 (`545`): Item_Magazine_AR_ADS_3_Desc (`Magazine_AR_ADS_3`, `0`, `999`, `1`, `1`)
+- 步枪扩容弹匣 I (`546`): 提高枪械载弹量的步枪弹匣。 (`Magazine_AR_CAP_1`, `0`, `2`, `500`, `1`)
+- 步枪扩容弹匣 II (`547`): 大幅提高枪械载弹量的步枪弹匣。 (`Magazine_AR_CAP_2`, `0`, `3`, `1100`, `1`)
+- 步枪扩容弹匣 III (`548`): 极大幅提高枪械载弹量的步枪弹匣。 (`Magazine_AR_CAP_3`, `0`, `4`, `2400`, `1`)
+- Item_Magazine_AR_CAP_4 (`549`): Item_Magazine_AR_CAP_4_Desc (`Magazine_AR_CAP_4`, `0`, `999`, `1`, `1`)
+- Item_Magazine_AR_REL_1 (`550`): Item_Magazine_AR_REL_1_Desc (`Magazine_AR_REL_1`, `0`, `999`, `1`, `1`)
+- Item_Magazine_AR_REL_2 (`551`): Item_Magazine_AR_REL_2_Desc (`Magazine_AR_REL_2`, `0`, `999`, `1`, `1`)
+- Item_Magazine_AR_REL_3 (`552`): Item_Magazine_AR_REL_3_Desc (`Magazine_AR_REL_3`, `0`, `999`, `1`, `1`)
+- 狙击枪快速弹匣 I (`553`): 提高瞄准速度的狙击枪弹匣。 (`Magazine_SNP_ADS_1`, `0`, `2`, `500`, `1`)
+- 狙击枪快速弹匣 II (`554`): 大幅提高瞄准速度的狙击枪弹匣。 (`Magazine_SNP_ADS_2`, `0`, `3`, `1100`, `1`)
+- Item_Magazine_SNP_ADS_3 (`555`): Item_Magazine_SNP_ADS_3_Desc (`Magazine_SNP_ADS_3`, `0`, `999`, `1`, `1`)
+- 狙击枪扩容弹匣 I (`556`): 提高枪械载弹量的狙击枪弹匣。 (`Magazine_SNP_CAP_1`, `0`, `2`, `500`, `1`)
+- 狙击枪扩容弹匣 II (`557`): 大幅提高枪械载弹量的狙击枪弹匣。 (`Magazine_SNP_CAP_2`, `0`, `3`, `1100`, `1`)
+- Item_Magazine_SNP_CAP_3 (`558`): Item_Magazine_SNP_CAP_3_Desc (`Magazine_SNP_CAP_3`, `0`, `999`, `1`, `1`)
+- Item_Magazine_SNP_REL_1 (`559`): Item_Magazine_SNP_REL_1_Desc (`Magazine_SNP_REL_1`, `0`, `999`, `1`, `1`)
+- Item_Magazine_SNP_REL_2 (`560`): Item_Magazine_SNP_REL_2_Desc (`Magazine_SNP_REL_2`, `0`, `999`, `1`, `1`)
+- 霰弹枪扩容弹匣 I (`561`): 提高枪械载弹量的霰弹枪弹匣。 (`Magazine_SHT_CAP_1`, `0`, `999`, `500`, `1`)
+- 霰弹枪扩容弹匣 II (`562`): 大幅提高枪械载弹量的霰弹枪弹匣。 (`Magazine_SHT_CAP_2`, `0`, `999`, `1100`, `1`)
+- 霰弹枪扩容弹匣 III (`563`): 极大幅提高枪械载弹量的霰弹枪弹匣。 (`Magazine_SHT_CAP_3`, `0`, `999`, `2400`, `1`)
+- Item_Magazine_SHT_CAP_4 (`564`): Item_Magazine_SHT_CAP_4_Desc (`Magazine_SHT_CAP_4`, `0`, `999`, `1`, `1`)
+- Item_Magazine_SHT_REL_1 (`565`): Item_Magazine_SHT_REL_1_Desc (`Magazine_SHT_REL_1`, `0`, `999`, `1`, `1`)
+- Item_Magazine_SHT_REL_2 (`566`): Item_Magazine_SHT_REL_2_Desc (`Magazine_SHT_REL_2`, `0`, `999`, `1`, `1`)
+- Item_Magazine_SHT_REL_3 (`567`): Item_Magazine_SHT_REL_3_Desc (`Magazine_SHT_REL_3`, `0`, `999`, `1`, `1`)
+- 步枪 4 倍镜 (`568`): 大幅提高瞄准距离的步枪瞄准镜，但会损失一定后坐力控制与瞄准速度。 (`Scope_AR_4X_1`, `0`, `3`, `1100`, `1`)
+- 狙击枪 8 倍镜 (`569`): 极大幅提高瞄准距离的狙击枪瞄准镜，但会损失大量后坐力控制与瞄准速度。 (`Scope_SNP_8X_1`, `0`, `4`, `2400`, `1`)
+- 数字瞄具 (`570`): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。 (`Scope_All_Digit_1`, `0`, `2`, `500`, `1`)
+- 全息瞄具 (`571`): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。 (`Scope_All_Holo_1`, `0`, `2`, `500`, `1`)
+- 快速瞄具 (`572`): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。 (`Scope_All_Long_1`, `0`, `2`, `500`, `1`)
+- 红点瞄具 (`573`): 降低基础瞄准时间的单倍瞄准镜，同时会改变准星样式。 (`Scope_All_RedDot_1`, `0`, `2`, `500`, `1`)
+- 2 倍镜 (`574`): 提高瞄准距离的瞄准镜，但会损失少量后坐力控制与瞄准速度。 (`Scope_All_2X_1`, `0`, `3`, `1100`, `1`)
+- Item_Tec_Laser_NON_1 (`575`): Item_Tec_Laser_NON_1_Desc (`Tec_Laser_NON_1`, `0`, `999`, `1`, `1`)
+- 激光-机动 (`576`): 提高瞄准速度与机动性的激光指示器。 (`Tec_Laser_ADS_1`, `0`, `3`, `1100`, `1`)
+- 激光-快反 (`577`): 大幅提高瞄准速度的激光指示器。 (`Tec_Laser_ADS_2`, `0`, `3`, `1100`, `1`)
+- 激光-基础 (`578`): 提高腰射散布控制的激光指示器。 (`Tec_Laser_SCA_1`, `0`, `2`, `500`, `1`)
+- 激光-校准 (`579`): 大幅提高腰射散布控制的激光指示器。 (`Tec_Laser_SCA_2`, `0`, `4`, `2400`, `1`)
+- 战术手电 (`580`): 大幅提高夜间的视野范围。 (`Tec_Flashlight_NON_1`, `0`, `2`, `500`, `1`)
+- Item_Muzzle_SHT_SCA_2 (`583`): Item_Muzzle_SHT_SCA_2_Desc (`Muzzle_SHT_SCA_2`, `0`, `999`, `1`, `1`)
+- 霰弹枪制退器-机动 (`584`): 提高腰射控制的霰弹枪枪口。 (`Muzzle_SHT_SCA_3`, `0`, `3`, `1100`, `1`)
+- S-生锈弹 (`594`): 已经略微生锈的制式轻型弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。 (`Bullet_SMG_Rusted`, `0`, `1`, `1`, `240`)
+- S-普通弹 (`595`): 标准的制式轻型弹。 (`Bullet_SMG_Normal`, `0`, `2`, `5`, `240`)
+- S-燃烧弹 (`596`): 装填了可燃成分的轻型弹，造成火伤害。 (`Bullet_SMG_Burn`, `0`, `999`, `13`, `240`)
+- S-穿甲弹 (`597`): 能够穿透中级护甲的防护的轻型弹。 (`Bullet_SMG_Piercing3`, `3`, `3`, `30`, `240`)
+- S-高级穿甲弹 (`598`): 能够穿透高级护甲的防护的轻型弹。 (`Bullet_SMG_Piercing5`, `4`, `4`, `84`, `240`)
+- S-毒性弹 (`599`): 装填了毒性成分的轻型弹，造成毒伤害。 (`Bullet_SMG_Poison`, `0`, `999`, `11`, `240`)
+- S-感电弹 (`600`): 装填了金属粉末的轻型弹，造成电伤害。 (`Bullet_SMG_Electric`, `0`, `999`, `14`, `240`)
+- S-空间弹 (`601`): 用外星科技制造的轻型弹，造成空间伤害。 (`Bullet_SMG_Space`, `0`, `999`, `25`, `240`)
+- S-肉伤弹 (`602`): 对肉体能造成大量伤害的轻型弹，但没有穿透护甲的能力。 (`Bullet_SMG_Dumdums`, `0`, `999`, `15`, `240`)
+- AR-生锈弹 (`603`): 已经略微生锈的制式步枪弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。 (`Bullet_AR_Rusted`, `0`, `1`, `1`, `180`)
+- AR-普通弹 (`604`): 标准的制式步枪弹。 (`Bullet_AR_Normal`, `0`, `2`, `7`, `180`)
+- AR-燃烧弹 (`605`): 装填了可燃成分的步枪弹，造成火伤害。 (`Bullet_AR_Burn`, `0`, `999`, `18`, `180`)
+- AR-穿甲弹 (`606`): 能够穿透中级护甲的防护的步枪弹。 (`Bullet_AR_Piercing3`, `3`, `3`, `43`, `180`)
+- AR-高级穿甲弹 (`607`): 能够穿透高级护甲的防护的步枪弹。 (`Bullet_AR_Piercing5`, `4`, `4`, `120`, `180`)
+- AR-毒性弹 (`608`): 装填了毒性成分的步枪弹，造成毒伤害。 (`Bullet_AR_Poison`, `0`, `999`, `15`, `180`)
+- AR-感电弹 (`609`): 装填了金属粉末的步枪弹，造成电伤害。 (`Bullet_AR_Electric`, `0`, `999`, `20`, `180`)
+- AR-空间弹 (`610`): 用外星科技制造的步枪弹，造成空间伤害。 (`Bullet_AR_Space`, `0`, `999`, `35`, `180`)
+- AR-肉伤弹 (`611`): 对肉体能造成大量伤害的步枪弹，但没有穿透护甲的能力。 (`Bullet_AR_Dumdums`, `0`, `999`, `21`, `180`)
+- L-生锈弹 (`612`): 已经略微生锈的制式重型弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。 (`Bullet_BR_Rusted`, `0`, `1`, `2`, `180`)
+- L-普通弹 (`613`): 标准的制式重型弹。 (`Bullet_BR_Normal`, `0`, `2`, `12`, `180`)
+- L-燃烧弹 (`614`): 装填了可燃成分的重型弹，造成火伤害。 (`Bullet_BR_Burn`, `0`, `999`, `32`, `180`)
+- L-穿甲弹 (`615`): 能够穿透中级护甲的防护的重型弹。 (`Bullet_BR_Piercing3`, `3`, `3`, `75`, `180`)
+- L-高级穿甲弹 (`616`): 能够穿透高级护甲的防护的重型弹。 (`Bullet_BR_Piercing5`, `4`, `4`, `210`, `180`)
+- L-毒性弹 (`617`): 装填了毒性成分的重型弹，造成毒伤害。 (`Bullet_BR_Poison`, `0`, `999`, `26`, `180`)
+- L-感电弹 (`618`): 装填了金属粉末的重型弹，造成电伤害。 (`Bullet_BR_Electric`, `0`, `999`, `35`, `180`)
+- L-空间弹 (`619`): 用外星科技制造的重型弹，造成空间伤害。 (`Bullet_BR_Space`, `0`, `999`, `61`, `180`)
+- L-肉伤弹 (`620`): 对肉体能造成大量伤害的重型弹，但没有穿透护甲的能力。 (`Bullet_BR_Dumdums`, `0`, `999`, `37`, `180`)
+- 生锈狙击弹 (`621`): 已经略微生锈的制式狙击弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。 (`Bullet_SNP_Rusted`, `0`, `1`, `5`, `30`)
+- 普通狙击弹 (`622`): 标准的制式狙击弹。 (`Bullet_SNP_Normal`, `0`, `2`, `35`, `30`)
+- 燃烧狙击弹 (`623`): 装填了可燃成分的狙击弹，造成火伤害。 (`Bullet_SNP_Burn`, `0`, `999`, `90`, `30`)
+- 中级穿甲狙击弹 (`624`): 能够穿透中级护甲的防护的狙击弹。 (`Bullet_SNP_Piercing3`, `4`, `999`, `215`, `30`)
+- 高级穿甲狙击弹 (`625`): 能够穿透高级护甲的防护的狙击弹。 (`Bullet_SNP_Piercing5`, `5`, `999`, `600`, `30`)
+- 毒性狙击弹 (`626`): 装填了毒性成分的狙击弹，造成毒伤害。 (`Bullet_SNP_Poison`, `0`, `999`, `75`, `30`)
+- 感电狙击弹 (`627`): 装填了金属粉末的狙击弹，造成电伤害。 (`Bullet_SNP_Electric`, `0`, `999`, `100`, `30`)
+- 空间狙击弹 (`628`): 用外星科技制造的狙击弹，造成空间伤害。 (`Bullet_SNP_Space`, `0`, `999`, `175`, `30`)
+- 肉伤狙击弹 (`629`): 对肉体能造成大量伤害的狙击弹，但没有穿透护甲的能力。 (`Bullet_SNP_Dumdums`, `0`, `999`, `105`, `30`)
+- 生锈霰弹 (`630`): 已经略微生锈的制式霰弹，几乎没有穿甲能力，对于枪械的耐久消耗也较高。 (`Bullet_SHT_Rusted`, `0`, `1`, `3`, `80`)
+- 普通霰弹 (`631`): 标准的制式霰弹。 (`Bullet_SHT_Normal`, `0`, `2`, `21`, `80`)
+- 燃烧霰弹 (`632`): 装填了可燃成分的霰弹，造成火伤害。 (`Bullet_SHT_Burn`, `0`, `999`, `54`, `80`)
+- 穿甲霰弹 (`633`): 能够穿透中级护甲的防护的霰弹。 (`Bullet_SHT_Piercing3`, `3`, `3`, `129`, `80`)
+- 高级穿甲霰弹 (`634`): 能够穿透高级护甲的防护的霰弹。 (`Bullet_SHT_Piercing5`, `4`, `4`, `360`, `80`)
+- 毒性霰弹 (`635`): 装填了毒性成分的霰弹，造成毒伤害。 (`Bullet_SHT_Poison`, `0`, `999`, `45`, `80`)
+- 感电霰弹 (`636`): 装填了金属粉末的霰弹，造成电伤害。 (`Bullet_SHT_Electric`, `0`, `999`, `60`, `80`)
+- 空间霰弹 (`637`): 用外星科技制造的霰弹，造成空间伤害。 (`Bullet_SHT_Space`, `0`, `999`, `105`, `80`)
+- 肉伤霰弹 (`638`): 对肉体能造成大量伤害的霰弹，但没有穿透护甲的能力。 (`Bullet_SHT_Dumdums`, `0`, `999`, `63`, `80`)
+- MAG-生锈弹 (`639`): 已经略微生锈的制式马格南弹药，几乎没有穿甲能力，对于枪械的耐久消耗也较高。 (`Bullet_MAG_Rusted`, `0`, `999`, `8`, `24`)
+- MAG-普通弹 (`640`): 标准的制式马格南弹药。 (`Bullet_MAG_Normal`, `0`, `2`, `56`, `24`)
+- MAG-燃烧弹 (`641`): 装填了可燃成分的马格南弹药，造成火伤害。 (`Bullet_MAG_Burn`, `0`, `999`, `144`, `24`)
+- MAG-中级穿甲弹 (`642`): 能够穿透中级护甲的防护的马格南弹药。 (`Bullet_MAG_Piercing3`, `4`, `999`, `344`, `24`)
+- MAG-高级穿甲弹 (`643`): 能够穿透高级护甲的防护的马格南弹药。 (`Bullet_MAG_Piercing5`, `5`, `999`, `960`, `24`)
+- MAG-毒性弹 (`644`): 装填了毒性成分的马格南弹药，造成毒伤害。 (`Bullet_MAG_Poison`, `0`, `999`, `120`, `24`)
+- MAG-感电弹 (`645`): 装填了金属粉末的马格南弹药，造成电伤害。 (`Bullet_MAG_Electric`, `0`, `999`, `160`, `24`)
+- MAG-空间弹 (`646`): 用外星科技制造的马格南弹药，造成空间伤害。 (`Bullet_MAG_Space`, `0`, `999`, `280`, `24`)
+- MAG-肉伤弹 (`647`): 对肉体能造成大量伤害的马格南弹药，但没有穿透护甲的能力。 (`Bullet_MAG_Dumdums`, `0`, `999`, `168`, `24`)
+- 木矢 (`648`): 用树枝制作的箭矢。 (`Bullet_ARR_Normal`, `0`, `1`, `1`, `20`)
+- 爆炸矢 (`649`): 这玩意没有安全爆炸距离。 (`Bullet_ARR_Explosion`, `0`, `4`, `500`, `5`)
+- 小能量弹 (`650`): 为能量武器提供少量能量。 (`Bullet_PWS_S`, `0`, `9`, `25`, `240`)
+- 激光-暴击 (`651`): 提高爆头伤害的激光指示器。 (`Tec_Laser_CIT_1`, `0`, `4`, `2400`, `1`)
+- ADAR 2-15 (`652`): 制式武器的民用版本，虽然威力较低，但有着优秀的稳定性和更好的配件支持。 (`AR_ADAR_Normal`, `0`, `2`, `1633`, `1`)
+- StG 77 (`653`): 无托结构设计，短小紧凑后坐力较小，且自带光学瞄准镜。 (`AR_AUGA1_Normal`, `0`, `3`, `3658`, `1`)
+- StG 77A3 (`654`): StG 77 的改进型，去掉了光学瞄准镜并提高了配件的支持。 (`AR_AUGA3_Normal`, `0`, `3`, `4539`, `1`)
+- MP5 (`655`): 高精度，低后座力的制式冲锋枪，相当适合腰射。 (`SMG_MP5_Normal`, `0`, `4`, `5794`, `1`)
+- SKS-45 (`656`): 结构简单，精度良好的制式步枪。在鸭科夫，威力较大的步枪被称为战斗步枪，即使口径相同也要使用不同的弹药，没人知道理由。 (`BR_SKS_Normal`, `0`, `2`, `2386`, `1`)
+- TOZ-66 (`657`): 手动装填的双管霰弹枪，一般用来自卫。 (`SHT_TOZ66_Normal`, `0`, `1`, `435`, `1`)
+- TOZ-106 (`658`): 单管霰弹枪，可以弹匣换弹。 (`SHT_TOZ106_Normal`, `0`, `1`, `547`, `1`)
+- VPO-136 (`659`): 基于 AK-47 设计的半自动民用步枪，可靠性很高。 (`AR_VPO136_Normal`, `0`, `1`, `630`, `1`)
+- 烟雾弹 (`660`): 制造一团遮挡视野的烟雾。 (`SmokeGrenade`, `0`, `3`, `580`, `1`)
+- 中级武器零件 (`662`): 更高级的枪械零件，能制造更多枪械。 (`WeaponPartsLv2`, `0`, `2`, `248`, `5`)
+- 高级武器零件 (`663`): 顶级枪械零件，很多高端武器必不可少的材料。 (`WeaponPartsLv3`, `0`, `4`, `669`, `5`)
+- 蓝图：ADAR 2-15 (`665`): 用于在工作台研发武器：ADAR 2-15。 (`BP_ADAR`, `0`, `2`, `50`, `1`)
+- 蓝图：StG 77 (`666`): 用于在工作台研发武器：StG-77。 (`BP_AUGA1`, `0`, `3`, `50`, `1`)
+- 蓝图：StG 77A3 (`667`): 用于在工作台研发武器：StG-77A3。 (`BP_AUGA3`, `0`, `3`, `50`, `1`)
+- 蓝图：MP5 (`668`): 用于在工作台研发武器：MP5。 (`BP_MP5`, `0`, `3`, `50`, `1`)
+- 蓝图：SKS (`669`): 用于在工作台研发武器：SKS。 (`BP_SKS`, `0`, `2`, `50`, `1`)
+- 蓝图：TOZ-66 (`670`): 用于在工作台研发武器：TOZ-66。 (`BP_TOZ66`, `0`, `1`, `50`, `1`)
+- 蓝图：TOZ-106 (`671`): 用于在工作台研发武器：TOZ-106。 (`BP_TOZ106`, `0`, `1`, `50`, `1`)
+- 蓝图：VPO-136 (`672`): 用于在工作台研发武器：VPO-136。 (`BP_VPO136`, `0`, `1`, `50`, `1`)
+- 蓝图：普通重型弹 (`675`): 用于制造：L-普通弹。 (`BP_Bullet_BR_Normal`, `0`, `2`, `50`, `1`)
+- 蓝图：普通狙击弹 (`676`): 用于制造：普通狙击弹。 (`BP_Bullet_SNP_Normal`, `0`, `9`, `50`, `1`)
+- 蓝图：普通霰弹 (`677`): 用于制造：普通霰弹。 (`BP_Bullet_SHT_Normal`, `0`, `9`, `50`, `1`)
+- 蓝图：MAG-普通弹 (`678`): 用于制造：普通反器材弹。 (`BP_Bullet_MAG_Normal`, `0`, `9`, `50`, `1`)
+- 耳机 (`679`): 能够提高听觉灵敏度，可以听到声音来自于哪个方向。 (`HeadsetLV1`, `0`, `2`, `680`, `1`)
+- VSS (`680`): 自带消声器和光学瞄准镜，适合用来偷袭老同志，缺点是射程相对有限。 (`BR_VSS_Normal`, `0`, `5`, `16741`, `1`)
+- AS Val (`681`): 自带消音器的特种步枪，射速快，精度高但载弹量有限。 (`AR_ASVAL_Normal`, `0`, `5`, `10648`, `1`)
+- DT MDR-556 (`682`): 还在测试阶段的制式步枪，模块化程度非常高，但不知什么原因，本来可以卸下的枪管和黄色的外壳绑定在了一起。 (`AR_DTMDR556_Normal`, `0`, `4`, `7354`, `1`)
+- DT MDR-762 (`683`): 还在测试阶段的制式战斗步枪，模块化程度非常高，但不知什么原因，本来可以卸下的枪管和黑色的外壳绑定在了一起。 (`BR_DTMDR762_Normal`, `0`, `5`, `14099`, `1`)
+- S-低级穿甲弹 (`688`): 能够穿透低级护甲的防护的轻型弹。 (`Bullet_SMG_Piercing2`, `3`, `999`, `15`, `240`)
+- S-中级穿甲弹 (`689`): 能够穿透中级护甲的防护的轻型弹。 (`Bullet_SMG_Piercing4`, `4`, `999`, `49`, `240`)
+- S-高级穿甲弹 (`690`): 能够穿透高级护甲的防护的轻型弹。 (`Bullet_SMG_Piercing6`, `5`, `999`, `140`, `240`)
+- S-特种弹 (`691`): 能够大幅消耗护甲耐久的轻型弹，虽然穿甲能力很低，但可以快速击碎敌人的护甲，使他失去护甲防护，并造成比普通子弹更高的伤害。 (`Bullet_SMG_Break`, `5`, `5`, `140`, `240`)
+- AR-低级穿甲弹 (`692`): 能够穿透低级护甲的防护的步枪弹。 (`Bullet_AR_Piercing2`, `3`, `999`, `21`, `180`)
+- AR-中级穿甲弹 (`693`): 能够穿透中级护甲的防护的步枪弹。 (`Bullet_AR_Piercing4`, `4`, `999`, `70`, `180`)
+- AR-特种穿甲弹 (`694`): 能够穿透几乎所有护甲的防护的步枪弹，造成的伤害也更高。 (`Bullet_AR_Piercing6`, `5`, `5`, `200`, `180`)
+- AR-碎甲弹 (`695`): 能够大幅消耗护甲耐久的步枪弹，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。 (`Bullet_AR_Break`, `0`, `999`, `33`, `180`)
+- L-低级穿甲弹 (`696`): 能够穿透低级护甲的防护的重型弹。 (`Bullet_BR_Piercing2`, `3`, `999`, `37`, `180`)
+- L-中级穿甲弹 (`697`): 能够穿透中级护甲的防护的重型弹。 (`Bullet_BR_Piercing4`, `4`, `999`, `123`, `180`)
+- L-特种穿甲弹 (`698`): 能够穿透几乎所有护甲的防护的重型弹，造成的伤害与爆头伤害也更高。 (`Bullet_BR_Piercing6`, `5`, `5`, `350`, `180`)
+- L-碎甲弹 (`699`): 能够大幅消耗护甲耐久的重型弹，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。 (`Bullet_BR_Break`, `0`, `999`, `58`, `180`)
+- 穿甲狙击弹 (`700`): 能够穿透低级护甲的防护的狙击弹。 (`Bullet_SNP_Piercing2`, `3`, `3`, `105`, `30`)
+- 高级穿甲狙击弹 (`701`): 能够穿透中级护甲的防护的狙击弹。 (`Bullet_SNP_Piercing4`, `4`, `4`, `350`, `30`)
+- 特种穿甲狙击弹 (`702`): 能够穿透几乎所有护甲的防护的狙击弹，造成的爆头伤害也更高。 (`Bullet_SNP_Piercing6`, `5`, `5`, `1000`, `30`)
+- 碎甲狙击弹 (`703`): 能够大幅消耗护甲耐久的狙击弹，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。 (`Bullet_SNP_Break`, `0`, `999`, `165`, `30`)
+- 低级穿甲霰弹 (`704`): 能够穿透低级护甲的防护的霰弹。 (`Bullet_SHT_Piercing2`, `3`, `999`, `63`, `80`)
+- 中级穿甲霰弹 (`705`): 能够穿透中级护甲的防护的霰弹。 (`Bullet_SHT_Piercing4`, `4`, `999`, `210`, `80`)
+- 高级穿甲霰弹 (`706`): 能够穿透高级护甲的防护的霰弹。 (`Bullet_SHT_Piercing6`, `5`, `999`, `600`, `80`)
+- 特种霰弹 (`707`): 对肉体能造成大量伤害的霰弹，也非常容易使命中的敌人流血，但没有穿透护甲的能力。 (`Bullet_SHT_Break`, `5`, `5`, `600`, `80`)
+- MAG-穿甲弹 (`708`): 能够穿透低级护甲的防护的马格南弹药。 (`Bullet_MAG_Piercing2`, `3`, `3`, `168`, `24`)
+- MAG-高级穿甲弹 (`709`): 能够穿透中级护甲的防护的马格南弹药。 (`Bullet_MAG_Piercing4`, `4`, `4`, `560`, `24`)
+- MAG-特种穿甲弹 (`710`): 能够穿透几乎所有护甲的防护的马格南弹药，造成的伤害与爆头伤害也更高。 (`Bullet_MAG_Piercing6`, `5`, `5`, `1600`, `24`)
+- MAG-碎甲弹 (`711`): 能够大幅消耗护甲耐久的马格南弹药，虽然穿甲和伤害能力都很低，但可以快速击碎敌人的护甲，使他失去护甲防护。 (`Bullet_MAG_Break`, `0`, `999`, `264`, `24`)
+- 手枪增伤枪口 (`712`): 大幅提高枪械伤害的手枪枪口，但会损失少量后坐力控制。 (`Muzzle_PST_DAM_1`, `0`, `3`, `1100`, `1`)
+- 冲锋枪增伤枪口 (`713`): 大幅提高枪械伤害的冲锋枪枪口，但会损失少量后坐力控制。 (`Muzzle_SMG_DAM_1`, `0`, `3`, `1100`, `1`)
+- 步枪增伤枪口 (`714`): 大幅提高枪械伤害的步枪枪口，但会损失少量后坐力控制。 (`Muzzle_AR_DAM_1`, `0`, `3`, `1100`, `1`)
+- 狙击枪增伤枪口 (`715`): 大幅提高枪械伤害的狙击枪枪口，但会损失少量后坐力控制。 (`Muzzle_SNP_DAM_1`, `0`, `3`, `1100`, `1`)
+- 霰弹枪增伤枪口 (`716`): 大幅提高枪械伤害的霰弹枪枪口，但会损失少量后坐力控制。 (`Muzzle_SHT_DAM_1`, `0`, `3`, `1100`, `1`)
+- 冲锋枪腰射枪托 II (`717`): 极大幅加强腰射散布控制的冲锋枪枪托。 (`Stock_SMG_SCA_4`, `0`, `999`, `1`, `1`)
+- GPNVG-18 夜视仪 (`718`): 视野很好的夜视仪。看起来像白天一样。 (`NightVisionGoggles`, `0`, `5`, `4725`, `1`)
+- T-7 热成像目镜 (`719`): 这玩意凭啥这么贵？ (`ThermalVisionGoggles`, `0`, `6`, `38900`, `1`)
+- 带电 MP7 (`733`): 缠了节电池的 MP7，发射的子弹为电属性。真是震撼人心的鸭星科技啊！ (`SMG_MP7_Electric`, `0`, `9`, `6512`, `1`)
+- Bizon-2 (`734`): 使用螺旋弹匣，载弹量相当大，非常适合用于火力压制。 (`SMG_PP19Bizon_Normal`, `0`, `3`, `3353`, `1`)
+- PPSh (`735`): 非常均衡的制式冲锋枪。 (`SMG_PPSH_Normal`, `0`, `2`, `2214`, `1`)
+- SR-3M (`736`): 换弹速度快，持续伤害能力相当不错的制式冲锋枪，但射程相对有限。常见的版本自带消音器，但这把好像卸了。 (`SMG_SR3M_Normal`, `0`, `3`, `3851`, `1`)
+- Vector (`737`): 使用特殊设计，在保证射速和威力的同时，提高了后坐力控制与稳定性。 (`SMG_Vector9_Normal`, `0`, `3`, `4174`, `1`)
+- 配方：急救箱 (`738`): 在医疗站制造急救箱的配方。 (`Formula_FirstAidKit_M`, `0`, `99`, `200`, `1`)
+- 白大褂 (`740`): J-LAB 研究人员穿的白大褂。 (`WhiteGown`, `0`, `9`, `100`, `1`)
+- 黑色眼镜 (`741`): 看起来很有学问。 (`Glass`, `0`, `2`, `130`, `1`)
+- 闪光的眼镜 (`742`): 散发着反派的气质。 (`GlassShiny`, `0`, `4`, `1200`, `1`)
+- 有机纤维 (`743`): 很结实的纤维线，可以用来制作很多东西。 (`fiber`, `0`, `2`, `194`, `10`)
+- 太阳镜 (`744`): 金边太阳镜，浮夸。 (`SunGlass`, `0`, `4`, `1200`, `1`)
+- 维生系统线索 (`745`): 线人留下的维生系统线索，字迹有些潦草，感觉只有杰夫能看得懂。 (`Quest_Letter_LifeSupportClue`, `0`, `2`, `1`, `1`)
+- 标记器 (`746`): 持续发射坐标的装置，采用蛋清及太阳能双重供电模式，据说续航能达到 1 万年。 (`Marker`, `0`, `2`, `292`, `1`)
+- 空气循环单元 (`747`): 飞船维生系统的重要组成部分。 (`Quest_AirCirculationUnit`, `0`, `6`, `1`, `1`)
+- 高性能计算单元 (`748`): 算力高达 1EFLOPS。 (`ComputingUnit`, `6`, `6`, `80000`, `1`)
+- 蓝图：高性能计算单元 (`749`): 用于研发高性能计算单元。 (`BP_ComputingUnit`, `0`, `0`, `50`, `1`)
+- 大型主板 (`750`): 可以发挥高性能计算单元的全部性能。 (`Quest_HugeMotherBoard`, `0`, `6`, `285`, `1`)
+- 爱狗的项圈 (`751`): 上面好像还残留了一些血迹。 (`Quest_DogCollar`, `0`, `9999`, `50`, `1`)
+- 飞船推进器图纸（加密） (`753`): 非常复杂，不是专业人士完全看不懂。 (`Quest_Blueprint_Thrusters_Encrypted`, `0`, `6`, `100`, `1`)
+- J-Lab 一级凭证 (`754`): J-Lab 实验人员持有的一次性凭证，只能进入最外围的区域。 (`Key_Card_JLabLv1`, `0`, `3`, `2000`, `1`)
+- J-Lab 二级凭证 (`755`): 可以进入实验室的核心区域的一次性凭证。 (`Key_Card_JLabLv2`, `2`, `7`, `15000`, `1`)
+- J-Lab 三级凭证 (`756`): 拥有实验室最高权限的一次性凭证，可以进入实验室的机密区域。 (`Key_Card_JLabLv3`, `4`, `9`, `50000`, `1`)
+- 矢量推进器研究日志 (`757`): 记录了矢量推进器实验进程，其中并没有写明实验结果，也没有看到推进器的图纸，但其余内容写的非常详细，让人觉得这人的记性不太好。 (`Quest_ResearchDocument_Thrusters`, `0`, `2`, `1`, `1`)
+- 矿长的虹膜信息 (`758`): 因为头没有被打爆，所以完好的保存了下来。 (`Key_Eyeball_Jlab`, `0`, `3`, `300`, `1`)
+- 工棚钥匙 (`759`): 用来打开建筑工地工棚的钥匙。 (`Key_ThrusterResearcherHome`, `0`, `3`, `101`, `1`)
+- 导航系统图纸 (`760`): 飞船导航系统的图纸。 (`Quest_Blueprint_NavigationSystem`, `0`, `6`, `100`, `1`)
+- 星图 (`761`): 宇宙星图，但并不完整。 (`Quest_StarMap1`, `0`, `2`, `1`, `1`)
+- 星图碎片 Part2 (`762`): 宇宙星图，但并不完整。 (`Quest_StarMap2`, `0`, `2`, `1`, `1`)
+- 星图碎片 Part3 (`763`): 宇宙星图，但并不完整。 (`Quest_StarMap3`, `0`, `2`, `1`, `1`)
+- 聚乙烯片 (`764`): 很难降解的塑料碎片。 (`Plastics`, `0`, `1`, `21`, `10`)
+- 胶带 (`765`): 胶带，用途广泛。 (`DuctTape`, `0`, `1`, `84`, `1`)
+- 宇宙级防御力场蓝图（加密） (`766`): 超绝防护力，星际旅行必备！ (`Quest_Blueprint_DefenceShield_BlackMarket`, `0`, `6`, `500`, `1`)
+- 能量重塑装置 (`767`): 能够重塑蛋清能量的特殊装置，原理不明，来源不明。 (`TransformDevice`, `5`, `999`, `500`, `1`)
+- 能源球 (`768`): 重塑后更容易被利用的蛋清能源，能量巨大，性质稳定。 (`EnergyBall`, `3`, `999`, `2500`, `6`)
+- 蛋清能源碎片 (`769`): 从裂缝中溢出的物质，蕴含着巨大的能量，但很难直接利用。 (`EggWhiteEnergyPieces`, `3`, `2`, `120`, `10`)
+- 警棍 (`772`): 守卫用的警棍。 (`PoliceStick`, `0`, `1`, `175`, `1`)
+- 高性能计算单元蓝图（加密） (`774`): 用以开发高性能计算单元的蓝图，但被算法加密了，看不太懂。 (`Quest_Blueprint_ComputingUnit_Encrypted`, `0`, `6`, `100`, `1`)
+- 5000w 电源 (`775`): 电源侧面印了一个大大的红星。 (`Quest_Power_ComputingUnit`, `0`, `5`, `1`, `1`)
+- 霰弹枪重型消音器 (`776`): 降低开枪时声响并提高散布控制的霰弹枪枪口，但会损失移动速度。 (`Muzzle_SHT_SIL_1`, `0`, `4`, `2400`, `1`)
+- 狙击枪快速枪托 (`777`): 大幅提高瞄准速度与机动性的狙击枪枪托。 (`Stock_SNP_MOV_1`, `0`, `999`, `1100`, `1`)
+- 大型散热器 (`778`): 拥有巨大的散热鳍片以及风扇，但好像只有两根热管。 (`Quest_Cooling_ComputingUnit`, `0`, `5`, `1`, `1`)
+- 家门钥匙 01 (`779`): 不知道是谁的家。 (`Key_Farm_JLabStaffHome`, `0`, `2`, `200`, `1`)
+- M700 (`780`): 被广泛运用的狙击步枪。 (`Sniper_M700_Normal`, `0`, `4`, `8767`, `1`)
+- Mosin-Nagant (`781`): 经典耐用的狙击步枪，爆头伤害非常高。 (`Sniper_Mosin_Normal`, `0`, `4`, `7993`, `1`)
+- SV98 (`782`): 各方面都非常优秀的狙击步枪，射程上更是相当突出。 (`Sniper_SV98_Normal`, `0`, `5`, `13909`, `1`)
+- TT-33 (`783`): 各方面性能都非常一般的制式手枪，但由于结构相当简单，所以价格相当便宜。 (`PST_TT33_Normal`, `0`, `0`, `80`, `1`)
+- PM (`784`): 轻巧便携的制式手枪。 (`PST_PM_Normal`, `0`, `1`, `241`, `1`)
+- 沙漠之鹰 (`785`): 虽然是手枪的尺寸用的也是手枪的配件，但使用大威力的马格南弹药。 (`MAG_Desert_Normal`, `0`, `4`, `8620`, `1`)
+- M1A (`786`): M14 的民用版本，射程远、精度高，但重量也较高。 (`BR_M1A_Normal`, `0`, `4`, `8450`, `1`)
+- M14 (`787`): 制式精准战斗步枪，虽然是半自动，但有很高的射速上限。 (`BR_M14_Normal`, `0`, `5`, `11854`, `1`)
+- MCX Spear (`788`): 自带火控系统的战斗步枪，除了贵，很难找到缺点。 (`AR_MCXSpear_Normal`, `0`, `6`, `19826`, `1`)
+- 一级防火服 (`790`): 强化了防火性能的护甲，虽然对于子弹的防护能力提升不多，但可以大幅降低受到的火伤害。 (`ArmorLV1Fire`, `0`, `999`, `575`, `1`)
+- 皮夹克 (`791`): 用坚固的皮革制作，虽然是民用的衣服，但足够防护一些劣等子弹。 (`Jacket`, `0`, `999`, `155`, `1`)
+- 配方：黄针 (`793`): 可以大幅提高移动速度的针剂的配方。 (`Formula_Injection_A`, `0`, `3`, `50`, `1`)
+- 配方：负重针 (`794`): 可以大幅提高负重的针剂的配方。 (`Formula_Injection_Weight`, `0`, `3`, `50`, `1`)
+- 民房钥匙 (`795`): 仓库区某处民房的钥匙。 (`Key_HiddenWarehouse_RBHouse`, `0`, `2`, `220`, `1`)
+- 蓝图：T-7 热成像目镜 (`796`): 用于制造 T-7 热成像目镜的蓝图。 (`BP_ThermalVisionGoggles`, `0`, `6`, `50`, `1`)
+- 硬化针 (`797`): 使毛发与皮肤变硬，身体护甲提高 0.25，持续 120 秒。 (`Injection_StoneSkin`, `0`, `3`, `648`, `3`)
+- 持久针 (`798`): 提高耐力回复并降低耐力消耗，但会加快水分的消耗，持续 120 秒。 (`Injection_Stamina`, `0`, `3`, `648`, `3`)
+- 紫外灯 (`799`): 可以发射紫外线的灯，一定程度上可以代替太阳光。 (`UVBulb2`, `0`, `2`, `761`, `3`)
+- 近战针 (`800`): 大幅提高近战伤害，但持续时间很短，效用过了还会萎靡一段时间。 (`Injection_MeleeDamage`, `0`, `3`, `670`, `3`)
+- J-Lab 门禁卡（黄） (`801`): 可以进入 J-Lab 中的特殊区域。 (`Key_Card_Yellow`, `0`, `7`, `123000`, `1`)
+- J-Lab 门禁卡（红） (`802`): 可以进入 J-Lab 中的特殊区域。 (`Key_Card_Red`, `0`, `7`, `202000`, `1`)
+- J-Lab 门禁卡（绿） (`803`): 可以进入 J-Lab 中的特殊区域。 (`Key_Card_Green`, `0`, `7`, `161300`, `1`)
+- J-Lab 门禁卡（蓝） (`804`): 可以进入 J-Lab 中的特殊区域。 (`Key_Card_Blue`, `0`, `7`, `135200`, `1`)
+- 蓝图：VSS (`805`): 用于在工作台研发武器：VSS。 (`BP_VSS`, `0`, `5`, `50`, `1`)
+- 蓝图：AS Val (`806`): 用于在工作台研发武器：AS Val。 (`BP_ASVAL`, `0`, `5`, `50`, `1`)
+- 蓝图：DT MDR-556 (`807`): 用于在工作台研发武器：DT MDR-556。 (`BP_DTMDR556`, `0`, `4`, `50`, `1`)
+- 蓝图：DT MDR-762 (`808`): 用于在工作台研发武器：DT MDR-762。 (`BP_DTMDR762`, `0`, `5`, `50`, `1`)
+- 蓝图：带电 MP7 (`809`): 用于在工作台研发武器：带电 MP7。 (`BP_MP7_Electric`, `0`, `5`, `50`, `1`)
+- 蓝图：Bizon-2 (`810`): 用于在工作台研发武器：Bizon-2。 (`BP_PP19Bizon`, `0`, `3`, `50`, `1`)
+- 蓝图：PPSh (`811`): 用于在工作台研发武器：PPSh。 (`BP_PPSH`, `0`, `2`, `50`, `1`)
+- 蓝图：SR-3M (`812`): 用于在工作台研发武器：SR-3M。 (`BP_SR3M`, `0`, `3`, `50`, `1`)
+- 蓝图：Vector (`813`): 用于在工作台研发武器：Vector。 (`BP_Vector9`, `0`, `3`, `50`, `1`)
+- 蓝图：M700 (`814`): 用于在工作台研发武器：M700。 (`BP_M700`, `0`, `4`, `50`, `1`)
+- 蓝图：Mosin-Nagant (`815`): 用于在工作台研发武器：Mosin-Nagant。 (`BP_Mosin`, `0`, `4`, `50`, `1`)
+- 蓝图：SV98 (`816`): 用于在工作台研发武器：SV98。 (`BP_SV98`, `0`, `5`, `50`, `1`)
+- 蓝图：TT-33 (`817`): 用于在工作台研发武器：TT-33。 (`BP_TT33`, `0`, `0`, `50`, `1`)
+- 蓝图：PM (`818`): 用于在工作台研发武器：PM。 (`BP_PM`, `0`, `1`, `50`, `1`)
+- 蓝图：沙漠之鹰 (`819`): 用于在工作台研发武器：沙漠之鹰。 (`BP_Desert`, `0`, `4`, `50`, `1`)
+- 蓝图：M1A (`820`): 用于在工作台研发武器：M1A。 (`BP_M1A`, `0`, `4`, `50`, `1`)
+- 蓝图：M14 (`821`): 用于在工作台研发武器：M14。 (`BP_M14`, `0`, `5`, `50`, `1`)
+- 蓝图：MCX Spear (`822`): 用于在工作台研发武器：MCX Spear。 (`BP_MCXSpear`, `0`, `6`, `50`, `1`)
+- MF 蓝图碎片 1 (`823`): 用于研发步枪：MF 的蓝图碎片。 (`Quest_BlueprintPieces_MF_1`, `0`, `4`, `50`, `1`)
+- MF 蓝图碎片 2 (`824`): 用于研发步枪：MF 的蓝图碎片。 (`Quest_BlueprintPieces_MF_2`, `0`, `4`, `50`, `1`)
+- MF 蓝图碎片 3 (`825`): 用于研发步枪：MF 的蓝图碎片。 (`Quest_BlueprintPieces_MF_3`, `0`, `4`, `50`, `1`)
+- 南厂区钥匙卡 (`826`): 南厂区员工的门禁卡。 (`Key_Card_ SouthFactory`, `0`, `4`, `3987`, `1`)
+- 神秘钥匙 X (`827`): 一把神秘的钥匙，上面刻着奇怪的符号，看上去像字母 X。 (`Key_MysteryX`, `0`, `6`, `151675`, `1`)
+- 神秘钥匙 O (`828`): 一把神秘的钥匙，上面刻着奇怪的符号，看上去像字母 O。 (`Key_MysteryO`, `0`, `6`, `253228`, `1`)
+- 神秘 Z 钥匙 (`829`): 一把神秘的钥匙，上面刻着奇怪的符号，看上去像字母 Z。 (`Key_MysteryZ`, `0`, `9`, `500`, `1`)
+- 蓝图：夜视仪 (`830`): 用于制造夜视仪的蓝图。 (`BP_NightVisionGoggles`, `0`, `5`, `50`, `1`)
+- 超市隔间钥匙 (`831`): 农场镇超市中小隔间的钥匙。 (`Key_Farm_SuperMarketSmallRoom`, `0`, `4`, `1688`, `1`)
+- 餐厅隔间钥匙 (`832`): 农场镇餐厅中小隔间的钥匙。 (`Key_Farm_RestaurantSmallRoom`, `0`, `3`, `801`, `1`)
+- 万能胶 A (`833`): 能够粘合一切的胶水，但需要与万能胶 B 配合使用才能发挥效用。 (`UniversalGlueA`, `0`, `3`, `844`, `1`)
+- 万能胶 B (`834`): 能够粘合一切的胶水，但需要与万能胶 A 配合使用才能发挥效用。 (`UniversalGlueB`, `0`, `3`, `826`, `1`)
+- 快递 (`835`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase`, `0`, `1`, `1`, `1`)
+- 钥匙包 (`836`): 可以放八把钥匙。 (`KeyRing`, `0`, `5`, `13964`, `1`)
+- BR 快速弹匣 I (`837`): 提高瞄准速度的 BR 弹匣。 (`Magazine_BR_ADS_1`, `0`, `2`, `500`, `1`)
+- BR 快速弹匣 II (`838`): 大幅提高瞄准速度的 BR 弹匣。 (`Magazine_BR_ADS_2`, `0`, `3`, `1100`, `1`)
+- BR 扩容弹匣 I (`839`): 提高枪械载弹量的 BR 弹匣。 (`Magazine_BR_CAP_1`, `0`, `2`, `500`, `1`)
+- BR 扩容弹鼓 II (`840`): 大幅提高枪械载弹量的 BR 弹匣。 (`Magazine_BR_CAP_2`, `0`, `3`, `1100`, `1`)
+- 麻布头套 (`841`): 说是头套，其实是个麻袋，有人在上面写了个大大的“兴”字。 (`Xing`, `0`, `2`, `600`, `1`)
+- 配方：紫外灯 (`842`): 在工作台制作紫外灯的配方。 (`Formula_UVBulb2`, `0`, `99`, `0`, `1`)
+- 配方：红色大桶 (`843`): 在工作台制作红色大桶的配方。 (`Formula_Drum1`, `0`, `99`, `0`, `1`)
+- 配方：蓝色大桶 (`844`): 在工作台制作蓝色大桶的配方。 (`Formula_Drum2`, `0`, `99`, `0`, `1`)
+- 配方：黄色大桶 (`845`): 在工作台制作黄色大桶的配方。 (`Formula_Drum3`, `0`, `99`, `0`, `1`)
+- 配方：金属油桶 (`846`): 在工作台制作金属大桶的配方。 (`Formula_Drum4`, `0`, `99`, `0`, `1`)
+- 遮眼布 (`848`): 以眼盲，换明心。 (`Blindfold`, `0`, `4`, `4399`, `1`)
+- 船票 (`849`): 往返于零号区下水道与农场镇码头的船票。 (`BoatTicket`, `0`, `4`, `5000`, `1`)
+- Item_Bullet_Enemy_Piercing1 (`850`): Item_Bullet_Enemy_Piercing1_Desc (`Bullet_Enemy_Piercing1`, `0`, `1`, `4`, `180`)
+- Item_Bullet_Enemy_Piercing2 (`851`): Item_Bullet_Enemy_Piercing2_Desc (`Bullet_Enemy_Piercing2`, `0`, `2`, `4`, `180`)
+- Item_Bullet_Enemy_Piercing3 (`852`): Item_Bullet_Enemy_Piercing3_Desc (`Bullet_Enemy_Piercing3`, `0`, `3`, `4`, `180`)
+- Item_Bullet_Enemy_Piercing4 (`853`): Item_Bullet_Enemy_Piercing4_Desc (`Bullet_Enemy_Piercing4`, `0`, `4`, `4`, `180`)
+- Item_Bullet_Enemy_Piercing5 (`854`): Item_Bullet_Enemy_Piercing5_Desc (`Bullet_Enemy_Piercing5`, `0`, `5`, `4`, `180`)
+- Item_Bullet_Enemy_Piercing6 (`855`): Item_Bullet_Enemy_Piercing6_Desc (`Bullet_Enemy_Piercing6`, `0`, `6`, `4`, `180`)
+- 弱效空间风暴防护针 (`856`): 可以抵御风暴早期扰动的针剂，持续 120 秒，配合防护装备使用，则可以抵御风暴。 (`Injection_StormProtection1`, `0`, `4`, `2359`, `3`)
+- 测试用空间风暴防护针 (`857`): 测试用的强效空间针剂，可以抵抗扭曲，持续 120 秒。 (`Injection_StormProtection2`, `0`, `999`, `26555`, `3`)
+- 空间防护服 (`858`): 经过 J-Lab 特殊改造的衣服，单独穿着就可以抵抗空间扰动，如果凑成一套，甚至可以抵抗空间扭曲。 (`ArmorLV4StormProtection`, `0`, `5`, `6636`, `1`)
+- 空间防护头盔 (`859`): 经过 J-Lab 特殊改造的头盔，单独穿着就可以抵抗空间扰动，如果凑成一套，甚至可以抵抗空间扭曲。 (`HelmatLV3StormProtection`, `0`, `5`, `3248`, `1`)
+- 空间晶体 (`860`): 只有在空间风暴中才会出现的晶体，J-Lab 曾对其做过长期研究，有传言他们的飞船技术就来源于此。 (`SpaceCrystal`, `0`, `9`, `1200`, `10`)
+- 被污染的武器零件 (`861`): 被空间风暴侵蚀的武器零件，但对于某些特殊的枪械来说是必不可少的材料。 (`WeaponPartsPolluted`, `4`, `9`, `1520`, `5`)
+- 带火 AK-47 (`862`): 被空间风暴侵蚀的 AK，觉醒了特殊的属性。 (`AR_AK47_Fire`, `0`, `9`, `3550`, `1`)
+- 蓝图：带火 AK47 (`863`): 用于在高级工作台研发武器：带火 AK-47。 (`BP_AR_AK47_Fire`, `0`, `5`, `50`, `1`)
+- 火药 (`864`): 易燃危险！ (`GunPowder`, `0`, `1`, `2`, `300`)
+- 配方：管状炸弹 (`865`): 在工作台制作管状炸弹的配方。 (`Formula_Dynamite`, `0`, `99`, `1000`, `1`)
+- 配方：集束管状炸弹 (`866`): 在工作台制作集束管状炸弹的配方。 (`Formula_DynamiteMultiple`, `0`, `99`, `200000`, `1`)
+- 蓝图：Glick (`867`): 用于在工作台研发武器：格力克。 (`BP_GLick`, `0`, `0`, `0`, `1`)
+- 挑战船票 (`868`): 九死一生，一旦倒在那，掉落的东西会被立马收走，一件不剩。 (`DemoChallengeTicket`, `0`, `6`, `10000`, `1`)
+- 连珠弓 (`869`): 可以一次性射出三支箭的弓，咻咻咻！ (`ARR_BurstBow_Normal`, `0`, `7`, `36630`, `1`)
+- 低级穿甲箭 (`870`): 能够穿透低级护甲的防护的箭矢。 (`Bullet_ARR_Piercing2`, `3`, `4`, `95`, `20`)
+- 中级穿甲箭 (`871`): 能够穿透中级护甲的防护的箭矢。 (`Bullet_ARR_Piercing4`, `4`, `6`, `315`, `20`)
+- 强翅针 (`872`): 短时间内强化翅膀力量，提高后坐力与散布控制能力，持续 60 秒。 (`Injection_RecoilControl`, `0`, `5`, `6827`, `3`)
+- 配方：被污染的武器零件 (`873`): 在工作台制作被污染的武器零件的配方。 (`Formula_WeaponPartsPolluted`, `0`, `99`, `1000`, `1`)
+- 配方：大扩容箱 (`874`): 在工作台制作大扩容箱的配方。 (`Formula_ContinerL`, `0`, `99`, `768`, `1`)
+- 恢复针 (`875`): 每秒恢复血量，持续 30 秒。 (`Injection_Healing`, `0`, `2`, `875`, `3`)
+- MP-155 ULTIMA (`876`): 现代化版本的 MP-155，几乎在所有方面都有提升。 (`SHT_MP155M_Normal`, `0`, `7`, `6842`, `1`)
+- 蓝图：MP-155 ULTIMA (`877`): 用于在工作台研发武器：MP-155 ULTIMA。 (`BP_MP155M`, `0`, `7`, `49998`, `1`)
+- 蘑菇 (`878`): 红伞伞，白杆杆。 (`mushroom`, `0`, `7`, `444`, `3`)
+- ??? (`879`): ??? (`EGun_Magic_Ring`, `0`, `9`, `284`, `1`)
+- Item_PaperBoxArmor (`880`): Item_PaperBoxArmor_Desc (`PaperBoxArmor`, `0`, `999`, `565`, `1`)
+- 纸箱子 (`881`): 足够大的纸箱子。 (`PaperBox`, `0`, `2`, `565`, `1`)
+- 注射器收纳包 (`882`): 可以装 6 种针，用的时候需要把针拿出来。 (`InjectionBag`, `0`, `9`, `29765`, `1`)
+- 蛋白粉 (`883`): 从鸭蛋中浓缩提取，是健身鸭们的好朋友。 (`ProteinPowder`, `0`, `3`, `470`, `1`)
+- 配方：蛋白粉 (`884`): 在工作台制作蛋白粉的配方。 (`Formula_ProteinPowder`, `0`, `99`, `655`, `1`)
+- 六级防弹衣 (`885`): 能提供无与伦比的防护力，但十分沉重。 (`ArmorLV6`, `0`, `6`, `10358`, `1`)
+- J-Lab 门禁卡（黑） (`886`): 可以进入 J-Lab 中的特殊区域。 (`Key_Card_Black`, `0`, `7`, `135800`, `1`)
+- J-Lab 门禁卡（紫） (`887`): 可以进入 J-Lab 中的特殊区域。 (`Key_Card_Purple`, `0`, `7`, `191900`, `1`)
+- 苹果 (`888`): 一天一苹果。 (`Apple`, `0`, `2`, `333`, `3`)
+- 维达头盔 (`889`): 维达的头盔，里头有点闷，视野也不太好。 (`Helmat_Vida`, `0`, `9`, `4444`, `1`)
+- 狗牌 (`890`): 雇佣兵身上带着的身份识别牌，但好像都是一样的。 (`BlackDogTag`, `3`, `2`, `1000`, `10`)
+- 路障头盔 (`891`): 不知道为什么，反正它就叫这个名字。 (`Helmat_Roadblock`, `0`, `7`, `16788`, `1`)
+- ??? (`892`): ??? (`EnemyGun_RoadBlock_Rifle`, `0`, `9`, `218`, `1`)
+- 空手 (`893`): Item_AnimalWeapon_Desc (`AnimalWeapon_Invisable`, `0`, `9`, `175`, `1`)
+- 噗咙防弹衣 (`894`): 实验体噗咙噗咙穿着的防弹衣。噗咙噗咙的这套装备对物理和毒属性有很好的防御能力，但对其他属性的防护能力都非常堪忧。 (`Armor_SBossPhysical_ResPoison`, `0`, `7`, `8295`, `1`)
+- 噗咙头盔 (`895`): 实验体噗咙噗咙穿着的头盔。噗咙噗咙的这套装备对物理和毒属性有很好的防御能力，但对其他属性的防护能力都非常堪忧。 (`Helmat_SBossPhysical_ResPoison`, `0`, `7`, `4060`, `1`)
+- 咕噜防弹衣 (`896`): 实验体咕噜咕噜穿着的防弹衣。咕噜咕噜的这套装备防护能力很强且对火和毒属性有很好的防御能力，但耐久度相当堪忧且极易被电属性伤害。 (`Armor_SBossPoison_LowDurResFire`, `0`, `7`, `8295`, `1`)
+- 咕噜头盔 (`897`): 实验体咕噜咕噜穿着的头盔。啪啦啪啦的这套装备防护能力很强且对火和毒属性有很好的防御能力，但耐久度相当堪忧且极易被电属性伤害。 (`Helmat_SBossPoison_LowDurResFire`, `0`, `7`, `4060`, `1`)
+- ??? (`898`): ??? (`EGun_StormBoss_1_BreakArmor`, `0`, `9`, `284`, `1`)
+- Item_EGun_StormBoss_2_Poison (`899`): Item_EGun_StormBoss_2_Poison_Desc (`EGun_StormBoss_2_Poison`, `0`, `9`, `284`, `1`)
+- Item_EGun_StormBoss_3_Fire (`900`): Item_EGun_StormBoss_3_Fire_Desc (`EGun_StormBoss_3_Fire`, `0`, `9`, `284`, `1`)
+- Item_EGun_StormBoss_4_Electric (`901`): Item_EGun_StormBoss_4_Electric_Desc (`EGun_StormBoss_4_Electric`, `0`, `9`, `284`, `1`)
+- ??? (`902`): Item_EGun_StormBoss_5_Space_Desc (`EGun_StormBoss_5_Space`, `0`, `9`, `284`, `1`)
+- 啪啦防弹衣 (`908`): 实验体啪啦啪啦穿着的防弹衣。啪啦啪啦的这套装备对火和电属性有很好的防御能力，但极易被毒属性伤害。 (`Armor_SBossFire_ResElec`, `0`, `7`, `8295`, `1`)
+- 比利防弹衣 (`909`): 实验体比利比利穿着的防弹衣。比利比利的这套装备对电和空间属性有很好的防御能力，但极易被火属性伤害。 (`Armor_SBossElec_ResSpace`, `0`, `7`, `8295`, `1`)
+- 口口防弹衣 (`910`): Item_Armor_SBossSpace_Desc (`Armor_SBossSpace`, `0`, `7`, `8295`, `1`)
+- 啪啦头盔 (`911`): 实验体啪啦啪啦穿着的头盔。啪啦啪啦的这套装备对火和电属性有很好的防御能力，但极易被毒属性伤害。 (`Helmat_SBossFire_ResElec`, `0`, `7`, `4060`, `1`)
+- 比利头盔 (`912`): 实验体比利比利穿着的头盔。比利比利的这套装备对电和空间属性有很好的防御能力，但极易被火属性伤害。 (`Helmat_SBossElec_ResSpace`, `0`, `7`, `4060`, `1`)
+- 口口头盔 (`913`): Item_Helmat_SBossSpace_Desc (`Helmat_SBossSpace`, `0`, `7`, `4060`, `1`)
+- 咕噜枪 (`914`): 伤害虽然不高，但非常容易让命中的目标中毒。 (`PST_StormBoss_Poison`, `0`, `9`, `12087`, `1`)
+- 风暴枪 (`915`): 凝结了 J-lab 对于风暴的几乎所有研究。 (`BR_Storm_Space`, `0`, `9`, `31406`, `1`)
+- 啪啦枪 (`916`): 载弹量相当巨大，有极强的火力压制能力。 (`MG_StormBoss_Fire`, `0`, `9`, `16364`, `1`)
+- 比利枪 (`917`): 带着强力的电流，发出哔哩哔哩的声音。 (`SHT_StormBoss_Elec`, `0`, `9`, `17618`, `1`)
+- 大型能量弹 (`918`): 为大型能量枪提供能量。 (`Bullet_PWL_L`, `0`, `9`, `50`, `150`)
+- 测试种子 (`919`): 能种出苹果、胡萝卜、土豆。 (`TestSeed`, `0`, `999`, `89`, `1`)
+- 空间防护服终极版 (`920`): J-lab 空间防护服反复迭代后的最终产品。在保证原有抵抗风暴的性能同时，大幅提高了其防护性能与空间伤害的防护能力且每 1 秒会清除身上一层碎裂。 (`ArmorLV5StormProtection`, `0`, `7`, `8295`, `1`)
+- 空间防护头盔最终版 (`921`): J-lab 空间防护头盔反复迭代后的最终产品。在保证原有抵抗风暴的性能同时，大幅提高了其防护性能与空间伤害的防护能力。 (`HelmatLV5StormProtection`, `0`, `7`, `4060`, `1`)
+- 蛇形武装 (`922`): 游戏卡带：蛇形武装，听说这游戏在蒸发平台上有 97%的好评！但总感觉这个“形”有点不太对劲。 (`Cartridge_Snake`, `0`, `4`, `4321`, `1`)
+- 未来主机 (`923`): 未来主机 Future Console，好像只能渲染 2D 游戏。 (`FutureConsole`, `0`, `6`, `10679`, `1`)
+- Item_GameTable (`924`): Item_GameTable_Desc (`GameTable`, `0`, `999`, `0`, `1`)
+- 黑白显示器 (`925`): 只能显示黑白内容的显示器。 (`MonochromeMonitor`, `0`, `3`, `1688`, `1`)
+- 加速卡 (`926`): 可以让未来主机渲染 3D 画面。 (`AcceleratorCard`, `0`, `0`, `0`, `1`)
+- 碳酸危鸭 (`927`): 游戏卡带：碳酸危鸭，游戏名字的灵感来源于 J-lab 的那些实验体。 (`Cartridge_BubblePop`, `0`, `4`, `6543`, `1`)
+- Item_Cartridge_FactoryPanicShock (`928`): Item_Cartridge_FactoryPanicShock_Desc (`Cartridge_FactoryPanicShock`, `0`, `999`, `7654`, `1`)
+- 鸭鸭矿工 (`929`): 游戏卡带：鸭鸭矿工，这下挖矿不需要显卡了。 (`Cartridge_GoldMiner`, `0`, `4`, `5432`, `1`)
+- 彩色显示器 (`930`): 可以显示彩色内容的显示器。 (`ColorMonitor`, `0`, `5`, `7688`, `1`)
+- ??? (`931`): ??? (`EGun_Magic_Ring_Mushroom`, `0`, `9`, `284`, `1`)
+- 小石头 (`932`): 可以发出声响，吸引敌人。 (`Stone`, `0`, `1`, `10`, `12`)
+- 毒雾弹 (`933`): 可以放出毒烟，在烟雾中会中毒，受到持续伤害。 (`ToxGrenade`, `0`, `4`, `680`, `1`)
+- Item_Helmat_Soda_battery1 (`934`): Item_Helmat_Soda_battery1_Desc (`Helmat_Soda_battery1`, `0`, `93`, `1183`, `1`)
+- Item_Helmat_Soda_battery2 (`935`): Item_Helmat_Soda_battery2_Desc (`Helmat_Soda_battery2`, `0`, `94`, `2551`, `1`)
+- 罐子头盔 (`936`): 非常硬的头盔，但是戴上就看不见了，也挡不了几颗子弹。 (`Helmat_Soda_Bucket`, `0`, `92`, `685`, `1`)
+- Item_Helmat_Soda_Displayer (`937`): Item_Helmat_Soda_Displayer_Desc (`Helmat_Soda_Displayer`, `0`, `94`, `5866`, `1`)
+- 粑粑 (`938`): 臭臭的，但好像有东西喜欢这个。 (`Shit`, `0`, `1`, `10`, `5`)
+- 粑粑 (`939`): 臭臭的，但好像有东西喜欢这个。 (`Shit_Fly`, `0`, `99`, `580`, `1`)
+- 粑粑 (`940`): 臭臭的，但好像有东西喜欢这个。 (`Shit_FlyBoss`, `0`, `99`, `580`, `1`)
+- 燃烧弹 (`941`): 内部装满了燃料，可以点燃地面。 (`FireGrenade`, `0`, `4`, `680`, `1`)
+- 电击手雷 (`942`): 储存着电力的强力手雷，能造成无视护甲的电属性伤害，对机械类敌人特别有效。 (`ElecGrenade`, `0`, `4`, `780`, `1`)
+- 噗噗枪 (`943`): 蝇蝇队员携带的枪，使用的子弹有些特殊。 (`Poop_ShitGun_Poison`, `0`, `9`, `4125`, `1`)
+- 粑粑弹 (`944`): 将屎分成了小份，这样就能塞进枪里了。 (`Bullet_Poop_Normal`, `0`, `9`, `1`, `150`)
+- 蝇蝇翅膀 (`945`): 蝇蝇队所用的背包，重量相当轻，还能大幅提高负重能力，就是空间相当小。 (`Backpack_Fly_Wing`, `0`, `4`, `1236`, `1`)
+- 噗噗喷 (`946`): 蝇蝇队长携带的枪，使用的子弹有些特殊。 (`Poop_ShotShitGun_Poison`, `0`, `9`, `6630`, `1`)
+- 图腾:甲胄 Ⅲ (`947`): 极大提高防护属性，但受到的属性伤害也会提高。 (`Totem_Armor 3`, `5`, `5`, `6000`, `1`)
+- 图腾:攻击 II (`948`): 造成的基础伤害提高。 (`Totem_Attack 2`, `3`, `999`, `2000`, `1`)
+- 图腾:攻击 Ⅲ (`949`): 造成的基础伤害大幅提高，但对枪械的后坐力控制下降。 (`Totem_Attack 3`, `5`, `999`, `6000`, `1`)
+- 图腾:攻击 I (`950`): 造成的基础伤害小幅提高。 (`Totem_Attack`, `0`, `999`, `350`, `1`)
+- 图腾:抗电 Ⅲ (`951`): 免疫触电并略微降低受到的电属性伤害。 (`Totem_ElecResist 3`, `5`, `5`, `6000`, `1`)
+- 图腾：马拉松 Ⅱ (`952`): 减少耐力消耗。 (`Totem_FinalDash 2`, `3`, `3`, `2000`, `1`)
+- 图腾：马拉松 Ⅲ (`953`): 大幅减少耐力消耗。 (`Totem_FinalDash 3`, `4`, `4`, `3500`, `1`)
+- 图腾:抗火 Ⅱ (`954`): 免疫点燃。 (`Totem_FireResist 2`, `4`, `4`, `3500`, `1`)
+- 图腾:抗火 Ⅲ (`955`): 免疫点燃并略微降低受到的火属性伤害。 (`Totem_FireResist 3`, `5`, `5`, `6000`, `1`)
+- 图腾:抗火 Ⅰ (`956`): 降低受到的火属性伤害。 (`Totem_FireResist`, `3`, `3`, `2000`, `1`)
+- 图腾:进击 Ⅲ (`957`): 巨幅提高枪械的伤害，但会降低枪械的射程。 (`Totem_GunDamage 3`, `5`, `5`, `6000`, `1`)
+- 图腾:恢复 Ⅱ (`958`): 若 10 秒内未受到伤害，缓慢中幅回复生命值。 (`Totem_Healing 2`, `3`, `3`, `2000`, `1`)
+- 图腾:恢复 Ⅲ (`959`): 若 10 秒内未受到伤害，缓慢大幅回复生命值，但水分和能量的消耗速度会提高。 (`Totem_Healing 3`, `4`, `4`, `3500`, `1`)
+- 图腾:恢复 Ⅰ (`960`): 若 10 秒内未受到伤害，缓慢小幅回复生命值。 (`Totem_Healing`, `2`, `2`, `1000`, `1`)
+- 图腾:生命 Ⅱ (`961`): 中幅提高最大生命值。 (`Totem_MaxHealth 2`, `2`, `2`, `1000`, `1`)
+- 图腾:生命 Ⅲ (`962`): 巨幅提高最大生命值，但移动速度会略微下降。 (`Totem_MaxHealth 3`, `5`, `5`, `6000`, `1`)
+- 图腾:生命 Ⅰ (`963`): 小幅提高最大生命值。 (`Totem_MaxHealth`, `1`, `1`, `350`, `1`)
+- 图腾:忍者 Ⅲ (`964`): 大幅降低奔跑时的声音传播距离。 (`Totem_Ninja 3`, `3`, `3`, `2000`, `1`)
+- 图腾:抗物 Ⅱ (`965`): 降低受到的物理伤害。 (`Totem_PhysicResist 2`, `4`, `4`, `3500`, `1`)
+- 图腾:抗物 Ⅲ (`966`): 免疫流血并小幅降低受到的物理伤害。 (`Totem_PhysicResist 3`, `5`, `5`, `6000`, `1`)
+- 图腾:抗毒 Ⅱ (`967`): 免疫中毒。 (`Totem_PoisonResist 2`, `4`, `4`, `3500`, `1`)
+- 图腾:抗毒 Ⅲ (`968`): 免疫中毒并小幅降低受到的毒属性伤害。 (`Totem_PoisonResist 3`, `5`, `5`, `6000`, `1`)
+- 图腾:抗毒 Ⅰ (`969`): 降低受到的毒属性伤害。 (`Totem_PoisonResist`, `3`, `3`, `2000`, `1`)
+- 图腾:抗空间 Ⅱ (`970`): 免疫因空间属性子弹而受到的碎裂效果，但无法免疫空间风暴，且最大生命值会降低。 (`Totem_SpaceResist 2`, `4`, `4`, `3500`, `1`)
+- 图腾:抗空间 Ⅲ (`971`): 免疫因空间属性子弹而受到的碎裂效果，但无法免疫空间风暴。 (`Totem_SpaceResist 3`, `5`, `5`, `6000`, `1`)
+- 图腾:抗空间 Ⅰ (`972`): 降低受到的空间伤害。 (`Totem_SpaceResist`, `3`, `3`, `2000`, `1`)
+- 蝇蝇眼镜 (`973`): 蝇蝇队戴着的眼镜，特殊的构造可以让他们更轻易地发现他们的食物。 (`FaceMask_Fly_Eye`, `0`, `4`, `577`, `1`)
+- 图腾:效率 Ⅲ (`974`): 食物和医疗物品的效果提高。 (`Totem_Efficiency 3`, `3`, `3`, `2000`, `1`)
+- 图腾:效率 Ⅰ (`975`): 食物的效果提高。 (`Totem_Efficiency`, `1`, `1`, `350`, `1`)
+- 图腾:控枪 Ⅱ (`976`): 大幅降低枪械的散布。 (`Totem_GunControl 2`, `2`, `2`, `1000`, `1`)
+- 图腾:控枪 Ⅲ (`977`): 降低枪械的后坐力与散布。 (`Totem_GunControl 3_N`, `3`, `999`, `2000`, `1`)
+- 图腾:控枪 Ⅰ (`978`): 大幅降低枪械的后坐力。 (`Totem_GunControl`, `1`, `1`, `350`, `1`)
+- 图腾:爆头 Ⅱ (`979`): 大幅提高枪械的爆头伤害。 (`Totem_GunCritDamage 2`, `3`, `3`, `100`, `1`)
+- 图腾:爆头 Ⅲ (`980`): 巨幅提高枪械的爆头伤害，但枪械的散布会增加。 (`Totem_GunCritDamage 3`, `4`, `4`, `3500`, `1`)
+- 图腾:爆头 Ⅰ (`981`): 提高枪械的爆头伤害。 (`Totem_GunCritDamage`, `1`, `1`, `350`, `1`)
+- 图腾:狙击 Ⅱ (`982`): 大幅提高枪械射程。 (`Totem_GunDistance 2`, `2`, `2`, `1000`, `1`)
+- 图腾:狙击 Ⅲ (`983`): 大幅提高枪械的射程与视野距离，但移动速度会略微下降。 (`Totem_GunDistance 3`, `3`, `3`, `2000`, `1`)
+- 图腾:狙击 Ⅰ (`984`): 大幅提高视野距离。 (`Totem_GunDistance`, `1`, `1`, `350`, `1`)
+- 图腾:战士 Ⅲ (`985`): 大幅增加近战输出，但近战的暴击伤害会降低。 (`Totem_MeleeAttack 3`, `4`, `4`, `3500`, `1`)
+- 图腾:狂战 Ⅱ (`986`): 近战暴击概率大幅提高。 (`Totem_MeleeCritRate 2`, `3`, `3`, `2000`, `1`)
+- 图腾:狂战 Ⅲ (`987`): 近战暴击概率极大幅提高，但近战伤害倍率降低。 (`Totem_MeleeCritRate 3`, `4`, `4`, `3500`, `1`)
+- 图腾:狂战 Ⅰ (`988`): 近战暴击概率提高。 (`Totem_MeleeCritRate`, `1`, `1`, `350`, `1`)
+- 图腾:感知 Ⅱ (`989`): 提高感知能力。 (`Totem_SenseRange 2`, `2`, `2`, `1000`, `1`)
+- 图腾:感知 Ⅲ (`990`): 当前感知能力越强提升越多的感知能力。 (`Totem_SenseRange 3`, `3`, `3`, `2000`, `1`)
+- 图腾:感知 Ⅰ (`991`): 小幅提高感知能力。 (`Totem_SenseRange`, `1`, `1`, `350`, `1`)
+- 图腾:轻盈Ⅲ (`992`): 大幅提高移动速度，但会持续损失生命。 (`Totem_Speed 3`, `5`, `5`, `6000`, `1`)
+- 图腾:轻盈 Ⅰ (`993`): 小幅增加移动能力。 (`Totem_Speed`, `2`, `2`, `1000`, `1`)
+- 图腾:健壮 Ⅱ (`994`): 大幅增加背包容量。 (`Totem_Strong 2`, `3`, `3`, `2000`, `1`)
+- 图腾:健壮 Ⅰ (`995`): 大幅提高负重能力。 (`Totem_Strong`, `2`, `2`, `1000`, `1`)
+- 洋蓟 (`996`): 高端的食材，烹饪方法也不太普通。 (`Aritichoke`, `0`, `995`, `3847`, `3`)
+- 茄子 (`997`): 请不要拿它做奇怪的事情。 (`Aubergine`, `0`, `992`, `362`, `3`)
+- 香蕉 (`998`): 可以快速补充能量。 (`Banana`, `0`, `992`, `355`, `3`)
+- 花椰菜 (`999`): 热量很低，健身人士的最爱。 (`Cauliflower`, `0`, `993`, `1095`, `3`)
+- 樱桃 (`1000`): 红红的，很甜。 (`Cherry`, `0`, `995`, `3892`, `3`)
+- 辣椒 (`1001`): 看起来就相当辣。 (`Chilli`, `0`, `993`, `701`, `3`)
+- 椰子 (`1002`): 开个孔就能喝到清甜的椰子水。 (`Coconut`, `0`, `995`, `4574`, `3`)
+- 玉米 (`1003`): 非常好的能量来源，很适合拿来当作主食。 (`Corn`, `0`, `992`, `455`, `3`)
+- 黄瓜 (`1004`): 清醒爽脆，是相当著名的负卡食物。 (`Cucumber`, `0`, `992`, `335`, `3`)
+- 大蒜 (`1005`): 跟肉是绝配。 (`Garlic`, `0`, `991`, `150`, `3`)
+- 葡萄 (`1006`): 很好吃，还能用来酿酒。 (`Grape`, `0`, `993`, `850`, `3`)
+- 韭葱 (`1007`): 长得很像大葱，但味道更柔和一些。 (`Leek`, `0`, `995`, `3471`, `3`)
+- 柠檬 (`1008`): 很酸，但是没有它不能搭配的饮料。 (`Lemon`, `0`, `994`, `1764`, `3`)
+- 芒果 (`1009`): 很甜，非常适合做成甜品。 (`Mango`, `0`, `994`, `1832`, `3`)
+- 洋葱 (`1010`): 一想到要切开它，眼泪就会不自主地流下来。 (`Onion`, `0`, `991`, `192`, `3`)
+- 橙子 (`1011`): 酸酸的，维生素含量很高。 (`Orange`, `0`, `993`, `888`, `3`)
+- 梨 (`1012`): 水分充足，听说还能润肺止咳。 (`Pear`, `0`, `993`, `780`, `3`)
+- 菠萝 (`1013`): 酸甜可口，但吃之前最好先用盐水浸泡一下。 (`Pineapple`, `0`, `994`, `1999`, `3`)
+- 杨桃 (`1015`): 切开之后是个漂亮的五角星。 (`Starfruit`, `0`, `995`, `3835`, `3`)
+- 草莓 (`1016`): 好看又好吃。 (`Strawberry`, `0`, `994`, `2004`, `3`)
+- 西红柿 (`1017`): 非常万能的蔬菜，能做各种各样的料理，直接吃味道也相当不错。 (`Tomato`, `0`, `991`, `194`, `3`)
+- 西瓜 (`1018`): 没有西瓜的夏天是不完整的。 (`Watermelon`, `0`, `994`, `1986`, `3`)
+- 苹果的种子 (`1019`): 能种出苹果。 (`Seed_Apple`, `0`, `992`, `159`, `5`)
+- 洋蓟的种子 (`1020`): 能种出洋蓟。 (`Seed_Aritichoke`, `0`, `995`, `912`, `5`)
+- 茄子的种子 (`1021`): 能种出茄子。 (`Seed_Aubergine`, `0`, `992`, `168`, `5`)
+- 香蕉的种子 (`1022`): 能种出香蕉。 (`Seed_Banana`, `0`, `992`, `153`, `5`)
+- 胡萝卜的种子 (`1023`): 能种出胡萝卜。 (`Seed_Carrot`, `0`, `991`, `62`, `5`)
+- 花椰菜的种子 (`1024`): 能种出花椰菜。 (`Seed_Cauliflower`, `0`, `993`, `402`, `5`)
+- 樱桃的种子 (`1025`): 能种出樱桃。 (`Seed_Cherry`, `0`, `995`, `982`, `5`)
+- 辣椒的种子 (`1026`): 能种出辣椒。 (`Seed_Chilli`, `0`, `993`, `278`, `5`)
+- 椰子的种子 (`1027`): 能种出椰子。 (`Seed_Coconut`, `0`, `995`, `1129`, `5`)
+- 玉米的种子 (`1028`): 能种出玉米。 (`Seed_Corn`, `0`, `992`, `194`, `5`)
+- 黄瓜的种子 (`1029`): 能种出黄瓜。 (`Seed_Cucumber`, `0`, `992`, `153`, `5`)
+- 大蒜的种子 (`1030`): 能种出大蒜。 (`Seed_Garlic`, `0`, `991`, `75`, `5`)
+- 葡萄的种子 (`1031`): 能种出葡萄。 (`Seed_Grape`, `0`, `993`, `343`, `5`)
+- 韭葱的种子 (`1032`): 能种出韭葱。 (`Seed_Leek`, `0`, `995`, `858`, `5`)
+- 柠檬的种子 (`1033`): 能种出柠檬。 (`Seed_Lemon`, `0`, `994`, `533`, `5`)
+- 芒果的种子 (`1034`): 能种出芒果。 (`Seed_Mango`, `0`, `994`, `571`, `5`)
+- 洋葱的种子 (`1035`): 能种出洋葱。 (`Seed_Onion`, `0`, `991`, `103`, `5`)
+- 橙子的种子 (`1036`): 能种出橙子。 (`Seed_Orange`, `0`, `993`, `355`, `5`)
+- 梨的种子 (`1037`): 能种出梨。 (`Seed_Pear`, `0`, `993`, `303`, `5`)
+- 菠萝的种子 (`1038`): 能种出菠萝。 (`Seed_Pineapple`, `0`, `994`, `629`, `5`)
+- 土豆的种子 (`1039`): 能种出土豆。 (`Seed_Potato`, `0`, `991`, `114`, `5`)
+- 南瓜的种子 (`1040`): 能种出南瓜。 (`Seed_Pumpkin`, `0`, `993`, `310`, `5`)
+- 杨桃的种子 (`1041`): 能种出杨桃。 (`Seed_Starfruit`, `0`, `995`, `965`, `5`)
+- 草莓的种子 (`1042`): 能种出草莓。 (`Seed_Strawberry`, `0`, `994`, `608`, `5`)
+- 西红柿的种子 (`1043`): 能种出西红柿。 (`Seed_Tomato`, `0`, `991`, `95`, `5`)
+- 西瓜的种子 (`1044`): 能种出西瓜。 (`Seed_Watermelon`, `0`, `994`, `660`, `5`)
+- 保险箱钥匙 (`1045`): 打开零号区某处保险箱的钥匙。 (`Key_GroundZero_NavigationBoss`, `0`, `2`, `768`, `1`)
+- 防御力场发生器 (`1046`): 能够产生高能防御力场，用于解决星际航行中的那些太空垃圾的威胁。 (`Quest_DefenceShield`, `0`, `6`, `5000`, `1`)
+- 快递 (`1047`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_881`, `0`, `3`, `1`, `1`)
+- 快递 (`1048`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_882`, `0`, `3`, `1`, `1`)
+- 快递 (`1049`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_883`, `0`, `3`, `1`, `1`)
+- 快递 (`1050`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_884`, `0`, `3`, `1`, `1`)
+- 快递 (`1051`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_885`, `0`, `3`, `1`, `1`)
+- 快递 (`1052`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_886`, `0`, `3`, `1`, `1`)
+- 快递 (`1053`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_885_2`, `0`, `3`, `1`, `1`)
+- 快递 (`1054`): 赶紧送到收货人那！可别带回基地了！ (`Quest_DeliverBox_DestoryOnBase_887`, `0`, `3`, `1`, `1`)
+- 特制 AK47 (`1055`): 特制的 AK47，无法带回基地。 (`AR_AK47_Quest`, `0`, `999`, `1`, `1`)
+- 特制 StG 77A3 (`1056`): 特制的 StG 77A3，无法带回基地。 (`AR_AUGA3_Quest`, `0`, `999`, `1`, `1`)
+- 特制 M14 (`1057`): 特制的 M14，无法带回基地。 (`BR_M14_Quest`, `0`, `999`, `1`, `1`)
+- 特制格力克 (`1058`): 特制的格力克，无法带回基地。 (`PST_Glick_Quest`, `0`, `999`, `1`, `1`)
+- 特制 MP-155 (`1059`): 特制的 MP-155，无法带回基地。 (`SHT_MP155_Quest`, `0`, `999`, `1`, `1`)
+- 特制 SR-3M (`1060`): 特制的 SR-3M，无法带回基地。 (`SMG_SR3M_Quest`, `0`, `999`, `1`, `1`)
+- 特制 Mosin-Nagant (`1061`): 特制的莫辛纳甘，无法带回基地。 (`Sniper_Mosin_Quest`, `0`, `999`, `1`, `1`)
+- 毕业生名单 (`1062`): 这所学校的毕业生名单。 (`Quest_Letter_StudentList`, `0`, `2`, `1`, `1`)
+- 校长室钥匙 (`1063`): 农场镇学校校长室的钥匙。 (`Key_Farm_HeadMasterRoom`, `0`, `4`, `136`, `1`)
+- 特种洁厕灵 (`1064`): 使用了特殊配方，洗厕所特别干净。 (`Quest_NBDetergent`, `0`, `1`, `1`, `1`)
+- 腿疼特效药 (`1065`): 可以治疗腿疼的特效药，看成分好像就是钙片。 (`Quest_Farm_SpecialDrugs_1`, `0`, `1`, `50`, `1`)
+- 手疼特效药 (`1066`): 可以治疗手指尖疼的靶向药，但除了这个，标签上什么都没写。 (`Quest_Farm_SpecialDrugs_2`, `0`, `1`, `50`, `1`)
+- 头疼特效药 (`1067`): 对头疼特别有效的药，反正标签上是这么写的。 (`Quest_Farm_SpecialDrugs_3`, `0`, `1`, `50`, `1`)
+- 特效止疼药 (`1068`): 止疼的特效药，吃下去不只是疼，可以说所有感觉都会失去。 (`Quest_Farm_SpecialDrugs_4`, `0`, `1`, `50`, `1`)
+- 强效蛋白粉 (`1069`): 双倍吸收力的蛋白粉，说明书上这么写的。 (`Quest_Farm_SpecialDrugs_5`, `0`, `1`, `50`, `1`)
+- 火抗性针 (`1070`): 一段时间内受到的火属性伤害降低。 (`Injection_FireResist`, `0`, `3`, `648`, `3`)
+- 毒抗性针 (`1071`): 一段时间内受到的毒属性伤害降低。 (`Injection_PoisonResist`, `0`, `3`, `648`, `3`)
+- 空间抗性针 (`1072`): 一段时间内受到的空间属性伤害降低，但无法抵御空间风暴。 (`Injection_SpaceResist`, `0`, `3`, `648`, `3`)
+- 沉重的轮胎 (`1073`): 非常重，无法带回基地。 (`Quest_HeavyWheel`, `0`, `1`, `1`, `1`)
+- 棒球棍 (`1074`): 很常见的木制棒球棍。 (`Bat`, `0`, `3`, `689`, `1`)
+- 带钉棒球棍 (`1075`): 改造了的棒球棍，看着打人就很疼。 (`NailBat`, `0`, `5`, `3669`, `1`)
+- 蓝图：屎弹 (`1076`): 用于制造屎弹的蓝图。 (`BP_Bullet_Poop_Normal`, `0`, `9`, `50`, `1`)
+- 石棉工作服 (`1077`): 用石棉制成的防火工作服，穿着一整套可以不受到地面上火焰的伤害。 (`Armor_FireLandProtect`, `0`, `3`, `1575`, `1`)
+- 石棉工作头盔 (`1078`): 用石棉制成的防火工作头盔，穿着一整套可以不受到地面上火焰的伤害。 (`Helmat_FireLandProtect`, `0`, `3`, `861`, `1`)
+- 橡胶工作服 (`1079`): 用橡胶制成的防电工作服，穿上后可以不受到地面上电流的伤害。 (`Armor_ElecLandProtect`, `0`, `3`, `1265`, `1`)
+- 比利背包 (`1080`): 实验体比利比利穿着的背包，能提高对电和空间属性的防御能力。 (`Backpack_SBossElec_ResSpace`, `0`, `7`, `2235`, `1`)
+- 啪啦背包 (`1081`): 实验体啪啦啪啦穿着的背包，能提高对火和电属性的防御能力。 (`Backpack_SBossFire_ResElec`, `0`, `7`, `2235`, `1`)
+- 咕噜背包 (`1082`): 实验体咕噜咕噜穿着的背包，能提高对火和毒属性的防御能力。 (`Backpack_SBossPoison_LowDurResFire`, `0`, `7`, `2235`, `1`)
+- 碎蛋壳 (`1083`): 破碎的蛋壳，里面还残留了一些蛋清。相当大，可以戴在头上。 (`Helmat_Egg`, `0`, `2`, `15`, `1`)
+- 员工公寓 102 钥匙 (`1084`): 员工公寓的钥匙，应该可以打开 102 的门。 (`Key_Apartment102`, `0`, `2`, `655`, `1`)
+- 员工公寓 105 钥匙 (`1085`): 员工公寓的钥匙，应该可以打开 105 的门。 (`Key_Apartment105`, `0`, `3`, `655`, `1`)
+- 员工公寓 101 钥匙 (`1086`): 员工公寓的钥匙，应该可以打开 101 的门。 (`Key_Apartment101`, `0`, `3`, `655`, `1`)
+- 宿舍楼 101 钥匙 (`1087`): 一把宿舍楼的钥匙。也许可以打开 101 的门。 (`Key_Dormitory101`, `0`, `3`, `350`, `1`)
+- 未来控制器 (`1088`): 未来主机的手柄，把它安上才能开始玩游戏。 (`FutureConsoleController`, `0`, `6`, `5166`, `1`)
+- TOZ-66 龙息 (`1089`): 装备了龙息弹药的 TOZ-66，能够发射灼烧敌人的子弹。 (`SHT_TOZ66_Fire`, `0`, `9`, `2435`, `1`)
+- 显示卡 SLI (`1090`): 将 3 张显卡用相当先进的方法结合在一起，虽然会损失一些总体性能，但可以把它们装进一个矿机插槽里。 (`GPUSLI`, `0`, `7`, `64308`, `1`)
+- 显示卡 SLI (`1091`): 在工作台解锁显示卡 SLI 制作的蓝图，方法简单明了，即使没有电子工程知识也能看懂。 (`BP_GPUSLI`, `5`, `5`, `50`, `1`)
+- 一堆电子零件 (`1092`): 一大堆电子原件。 (`Quest_916_ElectricParts_Ming`, `0`, `3`, `10`, `1`)
+- 高手护甲 (`1093`): 游戏高手的象征。 (`Armor_FC`, `0`, `6`, `1265`, `1`)
+- 蓝图：彩色显示器 (`1094`): 用于在工作台制造彩色显示器的蓝图。 (`BP_ColorMonitor`, `0`, `6`, `50`, `1`)
+- 好钓竿 (`1095`): 还算不错的钓竿。 (`FishingRod_LV2`, `0`, `3`, `1287`, `1`)
+- 厉害钓竿 (`1096`): 非常厉害的钓竿。 (`FishingRod_LV3`, `0`, `4`, `4287`, `1`)
+- 绿鲷鱼 (`1097`): 体型很平常，但深绿色相当少见。 (`Fish_Black_Snapper`, `0`, `992`, `1066`, `1`)
+- 蓝雀鲷鱼 (`1098`): 很活泼，爱东游西窜的。 (`Fish_Blue_Damselfish`, `0`, `992`, `996`, `1`)
+- 青南乳鱼 (`1099`): 细细长长，一般成群活动。 (`Fish_Blue_Jack_Mackerel`, `0`, `3`, `1715`, `1`)
+- 蓝鲭鱼 (`1100`): 身体呈流线型，游得非常快。 (`Fish_Blue_Mackerel`, `0`, `991`, `506`, `1`)
+- 蓝枪鱼 (`1101`): 鱼嘴又长又粗，看起来很威风。 (`Fish_Blue_Marlin`, `0`, `994`, `3762`, `1`)
+- 蓝旗鱼 (`1102`): 尖尖的嘴巴，背鳍像旗子。 (`Fish_Blue_Sailfish`, `0`, `994`, `4107`, `1`)
+- 蓝吊鱼 (`1103`): 通体是亮眼的蓝色，身体扁平，相当活泼。 (`Fish_Blue_Tang`, `0`, `992`, `805`, `1`)
+- 棕白石鲈 (`1104`): 身体呈棕白色的斑纹，常成群活动。 (`Fish_Brown_and_White_Grunt`, `0`, `3`, `2063`, `1`)
+- 棕梭鱼 (`1105`): 体型不大，但游起来很猛。 (`Fish_Brown_Mullet`, `0`, `992`, `1128`, `1`)
+- 棕沙丁鱼 (`1106`): 在水里喜欢密密麻麻聚在一起，在水面上看着像一整条大鱼。 (`Fish_Brown_Sardine`, `0`, `1`, `497`, `1`)
+- 黄金鱼 (`1107`): 虽然只是黄色的金鱼，但是名字非常讨喜。 (`Fish_Golden_Fish`, `0`, `996`, `12300`, `1`)
+- 绿胖头鱼 (`1108`): 圆滚滚的，肉嫩嫩的，吃起来口感不错。 (`Fish_Green_Cod`, `0`, `993`, `1640`, `1`)
+- 绿背鳙鱼 (`1109`): 鱼鳞硬硬的，嘴巴方方的，有点呆萌。 (`Fish_Green_Triggerfish`, `0`, `3`, `1578`, `1`)
+- 绿黄鲀 (`1110`): 身体上绿一块黄一块的。 (`Fish_Green_Yellow_Porcupinefish`, `0`, `993`, `2057`, `1`)
+- 蓝猫鲨鱼 (`1111`): 体型不大，性子温和，看着不凶。 (`Fish_Grey_Catshark`, `0`, `995`, `6084`, `1`)
+- 橙青鳍鱼 (`1112`): 鱼鳍带点青绿色，与橙色的身体形成了鲜明的对比。 (`Fish_Orange_Greenfin_Fish`, `0`, `994`, `4113`, `1`)
+- 橙金鳞鱼 (`1113`): 拥有亮晶晶的鳞片，很亮眼。 (`Fish_Orange_Squirrelfish`, `0`, `994`, `2979`, `1`)
+- 粉金鱼 (`1114`): 看着特别可爱，让人忍不住多看几眼。 (`Fish_Pink_Clownfish`, `0`, `1`, `525`, `1`)
+- 紫雀鲷鱼 (`1115`): 体型很小，通体紫色，性情很活跃。 (`Fish_Purple_Damselfish`, `0`, `2`, `814`, `1`)
+- 粉鳍火焰鱼 (`1116`): 鱼鳍形似火焰，观赏性很强。 (`Fish_Redfin_Flamefish`, `0`, `994`, `3798`, `1`)
+- 红鳍鲷鱼 (`1117`): 红色的鱼鳍相当显眼。 (`Fish_Redfin_Snapper`, `0`, `992`, `785`, `1`)
+- 红九间鱼 (`1118`): 身上带几道深色条纹，喜欢成群结队。 (`Fish_Red_Banded_Fish`, `0`, `2`, `983`, `1`)
+- 红金鱼 (`1119`): 常见的观赏鱼，相当招人喜欢。 (`Fish_Red_Goldfish`, `0`, `1`, `515`, `1`)
+- 大眼红鱼 (`1120`): 肉吃起来特别鲜美，味道很棒。 (`Fish_Red_Grouper`, `0`, `3`, `1835`, `1`)
+- 红斑鱼 (`1121`): 带点小斑点，是挺名贵的鱼。 (`Fish_Red_Spotted_Grouper`, `0`, `995`, `6534`, `1`)
+- 白燕鱼 (`1122`): 鱼鳍较宽，像燕子的翅膀。 (`Fish_White_Angelfish`, `0`, `992`, `1108`, `1`)
+- 大头金鱼 (`1123`): 白白胖胖，肉特别鲜美。 (`Fish_White_Cod`, `0`, `1`, `492`, `1`)
+- 白扁鱼 (`1124`): 相当有名的食用鱼。 (`Fish_White_Perch`, `0`, `2`, `1006`, `1`)
+- 黄绿鲷 (`1125`): 黄绿相间，颜色相当特别。 (`Fish_Yellow_Green_Snapper`, `0`, `994`, `3807`, `1`)
+- 绿刺豚 (`1126`): 身上带刺，受惊吓了会鼓成个刺球。 (`Fish_Yellow_Porcupinefish`, `0`, `2`, `970`, `1`)
+- 蓝图：TOZ-66 龙息 (`1127`): 用于在工作台研发武器：TOZ-66 龙息。 (`BP_SHT_TOZ66_Fire`, `0`, `7`, `1500`, `1`)
+- 空间格力克 (`1128`): 小明用特殊的方法注入了空间能量的格力克，虽然其他方面没有提升，但可以使射出的子弹变为空间属性。 (`PST_Glick_Space`, `0`, `7`, `5150`, `1`)
+- 高手背包 (`1130`): 游戏高手的象征。 (`Backpack_FC`, `0`, `6`, `2235`, `1`)
+- 洋蓟瓣 (`1131`): 一小簇洋蓟，很多鱼都很喜欢。 (`ArtichokeFloret`, `0`, `95`, `212`, `3`)
+- 玉米粒 (`1132`): Item_CornKernel_Desc (`CornKernel`, `0`, `95`, `212`, `3`)
+- 芒果丁 (`1133`): Item_DicedMango_Desc (`DicedMango`, `0`, `95`, `212`, `3`)
+- 蚯蚓 (`1134`): 活的。 (`Earthworm`, `0`, `1`, `212`, `3`)
+- 葡萄粒 (`1135`): Item_GrapeGrain_Desc (`GrapeGrain`, `0`, `95`, `212`, `3`)
+- 鸭舌帽 (`1136`): 钓鱼佬的最爱。 (`Helmat_PeakedCap`, `0`, `5`, `965`, `1`)
+- 五级重型防弹衣 (`1137`): 重且结实。 (`ArmorLV5_3`, `0`, `5`, `9323`, `1`)
+- 四级重型防弹衣 (`1138`): 耐久度很好，性价比很高的防弹衣，但在装载能力上做出了一定的妥协。 (`ArmorLV4_3`, `0`, `4`, `4808`, `1`)
+- 三级重型防弹衣 (`1139`): 更重，但也更持久。 (`ArmorLV3_2`, `0`, `3`, `2929`, `1`)
+- 四级作战防弹衣 (`1140`): 重量较轻，还拥有相当多的口袋。 (`ArmorLV4_2`, `0`, `4`, `3782`, `1`)
+- 五级作战防弹衣 (`1141`): 各项能力都相当均衡，就感觉有点小贵。 (`ArmorLV5_2`, `0`, `5`, `8158`, `1`)
+- 三级作战防弹衣 (`1142`): 在重量、耐久度方面表现相当平衡的防弹衣。 (`ArmorLV3_3`, `0`, `3`, `2485`, `1`)
+- 坦克头盔 (`1143`): 有一定的防护能力，但因为把耳朵也罩住了，会影响听力。 (`HelmatLV1_2`, `0`, `1`, `97`, `1`)
+- 二级轻型头盔 (`1144`): 佩戴起来相当稳固。 (`HelmatLV2_2`, `0`, `2`, `473`, `1`)
+- 三级轻型头盔 (`1145`): 加厚了的制式装备，有更高的耐久度，但也会更重一些。 (`HelmatLV3_2`, `0`, `3`, `1479`, `1`)
+- 维和头盔 (`1146`): 特殊的轻量化设计，在保证了耐久度的同时，重量也更轻了。 (`HelmatLV3_UN`, `0`, `3`, `1893`, `1`)
+- 四级防弹头盔 (`1147`): 在防护性能和舒适度上表现都非常优秀。 (`HelmatLV4_2`, `0`, `4`, `3444`, `1`)
+- 五级轻型头盔 (`1148`): 在防护性能、轻量化、耐久性、成本方面表现都相当优秀，但特殊的造型使得佩戴耳机相当不便。 (`HelmatLV5_1Hear`, `0`, `5`, `3787`, `1`)
+- 五级作战头盔 (`1149`): 比较重，但防护性能相当出色的头盔。 (`HelmatLV5_2`, `0`, `5`, `6554`, `1`)
+- 地窖岔路钥匙 (`1150`): 地窖中一处岔路的钥匙。 (`Key_HiddenWarehouse_Cellar_Fork`, `0`, `5`, `1952`, `1`)
+- 防空系统密钥 (`1151`): 用于激活防空系统的控制权限，防空系统就位于风暴区。 (`Key_Defense_System`, `0`, `7`, `6000`, `1`)
+- Item_Grenade_SpaceBoss (`1152`): Item_Grenade_SpaceBoss_Desc (`Grenade_SpaceBoss`, `0`, `9`, `580`, `1`)
+- Item_Grenade_SpaceBoss (`1153`): Item_Grenade_SpaceBoss_Desc (`Grenade_SpaceBoss_2`, `0`, `9`, `580`, `1`)
+- 鱼饵 (`1154`): 复合调配，各种鱼都很喜欢。 (`FishingBait`, `0`, `2`, `377`, `3`)
+- 蓝图：电击手雷 (`1155`): 用于制造电击手雷的蓝图。 (`BP_ElecGrenade`, `0`, `1`, `50`, `1`)
+- 蓝图：燃烧弹 (`1156`): 用于制造燃烧弹的蓝图。 (`BP_FireGrenade`, `0`, `1`, `50`, `1`)
+- 蓝图：毒雾弹 (`1157`): 用于制造毒雾弹的蓝图。 (`BP_ToxGrenade`, `0`, `1`, `50`, `1`)
+- 水族箱 (`1158`): Item_Aquarium_Desc (`Aquarium`, `5`, `2`, `500`, `1`)
+- 蓝图：风暴枪 (`1159`): 用于在工作台研发武器：风暴枪。 (`BP_BR_Storm_Space`, `0`, `7`, `1500`, `1`)
+- 配方：鱼饵 (`1160`): 在工作台制作鱼饵的配方。 (`Formula_FishingBait`, `0`, `99`, `655`, `1`)
+- 蓝图：大型能量弹 (`1161`): 用于制造大型能量弹的蓝图。 (`BP_Bullet_PWL_L`, `0`, `9`, `50`, `1`)
+- 强化小能量弹 (`1162`): 强化了穿甲能力的小能量弹。 (`Bullet_PWS_H`, `3`, `9`, `180`, `240`)
+- 风暴工作服 (`1163`): 使用特殊材质制造的工作服，虽然抵挡子弹的能力很差，但穿上一整套可以抵御空间风暴早期的扰动。 (`ArmorLV1StormProtection`, `0`, `3`, `1288`, `1`)
+- 神秘飞船图纸 (`1164`): 看不懂的图纸，好像是用来制造飞船的某个部件。 (`Quest_Blueprint_ShipSpace`, `0`, `4`, `50`, `1`)
+- 蓝色方块 (`1165`): 神秘的蓝色方块，有种熟悉的感觉。 (`BlueCube`, `3`, `3`, `10`, `9999`)
+- 方块收集装置 (`1166`): 用来收集和储存蓝色方块的容器，使用说明书上写着可以存储灵魂能量。 (`Backpack_Cubbe`, `0`, `7`, `5288`, `1`)
+- 蓝图：好钓竿 (`1167`): 用于在工作台制造好钓竿的蓝图。 (`BP_FishingRod_LV2`, `0`, `6`, `500`, `1`)
+- 蓝图：厉害钓竿 (`1168`): 用于在工作台制造厉害钓竿的蓝图。 (`BP_FishingRod_LV3`, `0`, `6`, `500`, `1`)
+- J-Lab 放映室钥匙 (`1169`): J-Lab 实验室内某处放映室的钥匙，平时研究员会在里面放松放松。 (`Key_JLab_MiniGameCartriage`, `0`, `5`, `2680`, `1`)
+- 高级有机纤维 (`1170`): 更结实的有机纤维，经常被用来制作轻型防弹衣。 (`fiber_Lv2`, `0`, `3`, `428`, `10`)
+- 顶级有机纤维 (`1171`): 防护性能非常顶尖的有机纤维，常用来制造顶级的防弹衣与头盔。 (`fiber_Lv3`, `0`, `4`, `1289`, `10`)
+- 小直刀 (`1172`): 使用轻量化材料制作，非常轻便。 (`Knife_01_Blade`, `0`, `2`, `3997`, `1`)
+- 木柄短刀 (`1173`): 普通的木柄短刀。 (`Knife_02_Short`, `0`, `1`, `1367`, `1`)
+- 指虎刀 (`1174`): 带有弹簧刀刃的指虎。 (`Knife_03_Knuckle`, `0`, `5`, `41667`, `1`)
+- 爪刀 (`1175`): 刀刃全是蓝色，看上去就很贵。 (`Knife_04_Karambit`, `0`, `6`, `201680`, `1`)
+- 廓尔喀弯刀 (`1176`): 经典的刀型很容易砍出血来。 (`Knife_06_Gurkhakukri`, `0`, `4`, `25678`, `1`)
+- 战术刺刀 (`1177`): 制式的军用刺刀。 (`Knife_07_Bayonet`, `0`, `1`, `8645`, `1`)
+- 战术刀具箱 (`1178`): 里面可能放着各种各样的刀具，请适度消费。 (`KnifeBox`, `0`, `5`, `5000`, `1`)
+- 配方：战术刀具箱 (`1179`): 在工作台制作战术刀具箱的配方。 (`Formula_KnifeBox`, `0`, `99`, `429`, `1`)
+- 自制糖果 (`1180`): 甜食令人快乐。 (`CandyCan`, `0`, `3`, `470`, `1`)
+- 棒棒糖 (`1181`): 比赛前舔一舔，甜甜的，好吃。 (`Candy`, `0`, `1`, `101`, `3`)
+- 和平星 (`1182`): 愿世界和平！ (`PeaceStar`, `0`, `5`, `10127`, `1`)
+- 和平星 (`1183`): 已经化作了粉末。 (`FakePeaceStar`, `0`, `1`, `970`, `1`)
+- 高级火药 (`1184`): 杂质更少，威力更高。 (`GunPowderLv5`, `4`, `995`, `10`, `300`)
+- 蓝图：AR-特种穿甲弹 (`1185`): 用于在工作台制造 AR-特种穿甲弹的蓝图。 (`BP_Bullet_AR_Piercing6`, `0`, `0`, `50`, `1`)
+- 蓝图：L-特种穿甲弹 (`1186`): 用于制造 L-特种穿甲弹的蓝图。 (`BP_Bullet_BR_Piercing6`, `0`, `0`, `50`, `1`)
+- 蓝图：MAG-特种穿甲弹 (`1187`): 用于制造 MAG-特种穿甲弹的蓝图。 (`BP_Bullet_MAG_Piercing6`, `0`, `9`, `50`, `1`)
+- 蓝图：特种霰弹 (`1188`): 用于制造特种霰弹的蓝图。 (`BP_Bullet_SHT_Break`, `0`, `9`, `50`, `1`)
+- 蓝图：S-特种弹 (`1189`): 用于制造 S-特种弹的蓝图。 (`BP_Bullet_SMG_Break`, `0`, `9`, `50`, `1`)
+- 特种穿甲狙击弹 (`1190`): 用于制造特种穿甲狙击弹的蓝图。 (`BP_Bullet_SNP_Piercing6`, `0`, `9`, `50`, `1`)
+- 北厂区小屋钥匙 (`1191`): 能打开农场镇北厂区内小屋的门。 (`Key_Farm_NorthFactoryRoom`, `0`, `3`, `101`, `1`)
+- 罐装火药 (`1192`): 贴着蓝色标签的罐装火药。 (`GunPowder_Blue`, `0`, `3`, `500`, `5`)
+- 罐装火药 (`1193`): 贴着绿色标签的罐装火药。 (`GunPowder_Green`, `0`, `3`, `500`, `5`)
+- 罐装火药 (`1194`): 贴着红色标签的罐装火药。 (`GunPowder_Red`, `0`, `4`, `800`, `5`)
+- 蓝图：穿甲狙击弹 (`1195`): 用于制造穿甲狙击弹的蓝图。 (`BP_Bullet_SNP_Piercing2`, `0`, `9`, `50`, `1`)
+- 蓝图：AR-穿甲弹 (`1196`): 用于制造 AR-穿甲弹的蓝图。 (`BP_Bullet_AR_Piercing3`, `0`, `9`, `50`, `1`)
+- 蓝图：AR-高级穿甲弹 (`1197`): 用于制造 AR-高级穿甲弹的蓝图。 (`BP_Bullet_AR_Piercing5`, `0`, `9`, `50`, `1`)
+- 蓝图：L-穿甲弹 (`1198`): 用于制造 L-穿甲弹的蓝图。 (`BP_Bullet_BR_Piercing3`, `0`, `9`, `50`, `1`)
+- 蓝图：L-高级穿甲弹 (`1199`): 用于制造 L-高级穿甲弹的蓝图。 (`BP_Bullet_BR_Piercing5`, `0`, `9`, `50`, `1`)
+- 蓝图：MAG-穿甲弹 (`1200`): 用于制造 MAG-穿甲弹的蓝图。 (`BP_Bullet_MAG_Piercing2`, `0`, `9`, `50`, `1`)
+- 蓝图：MAG-高级穿甲弹 (`1201`): 用于制造 MAG-高级穿甲弹的蓝图。 (`BP_Bullet_MAG_Piercing4`, `0`, `9`, `50`, `1`)
+- 蓝图：穿甲霰弹 (`1202`): 用于制造穿甲霰弹的蓝图。 (`BP_Bullet_SHT_Piercing3`, `0`, `9`, `50`, `1`)
+- 蓝图：高级穿甲霰弹 (`1203`): 用于制造高级穿甲霰弹的蓝图。 (`BP_Bullet_SHT_Piercing5`, `0`, `9`, `50`, `1`)
+- 蓝图：S-穿甲弹 (`1204`): 用于制造 S-穿甲弹的蓝图。 (`BP_Bullet_SMG_Piercing3`, `0`, `9`, `50`, `1`)
+- 蓝图：S-高级穿甲弹 (`1205`): 用于制造 S-高级穿甲弹的蓝图。 (`BP_Bullet_SMG_Piercing5`, `0`, `9`, `50`, `1`)
+- 蓝图：高级穿甲狙击弹 (`1206`): 用于制造高级穿甲狙击弹的蓝图。 (`BP_Bullet_SNP_Piercing4`, `0`, `9`, `50`, `1`)
+- 战术咸鱼 (`1207`): 一根腌的很透的咸鱼，梆硬。 (`SaltedFish`, `0`, `6`, `2677`, `1`)
+- 猪肉刀 (`1208`): 看上去很普通，但材质好像一点都不普通，甚至可以挡住子弹。 (`ButcherKnife`, `0`, `5`, `3769`, `1`)
+- 玩具枪 (`1209`): 威力非常小。 (`SMG_ArcadeGun_Normal`, `0`, `7`, `1555`, `1`)
+- 配方：可乐 (`1210`): 制造可乐的配方。 (`Formula_Cola`, `0`, `9`, `1000`, `1`)
+- 风暴工作头盔 (`1213`): 使用特殊材质制造的工作头盔，虽然抵挡子弹的能力很差，但穿上一整套可以抵御空间风暴早期的扰动。 (`HelmatLV1StormProtection`, `0`, `3`, `768`, `1`)
+- 防御力场操作说明 (`1214`): 手写的防御力场操作说明，字迹有些潦草，但看着有些熟悉。 (`Quest_DefenceShield_Text`, `0`, `4`, `350`, `1`)
+- 蓝图：五级防弹衣 (`1215`): 用于在工作台制作五级防弹衣的蓝图。 (`BP_ArmorLV5`, `0`, `7`, `1500`, `1`)
+- 蓝图：空间防护服终极版 (`1216`): 用于在工作台制作空间防护服终极版的蓝图。 (`BP_ArmorLV5StormProtection`, `0`, `7`, `9798`, `1`)
+- 蓝图：五级作战防弹衣 (`1217`): 用于在工作台制作五级作战防弹衣的蓝图。 (`BP_ArmorLV5_2`, `0`, `7`, `1500`, `1`)
+- 蓝图：五级重型防弹衣 (`1218`): 用于在工作台制作五级重型防弹衣的蓝图。 (`BP_ArmorLV5_3`, `0`, `7`, `1500`, `1`)
+- 蓝图：六级防弹衣 (`1219`): 用于在工作台制作六级防弹衣的蓝图。 (`BP_ArmorLV6`, `0`, `7`, `1500`, `1`)
+- 蓝图：行军背包 MAX (`1220`): 用于在工作台制作行军背包 MAX 的蓝图。 (`BP_BackpackLV5`, `0`, `7`, `1500`, `1`)
+- 蓝图：SCIFI 面罩 (`1221`): 用于在工作台制作 SCIFI 面罩的蓝图。 (`BP_HelmatLV5`, `0`, `7`, `1500`, `1`)
+- 蓝图：空间防护头盔最终版 (`1222`): 用于在工作台制作空间防护头盔最终版的蓝图。 (`BP_HelmatLV5StormProtection`, `0`, `7`, `7898`, `1`)
+- 蓝图：五级轻型头盔 (`1223`): 用于在工作台制作五级轻型头盔的蓝图。 (`BP_HelmatLV5_1Hear`, `0`, `7`, `1500`, `1`)
+- 蓝图：五级作战头盔 (`1224`): 用于在工作台制作五级作战头盔的蓝图。 (`BP_HelmatLV5_2`, `0`, `7`, `1500`, `1`)
+- 蓝图：神之电焊头 (`1225`): 用于在工作台制作神之电焊头的蓝图。 (`BP_HelmatLV6`, `0`, `7`, `1500`, `1`)
+- 疗养院机房钥匙 (`1226`): 能打开疗养院内机房的门。 (`Key_Farm_Nursing_Computer`, `0`, `2`, `224`, `1`)
+- 疗养院餐厅钥匙 (`1227`): 能打开疗养院内餐厅的门。 (`Key_Farm_Nursing_Restaurant`, `0`, `3`, `439`, `1`)
+- 疗养院房间钥匙-1 (`1228`): 能打开疗养院内某个房间的门。 (`Key_Farm_Nursing_Room_1`, `0`, `2`, `214`, `1`)
+- 疗养院房间钥匙-2 (`1229`): 能打开疗养院内某个房间的门。 (`Key_Farm_Nursing_Room_2`, `0`, `3`, `377`, `1`)
+- 加速器 (`1230`): 似乎是用来处理某种特殊晶体的机器。 (`Accelerator`, `0`, `3`, `871`, `1`)
+- 浓缩浆质 (`1231`): 忍不住想尝一口。 (`ConcentratedSlurry`, `0`, `9`, `500`, `1`)
+- 晶体电池 (`1232`): 储存着巨大的电力。 (`CrystalBattery`, `0`, `999`, `500`, `1`)
+- 晶体过滤单元 (`1233`): 似乎是用来处理某种特殊晶体的机器。 (`CrystalFiltrationUnit`, `0`, `2`, `518`, `1`)
+- 晶体增压器 (`1234`): 似乎是用来处理某种特殊晶体的机器。 (`CrystalBooster`, `0`, `2`, `622`, `1`)
+- 大块空间晶体 (`1235`): 空间晶体的聚合体，小心一点可以将它拆开。 (`BulkSpaceCrystal`, `0`, `9`, `3600`, `5`)
+- 风暴眼 (`1236`): 风暴虫的眼睛。 (`SpaceEye`, `0`, `9`, `300`, `10`)
+- 配方：浓缩浆质 (`1237`): 制造浓缩浆质的配方。 (`Formula_ConcentratedSlurry`, `0`, `9`, `8888`, `1`)
+- MF-毒液 (`1238`): 让射出的子弹裹上浓缩浆质，会让命中的目标中毒。 (`AR_MF_Poison`, `0`, `9`, `3956`, `1`)
+- ??? (`1239`): ??? (`EGun_Magic_Red`, `0`, `9`, `284`, `1`)
+- 蓝图：MF-毒液 (`1240`): 用于在工作台研发武器：MF-毒液。 (`BP_AR_MF_Poison`, `0`, `9`, `1000`, `1`)
+- 汽车电池 (`1241`): 汽车用的高容量电池。 (`CarBattery`, `0`, `5`, `7515`, `1`)
+- ??? (`1242`): 看起来不太稳定，不知道吃下去会怎么样？ (`RedEye`, `3`, `2`, `3974`, `1`)
+- 骨夹板 (`1243`): 用于快速治疗骨折。 (`Splint`, `0`, `1`, `105`, `1`)
+- 高级骨夹板 (`1244`): 用于快速治疗骨折，可用多次。 (`SplintAdvanced`, `0`, `3`, `468`, `1`)
+- 手术包 (`1245`): 用于治疗创伤。 (`SurgicalKit`, `0`, `3`, `488`, `1`)
+- 增强手术包 (`1246`): 用于治疗创伤。 (`SurgicalKitL`, `0`, `4`, `1678`, `1`)
+- 止血针 (`1247`): 移除流血状态，且一段时间内免疫流血。 (`Injection_BleedResist`, `0`, `2`, `448`, `3`)
+- 斧子 (`1248`): 平平无奇的斧子。 (`SmallAxe`, `0`, `1`, `377`, `1`)
+- 休闲套装 (`1249`): 条纹 Polo 衫配红短裤。 (`Armor_Football_1`, `0`, `9`, `230`, `1`)
+- 运动背心 (`1250`): 破了几个洞。 (`Armor_Football_2`, `0`, `9`, `160`, `1`)
+- 金丝眼镜 (`1251`): 没有镜片。 (`FackMask_Football_Glass`, `0`, `9`, `80`, `1`)
+- 橘子耳机 (`1252`): 能够大幅提高听觉灵敏度，可以听到声音来自于哪个方向。 (`HeadsetLV2`, `0`, `4`, `1850`, `1`)
+- 纯金徽章 (`1253`): 纯金打造。 (`GoldBadge`, `0`, `6`, `55898`, `1`)
+- 皇冠 (`1254`): 欲戴王冠，必承其重。 (`Crown`, `0`, `7`, `21593218`, `1`)
+- 手提袋 (`1255`): 顶级奢侈品牌推出的手提袋。 (`ToteBag`, `0`, `4`, `6666`, `1`)
+- 灵魂私酒 (`1256`): 使用秘密配方酿造的私酒，传闻加入了可乐。 (`MoonShine`, `0`, `6`, `12490`, `1`)
+- 粪球 (`1257`): 可以扔出去。 (`ShitBall`, `0`, `1`, `10`, `5`)
 
 ## TeamSoda.Duckov.Core.Duckov.CheatMode
 
