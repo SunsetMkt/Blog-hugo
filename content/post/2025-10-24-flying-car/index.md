@@ -8,7 +8,7 @@ slug: flying-car
 title: 冲出革命湾
 ---
 
-转载自[angelkawaii.xyz](https://angelkawaii.xyz/2025/08/30/5-07/)，使用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议授权。
+转载自[angelkawaii.xyz](https://angelkawaii.xyz/2025/10/16/flying-car/)，使用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议授权。
 
 ---
 
