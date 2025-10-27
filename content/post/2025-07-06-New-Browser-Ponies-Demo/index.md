@@ -45,17 +45,19 @@ title: New-Browser-Ponies Demo
         showLoadProgress: true,
         speakProbability: 0.1,
         spawn: {
-            applejack: 1,
-            fluttershy: 1,
-            "pinkie pie": 1,
+            // applejack: 1,
+            // fluttershy: 1,
+            // "pinkie pie": 1,
             "princess twilight sparkle": 1,
-            "rainbow dash": 1,
-            rarity: 1,
+            // "rainbow dash": 1,
+            // rarity: 1,
         },
         spawnRandom: 0,
         autostart: true,
     }); /* ]]> */
 </script>
+
+<button onclick="BrowserPonies.spawnRandom(1)">Spawn 1 Random Ponies</button>
 
 <button onclick="BrowserPonies.spawnRandom(10)">Spawn 10 Random Ponies</button>
 
