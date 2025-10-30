@@ -1,4 +1,5 @@
-function loadCSSPreload(href) {
+async function loadCSSPreload(href) {
+    console.log("[loadCSSPreload]", href);
     const link = document.createElement("link");
     link.rel = "preload";
     link.as = "style";
@@ -7,4 +8,11 @@ function loadCSSPreload(href) {
         link.rel = "stylesheet";
     };
     document.head.appendChild(link);
+}
+
+export default function () {
+    var urls = [];
+    for (var i = 0; i < urls.length; i++) {
+        loadCSSPreload(urls[i]);
+    }
 }
