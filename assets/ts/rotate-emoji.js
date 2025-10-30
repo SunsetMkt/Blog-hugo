@@ -28,14 +28,4 @@ export default function () {
     emojiSpan.onclick = function () {
         rotateEmoji(emojiSpan);
     };
-    // Prevent text selection
-    // emojiSpan.style.userSelect = "none";
-    // console.log("emojiSpan", emojiSpan);
-    /*
-        if (
-            navigator.language === "zh-TW" &&
-            Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Taipei"
-        ) {
-            emojiList.add("🇹🇼");
-        }*/
 }
