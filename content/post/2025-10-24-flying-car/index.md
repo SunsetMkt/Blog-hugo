@@ -1,9 +1,10 @@
 ---
 categories: Repost
-date: "2025-10-24T00:00:00Z"
-description: "“我就感觉到快，有催人跑的意思。”——邓小平"
+date: 2025-10-24T00:00:00Z
+description: “我就感觉到快，有催人跑的意思。”——邓小平
 tags:
-    - Cedaros
+  - Cedaros
+  - 社会评论
 slug: flying-car
 title: 冲出革命湾
 ---

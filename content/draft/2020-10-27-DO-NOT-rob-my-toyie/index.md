@@ -4,6 +4,8 @@ date: 2020-10-27
 categories: Repost
 draft: true
 slug: DO-NOT-rob-my-toyie
+tags:
+  - 社会评论
 ---
 
 <!--

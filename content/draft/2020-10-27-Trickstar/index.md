@@ -4,6 +4,8 @@ date: 2020-10-27
 categories: Repost
 draft: true
 slug: Trickstar
+tags:
+  - 社会评论
 ---
 
 <!--

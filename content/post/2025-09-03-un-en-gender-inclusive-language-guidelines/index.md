@@ -2,9 +2,10 @@
 categories: Repost
 date: 2025-09-03T00:00:00Z
 tags:
-    - 指南
-    - 联合国
-    - 翻译
+  - 指南
+  - 社会评论
+  - 翻译
+  - 联合国
 slug: un-en-gender-inclusive-language-guidelines
 title: 联合国英文性别包容性语言指南
 ---

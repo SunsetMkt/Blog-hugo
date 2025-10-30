@@ -4,6 +4,8 @@ date: 2022-09-27
 categories: Repost
 draft: true
 slug: Smilesweaver
+tags:
+  - 社会评论
 ---
 
 <!--

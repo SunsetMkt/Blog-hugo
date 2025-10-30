@@ -1,12 +1,13 @@
 ---
 categories: Repost
-date: "2025-07-05T00:00:00Z"
+date: 2025-07-05T00:00:00Z
 tags:
-    - 信息技术
-    - 开源
-    - LLM
-    - 华为
-    - 翻译
+  - LLM
+  - 信息技术
+  - 华为
+  - 开源
+  - 社会评论
+  - 翻译
 slug: HonestyAGI-LLM-Fingerprint
 title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不够！
 ---
