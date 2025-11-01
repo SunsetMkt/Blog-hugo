@@ -67,42 +67,17 @@ Of hopes and fears, being himself alone.
 
 但是公测的时候就换成改编版了，资源提取如下（还有无歌词的版本）：
 
-<div>
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
-    <div id="aplayer"></div>
-    <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script>
-        const ap = new APlayer({
-            container: document.getElementById('aplayer'),
-            mini: false,
-            autoplay: false,
-            preload: 'auto',
-            mutex: true,
-            listFolded: false,
-            listMaxHeight: 90,
-            audio: [
-                {
-                    name: '二测版',
-                    artist: '《重返未来：1999》',
-                    url: 'bili.mp3',
-                    cover: 'cover.png',
-                },
-                {
-                    name: '公测提取',
-                    artist: '《重返未来：1999》',
-                    url: '770913_1.mp3',
-                    cover: 'cover.png',
-                },
-                {
-                    name: '无歌词',
-                    artist: '《重返未来：1999》',
-                    url: '753105343_1.mp3',
-                    cover: 'cover.png',
-                }
-            ]
-        });
-    </script>
-</div>
+### 二测版
+
+{{< audio "bili.mp3" >}}
+
+### 公测提取
+
+{{< audio "770913_1.mp3" >}}
+
+### 无歌词
+
+{{< audio "753105343_1.mp3" >}}
 
 ---
 

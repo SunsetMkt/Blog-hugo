@@ -8,29 +8,7 @@ slug: 黄昏-邵夷贝
 title: "黄昏 - 邵夷贝/李志"
 ---
 
-<div>
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
-    <div id="aplayer"></div>
-    <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script>
-        const ap = new APlayer({
-            container: document.getElementById('aplayer'),
-            mini: false,
-            autoplay: false,
-            preload: 'auto',
-            mutex: true,
-            listFolded: false,
-            listMaxHeight: 90,
-            audio: [
-                {
-                    name: '黄昏',
-                    artist: '邵夷贝/李志',
-                    url: '黄昏.mp3',
-                }
-            ]
-        });
-    </script>
-</div>
+{{< audio "黄昏.mp3" >}}
 
 词：邵小毛
 

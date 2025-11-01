@@ -7,18 +7,7 @@ slug: 国际歌
 title: 国际歌
 ---
 
-<link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
-<div id="aplayer"></div>
-<script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
-<script>
-    const ap = new APlayer({
-        container: document.getElementById('aplayer'),
-        audio: [{
-            name: '国际歌',
-            url: '国际歌.mp3'
-        }]
-    });
-</script>
+{{< audio "国际歌.mp3" >}}
 
 ```plain
 中文2011年杨起译本
