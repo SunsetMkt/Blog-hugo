@@ -2,4 +2,4 @@
 
 Forked: <https://github.com/SunsetMkt/embeddable-monaco>
 
-Version: `9901c45c35a653a47ef4759107ce1dbff4564127`
+Version: `beeb793b13f244b342577460b46ee71fe6cfcc00`
