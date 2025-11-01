@@ -1,4 +1,5 @@
-import ImageRender, { ImageRenderOptions } from './ImageRender';
+import type { ImageRenderOptions } from './ImageRender';
+import ImageRender from './ImageRender';
 export interface WebGPURenderOptions extends ImageRenderOptions {
     powerPreference?: GPUPowerPreference;
 }

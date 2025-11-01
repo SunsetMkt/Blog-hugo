@@ -1,6 +1,7 @@
-import { AVFramePool, AVFrameRef } from '../struct/avframe';
-import List from 'cheap/std/collection/List';
-import { Mutex } from 'cheap/thread/mutex';
+import type { AVFramePool } from '../struct/avframe';
+import { AVFrameRef } from '../struct/avframe';
+import type List from 'cheap/std/collection/List';
+import type { Mutex } from 'cheap/thread/mutex';
 export default class AVFramePoolImpl implements AVFramePool {
     private list;
     private mutex;

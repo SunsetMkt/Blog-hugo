@@ -1,6 +1,6 @@
-import AVPacket from 'avutil/struct/avpacket';
+import type AVPacket from 'avutil/struct/avpacket';
 import Decoder from './Decoder';
-import { AVSubtitle } from 'avutil/struct/avsubtitle';
+import type { AVSubtitle } from 'avutil/struct/avsubtitle';
 export default class TextDecoder extends Decoder {
     private queue;
     constructor();

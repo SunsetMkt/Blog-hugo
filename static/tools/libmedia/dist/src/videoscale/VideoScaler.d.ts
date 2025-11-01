@@ -1,6 +1,7 @@
-import { AVPixelFormat } from 'avutil/pixfmt';
-import AVFrame from 'avutil/struct/avframe';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { AVPixelFormat } from 'avutil/pixfmt';
+import { AVColorRange, AVColorSpace } from 'avutil/pixfmt';
+import type AVFrame from 'avutil/struct/avframe';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 export declare const enum ScaleAlgorithm {
     FAST_BILINEAR = 1,
     BILINEAR = 2,
@@ -18,6 +19,8 @@ export interface ScaleParameters {
     width: int32;
     height: int32;
     format: AVPixelFormat;
+    colorRange?: AVColorRange;
+    colorSpace?: AVColorSpace;
 }
 export type VideoScalerOptions = {
     resource: WebAssemblyResource;
@@ -28,7 +31,7 @@ export default class VideoScaler {
     private inputParameters;
     private outputParameters;
     constructor(options: VideoScalerOptions);
-    open(input: ScaleParameters, output: ScaleParameters, algorithm?: ScaleAlgorithm): Promise<int32>;
+    open(input: ScaleParameters, output: ScaleParameters, algorithm?: ScaleAlgorithm, threadCount?: int32): Promise<int32>;
     scale(src: pointer<AVFrame>, dst: pointer<AVFrame>): int32;
     close(): void;
     getInputScaleParameters(): ScaleParameters;

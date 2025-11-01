@@ -1,2 +1,2 @@
-import ts from 'typescript';
+import type ts from 'typescript';
 export default function (node: ts.BigIntLiteral, visitor: ts.Visitor): ts.Node | ts.Node[];

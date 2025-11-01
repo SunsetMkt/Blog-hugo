@@ -1,9 +1,9 @@
+import { AV_NUM_DATA_POINTERS } from '../constant';
 import { AVChromaLocation, AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic } from '../pixfmt';
-import { AVBufferRef } from './avbuffer';
-import { AVDictionary } from './avdict';
+import type { AVBufferRef } from './avbuffer';
+import type { AVDictionary } from './avdict';
 import { Rational } from './rational';
-import { AVChannelLayout } from './audiosample';
-export declare const AV_NUM_DATA_POINTERS = 8;
+import type { AVChannelLayout } from './audiosample';
 export declare const enum AVFrameFlags {
     AV_FRAME_FLAG_NONE = 0,
     /**

@@ -1,6 +1,7 @@
-import IOLoader, { IOLoaderAudioStreamInfo, IOLoaderSubtitleStreamInfo, IOLoaderVideoStreamInfo } from './IOLoader';
-import { Uint8ArrayInterface } from 'common/io/interface';
-import { FetchInfo } from './FetchIOLoader';
+import type { IOLoaderAudioStreamInfo, IOLoaderSubtitleStreamInfo, IOLoaderVideoStreamInfo } from './IOLoader';
+import IOLoader from './IOLoader';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type { FetchInfo } from './FetchIOLoader';
 import { AVMediaType } from 'avutil/codec';
 export default class HlsIOLoader extends IOLoader {
     private info;
@@ -12,6 +13,7 @@ export default class HlsIOLoader extends IOLoader {
     private subtitleSelectedIndex;
     private sleep;
     private aborted;
+    private start;
     private fetchMasterPlayList;
     private buildUrl;
     private createLoader;
@@ -32,8 +34,9 @@ export default class HlsIOLoader extends IOLoader {
     getVideoList(): IOLoaderVideoStreamInfo;
     getAudioList(): IOLoaderAudioStreamInfo;
     getSubtitleList(): IOLoaderSubtitleStreamInfo;
-    selectVideo(index: number): void;
-    selectAudio(index: number): void;
-    selectSubtitle(index: number): void;
+    selectVideo(index: number): Promise<number>;
+    selectAudio(index: number): Promise<number>;
+    selectSubtitle(index: number): Promise<number>;
     getMinBuffer(): number;
+    setStart(start: number): void;
 }

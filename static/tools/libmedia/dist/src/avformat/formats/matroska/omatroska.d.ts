@@ -1,7 +1,7 @@
-import { BytesWriterSync, Uint8ArrayInterface } from 'common/io/interface';
+import type { BytesWriterSync, Uint8ArrayInterface } from 'common/io/interface';
 import { EBMLId } from './matroska';
-import IOWriterSync from 'common/io/IOWriterSync';
-import { Attachment, Attachments, AudioTrack, Chapter, ChapterAtom, ChapterDisplay, Chapters, CuePoint, CuePointPos, Cues, Header, Info, OMatroskaContext, SeekHead, SeekHeadEntry, SimpleTag, Tag, TagTargets, Tags, TrackEntry, Tracks, VideoColor, VideoTrack } from './type';
+import type IOWriterSync from 'common/io/IOWriterSync';
+import type { Attachment, Attachments, AudioTrack, Chapter, ChapterAtom, ChapterDisplay, Chapters, CuePoint, CuePointPos, Cues, Header, Info, OMatroskaContext, SeekHead, SeekHeadEntry, SimpleTag, Tag, TagTargets, Tags, TrackEntry, Tracks, VideoColor, VideoTrack } from './type';
 export declare function ebmlIdSize(id: EBMLId): number;
 export declare function ebmlNumSize(value: number | bigint): number;
 export declare function ebmlLengthSize(value: number | bigint): number;

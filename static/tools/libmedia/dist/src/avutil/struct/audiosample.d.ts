@@ -1,4 +1,4 @@
-import { AVChannel, AVChannelOrder } from '../audiosamplefmt';
+import type { AVChannel, AVChannelOrder } from '../audiosamplefmt';
 export declare class AVChannelCustom {
     id: AVChannel;
     name: array<char, 16>;

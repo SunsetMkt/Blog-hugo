@@ -1,15 +1,16 @@
-import Pipeline, { TaskOptions } from './Pipeline';
-import List from 'cheap/std/collection/List';
-import { AVFrameRef } from 'avutil/struct/avframe';
-import { Mutex } from 'cheap/thread/mutex';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
+import type List from 'cheap/std/collection/List';
+import type { AVFrameRef } from 'avutil/struct/avframe';
+import type { Mutex } from 'cheap/thread/mutex';
 import WasmAudioDecoder from 'avcodec/wasmcodec/AudioDecoder';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 import AVFramePoolImpl from 'avutil/implement/AVFramePoolImpl';
-import { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
+import type { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
 import AVCodecParameters from 'avutil/struct/avcodecparameters';
 import WebAudioDecoder from 'avcodec/webcodec/AudioDecoder';
-import { Data } from 'common/types/type';
-import { AVCodecParametersSerialize } from 'avutil/util/serialize';
+import type { Data } from 'common/types/type';
+import type { AVCodecParametersSerialize } from 'avutil/util/serialize';
 export interface AudioDecodeTaskOptions extends TaskOptions {
     resource: ArrayBuffer | WebAssemblyResource;
     avpacketList: pointer<List<pointer<AVPacketRef>>>;

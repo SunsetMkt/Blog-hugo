@@ -1,6 +1,6 @@
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import { Data } from 'common/types/type';
-import { RTPPacket } from './RTPPacket';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type { Data } from 'common/types/type';
+import type { RTPPacket } from './RTPPacket';
 /**
  * TODO 支持 nack
  */

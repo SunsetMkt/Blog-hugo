@@ -1,8 +1,9 @@
 import OFormat from './OFormat';
 import FlvHeader from './flv/FlvHeader';
 import FlvScriptTag from './flv/FlvScriptTag';
-import AVPacket from 'avutil/struct/avpacket';
-import { AVOFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
+import type { AVOFormatContext } from '../AVFormatContext';
+import { AVCodecID } from 'avutil/codec';
 import { AVFormat } from 'avutil/avformat';
 export interface OFlvFormatOptions {
     addKeyframePositions?: boolean;
@@ -32,4 +33,6 @@ export default class OFlvFormat extends OFormat {
     writeAVPacket(formatContext: AVOFormatContext, avpacket: pointer<AVPacket>): number;
     writeTrailer(formatContext: AVOFormatContext): number;
     flush(context: AVOFormatContext): number;
+    getCapabilities(): AVCodecID[];
+    static Capabilities: AVCodecID[];
 }

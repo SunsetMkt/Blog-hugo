@@ -1,5 +1,5 @@
-import AVPacket from 'avutil/struct/avpacket';
-import { AVIFormatContext } from './AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
+import type { AVIFormatContext } from './AVFormatContext';
 export interface DemuxOptions {
     /**
      * 只分析流的必要参数（设置 true 将不会分析视频帧率和音频每帧采用点数等参数）

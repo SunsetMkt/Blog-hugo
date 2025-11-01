@@ -1,5 +1,5 @@
-import { PAT, PES, PMT, TSPacket, TSSliceQueue } from './struct';
-import AVBSFilter from '../../bsf/AVBSFilter';
+import type { PAT, PES, PMT, TSPacket, TSSliceQueue } from './struct';
+import type AVBSFilter from '../../bsf/AVBSFilter';
 export type PID = number;
 export interface MpegtsContext {
     currentProgram: number;

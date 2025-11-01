@@ -1,4 +1,4 @@
-import { AssEvent } from './ass';
+import type { AssEvent } from './ass';
 export declare function parseFormat(fields: string[], format: string): string[];
 export declare function parseStyleFormat(format: string): string[];
 export declare function parseEventFormat(format: string): string[];

@@ -1,4 +1,4 @@
-import { AVSampleFormat } from '../audiosamplefmt';
+import type { AVSampleFormat } from '../audiosamplefmt';
 export default class AVPCMBuffer {
     /**
      * pcm 数据

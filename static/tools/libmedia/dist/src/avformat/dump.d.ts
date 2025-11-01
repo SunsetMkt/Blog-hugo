@@ -1,7 +1,7 @@
-import { AVFormatContextInterface, AVIFormatContext, AVOFormatContext } from './AVFormatContext';
-import { AVStreamInterface } from 'avutil/AVStream';
+import type { AVChapter, AVFormatContextInterface, AVIFormatContext, AVOFormatContext } from './AVFormatContext';
+import type { AVStreamGroupInterface, AVStreamInterface } from 'avutil/AVStream';
 import { AVCodecID, AVMediaType } from 'avutil/codec';
-import { AVFormat } from 'avutil/avformat';
+import type { AVFormat } from 'avutil/avformat';
 export interface DumpIOInfo {
     from: string;
     tag: 'Input' | 'Output';
@@ -14,6 +14,9 @@ export declare function dumpKey<T>(obj: Record<string, T>, value: T, defaultValu
 export declare function dumpCodecName(codecType: AVMediaType, codecId: AVCodecID): string;
 export declare function dumpFormatName(format: AVFormat): string;
 export declare function dumpProfileName(codecId: AVCodecID, profile: int32): any;
+export declare function dumpDisposition(flags: int32): string;
 export declare function dumpAVStreamInterface(stream: AVStreamInterface, index: number, prefix: string): string;
+export declare function dumpAVStreamGroupInterface(group: AVStreamGroupInterface, index: number, prefix: string, dumpedStream: Record<number, true>): string;
+export declare function dumpChapter(chapter: AVChapter, index: number, cheapIndex: number, prefix: string): string;
 export declare function dumpAVFormatContextInterface(formatContext: AVFormatContextInterface, index: number, input: DumpIOInfo): string;
 export default function dump(formatContexts: (AVFormatContextInterface | AVIFormatContext | AVOFormatContext)[], inputs: DumpIOInfo[]): string;

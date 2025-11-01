@@ -1,7 +1,7 @@
-import { AVPacketRef } from 'avutil/struct/avpacket';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import List from 'cheap/std/collection/List';
-import { Mutex } from 'cheap/thread/mutex';
+import type { AVPacketRef } from 'avutil/struct/avpacket';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type List from 'cheap/std/collection/List';
+import type { Mutex } from 'cheap/thread/mutex';
 export interface SubtitleRenderOptions {
     delay?: int64;
     getCurrentTime: () => int64;

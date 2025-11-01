@@ -1,7 +1,8 @@
-import { AVOFormatContext } from '../AVFormatContext';
-import AVPacket from 'avutil/struct/avpacket';
+import type { AVOFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
 import OFormat from './OFormat';
-import { PagePayload } from './ogg/OggPage';
+import type { PagePayload } from './ogg/OggPage';
+import { AVCodecID } from 'avutil/codec';
 import { AVFormat } from 'avutil/avformat';
 export default class OOggFormat extends OFormat {
     type: AVFormat;
@@ -18,4 +19,6 @@ export default class OOggFormat extends OFormat {
     writeAVPacket(formatContext: AVOFormatContext, avpacket: pointer<AVPacket>): number;
     writeTrailer(formatContext: AVOFormatContext): number;
     flush(formatContext: AVOFormatContext): number;
+    getCapabilities(): AVCodecID[];
+    static Capabilities: AVCodecID[];
 }

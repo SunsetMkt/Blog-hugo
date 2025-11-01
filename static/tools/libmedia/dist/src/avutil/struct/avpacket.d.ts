@@ -1,5 +1,5 @@
 import { AVPacketSideDataType } from '../codec';
-import { AVBufferRef } from './avbuffer';
+import type { AVBufferRef } from './avbuffer';
 import { Rational } from './rational';
 export declare const enum AVPacketType {
     AUDIO = 0,

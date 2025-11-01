@@ -2,30 +2,34 @@ import { AVCodecID, AVMediaType } from 'avutil/codec';
 import IOPipeline from 'avpipeline/IOPipeline';
 import DemuxPipeline from 'avpipeline/DemuxPipeline';
 import AudioDecodePipeline from 'avpipeline/AudioDecodePipeline';
-import { Thread } from 'cheap/thread/thread';
-import Emitter, { EmitterOptions } from 'common/event/Emitter';
-import compile, { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { Thread } from 'cheap/thread/thread';
+import type { EmitterOptions } from 'common/event/Emitter';
+import Emitter from 'common/event/Emitter';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import compile from 'cheap/webassembly/compiler';
 import AudioRenderPipeline from 'avpipeline/AudioRenderPipeline';
 import VideoRenderPipeline from 'avpipeline/VideoRenderPipeline';
 import { RenderMode } from 'avrender/image/ImageRender';
-import { ControllerObserver } from './Controller';
+import type { ControllerObserver } from './Controller';
 import * as eventType from './eventType';
 import Stats from 'avpipeline/struct/stats';
-import MSEPipeline from './mse/MSEPipeline';
-import { AVStreamInterface } from 'avutil/AVStream';
-import { AVFormatContextInterface } from 'avformat/AVFormatContext';
-import { Data, Fn } from 'common/types/type';
-import { playerEventChanged, playerEventChanging, playerEventError, playerEventNoParam, playerEventProgress, playerEventSubtitleDelayChange, playerEventTime, playerEventVolumeChange } from './type';
+import type MSEPipeline from './mse/MSEPipeline';
+import type { AVStreamInterface } from 'avutil/AVStream';
+import type { AVFormatContextInterface } from 'avformat/AVFormatContext';
+import type { Data, Fn } from 'common/types/type';
+import type { playerEventChanged, playerEventChanging, playerEventError, playerEventNoParam, playerEventProgress, playerEventSubtitleDelayChange, playerEventTime, playerEventVolumeChange } from './type';
 import FetchIOLoader from 'avnetwork/ioLoader/FetchIOLoader';
 import FileIOLoader from 'avnetwork/ioLoader/FileIOLoader';
 import CustomIOLoader from 'avnetwork/ioLoader/CustomIOLoader';
 import IODemuxPipelineProxy from './worker/IODemuxPipelineProxy';
 import AudioPipelineProxy from './worker/AudioPipelineProxy';
 import MSEPipelineProxy from './worker/MSEPipelineProxy';
-import WebSocketIOLoader, { WebSocketOptions } from 'avnetwork/ioLoader/WebSocketIOLoader';
+import type { WebSocketOptions } from 'avnetwork/ioLoader/WebSocketIOLoader';
+import WebSocketIOLoader from 'avnetwork/ioLoader/WebSocketIOLoader';
 import SocketIOLoader from 'avnetwork/ioLoader/SocketIOLoader';
 import WebTransportIOLoader from 'avnetwork/ioLoader/WebTransportIOLoader';
 import { DRMType } from './drm/drm';
+import type { IOLoaderOptions } from 'avnetwork/ioLoader/IOLoader';
 export interface ExternalSubtitle {
     /**
      * 字幕源，支持 url 和 文件
@@ -126,6 +130,10 @@ export interface AVPlayerOptions {
      */
     enableWorker?: boolean;
     /**
+     * 是否启用 AudioWorklet
+     */
+    enableAudioWorklet?: boolean;
+    /**
      * 是否循环播放
      */
     loop?: boolean;
@@ -213,6 +221,14 @@ export interface AVPlayerLoadOptions {
      * 设置源是否是直播，覆盖 AVPlayerOptions 里面的配置
      */
     isLive?: boolean;
+    /**
+     * ioLoader 配置参数
+     */
+    ioLoaderOptions?: Omit<IOLoaderOptions, 'isLive'>;
+    /**
+     * 最大分析时长（秒）用于分析流参数的最大时长，默认 3 秒
+     */
+    maxProbeDuration?: number;
 }
 export interface AVPlayerPlayOptions {
     /**
@@ -227,6 +243,10 @@ export interface AVPlayerPlayOptions {
      * 是否播放字幕
      */
     subtitle?: boolean;
+    /**
+     * 强制使用音频作为主时间同步
+     */
+    audioMasterForce?: boolean;
 }
 export declare const AVPlayerSupportedCodecs: AVCodecID[];
 export declare const AVPlayerMSESupportedCodecs: AVCodecID[];
@@ -376,6 +396,8 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     private lastSelectedInnerSubtitleStreamIndex;
     private subtitleRender;
     private externalSubtitleTasks;
+    private changingStreamPending;
+    private handleChangingStreamPendingTimer;
     constructor(options: AVPlayerOptions);
     /**
      * 当前播放时间戳（毫秒）
@@ -388,11 +410,16 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     /**
      * @hidden
      */
+    private isAttachmentPicture;
+    /**
+     * @hidden
+     */
     private findBestStream;
     private checkUseMSE;
     private createCanvas;
     private createVideo;
     private createAudio;
+    private handleChangingStreamPending;
     private handleTimeupdate;
     private replayTo;
     private handleEnded;
@@ -408,7 +435,12 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      * @returns
      */
     isDash(): boolean;
-    private getMinStartPTS;
+    /**
+     * 获取最小开始时间
+     *
+     * @returns
+     */
+    getMinStartPTS(): int64 | 0n;
     private getResource;
     private createSubtitleRender;
     /**
@@ -457,8 +489,8 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
          */
         mediaType: string;
         codecparProxy: import("avutil/struct/avcodecparameters").default;
-        index: number;
-        id: number;
+        index: int32;
+        id: int32;
         codecpar: pointer<import("avutil/struct/avcodecparameters").default>;
         nbFrames: int64;
         metadata: Data;
@@ -466,25 +498,26 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
         startTime: int64;
         disposition: int32;
         timeBase: import("@libmedia/avutil/struct/rational").Rational;
+        attachedPic: pointer<import("@libmedia/avutil/struct/avpacket").default>;
     }[];
     /**
      * 获取当前选择播放的视频流 id
      *
      * @returns
      */
-    getSelectedVideoStreamId(): number;
+    getSelectedVideoStreamId(): int32 | -1;
     /**
      * 获取当前选择播放的音频流 id
      *
      * @returns
      */
-    getSelectedAudioStreamId(): number;
+    getSelectedAudioStreamId(): int32 | -1;
     /**
      * 获取当前选择播放的字幕流 id
      *
      * @returns
      */
-    getSelectedSubtitleStreamId(): number;
+    getSelectedSubtitleStreamId(): int32 | -1;
     /**
      * 获取章节信息
      *
@@ -610,19 +643,19 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      *
      * @returns
      */
-    getVideoList(): Promise<import("@libmedia/avnetwork/ioLoader/IOLoader").IOLoaderVideoStreamInfo>;
+    getVideoList(): Promise<import("avnetwork/ioLoader/IOLoader").IOLoaderVideoStreamInfo>;
     /**
      * 获取音频列表（ dash 和 hls 使用）
      *
      * @returns
      */
-    getAudioList(): Promise<import("@libmedia/avnetwork/ioLoader/IOLoader").IOLoaderAudioStreamInfo>;
+    getAudioList(): Promise<import("avnetwork/ioLoader/IOLoader").IOLoaderAudioStreamInfo>;
     /**
      * 获取字幕列表（ dash 和 hls 使用）
      *
      * @returns
      */
-    getSubtitleList(): Promise<import("@libmedia/avnetwork/ioLoader/IOLoader").IOLoaderSubtitleStreamInfo>;
+    getSubtitleList(): Promise<import("avnetwork/ioLoader/IOLoader").IOLoaderSubtitleStreamInfo>;
     /**
      * 获取 status 状态
      *
@@ -688,21 +721,23 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
     /**
      * 设置播放视频轨道
      *
-     * @param id 流 id，dash 传 getVideoList 列表中的 index
+     * @param id 流 id，dash 和 hls 传 getVideoList 列表中的 index
+     * @param smooth 平滑切换（hls 和 dash 使用，切换下一个加载的切片）
      * @returns
      */
-    selectVideo(id: number): Promise<void>;
+    selectVideo(id: number, smooth?: boolean): Promise<void>;
     /**
      * 设置播放音频轨道
      *
-     * @param id 流 id，dash 传 getAudioList 列表中的 index
+     * @param id 流 id，dash 和 hls 传 getAudioList 列表中的 index
+     * @param smooth 平滑切换（hls 和 dash 使用，切换下一个加载的切片）
      * @returns
      */
-    selectAudio(id: number): Promise<void>;
+    selectAudio(id: number, smooth?: boolean): Promise<void>;
     /**
      * 设置播放字幕轨道
      *
-     * @param id 流 id，dash 传 getSubtitleList 列表中的 index
+     * @param id 流 id，dash 和 hls 传 getSubtitleList 列表中的 index
      * @returns
      */
     selectSubtitle(id: number): Promise<void>;
@@ -793,11 +828,16 @@ export default class AVPlayer extends Emitter implements ControllerObserver {
      * @hidden
      */
     onAudioContextStateChange(): void;
+    /**
+     * @hidden
+     */
+    onError(error: Error): void;
     private createVideoDecoderThread;
     /**
      * @hidden
      */
     static startDemuxPipeline(enableWorker?: boolean): Promise<void>;
+    static startAudioContext(): Promise<void>;
     /**
      * @hidden
      */

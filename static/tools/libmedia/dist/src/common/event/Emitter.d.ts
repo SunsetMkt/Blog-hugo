@@ -4,7 +4,7 @@
  *
  * @file 事件代理
  */
-import { NativeListener, Task } from '../types/type';
+import type { NativeListener, Task } from '../types/type';
 export interface EmitterOptions extends Task {
     ns?: string;
     num?: number;

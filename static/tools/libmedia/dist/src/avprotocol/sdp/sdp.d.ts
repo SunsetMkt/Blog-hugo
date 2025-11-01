@@ -1,7 +1,7 @@
 /**
  * from https://github.com/clux/sdp-transform
  */
-import { SessionDescription } from './type';
+import type { SessionDescription } from './type';
 /**
  * 解析 sdp
  *

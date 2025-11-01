@@ -37,8 +37,8 @@ See https://github.com/adobe-type-tools/cmap-resources
   </head>
 
   <body tabindex="0">
-    <span id="viewer-alert" class="visuallyHidden" role="alert"></span>
     <div id="outerContainer">
+      <span id="viewer-alert" class="visuallyHidden" role="alert"></span>
 
       <div id="sidebarContainer">
         <div id="toolbarSidebar" class="toolbarHorizontalGroup">
@@ -184,6 +184,28 @@ See https://github.com/adobe-type-tools/cmap-resources
               </div>
               <div id="toolbarViewerRight" class="toolbarHorizontalGroup">
                 <div id="editorModeButtons" class="toolbarHorizontalGroup" role="radiogroup">
+                  <div id="editorComment" class="toolbarButtonWithContainer" hidden="true">
+                    <button id="editorCommentButton" class="toolbarButton" type="button" tabindex="0" disabled="disabled" role="radio" aria-expanded="false" aria-haspopup="true" aria-controls="editorCommentParamsToolbar" data-l10n-id="pdfjs-editor-comment-button">
+                      <span data-l10n-id="pdfjs-editor-comment-button-label"></span>
+                    </button>
+                    <div class="editorParamsToolbar hidden menu" id="editorCommentParamsToolbar">
+                      <div id="editorCommentsSidebar" class="menuContainer comment sidebar" role="landmark" aria-labelledby="editorCommentsSidebarHeader">
+                        <div id="editorCommentsSidebarResizer" class="sidebarResizer"></div>
+                        <div id="editorCommentsSidebarHeader" role="heading" aria-level="2">
+                          <span class="commentCount">
+                            <span id="editorCommentsSidebarTitle" data-l10n-id="pdfjs-editor-comments-sidebar-title" data-l10n-args='{ "count": 0 }'></span>
+                            <span id="editorCommentsSidebarCount"></span>
+                          </span>
+                          <button id="editorCommentsSidebarCloseButton" type="button" tabindex="0" data-l10n-id="pdfjs-editor-comments-sidebar-close-button">
+                            <span data-l10n-id="pdfjs-editor-comments-sidebar-close-button-label"></span>
+                          </button>
+                        </div>
+                        <div id="editorCommentsSidebarListContainer" tabindex="-1">
+                          <ul id="editorCommentsSidebarList"></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div id="editorSignature" class="toolbarButtonWithContainer" hidden="true">
                     <button id="editorSignatureButton" class="toolbarButton" type="button" tabindex="0" disabled="disabled" role="radio" aria-expanded="false" aria-haspopup="true" aria-controls="editorSignatureParamsToolbar" data-l10n-id="pdfjs-editor-signature-button">
                       <span data-l10n-id="pdfjs-editor-signature-button-label"></span>
@@ -667,8 +689,8 @@ See https://github.com/adobe-type-tools/cmap-resources
               <div id="addSignatureError" hidden="true" class="messageBar">
                 <div>
                   <div>
-                    <span class="title" data-l10n-id="pdfjs-editor-add-signature-image-upload-error-title"></span>
-                    <span class="description" data-l10n-id="pdfjs-editor-add-signature-image-upload-error-description"></span>
+                    <span id="addSignatureErrorTitle" class="title" data-l10n-id="pdfjs-editor-add-signature-image-upload-error-title"></span>
+                    <span id="addSignatureErrorDescription" class="description" data-l10n-id="pdfjs-editor-add-signature-image-upload-error-description"></span>
                   </div>
                   <button id="addSignatureErrorCloseButton" class="closeButton" type="button" tabindex="0"><span data-l10n-id="pdfjs-editor-add-signature-error-close-button"></span></button>
                 </div>
@@ -699,6 +721,23 @@ See https://github.com/adobe-type-tools/cmap-resources
           <div class="dialogButtonsGroup">
             <button id="editSignatureCancelButton" type="button" class="secondaryButton" tabindex="0"><span data-l10n-id="pdfjs-editor-add-signature-cancel-button"></span></button>
             <button id="editSignatureUpdateButton" type="button" class="primaryButton" disabled tabindex="0"><span data-l10n-id="pdfjs-editor-edit-signature-update-button"></span></button>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog class="dialog commentManager" id="commentManagerDialog" aria-labelledby="commentManagerTitle">
+        <div class="mainContainer">
+          <div class="title" id="commentManagerToolbar">
+            <span id="commentManagerTitle" role="sectionhead" data-l10n-id="pdfjs-editor-edit-comment-dialog-title-when-adding"></span>
+          </div>
+          <textarea id="commentManagerTextInput" data-l10n-id="pdfjs-editor-edit-comment-dialog-text-input" tabindex="0"></textarea>
+          <div class="dialogButtonsGroup">
+            <button id="commentManagerCancelButton" type="button" class="secondaryButton" tabindex="0">
+              <span data-l10n-id="pdfjs-editor-edit-comment-dialog-cancel-button"></span>
+            </button>
+            <button id="commentManagerSaveButton" type="button" class="primaryButton" disabled tabindex="0">
+              <span data-l10n-id="pdfjs-editor-edit-comment-dialog-save-button-when-adding"></span>
+            </button>
           </div>
         </div>
       </dialog>

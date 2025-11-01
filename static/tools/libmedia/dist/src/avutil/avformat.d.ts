@@ -9,9 +9,12 @@ export declare const enum AVSeekFlags {
 export declare const enum AVFormat {
     UNKNOWN = -1,
     FLV = 0,
-    MOV = 1,
+    ISOBMFF = 1,
     MP4 = 1,
     M4A = 1,
+    MOV = 1,
+    AVIF = 1,
+    HEIF = 1,
     MPEGTS = 2,
     MPEGPS = 3,
     OGG = 4,

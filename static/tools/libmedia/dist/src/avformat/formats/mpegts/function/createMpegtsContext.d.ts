@@ -1,2 +1,2 @@
-import { MpegtsContext } from '../type';
+import type { MpegtsContext } from '../type';
 export default function createMpegtsContext(): MpegtsContext;

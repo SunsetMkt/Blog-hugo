@@ -1,3 +1,3 @@
-import { ComponentOptions } from 'yox';
+import type { ComponentOptions } from 'yox';
 declare const Progress: ComponentOptions;
 export default Progress;

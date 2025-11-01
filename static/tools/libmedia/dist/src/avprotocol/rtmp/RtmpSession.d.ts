@@ -1,5 +1,5 @@
-import IOReader from 'common/io/IOReader';
-import IOWriter from 'common/io/IOWriter';
+import type IOReader from 'common/io/IOReader';
+import type IOWriter from 'common/io/IOWriter';
 import { RtmpPacket } from './RtmpPacket';
 export interface RtmpSessionOptions {
     isPull: boolean;

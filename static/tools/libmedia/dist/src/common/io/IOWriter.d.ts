@@ -1,7 +1,7 @@
 /**
  * 写字节流工具
  */
-import { Uint8ArrayInterface, BytesWriter } from './interface';
+import type { Uint8ArrayInterface, BytesWriter } from './interface';
 export default class IOWriter implements BytesWriter {
     private data;
     private buffer;

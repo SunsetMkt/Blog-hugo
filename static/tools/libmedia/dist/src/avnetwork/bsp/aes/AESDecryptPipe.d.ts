@@ -1,4 +1,4 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 import AVBSPipe from '../AVBSPipe';
 import { AesMode } from 'common/crypto/aes/aes';
 export default class AESDecryptPipe extends AVBSPipe {

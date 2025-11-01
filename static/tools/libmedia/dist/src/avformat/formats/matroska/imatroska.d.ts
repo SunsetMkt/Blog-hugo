@@ -1,7 +1,7 @@
-import { AVIFormatContext } from '../../AVFormatContext';
+import type { AVIFormatContext } from '../../AVFormatContext';
 import { EBMLId, EbmlType } from './matroska';
-import { Addition, Additions, Attachment, Attachments, AudioTrack, BlockGroup, Chapter, ChapterAtom, ChapterDisplay, Chapters, Cluster, CuePoint, CuePointPos, Cues, Header, Info, MasteringMeta, SeekHead, SeekHeadEntry, SimpleTag, Tag, TagTargets, Tags, TrackCombinePlanes, TrackEncoding, TrackEncodingCompression, TrackEncodingEncryption, TrackEncodings, TrackEntry, TrackOperation, TrackPlane, Tracks, VideoColor, VideoProjection, VideoTrack } from './type';
-import { BytesReader, BytesReaderSync } from 'common/io/interface';
+import type { Addition, Additions, Attachment, Attachments, AudioTrack, BlockGroup, Chapter, ChapterAtom, ChapterDisplay, Chapters, Cluster, CuePoint, CuePointPos, Cues, Header, Info, MasteringMeta, SeekHead, SeekHeadEntry, SimpleTag, Tag, TagTargets, Tags, TrackCombinePlanes, TrackEncoding, TrackEncodingCompression, TrackEncodingEncryption, TrackEncodings, TrackEntry, TrackOperation, TrackPlane, Tracks, VideoColor, VideoProjection, VideoTrack } from './type';
+import type { BytesReader, BytesReaderSync } from 'common/io/interface';
 interface EbmlSyntax<T> {
     type: EbmlType;
     isArray?: boolean;

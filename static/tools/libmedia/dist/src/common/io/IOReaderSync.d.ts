@@ -1,8 +1,8 @@
 /**
  * 读字节流工具
  */
-import IOWriter from './IOWriterSync';
-import { Uint8ArrayInterface, BytesReaderSync } from './interface';
+import type IOWriter from './IOWriterSync';
+import type { Uint8ArrayInterface, BytesReaderSync } from './interface';
 export default class IOReaderSync implements BytesReaderSync {
     private data;
     private buffer;

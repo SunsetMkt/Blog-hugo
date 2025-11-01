@@ -1,4 +1,4 @@
-import { Pthread } from './thread';
+import type { Pthread } from './thread';
 interface TheadPoolEntryOptions {
     tableSize: number;
     module: WebAssembly.Module;
@@ -10,8 +10,9 @@ interface TheadPoolEntryOptions {
 export default class ThreadPool {
     private count;
     private url;
+    private childImportUrl;
     private childThreads;
-    constructor(count: number, url: string);
+    constructor(count: number, url: string | URL, childImportUrl?: URL);
     private createTheadPoolEntry;
     ready(options: TheadPoolEntryOptions): Promise<void>;
     hasFree(): boolean;

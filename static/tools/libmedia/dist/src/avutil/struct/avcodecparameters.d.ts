@@ -1,9 +1,10 @@
 import { AVCodecID, AVMediaType } from '../codec';
-import { AVChromaLocation, AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic, AVFieldOrder, AVPixelFormat } from '../pixfmt';
-import { AVSampleFormat } from '../audiosamplefmt';
+import type { AVPixelFormat } from '../pixfmt';
+import { AVChromaLocation, AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic, AVFieldOrder } from '../pixfmt';
+import type { AVSampleFormat } from '../audiosamplefmt';
 import { Rational } from './rational';
-import { AVPacketSideData } from './avpacket';
-import { AVChannelLayout } from './audiosample';
+import type { AVPacketSideData } from './avpacket';
+import type { AVChannelLayout } from './audiosample';
 export declare const enum AVCodecParameterFlags {
     /**
      * 对于 h264/h265/h266 标记是否是 annexb 码流格式，未置此标志则为 avcc 格式
@@ -16,7 +17,11 @@ export declare const enum AVCodecParameterFlags {
     /**
      * 解封装层没有 dts
      */
-    AV_CODECPAR_FLAG_NO_DTS = 4
+    AV_CODECPAR_FLAG_NO_DTS = 4,
+    /**
+     * 封装层有 alpha 通道数据
+     */
+    AV_CODECPAR_FLAG_ALPHA = 8
 }
 /**
  * FFmpeg AVCodecParameters 定义

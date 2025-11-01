@@ -1,5 +1,5 @@
-import BitReader from 'common/io/BitReader';
-import BitWriter from 'common/io/BitWriter';
+import type BitReader from 'common/io/BitReader';
+import type BitWriter from 'common/io/BitWriter';
 /**
  * ue(v) 指数哥伦布解码
  */

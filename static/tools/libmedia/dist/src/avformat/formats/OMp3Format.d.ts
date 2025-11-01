@@ -1,8 +1,9 @@
-import { AVOFormatContext } from '../AVFormatContext';
-import AVPacket from 'avutil/struct/avpacket';
+import type { AVOFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
 import OFormat from './OFormat';
+import { AVCodecID } from 'avutil/codec';
 import { AVFormat } from 'avutil/avformat';
-import { Mp3FormatOptions } from './mp3/type';
+import type { Mp3FormatOptions } from './mp3/type';
 import { FrameHeader } from './mp3/frameHeader';
 export interface Mp3Context {
     size: uint32;
@@ -37,4 +38,6 @@ export default class OMp3Format extends OFormat {
     writeAVPacket(formatContext: AVOFormatContext, avpacket: pointer<AVPacket>): number;
     writeTrailer(formatContext: AVOFormatContext): number;
     flush(formatContext: AVOFormatContext): number;
+    getCapabilities(): AVCodecID[];
+    static Capabilities: AVCodecID[];
 }

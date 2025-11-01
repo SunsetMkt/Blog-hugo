@@ -1,5 +1,5 @@
 import { AVPlayerStatus } from 'avplayer/AVPlayer';
-import AVPlayerUI from './AVPlayer';
+import type AVPlayerUI from './AVPlayer';
 export declare const enum KeyboardPlayerActionKey {
     PLAY_OR_PAUSE = 1,
     SEEK_BACK = 2,

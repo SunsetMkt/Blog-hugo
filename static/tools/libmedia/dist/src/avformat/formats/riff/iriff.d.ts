@@ -1,8 +1,8 @@
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import IOReader from 'common/io/IOReader';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type IOReader from 'common/io/IOReader';
 import { AVCodecID } from 'avutil/codec';
-import { Data } from 'common/types/type';
-import AVStream from 'avutil/AVStream';
+import type { Data } from 'common/types/type';
+import type AVStream from 'avutil/AVStream';
 export declare function getWavCodecId(tag: int32, bitsPerCodedSample: int32): AVCodecID;
 export declare function getGuidCodecId(guid: string): AVCodecID;
 export declare function readFormatTag(ioReader: IOReader, codecpar: pointer<AVCodecParameters>, size: int32): Promise<0 | -2>;

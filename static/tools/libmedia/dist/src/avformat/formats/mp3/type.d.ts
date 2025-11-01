@@ -1,4 +1,4 @@
-import { FrameHeader } from './frameHeader';
+import type { FrameHeader } from './frameHeader';
 export interface Mp3MetaData {
     title?: string;
     artist?: string;
@@ -8,7 +8,6 @@ export interface Mp3MetaData {
     track?: string;
     genre?: string | number;
     encoder?: string;
-    poster?: Uint8Array;
     lyrics?: string;
     albumArtist?: string;
     disc?: string;
@@ -24,6 +23,7 @@ export interface Mp3MetaData {
     artistSort?: string;
     titleSort?: string;
     grouping?: string;
+    apic?: Uint8Array[];
 }
 export interface ID3V2 {
     version: number;
@@ -41,7 +41,7 @@ export interface Mp3StreamContext {
     frameLength: int32;
 }
 export interface Mp3FormatOptions {
-    id3v2Version?: 0 | 3 | 4;
+    id3v2Version?: 0 | 2 | 3 | 4;
     hasID3v1?: boolean;
     hasXing?: boolean;
 }

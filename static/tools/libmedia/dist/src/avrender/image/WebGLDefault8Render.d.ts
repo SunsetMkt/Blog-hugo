@@ -1,5 +1,5 @@
-import AVFrame from 'avutil/struct/avframe';
-import { WebGLRenderOptions } from './WebGLRender';
+import type AVFrame from 'avutil/struct/avframe';
+import type { WebGLRenderOptions } from './WebGLRender';
 import WebGLDefaultRender from './WebGLDefaultRender';
 export default class WebGLDefault8Render extends WebGLDefaultRender {
     private linesize;

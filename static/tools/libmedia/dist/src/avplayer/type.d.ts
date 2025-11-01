@@ -1,5 +1,5 @@
-import { AVPlayerProgress } from './AVPlayer';
-import { AVMediaType } from 'avutil/codec';
+import type { AVPlayerProgress } from './AVPlayer';
+import type { AVMediaType } from 'avutil/codec';
 export declare function playerEventNoParam(): void;
 export declare function playerEventTime(pts: int64): void;
 export declare function playerEventChanging(type: AVMediaType, newStreamId: int32, oldStreamId: int32): void;

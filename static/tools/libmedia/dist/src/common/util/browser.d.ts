@@ -1,7 +1,7 @@
 /**
  * @file browser
  */
-import { Browser } from '../types/type';
+import type { Browser } from '../types/type';
 export declare const enum BrowserType {
     ALIPAY = "alipay",
     WECHAT = "wechat",

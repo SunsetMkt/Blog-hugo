@@ -1,4 +1,4 @@
 import { AVCodecID } from '../codec';
 export declare function getPcmCodecId(bps: int32, flt: boolean, be: boolean, flags: int32): AVCodecID.AV_CODEC_ID_NONE | AVCodecID.AV_CODEC_ID_FIRST_AUDIO | AVCodecID.AV_CODEC_ID_PCM_S16BE | AVCodecID.AV_CODEC_ID_PCM_U16LE | AVCodecID.AV_CODEC_ID_PCM_U16BE | AVCodecID.AV_CODEC_ID_PCM_S8 | AVCodecID.AV_CODEC_ID_PCM_U8 | AVCodecID.AV_CODEC_ID_PCM_S32LE | AVCodecID.AV_CODEC_ID_PCM_S32BE | AVCodecID.AV_CODEC_ID_PCM_U32LE | AVCodecID.AV_CODEC_ID_PCM_U32BE | AVCodecID.AV_CODEC_ID_PCM_S24LE | AVCodecID.AV_CODEC_ID_PCM_S24BE | AVCodecID.AV_CODEC_ID_PCM_U24LE | AVCodecID.AV_CODEC_ID_PCM_U24BE | AVCodecID.AV_CODEC_ID_PCM_F32BE | AVCodecID.AV_CODEC_ID_PCM_F32LE | AVCodecID.AV_CODEC_ID_PCM_F64BE | AVCodecID.AV_CODEC_ID_PCM_F64LE | AVCodecID.AV_CODEC_ID_PCM_S64LE | AVCodecID.AV_CODEC_ID_PCM_S64BE;
-export declare function getExactBitsPerSample(codecId: AVCodecID): 64 | 32 | 0 | 4 | 8 | 16 | 24;
-export declare function getBitsPerSample(codecId: AVCodecID): 64 | 32 | 0 | 2 | 3 | 4 | 8 | 16 | 24;
+export declare function getExactBitsPerSample(codecId: AVCodecID): 0 | 4 | 8 | 16 | 32 | 64 | 24;
+export declare function getBitsPerSample(codecId: AVCodecID): 0 | 2 | 3 | 4 | 8 | 16 | 32 | 64 | 24;

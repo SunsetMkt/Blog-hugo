@@ -1,4 +1,4 @@
-import { TypeArrayConstructor, TypeArray } from '../types/type';
+import type { TypeArrayConstructor, TypeArray } from '../types/type';
 /**
  * 环形缓冲区
  */

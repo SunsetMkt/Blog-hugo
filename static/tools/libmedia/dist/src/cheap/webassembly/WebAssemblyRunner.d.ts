@@ -1,4 +1,4 @@
-import { WebAssemblyResource } from './compiler';
+import type { WebAssemblyResource } from './compiler';
 import { Pthread } from './thread';
 import { ThreadDescriptor } from './thread';
 import * as cond from '../thread/cond';
@@ -35,6 +35,7 @@ export default class WebAssemblyRunner {
     private tableBase;
     private childImports;
     private childUrl;
+    private childImportUrl;
     private childBlob;
     private childThreads;
     private imports;

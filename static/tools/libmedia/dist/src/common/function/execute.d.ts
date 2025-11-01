@@ -1,8 +1,8 @@
 /**
  * @file 使用指定上下文执行函数
  */
-import { ReturnType, ParamType } from '../types/advanced';
-import { Fn } from '../types/type';
+import type { ReturnType, ParamType } from '../types/advanced';
+import type { Fn } from '../types/type';
 /**
  * 任性地执行一个函数，不管它有没有、是不是
  *

@@ -3,10 +3,11 @@
  *
  * https://datatracker.ietf.org/doc/html/rfc7845
  */
-import IOWriter from 'common/io/IOWriterSync';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import { OggsCommentPage, PagePayload } from './OggPage';
-import IOReaderSync from 'common/io/IOReaderSync';
+import type IOWriter from 'common/io/IOWriterSync';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type { PagePayload } from './OggPage';
+import { OggsCommentPage } from './OggPage';
+import type IOReaderSync from 'common/io/IOReaderSync';
 declare class ChannelMapping {
     /**
      * 1 bytes, unsigned ogg packet 里面编码了多少路 stream

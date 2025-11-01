@@ -1,11 +1,12 @@
-import { AVIFormatContext } from '../AVFormatContext';
-import AVPacket from 'avutil/struct/avpacket';
+import type { AVIFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
 import IFormat from './IFormat';
 import { AVFormat } from 'avutil/avformat';
-import AVStream from 'avutil/AVStream';
+import type AVStream from 'avutil/AVStream';
 export declare const enum IVFCodec {
     VP8 = "VP80",
-    VP9 = "VP90"
+    VP9 = "VP90",
+    AV1 = "AV01"
 }
 export declare class IVFHeader {
     version: number;

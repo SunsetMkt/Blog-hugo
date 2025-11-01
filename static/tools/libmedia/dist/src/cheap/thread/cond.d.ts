@@ -1,7 +1,7 @@
 /**
  * 参考 https://github.com/mozilla-spidermonkey/js-lock-and-condition
  */
-import { Mutex } from './mutex';
+import type { Mutex } from './mutex';
 export declare class Cond {
     atomic: atomic_int32;
 }

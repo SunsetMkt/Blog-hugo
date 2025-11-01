@@ -1,5 +1,5 @@
-import VertexShader from '../shader/VertexShader';
-import FragmentShader from '../shader/FragmentShader';
+import type VertexShader from '../shader/VertexShader';
+import type FragmentShader from '../shader/FragmentShader';
 export default class Program {
     protected gl: WebGLRenderingContext;
     private _program;

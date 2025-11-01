@@ -1,7 +1,8 @@
-import ImageRender, { ImageRenderOptions } from './ImageRender';
-import AVFrame from 'avutil/struct/avframe';
-import VideoProgram from './webgl/program/VideoProgram';
-import { Timeout } from 'common/types/type';
+import type { ImageRenderOptions } from './ImageRender';
+import ImageRender from './ImageRender';
+import type AVFrame from 'avutil/struct/avframe';
+import type VideoProgram from './webgl/program/VideoProgram';
+import type { Timeout } from 'common/types/type';
 export interface WebGLRenderOptions extends ImageRenderOptions {
 }
 export default abstract class WebGLRender extends ImageRender {

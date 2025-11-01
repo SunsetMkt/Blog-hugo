@@ -1,4 +1,4 @@
 import { AVCodecID } from 'avutil/codec';
-export declare const codecMovVideoTags: Record<uint32, AVCodecID>;
-export declare const codecMovAudioTags: Record<uint32, AVCodecID>;
-export declare const codecMovSubtiteTags: Record<uint32, AVCodecID>;
+export declare const codecIsobmffVideoTags: Record<uint32, AVCodecID>;
+export declare const codecIsobmffAudioTags: Record<uint32, AVCodecID>;
+export declare const codecIsobmffSubtiteTags: Record<uint32, AVCodecID>;

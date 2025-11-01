@@ -1,4 +1,4 @@
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 export interface StretchPitchParameters {
     channels: int32;
     sampleRate: int32;

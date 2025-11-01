@@ -1,7 +1,7 @@
-import Stream from '../AVStream';
-import AVCodecParameters from '../struct/avcodecparameters';
+import { AVPacketSideDataType } from '../codec';
+import type AVCodecParameters from '../struct/avcodecparameters';
 import BitReader from 'common/io/BitReader';
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 export declare const enum MPEG4AudioObjectTypes {
     NULL = 0,
     /**
@@ -68,8 +68,17 @@ export declare function getAVCodecParameters(extradata: Uint8ArrayInterface): {
     sampleRate: int32;
     channels: int32;
 };
-export declare function parseAVCodecParameters(stream: Stream, extradata?: Uint8ArrayInterface): void;
-export declare function avCodecParameters2Extradata(codecpar: AVCodecParameters): Uint8Array<ArrayBuffer>;
+export declare function parseAVCodecParameters(stream: {
+    codecpar: AVCodecParameters;
+    sideData: Partial<Record<AVPacketSideDataType, Uint8Array>>;
+}, extradata?: Uint8ArrayInterface): void;
+export declare function avCodecParameters2Extradata(codecpar: {
+    profile: int32;
+    sampleRate: int32;
+    chLayout: {
+        nbChannels: int32;
+    };
+}): Uint8Array<ArrayBuffer>;
 export interface AACADTSHeader {
     syncWord: number;
     profile: number;

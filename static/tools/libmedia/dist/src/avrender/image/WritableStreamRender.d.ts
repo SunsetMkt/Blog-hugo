@@ -1,5 +1,5 @@
 import ImageRender from './ImageRender';
-import AVFrame from 'avutil/struct/avframe';
+import type AVFrame from 'avutil/struct/avframe';
 export default class WritableStreamRender extends ImageRender {
     private writableStream;
     private writer;

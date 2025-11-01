@@ -1,10 +1,13 @@
-import { AVIFormatContext } from '../AVFormatContext';
-import AVPacket from 'avutil/struct/avpacket';
+import type { AVIFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
 import IFormat from './IFormat';
 import { AVFormat } from 'avutil/avformat';
-import AVStream from 'avutil/AVStream';
-import { Rational } from 'avutil/struct/rational';
+import type AVStream from 'avutil/AVStream';
+import type { Rational } from 'avutil/struct/rational';
 export interface IVvcFormatOptions {
+    /**
+     * 显示帧率
+     */
     framerate?: Rational;
 }
 export default class IHevcFormat extends IFormat {

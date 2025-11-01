@@ -1,2 +1,2 @@
-import { ImportData } from '../../type';
+import type { ImportData } from '../../type';
 export default function addImportStatements(imports: ImportData[], path: string, updatedStatements: any[]): void;

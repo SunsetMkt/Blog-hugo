@@ -33,3 +33,4 @@ export declare const UINT8_MAX: uint8;
 export declare const UINT16_MAX: uint16;
 export declare const UINT32_MAX: uint32;
 export declare const UINT64_MAX: uint64;
+export declare const AV_NUM_DATA_POINTERS = 8;

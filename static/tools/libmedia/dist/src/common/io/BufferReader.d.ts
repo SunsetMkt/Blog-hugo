@@ -1,7 +1,7 @@
 /**
  * 读字节流工具
  */
-import { Uint8ArrayInterface, BytesReaderSync } from './interface';
+import type { Uint8ArrayInterface, BytesReaderSync } from './interface';
 export default class BufferReader implements BytesReaderSync {
     private data;
     private buffer;

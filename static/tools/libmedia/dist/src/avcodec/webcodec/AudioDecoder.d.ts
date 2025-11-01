@@ -1,8 +1,9 @@
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import AVPacket from 'avutil/struct/avpacket';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type AVPacket from 'avutil/struct/avpacket';
 export type WebAudioDecoderOptions = {
     onReceiveAudioData: (frame: AudioData) => void;
     onError: (error?: Error) => void;
+    codec?: string;
 };
 export default class WebAudioDecoder {
     private options;

@@ -1,10 +1,12 @@
 import { AVCodecID, AVMediaType } from 'avutil/codec';
-import compile, { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import compile from 'cheap/webassembly/compiler';
 import { AudioCodecString2CodecId, Format2AVFormat, PixfmtString2AVPixelFormat, SampleFmtString2SampleFormat, VideoCodecString2CodecId } from 'avutil/stringEnum';
-import IOWriterSync from 'common/io/IOWriterSync';
+import type IOWriterSync from 'common/io/IOWriterSync';
 import Emitter from 'common/event/Emitter';
-import { ControllerObserver } from './Controller';
-import { Data } from 'common/types/type';
+import type { ControllerObserver } from './Controller';
+import type { AVChapter } from 'avformat/AVFormatContext';
+import type { Data } from 'common/types/type';
 import CustomIOLoader from 'avnetwork/ioLoader/CustomIOLoader';
 import FetchIOLoader from 'avnetwork/ioLoader/FetchIOLoader';
 import FileIOLoader from 'avnetwork/ioLoader/FileIOLoader';
@@ -58,13 +60,36 @@ export interface TaskOptions {
          */
         enableHardware?: boolean;
     };
+    /**
+     * 输出的帧在原始文件中的开始时间（毫秒）
+     */
     start?: number;
+    /**
+     * 输出的帧在原始文件中的开始时间之后的持续时间（毫秒）
+     */
     duration?: number;
+    /**
+     * 指定输出帧的数量
+     */
     nbFrame?: number;
+    /**
+     * 使用输入的 pts dts 作为输出
+     */
+    copyTs?: boolean;
+    /**
+     * pts dts 强制从 0 开始
+     */
+    startAtZero?: boolean;
+    /**
+     * pts dts 强制为非负数
+     */
+    nonnegative?: boolean;
     output: {
         file: FileSystemFileHandle | IOWriterSync;
         format?: keyof (typeof Format2AVFormat);
         formatOptions?: Data;
+        metadata?: Data;
+        chapters?: AVChapter[];
         video?: {
             /**
              * 输出编码类型
@@ -199,23 +224,78 @@ export default class AVTranscoder extends Emitter implements ControllerObserver 
     private options;
     private reportTimer;
     constructor(options: AVTranscoderOptions);
+    /**
+     * @hidden
+     */
     private getResource;
+    /**
+     * @hidden
+     */
     private report;
+    /**
+     * @hidden
+     */
     private startDemuxPipeline;
+    /**
+     * @hidden
+     */
     private startVideoPipeline;
+    /**
+     * @hidden
+     */
     private startAudioPipeline;
+    /**
+     * @hidden
+     */
     private startMuxPipeline;
+    /**
+     * @hidden
+     */
     private isHls;
+    /**
+     * @hidden
+     */
     private isDash;
     ready(): Promise<void>;
+    /**
+     * @hidden
+     */
     private changeAVStreamTimebase;
+    /**
+     * @hidden
+     */
     private copyAVStreamInterface;
+    /**
+     * @hidden
+     */
+    private freeAVStreamInterface;
+    /**
+     * @hidden
+     */
     private setTaskInput;
+    /**
+     * @hidden
+     */
     private setTaskOutput;
+    /**
+     * @hidden
+     */
     private analyzeInputStreams;
+    /**
+     * @hidden
+     */
     private handleAudioStream;
+    /**
+     * @hidden
+     */
     private handleVideoStream;
+    /**
+     * @hidden
+     */
     private handleCopyStream;
+    /**
+     * @hidden
+     */
     private clearTask;
     addTask(taskOptions: TaskOptions): Promise<string>;
     startTask(taskId: string): Promise<void>;

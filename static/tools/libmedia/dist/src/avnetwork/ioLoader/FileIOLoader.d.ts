@@ -1,8 +1,8 @@
 import IOLoader from './IOLoader';
-import { Uint8ArrayInterface } from 'common/io/interface';
-import { Range } from 'common/types/type';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type { Range } from 'common/types/type';
 export interface FileInfo {
-    file: File;
+    file: Blob;
 }
 export default class FileIOLoader extends IOLoader {
     private info;

@@ -1,7 +1,8 @@
-import AVFrame, { AVFramePool } from 'avutil/struct/avframe';
+import type { AVFramePool } from 'avutil/struct/avframe';
+import type AVFrame from 'avutil/struct/avframe';
 import IPCPort from 'common/network/IPCPort';
-import AVOutputNode from './AVOutputNode';
-import { Data } from 'common/types/type';
+import type AVOutputNode from './AVOutputNode';
+import type { Data } from 'common/types/type';
 export interface AVFilterNodeOptions {
     avframePool?: AVFramePool;
 }

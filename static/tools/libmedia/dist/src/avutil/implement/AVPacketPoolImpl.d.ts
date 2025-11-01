@@ -1,6 +1,7 @@
-import List from 'cheap/std/collection/List';
-import { Mutex } from 'cheap/thread/mutex';
-import { AVPacketPool, AVPacketRef } from '../struct/avpacket';
+import type List from 'cheap/std/collection/List';
+import type { Mutex } from 'cheap/thread/mutex';
+import type { AVPacketPool } from '../struct/avpacket';
+import { AVPacketRef } from '../struct/avpacket';
 export default class AVPacketPoolImpl implements AVPacketPool {
     private list;
     private mutex;

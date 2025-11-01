@@ -1,21 +1,23 @@
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
-import Pipeline, { TaskOptions } from './Pipeline';
-import List from 'cheap/std/collection/List';
-import { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
-import { Mutex } from 'cheap/thread/mutex';
-import { AVFrameRef } from 'avutil/struct/avframe';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
+import type List from 'cheap/std/collection/List';
+import type { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
+import type { Mutex } from 'cheap/thread/mutex';
+import type { AVFrameRef } from 'avutil/struct/avframe';
 import WasmAudioEncoder from 'avcodec/wasmcodec/AudioEncoder';
 import WebAudioEncoder from 'avcodec/webcodec/AudioEncoder';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
 import AVFramePoolImpl from 'avutil/implement/AVFramePoolImpl';
-import { Rational } from 'avutil/struct/rational';
-import { Data } from 'common/types/type';
+import type { Rational } from 'avutil/struct/rational';
+import type { Data } from 'common/types/type';
 export interface AudioEncodeTaskOptions extends TaskOptions {
     resource: ArrayBuffer | WebAssemblyResource;
     avpacketList: pointer<List<pointer<AVPacketRef>>>;
     avpacketListMutex: pointer<Mutex>;
     avframeList: pointer<List<pointer<AVFrameRef>>>;
     avframeListMutex: pointer<Mutex>;
+    copyTs?: boolean;
 }
 type SelfTask = Omit<AudioEncodeTaskOptions, 'resource'> & {
     encoder: WasmAudioEncoder | WebAudioEncoder;

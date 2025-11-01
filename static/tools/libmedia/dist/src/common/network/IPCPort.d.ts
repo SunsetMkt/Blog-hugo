@@ -1,4 +1,4 @@
-import { Data } from '../types/type';
+import type { Data } from '../types/type';
 import Emitter from '../event/Emitter';
 export declare const NOTIFY = "notify";
 export declare const REQUEST = "request";

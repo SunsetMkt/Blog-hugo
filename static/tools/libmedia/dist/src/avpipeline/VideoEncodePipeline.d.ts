@@ -1,17 +1,18 @@
-import Pipeline, { TaskOptions } from './Pipeline';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
 import IPCPort from 'common/network/IPCPort';
-import List from 'cheap/std/collection/List';
-import { AVFrameRef } from 'avutil/struct/avframe';
-import { Mutex } from 'cheap/thread/mutex';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type List from 'cheap/std/collection/List';
+import type { AVFrameRef } from 'avutil/struct/avframe';
+import type { Mutex } from 'cheap/thread/mutex';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 import AVFramePoolImpl from 'avutil/implement/AVFramePoolImpl';
-import { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import { AVCodecID } from 'avutil/codec';
+import type { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type { AVCodecID } from 'avutil/codec';
 import WasmVideoEncoder from 'avcodec/wasmcodec/VideoEncoder';
 import WebVideoEncoder from 'avcodec/webcodec/VideoEncoder';
-import { Rational } from 'avutil/struct/rational';
-import { Data } from 'common/types/type';
+import type { Rational } from 'avutil/struct/rational';
+import type { Data } from 'common/types/type';
 export interface VideoEncodeTaskOptions extends TaskOptions {
     resource: ArrayBuffer | WebAssemblyResource;
     resourceExtraData?: Data;
@@ -22,6 +23,7 @@ export interface VideoEncodeTaskOptions extends TaskOptions {
     avframeListMutex: pointer<Mutex>;
     gop: int32;
     preferWebCodecs?: boolean;
+    copyTs?: boolean;
 }
 type SelfTask = Omit<VideoEncodeTaskOptions, 'resource'> & {
     leftIPCPort: IPCPort;

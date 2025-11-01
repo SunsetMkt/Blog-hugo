@@ -1,4 +1,4 @@
-import HdrMetadata from '../struct/HdrMetadata';
+import type HdrMetadata from '../struct/HdrMetadata';
 export declare const enum GLType {
     kWebGL = 0,
     kWebGPU = 1

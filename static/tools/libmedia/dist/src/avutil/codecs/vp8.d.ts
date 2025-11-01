@@ -1,7 +1,11 @@
-import AVStream from '../AVStream';
-import AVPacket from '../struct/avpacket';
-import { Uint8ArrayInterface } from 'common/io/interface';
-export declare function parseAVCodecParameters(stream: AVStream, extradata?: Uint8ArrayInterface): void;
+import type AVCodecParameters from '../struct/avcodecparameters';
+import { AVPacketSideDataType } from '../codec';
+import type AVPacket from '../struct/avpacket';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+export declare function parseAVCodecParameters(stream: {
+    codecpar: AVCodecParameters;
+    sideData: Partial<Record<AVPacketSideDataType, Uint8Array>>;
+}, extradata?: Uint8ArrayInterface): void;
 /**
  * - 1 byte profile
  * - 1 byte level

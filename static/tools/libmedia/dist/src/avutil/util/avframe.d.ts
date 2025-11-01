@@ -1,4 +1,5 @@
-import AVFrame, { AVFrameSideData, AVFrameSideDataType } from '../struct/avframe';
+import type { AVFrameSideDataType } from '../struct/avframe';
+import AVFrame, { AVFrameSideData } from '../struct/avframe';
 export declare enum AV_FRAME_SIDE_DATA_FLAG {
     UNIQUE = 1
 }

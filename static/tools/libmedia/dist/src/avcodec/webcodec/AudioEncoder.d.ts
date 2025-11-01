@@ -1,12 +1,17 @@
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import AVPacket, { AVPacketPool } from 'avutil/struct/avpacket';
-import AVFrame, { AVFramePool } from 'avutil/struct/avframe';
-import { Rational } from 'avutil/struct/rational';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type { AVPacketPool } from 'avutil/struct/avpacket';
+import type AVPacket from 'avutil/struct/avpacket';
+import type { AVFramePool } from 'avutil/struct/avframe';
+import type AVFrame from 'avutil/struct/avframe';
+import type { Rational } from 'avutil/struct/rational';
 export type WebAudioEncoderOptions = {
     onReceiveAVPacket: (avpacket: pointer<AVPacket>) => void;
     onError: (error?: Error) => void;
     avpacketPool?: AVPacketPool;
     avframePool?: AVFramePool;
+    bitrateMode?: BitrateMode;
+    opus?: OpusEncoderConfig;
+    copyTs?: boolean;
 };
 export default class WebAudioEncoder {
     private encoder;

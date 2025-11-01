@@ -1,12 +1,14 @@
-import IOLoader, { IOLoaderOptions } from './IOLoader';
-import { Uint8ArrayInterface } from 'common/io/interface';
-import { HttpOptions, Range } from 'common/types/type';
+import type { IOLoaderOptions } from './IOLoader';
+import IOLoader from './IOLoader';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type { HttpOptions, Range } from 'common/types/type';
 export interface FetchInfo {
     url: string;
     httpOptions?: HttpOptions;
 }
 export interface FetchIOLoaderOptions extends IOLoaderOptions {
     disableSegment?: boolean;
+    enableBandwidthReader?: boolean;
 }
 export default class FetchIOLoader extends IOLoader {
     options: FetchIOLoaderOptions;
@@ -23,13 +25,16 @@ export default class FetchIOLoader extends IOLoader {
     private supportRange;
     private abortSleep_;
     private aborted;
+    private bandwidth;
+    private delay;
     constructor(options?: FetchIOLoaderOptions);
     private getTotalSize;
     open(info: FetchInfo, range?: Range): Promise<number>;
+    private getBandwidthReader;
     private openReader;
     private readInterval;
     read(buffer: Uint8ArrayInterface): Promise<int32>;
-    seek(pos: int64): Promise<0 | -9>;
+    seek(pos: int64): Promise<0 | -9 | -10>;
     size(): Promise<int64 | 0n>;
     abortSleep(): void;
     abort(): Promise<void>;

@@ -1,5 +1,6 @@
-import Stream from '../AVStream';
-import { Uint8ArrayInterface } from 'common/io/interface';
+import { AVPacketSideDataType } from '../codec';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type AVCodecParameters from '../struct/avcodecparameters';
 export declare const enum MetaDataBlockType {
     STREAMINFO = 0,
     PADDING = 1,
@@ -39,4 +40,7 @@ export declare const enum FlacMetadataType {
     FLAC_METADATA_TYPE_PICTURE = 6,
     FLAC_METADATA_TYPE_INVALID = 127
 }
-export declare function parseAVCodecParameters(stream: Stream, extradata?: Uint8ArrayInterface): void;
+export declare function parseAVCodecParameters(stream: {
+    codecpar: AVCodecParameters;
+    sideData: Partial<Record<AVPacketSideDataType, Uint8Array>>;
+}, extradata?: Uint8ArrayInterface): void;

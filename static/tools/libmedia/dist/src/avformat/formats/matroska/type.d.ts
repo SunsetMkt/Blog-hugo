@@ -1,4 +1,4 @@
-import IOWriterSync from 'common/io/IOWriterSync';
+import type IOWriterSync from 'common/io/IOWriterSync';
 export interface Header {
     version: int32;
     readVersion: int32;
@@ -21,7 +21,7 @@ export interface Info {
     title?: string;
     muxingApp?: string;
     writingApp?: string;
-    dateUTC?: Uint8Array;
+    dateUTC?: EbmlBin;
     segmentUUID?: uint64;
 }
 export interface EbmlBin {
@@ -140,6 +140,11 @@ export interface TrackEntry {
     duration?: int64;
     maxPts?: int64;
     lastPts?: int64;
+    ass?: {
+        hasLayer?: boolean;
+        order?: number;
+        popIndex?: number[];
+    };
 }
 export interface Tracks {
     entry: TrackEntry[];
@@ -197,7 +202,7 @@ export interface SimpleTag {
     sub?: SimpleTag;
 }
 export interface Tag {
-    tag?: SimpleTag;
+    tag?: SimpleTag[];
     target?: TagTargets;
 }
 export interface Tags {

@@ -4,7 +4,7 @@
  *
  * @file 事件
  */
-import { CustomEventInterface } from '../types/type';
+import type { CustomEventInterface } from '../types/type';
 export default class CustomEvent implements CustomEventInterface {
     static PHASE_CURRENT: number;
     static PHASE_UPWARD: number;

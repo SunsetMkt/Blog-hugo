@@ -1,4 +1,4 @@
-import AVPacket from '../struct/avpacket';
+import type AVPacket from '../struct/avpacket';
 export default function encodedVideoChunk2AVPacket(chunk: EncodedVideoChunk, avpacket?: pointer<AVPacket>, metadata?: EncodedVideoChunkMetadata & {
     svc?: {
         temporalLayerId: number;

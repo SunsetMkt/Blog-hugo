@@ -1,7 +1,7 @@
-import IOReader from 'common/io/IOReader';
-import IOWriter from 'common/io/IOWriterSync';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import IOReaderSync from 'common/io/IOReaderSync';
+import type IOReader from 'common/io/IOReader';
+import type IOWriter from 'common/io/IOWriterSync';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type IOReaderSync from 'common/io/IOReaderSync';
 export interface PagePayload {
     signature: string;
     read(ioReader: IOReaderSync): void;

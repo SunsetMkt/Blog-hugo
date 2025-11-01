@@ -97,3 +97,4 @@ export type AVPixelFormatDescriptor = {
     }[];
 };
 export declare function getAVPixelFormatDescriptor(format: AVPixelFormat): AVPixelFormatDescriptor;
+export declare function getBitsPerPixel(format: AVPixelFormat): number;

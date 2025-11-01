@@ -1,4 +1,4 @@
-import { Mutex } from 'cheap/thread/mutex';
+import type { Mutex } from 'cheap/thread/mutex';
 export declare const enum AVBufferFlags {
     NONE = 0,
     READONLY = 1

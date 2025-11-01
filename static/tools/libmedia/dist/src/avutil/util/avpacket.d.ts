@@ -1,6 +1,6 @@
 import AVPacket, { AVPacketSideData } from '../struct/avpacket';
-import { AVPacketSideDataType } from '../codec';
-import SafeUint8Array from 'cheap/std/buffer/SafeUint8Array';
+import type { AVPacketSideDataType } from '../codec';
+import type SafeUint8Array from 'cheap/std/buffer/SafeUint8Array';
 export declare function getAVPacketData(avpacket: pointer<AVPacket>): Uint8Array<ArrayBufferLike>;
 export declare function getAVPacketData(avpacket: pointer<AVPacket>, safe: boolean): SafeUint8Array;
 export declare function initAVPacketData(avpacket: pointer<AVPacket>, length: size): Uint8Array<ArrayBufferLike>;

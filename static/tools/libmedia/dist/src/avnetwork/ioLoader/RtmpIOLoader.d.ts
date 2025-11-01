@@ -1,4 +1,4 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 import SocketIOLoader from './SocketIOLoader';
 import { IOType } from 'avutil/avformat';
 export interface RtmpIOInfo {

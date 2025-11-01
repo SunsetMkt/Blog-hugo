@@ -1,5 +1,6 @@
-import AVFrame from 'avutil/struct/avframe';
-import WebGPURender, { WebGPURenderOptions } from './WebGPURender';
+import type AVFrame from 'avutil/struct/avframe';
+import type { WebGPURenderOptions } from './WebGPURender';
+import WebGPURender from './WebGPURender';
 export default abstract class WebGPUDefaultRender extends WebGPURender {
     protected yTexture: GPUTexture;
     protected uTexture: GPUTexture;

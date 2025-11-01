@@ -1,4 +1,4 @@
-import BitReader from 'common/io/BitReader';
+import type BitReader from 'common/io/BitReader';
 export declare function f(bitReader: BitReader, n: number): number;
 export declare function uvlc(bitReader: BitReader): number;
 export declare function le(bitReader: BitReader, n: number): number;

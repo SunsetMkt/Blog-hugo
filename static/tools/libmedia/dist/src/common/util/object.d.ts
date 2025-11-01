@@ -1,7 +1,7 @@
 /**
  * @file 对象操作
  */
-import { Data } from '../types/type';
+import type { Data } from '../types/type';
 /**
  * 获取对象的 key 的数组
  *
@@ -113,4 +113,4 @@ export declare function update(obj1: Object, obj2: Object): Object;
 /**
  * 反转 object 的 key value
  */
-export declare function reverse(obj: Record<number | string | symbol, number | string | symbol>): {};
+export declare function reverse<T extends (number | string | symbol), U extends (number | string | symbol)>(obj: Record<T, U>): Record<U, T>;

@@ -1,7 +1,7 @@
 /**
  * @file 异步任务队列
  */
-import { Task, Fn } from '../types/type';
+import type { Task, Fn } from '../types/type';
 export default class NextTask {
     /**
      * 全局单例

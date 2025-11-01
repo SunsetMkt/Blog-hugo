@@ -1,12 +1,19 @@
-import AVPacket from 'avutil/struct/avpacket';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type AVPacket from 'avutil/struct/avpacket';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
 export type WebVideoDecoderOptions = {
-    onReceiveVideoFrame: (frame: VideoFrame) => void;
-    enableHardwareAcceleration?: boolean;
+    onReceiveVideoFrame: (frame: VideoFrame, alpha?: VideoFrame) => void;
     onError: (error?: Error) => void;
+    enableHardwareAcceleration?: boolean;
+    optimizeForLatency?: boolean;
+    alpha?: 'keep' | 'discard';
+    codec?: string;
+    rotation?: number;
+    flip?: boolean;
+    colorSpace?: VideoColorSpaceInit;
 };
 export default class WebVideoDecoder {
     private decoder;
+    private alphaDecoder;
     private options;
     private parameters;
     private extradata;
@@ -17,9 +24,14 @@ export default class WebVideoDecoder {
     private sort;
     private keyframeRequire;
     private extradataRequire;
+    private alphaQueue;
+    private alphaPending;
     constructor(options: WebVideoDecoderOptions);
+    private getAlphaFrame;
     private output;
+    private outputAlpha;
     private error;
+    private errorAlpha;
     private changeExtraData;
     open(parameters: pointer<AVCodecParameters>): Promise<int32>;
     decode(avpacket: pointer<AVPacket>): int32;

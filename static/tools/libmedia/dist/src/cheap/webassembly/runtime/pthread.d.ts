@@ -1,7 +1,7 @@
-import { Mutex } from '../../thread/mutex';
-import { Cond } from '../../thread/cond';
-import { Timespec } from './semaphore';
-import { Pthread, PthreadOnce } from '../thread';
+import type { Mutex } from '../../thread/mutex';
+import type { Cond } from '../../thread/cond';
+import type { Timespec } from './semaphore';
+import type { Pthread, PthreadOnce } from '../thread';
 export declare let wasm_pthread_mutex_init: (mutex: pointer<Mutex>, attr: pointer<void>) => int32;
 export declare let wasm_pthread_mutex_destroy: (mutex: pointer<Mutex>) => int32;
 export declare let wasm_pthread_mutex_lock: (mutex: pointer<Mutex>) => int32;

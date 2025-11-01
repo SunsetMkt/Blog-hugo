@@ -1,13 +1,20 @@
-import AVPacket, { AVPacketPool } from 'avutil/struct/avpacket';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import AVFrame, { AVFramePool } from 'avutil/struct/avframe';
-import { Rational } from 'avutil/struct/rational';
+import type { AVPacketPool } from 'avutil/struct/avpacket';
+import type AVPacket from 'avutil/struct/avpacket';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type { AVFramePool } from 'avutil/struct/avframe';
+import type AVFrame from 'avutil/struct/avframe';
+import type { Rational } from 'avutil/struct/rational';
 export type WebVideoEncoderOptions = {
     onReceiveAVPacket: (avpacket: pointer<AVPacket>) => void;
     onError: (error?: Error) => void;
-    enableHardwareAcceleration?: boolean;
     avpacketPool?: AVPacketPool;
     avframePool?: AVFramePool;
+    enableHardwareAcceleration?: boolean;
+    bitrateMode?: BitrateMode;
+    scalabilityMode?: string;
+    contentHint?: string;
+    latencyMode?: LatencyMode;
+    copyTs?: boolean;
 };
 export default class WebVideoEncoder {
     private encoder;
@@ -20,6 +27,7 @@ export default class WebVideoEncoder {
     private inputCounter;
     private outputCounter;
     private extradata;
+    private ptsQueue;
     constructor(options: WebVideoEncoderOptions);
     private output;
     private error;

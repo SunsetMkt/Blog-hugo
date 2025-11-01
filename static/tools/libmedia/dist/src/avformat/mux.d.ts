@@ -1,5 +1,5 @@
-import AVPacket from 'avutil/struct/avpacket';
-import { AVOFormatContext } from './AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
+import type { AVOFormatContext } from './AVFormatContext';
 export type MuxOptions = {
     zeroStart?: boolean;
     nonnegative?: boolean;

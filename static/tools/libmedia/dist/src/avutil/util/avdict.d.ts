@@ -1,4 +1,5 @@
-import { AVDictionary, AVDictionaryEntry } from '../struct/avdict';
+import type { AVDictionary } from '../struct/avdict';
+import { AVDictionaryEntry } from '../struct/avdict';
 export declare function freeAVDict(pm: pointer<pointer<AVDictionary>>): void;
 export declare function freeAVDict2(m: pointer<AVDictionary>): void;
 export declare function avDictCount(m: pointer<AVDictionary>): 0 | int32;

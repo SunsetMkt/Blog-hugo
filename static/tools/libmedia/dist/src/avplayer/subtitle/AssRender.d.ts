@@ -1,4 +1,4 @@
-import { AssEvent } from 'avformat/formats/ass/ass';
+import type { AssEvent } from 'avformat/formats/ass/ass';
 export interface AssRenderOptions {
     container: HTMLElement;
     videoWidth?: number;

@@ -1,4 +1,4 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 export declare const DTS_PCMBLOCK_SAMPLES = 32;
 export interface DTSHeaderInfo {
     syncWord: uint32;

@@ -1,6 +1,7 @@
-import { AVPCMBufferPool, AVPCMBufferRef } from '../struct/avpcmbuffer';
-import List from 'cheap/std/collection/List';
-import { Mutex } from 'cheap/thread/mutex';
+import type { AVPCMBufferPool } from '../struct/avpcmbuffer';
+import { AVPCMBufferRef } from '../struct/avpcmbuffer';
+import type List from 'cheap/std/collection/List';
+import type { Mutex } from 'cheap/thread/mutex';
 export default class AVPCMBufferPoolImpl implements AVPCMBufferPool {
     private list;
     private mutex;

@@ -1,6 +1,7 @@
-import AVFilterNode, { AVFilterNodeOptions } from '../AVFilterNode';
-import AVFrame from 'avutil/struct/avframe';
-import { Rational } from 'avutil/struct/rational';
+import type { AVFilterNodeOptions } from '../AVFilterNode';
+import AVFilterNode from '../AVFilterNode';
+import type AVFrame from 'avutil/struct/avframe';
+import type { Rational } from 'avutil/struct/rational';
 export interface FramerateFilterNodeOptions extends AVFilterNodeOptions {
     framerate: Rational;
 }

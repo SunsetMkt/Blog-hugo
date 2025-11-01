@@ -1,6 +1,7 @@
-import IOLoader, { IOLoaderAudioStreamInfo, IOLoaderSubtitleStreamInfo, IOLoaderVideoStreamInfo } from './IOLoader';
-import { Uint8ArrayInterface } from 'common/io/interface';
-import { FetchInfo } from './FetchIOLoader';
+import type { IOLoaderAudioStreamInfo, IOLoaderSubtitleStreamInfo, IOLoaderVideoStreamInfo } from './IOLoader';
+import IOLoader from './IOLoader';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type { FetchInfo } from './FetchIOLoader';
 import { AVMediaType } from 'avutil/codec';
 export default class DashIOLoader extends IOLoader {
     private info;
@@ -35,9 +36,9 @@ export default class DashIOLoader extends IOLoader {
     getVideoList(): IOLoaderVideoStreamInfo;
     getAudioList(): IOLoaderAudioStreamInfo;
     getSubtitleList(): IOLoaderSubtitleStreamInfo;
-    selectVideo(index: number): void;
-    selectAudio(index: number): void;
-    selectSubtitle(index: number): void;
+    selectVideo(index: number): number;
+    selectAudio(index: number): number;
+    selectSubtitle(index: number): number;
     getCurrentProtection(mediaType: AVMediaType): import("avprotocol/dash/type").Protection;
     getMinBuffer(): number;
 }

@@ -1,7 +1,8 @@
-import AVPacket from '../struct/avpacket';
-import AVStream from '../AVStream';
-import { Uint8ArrayInterface } from 'common/io/interface';
-import { Data } from 'common/types/type';
+import type AVPacket from '../struct/avpacket';
+import { AVPacketSideDataType } from '../codec';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type { Data } from 'common/types/type';
+import type AVCodecParameters from '../struct/avcodecparameters';
 export declare const enum VVCNaluType {
     kTRAIL_NUT = 0,
     kSTSA_NUT = 1,
@@ -176,13 +177,19 @@ export declare function annexbAddExtradata(data: Uint8ArrayInterface, extradata:
  * 需要保证 data 是 safe 的
  *
  */
-export declare function avcc2Annexb(data: Uint8ArrayInterface, extradata?: Uint8ArrayInterface): {
+export declare function avcc2Annexb(data: Uint8ArrayInterface, extradata?: Uint8ArrayInterface, naluLengthSizeMinusOne?: int32): {
     key: boolean;
     bufferPointer: pointer<uint8>;
     length: number;
 };
-export declare function parseAVCodecParametersBySps(stream: AVStream, sps: Uint8ArrayInterface): void;
-export declare function parseAVCodecParameters(stream: AVStream, extradata?: Uint8ArrayInterface): void;
+export declare function parseAVCodecParametersBySps(stream: {
+    codecpar: AVCodecParameters;
+}, sps: Uint8ArrayInterface): void;
+export declare function parseAVCodecParameters(stream: {
+    codecpar: AVCodecParameters;
+    sideData: Partial<Record<AVPacketSideDataType, Uint8Array>>;
+    metadata: Data;
+}, extradata?: Uint8ArrayInterface): void;
 export declare function isIDR(avpacket: pointer<AVPacket>, naluLengthSize?: int32): boolean;
 export interface VvcSPS {
     profile: number;

@@ -983,7 +983,15 @@ export declare const enum AVPixelFormat {
     /**
      * number of pixel formats, DO NOT USE THIS if you want to link with shared libav* because the number of formats might differ between versions
      */
-    AV_PIX_FMT_NB = 228
+    AV_PIX_FMT_NB = 228,
+    /**
+     * planar YUVA 4:2:0,48bpp, (1 Cr & Cb sample per 2x1 Y samples), 12b alpha, little-endian
+     */
+    AV_PIX_FMT_YUVA420P12LE = 229,
+    /**
+     * planar YUVA 4:2:0,48bpp, (1 Cr & Cb sample per 2x1 Y samples), 12b alpha, big-endian
+     */
+    AV_PIX_FMT_YUVA420P12BE = 230
 }
 /**
  * Chromaticity coordinates of the source primaries.

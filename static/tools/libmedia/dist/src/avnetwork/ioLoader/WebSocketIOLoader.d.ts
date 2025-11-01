@@ -1,6 +1,6 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 import SocketIOLoader from './SocketIOLoader';
-import { Data } from 'common/types/type';
+import type { Data } from 'common/types/type';
 export interface WebSocketOptions {
     protocols?: string | string[];
 }

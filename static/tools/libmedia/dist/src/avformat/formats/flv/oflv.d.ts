@@ -1,10 +1,10 @@
 import { AVCodecID } from 'avutil/codec';
 import { AVPacketFlags } from 'avutil/struct/avpacket';
-import IOWriterSync from 'common/io/IOWriterSync';
-import { FlvTag } from './flv';
-import { FlvContext } from './type';
-import { Rational } from 'avutil/struct/rational';
-import AVStream from 'avutil/AVStream';
+import type IOWriterSync from 'common/io/IOWriterSync';
+import type { FlvTag } from './flv';
+import type { FlvContext } from './type';
+import type { Rational } from 'avutil/struct/rational';
+import type AVStream from 'avutil/AVStream';
 export declare function updateSize(ioWriter: IOWriterSync, pos: int64, size: int32): void;
 export declare function writeTag(ioWriter: IOWriterSync, type: FlvTag, timestamp: int64, dataHeader?: (ioWriter: IOWriterSync) => void, data?: Uint8Array | ((ioWriter: IOWriterSync) => void), previousTagSizeCallback?: (previousTagSize: int32) => void): void;
 export declare function isEnhancedCodecId(codecId: AVCodecID): boolean;

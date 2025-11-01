@@ -291,3 +291,4 @@ export declare const enum MATROSKATrackEncodingComp {
 }
 export declare const MkvTag2CodecId: Record<string, AVCodecID>;
 export declare const WebmTag2CodecId: Record<string, AVCodecID>;
+export declare const MkvImageMime2CodecId: Record<string, AVCodecID>;

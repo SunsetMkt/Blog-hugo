@@ -1,4 +1,5 @@
-import { CTypeEnum, KeyMeta, Struct, Union } from './typedef';
+import type { KeyMeta, Struct, Union } from './typedef';
+import { CTypeEnum } from './typedef';
 /**
  * 获取结构体最大基本类型的长度
  *

@@ -1,8 +1,8 @@
-import { AVCodecID, AVMediaType, AVPacketSideDataType } from '../codec';
-import AVPacket from '../struct/avpacket';
-import { Rational } from '../struct/rational';
-import { AVChromaLocation, AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic, AVFieldOrder, AVPixelFormat } from '../pixfmt';
-import { AVChannelOrder, AVSampleFormat } from '../audiosamplefmt';
+import type { AVCodecID, AVMediaType, AVPacketSideDataType } from '../codec';
+import type AVPacket from '../struct/avpacket';
+import type { Rational } from '../struct/rational';
+import type { AVChromaLocation, AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic, AVFieldOrder, AVPixelFormat } from '../pixfmt';
+import type { AVChannelOrder, AVSampleFormat } from '../audiosamplefmt';
 import AVCodecParameters from '../struct/avcodecparameters';
 export interface AVPacketSerialize {
     pts: int64;

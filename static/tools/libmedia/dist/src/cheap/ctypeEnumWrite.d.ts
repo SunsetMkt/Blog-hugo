@@ -1,4 +1,5 @@
-import { CTypeEnum, CTypeEnum2Type } from './typedef';
+import type { CTypeEnum2Type } from './typedef';
+import { CTypeEnum } from './typedef';
 type CTypeEnumWrite = {
     [key in CTypeEnum]: (pointer: pointer<void>, value: CTypeEnum2Type<key>) => void;
 } & {

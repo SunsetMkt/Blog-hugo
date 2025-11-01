@@ -1,4 +1,4 @@
-import AVPacket from '../struct/avpacket';
+import type AVPacket from '../struct/avpacket';
 export declare const enum Mpeg4PictureType {
     I = 0,
     P = 1,

@@ -1,8 +1,9 @@
-import AVPacket from 'avutil/struct/avpacket';
-import AVFrame, { AVFramePool } from 'avutil/struct/avframe';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import { Data } from 'common/types/type';
+import type AVPacket from 'avutil/struct/avpacket';
+import type { AVFramePool } from 'avutil/struct/avframe';
+import type AVFrame from 'avutil/struct/avframe';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type { Data } from 'common/types/type';
 export type WasmVideoDecoderOptions = {
     resource: WebAssemblyResource;
     onReceiveAVFrame: (frame: pointer<AVFrame>) => void;

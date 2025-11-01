@@ -1,7 +1,7 @@
 /**
  * @file netstring 实现
  */
-import { Data } from '../types/type';
+import type { Data } from '../types/type';
 export type NetStringPayload = {
     cmd?: number;
     payload: Uint8Array;

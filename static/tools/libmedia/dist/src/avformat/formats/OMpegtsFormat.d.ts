@@ -1,6 +1,7 @@
-import { AVOFormatContext } from '../AVFormatContext';
-import AVPacket from 'avutil/struct/avpacket';
+import type { AVOFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
 import OFormat from './OFormat';
+import { AVCodecID } from 'avutil/codec';
 import { AVFormat } from 'avutil/avformat';
 export interface OMpegtsFormatOptions {
     pesMaxSize?: number;
@@ -21,10 +22,12 @@ export default class OMpegtsFormat extends OFormat {
     private patPeriod;
     private avpacket;
     constructor(options?: OMpegtsFormatOptions);
-    init(context: AVOFormatContext): number;
+    init(formatContext: AVOFormatContext): number;
     destroy(context: AVOFormatContext): Promise<void>;
     writeHeader(context: AVOFormatContext): number;
     writeAVPacket(formatContext: AVOFormatContext, avpacket: pointer<AVPacket>): number;
     writeTrailer(context: AVOFormatContext): number;
     flush(context: AVOFormatContext): number;
+    getCapabilities(): AVCodecID[];
+    static Capabilities: AVCodecID[];
 }

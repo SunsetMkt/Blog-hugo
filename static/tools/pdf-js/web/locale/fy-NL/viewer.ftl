@@ -112,14 +112,6 @@ pdfjs-document-properties-size-kb = { NUMBER($kb, maximumSignificantDigits: 3) }
 #   $mb (Number) - the PDF file size in megabytes
 #   $b (Number) - the PDF file size in bytes
 pdfjs-document-properties-size-mb = { NUMBER($mb, maximumSignificantDigits: 3) } MB ({ $b } bytes)
-# Variables:
-#   $size_kb (Number) - the PDF file size in kilobytes
-#   $size_b (Number) - the PDF file size in bytes
-pdfjs-document-properties-kb = { $size_kb } KB ({ $size_b } bytes)
-# Variables:
-#   $size_mb (Number) - the PDF file size in megabytes
-#   $size_b (Number) - the PDF file size in bytes
-pdfjs-document-properties-mb = { $size_mb } MB ({ $size_b } bytes)
 pdfjs-document-properties-title = Titel:
 pdfjs-document-properties-author = Auteur:
 pdfjs-document-properties-subject = Underwerp:
@@ -129,10 +121,6 @@ pdfjs-document-properties-modification-date = Bewurkingsdatum:
 # Variables:
 #   $dateObj (Date) - the creation/modification date and time of the PDF file
 pdfjs-document-properties-date-time-string = { DATETIME($dateObj, dateStyle: "short", timeStyle: "medium") }
-# Variables:
-#   $date (Date) - the creation/modification date of the PDF file
-#   $time (Time) - the creation/modification time of the PDF file
-pdfjs-document-properties-date-string = { $date }, { $time }
 pdfjs-document-properties-creator = Makker:
 pdfjs-document-properties-producer = PDF-makker:
 pdfjs-document-properties-version = PDF-ferzje:
@@ -275,10 +263,6 @@ pdfjs-rendering-error = Der is in flater bard by it renderjen fan de side.
 
 ## Annotations
 
-# Variables:
-#   $date (Date) - the modification date of the annotation
-#   $time (Time) - the modification time of the annotation
-pdfjs-annotation-date-string = { $date }, { $time }
 # .alt: This is used as a tooltip.
 # Variables:
 #   $type (String) - an annotation type from a list defined in the PDF spec
@@ -302,9 +286,13 @@ pdfjs-web-fonts-disabled = Weblettertypen binne útskeakele: gebrûk fan ynslute
 
 pdfjs-editor-free-text-button =
     .title = Tekst
+pdfjs-editor-color-picker-free-text-input =
+    .title = Tekstleur wizigje
 pdfjs-editor-free-text-button-label = Tekst
 pdfjs-editor-ink-button =
     .title = Tekenje
+pdfjs-editor-color-picker-ink-input =
+    .title = Tekenkleur wizigje
 pdfjs-editor-ink-button-label = Tekenje
 pdfjs-editor-stamp-button =
     .title = Ofbyldingen tafoegje of bewurkje
@@ -316,6 +304,10 @@ pdfjs-highlight-floating-button1 =
     .title = Markearje
     .aria-label = Markearje
 pdfjs-highlight-floating-button-label = Markearje
+pdfjs-comment-floating-button =
+    .title = Opmerking
+    .aria-label = Opmerking
+pdfjs-comment-floating-button-label = Opmerking
 pdfjs-editor-signature-button =
     .title = Hantekening tafoegje
 pdfjs-editor-signature-button-label = Hantekening tafoegje
@@ -378,20 +370,12 @@ pdfjs-editor-add-saved-signature-button =
 pdfjs-free-text2 =
     .aria-label = Tekstbewurker
     .default-content = Start mei typen…
-pdfjs-free-text =
-    .aria-label = Tekstbewurker
-pdfjs-free-text-default-content = Begjin mei typen…
-pdfjs-ink =
-    .aria-label = Tekeningbewurker
-pdfjs-ink-canvas =
-    .aria-label = Troch brûker makke ôfbylding
 
 ## Alt-text dialog
 
 pdfjs-editor-alt-text-button-label = Alternative tekst
 pdfjs-editor-alt-text-edit-button =
     .aria-label = Alternative tekst bewurkje
-pdfjs-editor-alt-text-edit-button-label = Alternative tekst bewurkje
 pdfjs-editor-alt-text-dialog-label = Kies in opsje
 pdfjs-editor-alt-text-dialog-description = Alternative tekst helpt wannear’t minsken de ôfbylding net sjen kinne of wannear’t dizze net laden wurdt.
 pdfjs-editor-alt-text-add-description-label = Foegje in beskriuwing ta
@@ -411,14 +395,6 @@ pdfjs-editor-alt-text-button =
 ## Editor resizers
 ## This is used in an aria label to help to understand the role of the resizer.
 
-pdfjs-editor-resizer-label-top-left = Linkerboppehoek – formaat wizigje
-pdfjs-editor-resizer-label-top-middle = Midden boppe – formaat wizigje
-pdfjs-editor-resizer-label-top-right = Rjochterboppehoek – formaat wizigje
-pdfjs-editor-resizer-label-middle-right = Midden rjochts – formaat wizigje
-pdfjs-editor-resizer-label-bottom-right = Rjochterûnderhoek – formaat wizigje
-pdfjs-editor-resizer-label-bottom-middle = Midden ûnder – formaat wizigje
-pdfjs-editor-resizer-label-bottom-left = Linkerûnderhoek – formaat wizigje
-pdfjs-editor-resizer-label-middle-left = Links midden – formaat wizigje
 pdfjs-editor-resizer-top-left =
     .aria-label = Linkerboppehoek – formaat wizigje
 pdfjs-editor-resizer-top-middle =
@@ -524,6 +500,14 @@ pdfjs-editor-alt-text-settings-show-dialog-button-label = Alternative-tekstbewur
 pdfjs-editor-alt-text-settings-show-dialog-description = Helpt jo derfoar te soargjen dat al jo ôfbyldingen alternative tekst hawwe.
 pdfjs-editor-alt-text-settings-close-button = Slute
 
+## Accessibility labels (announced by screen readers) for objects added to the editor.
+
+pdfjs-editor-highlight-added-alert = Markearring tafoege
+pdfjs-editor-freetext-added-alert = Tekst tafoege
+pdfjs-editor-ink-added-alert = Tekening tafoege
+pdfjs-editor-stamp-added-alert = Ofbylding tafoege
+pdfjs-editor-signature-added-alert = Hantekening tafoege
+
 ## "Annotations removed" bar
 
 pdfjs-editor-undo-bar-message-highlight = Markearring fuortsmiten
@@ -592,6 +576,8 @@ pdfjs-editor-add-signature-save-checkbox = Hantekening bewarje
 pdfjs-editor-add-signature-save-warning-message = Jo hawwe de limyt fan 5 bewarre hantekeningen berikt. Ferwiderje ien om in oar te bewarjen.
 pdfjs-editor-add-signature-image-upload-error-title = Kin de ôfbylding net oplade
 pdfjs-editor-add-signature-image-upload-error-description = Kontrolearje jo netwurkferbining of probearje in oare ôfbylding.
+pdfjs-editor-add-signature-image-no-data-error-title = Kin dizze ôfbylding net nei in hantekening konvertearje
+pdfjs-editor-add-signature-image-no-data-error-description = Probearje in oare ôfbylding op te laden.
 pdfjs-editor-add-signature-error-close-button = Slute
 
 ## Dialog buttons
@@ -599,6 +585,26 @@ pdfjs-editor-add-signature-error-close-button = Slute
 pdfjs-editor-add-signature-cancel-button = Annulearje
 pdfjs-editor-add-signature-add-button = Tafoegje
 pdfjs-editor-edit-signature-update-button = Bywurkje
+
+##  Edit a comment dialog
+
+pdfjs-editor-edit-comment-actions-button-label = Aksjes
+pdfjs-editor-edit-comment-actions-button =
+    .title = Aksjes
+pdfjs-editor-edit-comment-close-button-label = Slute
+pdfjs-editor-edit-comment-close-button =
+    .title = Slute
+pdfjs-editor-edit-comment-actions-edit-button-label = Bewurkje
+pdfjs-editor-edit-comment-actions-delete-button-label = Fuortsmite
+pdfjs-editor-edit-comment-manager-text-input =
+    .placeholder = Fier jo opmerking yn
+pdfjs-editor-edit-comment-manager-cancel-button = Annulearje
+pdfjs-editor-edit-comment-manager-save-button = Bewarje
+
+## Edit a comment button in the editor toolbar
+
+pdfjs-editor-edit-comment-button =
+    .title = Opmerking bewurkje
 
 ## Main menu for adding/removing signatures
 

@@ -1,5 +1,6 @@
-import AVFilterNode, { AVFilterNodeOptions } from './AVFilterNode';
-import AVFrame from 'avutil/struct/avframe';
+import type { AVFilterNodeOptions } from './AVFilterNode';
+import AVFilterNode from './AVFilterNode';
+import type AVFrame from 'avutil/struct/avframe';
 export interface RangeFilterNodeOptions extends AVFilterNodeOptions {
     /**
      * 微秒时间戳

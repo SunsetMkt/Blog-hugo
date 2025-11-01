@@ -1,8 +1,8 @@
-import AVPacket from 'avutil/struct/avpacket';
-import { AVIFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
+import type { AVIFormatContext } from '../AVFormatContext';
 import IFormat from './IFormat';
 import { AVFormat } from 'avutil/avformat';
-import AVStream from 'avutil/AVStream';
+import type AVStream from 'avutil/AVStream';
 export default class IMpegpsFormat extends IFormat {
     type: AVFormat;
     private context;

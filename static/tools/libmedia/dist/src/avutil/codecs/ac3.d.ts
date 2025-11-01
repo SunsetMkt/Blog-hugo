@@ -1,4 +1,4 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 export declare const enum AC3DeltaStrategy {
     DBA_REUSE = 0,
     DBA_NEW = 1,

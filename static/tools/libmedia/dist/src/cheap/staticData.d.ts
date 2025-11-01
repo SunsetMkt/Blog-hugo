@@ -12,3 +12,11 @@ export declare const threadCounter: pointer<uint32>;
  * 堆分配锁地址
  */
 export declare const heapMutex: pointer<Mutex>;
+/**
+ * 32 位唯一 id 生成地址
+ */
+export declare const uniqueCounter32: pointer<atomic_uint32>;
+/**
+ * 64 位唯一 id 生成地址
+ */
+export declare const uniqueCounter64: pointer<atomic_uint64>;

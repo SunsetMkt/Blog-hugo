@@ -1,4 +1,4 @@
-import { Mutex } from './mutex';
+import type { Mutex } from './mutex';
 export declare class Sem {
     atomic: atomic_int32;
     mutex: Mutex;

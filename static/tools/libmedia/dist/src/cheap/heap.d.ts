@@ -1,6 +1,6 @@
-import AllocatorInterface from './allocator/Allocator';
+import type AllocatorInterface from './allocator/Allocator';
 import { WebassemblyTable } from './allocator/Table';
-import { AtomicsBuffer } from './typedef';
+import type { AtomicsBuffer } from './typedef';
 /**
  * 线程 id
  */

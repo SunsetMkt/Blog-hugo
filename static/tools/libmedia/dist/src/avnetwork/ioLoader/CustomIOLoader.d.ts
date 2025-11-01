@@ -1,5 +1,5 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
-import { Data } from 'common/types/type';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type { Data } from 'common/types/type';
 export default abstract class CustomIOLoader {
     constructor();
     /**

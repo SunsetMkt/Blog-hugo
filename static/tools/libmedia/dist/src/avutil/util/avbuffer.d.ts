@@ -1,4 +1,5 @@
-import { AVBuffer, AVBufferPool, AVBufferRef } from '../struct/avbuffer';
+import type { AVBufferPool } from '../struct/avbuffer';
+import { AVBuffer, AVBufferRef } from '../struct/avbuffer';
 export declare function bufferCreate(buf: pointer<AVBuffer>, data: pointer<uint8>, size: size, free?: pointer<(opaque: pointer<void>, data: pointer<uint8>) => void>, opaque?: pointer<void>, flags?: int32): pointer<AVBufferRef>;
 export declare function avbufferCreate(data: pointer<uint8>, size: size, free?: pointer<(opaque: pointer<void>, data: pointer<uint8>) => void>, opaque?: pointer<void>, flags?: int32): pointer<AVBufferRef>;
 export declare function avbufferAlloc(size: size): pointer<AVBufferRef>;

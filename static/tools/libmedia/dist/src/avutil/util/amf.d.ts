@@ -1,7 +1,7 @@
-import BufferReader from 'common/io/BufferReader';
-import IOReader from 'common/io/IOReader';
-import BufferWriter from 'common/io/BufferWriter';
-import IOWriterSync from 'common/io/IOWriterSync';
+import type BufferReader from 'common/io/BufferReader';
+import type IOReader from 'common/io/IOReader';
+import type BufferWriter from 'common/io/BufferWriter';
+import type IOWriterSync from 'common/io/IOWriterSync';
 export declare function parseObject(ioReader: IOReader | BufferReader, endPos: bigint): Promise<{
     key: string;
     value: any;

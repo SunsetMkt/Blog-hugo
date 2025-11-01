@@ -1,6 +1,6 @@
-import AVStream from 'avutil/AVStream';
-import { AVIFormatContext } from '../AVFormatContext';
-import AVPacket from 'avutil/struct/avpacket';
+import type AVStream from 'avutil/AVStream';
+import type { AVIFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
 import IFormat from './IFormat';
 import { AVFormat } from 'avutil/avformat';
 export default class IAacFormat extends IFormat {
@@ -10,6 +10,11 @@ export default class IAacFormat extends IFormat {
     private currentPts;
     private latmFilter;
     private encodeSampleRate;
+    private currentPos;
+    private pendingData;
+    private firstFramePos;
+    private pendingPos;
+    private streamMuxConfig;
     constructor();
     init(formatContext: AVIFormatContext): void;
     destroy(formatContext: AVIFormatContext): Promise<void>;

@@ -1,13 +1,16 @@
-import Pipeline, { TaskOptions } from './Pipeline';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
 import IPCPort from 'common/network/IPCPort';
-import AVFrame, { AVFrameRef } from 'avutil/struct/avframe';
-import List from 'cheap/std/collection/List';
-import { Mutex } from 'cheap/thread/mutex';
+import type { AVFrameRef } from 'avutil/struct/avframe';
+import type AVFrame from 'avutil/struct/avframe';
+import type List from 'cheap/std/collection/List';
+import type { Mutex } from 'cheap/thread/mutex';
 import AVFramePoolImpl from 'avutil/implement/AVFramePoolImpl';
-import ImageRender from 'avrender/image/ImageRender';
-import { RenderMode } from 'avrender/image/ImageRender';
+import type ImageRender from 'avrender/image/ImageRender';
+import type { RenderMode } from 'avrender/image/ImageRender';
 import LoopTask from 'common/timer/LoopTask';
 import MasterTimer from 'common/timer/MasterTimer';
+import type { AlphaVideoFrame } from './struct/type';
 declare enum AdjustStatus {
     None = 0,
     Accelerate = 1,
@@ -39,9 +42,9 @@ type SelfTask = VideoRenderTaskOptions & {
     masterTimer: MasterTimer;
     lastNotifyPTS: int64;
     playRate: int64;
-    frontFrame: pointer<AVFrameRef> | VideoFrame;
-    backFrame: pointer<AVFrameRef> | VideoFrame;
-    renderFrame: pointer<AVFrameRef> | VideoFrame;
+    frontFrame: pointer<AVFrameRef> | VideoFrame | AlphaVideoFrame;
+    backFrame: pointer<AVFrameRef> | VideoFrame | AlphaVideoFrame;
+    renderFrame: pointer<AVFrameRef> | VideoFrame | AlphaVideoFrame;
     renderFrameCount: int64;
     loop: LoopTask;
     render: ImageRender;
@@ -67,6 +70,7 @@ export default class VideoRenderPipeline extends Pipeline {
     tasks: Map<string, SelfTask>;
     constructor();
     private createTask;
+    private pullFrame;
     private swap;
     private fakeSyncPts;
     private createRender;
@@ -85,6 +89,7 @@ export default class VideoRenderPipeline extends Pipeline {
     setMasterTime(taskId: string, masterTime: int64): Promise<void>;
     beforeSeek(taskId: string): Promise<void>;
     syncSeekTime(taskId: string, timestamp: int64, maxQueueLength?: number): Promise<void>;
+    isEnd(taskId: string): Promise<boolean>;
     afterSeek(taskId: string, timestamp: int64): Promise<void>;
     renderNextFrame(taskId: string): Promise<void>;
     registerTask(options: VideoRenderTaskOptions): Promise<number>;

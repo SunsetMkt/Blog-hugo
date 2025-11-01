@@ -3,7 +3,7 @@
  * 一个基于跳表的 malloc 算法
  * 添加支持自动扩堆，支持多线程和 alignedAlloc
  */
-import Allocator from './Allocator';
+import type Allocator from './Allocator';
 type ListNode = {
     type: string;
     offset: int32;

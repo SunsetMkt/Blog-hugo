@@ -1,7 +1,7 @@
 /**
  * bit 读取器
  */
-import { Uint8ArrayInterface } from './interface';
+import type { Uint8ArrayInterface } from './interface';
 export default class BitReader {
     private buffer;
     private pointer;

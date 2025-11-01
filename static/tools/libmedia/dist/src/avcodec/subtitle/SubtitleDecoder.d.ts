@@ -1,6 +1,6 @@
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import AVPacket from 'avutil/struct/avpacket';
-import { AVSubtitle } from 'avutil/struct/avsubtitle';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type AVPacket from 'avutil/struct/avpacket';
+import type { AVSubtitle } from 'avutil/struct/avsubtitle';
 export type SubtitleDecoderOptions = {
     onReceiveSubtitle?: (subtitle: AVSubtitle) => void;
     onError?: (error?: Error) => void;

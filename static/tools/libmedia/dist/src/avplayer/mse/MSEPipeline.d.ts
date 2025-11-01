@@ -1,19 +1,20 @@
-import { AVOFormatContext } from 'avformat/AVFormatContext';
-import Pipeline, { TaskOptions } from 'avpipeline/Pipeline';
+import type { AVOFormatContext } from 'avformat/AVFormatContext';
+import type { TaskOptions } from 'avpipeline/Pipeline';
+import Pipeline from 'avpipeline/Pipeline';
 import IPCPort from 'common/network/IPCPort';
-import OFormat from 'avformat/formats/OFormat';
+import type OFormat from 'avformat/formats/OFormat';
 import IOWriter from 'common/io/IOWriterSync';
 import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import { Rational } from 'avutil/struct/rational';
+import type { Rational } from 'avutil/struct/rational';
 import LoopTask from 'common/timer/LoopTask';
 import Track from 'avrender/track/Track';
-import { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
-import List from 'cheap/std/collection/List';
-import { Mutex } from 'cheap/thread/mutex';
+import type { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
+import type List from 'cheap/std/collection/List';
+import type { Mutex } from 'cheap/thread/mutex';
 import SeekableWriteBuffer from 'common/io/SeekableWriteBuffer';
-import { AVCodecParametersSerialize } from 'avutil/util/serialize';
+import type { AVCodecParametersSerialize } from 'avutil/util/serialize';
 import WorkerTimer from 'common/timer/WorkerTimer';
-import { Data } from 'common/types/type';
+import type { Data } from 'common/types/type';
 export interface MSETaskOptions extends TaskOptions {
     isLive: boolean;
     avpacketList: pointer<List<pointer<AVPacketRef>>>;
@@ -101,6 +102,7 @@ export default class MSEPipeline extends Pipeline {
     setCurrentTime(taskId: string, time: number): Promise<void>;
     private checkWaiting;
     getMediaSource(taskId: string): Promise<MediaSource>;
+    isManagedMediaSource(taskId: string): Promise<boolean>;
     private createTask;
     setVisibilityHidden(taskId: string, visibilityHidden: boolean): Promise<void>;
     registerTask(options: MSETaskOptions, startTimestamp?: int64): Promise<number>;

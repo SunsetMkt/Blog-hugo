@@ -1,2 +1,2 @@
-import { Rational } from 'avutil/struct/rational';
+import type { Rational } from 'avutil/struct/rational';
 export default function roundStandardFramerate(framerate: Rational): void;

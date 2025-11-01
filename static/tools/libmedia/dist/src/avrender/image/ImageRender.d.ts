@@ -1,5 +1,5 @@
-import AVFrame from 'avutil/struct/avframe';
-import { AVPixelFormat } from 'avutil/pixfmt';
+import type AVFrame from 'avutil/struct/avframe';
+import type { AVPixelFormat } from 'avutil/pixfmt';
 import ColorSpace from './colorSpace/ColorSpace';
 export type ImageRenderOptions = {
     devicePixelRatio: number;
@@ -39,7 +39,7 @@ export default abstract class ImageRender {
     constructor(canvas: HTMLCanvasElement | OffscreenCanvas, options: ImageRenderOptions);
     protected getRotateMatrix(angle: number): number[];
     abstract init(): Promise<void>;
-    abstract render(frame: VideoFrame | pointer<AVFrame>): void;
+    abstract render(frame: VideoFrame | pointer<AVFrame>, alpha?: VideoFrame): void;
     abstract clear(): void;
     abstract setRotate(angle: number, clear?: boolean): void;
     protected abstract layout(): void;

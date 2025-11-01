@@ -1,5 +1,5 @@
-import { AVCodecID, AVMediaType } from 'avutil/codec';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { AVCodecID, AVMediaType } from 'avutil/codec';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 export interface ControllerObserver {
     onGetDecoderResource: (mediaType: AVMediaType, codecId: AVCodecID) => Promise<WebAssemblyResource | ArrayBuffer>;
 }

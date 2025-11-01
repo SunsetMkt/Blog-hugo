@@ -1,4 +1,5 @@
-import Stats, { JitterBuffer } from 'avpipeline/struct/stats';
+import type { JitterBuffer } from 'avpipeline/struct/stats';
+import type Stats from 'avpipeline/struct/stats';
 export interface ControllerObserver {
     onSetPlayRate: (rate: number) => void;
     onCroppingBuffer: (max: int32) => void;

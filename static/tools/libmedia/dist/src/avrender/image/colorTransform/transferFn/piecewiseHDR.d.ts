@@ -1,5 +1,5 @@
-import ColorSpace from '../../colorSpace/ColorSpace';
-import { ColorTransformOptions, TransferFunction } from '../options';
+import type ColorSpace from '../../colorSpace/ColorSpace';
+import type { ColorTransformOptions, TransferFunction } from '../options';
 export declare function getPiecewiseHDRPar(space: ColorSpace): {
     tfn: {
         g: number;

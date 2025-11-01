@@ -1,5 +1,5 @@
 import IPCPort from 'common/network/IPCPort';
-import { Data } from 'common/types/type';
+import type { Data } from 'common/types/type';
 export default abstract class AudioWorkletProcessorBase extends AudioWorkletProcessor {
     protected ipcPort: IPCPort;
     constructor();

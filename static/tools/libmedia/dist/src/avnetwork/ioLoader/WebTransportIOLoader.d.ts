@@ -1,7 +1,7 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 import { IOError } from 'common/io/error';
 import SocketIOLoader from './SocketIOLoader';
-import { Data } from 'common/types/type';
+import type { Data } from 'common/types/type';
 export interface WebTransportInfo {
     url: string;
     webtransportOptions?: WebTransportOptions;

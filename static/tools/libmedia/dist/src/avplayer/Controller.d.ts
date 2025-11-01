@@ -1,5 +1,6 @@
-import { AVCodecID, AVMediaType } from 'avutil/codec';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { AVCodecID } from 'avutil/codec';
+import { AVMediaType } from 'avutil/codec';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 export interface ControllerObserver {
     onVideoEnded: () => void;
     onAudioEnded: () => void;
@@ -11,6 +12,7 @@ export interface ControllerObserver {
     onGetDecoderResource: (mediaType: AVMediaType, codecId: AVCodecID) => Promise<WebAssemblyResource | string | ArrayBuffer>;
     isPictureInPicture: () => boolean;
     isMediaStreamMode: () => boolean;
+    onError: (error: Error) => void;
 }
 export default class Controller {
     private videoRenderControlChannel;

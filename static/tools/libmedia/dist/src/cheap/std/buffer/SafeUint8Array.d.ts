@@ -1,4 +1,4 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 import { getHeap } from '../../heap';
 import ArrayLikeInterface from 'common/interface/ArrayLike';
 export declare class SafeBufferView {

@@ -2,7 +2,7 @@ import { AVFormat, IOType } from './avformat';
 import { AVCodecID, AVMediaType } from './codec';
 import { AVColorPrimaries, AVColorRange, AVColorSpace, AVColorTransferCharacteristic, AVPixelFormat } from './pixfmt';
 import { AVChannelLayout, AVSampleFormat } from './audiosamplefmt';
-import { AVDisposition } from './AVStream';
+import { AVDisposition, AVStreamGroupParamsType } from './AVStream';
 export declare const CodecId2MimeType: {
     86017: string;
     86018: string;
@@ -14,6 +14,18 @@ export declare const CodecId2MimeType: {
     86019: string;
     86056: string;
     86020: string;
+    65541: string;
+    65540: string;
+    65536: string;
+    65537: string;
+    65548: string;
+    65549: string;
+    65544: string;
+    65545: string;
+    65557: string;
+    65556: string;
+    65559: string;
+    65558: string;
     225: string;
     27: string;
     173: string;
@@ -50,6 +62,11 @@ export declare const VideoCodecString2CodecId: {
     rv20: AVCodecID;
     rv30: AVCodecID;
     rv40: AVCodecID;
+    png: AVCodecID;
+    bmp: AVCodecID;
+    webp: AVCodecID;
+    tiff: AVCodecID;
+    gif: AVCodecID;
 };
 export declare const AudioCodecString2CodecId: {
     copy: AVCodecID;
@@ -69,6 +86,13 @@ export declare const AudioCodecString2CodecId: {
     cook: AVCodecID;
     sipr: AVCodecID;
     ralf: AVCodecID;
+    pcm_u8: AVCodecID;
+    pcm_s16le: AVCodecID;
+    pcm_s24le: AVCodecID;
+    pcm_s32le: AVCodecID;
+    pcm_s64le: AVCodecID;
+    pcm_f32le: AVCodecID;
+    pcm_f64le: AVCodecID;
 };
 export declare const SubtitleCodecString2CodecId: {
     webvtt: AVCodecID;
@@ -81,6 +105,9 @@ export declare const SubtitleCodecString2CodecId: {
     dvd: AVCodecID;
     dvb: AVCodecID;
     eia_608: AVCodecID;
+};
+export declare const DataCodecString2CodecId: {
+    bin_data: AVCodecID;
 };
 export declare const PixfmtString2AVPixelFormat: {
     yuv420p: AVPixelFormat;
@@ -104,6 +131,10 @@ export declare const PixfmtString2AVPixelFormat: {
     yuva420p10be: AVPixelFormat;
     yuva422p10be: AVPixelFormat;
     yuva444p10be: AVPixelFormat;
+    rgba: AVPixelFormat;
+    rgb24: AVPixelFormat;
+    bgr24: AVPixelFormat;
+    gray: AVPixelFormat;
 };
 export declare const SampleFmtString2SampleFormat: {
     u8: AVSampleFormat;
@@ -125,5 +156,6 @@ export declare const colorSpace2AVColorSpace: Record<string, AVColorSpace>;
 export declare const colorPrimaries2AVColorPrimaries: Record<string, AVColorPrimaries>;
 export declare const colorTrc2AVColorTransferCharacteristic: Record<string, AVColorTransferCharacteristic>;
 export declare const mediaType2AVMediaType: Record<string, AVMediaType>;
+export declare const streamGroup2ParamsType: Record<string, AVStreamGroupParamsType>;
 export declare const disposition2AVDisposition: Record<string, AVDisposition>;
 export declare const layoutName2AVChannelLayout: Record<string, AVChannelLayout>;

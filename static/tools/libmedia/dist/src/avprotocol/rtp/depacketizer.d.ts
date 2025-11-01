@@ -1,5 +1,5 @@
-import { HEVCPayloadContext, Mpeg4PayloadContext } from './rtp';
-import { RTPPacket } from './RTPPacket';
+import type { HEVCPayloadContext, Mpeg4PayloadContext } from './rtp';
+import type { RTPPacket } from './RTPPacket';
 import { AVMediaType } from 'avutil/codec';
 export declare function h264(rtps: RTPPacket[]): {
     nalus: Uint8Array<ArrayBufferLike>[];

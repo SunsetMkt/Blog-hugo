@@ -1,4 +1,4 @@
-import { ComponentOptions } from 'yox';
+import type { ComponentOptions } from 'yox';
 export declare const musicExt: string[];
 export declare const movExt: string[];
 export declare const subtitleExt: string[];

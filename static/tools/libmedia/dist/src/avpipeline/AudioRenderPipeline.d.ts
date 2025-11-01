@@ -1,15 +1,17 @@
-import Pipeline, { TaskOptions } from './Pipeline';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
 import IPCPort from 'common/network/IPCPort';
-import { AVFrameRef } from 'avutil/struct/avframe';
-import List from 'cheap/std/collection/List';
-import { Mutex } from 'cheap/thread/mutex';
+import type { AVFrameRef } from 'avutil/struct/avframe';
+import type List from 'cheap/std/collection/List';
+import type { Mutex } from 'cheap/thread/mutex';
 import AVFramePoolImpl from 'avutil/implement/AVFramePoolImpl';
 import Resampler from 'audioresample/Resampler';
-import { AVSampleFormat } from 'avutil/audiosamplefmt';
-import AVPCMBuffer, { AVPCMBufferRef } from 'avutil/struct/avpcmbuffer';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { AVSampleFormat } from 'avutil/audiosamplefmt';
+import type { AVPCMBufferRef } from 'avutil/struct/avpcmbuffer';
+import type AVPCMBuffer from 'avutil/struct/avpcmbuffer';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 import StretchPitcher from 'audiostretchpitch/StretchPitcher';
-import { Timeout } from 'common/types/type';
+import type { Timeout } from 'common/types/type';
 import WorkerSetTimeout from 'common/timer/WorkerSetTimeout';
 import MasterTimer from 'common/timer/MasterTimer';
 export interface AudioRenderTaskOptions extends TaskOptions {
@@ -23,6 +25,7 @@ export interface AudioRenderTaskOptions extends TaskOptions {
     avframeListMutex: pointer<Mutex>;
     enableJitterBuffer: boolean;
     isLive: boolean;
+    audioMasterForce: boolean;
 }
 type SelfTask = AudioRenderTaskOptions & {
     leftIPCPort: IPCPort;
@@ -74,6 +77,7 @@ export default class AudioRenderPipeline extends Pipeline {
     setPlayPitch(taskId: string, pitch: double): void;
     beforeSeek(taskId: string): Promise<void>;
     syncSeekTime(taskId: string, timestamp: int64, maxQueueLength?: number): Promise<void>;
+    isEnd(taskId: string): Promise<boolean>;
     afterSeek(taskId: string, timestamp: int64): Promise<void>;
     restart(taskId: string): Promise<void>;
     setMasterTime(taskId: string, masterTime: int64): Promise<void>;

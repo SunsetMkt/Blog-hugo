@@ -1,4 +1,4 @@
-import { Sem } from '../../thread/semaphore';
+import type { Sem } from '../../thread/semaphore';
 export declare class Timespec {
     tvSec: int64;
     tvNSec: int32;

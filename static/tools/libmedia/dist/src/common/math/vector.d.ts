@@ -1,4 +1,4 @@
-import Matrix3 from './Matrix3';
+import type Matrix3 from './Matrix3';
 import { Vector3 } from './Vector3';
 /**
  * 向量加法

@@ -1,4 +1,4 @@
-import { RtmpPacketType } from './rtmp';
+import type { RtmpPacketType } from './rtmp';
 export declare class RtmpPacket {
     /**
      * RTMP channel ID (nothing to do with audio/video channels though

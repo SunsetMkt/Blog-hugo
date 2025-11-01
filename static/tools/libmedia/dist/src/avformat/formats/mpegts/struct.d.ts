@@ -1,5 +1,5 @@
 import { TSStreamType } from './mpegts';
-import { PID } from './type';
+import type { PID } from './type';
 export declare class TSPacketAdaptationFieldInfo {
     discontinuityIndicator: number;
     randomAccessIndicator: number;

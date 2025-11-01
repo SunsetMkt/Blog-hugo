@@ -1,4 +1,4 @@
-import Stats from './struct/stats';
+import type Stats from './struct/stats';
 export interface TaskOptions {
     leftPort?: MessagePort;
     rightPort?: MessagePort;

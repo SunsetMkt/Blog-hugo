@@ -1,6 +1,6 @@
-import AVStream from '../AVStream';
-import { Uint8ArrayInterface } from 'common/io/interface';
-import AVCodecParameters from '../struct/avcodecparameters';
+import { AVPacketSideDataType } from '../codec';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type AVCodecParameters from '../struct/avcodecparameters';
 export declare const enum AV1Profile {
     Main = 0,
     High = 1,
@@ -25,7 +25,10 @@ export declare const LevelCapabilities: {
 }[];
 export declare const AV1LevelIdx: number[];
 export declare function getLevelByResolution(width: number, height: number, fps: number): number;
-export declare function parseAVCodecParameters(stream: AVStream, extradata?: Uint8ArrayInterface): void;
+export declare function parseAVCodecParameters(stream: {
+    codecpar: AVCodecParameters;
+    sideData: Partial<Record<AVPacketSideDataType, Uint8Array>>;
+}, extradata?: Uint8ArrayInterface): void;
 /**
  * - 1 bit marker
  * - 7 bit version

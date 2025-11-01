@@ -1,5 +1,5 @@
-import AVFrame from 'avutil/struct/avframe';
-import { WebGLRenderOptions } from './WebGLRender';
+import type AVFrame from 'avutil/struct/avframe';
+import type { WebGLRenderOptions } from './WebGLRender';
 import WebGLDefaultRender from './WebGLDefaultRender';
 import VideoProgram16 from './webgl/program/VideoProgram16';
 export default class WebGLDefault16Render extends WebGLDefaultRender {

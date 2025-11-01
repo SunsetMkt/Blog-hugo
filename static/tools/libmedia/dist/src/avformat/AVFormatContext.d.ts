@@ -1,15 +1,16 @@
-import { AVCodecID, AVMediaType } from 'avutil/codec';
-import AVStream, { AVStreamInterface } from 'avutil/AVStream';
-import AVPacket from 'avutil/struct/avpacket';
-import OFormat from './formats/OFormat';
-import IFormat from './formats/IFormat';
-import IOWriterSync from 'common/io/IOWriterSync';
-import IOReader from 'common/io/IOReader';
-import IOWriter from 'common/io/IOWriter';
-import IOReaderSync from 'common/io/IOReaderSync';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import { type AVCodecID, AVMediaType } from 'avutil/codec';
+import type { AVStreamGroupInterface, AVStreamGroupParamsType, AVStreamInterface } from 'avutil/AVStream';
+import AVStream, { AVStreamGroup } from 'avutil/AVStream';
+import type AVPacket from 'avutil/struct/avpacket';
+import type OFormat from './formats/OFormat';
+import type IFormat from './formats/IFormat';
+import type IOWriterSync from 'common/io/IOWriterSync';
+import type IOReader from 'common/io/IOReader';
+import type IOWriter from 'common/io/IOWriter';
+import type IOReaderSync from 'common/io/IOReaderSync';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 import { AVFormat } from 'avutil/avformat';
-import { Rational } from 'avutil/struct/rational';
+import type { Rational } from 'avutil/struct/rational';
 export interface AVChapter {
     /**
      * 章节 id
@@ -39,6 +40,7 @@ declare class AVFormatContextInterval {
 export interface AVIFormatContext {
     metadata: Record<string, any>;
     streams: AVStream[];
+    streamGroups: AVStreamGroup[];
     options: Record<string, any>;
     chapters: AVChapter[];
     privateData: Record<string, any>;
@@ -50,14 +52,24 @@ export interface AVIFormatContext {
     errorFlag: number;
     interval: AVFormatContextInterval;
     streamIndex: number;
+    streamGroupIndex: number;
     getStreamById(id: number): AVStream;
+    getStreamGroupById(id: number): AVStreamGroup;
     getStreamByIndex(index: number): AVStream;
+    getStreamGroupByIndex(index: number): AVStreamGroup;
     getStreamByMediaType(mediaType: AVMediaType): AVStream;
+    getStreamGroupByGroupType(groupType: AVStreamGroupParamsType): AVStreamGroup;
     createStream(): AVStream;
+    createStreamGroup(type: AVStreamGroupParamsType): AVStreamGroup;
     addStream(stream: AVStream): void;
+    addStreamGroup(group: AVStreamGroup): void;
+    addStreamToStreamGroup(group: AVStreamGroup, stream: AVStream): void;
     removeStream(stream: AVStream): void;
+    removeStreamGroup(group: AVStreamGroup): void;
     removeStreamById(id: number): void;
+    removeStreamGroupById(id: number): void;
     removeStreamByIndex(index: number): void;
+    removeStreamGroupByIndex(index: number): void;
     destroy(): Promise<void>;
     getDecoderResource: (mediaType: AVMediaType, codecId: AVCodecID) => Promise<WebAssemblyResource> | WebAssemblyResource;
 }
@@ -65,6 +77,7 @@ export interface AVOFormatContext {
     metadataHeaderPadding: int32;
     metadata: Record<string, any>;
     streams: AVStream[];
+    streamGroups: AVStreamGroup[];
     options: Record<string, any>;
     chapters: AVChapter[];
     privateData: Record<string, any>;
@@ -75,26 +88,38 @@ export interface AVOFormatContext {
     errorFlag: number;
     interval: AVFormatContextInterval;
     streamIndex: number;
+    streamGroupIndex: number;
     getStreamById(id: number): AVStream;
+    getStreamGroupById(id: number): AVStreamGroup;
     getStreamByIndex(index: number): AVStream;
+    getStreamGroupByIndex(index: number): AVStreamGroup;
     getStreamByMediaType(mediaType: AVMediaType): AVStream;
+    getStreamGroupByGroupType(groupType: AVStreamGroupParamsType): AVStreamGroup;
     createStream(): AVStream;
+    createStreamGroup(type: AVStreamGroupParamsType): AVStreamGroup;
     addStream(stream: AVStream): void;
+    addStreamGroup(group: AVStreamGroup): void;
+    addStreamToStreamGroup(group: AVStreamGroup, stream: AVStream): void;
     removeStream(stream: AVStream): void;
+    removeStreamGroup(group: AVStreamGroup): void;
     removeStreamById(id: number): void;
+    removeStreamGroupById(id: number): void;
     removeStreamByIndex(index: number): void;
+    removeStreamGroupByIndex(index: number): void;
     destroy(): Promise<void>;
 }
 export interface AVFormatContextInterface {
     metadata: Record<string, any>;
     format: AVFormat;
     streams: AVStreamInterface[];
+    streamGroups: AVStreamGroupInterface[];
     chapters: AVChapter[];
 }
 export declare class AVFormatContext {
     metadataHeaderPadding: number;
     metadata: Record<string, any>;
     streams: AVStream[];
+    streamGroups: AVStreamGroup[];
     options: Record<string, any>;
     chapters: AVChapter[];
     privateData: Record<string, any>;
@@ -106,17 +131,28 @@ export declare class AVFormatContext {
     errorFlag: number;
     interval: AVFormatContextInterval;
     streamIndex: number;
+    streamGroupIndex: number;
     getDecoderResource: (mediaType: AVMediaType, codecId: AVCodecID) => Promise<WebAssemblyResource> | WebAssemblyResource;
     constructor();
     get format(): AVFormat;
     getStreamById(id: number): AVStream;
+    getStreamGroupById(id: number): AVStreamGroup;
     getStreamByIndex(index: number): AVStream;
+    getStreamGroupByIndex(index: number): AVStreamGroup;
     getStreamByMediaType(mediaType: AVMediaType): AVStream;
+    getStreamGroupByGroupType(groupType: AVStreamGroupParamsType): AVStreamGroup;
+    getAttachmentPicture(): AVStream;
     createStream(): AVStream;
+    createStreamGroup(type: AVStreamGroupParamsType): AVStreamGroup;
     addStream(stream: AVStream): void;
+    addStreamGroup(group: AVStreamGroup): void;
+    addStreamToStreamGroup(group: AVStreamGroup, stream: AVStream): void;
     removeStream(stream: AVStream): void;
+    removeStreamGroup(group: AVStreamGroup): void;
     removeStreamById(id: number): void;
+    removeStreamGroupById(id: number): void;
     removeStreamByIndex(i: number): void;
+    removeStreamGroupByIndex(i: number): void;
     destroy(): Promise<void>;
 }
 /**

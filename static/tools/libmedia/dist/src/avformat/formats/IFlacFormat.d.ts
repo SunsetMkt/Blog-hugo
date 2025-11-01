@@ -1,9 +1,9 @@
-import AVStream from 'avutil/AVStream';
-import { AVIFormatContext } from '../AVFormatContext';
-import AVPacket from 'avutil/struct/avpacket';
+import type AVStream from 'avutil/AVStream';
+import type { AVIFormatContext } from '../AVFormatContext';
+import type AVPacket from 'avutil/struct/avpacket';
 import IFormat from './IFormat';
 import { AVFormat } from 'avutil/avformat';
-import { FlacContext } from './flac/type';
+import type { FlacContext } from './flac/type';
 export default class IFlacFormat extends IFormat {
     type: AVFormat;
     context: FlacContext;

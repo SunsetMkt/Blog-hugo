@@ -1,7 +1,8 @@
-import { PCMParameters } from 'audioresample/Resampler';
-import AVFilterNode, { AVFilterNodeOptions } from '../AVFilterNode';
-import AVFrame from 'avutil/struct/avframe';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { PCMParameters } from 'audioresample/Resampler';
+import type { AVFilterNodeOptions } from '../AVFilterNode';
+import AVFilterNode from '../AVFilterNode';
+import type AVFrame from 'avutil/struct/avframe';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 export interface ResampleFilterNodeOptions extends AVFilterNodeOptions {
     resource: WebAssemblyResource | ArrayBuffer;
     output: PCMParameters;

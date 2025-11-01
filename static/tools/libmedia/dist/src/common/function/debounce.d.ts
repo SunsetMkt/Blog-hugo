@@ -1,7 +1,7 @@
 /**
  * @file 防抖函数
  */
-import { Fn } from '../types/type';
+import type { Fn } from '../types/type';
 /**
  * 防抖函数
  *

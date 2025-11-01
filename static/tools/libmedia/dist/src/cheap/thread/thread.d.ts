@@ -1,4 +1,4 @@
-import { PromiseType, RemoveNeverProperties } from 'common/types/advanced';
+import type { PromiseType, RemoveNeverProperties } from 'common/types/advanced';
 import IPCPort from 'common/network/IPCPort';
 type AsyncReturnWithoutProperties<T> = RemoveNeverProperties<{
     [K in keyof T]: T[K] extends (...args: any[]) => any ? (T[K] extends (...args: any[]) => Promise<any> ? T[K] & {

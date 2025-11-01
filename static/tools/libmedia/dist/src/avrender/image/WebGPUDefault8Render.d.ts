@@ -1,5 +1,5 @@
-import AVFrame from 'avutil/struct/avframe';
-import { WebGPURenderOptions } from './WebGPURender';
+import type AVFrame from 'avutil/struct/avframe';
+import type { WebGPURenderOptions } from './WebGPURender';
 import WebGPUDefaultRender from './WebGPUDefaultRender';
 export default class WebGPUDefault8Render extends WebGPUDefaultRender {
     private linesize;

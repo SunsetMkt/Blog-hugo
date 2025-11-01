@@ -1,13 +1,14 @@
-import { Data } from 'common/types/type';
-import Pipeline, { TaskOptions } from './Pipeline';
+import type { Data } from 'common/types/type';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
 import IPCPort from 'common/network/IPCPort';
-import { RpcMessage } from 'common/network/IPCPort';
-import { AVFormatContextInterface, AVIFormatContext } from 'avformat/AVFormatContext';
+import type { RpcMessage } from 'common/network/IPCPort';
+import type { AVFormatContextInterface, AVIFormatContext } from 'avformat/AVFormatContext';
 import IOReader from 'common/io/IOReader';
 import { AVFormat } from 'avutil/avformat';
-import List from 'cheap/std/collection/List';
-import { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
-import { Mutex } from 'cheap/thread/mutex';
+import type List from 'cheap/std/collection/List';
+import type { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
+import type { Mutex } from 'cheap/thread/mutex';
 import LoopTask from 'common/timer/LoopTask';
 export declare const STREAM_INDEX_ALL = -1;
 export interface DemuxTaskOptions extends TaskOptions {
@@ -56,6 +57,7 @@ export default class DemuxPipeline extends Pipeline {
     addPendingStream(taskId: string, streamIndex: number): Promise<void>;
     changeConnectStream(taskId: string, newStreamIndex: number, oldStreamIndex: number, force?: boolean, start?: boolean): Promise<void>;
     private doDemux;
+    private doAttachedPicture;
     startDemux(taskId: string, isLive: boolean, minQueueLength: int32): Promise<void>;
     seek(taskId: string, timestamp: int64, flags: int32, streamIndex?: int32): Promise<int64>;
     /**

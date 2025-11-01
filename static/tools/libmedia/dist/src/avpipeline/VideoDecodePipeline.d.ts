@@ -1,17 +1,19 @@
-import Pipeline, { TaskOptions } from './Pipeline';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
 import IPCPort from 'common/network/IPCPort';
-import List from 'cheap/std/collection/List';
-import { AVFrameRef } from 'avutil/struct/avframe';
-import { Mutex } from 'cheap/thread/mutex';
+import type List from 'cheap/std/collection/List';
+import type { AVFrameRef } from 'avutil/struct/avframe';
+import type { Mutex } from 'cheap/thread/mutex';
 import WasmVideoDecoder, { AVDiscard } from 'avcodec/wasmcodec/VideoDecoder';
 import WebVideoDecoder from 'avcodec/webcodec/VideoDecoder';
-import { WebAssemblyResource } from 'cheap/webassembly/compiler';
+import type { WebAssemblyResource } from 'cheap/webassembly/compiler';
 import AVFramePoolImpl from 'avutil/implement/AVFramePoolImpl';
-import { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
+import type { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
 import AVCodecParameters from 'avutil/struct/avcodecparameters';
 import { AVCodecID } from 'avutil/codec';
-import { Data } from 'common/types/type';
-import { AVCodecParametersSerialize } from 'avutil/util/serialize';
+import type { Data } from 'common/types/type';
+import type { AVCodecParametersSerialize } from 'avutil/util/serialize';
+import type { AlphaVideoFrame } from './struct/type';
 export interface VideoDecodeTaskOptions extends TaskOptions {
     resource: ArrayBuffer | WebAssemblyResource;
     enableHardware: boolean;
@@ -20,6 +22,8 @@ export interface VideoDecodeTaskOptions extends TaskOptions {
     avframeList: pointer<List<pointer<AVFrameRef>>>;
     avframeListMutex: pointer<Mutex>;
     preferWebCodecs?: boolean;
+    preferLatency?: boolean;
+    keepAlpha?: boolean;
 }
 type SelfTask = Omit<VideoDecodeTaskOptions, 'resource'> & {
     resource: WebAssemblyResource;
@@ -29,7 +33,7 @@ type SelfTask = Omit<VideoDecodeTaskOptions, 'resource'> & {
     softwareDecoderOpened: boolean;
     hardwareDecoder?: WebVideoDecoder;
     targetDecoder: WasmVideoDecoder | WebVideoDecoder;
-    frameCaches: (pointer<AVFrameRef> | VideoFrame)[];
+    frameCaches: (pointer<AVFrameRef> | VideoFrame | AlphaVideoFrame)[];
     inputEnd: boolean;
     needKeyFrame: boolean;
     parameters: pointer<AVCodecParameters>;

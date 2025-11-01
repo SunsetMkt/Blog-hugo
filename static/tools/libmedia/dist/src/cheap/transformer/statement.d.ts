@@ -1,5 +1,5 @@
 import ts from 'typescript';
-import { DeclarationData, ImportData, RequireData, TransformerOptions } from './type';
+import type { DeclarationData, ImportData, RequireData, TransformerOptions } from './type';
 export declare enum StageStatus {
     NONE = 0,
     CALL = 1,

@@ -1,5 +1,5 @@
-import IOReader from '../../io/IOReader';
-import IOWriter from '../../io/IOWriter';
+import type IOReader from '../../io/IOReader';
+import type IOWriter from '../../io/IOWriter';
 export declare class TextMessageRequest {
     method: string;
     uri: string;

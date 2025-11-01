@@ -1,20 +1,24 @@
-import Pipeline, { TaskOptions } from './Pipeline';
+import type { TaskOptions } from './Pipeline';
+import Pipeline from './Pipeline';
 import IPCPort from 'common/network/IPCPort';
-import { AVOFormatContext } from 'avformat/AVFormatContext';
+import type { AVChapter, AVOFormatContext } from 'avformat/AVFormatContext';
 import { AVFormat } from 'avutil/avformat';
-import List from 'cheap/std/collection/List';
-import { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
-import { Mutex } from 'cheap/thread/mutex';
+import type List from 'cheap/std/collection/List';
+import type { AVPacketPool, AVPacketRef } from 'avutil/struct/avpacket';
+import type { Mutex } from 'cheap/thread/mutex';
 import LoopTask from 'common/timer/LoopTask';
-import { AVStreamInterface } from 'avutil/AVStream';
-import AVCodecParameters from 'avutil/struct/avcodecparameters';
-import { Data } from 'common/types/type';
+import { type AVStreamInterface } from 'avutil/AVStream';
+import type AVStream from 'avutil/AVStream';
+import type AVCodecParameters from 'avutil/struct/avcodecparameters';
+import type { Data } from 'common/types/type';
 export interface MuxTaskOptions extends TaskOptions {
     isLive?: boolean;
     format: AVFormat;
     formatOptions: Data;
     avpacketList: pointer<List<pointer<AVPacketRef>>>;
     avpacketListMutex: pointer<Mutex>;
+    nonnegative?: boolean;
+    zeroStart?: boolean;
 }
 type SelfTask = MuxTaskOptions & {
     rightIPCPort: IPCPort;
@@ -23,7 +27,7 @@ type SelfTask = MuxTaskOptions & {
     loop: LoopTask;
     ended: boolean;
     streams: {
-        stream: AVStreamInterface;
+        stream: AVStream;
         pullIPC: IPCPort;
         avpacketQueue: pointer<AVPacketRef>[];
         ended: boolean;
@@ -36,7 +40,9 @@ export default class MuxPipeline extends Pipeline {
     private createTask;
     open(taskId: string): Promise<0 | -1 | -2>;
     addStream(taskId: string, stream: AVStreamInterface, port: MessagePort): Promise<void>;
-    updateAVCodecParameters(taskId: string, streamIndex: int32, codecpar: pointer<AVCodecParameters>): Promise<void>;
+    addFormatContextMetadata(taskId: string, metadata: Data): Promise<void>;
+    addFormatContextChapters(taskId: string, chapters: AVChapter[]): Promise<void>;
+    updateAVCodecParameters(taskId: string, streamId: int32, codecpar: pointer<AVCodecParameters>): Promise<void>;
     start(taskId: string): Promise<number>;
     pause(taskId: string): Promise<void>;
     unpause(taskId: string): Promise<void>;

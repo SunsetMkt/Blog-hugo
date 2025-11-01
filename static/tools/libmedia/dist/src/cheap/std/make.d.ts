@@ -1,4 +1,4 @@
-import { Data } from 'common/types/type';
+import type { Data } from 'common/types/type';
 /**
  * 创建一个 struct 实例
  *

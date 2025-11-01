@@ -1,5 +1,5 @@
-import { AudioWorkletNodeObserver } from './audioWorklet/base/AudioWorkletNodeBase';
-import { Data } from 'common/types/type';
+import type { AudioWorkletNodeObserver } from './audioWorklet/base/AudioWorkletNodeBase';
+import type { Data } from 'common/types/type';
 export interface AudioSourceBufferNodeOptions extends AudioWorkletNodeOptions {
     isMainWorker?: boolean;
 }

@@ -1,4 +1,4 @@
-import IOReader from 'common/io/IOReader';
+import type IOReader from 'common/io/IOReader';
 export default class NaluReader {
     private buffer;
     private pos;

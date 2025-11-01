@@ -1,6 +1,7 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
-import IOLoader, { IOLoaderOptions } from './IOLoader';
-import { Data } from 'common/types/type';
+import type { Uint8ArrayInterface } from 'common/io/interface';
+import type { IOLoaderOptions } from './IOLoader';
+import IOLoader from './IOLoader';
+import type { Data } from 'common/types/type';
 export default abstract class SocketIOLoader extends IOLoader {
     protected readQueue: Uint8Array[];
     protected consume: (value: void | PromiseLike<void>) => void;

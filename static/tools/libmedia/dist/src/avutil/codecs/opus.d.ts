@@ -1,6 +1,6 @@
-import AVStream from '../AVStream';
-import AVCodecParameters from '../struct/avcodecparameters';
-import { Uint8ArrayInterface } from 'common/io/interface';
+import { AVPacketSideDataType } from '../codec';
+import type AVCodecParameters from '../struct/avcodecparameters';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 export declare const durations: number[];
 export declare function getBufferSamples(buffer: Uint8Array): number;
 /**
@@ -19,5 +19,8 @@ export declare function getBufferSamples(buffer: Uint8Array): number;
  *  - C bytes, C 为总输出声道数 coupledStreamCount + streamCount
  *
  */
-export declare function parseAVCodecParameters(stream: AVStream, extradata?: Uint8ArrayInterface): void;
+export declare function parseAVCodecParameters(stream: {
+    codecpar: AVCodecParameters;
+    sideData: Partial<Record<AVPacketSideDataType, Uint8Array>>;
+}, extradata?: Uint8ArrayInterface): void;
 export declare function avCodecParameters2Extradata(codecpar: AVCodecParameters): Uint8Array<ArrayBuffer>;

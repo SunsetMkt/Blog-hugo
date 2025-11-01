@@ -1,6 +1,6 @@
-import { Mutex } from '../../../thread/mutex';
-import { Cond } from '../../../thread/cond';
-import { Timespec } from '../semaphore';
+import type { Mutex } from '../../../thread/mutex';
+import type { Cond } from '../../../thread/cond';
+import type { Timespec } from '../semaphore';
 /**
  * WebAssembly runtime 实例
  */

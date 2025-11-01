@@ -1,7 +1,7 @@
 /**
  * from https://github.com/clux/sdp-transform
  */
-import { Data } from 'common/types/type';
+import type { Data } from 'common/types/type';
 export type SdpGrammar = {
     name?: string;
     push?: string;

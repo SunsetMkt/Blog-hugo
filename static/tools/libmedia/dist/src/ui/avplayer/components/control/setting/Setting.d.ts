@@ -1,3 +1,3 @@
-import { ComponentOptions } from 'yox';
+import type { ComponentOptions } from 'yox';
 declare const Setting: ComponentOptions;
 export default Setting;

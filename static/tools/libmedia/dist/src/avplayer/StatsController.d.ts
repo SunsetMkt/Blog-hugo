@@ -1,4 +1,4 @@
-import Stats from 'avpipeline/struct/stats';
+import type Stats from 'avpipeline/struct/stats';
 export interface StatsControllerObserver {
     onVideoStutter: () => void;
     onVideoDiscard: () => void;

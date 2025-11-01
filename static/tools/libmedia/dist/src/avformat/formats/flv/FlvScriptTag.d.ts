@@ -1,6 +1,6 @@
-import IOReader from 'common/io/IOReader';
+import type IOReader from 'common/io/IOReader';
 import IOWriterSync from 'common/io/IOWriterSync';
-import { FlvMetaData } from './type';
+import type { FlvMetaData } from './type';
 export default class FlvScriptTag {
     onMetaData: Partial<FlvMetaData>;
     constructor();

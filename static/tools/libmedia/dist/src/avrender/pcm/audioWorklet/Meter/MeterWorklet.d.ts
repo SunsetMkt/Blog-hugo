@@ -1,4 +1,5 @@
-import AudioWorkletNodeBase, { AudioWorkletNodeObserver } from '../base/AudioWorkletNodeBase';
+import type { AudioWorkletNodeObserver } from '../base/AudioWorkletNodeBase';
+import AudioWorkletNodeBase from '../base/AudioWorkletNodeBase';
 export interface MeterWorkletNodeObserver extends AudioWorkletNodeObserver {
     onAudioLevel: (audioLevel: number) => void;
 }

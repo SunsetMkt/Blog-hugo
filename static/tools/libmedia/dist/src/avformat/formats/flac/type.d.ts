@@ -1,4 +1,4 @@
-import BitReader from 'common/io/BitReader';
+import type BitReader from 'common/io/BitReader';
 export interface StreamInfo {
     minimumBlockSize: int16;
     maximumBlockSize: int16;

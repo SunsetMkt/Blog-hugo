@@ -1,4 +1,4 @@
-import { BytesReaderSync, BytesReader, BytesWriter, BytesWriterSync } from '../io/interface';
+import type { BytesReaderSync, BytesReader, BytesWriter, BytesWriterSync } from '../io/interface';
 export declare const enum SectionId {
     Custom = 0,
     Type = 1,

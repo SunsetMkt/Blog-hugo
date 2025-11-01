@@ -1,4 +1,4 @@
-import { Uint8ArrayInterface } from 'common/io/interface';
+import type { Uint8ArrayInterface } from 'common/io/interface';
 export declare function isAnnexb(data: Uint8ArrayInterface): boolean;
 export declare function getNextNaluStart(data: Uint8ArrayInterface, offset: number): {
     offset: number;

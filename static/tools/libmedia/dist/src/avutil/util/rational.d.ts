@@ -1,4 +1,4 @@
-import { Rational } from '../struct/rational';
+import type { Rational } from '../struct/rational';
 /**
  * 将一个时间戳由一个时间基转换到另一个时间基
  *

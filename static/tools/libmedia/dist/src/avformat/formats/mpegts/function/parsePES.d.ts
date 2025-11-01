@@ -1,2 +1,2 @@
-import { PES } from '../struct';
+import type { PES } from '../struct';
 export default function parsePES(pes: PES): 0 | -2;

@@ -1,5 +1,6 @@
-import AVPlayer, { AVPlayerOptions } from 'avplayer/AVPlayer';
-import { Component } from 'yox';
+import type { AVPlayerOptions } from 'avplayer/AVPlayer';
+import AVPlayer from 'avplayer/AVPlayer';
+import type { Component } from 'yox';
 export declare const enum MenuAction {
     STATS = 0
 }

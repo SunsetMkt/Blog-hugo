@@ -1,7 +1,7 @@
 /**
  * @file 节流调用
  */
-import { Fn } from '../types/type';
+import type { Fn } from '../types/type';
 /**
  * 节流调用
  *

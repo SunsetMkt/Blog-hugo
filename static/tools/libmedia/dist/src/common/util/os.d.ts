@@ -10,6 +10,6 @@
  * }
  *
  */
-import { OS } from '../types/type';
+import type { OS } from '../types/type';
 declare const os: OS;
 export default os;

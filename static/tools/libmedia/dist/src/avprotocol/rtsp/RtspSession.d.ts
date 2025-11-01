@@ -1,8 +1,8 @@
-import IOReader from 'common/io/IOReader';
-import IOWriter from 'common/io/IOWriter';
+import type IOReader from 'common/io/IOReader';
+import type IOWriter from 'common/io/IOWriter';
 import { TextMessageSession } from 'common/network/textMessage/message';
 import { RtspStreamingMode } from './rtsp';
-import { Range } from 'common/types/type';
+import type { Range } from 'common/types/type';
 export interface RtspTransport {
     trackId: number;
     streamMode: RtspStreamingMode;
