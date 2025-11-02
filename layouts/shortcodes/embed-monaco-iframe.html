@@ -43,7 +43,7 @@
       }
       var raw_src = src.valueOf();
       src = encodeURI(src);
-      var href = "/tools/embeddable-monaco/index.html?lang=plaintext&theme=vs-dark&fileUrl=" + src;
+      var href = "/tools/embeddable-monaco/index.html?code=Loading&lang=auto&theme=vs-dark&readonly=true&fileUrl=" + src;
       iframe.src = href;
       link.href = href;
       // download.href = raw_src;
