@@ -32,7 +32,7 @@
       var iframe = document.getElementById("embed-office-iframe-" + uniqueID);
       var link = document.getElementById("embed-office-link-" + uniqueID);
       var download = document.getElementById("embed-office-download-" + uniqueID);
-      var currentPageLocation = window.location.toString();
+      var currentPageLocation = window.location.toString().split('?')[0]?.split('#')[0];
       if (currentPageLocation.endsWith("/") == false) {
         currentPageLocation += "/";
       }

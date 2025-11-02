@@ -23,7 +23,7 @@
               var uniqueID = "{{ $uniqueID }}";
               var origSrc = "{{ $src }}";
               var link = document.getElementById("video-link-libmedia-" + uniqueID);
-              var currentPageLocation = window.location.toString();
+              var currentPageLocation = window.location.toString().split('?')[0]?.split('#')[0];
               if (currentPageLocation.endsWith("/") == false) {
                 currentPageLocation += "/";
               }

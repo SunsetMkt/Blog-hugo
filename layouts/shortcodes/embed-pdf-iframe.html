@@ -32,7 +32,7 @@
       var iframe = document.getElementById("embed-pdf-iframe-" + uniqueID);
       var link = document.getElementById("embed-pdf-link-" + uniqueID);
       var download = document.getElementById("embed-pdf-download-" + uniqueID);
-      var currentPageLocation = window.location.toString();
+      var currentPageLocation = window.location.toString().split('?')[0]?.split('#')[0];
       if (currentPageLocation.endsWith("/") == false) {
         currentPageLocation += "/";
       }
