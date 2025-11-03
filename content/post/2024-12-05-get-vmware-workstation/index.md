@@ -10,9 +10,11 @@ slug: get-vmware-workstation
 title: 获取 VMware Workstation Pro 的下载链接
 ---
 
-> 更新：自[Mar 25, 2025](https://community.broadcom.com/vmware-cloud-foundation/question/certificate-error-is-occured-during-connecting-update-server)（[其他报告](https://community.broadcom.com/vmware-cloud-foundation/discussion/the-update-server-could-not-be-resolved)），Broadcom 已关闭`softwareupdate.vmware.com`，~~此方法不可用~~。
+> ~~更新：自[Mar 25, 2025](https://community.broadcom.com/vmware-cloud-foundation/question/certificate-error-is-occured-during-connecting-update-server)（[其他报告](https://community.broadcom.com/vmware-cloud-foundation/discussion/the-update-server-could-not-be-resolved)），Broadcom 已关闭`softwareupdate.vmware.com`，此方法不可用。~~
 >
-> 更新：域名现在是`softwareupdate-prod.broadcom.com`，但它没有启用 index 生成，可使用[moonheart/vmware-index](https://github.com/moonheart/vmware-index)。
+> ~~更新：域名现在是`softwareupdate-prod.broadcom.com`，但它没有启用 index 生成，可使用[moonheart/vmware-index](https://github.com/moonheart/vmware-index)。~~
+>
+> Broadcom 关闭了所有已知的下载站点，本文记载的所有方法均无效。
 >
 > 快速跳转到 Broadcom 下载页面（需要账号）：
 >
