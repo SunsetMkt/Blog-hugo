@@ -14,14 +14,14 @@
         >
         |
         <a
-            href="/tools/embeddable-monaco/index.html?code=Loading&lang=auto&theme=vs-dark&readonly=true&fileUrl="
+            href="/tools/embeddable-monaco/index.html?folding=true&lang=auto&theme=vs-dark&readonly=false&fileUrl="
             target="_blank"
             id="embed-monaco-link-{{ $uniqueID }}"
             >在新页面打开</a
         >
     </p>
     <iframe
-        src="/tools/embeddable-monaco/index.html?code=Loading&lang=auto&theme=vs-dark&readonly=true&fileUrl="
+        src="/tools/embeddable-monaco/index.html?folding=true&lang=auto&theme=vs-dark&readonly=false&fileUrl="
         style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
         id="embed-monaco-iframe-{{ $uniqueID }}"
     ></iframe>
@@ -43,7 +43,7 @@
       }
       var raw_src = src.valueOf();
       src = encodeURI(src);
-      var href = "/tools/embeddable-monaco/index.html?code=Loading&lang=auto&theme=vs-dark&readonly=true&fileUrl=" + src;
+      var href = "/tools/embeddable-monaco/index.html?folding=true&lang=auto&theme=vs-dark&readonly=false&fileUrl=" + src;
       iframe.src = href;
       link.href = href;
       // download.href = raw_src;
