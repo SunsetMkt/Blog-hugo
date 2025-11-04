@@ -7,6 +7,7 @@ var loggingPrefix = "[Custom]";
 
 console.log(loggingPrefix, "Custom scripts loaded");
 
+// Run a function safely
 function safeRun(func: () => void) {
     try {
         func();
@@ -17,6 +18,7 @@ function safeRun(func: () => void) {
     }
 }
 
+// Run an async function safely
 async function safeRunAsync(func: () => Promise<void>) {
     try {
         await func();
@@ -33,9 +35,17 @@ import rotate_emoji from "./rotate-emoji.js";
 import footer_debug from "./footer-debug.js";
 import cf_trace from "./cf-trace.js";
 import post_css_loader from "./post-css-loader.js";
+import SunsetBlog from "./SunsetBlog.js";
 
+// Hello world
 safeRun(hello);
+// Handle avatar emoji onclick rotation
 safeRun(rotate_emoji);
+// Handle footer spam click to debug
 safeRun(footer_debug);
+// Handle Cloudflare Trace information display
 safeRun(cf_trace);
+// Load CSS after the page is loaded
 safeRun(post_css_loader);
+// Register SunsetBlog to window for tool usage
+safeRun(SunsetBlog);
