@@ -1,6 +1,7 @@
 {{- partial "helper/external" (dict "Context" . "Namespace" "Vibrant") -}}
 
-{{- $opts := dict "minify" hugo.IsProduction "sourceMap" "linked" -}}
+{{- $sourceMapOpt := cond hugo.IsProduction "linked" "inline" -}}
+{{- $opts := dict "minify" hugo.IsProduction "sourceMap" $sourceMapOpt -}}
 {{- $script := resources.Get "ts/main.ts" | js.Build $opts | fingerprint -}}
 
 
