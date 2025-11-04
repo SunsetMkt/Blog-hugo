@@ -1,6 +1,5 @@
-import { loadCSSPreload } from "./post-css-loader.js";
-import Confetti from "./confetti.js";
-import * as tools from "./tools.js";
+import Confetti from "./confetti.mjs";
+import * as tools from "./tools.mjs";
 
 export default function () {
     if (!window) {
@@ -13,7 +12,8 @@ export default function () {
         return "pong";
     };
 
-    SunsetBlog.loadCSSPreload = loadCSSPreload;
+    SunsetBlog.loadCSSPreload = tools.loadCSSPreload;
+    SunsetBlog.addScriptTag = tools.addScriptTag;
 
     SunsetBlog.Confetti = Confetti;
 

@@ -51,3 +51,28 @@ export function detectRootDomainByCookieTest() {
     // 如果循环结束仍都成功（极少见），返回最上层成功的
     return lastSuccessful;
 }
+
+export function addScriptTag(src, async, onload) {
+    var scriptElement = document.createElement("script");
+    scriptElement.async = async;
+    scriptElement.src = src;
+    if (onload) {
+        scriptElement.onload = onload;
+    }
+    var firstScriptElement = document.getElementsByTagName("script")[0];
+    firstScriptElement.parentNode.insertBefore(
+        scriptElement,
+        firstScriptElement,
+    );
+}
+
+export async function loadCSSPreload(href) {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "style";
+    link.href = href;
+    link.onload = function () {
+        link.rel = "stylesheet";
+    };
+    document.head.appendChild(link);
+}

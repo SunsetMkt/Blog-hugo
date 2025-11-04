@@ -30,12 +30,12 @@ async function safeRunAsync(func: () => Promise<void>) {
 }
 
 // Import and run scripts
-import hello from "./hello.js";
-import rotate_emoji from "./rotate-emoji.js";
-import footer_debug from "./footer-debug.js";
-import cf_trace from "./cf-trace.js";
-import post_css_loader from "./post-css-loader.js";
-import SunsetBlog from "./SunsetBlog.js";
+import hello from "./hello.mjs";
+import rotate_emoji from "./rotate-emoji.mjs";
+import footer_debug from "./footer-debug.mjs";
+import cf_trace from "./cf-trace.mjs";
+import post_css_loader from "./post-css-loader.mjs";
+import SunsetBlog from "./SunsetBlog.mjs";
 
 // Hello world
 safeRun(hello);
