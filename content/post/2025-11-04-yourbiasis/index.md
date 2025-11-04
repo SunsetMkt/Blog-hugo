@@ -7,198 +7,198 @@ slug: yourbiasis
 title: 汝当远离认知偏见
 ---
 
-[Source](https://yourbias.is/) 本作品采用知识共享署名-非商业性使用国际许可协议 4.0 进行许可。
+[Source](https://yourbias.is/) 本作品采用知识共享署名-非商业性使用国际许可协议 4.0 进行许可，使用`gemini-2.5-pro`翻译。
 
-## anchoring
+## 锚定效应 (anchoring)
 
-### The first thing you judge influences your judgment of all that follows
+### 你判断的第一件事会影响你对之后所有事情的判断
 
-Human minds are associative in nature, so the order in which we receive information helps determine the course of our judgments and perceptions. For instance, the first price offered for a used car sets an ‘anchor’ price which will influence how reasonable or unreasonable a counter-offer might seem. Even if we feel like an initial price is far too high, it can make a slightly less-than-reasonable offer seem entirely reasonable in contrast to the anchor price.
+人类的思维本质上是联想性的，因此我们接收信息的顺序有助于决定我们判断和感知的过程。例如，一辆二手车的首次报价设定了一个“锚定价格”，这将影响还价看起来是多么合理或不合理。即使我们觉得最初的价格高得离谱，但与锚定价格相比，一个略低于合理水平的报价也可能显得完全合理。
 
-Be especially mindful of this bias during financial negotiations such as houses, cars, and salaries. The initial price offered has proven to have a significant effect.
+在房屋、汽车和薪水等财务谈判中，要特别注意这种偏见。事实证明，首次提出的价格具有显著影响。
 
-## the sunk cost fallacy
+## 沉没成本谬误 (the sunk cost fallacy)
 
-### You irrationally cling to things that have already cost you something
+### 你非理性地执着于那些已经让你付出代价的事情
 
-When we've invested our time, money, or emotion into something, it hurts us to let it go. This aversion to pain can distort our better judgment and cause us to make unwise investments. A sunk cost means that we can't recover it, so it's rational to disregard the cost when evaluating. For instance, if you've spent money on a meal but you only feel like eating half of it, it's irrational to continue to stuff your face just because 'you've already paid for it'; especially considering the fact that you're wasting actual time doing so.
+当我们在某件事上投入了时间、金钱或情感时，放弃它会让我们感到痛苦。这种对痛苦的厌恶会扭曲我们更好的判断力，导致我们做出不明智的投资。沉没成本意味着我们无法收回它，因此在评估时忽略该成本是理性的。例如，如果你花钱买了一顿饭，但你只想吃掉一半，仅仅因为“你已经付了钱”就继续硬塞，这是不理性的；尤其要考虑到这样做实际上是在浪费时间。
 
-To regain objectivity, ask yourself: had I not already invested something, would I still do so now? What would I counsel a friend to do if they were in the same situation?
+为了恢复客观性，问问自己：如果我没有投入任何东西，我现在还会这样做吗？如果朋友处于同样的情况，我会建议他们怎么做？
 
-## the availability heuristic
+## 可得性启发 (the availability heuristic)
 
-### Your judgments are influenced by what springs most easily to mind
+### 你的判断受到最容易想到的事情的影响
 
-How recent, emotionally powerful, or unusual your memories are can make them seem more relevant. This, in turn, can cause you to apply them too readily. For instance, when we see news reports about homicides, child abductions, and other terrible crimes it can make us believe that these events are much more common and threatening to us than is actually the case.
+你的记忆有多近、情绪上有多强烈或多不寻常，都会让它们看起来更具相关性。这反过来又会导致你过于轻易地应用它们。例如，当我们看到关于凶杀、儿童绑架和其他可怕罪行的新闻报道时，它会让我们相信这些事件比实际情况更常见，对我们的威胁也更大。
 
-Try to gain different perspectives and relevant statistical information rather than relying purely on first judgments and emotive influences.
+尝试获得不同的视角和相关的统计信息，而不是纯粹依赖第一判断和情绪影响。
 
-## the curse of knowledge
+## 知识的诅咒 (the curse of knowledge)
 
-### Once you understand something you presume it to be obvious to everyone
+### 一旦你理解了某件事，你就会认为它对每个人来说都是显而易见的
 
-Things makes sense once they make sense, so it can be hard to remember why they didn't. We build complex networks of understanding and forget how intricate the path to our available knowledge really is. This bias is closely related to the hindsight bias wherein you will tend to believe that an event was predictable all along once it has occurred. We have difficulty reconstructing our own prior mental states of confusion and ignorance once we have clear knowledge.
+事情一旦讲得通了，就变得理所当然，所以很难记起当初为什么不懂。我们建立了复杂的理解网络，却忘记了通往我们现有知识的道路是多么错综复杂。这种偏见与后见之明偏见密切相关，即一旦事件发生，你就会倾向于相信它自始至终都是可以预测的。一旦我们有了清晰的知识，就很难重建我们自己先前困惑和无知的精神状态。
 
-When teaching someone something new, go slow and explain like they're ten years old (without being patronizing). Repeat key points and facilitate active practice to help embed knowledge.
+在教别人新东西时，要慢慢来，像对十岁的孩子一样解释（但不要居高临下）。重复要点，并促进积极练习以帮助巩固知识。
 
-## confirmation bias
+## 确认偏见 (confirmation bias)
 
-### You favor things that confirm your existing beliefs
+### 你倾向于支持那些证实你现有信念的事情
 
-We are primed to see and agree with ideas that fit our preconceptions, and to ignore and dismiss information that conflicts with them. You could say that this is the mother of all biases, as it affects so much of our thinking through motivated reasoning. To help counteract its influence we ought to presume ourselves wrong until proven right.
+我们倾向于看到并同意符合我们先入为主观念的想法，而忽略和驳斥与它们相冲突的信息。你可以说这是所有偏见之母，因为它通过动机性推理极大地影响了我们的思维。为了帮助抵制它的影响，我们应该假设自己是错的，直到被证明是正确的。
 
-Think of your ideas and beliefs as software you're actively trying to find problems with rather than things to be defended. "The first principle is that you must not fool yourself – and you are the easiest person to fool." - Richard Feynman
+把你的想法和信念看作是你正积极尝试发现问题的软件，而不是需要捍卫的东西。“首要原则是你决不能欺骗自己——而你自己是最容易被欺骗的人。” - 理查德·费曼
 
-## the dunning-kruger effect
+## 邓宁-克鲁格效应 (the dunning-kruger effect)
 
-### The more you know, the less confident you're likely to be
+### 你知道得越多，你可能越不自信
 
-Because experts know just how much they don't know, they tend to underestimate their ability; but it's easy to be over-confident when you have only a simple idea of how things are. Try not to mistake the cautiousness of experts as a lack of understanding, nor to give much credence to lay-people who appear confident but have only superficial knowledge.
+因为专家知道他们不知道的有多少，所以他们往往会低估自己的能力；但当你对事情只有一个简单的概念时，就很容易过度自信。尽量不要把专家的谨慎误认为缺乏理解，也不要过多相信那些看起来自信但只有肤浅知识的外行。
 
-“The whole problem with the world is that fools and fanatics are so certain of themselves, yet wiser people so full of doubts.”- Bertrand Russell
+“这个世界的整个问题在于，傻瓜和狂热分子总是如此肯定自己，而聪明人却充满怀疑。” - 伯特兰·罗素
 
-## belief bias
+## 信念偏见 (belief bias)
 
-### If a conclusion supports your existing beliefs, you'll rationalize anything that supports it
+### 如果一个结论支持你现有的信念，你会为任何支持它的东西进行辩护
 
-It's difficult for us to set aside our existing beliefs to consider the true merits of an argument. In practice this means that our ideas become impervious to criticism, and are perpetually reinforced. Instead of thinking about our beliefs in terms of 'true or false' it's probably better to think of them in terms of probability. For example we might assign a 95%+ chance that thinking in terms of probability will help us think better, and a less than 1% chance that our existing beliefs have no room for any doubt. Thinking probabalistically forces us to evaluate more rationally.
+我们很难搁置现有的信念来考虑一个论点的真正价值。在实践中，这意味着我们的想法变得不受批评，并被永久地强化。与其用“真或假”来看待我们的信念，不如用概率来思考它们可能会更好。例如，我们可以认为，用概率思维有助于我们更好地思考的可能性有 95%以上，而我们现有的信念没有任何怀疑余地的可能性不到 1%。概率性思考迫使我们更理性地评估。
 
-A useful thing to ask is 'when and how did I get this belief?' We tend to automatically defend our ideas without ever really questioning them.
+一个有用的问题是“我是在何时以及如何获得这种信念的？”我们倾向于自动捍卫我们的想法，而从未真正质疑过它们。
 
-## self-serving bias
+## 自利偏见 (self-serving bias)
 
-### You believe your failures are due to external factors, yet you're responsible for your successes
+### 你相信你的失败是由于外部因素，而你的成功则归功于你自己
 
-Many of us enjoy unearned privileges, luck and advantages that others do not. It's easy to tell ourselves that we deserve these things, whilst blaming circumstance when things don't go our way. Our desire to protect and exalt our own egos is a powerful force in our psychology. Fostering humility can help countermand this tendency, whilst also making us nicer humans.
+我们中的许多人享有他人所没有的、非靠努力得来的特权、运气和优势。我们很容易告诉自己，我们理应得到这些东西，而在事情不顺利时则归咎于环境。我们保护和提升自我形象的愿望是我们心理中的一股强大力量。培养谦逊有助于抵消这种倾向，同时也能让我们成为更好的人。
 
-When judging others, be mindful of how this bias interacts with the just-world hypothesis, fundamental attribution error, and the in-group bias.
+在评判他人时，要注意这种偏见如何与公正世界假说、基本归因错误和群体内偏见相互作用。
 
-## the backfire effect
+## 逆火效应 (the backfire effect)
 
-### When some aspect of your core beliefs is challenged, it can cause you to believe even more strongly
+### 当你的核心信念受到挑战时，它可能导致你更加坚信它
 
-We can experience being wrong about some ideas as an attack upon our very selves, or our tribal identity. This can lead to motivated reasoning which causes a reinforcement of beliefs, despite disconfirming evidence. Recent research shows that the backfire effect certainly doesn't happen all the time. Most people will accept a correction relating to specific facts, however the backfire effect may reinforce a related or 'parent' belief as people attempt to reconcile a new narrative in their understanding.
+当我们发现自己对某些想法的看法是错误时，我们可能会觉得这是对我们自身或我们部落身份的攻击。这可能导致动机性推理，从而强化信念，尽管有相反的证据。最近的研究表明，逆火效应当然不是一直都会发生。大多数人会接受与特定事实相关的纠正，然而，当人们试图在他们的理解中调和一种新的叙述时，逆火效应可能会强化一个相关或“父级”信念。
 
-“It ain’t what you don’t know that gets you into trouble. It’s what you know for sure that just ain’t so.” - Mark Twain
+“让你陷入麻烦的不是你不知道的事，而是你深信不疑但事实并非如此的事。” - 马克·吐温
 
-## the barnum effect
+## 巴纳姆效应 (the barnum effect)
 
-### You see personal specifics in vague statements by filling in the gaps
+### 你通过填补空白，在模糊的陈述中看到个人化的细节
 
-Because our minds are given to making connections, it's easy for us to take nebulous statements and find ways to interpret them so that they seem specific and personal. The combination of our egos wanting validation with our strong inclination to see patterns and connections means that when someone is telling us a story about ourselves, we look to find the signal and ignore all the noise.
+因为我们的思维倾向于建立联系，所以我们很容易接受模糊的陈述，并找到解释它们的方式，使它们看起来具体而个人化。我们的自尊心渴望得到验证，再加上我们强烈的发现模式和联系的倾向，这意味着当有人告诉我们一个关于我们自己的故事时，我们会去寻找信号而忽略所有的噪音。
 
-Psychics, astrologers and others use this bias to make it seem like they're telling you something relevant. Consider how things might be interpreted to apply to anyone, not just you.
+通灵师、占星家和其他人利用这种偏见，让它看起来像是在告诉你一些相关的事情。考虑一下这些事情如何可以被解释为适用于任何人，而不仅仅是你。
 
-## groupthink
+## 群体思维 (groupthink)
 
-### You let the social dynamics of a group situation override the best outcomes
+### 你让群体情境中的社交动态凌驾于最佳结果之上
 
-Dissent can be uncomfortable and dangerous to one's social standing, and so often the most confident or first voice will determine group decisions. Because of the Dunning-Kruger effect, the most confident voices are also often the most ignorant.
+异议可能会让人不舒服，并对自己的社会地位构成威胁，因此通常最自信或第一个发声的人会决定群体的决策。由于邓宁-克 ruger 效应，最自信的声音也往往是最无知的。
 
-Rather than openly contradicting others, seek to facilitate objective means of evaluation and critical thinking practices as a group activity.
+与其公开反驳他人，不如寻求促进客观的评估方法和批判性思维实践，将其作为一项集体活动。
 
-## negativity bias
+## 消极偏见 (negativity bias)
 
-### You allow negative things to disproportionately influence your thinking
+### 你让负面的事情对你的思维产生不成比例的影响
 
-The pain of loss and hurt are felt more keenly and persistently than the fleeting gratification of pleasant things. We are primed for survival, and our aversion to pain can distort our judgment for a modern world. In an evolutionary context it makes sense for us to be heavily biased to avoid threats, but because this bias affects our judgments in other ways it means we aren't giving enough weight to the positives.
+失去和伤害的痛苦比愉快事物的短暂满足感感受得更敏锐、更持久。我们为生存而生，我们对痛苦的厌恶会扭曲我们对现代世界的判断。在进化背景下，我们严重偏向于避免威胁是有道理的，但由于这种偏见以其他方式影响我们的判断，这意味着我们没有给予积极因素足够的重视。
 
-Pro-and-con lists, as well as thinking in terms of probabilities, can help you evaluate things more objectively than relying on a cognitive impression.
+利弊清单，以及用概率思维，可以帮助你比依赖认知印象更客观地评估事物。
 
-## declinism
+## 衰落主义 (declinism)
 
-### You remember the past as better than it was, and expect the future to be worse than it will likely be
+### 你记忆中的过去比实际更好，并期望未来比可能的情况更糟
 
-Despite living in the most peaceful and prosperous time in history, many people believe things are getting worse. The 24 hour news cycle, with its reporting of overtly negative and violent events, may account for some of this effect. We can also look to the generally optimistic view of the future in the early 20th century as being shifted to a dystopian and apocalyptic expectation after the world wars, and during the cold war. The greatest tragedy of this bias may be that our collective expectation of decline may contribute to a real-world self-fulfilling prophecy.
+尽管生活在历史上最和平、最繁荣的时代，但许多人认为情况正在变得更糟。24 小时新闻周期及其对公然负面和暴力事件的报道，可能是造成这种效应的部分原因。我们也可以看到，20 世纪初对未来的普遍乐观观点，在世界大战后和冷战期间，转变为一种反乌托邦和末日般的期望。这种偏见最大的悲剧可能是，我们对衰落的集体期望可能促成一个现实世界中的自我实现预言。
 
-Instead of relying on nostalgic impressions of how great things used to be, use measurable metrics such as life expectancy, levels of crime and violence, and prosperity statistics.
+与其依赖于对过去多么美好的怀旧印象，不如使用可衡量的指标，如预期寿命、犯罪和暴力水平以及繁荣统计数据。
 
-## the framing effect
+## 框架效应 (the framing effect)
 
-### You allow yourself to be unduly influenced by context and delivery
+### 你让自己受到背景和表达方式的不当影响
 
-We all like to think that we think independently, but the truth is that all of us are, in fact, influenced by delivery, framing and subtle cues. This is why the ad industry is a thing, despite almost everyone believing they’re not affected by advertising messages. The phrasing of how a question is posed, such as for a proposed law being voted on, has been shown to have a significant effect on the outcome.
+我们都喜欢认为自己是独立思考的，但事实是，我们所有人实际上都受到表达方式、框架和微妙暗示的影响。这就是为什么广告业会存在，尽管几乎每个人都认为自己不受广告信息的影响。一个问题的措辞方式，比如对一项拟议法律进行投票时的提问方式，已被证明对结果有显著影响。
 
-Only when we have the intellectual humility to accept the fact that we can be manipulated, can we hope to limit how much we are. Try to be mindful of how things are being put to you.
+只有当我们有足够的理智谦逊，接受我们可能被操纵的事实时，我们才能希望限制我们被操纵的程度。试着留意事情是如何呈现给你的。
 
-## fundamental attribution error
+## 基本归因错误 (fundamental attribution error)
 
-### You judge others on their character, but yourself on the situation
+### 你根据他人的性格来判断他们，却根据情况来判断自己
 
-If you haven’t had a good night’s sleep, you know why you’re being a bit slow; but if you observe someone else being slow you don’t have such knowledge and so you might presume them to just be a slow person. Because of this disparity in knowledge we often overemphasize the influence of circumstance for our own failings, as well as underestimating circumstantial factors to explain other people's problems.
+如果你没有睡个好觉，你知道自己为什么反应有点慢；但如果你观察到别人反应慢，你没有这样的信息，所以你可能会认为他们就是一个慢吞吞的人。由于这种信息上的不对等，我们常常过分强调环境对我们自身失败的影响，同时低估环境因素对解释他人问题的解释力。
 
-It's not only kind to view others' situations with charity, it's more objective too. Be mindful to also err on the side of taking personal responsibility rather than justifying and blaming.
+以宽容之心看待他人的处境不仅是仁慈的，也是更客观的。注意也要倾向于承担个人责任，而不是辩解和指责。
 
-## the halo effect
+## 光环效应 (the halo effect)
 
-### How much you like someone, or how attractive they are, influences your other judgments of them
+### 你对某人的喜爱程度，或他们的吸引力，会影响你对他们的其他判断
 
-Our judgments are associative and automatic, and so if we want to be objective we need to consciously control for irrelevant influences. This is especially important in a professional setting. Things like attractiveness can unduly influence issues as important as a jury deciding someone's guilt or innocence. If someone is successful or fails in one area, this can also unfairly color our expectations of them in another area.
+我们的判断是联想性和自动的，所以如果我们想做到客观，我们需要有意识地控制不相关的因素。这在专业环境中尤其重要。像吸引力这样的事情，可能会不当地影响到像陪审团决定某人是否有罪或无罪这样重要的问题。如果某人在一个领域成功或失败，这也可能不公平地影响我们对他们在另一个领域的期望。
 
-If you notice that you're giving consistently high or low marks across the board, it's worth considering that your judgment may be suffering from the halo effect.
+如果你注意到你对所有方面的评分都始终很高或很低，那么值得考虑一下你的判断可能正遭受光环效应的影响。
 
-## optimism bias
+## 乐观偏见 (optimism bias)
 
-### You overestimate the likelihood of positive outcomes
+### 你高估了积极结果的可能性
 
-There can be benefits to a positive attitude, but it's unwise to allow such an attitude to adversely affect our ability to make rational judgments (they're not mutually exclusive). Wishful thinking can be a tragic irony insofar as it can create more negative outcomes, such as in the case of problem gambling.
+积极的态度可能带来好处，但让这种态度对我们做出理性判断的能力产生不利影响是不明智的（它们并非相互排斥）。一厢情愿的想法可能具有悲剧性的讽刺意味，因为它可能导致更多负面结果，例如在问题赌博的情况下。
 
-If you make rational, realistic judgments you'll have a lot more to feel positive about.
+如果你做出理性、现实的判断，你将会有更多值得积极看待的事情。
 
-## pessimism bias
+## 悲观偏见 (pessimism bias)
 
-### You overestimate the likelihood of negative outcomes
+### 你高估了负面结果的可能性
 
-Pessimism is often a defense mechanism against disappointment, or it can be the result of depression and anxiety disorders. Pessimists often justify their attitude by saying that they'll either be vindicated or pleasantly surprised, however a pessimistic attitude may also limit potential positive outcomes. It should also be noted that pessimism is something very different to skepticism: the latter is a rational approach that seeks to remain impartial, while the former is an expectation of bad outcomes.
+悲观主义通常是一种对抗失望的防御机制，或者它可能是抑郁和焦虑症的结果。悲观主义者常常通过说他们要么会被证明是对的，要么会惊喜地发现自己错了来为自己的态度辩护，然而，悲观的态度也可能限制潜在的积极结果。还应该注意的是，悲观主义与怀疑主义非常不同：后者是一种寻求保持公正的理性方法，而前者是对坏结果的期望。
 
-Perhaps the worst aspect of pessimism is that even if something good happens, you'll probably feel pessimistic about it anyway.
+也许悲观主义最糟糕的一面是，即使好事发生，你可能仍然会对此感到悲观。
 
-## just-world hypothesis
+## 公正世界假说 (just-world hypothesis)
 
-### Your preference for justice makes you presume it exists
+### 你对正义的偏爱让你假定它的存在
 
-A world in which people don't always get what they deserve, hard work doesn't always pay off, and injustice happens is an uncomfortable one that threatens our preferred narrative. However, it is also the reality. This bias is often manifest in ideas such as 'what goes around comes around' or an expectation of 'karmic balance', and can also lead to blaming victims of crime and circumstance.
+一个人们并非总能得到应有报偿、辛勤工作并非总有回报、不公正时有发生的世界，是一个令人不安的世界，它威胁着我们偏好的叙事。然而，这也是现实。这种偏见常常体现在“善有善报，恶有恶报”或期望“因果报应”等观念中，也可能导致对犯罪和不幸的受害者进行指责。
 
-A more just world requires understanding rather than blame. Remember that everyone has their own life story, we’re all fallible, and bad things happen to good people.
+一个更公正的世界需要理解而非指责。记住，每个人都有自己的人生故事，我们都会犯错，坏事也会发生在好人身上。
 
-## in-group bias
+## 群体内偏见 (in-group bias)
 
-### You unfairly favor those who belong to your group
+### 你不公平地偏袒属于你群体的人
 
-We presume that we're fair and impartial, but the truth is that we automatically favor those who are most like us, or belong to our groups. This blind tribalism has evolved to strengthen social cohesion, however in a modern and multicultural world it can have the opposite effect.
+我们假设自己是公平和公正的，但事实是，我们会自动偏袒与我们最相似或属于我们群体的人。这种盲目的部落主义是为了加强社会凝聚力而演变而来的，然而，在一个现代和多元文化的世界里，它可能会产生相反的效果。
 
-Try to imagine yourself in the position of those in out-groups; whilst also attempting to be dispassionate when judging those who belong to your in-groups.
+试着设身处地地为群体外的人着想；同时在评判属于你群体内的人时，努力保持冷静。
 
-## the placebo effect
+## 安慰剂效应 (the placebo effect)
 
-### If you believe you're taking medicine it can sometimes 'work' even if it's fake
+### 如果你相信自己在服药，即使是假的，它有时也可能“起作用”
 
-The placebo effect can work for stuff that our mind influences (such as pain) but not so much for things like viruses or broken bones. Things like the size and color of pills can have an influence on how strong the effect is and may even result in real physiological outcomes. We can also falsely attribute getting better to an inert substance simply because our immune system has fought off an infection i.e. we would have recovered in the same amount of time anyway.
+安慰剂效应对我们的大脑能影响的东西（如疼痛）可能有效，但对病毒或骨折之类的东西则效果不大。药片的大小和颜色等因素会影响其效果的强弱，甚至可能导致真实的生理结果。我们也可能错误地将病情好转归因于一种惰性物质，仅仅因为我们的免疫系统已经击退了感染，也就是说，无论如何我们都会在同样的时间内康复。
 
-Homeopathy, acupuncture, and many other forms of natural 'medicine' have been proven to be no more effective than placebo. Keep a healthy body and bank balance by using evidence-based medicine from a qualified doctor.
+顺势疗法、针灸和许多其他形式的自然“医学”已被证明并不比安慰剂更有效。通过从合格医生那里获得循证医学来保持健康的身体和银行账户。
 
-## the bystander effect
+## 旁观者效应 (the bystander effect)
 
-### You presume someone else is going to do something in an emergency situation
+### 在紧急情况下，你假定别人会采取行动
 
-When something terrible is happening in a public setting we can experience a kind of shock and mental paralysis that distracts us from a sense of personal responsibility. The problem is that everyone can experience this sense of deindividuation in a crowd. This same sense of losing our sense of self in a crowd has been linked to violent and anti-social behaviors. Remaining self-aware requires some amount of effortful reflection in group situations.
+当在公共场所发生可怕的事情时，我们可能会经历一种震惊和精神麻痹，这会分散我们对个人责任感的注意力。问题是，在人群中，每个人都可能体验到这种去个体化的感觉。这种在人群中失去自我意识的感觉也与暴力和反社会行为有关。在群体情境中保持自我意识需要一些刻意的反思。
 
-If there's an emergency situation, presume to be the one who will help or call for help. Be the change you want to see in the world.
+如果出现紧急情况，假定自己是那个会去帮助或呼救的人。成为你想在世界上看到的那种改变。
 
-## reactance
+## 抗拒心理 (reactance)
 
-### You'd rather do the opposite of what someone is trying to make you do
+### 你宁愿做与别人试图让你做的事情相反的事
 
-When we feel our liberty is being constrained, our inclination is to resist, however in doing so we can over-compensate. While blind conformity is far from an ideal way to approach things, neither is being a knee-jerk contrarian.
+当我们感到自由受到限制时，我们的倾向是抵抗，然而这样做我们可能会反应过度。虽然盲目遵从远非理想的处事方式，但条件反射式的唱反调也不是。
 
-Be careful not to lose objectivity when someone is being coercive/manipulative, or trying to force you do something. Wisdom springs from reflection, folly from reaction.
+当有人在强迫/操纵你，或试图强迫你做某事时，要小心不要失去客观性。智慧源于反思，愚蠢源于反应。
 
-## the spotlight effect
+## 聚光灯效应 (the spotlight effect)
 
-### You overestimate how much people notice how you look and act
+### 你高估了人们对你的外表和行为的关注程度
 
-Most people are much more concerned about themselves than they are about you. Absent overt prejudices, people generally want to like and get along with you as it gives them validation too. It's healthy to remember that although we're the main character in the story of our own life, everyone else is center-stage in theirs too.
+大多数人更关心自己，而不是你。在没有公然偏见的情况下，人们通常希望喜欢你并与你和睦相处，因为这也给了他们认同感。记住这一点是健康的：虽然我们是自己生活故事的主角，但其他人也都是他们自己生活舞台的中心。
 
-Instead of worrying about how you’re being judged, consider how you make others feel. They'll remember this much more, and you'll make the world a better place.
+与其担心自己如何被评判，不如考虑你给别人带来了什么感受。他们会更长久地记住这一点，你也会让世界变得更美好。
 
 {{< embed-pdf-iframe file="SchoolOfThought_BiasesPoster_A3.pdf" >}}
