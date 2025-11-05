@@ -50,6 +50,10 @@ links:
       description: "Asahi Lina and Cyan Nyan, a VTuber yuri couple spreading love, knowledge, and positivity!"
       website: https://blog.thgirls.yt/
       image: TokyoHackerGirls.png
+    - title: "worable’s Blog"
+      description: ≡ω≡ 嗯对，一名普通的职一牲~
+      website: https://blog.cloudcn.top/
+      image: worable.jpg
     # - title: "Vincy云昔"
     #   description: 太阳出来了 雾就会散的
     #   website: https://blog.vincy1230.net/
@@ -71,10 +75,6 @@ links:
       description: 这个列表是一个开始，先把独立博客们收集起来。
       website: https://github.com/timqian/chinese-independent-blogs
       image: 5512552.jpg
-    - title: "𝗕𝗼𝗼𝗸💫🏳️‍⚧️（中考版）"
-      description: 🇨🇳｜🏳️‍⚧️｜MtF｜无证无糖｜未出柜｜初三牲 09
-      website: https://bsky.app/profile/cnbook.bsky.social
-      image: bafkreicm6jbpvgb65saoludrjvqo64qg4cxum657sedvkedhqi45go2jle.jpg
 menu:
     main:
         weight: 4
