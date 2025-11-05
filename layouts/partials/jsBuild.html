@@ -1,14 +1,16 @@
 {{/* jsBuild partial
     输入：
-    字符串路径: "js/main.ts"
-    或 partial "jsBuild" (dict "path" "js/main.ts" "opts" (dict "minify" false "target" "es2020"))
-    输出： fingerprint 后 js 路径（map 文件同名加 .map）
+    - 字符串路径: "js/main.ts"
+    - 或 dict: (dict "path" "js/main.ts" "opts" (dict "minify" false "target" "es2020"))
+    输出：
+    fingerprint 后 js 路径（map 文件同名加 .map）
 */}}
+
 {{- $input := . -}}
 {{- $path := "" -}}
 {{- $userOpts := dict -}}
 
-{{/* 判断输入类型：字符串或 map */}}
+{{/* 支持字符串或 map 输入 */}}
 {{- if reflect.IsMap $input -}}
     {{- if (isset $input "path") -}}
         {{- $path = index $input "path" -}}
@@ -31,10 +33,7 @@
     {{- errorf "jsBuild: resource not found for path %q" $path -}}
 {{- end -}}
 
-{{/* 默认构建参数 */}}
 {{- $defaultOpts := dict "minify" true "sourceMap" "inline" -}}
-
-{{/* 合并用户覆盖项 */}}
 {{- $opts := merge $defaultOpts $userOpts -}}
 
 {{- $built := $res | js.Build $opts | fingerprint -}}
@@ -47,17 +46,24 @@
 {{- if gt (len $matches) 0 -}}
     {{- $base64 := index (index $matches 0) 1 -}}
     {{- $mapBytes := base64Decode $base64 -}}
+    {{- $mapContent := string $mapBytes -}}
+
+    {{/* 替换 <stdin> 为原始文件名 */}}
+    {{- $sourceFile := path.Base $path -}}
+    {{- $mapContent = replace $mapContent "<stdin>" $sourceFile -}}
+
     {{- $clean := replaceRE $pattern "" $content -}}
 
     {{- $dir := path.Dir $built.RelPermalink | strings.TrimPrefix "/" -}}
     {{- $filename := path.Base $built.RelPermalink -}}
-    {{- $mapPath := printf "%s.map" (printf "%s/%s" $dir $filename) -}}
+    {{- $mapPath := cond (ne $dir "") (printf "%s/%s.map" $dir $filename) (printf "%s.map" $filename) -}}
 
-    {{- $map := resources.FromString $mapPath $mapBytes -}}
+    {{- $map := resources.FromString $mapPath $mapContent -}}
 
     {{- $mapURL := path.Base $map.RelPermalink -}}
     {{- $newJsContent := printf "%s\n//# sourceMappingURL=%s" $clean $mapURL -}}
-    {{- $finalJs = resources.FromString (printf "%s/%s" $dir $filename) $newJsContent | fingerprint -}}
+    {{- $jsOutPath := cond (ne $dir "") (printf "%s/%s" $dir $filename) $filename -}}
+    {{- $finalJs = resources.FromString $jsOutPath $newJsContent | fingerprint -}}
 {{- end -}}
 
 {{- return $finalJs.RelPermalink -}}
