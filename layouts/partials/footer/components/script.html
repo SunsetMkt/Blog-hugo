@@ -1,18 +1,10 @@
 {{- partial "helper/external" (dict "Context" . "Namespace" "Vibrant") -}}
 
-{{- $sourceMapOpt := cond hugo.IsProduction "linked" "inline" -}}
-{{- $opts := dict "minify" hugo.IsProduction "sourceMap" $sourceMapOpt -}}
-{{- $script := resources.Get "ts/main.ts" | js.Build $opts | fingerprint -}}
-
-
-<script type="text/javascript" src="{{ $script.RelPermalink }}" defer></script>
+{{ $mainScript := partial "jsBuild" "ts/main.ts" }}
+<script type="text/javascript" src="{{ $mainScript }}" defer></script>
 
 {{- with resources.Get "ts/custom.ts" -}}
     {{/* Place your custom script in HUGO_SITE_FOLDER/assets/ts/custom.ts */}}
-    {{- $customScript := . | js.Build $opts | fingerprint -}}
-    <script
-        type="text/javascript"
-        src="{{ $customScript.RelPermalink }}"
-        defer
-    ></script>
+    {{- $customScript := partial "jsBuild" "ts/custom.ts" -}}
+    <script type="text/javascript" src="{{ $customScript }}" defer></script>
 {{- end -}}

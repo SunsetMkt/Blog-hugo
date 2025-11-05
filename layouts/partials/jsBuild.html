@@ -1,0 +1,44 @@
+{{/* jsBuild partial
+    用于构建最终放置于 js 目录下的产物与 map。
+    输入: 相对路径 (assets/js/...等)
+    输出: 构建后 js 的相对路径 (带 fingerprint)，map 同名加 .map。
+*/}}
+
+{{- $path := . -}}
+{{- if not $path -}}
+    {{- errorf "jsBuild partial requires a path argument" -}}
+{{- end -}}
+
+{{- $res := resources.Get $path -}}
+{{- if not $res -}}
+    {{- errorf "jsBuild: resource not found for path %q" $path -}}
+{{- end -}}
+
+{{- $opts := dict "minify" true "sourceMap" "inline" -}}
+{{- $built := $res | js.Build $opts | fingerprint -}}
+
+{{- $content := $built.Content -}}
+{{- $pattern := `(?m)^//# sourceMappingURL=data:application/json;base64,([A-Za-z0-9+/=]+)$` -}}
+{{- $matches := findRESubmatch $pattern $content 1 -}}
+{{- $finalJs := $built -}}
+
+{{- if gt (len $matches) 0 -}}
+    {{- $base64 := index (index $matches 0) 1 -}}
+    {{- $mapBytes := base64Decode $base64 -}}
+    {{- $clean := replaceRE $pattern "" $content -}}
+
+    {{- /* 保留目录结构 */ -}}
+    {{- $dir := path.Dir $built.RelPermalink | strings.TrimPrefix "/" -}}
+    {{- $filename := path.Base $built.RelPermalink -}}
+    {{- $mapPath := printf "%s.map" (printf "%s/%s" $dir $filename) -}}
+
+    {{- /* 创建 map 文件 */ -}}
+    {{- $map := resources.FromString $mapPath $mapBytes -}}
+
+    {{- /* JS 文件指向相对 map */ -}}
+    {{- $mapURL := path.Base $map.RelPermalink -}}
+    {{- $newJsContent := printf "%s\n//# sourceMappingURL=%s" $clean $mapURL -}}
+    {{- $finalJs = resources.FromString (printf "%s/%s" $dir $filename) $newJsContent | fingerprint -}}
+{{- end -}}
+
+{{- return $finalJs.RelPermalink -}}
