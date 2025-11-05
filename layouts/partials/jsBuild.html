@@ -4,6 +4,8 @@
     - 或 dict: (dict "path" "js/main.ts" "opts" (dict "minify" false "target" "es2020"))
     输出：
     fingerprint 后 js 路径（map 文件同名加 .map）
+
+    Hugo 的 js.Build 只能在 inline 状态下生成超过一个源文件的 map
 */}}
 
 {{- $input := . -}}
