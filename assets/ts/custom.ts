@@ -41,11 +41,13 @@ import SunsetBlog from "./SunsetBlog.mjs";
 safeRun(hello);
 // Register SunsetBlog to window for tool usage
 safeRun(SunsetBlog);
-// Handle Cloudflare Trace information display
-safeRun(cf_trace);
 // Handle avatar emoji onclick rotation
 safeRun(rotate_emoji);
 // Handle footer spam click to debug
 safeRun(footer_debug);
+
+// Require extra Internet requests
+// Handle Cloudflare Trace information display
+safeRun(cf_trace);
 // Load CSS after the page is loaded
 safeRun(post_css_loader);
