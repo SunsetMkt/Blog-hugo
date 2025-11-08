@@ -41,5 +41,15 @@ export default function () {
     // page glitch
     SunsetBlog.breakThisPage = glitch;
 
+    // return UUID
+    SunsetBlog.UUID = function () {
+        return localStorage.SunsetUUID;
+    };
+
+    // disable zaraz
+    SunsetBlog.noZaraz = function () {
+        return zaraz.consent.setAll(false);
+    };
+
     window.SunsetBlog = SunsetBlog;
 }
