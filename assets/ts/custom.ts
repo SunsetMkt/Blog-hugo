@@ -5,7 +5,7 @@
 
 var loggingPrefix = "[Custom]";
 
-console.log(loggingPrefix, "Custom scripts loaded");
+console.log(loggingPrefix, "Custom scripts loading...");
 
 // Run a function safely
 function safeRun(func: () => void) {
@@ -51,3 +51,5 @@ safeRun(footer_debug);
 safeRun(cf_trace);
 // Load CSS after the page is loaded
 safeRun(post_css_loader);
+
+console.log(loggingPrefix, "Custom scripts loaded");
