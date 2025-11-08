@@ -1,6 +1,7 @@
 import Confetti from "./confetti.mjs";
 import * as tools from "./tools.mjs";
 // import jQuery from "./jquery-3.7.1.js";
+import Cookies from "./js.cookie.mjs";
 
 export default function () {
     if (!window) {
@@ -26,6 +27,8 @@ export default function () {
         tools.detectRootDomainByCookieTest;
 
     // SunsetBlog.jQuery = jQuery;
+
+    SunsetBlog.Cookies = Cookies;
 
     window.SunsetBlog = SunsetBlog;
 }
