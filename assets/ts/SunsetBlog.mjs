@@ -5,6 +5,7 @@ import Cookies from "./js.cookie.mjs";
 
 export default function () {
     if (!window) {
+        console.log("[SunsetBlog]", "window is not defined, skipping");
         return;
     }
 
