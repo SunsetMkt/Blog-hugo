@@ -444,6 +444,14 @@ async function getCfCDNinfo(id) {
 
     var finalText = coloName + attrsStr;
     textElement.innerText = finalText;
+
+    // Add result to window
+    if (window.SunsetBlog) {
+        window.SunsetBlog.cfTrace = trace;
+    }
+    // Dispatch event
+    const event = new CustomEvent("cfTraceParsedAndShown");
+    window.dispatchEvent(event);
 }
 
 export default function () {
