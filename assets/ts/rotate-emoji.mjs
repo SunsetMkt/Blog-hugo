@@ -50,8 +50,8 @@ export default function () {
             window.SunsetBlog.cfTrace.loc === "TW"
         ) {
             emojiList.unshift("🇹🇼");
-            currentIndex = 0;
-            rotateEmoji(emojiSpan);
+            currentIndex = -1;
+            // rotateEmoji(emojiSpan);
         }
     });
 }
