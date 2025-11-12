@@ -3,15 +3,17 @@ categories: Repost
 date: 2024-07-18T00:00:00Z
 description: 从早前的 LNMP、OneinStack 到 XZ Utils，再到现在的 Staticfile、BootCDN；供应链攻击总是让人猝不及防。
 tags:
-  - 信息安全
-  - 信息技术
-  - 前端
-  - 社会评论
-slug: 供应链投毒后，我们的选择还剩下哪些？
+    - 信息安全
+    - 信息技术
+    - 前端
+    - 社会评论
+slug: 供应链投毒后我们的选择还剩下哪些
 title: 供应链投毒后，我们的选择还剩下哪些？
 ---
 
-[原文链接](https://www.54yt.net/435.html)，著作权归作者所有，文章插图未转载。[网页存档](https://web.archive.org/web/20250317030721/https://www.54yt.net/435.html)。
+[原文链接](https://www.54yt.net/435.html)，著作权归作者所有。[网页存档](https://web.archive.org/web/20250317030721/https://www.54yt.net/435.html)。
+
+[![](3477431422.webp)](3477431422.webp)
 
 ### 前言
 
@@ -35,47 +37,82 @@ title: 供应链投毒后，我们的选择还剩下哪些？
 
 通过查阅记录可以发现，BootCSS.com 由王赛于 2012 年底批量注册，建站初期主要提供的是 BootStrap 介绍和交流[3,4,5]。于此同时进行批量注册的还有 golaravel.com 等一系列技术栈的中文网，猜测是想使用站群方式来进行项目文档的本地化，同时积累受众用户。
 
+[![域名批量注册备案](1112609884.webp "域名批量注册备案")](1112609884.webp)
+
 在 2013 年十一月初，BootStrap 中文网上线了 OpenCDN 加速服务，由又拍云赞助，提供 cdnjs 的国内镜像[6]。
+
+[![静态资源加速服务上线](1920556555.webp "静态资源加速服务上线")](1920556555.webp)
+
+[![又拍云提供赞助](1160348877.webp "又拍云提供赞助")](1160348877.webp)
 
 也许是由于用户的增长又拍云难以承担高额的成本，又或者是又拍觉得收益无法 Cover 成本，这段关系一直持续到了 2017 年年底[7]。自此之后的一段时间，提供服务的 CDN 便开始快速变更，从白山云到京东云，最终到了 10 月份由于账单压力或是其他原因出现了大面积的服务中断[8]。
 
+[![又拍云服务中断](1410603159.webp "又拍云服务中断")](1410603159.webp)
+
 在恢复后，原先的服务开始由猫云提供，自此开始 BootCDN 的服务出现了一些不连续的中断事件[9]。
+
+[![提供商变更为猫云](38043456.webp "提供商变更为猫云")](38043456.webp)
 
 2019 年 3 月、10 月、2020 年 1 月陆续出现小规模的中断，尽管如此，但是在接下来的几年时间中，猫云一直为 BootCDN 提供加速服务，只是加速域名从`cdn.bootcss.com`更换为了`cdn.bootcdn.net`；而于此同时百度静态资源公共库则彻底停止了服务。
 
-时间来到 2022 年，在 1 月份经历了中断后，2 月份猫云或许是基于和又拍云同样的原因停止了赞助，服务商也从此开始变更为了极兔云\[10\]。
+[![百度静态资源公共库停止服务](3918692803.webp "百度静态资源公共库停止服务")](3918692803.webp)
+
+时间来到 2022 年，在 1 月份经历了中断后，2 月份猫云或许是基于和又拍云同样的原因停止了赞助，服务商也从此开始变更为了极兔云[10]。
+
+[![服务商变更为极兔云](1065401829.webp "服务商变更为极兔云")](1065401829.webp)
 
 或许是由于极兔云本身是融合 CDN 服务，与上一家同样类型的赞助商服务相冲突的原因，BootCDN 发布公告表示将下线`cdn.bootcss.com`域名。
+
+[![BootCDN公告](3816909016.webp "BootCDN公告")](3816909016.webp)
 
 在此期间，jsDelivr 的备案被关停、解析被污染，从此基本断绝了在中国大陆的使用。
 
 ### 梦醒
 
-2023 年 4 月份，BootCDN 的三个关联域名[bootcdn.net,bootcdn.cn,bootcss.com]ICP 备案变更为`郑州紫田网络科技有限公司`，同时域名注册商也从阿里云转入腾讯云，由此揭幕了噩梦的来临\[11\]。
+2023 年 4 月份，BootCDN 的三个关联域名[bootcdn.net,bootcdn.cn,bootcss.com]ICP 备案变更为`郑州紫田网络科技有限公司`，同时域名注册商也从阿里云转入腾讯云，由此揭幕了噩梦的来临[11]。
 
-2023 年 6 月份，开始有用户陆续发现部分静态资源内存在投毒行为\[12\]。
+[![备案及注册商变更](1176657452.webp "备案及注册商变更")](1176657452.webp)
 
-即便到现在，投毒行为仍在继续，大量用户反馈存在资源被投毒\[13\]。
+2023 年 6 月份，开始有用户陆续发现部分静态资源内存在投毒行为[12]。
+
+[![用户开始发现投毒行为](2720012797.webp "用户开始发现投毒行为")](2720012797.webp)
+
+即便到现在，投毒行为仍在继续，大量用户反馈存在资源被投毒[13]。
+
+[![持续的投毒行为](2002450129.webp "持续的投毒行为")](2002450129.webp)
 
 自此 BootCDN 这个拥有十多年历史的国内静态资源加速服务彻底沦为了攻击者的工具，恶意代码随意被嵌入无数正在使用的网站中。而由于 BootCDN 历史久远，以至于许多生产环境甚至都不知道他们曾经引入了该服务。而这样的攻击相信还会继续持续下去，直到大家渐渐意识到...又或是仍旧...
 
 ### 巧合
 
-无独有偶，原本由七牛云提供服务的 Staticfile CDN 于 2023 年 10 月进行了备案信息变更和注册局转移[14]。
+无独有偶，原本由七牛云提供服务的 Staticfile
+CDN 于 2023 年 10 月进行了备案信息变更和注册局转移[14]。
+
+[![Staticfile备案变更](3469569330.webp "Staticfile备案变更")](3469569330.webp)
+
+[![Staticfile域名转移](1910424045.webp "Staticfile域名转移")](1910424045.webp)
 
 两个关联域名`staticfile.org`和`staticfile.net`被转入`河南泉磐网络科技有限公司`。
-
-而先前 BootCDN 所转入的公司名称为`郑州紫田网络科技有限公司`，两者同为河南省郑州市的相同类型公司。而先前`Ze-Zheng Wu`所发现的几个域名由统一组织控制高度符合\[15\]。
-
+而先前 BootCDN 所转入的公司名称为`郑州紫田网络科技有限公司`，两者同为河南省郑州市的相同类型公司。而先前`Ze-Zheng Wu`所发现的几个域名由统一组织控制高度符合[15]。
 通过天眼查查询可知紫田科技旗下知名的一个产品为`51.La`站点统计平台。
+
+[![紫田科技旗下产品](1919039665.webp "紫田科技旗下产品")](1919039665.webp)
 
 通过 Bing 搜索不难发现在 2023 年集中出现大量使用该统计平台遇到劫持的案例。
 
+[![51.La劫持](742121885.webp "51.La劫持")](742121885.webp)
+
 通过天眼查对紫田科技股东`徐征`进行查询，发现其曾担任`郑州帝恩爱斯网络科技有限公司`法定代表人及高管，也曾担任`河南云打包网络科技有限公司`高管和股东。
+
+[![曾任DNS.La法人](1731231198.webp "曾任DNS.La法人")](1731231198.webp)
 
 而 Staticfile 域名持有公司`河南图网信息技术有限公司`的法人`申石磊`同时任职`郑州帝恩爱斯网络科技有限公司`法定代表人。
 
+[![申石磊实际控制企业](353149248.webp "申石磊实际控制企业")](353149248.webp)
+
 而 Staticfile 的域名注册商商中在线也与紫田科技关联的公司存在着说不清道不明的关系。
+
+[![](3944715471.webp)](3944715471.webp)
 
 自此可以确定这两个原本由不同云厂商所赞助的静态资源加速服务已经被同一组织所控制，与上述`Ze-Zheng Wu`的调查一致。
 
@@ -83,13 +120,23 @@ title: 供应链投毒后，我们的选择还剩下哪些？
 
 通过查阅可以发现`郑州紫田网络科技有限公司`总经理`李跃磊`同时担任`河南亿恩科技股份有限公司`股东。
 
+[![李跃磊任职信息](2423598592.webp "李跃磊任职信息")](2423598592.webp)
+
 通过天眼查透视链可以查看到企业彼此之间的关联信息。
+
+[![](1172296499.webp)](1172296499.webp)
 
 故事到这里似乎就结束了，然而还有收购 polyfill 服务的那家公司`Funnull`需要进行调查。通过查询域名注册和备案信息可以发现背后的公司为`南京妙彩文化传播有限公司`。
 
+[![](132754244.webp)](132754244.webp)
+
 这家公司的主营业务则是为博彩网站提供国内优化 CDN 服务，与上述的劫持行为不谋而合。
 
+[![](2137386275.webp)](2137386275.webp)
+
 不过更为危险的是这家公司同时还提供诈骗、钓鱼、色站等令人发指的服务，将供应链攻击提升到了新的高度。
+
+[![](799859749.webp)](799859749.webp)
 
 ### 答案
 
@@ -150,18 +197,18 @@ sf.akass.cn
 cdn.jsdmirror.com
 ```
 
-\[1\][https://www.bleepingcomputer.com/news/security/polyfillio-bootcdn-bootcss-staticfile-attack-traced-to-1-operator/](https://www.bleepingcomputer.com/news/security/polyfillio-bootcdn-bootcss-staticfile-attack-traced-to-1-operator/)
-\[2\][https://www.v2ex.com/t/950163](https://www.v2ex.com/t/950163)
-\[3\][https://web.archive.org/web/20121206014141/http://www.bootcss.com/](https://web.archive.org/web/20121206014141/http://www.bootcss.com/)
-\[4\][https://ip.sb/whois/bootcss.com](https://ip.sb/whois/bootcss.com)
-\[5\][https://www.icpapi.com/%E4%BA%ACICP%E5%A4%8711008151%E5%8F%B7/](https://www.icpapi.com/%E4%BA%ACICP%E5%A4%8711008151%E5%8F%B7/)
-\[6\][https://web.archive.org/web/20131103022433/http://open.bootcss.com/](https://web.archive.org/web/20131103022433/http://open.bootcss.com/)
-\[7\][https://web.archive.org/web/20171230183848/http://www.bootcdn.cn/](https://web.archive.org/web/20171230183848/http://www.bootcdn.cn/)
-\[8\][https://global.v2ex.com/t/494375](https://global.v2ex.com/t/494375)
-\[9\][https://web.archive.org/web/20190119210705/https://www.bootcdn.cn/](https://web.archive.org/web/20190119210705/https://www.bootcdn.cn/)
-\[10\][https://web.archive.org/web/20220208201547/https://www.bootcdn.cn/](https://web.archive.org/web/20220208201547/https://www.bootcdn.cn/)
-\[11\][https://whoisfreaks.com/tools/whois/history/lookup/bootcss.com](https://whoisfreaks.com/tools/whois/history/lookup/bootcss.com)
-\[12\][https://www.v2ex.com/t/950163](https://www.v2ex.com/t/950163)
-\[13\][https://github.com/Tencent/vConsole/issues/683](https://github.com/Tencent/vConsole/issues/683)
-\[14\][https://www.icpapi.com/staticfile.net/](https://www.icpapi.com/staticfile.net/)
-\[15\][https://x.com/mdmck10/status/1806349965733544160](https://x.com/mdmck10/status/1806349965733544160)
+[1]<https://www.bleepingcomputer.com/news/security/polyfillio-bootcdn-bootcss-staticfile-attack-traced-to-1-operator/>
+[2]<https://www.v2ex.com/t/950163>
+[3][https://web.archive.org/web/20121206014141/http://www.bootcss.com/](https://web.archive.org/web/20121206014141/http%3A//www.bootcss.com/)
+[4]<https://ip.sb/whois/bootcss.com>
+[5]<https://www.icpapi.com/%E4%BA%ACICP%E5%A4%8711008151%E5%8F%B7/>
+[6][https://web.archive.org/web/20131103022433/http://open.bootcss.com/](https://web.archive.org/web/20131103022433/http%3A//open.bootcss.com/)
+[7][https://web.archive.org/web/20171230183848/http://www.bootcdn.cn/](https://web.archive.org/web/20171230183848/http%3A//www.bootcdn.cn/)
+[8]<https://global.v2ex.com/t/494375>
+[9][https://web.archive.org/web/20190119210705/https://www.bootcdn.cn/](https://web.archive.org/web/20190119210705/https%3A//www.bootcdn.cn/)
+[10][https://web.archive.org/web/20220208201547/https://www.bootcdn.cn/](https://web.archive.org/web/20220208201547/https%3A//www.bootcdn.cn/)
+[11]<https://whoisfreaks.com/tools/whois/history/lookup/bootcss.com>
+[12]<https://www.v2ex.com/t/950163>
+[13]<https://github.com/Tencent/vConsole/issues/683>
+[14]<https://www.icpapi.com/staticfile.net/>
+[15]<https://x.com/mdmck10/status/1806349965733544160>
