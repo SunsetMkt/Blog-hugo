@@ -10,8 +10,6 @@ title: 《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（
 ---
 
 > 当前，`CN 2.5.1`测试服已发布。此文档及上游项目已支持此版本。
->
-> 此版本客户端可通过[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader)下载。
 
 此文档针对`CN 2.5.1`测试服，不保证在未来正确无误。
 
@@ -73,7 +71,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ## 步骤
 
-所有涉及的 URL 都可以在[私服作者的 Discord 服务器](https://discord.com/channels/1154412462372818945/1283475673788452978)中的已标注消息找到。
+所有涉及的 URL 都可以在[私服作者的 Discord 服务器](https://discord.com/channels/1154412462372818945/1170994564107079751)中的（已标注）消息找到。
 
 我们将使用 Windows 11 下的 [Windows Terminal（终端）](ms-windows-store://pdp?productid=9n0dx20hk701&mode=mini)和 PowerShell，而非命令提示符。假定您的游戏安装和开发目录都位于`D:`下。
 
@@ -86,57 +84,6 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 **请自行在 Discord 群组内搜索第三方上传的客户端。**
 
 在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将下载的客户端解压到`client`文件夹，确保`Wuthering Waves.exe`在文件夹内。
-
-#### `2.4`版本（已失效）
-
-~~下载[wuwa-downloader](https://github.com/yuhkix/wuwa-downloader/releases)，在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将`wuwa-downloader.exe`放入`client`文件夹，运行它。~~
-
-> `wuwa-downloader.exe`在一些有互联网审查的地区可能需要开启全局代理（TUN/虚拟网卡）才可以连接 GitHub 获取最新的下载地址。
-
-~~跟随下面的示例操作：~~
-
-```plain
-[*] Available versions:
-1. Live - OS (2.3.1)
-2. Live - CN (2.3.1)
-3. Beta - OS (2.4.0)
-4. Beta - CN (2.4.0)
-[?] Select version: 4（输入 4，并按下 Enter）
-
-[*] Fetching download configuration...
-[*] Using default.config
-[?] Please specify the directory where the game should be downloaded (press Enter to use the current directory):
-
-（开始下载；不要担心它的下载速度，它是全速下载的；输出可能会卡顿，实际仍在下载）
-[*] Download folder: D:\WuWaPS\client
-
-[*] Fetching index file...
-[+] Index file downloaded successfully
-[*] Found 642 files to download
-
-（下载完成）
- DOWNLOAD COMPLETE
-
-[+] Successfully downloaded: 642
-[-] Failed downloads: 0
-[*] Files saved to: D:\WuWaPS\client
-
-[!] Press Enter to exit...
-```
-
-#### `2.3`及之前的版本（已失效）
-
-> ~~若启动器强制更新，请根据更新版本动态调整补丁文件中`filechecklist.json`的内容。~~
->
-> ~~启动器似乎可以在删除`filechecklist.json`的情况下运行，此文件或许不是必需的。~~
-
-~~下载[CN 测试版启动器](https://pcdownload-aliyun.aki-game.com/pcstarter/prod/starter/10008_Pa0Q0EMFxukjEqX33pF9Uyvdc8MaGPSz/G152/2.0.0.0/vgu4E1bmg2r5GMCydmVPcIvKpVwqdqDl/installer.exe)，使用 Discord 中的文件（`filechecklist.json`、`krfeapp.dat`和`KRApp.conf`）修补启动器，即可免登录下载客户端：~~
-
-```plain
-To work it new 2.0.0.0 place filechecklist.json and krfeapp.dat under <launcher_folder/2.0.0.0> and KRApp.conf under <launcher_folder/2.0.0.0/Assets>
-```
-
-~~假定启动器安装在`D:\Program Files\Wuthering Waves(Beta)`。~~
 
 ### 准备环境
 
@@ -353,8 +300,6 @@ cargo run --bin wicked-waifus-game-server
 
 ### 部件功能
 
-- ~~CN 测试版启动器和补丁：用于免登录下载测试版游戏客户端~~
-- 下载器（`wuwa-downloader`）：下载测试版游戏客户端
 - 补丁 DLL（`wicked-waifus-win-patch`）：需要注入的 DLL，绕过 Pak 校验，修改服务器 URL，禁用 Kuro SDK
 - 补丁 Pak（`wicked-waifus-pak`）：需要绕过 Pak 校验，禁用 TpSafe，禁用 Kuro SDK，修改 VisionRecommendController，修改登录界面 BGM
 - `launcher`（`ReversedRoomsMisc/process-launcher-rs`）：DLL 注入工具
