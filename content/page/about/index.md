@@ -43,7 +43,7 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 >
 > 你可以对政治毫无兴趣，可你必须确信：政治对你却太有兴趣，政治绝不会因为你对政治不关心而放过你。所以，假如你不想作戏台上一具可怜的傀儡，给别人随心所欲地推来推去，你就别无选择——必须关心政治。这其实就是关心你自己。[《新华日报》1945 年 9 月 11 日](https://web.archive.org/web/20250311084558/https://www.krzzjn.com/show-2794-5653.html)，文字略有改动
 
-尽管政治不是本站的主要内容，但政治议题不应被回避，本站也不会回避。本站将如实呈现事实和表达观点，即使涉及政治内容。也参考：[《不管你喜不喜欢，一切皆是政治》]({{< ref "2025-03-11-like-it-or-not-everything-is-political-chs" >}})[《不仅仅是政治：在一个政治化的社会中认识我们作为政治动物的角色》]({{< ref "2025-06-01-its-not-only-politics-recognising-our-role-as-political-animals-in-a-politicised-society-chs" >}})。
+尽管政治不是本站的主要内容，但政治议题不应被回避，本站也不会回避。本站将如实呈现事实和表达观点，即使涉及政治内容。也参考：[《不管你喜不喜欢，一切皆是政治》]({{< ref "2025-03-11-like-it-or-not-everything-is-political-chs" >}})[《不仅仅是政治：在一个政治化的社会中认识我们作为政治动物的角色》]({{< ref "2025-06-01-its-not-only-politics-recognising-our-role-as-political-animals-in-a-politicised-society-chs" >}})[《这不是政治分歧，而是人性差异》]({{< ref "2025-06-01-its-not-political-its-about-humanity-chs" >}})。
 
 ## 致谢
 
@@ -67,6 +67,10 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 - CDN: [UNPKG](https://github.com/unpkg/unpkg)
 - 评论: [Waline](https://github.com/walinejs/waline)
 - Hugo 主题: [CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
+- Markdown 格式化: [Prettier](https://github.com/prettier/prettier)
+- Markdown 转换: [markitdown](https://github.com/microsoft/markitdown)
+- 媒体处理: [FFmpeg](https://www.ffmpeg.org/)
+- 媒体处理: [HandBrake](https://github.com/HandBrake/HandBrake)
 
 ### 字体
 
