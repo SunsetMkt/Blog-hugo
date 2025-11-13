@@ -36,6 +36,7 @@ import footer_debug from "./footer-debug.mjs";
 import cf_trace from "./cf-trace.mjs";
 import post_css_loader from "./post-css-loader.mjs";
 import SunsetBlog from "./SunsetBlog.mjs";
+import Lenis from "./lenis-loader.mjs";
 
 // Hello world
 safeRun(hello);
@@ -45,6 +46,8 @@ safeRun(SunsetBlog);
 safeRun(rotate_emoji);
 // Handle footer spam click to debug
 safeRun(footer_debug);
+// Handle lenis scroll
+// safeRun(Lenis);
 
 // Require extra Internet requests
 // Handle Cloudflare Trace information display
