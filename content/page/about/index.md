@@ -51,11 +51,11 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 
 此网站的运行依赖于一些第三方服务，包括但不限于:
 
-- [GitHub](https://github.com/)
-- [Cloudflare](https://www.cloudflare.com/zh-cn/)
-- [UNPKG](https://unpkg.com/)
-- [Vercel](https://vercel.com/)
-- [jsDelivr](https://www.jsdelivr.com/)
+- Repository & CI: [GitHub](https://github.com/)
+- CI, CD, CDN, Performance & Security: [Cloudflare](https://www.cloudflare.com/zh-cn/)
+- CDN: [UNPKG](https://unpkg.com/)
+- CI, CD & Serverless: [Vercel](https://vercel.com/)
+- CDN: [jsDelivr](https://www.jsdelivr.com/)
 
 ### 开源软件
 
