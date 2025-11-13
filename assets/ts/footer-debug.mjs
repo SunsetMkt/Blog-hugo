@@ -15,7 +15,7 @@ function addScriptTag(src, async, onload) {
 function launchEruda() {
     addScriptTag("//unpkg.com/eruda@latest/eruda.js", false, function () {
         eruda.init();
-        console.log(
+        console.info(
             "[launchEruda]",
             "Console output before launch is not recorded",
         );
@@ -32,7 +32,7 @@ export default function () {
     debugTriggerBind.addEventListener("click", function () {
         debugTriggerCount++;
         if (debugTriggerCount == 5) {
-            console.log("[debugTriggerBind]", "Launch Eruda");
+            console.info("[debugTriggerBind]", "Launch Eruda");
             launchEruda();
             // localStorage.setItem("active-eruda", "true");
         }

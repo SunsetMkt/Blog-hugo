@@ -371,7 +371,7 @@ async function getCfCDNinfo(id) {
         const [key, value] = item.split("=");
         trace[key.trim()] = value.trim();
     }
-    console.log("[getCfCDNinfo]", trace);
+    console.info("[getCfCDNinfo]", trace);
 
     // Set alert text
     textElement.onclick = () => {

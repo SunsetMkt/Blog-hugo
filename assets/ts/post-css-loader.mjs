@@ -1,5 +1,5 @@
 export async function loadCSSPreload(href) {
-    console.log("[loadCSSPreload]", href);
+    console.info("[loadCSSPreload]", href);
     const link = document.createElement("link");
     link.rel = "preload";
     link.as = "style";

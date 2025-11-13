@@ -6,7 +6,7 @@ import glitch from "./glitch.mjs";
 
 export default function () {
     if (!window) {
-        console.log("[SunsetBlog]", "window is not defined, skipping");
+        console.info("[SunsetBlog]", "window is not defined, skipping");
         return;
     }
 

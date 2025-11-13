@@ -27,7 +27,7 @@ export default function () {
     function rotateEmoji(emojiSpan) {
         // Move to the next emoji in the list
         currentIndex = (currentIndex + 1) % emojiList.length;
-        console.log(
+        console.info(
             "[rotateEmoji]",
             emojiList[currentIndex],
             emojiList,
