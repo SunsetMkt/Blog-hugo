@@ -34,7 +34,7 @@
 
 <script>
     window.searchResultTitleTemplate = "{{ T `search.resultTitle` }}"
-</script> {{- $opts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" "sourceMap" "linked" -}}
+</script> {{- $opts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" "sourceMap" "inline" -}}
     {{- $searchScript := resources.Get "ts/search.tsx" | js.Build $opts | fingerprint -}}
     <script
         type="text/javascript"
