@@ -455,5 +455,11 @@ async function getCfCDNinfo(id) {
 }
 
 export default function () {
+    // If localhost, skip
+    if (window.location.hostname == "localhost") {
+        console.info("[getCfCDNinfo]", "Skipping on localhost");
+        return;
+    }
+
     getCfCDNinfo("cf-trace");
 }
