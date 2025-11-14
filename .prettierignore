@@ -1,0 +1,33 @@
+# 构建和分发文件夹
+static
+node_modules
+dist
+build
+lib
+out
+public
+resources
+
+# Minified
+*.min.js
+*.min.css
+
+# Bundled
+*.bundle.js
+*.esm.js
+*.cjs.js
+*.umd.js
+*.iife.js
+*.prod.js
+*.production.js
+
+# Live2D & Spine dist
+*.moc3
+*.model3.json
+*.motion3.json
+items_pinned_to_model.json
+*.cdi3.json
+*.motionsync3.json
+*.physics3.json
+*.vtube.json
+*.exp3.json

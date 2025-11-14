@@ -6,7 +6,7 @@
     "overrides": [
         {
             "files": [
-                "*.html"
+                "layouts/**/*.html"
             ],
             "options": {
                 "parser": "go-template"
