@@ -1,4 +1,5 @@
 {
     "[markdown]": {},
-    "files.trimFinalNewlines": false
+    "files.trimFinalNewlines": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
