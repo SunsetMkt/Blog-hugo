@@ -2,10 +2,10 @@
 categories: Repost
 date: 2023-05-24T00:00:00Z
 tags:
-  - WinRAR
-  - 信息技术
-  - 密码学
-  - 逆向工程
+    - WinRAR
+    - 信息技术
+    - 密码学
+    - 逆向工程
 slug: winrar-keygen
 title: “rarreg.key”是如何生成的？
 ---
@@ -314,7 +314,6 @@ WinRAR 的私钥 ![k-inlined] 为：
     </p>
 
 13. 格式化输出。
-
     - 固定文件头`"RAR registration data"`，占一行。
 
     - 用户名，占一行。
@@ -323,10 +322,9 @@ WinRAR 的私钥 ![k-inlined] 为：
 
     - UID，占一行：
 
-          <p align="center">
-            <img src="http://latex.codecogs.com/svg.latex?%5Ctexttt%7B%22UID%3D%22%7D%7C%7CUID">
-          </p>
-
+    <p align="center">
+        <img src="http://latex.codecogs.com/svg.latex?%5Ctexttt%7B%22UID%3D%22%7D%7C%7CUID">
+    </p>
     - 将 ![Data-inlined] 按照每行 54 个字符输出。
 
 ## 拓展阅读

@@ -541,15 +541,15 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [3] 关于 DMCA 颁布前事件的完整描述，*参见*Jessica Litman, Digital Copyright 89-150 (2000)。
 
-[4] *参见*Pamela Samuelson, _Intellectual Property and the Digital Economy: Why the Anti-Circumvention Regulations Need to be Revised_, 14 Berkeley Technology L.J. 519, 537-57 (1999)，_可在_http://www.sims.berkeley.edu/~pam/papers.html 获取。
+[4] *参见*Pamela Samuelson, _Intellectual Property and the Digital Economy: Why the Anti-Circumvention Regulations Need to be Revised_, 14 Berkeley Technology L.J. 519, 537-57 (1999)，_可在_ http://www.sims.berkeley.edu/~pam/papers.html 获取。
 
 [5] Brandon Wilson, _Skylanders portal documentation_ (2011 年 10 月 27 日 6:35 PM), http://brandonw.net/。
 
 [6] Russell Holly, _Activision Delivers Cease And Desist To Skylanders Tinkerer_, Geek (2011 年 12 月 28 日 2:48 PM), http://www.geek.com/articles/games/activision-delivers-cease-and-desist-to-skylanders-tinkerer-20111228/。
 
-[7] Mitchel Silberberg & Knupp, LLP 律师 Mark E. Mayer 致 Brandon L. Wilson 的信函（2011 年 10 月 26 日），_可在_http://brandonw.net/skylanders/activision.pdf 获取。
+[7] Mitchel Silberberg & Knupp, LLP 律师 Mark E. Mayer 致 Brandon L. Wilson 的信函（2011 年 10 月 26 日），_可在_ http://brandonw.net/skylanders/activision.pdf 获取。
 
-[8] *参见*Brandon L. Wilson 致 Mark E. Mayer, Mitchell Silberberg & Knupp LLP 的信函，_可在_http://brandonw.net/skylanders/response.txt 获取（最后访问于 2012 年 6 月 12 日）。
+[8] *参见*Brandon L. Wilson 致 Mark E. Mayer, Mitchell Silberberg & Knupp LLP 的信函，_可在_ http://brandonw.net/skylanders/response.txt 获取（最后访问于 2012 年 6 月 12 日）。
 
 [9] _参见同上。_
 
@@ -563,7 +563,7 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [14] Dan Goodin, _Texas Instruments Aims Lawyers at Calculator Hackers_, The Register (2009 年 9 月 23 日), http://www.theregister.co.uk/2009/09/23/texas\_instruments\_calculator\_hacking/。
 
-[15] EFF 致德州仪器的信函（2009 年 10 月 13 日），_可在_http://www.eff.org/files/filenode/coders/TI%20Claim%20Ltr%20101309.pdf 获取；内容链接：http://brandonw.net/calculators/keys/
+[15] EFF 致德州仪器的信函（2009 年 10 月 13 日），_可在_ http://www.eff.org/files/filenode/coders/TI%20Claim%20Ltr%20101309.pdf 获取；内容链接：http://brandonw.net/calculators/keys/
 
 [16] Robert McMillan, _Apple is Sued after Pressuring Open-Source iTunes Project_, PC World (2009 年 4 月 29 日), http://www.pcworld.com/article/163909/apple\_is\_sued\_after\_pressuring\_opensource\_itunes\_project.html。
 
@@ -571,23 +571,23 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [18] Thomas Clayburn, _Apple Drops Complaint Against BluWiki_, Information Week (2009 年 7 月 22 日), http://www.informationweek.com/news/personal\_tech/ipod/showArticle.jhtml?articleID=218600244。
 
-[19] Edward Felten 和 J. Alex Halderman 的评论，_RM 2005-11 – Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 2005 年 12 月 1 日, 6-7 页, _可在_http://web.archive.org/web/20061017084037/http://www.freedom-to-tinker.com/doc/2005/dmcacomment.pdf 获取（通过互联网档案的 Wayback Machine 访问）。
+[19] Edward Felten 和 J. Alex Halderman 的评论，_RM 2005-11 – Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 2005 年 12 月 1 日, 6-7 页, _可在_ http://web.archive.org/web/20061017084037/http://www.freedom-to-tinker.com/doc/2005/dmcacomment.pdf 获取（通过互联网档案的 Wayback Machine 访问）。
 
-[20] 版权登记官在 RM 2002-4 中的建议，2003 年 10 月 27 日，87-89 页，_可在_http://www.copyright.gov/1201/docs/registers-recommendation.pdf 获取。
+[20] 版权登记官在 RM 2002-4 中的建议，2003 年 10 月 27 日，87-89 页，_可在_ http://www.copyright.gov/1201/docs/registers-recommendation.pdf 获取。
 
-[21] Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies, 71 Fed. Reg. 68,472, 68,477 (2006 年 11 月 27 日), _可在_http://www.copyright.gov/fedreg/2006/71fr68472.pdf 获取。
+[21] Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies, 71 Fed. Reg. 68,472, 68,477 (2006 年 11 月 27 日), _可在_ http://www.copyright.gov/fedreg/2006/71fr68472.pdf 获取。
 
-[22] J. Alex Halderman 教授的评论，_可在_http://www.copyright.gov/1201/2008/comments/halderman-reid.pdf 获取。
+[22] J. Alex Halderman 教授的评论，_可在_ http://www.copyright.gov/1201/2008/comments/halderman-reid.pdf 获取。
 
 [23] _Rulemaking on Exemptions from Prohibition on Circumvention of Technological Measures that Control Access to Copyrighted Works,_ 美国版权局, http://www.copyright.gov/1201/2010/ (最后访问于 2012 年 5 月 30 日)（在特定情况下豁免视频游戏于第 1201(a)条责任，例如当规避仅用于发现软件中的安全漏洞时）。
 
-[24] _参见 Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 77 Fed. Reg. 208 (2012 年 10 月 26 日) (将编纂于 37 C.F.R. pt. 201), _可在_http://www.copyright.gov/fedreg/2012/77fr65260.pdf 获取。
+[24] _参见 Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 77 Fed. Reg. 208 (2012 年 10 月 26 日) (将编纂于 37 C.F.R. pt. 201), _可在_ http://www.copyright.gov/fedreg/2012/77fr65260.pdf 获取。
 
 [25] John Borland, _Student Faces Suit Over Key to CD Locks_, CNET News (2003 年 10 月 9 日), http://news.com.com/Student+faces+suit+over+key+to+CD+locks/2100-1025\_3-5089168.html; Declan McCullagh, _SunnComm Won’t Sue Grad Student_, CNET News (2003 年 10 月 10 日), http://news.com.com/2100-1027-5089448.html。
 
-[26] Jonathan Band, _Congress Unknowingly Undermines Cyber-Security_, San Jose Mercury News, 2002 年 12 月 16 日, _可在_http://www.policybandwidth.com/publications/JBand-IPCyberSecurity.pdf 获取; Hiawatha Bray, _Cyber Chief Speaks on Data Network Security_, Boston Globe, 2002 年 10 月 17 日。
+[26] Jonathan Band, _Congress Unknowingly Undermines Cyber-Security_, San Jose Mercury News, 2002 年 12 月 16 日, _可在_ http://www.policybandwidth.com/publications/JBand-IPCyberSecurity.pdf 获取; Hiawatha Bray, _Cyber Chief Speaks on Data Network Security_, Boston Globe, 2002 年 10 月 17 日。
 
-[27] Pamela Samuelson, _Anticircumvention Rules: Threat to Science_, 293 Science 2028, 2001 年 9 月 14 日; SDMI 总法律顾问 Matthew Oppenheim 致 Edward Felten 教授的信函，2001 年 4 月 9 日, _可在_http://cryptome.org/sdmi-attack.htm 获取; _Felten, et al. v. RIAA, et al._, EFF, https://www.eff.org/cases/felten-et-al-v-riaa-et-al (最后访问于 2013 年 1 月 10 日)。
+[27] Pamela Samuelson, _Anticircumvention Rules: Threat to Science_, 293 Science 2028, 2001 年 9 月 14 日; SDMI 总法律顾问 Matthew Oppenheim 致 Edward Felten 教授的信函，2001 年 4 月 9 日, _可在_ http://cryptome.org/sdmi-attack.htm 获取; _Felten, et al. v. RIAA, et al._, EFF, https://www.eff.org/cases/felten-et-al-v-riaa-et-al (最后访问于 2013 年 1 月 10 日)。
 
 [28] Declan McCullagh, _Security Warning Draws DMCA Threat_, CNET News (2002 年 7 月 30 日), http://news.com.com/2100-1023-947325.html; Kim Zetter, _HP, Bug-Hunters Declare Truce,_ PCWorld (2002 年 8 月 9 日 3:00 pm), http://www.pcworld.com/article/103853/hp\_bughunters\_declare\_truce.html。
 
@@ -595,19 +595,19 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [30] David Becker, _Newsmaker: Testing Microsoft and the DMCA_, CNET News (2003 年 4 月 15 日), http://news.com.com/2008-1082-996787.html; Seth Schiesel, _Behind a Hacker’s Book, a Primer on Copyright Law_, N.Y. Times (2003 年 7 月 10 日), http://www.nytimes.com/2003/07/10/technology/circuits/10book.html; _参见 Hacking the Xbox,_ No Starch Press*,* http://nostarch.com/xbox.htm (最后访问于 2013 年 1 月 14 日)。
 
-[31] Mainstream Loudoun v. Bd. of Trs., 24 F.Supp.2d 552 (E.D. Va. 1998), _可在_http://scholar.google.com/scholar\_case?case=13796536557265673818 获取。
+[31] Mainstream Loudoun v. Bd. of Trs., 24 F.Supp.2d 552 (E.D. Va. 1998), _可在_ http://scholar.google.com/scholar\_case?case=13796536557265673818 获取。
 
-[32] Jennifer 8. Lee, _Cracking the Code of Online Censorship_, N.Y. Times (2001 年 7 月 19 日), http://www.nytimes.com/2001/07/19/technology/circuits/19HACK.html; 版权局规则制定程序 RM 2002-04 听证会记录，2003 年 4 月 11 日，11, 31 页, _可在_http://www.copyright.gov/1201/2003/hearings/schedule.html 获取; Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies, 71 Fed. Reg. 68,472, 68,477 (2006 年 11 月 27 日), _可在_http://www.copyright.gov/fedreg/2006/71fr68472.pdf 获取 (列出了“已考虑但未推荐的其他豁免”); _Rulemaking on Exemptions from Prohibition on Circumvention of Technological Measures that Control Access to Copyrighted Works_, 版权局, http://www.copyright.gov/1201/2010/ (最后访问于 2012 年 6 月 13 日)。
+[32] Jennifer 8. Lee, _Cracking the Code of Online Censorship_, N.Y. Times (2001 年 7 月 19 日), http://www.nytimes.com/2001/07/19/technology/circuits/19HACK.html; 版权局规则制定程序 RM 2002-04 听证会记录，2003 年 4 月 11 日，11, 31 页, _可在_ http://www.copyright.gov/1201/2003/hearings/schedule.html 获取; Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies, 71 Fed. Reg. 68,472, 68,477 (2006 年 11 月 27 日), _可在_ http://www.copyright.gov/fedreg/2006/71fr68472.pdf 获取 (列出了“已考虑但未推荐的其他豁免”); _Rulemaking on Exemptions from Prohibition on Circumvention of Technological Measures that Control Access to Copyrighted Works_, 版权局, http://www.copyright.gov/1201/2010/ (最后访问于 2012 年 6 月 13 日)。
 
 [33] _In Legal First, ACLU Sues Over New Copyright Law_, ACLU (2002 年 7 月 25 日), http://www.aclu.org/privacy/speech/15201res20020725.html; *参见*Edelman v. N2H2 Inc., No. 02-CV-11503-RGS (D. Mass. 2003 年 4 月 7 日)。
 
-[34] Lawrence Lessig, _Jail Time in the Digital Age_, N.Y. Times, 2001 年 7 月 30 日, A7 页, _可在_http://www.nytimes.com/2001/07/30/opinion/30LESS.html 获取; Lisa Bowman, _Elcomsoft Verdict: Not Guilty_, CNET News (2002 年 12 月 17 日), http://news.com.com/2100-1023-978176.html。
+[34] Lawrence Lessig, _Jail Time in the Digital Age_, N.Y. Times, 2001 年 7 月 30 日, A7 页, _可在_ http://www.nytimes.com/2001/07/30/opinion/30LESS.html 获取; Lisa Bowman, _Elcomsoft Verdict: Not Guilty_, CNET News (2002 年 12 月 17 日), http://news.com.com/2100-1023-978176.html。
 
 [35] Niels Ferguson, _Censorship in Action: Why I Don’t Publish My HDCP Results_, 2001 年 8 月 15 日, http://web.archive.org/web/20011201184919/http://www.macfergus.com/niels/dmca/cia.html (通过互联网档案的 Wayback Machine 访问); Niels Ferguson, _Declaration in Felten v. R.I.A.A._, EFF (2001 年 8 月 13 日), https://w2.eff.org/IP/DMCA/Felten\_v\_RIAA/20010813\_ferguson\_decl.html; Lisa M. Bowman, _Researchers Weigh Publication, Prosecution_, CNET News (2001 年 8 月 15 日), http://news.cnet.com/Researchers-weigh-publication%2C-prosecution/2100-1023\_3-271712.html。
 
-[36] *参见*Sara Robinson, _Awaiting DMCA Clarification, Researchers Proceed Cautiously_, SIAM News, Volume 35, Number 1, _可在_http://www.siam.org/pdf/news/387.pdf 获取。
+[36] *参见*Sara Robinson, _Awaiting DMCA Clarification, Researchers Proceed Cautiously_, SIAM News, Volume 35, Number 1, _可在_ http://www.siam.org/pdf/news/387.pdf 获取。
 
-[37] _参见同上;_ David Wagner, 加州大学伯克利分校计算机科学教授，致 Declan McCullagh 的电子邮件 (2002 年 11 月 25 日 21:56), _可在_http://lists.jammed.com/politech/2002/11/0090.html 获取。
+[37] _参见同上;_ David Wagner, 加州大学伯克利分校计算机科学教授，致 Declan McCullagh 的电子邮件 (2002 年 11 月 25 日 21:56), _可在_ http://lists.jammed.com/politech/2002/11/0090.html 获取。
 
 [38] _HDCP Master Key_, http://pastebin.com/SJJELM8S (最后访问于 2012 年 6 月 13 日)。
 
@@ -619,7 +619,7 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [42] Wade Roush, _Breaking Microsoft’s e-Book Code_, MIT Technology Review (2001 年 11 月 1 日), http://www.technologyreview.com/web/12645/。
 
-[43] Jennifer 8 Lee, _Travel Advisory for Russian Programmers_, N.Y. Times, 2001 年 9 月 10 日, C4 页, _可在_http://www.nytimes.com/2001/09/10/technology/10WARN.html 获取。
+[43] Jennifer 8 Lee, _Travel Advisory for Russian Programmers_, N.Y. Times, 2001 年 9 月 10 日, C4 页, _可在_ http://www.nytimes.com/2001/09/10/technology/10WARN.html 获取。
 
 [44] Alan Cox, _Declaration in_ Felten v. RIAA, EFF (2001 年 8 月 13 日), https://w2.eff.org/IP/DMCA/Felten\_v\_RIAA/20010813\_cox\_decl.html。
 
@@ -629,7 +629,7 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [47] _IEEE Drops Reference to DMCA in Revised Authors' Copyright Form_, The Institute of Electrical and Electronics Engineers, http://web.archive.org/web/20021103042350/http://www.spectrum.ieee.org/INST/jul02/fdrops.html (使用互联网档案 Wayback Machine 访问)。
 
-[48] Universal City Studios v. Reimerdes, 111 F. Supp. 2d. 294 (S.D.N.Y. 2000), _可在_http://scholar.google.com/scholar\_case?case=4887310188384829978 获取, 确认于 sub nom. Universal City Studios v. Corley, 273 F.3d 429 (2d Cir. 2001), _可在_http://scholar.google.com/scholar\_case?case=5930508913825375010 获取。
+[48] Universal City Studios v. Reimerdes, 111 F. Supp. 2d. 294 (S.D.N.Y. 2000), _可在_ http://scholar.google.com/scholar\_case?case=4887310188384829978 获取, 确认于 sub nom. Universal City Studios v. Corley, 273 F.3d 429 (2d Cir. 2001), _可在_ http://scholar.google.com/scholar\_case?case=5930508913825375010 获取。
 
 [49] Carl S. Kaplan, _Questioning Continues in Copyright Suit_, N.Y. Times (2001 年 5 月 4 日), http://www.nytimes.com/2001/05/04/technology/04CYBERLAW.html; Simson Garfinkel, _The DVD Rebellion_, MIT Technology Review (2001 年 7 月 1 日), http://www.technologyreview.com/article/401086/the-dvd-rebellion/; Xenia P. Kobylarz, _DVD Case Clash—Free Speech Advocates Say Copyright Owners Want to Lock Up Ideas; Encryption Code is Key_, S.F. Daily J., 2001 年 5 月 1 日。
 
@@ -643,7 +643,7 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [54] _Regarding Hints on Evading iTunes Store Copy Protection_, Mac OS X Hints (2003 年 5 月 7 日 11:29 AM), http://www.macosxhints.com/article.php?story=20030507104823670。
 
-[55] EFF, DMCA Triennial Rulemaking: Failing the Digital Consumer (2005), _可在_http://www.eff.org/IP/DMCA/copyrightoffice/DMCA\_rulemaking\_broken.pdf 获取。
+[55] EFF, DMCA Triennial Rulemaking: Failing the Digital Consumer (2005), _可在_ http://www.eff.org/IP/DMCA/copyrightoffice/DMCA\_rulemaking\_broken.pdf 获取。
 
 [56] Rep. Rick Boucher, _Perspective: Time to Rewrite the DMCA_, CNET News (2002 年 1 月 29 日), http://news.com.com/2010-1078-825335.html; Dan Gillmor, _Entertainment Industry’s Copyright Fight Puts Consumers in Cross Hairs_, San Jose Mercury News, 2002 年 2 月 12 日; Jon Healey & Jeff Leeds, _Record Labels Grapple with CD Protection_, L.A. Times, 2002 年 11 月 29 日, C1 页; John Borland, _Copy-blocked CD Tops U.S. Charts_, CNET News (2004 年 6 月 17 日), http://news.cnet.com/Copy-blocked-CD-tops-U.S.-charts/2100-1027\_3-5238208.html。
 
@@ -651,41 +651,41 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [58] Mark Hefflinger, _Walmart to End Support for DRM-Wrapped Songs in October_, Digital Media Wire (2009 年 6 月 1 日), http://www.dmwmedia.com/news/2009/06/01/walmart-end-support-drm-wrapped-songs-october。
 
-[59] Matthew Mirapaul, _They’ll Always Have Paris (and a Scholarly Web Site)_, N.Y. Times (2002 年 3 月 16 日), http://www.nytimes.com/2002/03/18/movies/arts-online-they-ll-always-have-paris-and-a-scholarly-web-site.html; Lisa Bowman, _Hollywood Targets DVD- Copying Upstart_, CNET News (2002 年 12 月 20 日), http://news.com.com/2100-1023-978580.html; Paramount Pictures Corp. v. Tritton Technologies Inc., No. CV 03-7316 (S.D.N.Y. 2003 年 9 月 17 日提交); 321 Studios v. MGM, 307 F.Supp.2d 1085 (N.D. Cal. 2004), _可在_http://scholar.google.com/scholar\_case?case=8541119834567462882)获取。
+[59] Matthew Mirapaul, _They’ll Always Have Paris (and a Scholarly Web Site)_, N.Y. Times (2002 年 3 月 16 日), http://www.nytimes.com/2002/03/18/movies/arts-online-they-ll-always-have-paris-and-a-scholarly-web-site.html; Lisa Bowman, _Hollywood Targets DVD- Copying Upstart_, CNET News (2002 年 12 月 20 日), http://news.com.com/2100-1023-978580.html; Paramount Pictures Corp. v. Tritton Technologies Inc., No. CV 03-7316 (S.D.N.Y. 2003 年 9 月 17 日提交); 321 Studios v. MGM, 307 F.Supp.2d 1085 (N.D. Cal. 2004), _可在_ http://scholar.google.com/scholar\_case?case=8541119834567462882)获取。
 
-[60] Real Networks, Inc. v. DVD Copy Control Ass’n, 641 F. Supp. 2d 913, 942 (N.D. Cal., 2009), _可在_http://www.eff.org/files/filenode/RealDVD/Real%20v%20DVD-CCA%2C%20PI%20Order%20081109.pdf)获取。
+[60] Real Networks, Inc. v. DVD Copy Control Ass’n, 641 F. Supp. 2d 913, 942 (N.D. Cal., 2009), _可在_ http://www.eff.org/files/filenode/RealDVD/Real%20v%20DVD-CCA%2C%20PI%20Order%20081109.pdf)获取。
 
-[61] 版权局, Recommendation of the Register of Copyrights in RM 2002-4, 109-26 (2003), _可在_http://www.copyright.gov/1201/docs/registers-recommendation.pdf 获取。
+[61] 版权局, Recommendation of the Register of Copyrights in RM 2002-4, 109-26 (2003), _可在_ http://www.copyright.gov/1201/docs/registers-recommendation.pdf 获取。
 
 [62] _Statement of the Librarian of Congress Relating to Section 1201 Rulemaking_, 版权局 (2006 年 11 月 27 日), http://www.copyright.gov/1201/docs/2006\_statement.html。
 
-[63] Renee Hobbs, Peter Decherney, Library Copyright Alliance 的评论, _可在_http://www.copyright.gov/1201/2008/index.html 获取。
+[63] Renee Hobbs, Peter Decherney, Library Copyright Alliance 的评论, _可在_ http://www.copyright.gov/1201/2008/index.html 获取。
 
-[64] EFF 和 OTW 的评论, _可在_http://www.copyright.gov/1201/2008/comments/lohmann-fred.pdf 获取。
+[64] EFF 和 OTW 的评论, _可在_ http://www.copyright.gov/1201/2008/comments/lohmann-fred.pdf 获取。
 
 [65] Jacqui Cheng, _MPAA: Teachers Should Videotape Monitors, Not Rip DVDS_, Ars Technica (2009 年 5 月 7 日), http://arstechnica.com/tech-policy/news/2009/05/mpaa-teachers-should-video-record-tv-screens-not-rip-dvds.ars。
 
-[66] _2009 DMCA Rulemaking_, Electronic Frontier Foundation, https://www.eff.org/cases/2009-dmca-rulemaking (最后访问于 2012 年 6 月 7 日); _Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 77 Fed. Reg. 208 (2012 年 10 月 26 日) (将编纂于 37 C.F.R. pt. 201), _可在_http://www.copyright.gov/fedreg/2012/77fr65260.pdf 获取。
+[66] _2009 DMCA Rulemaking_, Electronic Frontier Foundation, https://www.eff.org/cases/2009-dmca-rulemaking (最后访问于 2012 年 6 月 7 日); _Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 77 Fed. Reg. 208 (2012 年 10 月 26 日) (将编纂于 37 C.F.R. pt. 201), _可在_ http://www.copyright.gov/fedreg/2012/77fr65260.pdf 获取。
 
 [67] _US v. ElcomSoft & Sklyarov FAQ_, EFF (2002 年 2 月 19 日, 2:35 PM), https://www.eff.org/pages/us-v-elcomsoft-sklyarov-faq#AboutEBooks
 
 [68] Lisa Bowman, _Elcomsoft Verdict: Not Guilty_, CNET News (2002 年 12 月 17 日), http://news.com.com/2100-1023-978176.html。
 
-[69] RealNetworks, Inc. v. Streambox, Inc., No. C99-2070P, 2000 WL 127311 (W.D. Wash. 2000 年 1 月 18 日), _可在_http://legal.web.aol.com/decisions/dlip/realorder.pdf 获取。
+[69] RealNetworks, Inc. v. Streambox, Inc., No. C99-2070P, 2000 WL 127311 (W.D. Wash. 2000 年 1 月 18 日), _可在_ http://legal.web.aol.com/decisions/dlip/realorder.pdf 获取。
 
-[70] Kenneth Plevan 代表 Live365.com 致 Streamripper 开发者 John Clegg 的停止并终止函，2001 年 4 月 26 日, _可在_http://streamripper.sourceforge.net/dc.php 获取。
+[70] Kenneth Plevan 代表 Live365.com 致 Streamripper 开发者 John Clegg 的停止并终止函，2001 年 4 月 26 日, _可在_ http://streamripper.sourceforge.net/dc.php 获取。
 
 [71] _Welcome to Streamripper_, Streamripper, http://streamripper.sourceforge.net/ (最后访问于 2013 年 1 月 10 日)。
 
-[72] Tom Murphy, _embed: DMCA Threats_, Truetype embedding-enabler: DMCA threats, http://web.archive.org/web/20020806073714/http://www.andrew.cmu.edu/~twm/embed/dmca.html (通过互联网档案的 Wayback Machine 访问) (最后访问于 2013 年 1 月 14 日); Agfa 致 Tom Murphy 的停止并终止函, _可在_http://www.chillingeffects.org/copyright/notice.cgi?NoticeID=264 获取。
+[72] Tom Murphy, _embed: DMCA Threats_, Truetype embedding-enabler: DMCA threats, http://web.archive.org/web/20020806073714/http://www.andrew.cmu.edu/~twm/embed/dmca.html (通过互联网档案的 Wayback Machine 访问) (最后访问于 2013 年 1 月 14 日); Agfa 致 Tom Murphy 的停止并终止函, _可在_ http://www.chillingeffects.org/copyright/notice.cgi?NoticeID=264 获取。
 
 [73] _参见_ _Truetype embedding-enabler_, http://carnage-melon.tom7.org/embed/ (最后访问于 2013 年 1 月 10 日)。
 
-[74] *参见*Agfa Monotype Corp. v. Adobe Sys., 404 F. Supp. 2d 1030 (N.D. Ill. 2005), _可在_http://scholar.google.com/scholar\_case?case=502109184695805642)获取。
+[74] *参见*Agfa Monotype Corp. v. Adobe Sys., 404 F. Supp. 2d 1030 (N.D. Ill. 2005), _可在_ http://scholar.google.com/scholar\_case?case=502109184695805642)获取。
 
 [75] Eric Bangeman, _MPAA Sues Over DVD-to-iPod Service_, Ars Technica (2006 年 11 月 17 日), http://arstechnica.com/news.ars/post/20061117-8241.html; Fred von Lohmann, _Movie Studios Sue to Stop Loading of DVDs onto iPods_, EFF Deep Links blog (2006 年 11 月 16 日), http://www.eff.org/deeplinks/2006/11/movie-studios-sue-stop-loading-dvds-ipods; *参见*Greg Sandoval, _Movie studios sue DVD-to-iPod service_, CNET News (2006 年 11 月 17 日 3:30 PM), http://news.cnet.com/Movie-studios-sue-DVD-to-iPod-service/2100-1030\_3-6136806.html。
 
-[76] 其他人也认识到 DMCA 的反竞争效应。*参见*Timothy B. Lee, _Circumventing Competition: The Perverse Consequences of the Digital Millennium Copyright Act_, CATO Policy Analysis, no. 564, 2006 年 3 月 21 日, _可在_http://www.cato.org/pub\_display.php?pub\_id=6025 获取。
+[76] 其他人也认识到 DMCA 的反竞争效应。*参见*Timothy B. Lee, _Circumventing Competition: The Perverse Consequences of the Digital Millennium Copyright Act_, CATO Policy Analysis, no. 564, 2006 年 3 月 21 日, _可在_ http://www.cato.org/pub\_display.php?pub\_id=6025 获取。
 
 [77] Jonathan Fildes, _PlayStation 3 'hacked' by iPhone cracker_, BBC (2010 年 1 月 25 日), http://news.bbc.co.uk/2/hi/technology/8478764.stm。
 
@@ -699,7 +699,7 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [82] Corynne McSherry & Marcia Hofmann, _Sony v. Hotz: Sony Sends A Dangerous Message to Researchers and Its Customers_, FF (2011 年 1 月 19 日), https://www.eff.org/deeplinks/2011/01/sony-v-hotz-sony-sends-dangerous-message。
 
-[83] 电子前沿基金会 Corynne McSherry 致加州北区美国地方法院治安法官 Joseph C. Spero 的信函 (2011 年 2 月 24 日), _可在_http://www.wired.com/images\_blogs/threatlevel/2011/03/effletter.pdf 获取。
+[83] 电子前沿基金会 Corynne McSherry 致加州北区美国地方法院治安法官 Joseph C. Spero 的信函 (2011 年 2 月 24 日), _可在_ http://www.wired.com/images\_blogs/threatlevel/2011/03/effletter.pdf 获取。
 
 [84] Corynne McSherry, _Sony v. Hotz Ends With a Whimper, I Mean a Gag Order_, FF(2011 年 4 月 12 日), https://www.eff.org/deeplinks/2011/04/sony-v-hotz-ends-whimper-i-mean-gag-order。
 
@@ -717,7 +717,7 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [91] _参见_ _Rulemaking on Exemptions from Prohibition on Circumvention of Technological Measures that Control Access to Copyrighted Works_, 版权局, http://www.copyright.gov/1201/2010/ (最后访问于 2012 年 6 月 13 日)。
 
-[92] _参见 Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 77 Fed. Reg. 208 (2012 年 10 月 26 日) (将编纂于 37 C.F.R. pt. 201), _可在_http://www.copyright.gov/fedreg/2012/77fr65260.pdf 获取。
+[92] _参见 Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies_, 77 Fed. Reg. 208 (2012 年 10 月 26 日) (将编纂于 37 C.F.R. pt. 201), _可在_ http://www.copyright.gov/fedreg/2012/77fr65260.pdf 获取。
 
 [93] Daniel Terdiman, _Bounty offered for open-source Kinect driver_, CNET News (2010 年 11 月 4 日 12:50 PM), http://news.cnet.com/8301-13772\_3-20021836-52.html。
 
@@ -731,9 +731,9 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [98] _Kinect for Windows: Overview_, 微软, http://www.microsoft.com/en-us/kinectforwindows/purchase/overview.aspx (最后访问于 2012 年 6 月 12 日)。
 
-[99] Jennifer Granick, _Free the Cell Phone!_, Wired (2005 年 9 月 30 日), http://www.wired.com/politics/law/commentary/circuitcourt/2005/09/68989; The Wireless Alliance 的回复评论, 版权局, Docket No. RM-2005-11, _可在_http://www.copyright.gov/1201/2006/reply/14granick\_WAreply.pdf 获取。
+[99] Jennifer Granick, _Free the Cell Phone!_, Wired (2005 年 9 月 30 日), http://www.wired.com/politics/law/commentary/circuitcourt/2005/09/68989; The Wireless Alliance 的回复评论, 版权局, Docket No. RM-2005-11, _可在_ http://www.copyright.gov/1201/2006/reply/14granick\_WAreply.pdf 获取。
 
-[100] David Kravets, _Ruling Allows Cell Phone Unlocking, but Telco Sues Anyway_, Wired (2007 年 8 月 8 日), http://www.wired.com/politics/onlinerights/news/2007/08/tracfone。Tracfone 对手机经销商提起的案件，_参见，例如_ TracFone Wireless, Inc. v. Dixon, 475 F. Supp. 2d 1236 (M.D. Fla. 2007) (支持 TracFone 的裁决), _可在_http://scholar.google.com/scholar\_case?case=12046901395060506289 获取; TracFone Wireless, Inc. v. GSM Group, Inc. 555 F.Supp.2d 1331 (S.D. Fla. 2008) (通过驳回被告的驳回动议支持 TracFone 的裁决), _可在_http://scholar.google.com/scholar\_case?case=6094189997003869052)获取; TracFone Wireless, Inc. v. SND Cellular, Inc., 715 F. Supp. 2d 1246 (S.D. Fla. 2010) (根据 DMCA 判给 TracFone 法定损害赔偿 11,370,000 美元)。
+[100] David Kravets, _Ruling Allows Cell Phone Unlocking, but Telco Sues Anyway_, Wired (2007 年 8 月 8 日), http://www.wired.com/politics/onlinerights/news/2007/08/tracfone。Tracfone 对手机经销商提起的案件，_参见，例如_ TracFone Wireless, Inc. v. Dixon, 475 F. Supp. 2d 1236 (M.D. Fla. 2007) (支持 TracFone 的裁决), _可在_ http://scholar.google.com/scholar\_case?case=12046901395060506289 获取; TracFone Wireless, Inc. v. GSM Group, Inc. 555 F.Supp.2d 1331 (S.D. Fla. 2008) (通过驳回被告的驳回动议支持 TracFone 的裁决), _可在_ http://scholar.google.com/scholar\_case?case=6094189997003869052)获取; TracFone Wireless, Inc. v. SND Cellular, Inc., 715 F. Supp. 2d 1246 (S.D. Fla. 2010) (根据 DMCA 判给 TracFone 法定损害赔偿 11,370,000 美元)。
 
 [101] Gregg Keizer, _Apple Adds DMCA Charge to Lawsuit Against Psystar_, ComputerWorld (2008 年 11 月 30 日), http://www.computerworld.com/s/article/9121798/Apple\_adds\_DMCA\_charge\_to\_lawsuit\_against\_Psystar。
 
@@ -743,7 +743,7 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [104] Real 此后放弃了其音乐下载服务的 DRM。*参见*Brian Heater & Chloe Albanesius, _Update: Rhapsody DRM-Free Music Targets iTunes_, PC Magazine (2008 年 6 月 30 日), http://www.pcmag.com/article2/0,2817,2324184,00.asp。
 
-[105] Matt Hines, _“Stunned” Apple Rails Against Real’s iPod Move_, CNET News (2004 年 7 月 29 日), http://news.com.com/’Stunned’+Apple+rails+against+Real’s+iPod+move/2100-1041\_3-5288378.html; _Real Reveals Real Apple Legal Threat_, Macworld UK (2005 年 8 月 10 日), http://www.macworld.co.uk/news/index.cfm?RSS&NewsID=12310; RealNetworks 10-Q 文件 (2005 年 5 月), _可在_http://docs.real.com/docs/investors/V08778.pdf 获取。
+[105] Matt Hines, _“Stunned” Apple Rails Against Real’s iPod Move_, CNET News (2004 年 7 月 29 日), http://news.com.com/’Stunned’+Apple+rails+against+Real’s+iPod+move/2100-1041\_3-5288378.html; _Real Reveals Real Apple Legal Threat_, Macworld UK (2005 年 8 月 10 日), http://www.macworld.co.uk/news/index.cfm?RSS&NewsID=12310; RealNetworks 10-Q 文件 (2005 年 5 月), _可在_ http://docs.real.com/docs/investors/V08778.pdf 获取。
 
 [106] Macworld Staff, _iTunes Store and DRM-free music: What you need to know_, Macworld (2009 年 1 月 7 日), http://www.macworld.com/article/1138000/drm\_faq.html。
 
@@ -751,11 +751,11 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [108] Michael R. Tompkins, _Nikon Encrypts RAW File Data_, Imaging Resource (2005 年 4 月 20 日), http://www.imaging-resource.com/NEWS/1113977781.html; Declan McCullagh, _Nikon’s Photo Encryption Reported Broken_, CNET News (2005 年 4 月 21 日), http://news.com.com/Nikons+photo+encryption+reported+broken/2100-1030\_3-5679848.html。
 
-[109] Fred von Lohmann, _DMCA Used to Stymie Competition …… Again_, EFF Deep Links blog (2005 年 11 月 4 日), https://www.eff.org/deeplinks/2005/11/dmca-used-stymie-competition-again; Storage Technology v. Custom Hardware Engineering, 421 F.3d 1307 (Fed. Cir. 2005), _可在_http://scholar.google.com/scholar\_case?case=5265572440015937430 获取。
+[109] Fred von Lohmann, _DMCA Used to Stymie Competition …… Again_, EFF Deep Links blog (2005 年 11 月 4 日), https://www.eff.org/deeplinks/2005/11/dmca-used-stymie-competition-again; Storage Technology v. Custom Hardware Engineering, 421 F.3d 1307 (Fed. Cir. 2005), _可在_ http://scholar.google.com/scholar\_case?case=5265572440015937430 获取。
 
-[110] Declan McCullagh, _Lexmark Invokes DMCA in Toner Suit_, CNET News (2003 年 1 月 8 日), http://news.com.com/2100-1023-979791.html; Lexmark v. Static Control Components, 387 F.3d 522 (6th Cir. 2004), _可在_http://scholar.google.com/scholar\_case?case=18217592195742478731 获取。
+[110] Declan McCullagh, _Lexmark Invokes DMCA in Toner Suit_, CNET News (2003 年 1 月 8 日), http://news.com.com/2100-1023-979791.html; Lexmark v. Static Control Components, 387 F.3d 522 (6th Cir. 2004), _可在_ http://scholar.google.com/scholar\_case?case=18217592195742478731 获取。
 
-[111] Steve Seidenberg, _Suits Test Limits of Digital Copyright Act_, NAT’L L. J. (2003 年 2 月 7 日), http://www.law.com/jsp/article.jsp?id=1044059435217; Chamberlain Group v. Skylink Technologies, 381 F.3d 1178 (Fed.Cir.2004), _可在_http://scholar.google.com/scholar\_case?case=16927618869037195909)获取。
+[111] Steve Seidenberg, _Suits Test Limits of Digital Copyright Act_, NAT’L L. J. (2003 年 2 月 7 日), http://www.law.com/jsp/article.jsp?id=1044059435217; Chamberlain Group v. Skylink Technologies, 381 F.3d 1178 (Fed.Cir.2004), _可在_ http://scholar.google.com/scholar\_case?case=16927618869037195909)获取。
 
 [112] Mike Masnick, _Losers Of Garage Door DMCA Case Try To Use Legaleze To Lock Up Your Garage Door Openers Anyway,_ TechDirt (2009 年 12 月 18 日 6:35 PM), http://www.techdirt.com/articles/20091217/0152127402.shtml
 
@@ -763,23 +763,23 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [114] Mike Masnick, _Microsoft Still Claiming That It Can Use The DMCA To Block Competing Xbox Accessories_, TechDirt (2011 年 6 月 21 日 7:20 AM), http://www.techdirt.com/articles/20110620/10505614766/microsoft-still-claiming-that-it-can-use-dmca-to-block-competing-xbox-accessories.shtml。
 
-[115] *参见*电子前沿基金会和公共知识支持 Datel 简易判决动议的法庭之友简报，第 3 页, _Datel Holdings Ltd. v. Microsoft Corp._, No. 09-cv-5535 (N.D. Cal 2011), _可在_https://www.eff.org/files/filenode/datel\_v\_microsof/datelamicus61511.pdf 获取。
+[115] *参见*电子前沿基金会和公共知识支持 Datel 简易判决动议的法庭之友简报，第 3 页, _Datel Holdings Ltd. v. Microsoft Corp._, No. 09-cv-5535 (N.D. Cal 2011), _可在_ https://www.eff.org/files/filenode/datel\_v\_microsof/datelamicus61511.pdf 获取。
 
 [116] _Microsoft, Datel Settle Lawsuits,_ Gamepolitics (2012 年 1 月 4 日), http://gamepolitics.com/2012/01/04/microsoft-datel-settle-lawsuits。
 
-[117] Pamela Samuelson, _Intellectual Property and the Digital Economy: Why the Anti-Circumvention Regulations Need to be Revised_, 14 Berkeley Tech. L.J. 519, 556 (1999) , _可在_http://www.sims.berkeley.edu/~pam/papers.html 获取; Bleem 代表 Jonathan Hangartner 的证词, 国会图书馆, DMCA 听证会, 斯坦福大学, 2000 年 5 月 19 日, 221-28 页, _可在_http://www.loc.gov/copyright/1201/hearings/1201-519.pdf 获取。
+[117] Pamela Samuelson, _Intellectual Property and the Digital Economy: Why the Anti-Circumvention Regulations Need to be Revised_, 14 Berkeley Tech. L.J. 519, 556 (1999) , _可在_ http://www.sims.berkeley.edu/~pam/papers.html 获取; Bleem 代表 Jonathan Hangartner 的证词, 国会图书馆, DMCA 听证会, 斯坦福大学, 2000 年 5 月 19 日, 221-28 页, _可在_ http://www.loc.gov/copyright/1201/hearings/1201-519.pdf 获取。
 
 [118] John Borland, _Sony Puts Aibo to Sleep_, CNET News (2006 年 1 月 26 日 5:11 PM), http://news.cnet.com/2100-1041\_3-6031649.html。
 
 [119] David Labrador, _Teaching Robot Dogs New Tricks_, Scientific American (2002 年 2 月 12 日), http://www.scientificamerican.com/article.cfm?id=teaching-robot-dogs-new-t&sc=I100322。
 
-[120] Barry Fox, _Sony PlayStation Ruling Sets Far-Reaching Precedent_, New Scientist (2002 年 2 月 22 日, 12:14 PM), http://www.newscientist.com/article/dn1933-sony-playstation-ruling-sets-farreaching-precedent.html; Sony Computer Entertainment America Inc. v. Gamemasters, 87 F.Supp.2d 976 (N.D. Cal. 1999), _可在_http://scholar.google.com/scholar\_case?case=8151910487264729114)获取; Stevens v Kabushiki Kaisha Sony Computer Entertainment, [2005] HCA 58 (2005 年 10 月 6 日), _可在_http://www.austlii.edu.au/au/cases/cth/high\_ct/2005/58.html 获取。
+[120] Barry Fox, _Sony PlayStation Ruling Sets Far-Reaching Precedent_, New Scientist (2002 年 2 月 22 日, 12:14 PM), http://www.newscientist.com/article/dn1933-sony-playstation-ruling-sets-farreaching-precedent.html; Sony Computer Entertainment America Inc. v. Gamemasters, 87 F.Supp.2d 976 (N.D. Cal. 1999), _可在_ http://scholar.google.com/scholar\_case?case=8151910487264729114)获取; Stevens v Kabushiki Kaisha Sony Computer Entertainment, [2005] HCA 58 (2005 年 10 月 6 日), _可在_ http://www.austlii.edu.au/au/cases/cth/high\_ct/2005/58.html 获取。
 
 [121] _Feds' Mod Chip Raid Ended a $2.5 Million Piracy Operation_, GamePolitics.com (2008 年 11 月 24 日), http://gamepolitics.com/2008/11/24/feds039-mod-chip-raid-ended-25-million-piracy-operation#.UO8KVHeCcvk。
 
 [122] Zachary Knight, _After Four Years Feds Finally Get Aroung to Prosecuting Ten Mod Chip Sellers_, TechDirt (2012 年 5 月 2 日, 10:02 AM), http://www.techdirt.com/articles/20120430/17092418721/after-four-years-feds-finally-get-around-to-prosecuting-ten-mod-chip-sellers.shtml
 
-[123] U.S. v. Silvius, No. 1:12CR172, slip. op. (N. D. Ohio 2012 年 11 月 21 日), _可在_http://scholar.google.com/scholar\_case?case=7116564093458068957&hl=en&as\_sdt=2,5&as\_vis=1)获取
+[123] U.S. v. Silvius, No. 1:12CR172, slip. op. (N. D. Ohio 2012 年 11 月 21 日), _可在_ http://scholar.google.com/scholar\_case?case=7116564093458068957&hl=en&as\_sdt=2,5&as\_vis=1)获取
 
 [124] Davidson & Assoc. v. Jung, 422 F.3d 630 (8th Cir. 2005); Howard Wen, _Battle.net Goes To War_, Salon (2002 年 4 月 18 日), http://www.salon.com/2002/04/18/bnetd/; _Blizzard v. BNETD_, EFF, https://www.eff.org/cases/blizzard-v-bnetd (最后访问于 2013 年 1 月 14 日)。
 
@@ -791,21 +791,21 @@ DMCA 的论点是，Chaffee 夫妇的低频滤波器规避了 CoxCom 的按次�
 
 [128] Dan Goodin, _Blizzard Awarded $6m in WoW Bot Case_, Register Hardware (2008 年 10 月 1 日), http://www.reghardware.com/2008/10/01/world\_of\_warcraft\_bot\_ruling/。
 
-[129] MDY Industries, LLC. V. Blizzard Ent., Inc., 616 F. Supp. 2d 958, 966 (D. Ariz. 2009 年 1 月 28 日), _可在_http://scholar.google.com/scholar\_case?case=321636840809513184 获取。
+[129] MDY Industries, LLC. V. Blizzard Ent., Inc., 616 F. Supp. 2d 958, 966 (D. Ariz. 2009 年 1 月 28 日), _可在_ http://scholar.google.com/scholar\_case?case=321636840809513184 获取。
 
 [130] MDY Indus., LLC v. Blizzard Entm't, Inc., 629 F.3d 928, 954 (9th Cir. 2010), 经重审否决后修正 (2011 年 2 月 17 日), 意见在重审否决后修正并取代, 09-15932, 2011 WL 538748 (9th Cir. 2011 年 2 月 17 日)。
 
 [131] XPEL Technologies Corp. v. American Filter Film Distributors, No. SA08-CA0175-XR, 2008 WL 3540345 (W.D. Tex. 2008 年 8 月 11 日); Rebecca Tushnet, _Design, Dastar, (registration) dates and the DMCA_, Rebecca Tushnet’s 43(B)log (2008 年 8 月 17 日), http://tushnet.blogspot.com/2008/08/design-dastar-registration-dates-and.html。
 
-[132] *参见*Egilman v. Keller & Heckman LLP, 401 F.Supp.2d 105 (D.D.C. 2005), _可在_http://scholar.google.com/scholar\_case?case=12998125146086841657 获取; I.M.S. Inquiry Mgt. Systems v. Berkshire Info. Systems, 307 F.Supp.2d 521 (S.D.N.Y. 2004), _可在_http://scholar.google.com/scholar\_case?case=12954155286023485320 获取。
+[132] *参见*Egilman v. Keller & Heckman LLP, 401 F.Supp.2d 105 (D.D.C. 2005), _可在_ http://scholar.google.com/scholar\_case?case=12998125146086841657 获取; I.M.S. Inquiry Mgt. Systems v. Berkshire Info. Systems, 307 F.Supp.2d 521 (S.D.N.Y. 2004), _可在_ http://scholar.google.com/scholar\_case?case=12954155286023485320 获取。
 
-[133] Pearl Investments LLC v. Standard I/O, Inc., 257 F. Supp. 2d 326 (D.Me., 2003 年 4 月 23 日), _可在_http://scholar.google.com/scholar\_case?case=10485186593853024142)获取。
+[133] Pearl Investments LLC v. Standard I/O, Inc., 257 F. Supp. 2d 326 (D.Me., 2003 年 4 月 23 日), _可在_ http://scholar.google.com/scholar\_case?case=10485186593853024142)获取。
 
-[134] Pearl Investments, LLC v. Standard I/O, Inc., 324 F. Supp. 2d 43, 45 (D. Me. 2004), _可在_http://scholar.google.com/scholar\_case?case=1439987705010697232 获取。
+[134] Pearl Investments, LLC v. Standard I/O, Inc., 324 F. Supp. 2d 43, 45 (D. Me. 2004), _可在_ http://scholar.google.com/scholar\_case?case=1439987705010697232 获取。
 
-[135] Ticketmaster L.L.C. v. RMG Techs., Inc., 507 F. Supp. 2d 1096, 1113 (C.D. Cal. 2007) (“……因为[Ticketmaster]没有按法规要求量化其损失，甚至没有试图显示损失中有多大一部分归因于[RMG]，法院无法认定[Ticketmaster]已明确证明其由[RMG]造成的损失超过了 5000 美元的最低限额。因此，CFAA 索赔不构成初步禁令的基础。”), _可在_http://scholar.google.com/scholar\_case?case=14769750588422384913 获取。
+[135] Ticketmaster L.L.C. v. RMG Techs., Inc., 507 F. Supp. 2d 1096, 1113 (C.D. Cal. 2007) (“……因为[Ticketmaster]没有按法规要求量化其损失，甚至没有试图显示损失中有多大一部分归因于[RMG]，法院无法认定[Ticketmaster]已明确证明其由[RMG]造成的损失超过了 5000 美元的最低限额。因此，CFAA 索赔不构成初步禁令的基础。”), _可在_ http://scholar.google.com/scholar\_case?case=14769750588422384913 获取。
 
-[136] _同上_ 第 1112 页 (“被告关于 DMCA 索赔的唯一独特论点是，CAPTCHA 不是一个系统或程序，而仅仅是一个图像，并且 CAPTCHA 旨在规范门票销售，而不是规范对受版权保护作品的访问。”), _可在_http://scholar.google.com/scholar\_case?case=3981873387095830655 获取。
+[136] _同上_ 第 1112 页 (“被告关于 DMCA 索赔的唯一独特论点是，CAPTCHA 不是一个系统或程序，而仅仅是一个图像，并且 CAPTCHA 旨在规范门票销售，而不是规范对受版权保护作品的访问。”), _可在_ http://scholar.google.com/scholar\_case?case=3981873387095830655 获取。
 
 [137] _参见_ _同上_.; Randall Stross, _Hannah Montana Tickets on Sale! Oops, They’re Gone_, N.Y. Times (2007 年 12 月 16 日), http://www.nytimes.com/2007/12/16/business/16digi.html。
 
