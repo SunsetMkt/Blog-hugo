@@ -17,7 +17,7 @@
     },
     "scripts": {
         "build": "hugo --gc --logLevel info",
-        "dev": "hugo server -D -O",
+        "dev": "hugo server -D -M -O",
         "clean": "rm -r public resources",
         "vercel-install-golang": "dnf install -y golang",
         "cloudflare-pages-build": "git fetch --unshallow && hugo --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \\;",
@@ -25,7 +25,8 @@
         "rm-25mb-public": "find public -type f -size +25M -print -exec rm -vf {} \\;",
         "list-public": "find public -type f -printf '%P\n' > public/filelist.txt",
         "lint": "eslint . --fix",
-        "format": "prettier . --write"
+        "format": "prettier . --write",
+        "test": "hugo -M --logLevel info"
     },
     "engines": {
         "node": ">=22",
