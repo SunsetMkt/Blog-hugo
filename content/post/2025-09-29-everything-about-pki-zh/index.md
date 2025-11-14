@@ -1391,7 +1391,7 @@ attestation 包含在 subscriber 和 RP 的 TLS handshake ("stapled to" the cert
 这给 RP 提供了相对比较及时的撤销状态，而不用每次都去查询 OCSP responder。
 subscriber 可以在 signed OCSP response 过期之前多次使用它。这减少了 OCSP 的负担，也解决了 OCSP 的隐私问题。
 
-但是，所有这些东西其实最终都像是一个 **鲁布·戈德堡装置（Rube Goldberg Device） **，
+但是，所有这些东西其实最终都像是一个 **鲁布·戈德堡装置（Rube Goldberg Device）**，
 
 > 鲁布·戈德堡机械（Rube Goldberg machine）是一种被设计得过度复杂的机械组合，以
 > 迂回曲折的方法去完成一些其实是非常简单的工作，例如倒一杯茶，或打一只蛋等等。
