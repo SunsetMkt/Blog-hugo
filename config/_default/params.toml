@@ -126,6 +126,8 @@ reaction = [
 requiredMeta = ["name"]
 search = false
 turnstileKey = "0x4AAAAAAAZ0ouYIQ46lj2Up"
+pageview = ".waline-pageview-count" # 浏览量统计
+comment = ".waline-comment-count" # 评论数统计
 
 [comments.waline.locale]
 admin = "Admin"
