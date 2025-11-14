@@ -2,8 +2,8 @@
     width: 0px;
     height: 0px;
     visibility: hidden;
-    background-image: url("../image/gravgun-outline.png"),
-        url("../image/gravgun-inset.png"),
+    background-image:
+        url("../image/gravgun-outline.png"), url("../image/gravgun-inset.png"),
         url("../image/gravgun-inset-hover.png"),
         url("../image/gravgun-hover.png"), url("../image/gravgun_vm_open.png"),
         url("../image/gravgun_vm_close.png"), url();

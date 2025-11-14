@@ -44,13 +44,13 @@
                     f < t.length;
                     f++
                 )
-                    (o = t[f].duration), (e += o);
+                    ((o = t[f].duration), (e += o));
                 for (s = 0, f = 0; f < t.length; f++)
-                    (o = t[f].duration),
+                    ((o = t[f].duration),
                         (s += o),
                         (h = (s / e) * 100 + "%"),
                         (c = t[f].properties),
-                        (u.keyframe_style_str += h + "{" + c + "}");
+                        (u.keyframe_style_str += h + "{" + c + "}"));
                 u.keyframe_style_str += "}";
                 u.delay = i;
                 u.duration = e + "s";
@@ -69,14 +69,14 @@
                     t < this._sequences.length;
                     t++
                 )
-                    (n = this._sequences[t]),
+                    ((n = this._sequences[t]),
                         (i = n.element),
                         this.stylesheet.insertRule(n.keyframe_style_str, 0),
                         this._created_keyframes.push(n.keyframe_name),
                         (i.style.msAnimationDuration = n.duration),
                         (i.style.msAnimationDelay = n.delay),
                         (i.style.msAnimationFillMode = n.fill_mode),
-                        (i.style.msAnimationName = n.keyframe_name);
+                        (i.style.msAnimationName = n.keyframe_name));
             };
             ScenesManager = function (n) {
                 this._event_element = document.createElement("div");
@@ -174,11 +174,11 @@
                     f < e.length;
                     f++
                 )
-                    (r = e[f]),
+                    ((r = e[f]),
                         (r.style.fontSize = o),
                         (r.style.fontFamily = s),
                         (r.style.fontWeight = h),
-                        (r.style.fontColor = t);
+                        (r.style.fontColor = t));
             }
             function setRTL(n) {
                 rtl_mode = n;
@@ -709,7 +709,7 @@
                 );
             }
             function initTouchSequence(n) {
-                if (n) initEndSequence(), initEndSequenceMessagesOverlay();
+                if (n) (initEndSequence(), initEndSequenceMessagesOverlay());
                 else {
                     initTryThisLaterMessageSequence("6s", "21s", "7s");
                     var t, i;
@@ -772,7 +772,7 @@
                 }
             }
             function initTouchAndMouseSequence(n) {
-                if (n) initEndSequence(), initEndSequenceMessagesOverlay();
+                if (n) (initEndSequence(), initEndSequenceMessagesOverlay());
                 else {
                     initTryThisLaterMessageSequence("6s", "57.4s", "7.8s");
                     var t, i;
@@ -870,7 +870,7 @@
                 }
             }
             function initMouseSequence(n) {
-                if (n) initEndSequence(), initEndSequenceMessagesOverlay();
+                if (n) (initEndSequence(), initEndSequenceMessagesOverlay());
                 else {
                     initTryThisLaterMessageSequence("14.3s", "15.6s", "7.8s");
                     var t, i;
@@ -2641,20 +2641,20 @@
                     n < e.length;
                     n++
                 )
-                    (t = e[n]),
+                    ((t = e[n]),
                         (t.style.width = i + "px"),
                         (t.style.left = (f - i) / 2 + "px"),
-                        (t.style.top = -t.clientHeight - 40 + "px");
+                        (t.style.top = -t.clientHeight - 40 + "px"));
                 for (
                     u = document.querySelectorAll(".instruction_text_small"),
                         n = 0;
                     n < u.length;
                     n++
                 )
-                    (r = u[n]),
+                    ((r = u[n]),
                         (r.style.width = i + "px"),
                         (r.style.left = (f - i) / 2 + "px"),
-                        (r.style.top = "390px");
+                        (r.style.top = "390px"));
             }
             function centerPos() {
                 var f, e, n, t;
@@ -2675,25 +2675,25 @@
                     i = window.innerWidth,
                     r = window.innerHeight;
                 for (n = 0; n < u.length; n++)
-                    (t = u[n]),
+                    ((t = u[n]),
                         (t.style.width = i + "px"),
-                        (t.style.top = (r - t.offsetHeight) / 2 + "px");
+                        (t.style.top = (r - t.offsetHeight) / 2 + "px"));
                 var u = document.querySelectorAll(".final_text_small"),
                     i = window.innerWidth,
                     r = window.innerHeight;
                 for (n = 0; n < u.length; n++)
-                    (t = u[n]),
+                    ((t = u[n]),
                         (t.style.width = i + "px"),
                         (t.style.top =
-                            Math.floor((r - t.offsetHeight + 120) / 2) + "px");
+                            Math.floor((r - t.offsetHeight + 120) / 2) + "px"));
                 for (
                     e = document.querySelectorAll(".fullscreen_color"), n = 0;
                     n < e.length;
                     n++
                 )
-                    (t = e[n]),
+                    ((t = e[n]),
                         (t.style.width = window.outerWidth + "px"),
-                        (t.style.height = window.outerHeight + "px");
+                        (t.style.height = window.outerHeight + "px"));
             }
             function endAnimation() {
                 var n,
@@ -2717,8 +2717,10 @@
                         n < t.length;
                         n++
                     )
-                        (i = t[n]),
-                            document.querySelector("#container").removeChild(i);
+                        ((i = t[n]),
+                            document
+                                .querySelector("#container")
+                                .removeChild(i));
                 }, 2e3);
             }
             function setWrapUpSequence() {
@@ -2776,19 +2778,19 @@
                     r < u.length;
                     r++
                 )
-                    (i = u[r]),
+                    ((i = u[r]),
                         i.attributes.fill
                             ? (i.attributes.fill.value = n)
-                            : (i.style.backgroundColor = n);
+                            : (i.style.backgroundColor = n));
                 for (
                     u = document.getElementsByClassName("user_color2"), r = 0;
                     r < u.length;
                     r++
                 )
-                    (i = u[r]),
+                    ((i = u[r]),
                         i.attributes.fill
                             ? (i.attributes.fill.value = t)
-                            : (i.style.backgroundColor = t);
+                            : (i.style.backgroundColor = t));
             }
             function setItemText(n, t) {
                 document.getElementById(n).innerHTML = t;

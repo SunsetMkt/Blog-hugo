@@ -2,9 +2,9 @@
 categories: Original
 date: 2023-07-16T00:00:00Z
 tags:
-  - Windows
-  - 信息技术
-  - 软件
+    - Windows
+    - 信息技术
+    - 软件
 slug: Process-Lasso
 title: Process Lasso：实时进程 CPU 占用调整（付费/功能限制）
 ---

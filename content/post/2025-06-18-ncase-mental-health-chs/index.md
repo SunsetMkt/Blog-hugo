@@ -2,8 +2,8 @@
 categories: Repost
 date: 2025-06-18T00:00:00Z
 tags:
-  - 医学
-  - 指南
+    - 医学
+    - 指南
 slug: ncase-mental-health-chs
 title: 心理健康小秘诀 feat. 焦虑之狼
 ---

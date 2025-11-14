@@ -2,8 +2,8 @@
 categories: Original
 date: 2023-02-20T00:00:00Z
 tags:
-  - 7-Zip
-  - 信息技术
+    - 7-Zip
+    - 信息技术
 slug: 7zip-without-timestamp
 title: 使用 7-Zip 创建无时间戳的压缩文件
 ---

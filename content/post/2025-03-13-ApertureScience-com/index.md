@@ -2,9 +2,9 @@
 categories: Repost
 date: 2025-03-13T00:00:00Z
 tags:
-  - 信息技术
-  - 前端
-  - 游戏
+    - 信息技术
+    - 前端
+    - 游戏
 slug: ApertureScience-com
 title: ApertureScience.com 的历史版本
 ---

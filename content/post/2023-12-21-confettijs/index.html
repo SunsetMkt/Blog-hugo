@@ -14,12 +14,12 @@ title: 彩纸屑 Demo
     var Confetti = (function () {
         var t = (function () {
                 return function () {
-                    (this.gravity = 10),
+                    ((this.gravity = 10),
                         (this.particle_count = 75),
                         (this.particle_size = 1),
                         (this.explosion_power = 25),
                         (this.destroy_target = !0),
-                        (this.fade = !1);
+                        (this.fade = !1));
                 };
             })(),
             e = (function () {
@@ -65,7 +65,7 @@ title: 彩纸屑 Demo
                         (this.setupCanvasContext = function () {
                             if (!e.CTX) {
                                 var t = document.createElement("canvas");
-                                (e.CTX = t.getContext("2d")),
+                                ((e.CTX = t.getContext("2d")),
                                     (t.width = 2 * window.innerWidth),
                                     (t.height = 2 * window.innerHeight),
                                     (t.style.position = "fixed"),
@@ -81,16 +81,16 @@ title: 彩纸屑 Demo
                                     window.addEventListener(
                                         "resize",
                                         function () {
-                                            (t.width = 2 * window.innerWidth),
+                                            ((t.width = 2 * window.innerWidth),
                                                 (t.height =
-                                                    2 * window.innerHeight);
+                                                    2 * window.innerHeight));
                                         },
-                                    );
+                                    ));
                             }
                         }),
                         (this.setupElement = function (t) {
                             var n;
-                            (r.element = document.getElementById(t)),
+                            ((r.element = document.getElementById(t)),
                                 null === (n = r.element) ||
                                     void 0 === n ||
                                     n.addEventListener("click", function (t) {
@@ -98,29 +98,29 @@ title: 彩纸屑 Demo
                                             2 * t.clientX,
                                             2 * t.clientY,
                                         );
-                                        r.bursts.push(new i(n)),
+                                        (r.bursts.push(new i(n)),
                                             e.CONFIG.destroy_target &&
                                                 (r.element.style.visibility =
-                                                    "hidden");
-                                    });
+                                                    "hidden"));
+                                    }));
                         }),
                         (this.update = function (t) {
-                            (r.delta_time = (t - r.time) / 1e3), (r.time = t);
+                            ((r.delta_time = (t - r.time) / 1e3), (r.time = t));
                             for (var e = r.bursts.length - 1; e >= 0; e--)
-                                r.bursts[e].update(r.delta_time),
+                                (r.bursts[e].update(r.delta_time),
                                     0 == r.bursts[e].particles.length &&
-                                        r.bursts.splice(e, 1);
-                            r.draw(), window.requestAnimationFrame(r.update);
+                                        r.bursts.splice(e, 1));
+                            (r.draw(), window.requestAnimationFrame(r.update));
                         }),
                         !n)
                     )
                         throw new Error("Missing id");
-                    e.CONFIG || (e.CONFIG = new t()),
+                    (e.CONFIG || (e.CONFIG = new t()),
                         (this.time = new Date().getTime()),
                         (this.delta_time = 0),
                         this.setupCanvasContext(),
                         this.setupElement(n),
-                        window.requestAnimationFrame(this.update);
+                        window.requestAnimationFrame(this.update));
                 }
                 return (
                     (e.prototype.draw = function () {
@@ -141,9 +141,9 @@ title: 彩纸屑 Demo
                 return (
                     (t.prototype.update = function (t) {
                         for (var e = this.particles.length - 1; e >= 0; e--)
-                            this.particles[e].update(t),
+                            (this.particles[e].update(t),
                                 this.particles[e].checkBounds() &&
-                                    this.particles.splice(e, 1);
+                                    this.particles.splice(e, 1));
                     }),
                     (t.prototype.draw = function () {
                         for (var t = this.particles.length - 1; t >= 0; t--)
@@ -154,7 +154,7 @@ title: 彩纸屑 Demo
             })(),
             n = (function () {
                 function t(t) {
-                    (this.size = new o(
+                    ((this.size = new o(
                         (16 * Math.random() + 4) * e.CONFIG.particle_size,
                         (4 * Math.random() + 4) * e.CONFIG.particle_size,
                     )),
@@ -167,11 +167,11 @@ title: 彩纸屑 Demo
                         (this.rotation_speed = 10 * (Math.random() - 0.5)),
                         (this.hue = 360 * Math.random()),
                         (this.opacity = 100),
-                        (this.lifetime = Math.random() + 0.25);
+                        (this.lifetime = Math.random() + 0.25));
                 }
                 return (
                     (t.prototype.update = function (t) {
-                        (this.velocity.y +=
+                        ((this.velocity.y +=
                             e.CONFIG.gravity *
                             (this.size.y / (10 * e.CONFIG.particle_size)) *
                             t),
@@ -181,7 +181,7 @@ title: 彩纸屑 Demo
                             (this.position.x += this.velocity.x),
                             (this.position.y += this.velocity.y),
                             (this.rotation += this.rotation_speed),
-                            e.CONFIG.fade && (this.opacity -= this.lifetime);
+                            e.CONFIG.fade && (this.opacity -= this.lifetime));
                     }),
                     (t.prototype.checkBounds = function () {
                         return (
@@ -203,7 +203,7 @@ title: 彩纸屑 Demo
             })(),
             o = (function () {
                 return function (t, e) {
-                    (this.x = t || 0), (this.y = e || 0);
+                    ((this.x = t || 0), (this.y = e || 0));
                 };
             })(),
             r = (function () {

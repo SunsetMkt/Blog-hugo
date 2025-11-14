@@ -2,8 +2,8 @@
 categories: Repost
 date: 2025-06-07T00:00:00Z
 tags:
-  - 指南
-  - 社会评论
+    - 指南
+    - 社会评论
 slug: universal-declaration-of-human-rights
 title: 世界人权宣言
 ---

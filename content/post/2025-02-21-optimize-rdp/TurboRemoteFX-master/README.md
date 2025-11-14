@@ -16,9 +16,9 @@ Requirements:
 
 - You need to install the PolicyFileEditor Powershell Module. To do this run:
 
-  ```console
-  PS> Install-Module -Name PolicyFileEditor -Scope CurrentUser
-  ```
+    ```console
+    PS> Install-Module -Name PolicyFileEditor -Scope CurrentUser
+    ```
 
 To make the Group Policy/Registry changes:
 
@@ -28,34 +28,34 @@ To make the Group Policy/Registry changes:
 
 3. Then run the following:
 
-   ```console
-   PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process ; .\TurboRemoteFXHostGPO.ps1
-   ```
+    ```console
+    PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process ; .\TurboRemoteFXHostGPO.ps1
+    ```
 
 4. To assert the Group Policy changes run:
 
-   ```console
-   PS> gpupdate /force
-   ```
+    ```console
+    PS> gpupdate /force
+    ```
 
 To undo the changes:
 
 - Follow the steps above except use the `TurboRemoteFXHostGPO-inverse.ps1` script.
 
-  ```console
-  PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process ; .\TurboRemoteFXHostGPO-inverse.ps1
-  ```
+    ```console
+    PS> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process ; .\TurboRemoteFXHostGPO-inverse.ps1
+    ```
 
 Also recommended:
 
 - If using NVIDIA, you should also grab their extra driver to support OpenGL over RDP
-  - You will need to make an Nvidia account to download this.
-  - [nvidiaopenglrdp.exe](https://developer.nvidia.com/nvidia-opengl-rdp)
-  - [Khronos Group article explaining more](https://www.khronos.org/news/permalink/nvidia-provides-opengl-accelerated-remote-desktop-for-geforce-5e88fc2035e342.98417181)
+    - You will need to make an Nvidia account to download this.
+    - [nvidiaopenglrdp.exe](https://developer.nvidia.com/nvidia-opengl-rdp)
+    - [Khronos Group article explaining more](https://www.khronos.org/news/permalink/nvidia-provides-opengl-accelerated-remote-desktop-for-geforce-5e88fc2035e342.98417181)
 - Client side changes
-  - When opening an RDP connection make the settings:
-    - Network Type: LAN
-    - Persistent Bitmap Caching: No
+    - When opening an RDP connection make the settings:
+        - Network Type: LAN
+        - Persistent Bitmap Caching: No
 
 ## About
 

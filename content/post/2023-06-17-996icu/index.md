@@ -2,7 +2,7 @@
 categories: Original
 date: 2023-06-17T00:00:00Z
 tags:
-  - 社会评论
+    - 社会评论
 slug: 996icu
 title: 有关 996ICU 项目的辟谣
 ---

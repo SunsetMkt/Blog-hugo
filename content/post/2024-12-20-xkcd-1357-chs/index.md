@@ -2,8 +2,8 @@
 categories: Repost
 date: 2024-12-20T00:00:00Z
 tags:
-  - xkcd
-  - 社会评论
+    - xkcd
+    - 社会评论
 slug: xkcd-1357-chs
 title: xkcd：言论自由
 ---

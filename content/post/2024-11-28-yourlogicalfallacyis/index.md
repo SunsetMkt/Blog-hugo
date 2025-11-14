@@ -2,7 +2,7 @@
 categories: Repost
 date: 2024-11-28T00:00:00Z
 tags:
-  - 逻辑学
+    - 逻辑学
 slug: yourlogicalfallacyis
 title: 汝不得犯逻辑谬误
 ---

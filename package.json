@@ -1,24 +1,24 @@
 {
-  "name": "sunset-blog-hugo",
-  "description": "Blog refactored.",
-  "devDependencies": {
-    "npm-check-updates": "^19.1.2",
-    "prettier": "^3.6.2",
-    "prettier-plugin-go-template": "^0.0.15",
-    "prettier-plugin-lint-md": "^1.0.1"
-  },
-  "scripts": {
-    "build": "hugo --gc --logLevel info",
-    "dev": "hugo server -D -O",
-    "clean": "rm -r public resources",
-    "vercel-install-golang": "dnf install -y golang",
-    "cloudflare-pages-build": "git fetch --unshallow && hugo --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \\;",
-    "git-unshallow": "git fetch --unshallow",
-    "rm-25mb-public": "find public -type f -size +25M -print -exec rm -vf {} \\;",
-    "list-public": "find public -type f -printf '%P\n' > public/filelist.txt"
-  },
-  "engines": {
-    "node": ">=22",
-    "npm": ">=10"
-  }
+    "name": "sunset-blog-hugo",
+    "description": "Blog refactored.",
+    "devDependencies": {
+        "npm-check-updates": "^19.1.2",
+        "prettier": "^3.6.2",
+        "prettier-plugin-go-template": "^0.0.15",
+        "prettier-plugin-lint-md": "^1.0.1"
+    },
+    "scripts": {
+        "build": "hugo --gc --logLevel info",
+        "dev": "hugo server -D -O",
+        "clean": "rm -r public resources",
+        "vercel-install-golang": "dnf install -y golang",
+        "cloudflare-pages-build": "git fetch --unshallow && hugo --gc --logLevel info && find public -type f -size +25M -print -exec rm -vf {} \\;",
+        "git-unshallow": "git fetch --unshallow",
+        "rm-25mb-public": "find public -type f -size +25M -print -exec rm -vf {} \\;",
+        "list-public": "find public -type f -printf '%P\n' > public/filelist.txt"
+    },
+    "engines": {
+        "node": ">=22",
+        "npm": ">=10"
+    }
 }

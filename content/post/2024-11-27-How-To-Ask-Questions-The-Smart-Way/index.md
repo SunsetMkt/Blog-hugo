@@ -2,9 +2,9 @@
 categories: Repost
 date: 2024-11-27T00:00:00Z
 tags:
-  - 信息技术
-  - 开源
-  - 指南
+    - 信息技术
+    - 开源
+    - 指南
 slug: How-To-Ask-Questions-The-Smart-Way
 title: 提问的智慧
 ---

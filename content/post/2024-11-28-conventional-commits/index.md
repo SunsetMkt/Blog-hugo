@@ -2,10 +2,10 @@
 categories: Repost
 date: 2024-11-28T00:00:00Z
 tags:
-  - Git
-  - 信息技术
-  - 开源
-  - 指南
+    - Git
+    - 信息技术
+    - 开源
+    - 指南
 slug: conventional-commits
 title: 约定式提交 1.0.0
 ---

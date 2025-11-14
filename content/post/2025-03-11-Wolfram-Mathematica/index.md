@@ -2,10 +2,10 @@
 categories: Original
 date: 2025-03-11T00:00:00Z
 tags:
-  - Mathematica
-  - 信息技术
-  - 软件
-  - 逆向工程
+    - Mathematica
+    - 信息技术
+    - 软件
+    - 逆向工程
 slug: Wolfram-Mathematica
 title: 获取 Wolfram Mathematica
 ---

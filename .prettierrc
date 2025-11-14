@@ -1,14 +1,8 @@
 {
-    "plugins": [
-        "prettier-plugin-go-template",
-        "prettier-plugin-lint-md"
-    ],
+    "plugins": ["prettier-plugin-go-template", "prettier-plugin-lint-md"],
     "overrides": [
         {
-            "files": [
-                "layouts/**/*.html",
-                "content/**/*.html"
-            ],
+            "files": ["layouts/**/*.html", "content/**/*.html"],
             "options": {
                 "parser": "go-template"
             }

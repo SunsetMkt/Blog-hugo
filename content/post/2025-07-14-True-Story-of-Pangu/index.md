@@ -2,11 +2,11 @@
 categories: Repost
 date: 2025-07-14T00:00:00Z
 tags:
-  - LLM
-  - 信息技术
-  - 华为
-  - 开源
-  - 社会评论
+    - LLM
+    - 信息技术
+    - 华为
+    - 开源
+    - 社会评论
 slug: True-Story-of-Pangu
 title: 盘古之殇：华为诺亚盘古大模型研发历程的心酸与黑暗
 ---

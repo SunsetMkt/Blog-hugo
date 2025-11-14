@@ -278,7 +278,6 @@ Tailscale 和其他一些东西作为例子。
 - 但实际上，我们可以通过**旁路信道**（side channel）来达到这个目的
   ，并且这个旁路信道并不需要很 fancy：它可以有几秒钟的延迟、只需要传送几 KB 的
   信息，因此即使是一个配置非常低的虚拟机，也能为几千台机器提供这样的旁路通信服务。
-
     - 在遥远的过去，我曾用 XMPP 聊天消息作为旁路，效果非常不错。
     - 另一个例子是 WebRTC，它需要你提供一个自己的“信令信道”（signalling channel，
       这个词也暗示了 WebRTC 的 IP telephony ancestry），并将其配置到 WebRTC API。
@@ -346,7 +345,6 @@ SNAT 最常见的使用场景是**将很多设备连接到公网，而只使用�
 
     包经过路由器时，路由器发现这是一个它没有见过的新会话（session）。
     它知道 `192.168.0.20` 是私有 IP，公网无法给这样的地址回包，但它有办法解决：
-
     1. 在它**自己的公网 IP 上挑一个可用的 UDP 端口**，例如 `2.2.2.2:4242`，
     2. 然后创建一个 _NAT mapping_：`192.168.0.20:1234` `<-->` `2.2.2.2:4242`，
     3. 然后将包发到公网，此时源地址变成了 `2.2.2.2:4242` 而不是原来的 `192.168.0.20:1234`。因此服务端看到的是转换之后地址，
@@ -621,7 +619,6 @@ UC Berkeley guest WiFi 禁止除 DNS 流量之外的所有 outbound UDP 流量�
 有多种中继实现方式。
 
 1. **TURN** (Traversal Using Relays around NAT)：经典方式，核心理念是
-
     1. **用户**（人）先去公网上的 TURN 服务器认证，成功后后者会告诉你：“我已经为你分配了 ip:port，接下来将为你中继流量”，
     2. 然后将这个 ip:port 地址告诉对方，让它去连接这个地址，接下去就是非常简单的客户端/服务器通信模型了。
 
@@ -631,7 +628,6 @@ UC Berkeley guest WiFi 禁止除 DNS 流量之外的所有 outbound UDP 流量�
 2. DERP (Detoured Encrypted Routing Protocol)
 
     这是我们创建的一个协议，<a href="https://tailscale.com/blog/how-tailscale-works/#encrypted-tcp-relays-derp">DERP</a>，
-
     1. 它是一个**通用目的包中继协议，运行在 HTTP 之上**，而大部分网络都是允许 HTTP 通信的。
     2. 它根据目的公钥（destination's public key）来中继加密的流量（encrypted payloads）。
 
@@ -791,7 +787,6 @@ UC Berkeley guest WiFi 禁止除 DNS 流量之外的所有 outbound UDP 流量�
     现在仍然很多。
 
     请求和响应：
-
     - “你好，请将我的 `lan-ip:port` 转发到公网（WAN）”，
     - “好的，我已经为你分配了一个公网映射 `wan-ip:port` ”。
 
@@ -1069,7 +1064,6 @@ ICE 客户端，应该通读<a href="https://tools.ietf.org/html/rfc8445">RFC 84
 
 1. 为实现和某个 peer 的通信，首先需要确定我们自己用的（客户端侧）这个 socket 的地址，
    这是一个列表，至少应该包括：
-
     1. 我们自己的 IPv6 `ip:ports`
     1. 我们自己的 IPv4 LAN `ip:ports`（局域网地址）
     1. 通过 STUN 服务器获取到的我们自己的 IPv4 WAN `ip:ports`（**公网地址**，可能会经过 NAT64 转换）
@@ -1080,7 +1074,6 @@ ICE 客户端，应该通读<a href="https://tools.ietf.org/html/rfc8445">RFC 84
    **列表中地址没有优先级**，也就是说，如果对方给的了 15 个地址，那我们应该把这 15 个地址都探测一遍。
 
     这些**探测包有两个目的**：
-
     1. **打开防火墙，穿透 NAT**，也就是本文一直在介绍的内容；
     2. **健康检测**。我们在不断交换（最好是已认证的）“ping/pong” 包，来检测某个特定的路径是不是端到端通的。
 

@@ -2,9 +2,9 @@
 categories: Original
 date: 2023-08-09T00:00:00Z
 tags:
-  - Vercel
-  - 信息技术
-  - 前端
+    - Vercel
+    - 信息技术
+    - 前端
 slug: hoppscotch-vercel
 title: 在 Vercel 上部署 Hoppscotch（仅前端）
 ---

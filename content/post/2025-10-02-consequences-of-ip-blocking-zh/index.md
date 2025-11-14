@@ -4,10 +4,10 @@ date: 2025-10-02T00:00:00Z
 title: 阻止 IP 地址的非预期后果（Cloudflare，2022）
 slug: consequences-of-ip-blocking-zh
 tags:
-  - Cloudflare
-  - 信息技术
-  - 社会评论
-  - 翻译
+    - Cloudflare
+    - 信息技术
+    - 社会评论
+    - 翻译
 ---
 
 来源：<https://blog.cloudflare.com/zh-cn/consequences-of-ip-blocking/>

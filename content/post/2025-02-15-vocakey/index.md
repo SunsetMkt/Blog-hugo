@@ -2,11 +2,11 @@
 categories: Original
 date: 2025-02-15T00:00:00Z
 tags:
-  - SynthesizerV
-  - Vocaloid
-  - 信息技术
-  - 软件
-  - 逆向工程
+    - SynthesizerV
+    - Vocaloid
+    - 信息技术
+    - 软件
+    - 逆向工程
 slug: vocakey
 title: vocakey.info 镜像站和其他有用的链接
 ---

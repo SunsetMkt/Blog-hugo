@@ -2,8 +2,8 @@
 categories: Repost
 date: 2024-06-13T00:00:00Z
 tags:
-  - 医学
-  - 指南
+    - 医学
+    - 指南
 slug: 危机（自杀）干预方法参考
 title: 危机（自杀）干预方法参考
 ---

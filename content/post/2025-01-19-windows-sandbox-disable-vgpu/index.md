@@ -2,8 +2,8 @@
 categories: Original
 date: 2025-01-19T00:00:00Z
 tags:
-  - Windows
-  - 信息技术
+    - Windows
+    - 信息技术
 slug: windows-sandbox-disable-vgpu
 title: Windows Sandbox 在默认启用 vGPU 的状态下无法启动，报错 0x80072746
 ---

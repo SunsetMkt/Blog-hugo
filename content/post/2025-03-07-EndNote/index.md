@@ -2,10 +2,10 @@
 categories: Original
 date: 2025-03-07T00:00:00Z
 tags:
-  - EndNote
-  - 信息技术
-  - 软件
-  - 逆向工程
+    - EndNote
+    - 信息技术
+    - 软件
+    - 逆向工程
 slug: EndNote
 title: 获取（几乎是免费的）EndNote
 ---

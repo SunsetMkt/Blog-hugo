@@ -2,9 +2,9 @@
 categories: Repost
 date: 2024-06-12T00:00:00Z
 tags:
-  - Mozilla
-  - 信息技术
-  - 开源
+    - Mozilla
+    - 信息技术
+    - 开源
 slug: mozilla-manifesto
 title: Mozilla 宣言
 ---

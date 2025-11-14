@@ -18,9 +18,9 @@ pnpm build
 
 ## Thanks to
 
--   [Huawei Device Co., Ltd.](https://www.huawei.com/)
--   [IKKI2000/harmonyos-fonts](https://github.com/IKKI2000/harmonyos-fonts)
--   [KonghaYao/cn-font-split](https://github.com/KonghaYao/cn-font-split)
+- [Huawei Device Co., Ltd.](https://www.huawei.com/)
+- [IKKI2000/harmonyos-fonts](https://github.com/IKKI2000/harmonyos-fonts)
+- [KonghaYao/cn-font-split](https://github.com/KonghaYao/cn-font-split)
 
 ## Disclaimer
 

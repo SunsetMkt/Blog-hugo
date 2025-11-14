@@ -2,8 +2,8 @@
 categories: Repost
 date: 2024-07-15T00:00:00Z
 tags:
-  - 小说
-  - 社会评论
+    - 小说
+    - 社会评论
 slug: 瓷器村食堂的故事
 title: 瓷器村食堂的故事
 ---

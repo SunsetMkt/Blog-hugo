@@ -22,7 +22,8 @@ body {
     height: fit-content;
     background-color: black;
     color: #debe5f;
-    font-family: "Courier New", "Courier", "CourierPrimeSans", monospace !important;
+    font-family:
+        "Courier New", "Courier", "CourierPrimeSans", monospace !important;
     font-weight: 600;
 }
 
@@ -33,7 +34,8 @@ span {
 }
 
 pre {
-    font-family: "Courier New", "Courier", "CourierPrimeSans", monospace !important;
+    font-family:
+        "Courier New", "Courier", "CourierPrimeSans", monospace !important;
     line-height: 1.3;
     margin: 0;
 

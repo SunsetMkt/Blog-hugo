@@ -2,8 +2,8 @@
 categories: Original
 date: 2024-10-19T00:00:00Z
 tags:
-  - Go
-  - 信息技术
+    - Go
+    - 信息技术
 slug: go-unexported-function
 title: 在 Go 中使用未导出的函数
 ---

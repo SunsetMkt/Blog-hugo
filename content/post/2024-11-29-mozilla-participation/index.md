@@ -2,10 +2,10 @@
 categories: Repost
 date: 2024-11-29T00:00:00Z
 tags:
-  - Mozilla
-  - 信息技术
-  - 开源
-  - 指南
+    - Mozilla
+    - 信息技术
+    - 开源
+    - 指南
 slug: mozilla-participation
 title: Mozilla 社区参与准则
 ---

@@ -2,9 +2,9 @@
 categories: Original
 date: 2023-10-07T00:00:00Z
 tags:
-  - Android
-  - 信息技术
-  - 小米
+    - Android
+    - 信息技术
+    - 小米
 slug: xiaomi-eu-tips
 title: 关于 MIUI EU 的备忘
 ---

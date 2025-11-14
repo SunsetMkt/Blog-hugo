@@ -2,10 +2,10 @@
 categories: Original
 date: 2024-10-16T00:00:00Z
 tags:
-  - Bitwarden
-  - 信息技术
-  - 密码管理器
-  - 软件
+    - Bitwarden
+    - 信息技术
+    - 密码管理器
+    - 软件
 slug: bitwarden-premium-alternative
 title: Bitwarden Premium 的免费替代方案
 ---

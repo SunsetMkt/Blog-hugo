@@ -2,8 +2,8 @@
 categories: Repost
 date: 2025-02-11T00:00:00Z
 tags:
-  - 前端
-  - 翻译
+    - 前端
+    - 翻译
 slug: Flag-for-the-Chinese-Language
 title: 让所有人不满意的中文语言旗帜
 ---

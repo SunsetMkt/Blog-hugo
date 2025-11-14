@@ -2,8 +2,8 @@
 categories: Original
 date: 2025-03-05T00:00:00Z
 tags:
-  - Windows
-  - 信息技术
+    - Windows
+    - 信息技术
 slug: NtShutdownSystem
 title: 使用 NtShutdownSystem 快速关闭或重启 Windows
 ---

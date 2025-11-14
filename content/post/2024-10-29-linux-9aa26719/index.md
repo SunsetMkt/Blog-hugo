@@ -2,11 +2,11 @@
 categories: Repost
 date: 2024-10-29T00:00:00Z
 tags:
-  - Linux
-  - 信息技术
-  - 开源
-  - 社会评论
-  - 翻译
+    - Linux
+    - 信息技术
+    - 开源
+    - 社会评论
+    - 翻译
 slug: linux-9aa26719
 title: "Re: [PATCH] MAINTAINERS: Remove some entries due to various compliance requirements."
 ---

@@ -2,8 +2,8 @@
 categories: Repost
 date: 2024-02-16T00:00:00Z
 tags:
-  - Windows
-  - 信息技术
+    - Windows
+    - 信息技术
 slug: solution-for-hyper-v-occupying-ports-used-by-other-software-or-services
 title: Hyper-V 占用其他软件或服务端口解决方案
 ---

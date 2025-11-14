@@ -2,10 +2,10 @@
 categories: Original
 date: 2022-09-01T00:00:00Z
 tags:
-  - QQ
-  - Windows
-  - 信息技术
-  - 软件
+    - QQ
+    - Windows
+    - 信息技术
+    - 软件
 slug: QQ-UWP
 title: 获取 QQ 微软商店版安装包
 ---

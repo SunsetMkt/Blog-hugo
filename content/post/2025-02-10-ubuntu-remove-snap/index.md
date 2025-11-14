@@ -2,9 +2,9 @@
 categories: Original
 date: 2025-02-10T00:00:00Z
 tags:
-  - Linux
-  - Ubuntu
-  - 信息技术
+    - Linux
+    - Ubuntu
+    - 信息技术
 slug: ubuntu-remove-snap
 title: 从 Ubuntu 中移除 Snap
 ---

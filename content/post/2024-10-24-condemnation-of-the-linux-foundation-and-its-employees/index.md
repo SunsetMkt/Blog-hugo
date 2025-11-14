@@ -2,10 +2,10 @@
 categories: Repost
 date: 2024-10-24T00:00:00Z
 tags:
-  - Linux
-  - 信息技术
-  - 开源
-  - 社会评论
+    - Linux
+    - 信息技术
+    - 开源
+    - 社会评论
 slug: condemnation-of-the-linux-foundation-and-its-employees
 title: 安同开源社区有关 Linux 基金会及其职员不当行为的谴责
 ---

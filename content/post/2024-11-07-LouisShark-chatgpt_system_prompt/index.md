@@ -2,9 +2,9 @@
 categories: Repost
 date: 2024-11-07T00:00:00Z
 tags:
-  - AI
-  - LLM
-  - 信息技术
+    - AI
+    - LLM
+    - 信息技术
 slug: LouisShark-chatgpt_system_prompt
 title: ChatGPT_system_prompt
 ---

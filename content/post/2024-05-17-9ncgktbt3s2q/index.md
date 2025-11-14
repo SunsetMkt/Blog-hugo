@@ -2,9 +2,9 @@
 categories: Original
 date: 2024-05-17T00:00:00Z
 tags:
-  - VisibleBody
-  - 医学
-  - 软件
+    - VisibleBody
+    - 医学
+    - 软件
 slug: 9ncgktbt3s2q
 title: 软件推荐：Human Anatomy Atlas
 ---

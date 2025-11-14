@@ -2,11 +2,11 @@
 categories: Repost
 date: 2024-10-24T00:00:00Z
 tags:
-  - Linux
-  - 信息技术
-  - 开源
-  - 社会评论
-  - 翻译
+    - Linux
+    - 信息技术
+    - 开源
+    - 社会评论
+    - 翻译
 slug: Goodbye-from-a-Linux-community-volunteer
 title: "linux: Goodbye from a Linux community volunteer"
 ---

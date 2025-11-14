@@ -83,20 +83,17 @@ tags:
    但使用哪个格式（例如 JSON 还是 YAML 还是 ASN.1）来描述，并不属于 X.509 的内容；
 
 1. ASN.1 是 X.509 的**描述格式**（或者说用 ASN.1 格式来定义 X.509），类似于现在的 protobuf；
-
     - ASN 中有很多数据类型，除了常见的整形、字符串等类型，还有一个称为 OID 的特殊类型，用点分整数表示，例如
       `2.5.4.3`，有点像 URI 或 IP 地址，在设计上是全球唯一标识符，
     - ASN.1 只是一种描述格式，并未定义如何序列化为比特流，因此又引出了 **ASN.1 的编码格式**；
       ASN.1 与其编码格式的关系，类似 **unicode 与 utf8 的关系**。
 
 1. ASN.1 的常见**编码格式**：
-
     - DER：一种二进制编码格式
     - PEM：一种文本编码格式，通常以 **<code>.pem</code>、<code>.crt</code> 或 <code>.cer</code>** 为后缀。
 
 1. 某些场景下，X.509 信息不够丰富，因此又设计了一些信息更丰富（例如可以包含证书
    链、秘钥）的证书封装格式，包括 PKCS #7 和 #12。
-
     - 仍然用 ASN.1 格式描述
     - 基本都是用 DER 编码
 
@@ -1140,7 +1137,6 @@ Subscriber 请求一个证书时，会向 CA 会提交一个 certificate signing
 - **CSR 也是一个 ASN.1 结构**，定义在 <a href="https://tools.ietf.org/html/rfc2986">PKCS#10</a>。
 - 与证书类似，CSR 数据结构包括一个公钥、一个名字和一个签名。
 - CSR 是**自签名的**，用与 CRS 中公钥对应的私钥自签名。
-
     - 这个签名用于证明该 subscriber 有对应的私钥，能对任何用其公钥加密的东西进行解密。
     - 还使即使 CSR 被复制或转发，都没有能篡改其中的内容（篡改无效）。
 
@@ -1176,25 +1172,21 @@ Web PKI 有三种类型的证书，它们**最大的区别就是如何识别 sub
     DV 证书绑定的是 **DNS name**，CA 在颁发时需要验证的这个 domain name 确实是由该 subscriber 控制的。
 
     证明过程通常是通过一个简单的流程，例如
-
     1. 给 WHOIS 记录中该 domain name 的管理员发送一封确认邮件。
     2. <a href="https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html">ACME protocol</a>
        （最初由 Let's Encrypt 开发和使用）改进了这种方式，更加自动化：不再用邮件验证
        ，而是由 ACME CA 提出一个 challenge，该 subscriber 通过完成这个问题来证明它拥有
        这个域名。challenge 部分属于 ACME 规范的扩展部门，常见的包括：
-
         - 在指定的 URL 上提供一个随机数（HTTP challenge）
         - 在 DNS TXT 记录中放置一个随机数（DNS challenge）
 
 2. organization validation (OV，组织验证)
-
     - OV 和下面将介绍的 EV 证书构建在 DV 证书之上，它们包括了 name 和域名
       **所属组织的位置信息（location）**。
     - OV 和 EV 证书不仅仅将证书关联到域名，还关联到控制这个域名的法律实体（legal entity）。
     - OV 证书的验证过程，不同的 CA 并不统一。为解决这个问题，CAB Forum 引入了 EV 证书。
 
 3. **extended validation** (EV，扩展验证)
-
     - EV 证书包含的基本信息与 OV 是一样的，但强制要求严格验证（identity proofing）。
     - EV 过程需要几天或几个星期，其中可能包括公网记录搜索（public records searches）和公司人员（用笔）签署的（纸质）证词。
 
@@ -1262,12 +1254,10 @@ provisioning infrastructure 在每个服务启动时，能将它们的 identity 
 在 subscriber 侧，证书过期后，私钥要处理得当：
 
 - 如果一个密钥对之前是**用来签名/认证**的（例如，基于 TLS），
-
     - 应该在不需要这个密钥对之后，**立即删除私钥**。
     - 保留已经失效的签名秘钥（signing key）会导致不必要的风险：对谁都已经没有用处，反而会被拿去仿冒签名。
 
 - 如果密钥对是**用来加密的**，情况就不同了。
-
     - 只要还有数据是用这个加密过的，就需要**留着这个私钥**。
 
 这就是为什么很多人会说，**不要用同一组秘钥来同时做签名和加密**（signing and encryption）。

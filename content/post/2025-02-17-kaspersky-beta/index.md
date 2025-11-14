@@ -2,11 +2,11 @@
 categories: Original
 date: 2025-02-17T00:00:00Z
 tags:
-  - Kaspersky
-  - Windows
-  - 信息技术
-  - 杀毒软件
-  - 软件
+    - Kaspersky
+    - Windows
+    - 信息技术
+    - 杀毒软件
+    - 软件
 slug: kaspersky-beta
 title: 安装 Kaspersky Beta 版本
 ---

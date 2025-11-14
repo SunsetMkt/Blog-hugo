@@ -2,9 +2,9 @@
 categories: Repost
 date: 2025-03-16T00:00:00Z
 tags:
-  - Demo
-  - 信息技术
-  - 前端
+    - Demo
+    - 信息技术
+    - 前端
 slug: emoji-style
 title: Emoji Default Style Values, v16.0
 ---
