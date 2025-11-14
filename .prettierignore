@@ -1,5 +1,6 @@
-# 构建和分发文件夹
+# 静态、构建和分发文件夹
 static
+tools
 node_modules
 dist
 build
@@ -20,6 +21,7 @@ resources
 *.iife.js
 *.prod.js
 *.production.js
+*.combined.js
 
 # Live2D & Spine dist
 *.moc3
@@ -31,3 +33,7 @@ items_pinned_to_model.json
 *.physics3.json
 *.vtube.json
 *.exp3.json
+
+# Just no
+*.pdf
+.gitkeep
