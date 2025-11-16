@@ -35,7 +35,7 @@
     {{- errorf "jsBuild: resource not found for path %q" $path -}}
 {{- end -}}
 
-{{- $defaultOpts := dict "minify" true "sourceMap" "inline" -}}
+{{- $defaultOpts := dict "minify" hugo.IsProduction "sourceMap" "inline" -}}
 {{- $opts := merge $defaultOpts $userOpts -}}
 
 {{- $built := $res | js.Build $opts | fingerprint -}}
