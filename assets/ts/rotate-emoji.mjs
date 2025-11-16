@@ -76,5 +76,7 @@ export default function () {
     currentIndex = -1;
     // rotateEmoji(emojiSpan);
 
-    window.SunsetBlog.emojiSpan = emojiSpan;
+    if (window.SunsetBlog) {
+        window.SunsetBlog.emojiSpan = emojiSpan;
+    }
 }

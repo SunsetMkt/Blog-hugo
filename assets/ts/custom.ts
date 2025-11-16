@@ -47,7 +47,7 @@ safeRun(rotate_emoji);
 // Handle footer spam click to debug
 safeRun(footer_debug);
 // Handle lenis scroll
-// safeRun(Lenis);
+safeRun(Lenis);
 
 // Require extra Internet requests
 // Handle Cloudflare Trace information display
