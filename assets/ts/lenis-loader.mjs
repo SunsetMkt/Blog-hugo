@@ -9,7 +9,7 @@ export default function () {
         duration: 0.6,
         anchors: true,
         autoToggle: true,
-        syncTouch: true,
+        // syncTouch: true, // Cause unexpacted behavior when spam scrolling
         orientation: "vertical",
         gestureOrientation: "vertical",
         autoResize: true,
