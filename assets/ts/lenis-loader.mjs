@@ -6,7 +6,7 @@ export default function () {
         autoRaf: true,
         allowNestedScroll: true,
         smoothWheel: true,
-        duration: 0.6,
+        duration: 1.2,
         anchors: true,
         autoToggle: true,
         // syncTouch: true, // Cause unexpacted behavior when spam scrolling
