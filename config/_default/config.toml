@@ -32,7 +32,7 @@ pagerSize = 10
 baseName = "feed"
 
 [services.rss]
-limit = 10 # RSS 仅包含最近的 10 篇
+limit = 30 # RSS 包含最近的 30 篇
 
 # Copy source code to output
 # Also see layouts\_default\single.source_hugo_generated.txt
