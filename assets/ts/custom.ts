@@ -37,6 +37,7 @@ import cf_trace from "./cf-trace.mjs";
 import post_css_loader from "./post-css-loader.mjs";
 import SunsetBlog from "./SunsetBlog.mjs";
 import Lenis from "./lenis-loader.mjs";
+import grayscale from "./grayscale.mjs";
 
 // Hello world
 safeRun(hello);
@@ -48,6 +49,8 @@ safeRun(rotate_emoji);
 safeRun(footer_debug);
 // Handle lenis scroll
 safeRun(Lenis);
+// Handle grayscale
+safeRun(grayscale);
 
 // Require extra Internet requests
 // Handle Cloudflare Trace information display
