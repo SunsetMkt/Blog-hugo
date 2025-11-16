@@ -51,5 +51,7 @@ export default function () {
         return zaraz.consent.setAll(false);
     };
 
+    SunsetBlog.animateCSS = tools.animateCSS;
+
     window.SunsetBlog = SunsetBlog;
 }

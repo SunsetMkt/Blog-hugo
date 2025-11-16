@@ -52,6 +52,7 @@ export function detectRootDomainByCookieTest() {
     return lastSuccessful;
 }
 
+// 添加脚本标签
 export function addScriptTag(src, async, onload) {
     var scriptElement = document.createElement("script");
     scriptElement.async = async;
@@ -66,6 +67,7 @@ export function addScriptTag(src, async, onload) {
     );
 }
 
+// 加载样式
 export async function loadCSSPreload(href) {
     const link = document.createElement("link");
     link.rel = "preload";
@@ -75,4 +77,24 @@ export async function loadCSSPreload(href) {
         link.rel = "stylesheet";
     };
     document.head.appendChild(link);
+}
+
+// animate.css
+export function animateCSS(element, animation, prefix = "animate__") {
+    return new Promise((resolve, reject) => {
+        const animationName = `${prefix}${animation}`;
+        const node = document.querySelector(element);
+
+        node.classList.add(`${prefix}animated`, animationName);
+
+        function handleAnimationEnd(event) {
+            event.stopPropagation();
+            node.classList.remove(`${prefix}animated`, animationName);
+            resolve("Animation ended");
+        }
+
+        node.addEventListener("animationend", handleAnimationEnd, {
+            once: true,
+        });
+    });
 }
