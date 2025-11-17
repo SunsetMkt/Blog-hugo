@@ -17,7 +17,7 @@ TL;DR：在当前用户的文档文件夹（`%USERPROFILE%\Documents`）中写�
 - `leftCtrlKey`（左`Ctrl`） + `backButton`（鼠标侧面的`Back`键，不是传统鼠标按键）: 传送
 - `leftAltKey`（左`Alt`） + `sKey`（`S`）: 睡觉
 
-## 物品列表（V1.0.30）
+## 物品列表（V1.1.6）
 
 - `displayName` (`id`): `description` (`name`, `displayQuality`, `quality`, `priceEach`, `maxStackCount`)
 - 躯壳 (`0`): 灵魂的载体。 (`Character`, `0`, `999`, `0`, `1`)
