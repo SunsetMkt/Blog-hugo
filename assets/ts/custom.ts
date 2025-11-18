@@ -38,6 +38,7 @@ import post_css_loader from "./post-css-loader.mjs";
 import SunsetBlog from "./SunsetBlog.mjs";
 import Lenis from "./lenis-loader.mjs";
 import grayscale from "./grayscale.mjs";
+import * as featureFlags from "./feature-flag.mjs";
 
 // Hello world
 safeRun(hello);
@@ -48,7 +49,12 @@ safeRun(rotate_emoji);
 // Handle footer spam click to debug
 safeRun(footer_debug);
 // Handle lenis scroll
-safeRun(Lenis);
+safeRun(function () {
+    if (featureFlags.isFlagSet("lenis")) {
+        Lenis();
+    }
+});
+
 // Handle grayscale
 safeRun(grayscale);
 

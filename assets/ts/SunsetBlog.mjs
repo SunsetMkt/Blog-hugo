@@ -3,6 +3,7 @@ import * as tools from "./tools.mjs";
 // import jQuery from "./jquery-3.7.1.js";
 import Cookies from "./js.cookie.mjs";
 import glitch from "./glitch.mjs";
+import featureFlags from "./feature-flag.mjs";
 
 export default function () {
     if (!window) {
@@ -52,6 +53,8 @@ export default function () {
     };
 
     SunsetBlog.animateCSS = tools.animateCSS;
+
+    SunsetBlog.featureFlags = featureFlags;
 
     window.SunsetBlog = SunsetBlog;
 }
