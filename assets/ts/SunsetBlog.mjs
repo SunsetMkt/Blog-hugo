@@ -56,5 +56,9 @@ export default function () {
 
     SunsetBlog.featureFlags = featureFlags;
 
+    SunsetBlog.doesTheBlackMoonHowl = function () {
+        window.open("https://scp-wiki.wikidot.com/", "_blank");
+    };
+
     window.SunsetBlog = SunsetBlog;
 }
