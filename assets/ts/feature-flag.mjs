@@ -2,6 +2,7 @@
 var flagsStorageKey = "sunset-feature-flags";
 var logPrefix = "[featureFlags]";
 export var flags = [];
+var expectedFlags = ["lenis"];
 
 /**
  * If you don't care about primitives and only objects then this function
@@ -44,7 +45,16 @@ function pushFlags() {
     localStorage.setItem(flagsStorageKey, JSON.stringify(flags));
 }
 
+function isExpectedFlag(key) {
+    key = key.toLowerCase();
+    return expectedFlags.includes(key);
+}
+
 export function setFlag(key) {
+    if (!isExpectedFlag(key)) {
+        console.warn(logPrefix, "setFlag called with unexpected key:", key);
+    }
+
     key = key.toLowerCase();
     pullFlags();
     if (!flags.includes(key)) {
