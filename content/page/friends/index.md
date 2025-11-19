@@ -42,6 +42,10 @@ links:
       description: "只是一个 blog"
       website: https://steve02081504.github.io/
       image: 31927825.jpg
+    - title: Sukka's Blog
+      description: "童话只美在真实却从不续写"
+      website: https://blog.skk.moe
+      image: SukkaW.png
     - title: Tokyo Hacker Girls
       description: "Asahi Lina and Cyan Nyan, a VTuber yuri couple spreading love, knowledge, and positivity!"
       website: https://blog.thgirls.yt/
