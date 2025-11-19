@@ -5,10 +5,10 @@
 
 var loggingPrefix = "[Custom]";
 
-console.info(loggingPrefix, "Custom scripts loading...");
+console.info(loggingPrefix, "Custom scripts loading");
 
 // Run a function safely
-function safeRun(func: () => void) {
+export function safeRun(func: () => void) {
     try {
         func();
         return true;
@@ -18,8 +18,8 @@ function safeRun(func: () => void) {
     }
 }
 
-// Run an async function safely
-async function safeRunAsync(func: () => Promise<void>) {
+// Run an async function safely and await
+export async function safeRunAwait(func: () => Promise<void>) {
     try {
         await func();
         return true;
@@ -63,5 +63,9 @@ safeRun(grayscale);
 safeRun(cf_trace);
 // Load CSS after the page is loaded
 safeRun(post_css_loader);
+
+// Dispatch event
+const event = new CustomEvent("sunsetCustomScriptsLoaded");
+window.dispatchEvent(event);
 
 console.info(loggingPrefix, "Custom scripts loaded");
