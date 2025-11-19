@@ -2,7 +2,7 @@
 var flagsStorageKey = "sunset-feature-flags";
 var logPrefix = "[featureFlags]";
 export var flags = [];
-var expectedFlags = ["lenis"];
+var expectedFlags = ["lenis", "lenis-touch"];
 
 /**
  * If you don't care about primitives and only objects then this function

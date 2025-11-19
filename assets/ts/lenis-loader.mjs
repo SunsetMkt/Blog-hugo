@@ -1,4 +1,5 @@
 import Lenis from "./lenis.mjs";
+import * as featureFlags from "./feature-flag.mjs";
 
 export default function () {
     // Initialize Lenis
@@ -14,6 +15,7 @@ export default function () {
         gestureOrientation: "vertical",
         autoResize: true,
         overscroll: true,
+        syncTouch: featureFlags.isFlagSet("lenis-touch"),
     });
 
     console.info("[lenis]", lenis);
