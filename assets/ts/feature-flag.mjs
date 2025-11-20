@@ -51,17 +51,30 @@ export function isExpectedFlag(key) {
 }
 
 export function setFlag(key) {
+    key = key.toLowerCase();
     if (!isExpectedFlag(key)) {
         console.warn(logPrefix, "setFlag called with unexpected key:", key);
     }
-
-    key = key.toLowerCase();
     pullFlags();
     if (!flags.includes(key)) {
         flags.push(key);
         pushFlags();
     }
     console.info(logPrefix, "setFlag", key);
+    return flags;
+}
+
+export function unsetFlag(key) {
+    key = key.toLowerCase();
+    if (!isExpectedFlag(key)) {
+        console.warn(logPrefix, "unsetFlag called with unexpected key:", key);
+    }
+    pullFlags();
+    if (flags.includes(key)) {
+        flags.splice(flags.indexOf(key), 1);
+        pushFlags();
+    }
+    console.info(logPrefix, "unsetFlag", key);
     return flags;
 }
 
@@ -88,6 +101,7 @@ export function getExpectedFlags() {
 
 var featureFlags = {};
 featureFlags.setFlag = setFlag;
+featureFlags.unsetFlag = unsetFlag;
 featureFlags.isFlagSet = isFlagSet;
 featureFlags.getFlags = getFlags;
 featureFlags.clearFlags = clearFlags;
