@@ -14,11 +14,13 @@ export function safeRun(func) {
 
 export default function () {
     document.addEventListener("DOMContentLoaded", function () {
-        if (featureFlags.isFlagSet("waline-statistic")) {
-            document
-                .getElementById("waline-statistic")
-                .style.removeProperty("display");
-        }
+        // waline-statistic flag
+        safeRun(function () {
+            var w = document.getElementById("waline-statistic");
+            if (featureFlags.isFlagSet("waline-statistic") && w) {
+                w.style.removeProperty("display");
+            }
+        });
     });
     console.info(loggingPrefix, "interval-and-event loaded");
 }
