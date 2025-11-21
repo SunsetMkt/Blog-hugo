@@ -39,6 +39,7 @@ import SunsetBlog from "./SunsetBlog.mjs";
 import Lenis from "./lenis-loader.mjs";
 import grayscale from "./grayscale.mjs";
 import * as featureFlags from "./feature-flag.mjs";
+import interval_and_event from "./interval-and-event.mjs";
 
 // Hello world
 safeRun(hello);
@@ -57,6 +58,8 @@ safeRun(function () {
 
 // Handle grayscale
 safeRun(grayscale);
+// Handle interval and event
+safeRun(interval_and_event);
 
 // Require extra Internet requests
 // Handle Cloudflare Trace information display
