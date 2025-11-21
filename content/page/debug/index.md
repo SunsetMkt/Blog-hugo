@@ -52,6 +52,42 @@ URL 参数`eruda=true`。
 
 或点击 Footer 五次临时启动。
 
+### Feature Flags
+
+<div class="featureFlags">
+    <a class="link" id="featureFlagsInit">初始化并显示 Flags</a>
+    <div id="featureFlagsContainer"></div>
+    <script>
+        document
+            .getElementById("featureFlagsInit")
+            .addEventListener("click", () => {
+                document.getElementById("featureFlagsInit").remove();
+                const api = window.SunsetBlog.featureFlags;
+                const expected = api.getExpectedFlags();
+                const enabled = new Set(api.getFlags());
+                const container = document.getElementById(
+                    "featureFlagsContainer"
+                );
+                container.innerHTML = "";
+                expected.forEach((flag) => {
+                    const label = document.createElement("label");
+                    const chk = document.createElement("input");
+                    chk.type = "checkbox";
+                    chk.value = flag;
+                    chk.checked = enabled.has(flag);
+                    chk.addEventListener("change", () => {
+                        if (chk.checked) api.setFlag(flag);
+                        else api.unsetFlag(flag);
+                    });
+                    label.appendChild(chk);
+                    label.appendChild(document.createTextNode(" " + flag));
+                    container.appendChild(label);
+                    container.appendChild(document.createElement("br"));
+                });
+            });
+    </script>
+</div>
+
 ### 全域生效的 Cloudflare Zaraz 标签管理器
 
 <div class="zaraz-btns">
