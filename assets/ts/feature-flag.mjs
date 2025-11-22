@@ -3,6 +3,7 @@ export var flagsStorageKey = "sunset-feature-flags";
 var logPrefix = "[featureFlags]";
 export var flags = [];
 export var expectedFlags = ["lenis", "lenis-touch", "waline-statistic"];
+export var permissive = false;
 
 /**
  * If you don't care about primitives and only objects then this function
@@ -52,8 +53,9 @@ export function isExpectedFlag(key) {
 
 export function setFlag(key) {
     key = key.toLowerCase();
-    if (!isExpectedFlag(key)) {
-        console.warn(logPrefix, "setFlag called with unexpected key:", key);
+    if (!isExpectedFlag(key) && !permissive) {
+        console.error(logPrefix, "setFlag called with unexpected key:", key);
+        return false;
     }
     pullFlags();
     if (!flags.includes(key)) {
@@ -66,8 +68,9 @@ export function setFlag(key) {
 
 export function unsetFlag(key) {
     key = key.toLowerCase();
-    if (!isExpectedFlag(key)) {
-        console.warn(logPrefix, "unsetFlag called with unexpected key:", key);
+    if (!isExpectedFlag(key) && !permissive) {
+        console.error(logPrefix, "unsetFlag called with unexpected key:", key);
+        return false;
     }
     pullFlags();
     if (flags.includes(key)) {
