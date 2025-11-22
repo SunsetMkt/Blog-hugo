@@ -2,7 +2,12 @@
 export var flagsStorageKey = "sunset-feature-flags";
 var logPrefix = "[featureFlags]";
 export var flags = [];
-export var expectedFlags = ["lenis", "lenis-touch", "waline-statistic"];
+export var expectedFlags = [
+    "lenis",
+    "lenis-touch",
+    "waline-statistic",
+    "save-ukraine",
+];
 export var permissive = false;
 
 /**
@@ -27,7 +32,10 @@ function tryParseJSONObject(jsonString) {
         if (o && typeof o === "object") {
             return o;
         }
-    } catch (e) {}
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (e) {
+        /* empty */
+    }
 
     return false;
 }

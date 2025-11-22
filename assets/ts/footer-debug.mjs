@@ -14,6 +14,7 @@ function addScriptTag(src, async, onload) {
 
 function launchEruda() {
     addScriptTag("//unpkg.com/eruda@latest/eruda.js", false, function () {
+        // eslint-disable-next-line no-undef
         eruda.init();
         console.info(
             "[launchEruda]",
@@ -22,7 +23,7 @@ function launchEruda() {
     });
 }
 
-function goDebug() {
+export function goDebug() {
     window.location.href = "/debug/";
 }
 

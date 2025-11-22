@@ -21,6 +21,7 @@ export function detectRootDomainByCookieTest() {
         // 设置测试 cookie（短期，便于检查），注意 path=/ 保证可见
         try {
             document.cookie = `${encodeURIComponent(testName)}=${encodeURIComponent(testValue)};domain=${domainAttr};path=/;max-age=60`;
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (e) {
             // 少见：设置 cookie 抛异常（例如非法 domain 格式），当成失败
             // 返回上一次成功的 candidate（如果有），否则 null
@@ -37,6 +38,7 @@ export function detectRootDomainByCookieTest() {
             // 清理该域上设置的测试 cookie（删除）
             try {
                 document.cookie = `${encodeURIComponent(testName)}=;domain=${domainAttr};path=/;max-age=0`;
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
             } catch (_) {
                 /* ignore */
             }
@@ -82,6 +84,7 @@ export async function loadCSSPreload(href) {
 // animate.css
 export function animateCSS(element, animation, prefix = "animate__") {
     // We create a Promise and return it
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return new Promise((resolve, reject) => {
         const animationName = `${prefix}${animation}`;
         const node = document.querySelector(element);

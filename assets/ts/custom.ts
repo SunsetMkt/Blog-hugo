@@ -3,7 +3,7 @@
 // This script is loaded in HUGO_SITE_FOLDER/layouts/partials/components/script.html
 // By using custom.ts, all scripts are bundled into a single file
 
-var loggingPrefix = "[Custom]";
+const loggingPrefix = "[Custom]";
 
 console.info(loggingPrefix, "Custom scripts loading");
 

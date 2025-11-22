@@ -50,6 +50,7 @@ export default function () {
 
     // disable zaraz
     SunsetBlog.noZaraz = function () {
+        // eslint-disable-next-line no-undef
         return zaraz.consent.setAll(false);
     };
 
