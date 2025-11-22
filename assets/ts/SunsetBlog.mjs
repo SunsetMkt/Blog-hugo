@@ -4,6 +4,7 @@ import * as tools from "./tools.mjs";
 import Cookies from "./js.cookie.mjs";
 import glitch from "./glitch.mjs";
 import featureFlags from "./feature-flag.mjs";
+import * as base16384 from "./base16384.ts";
 
 export default function () {
     if (!window) {
@@ -59,6 +60,8 @@ export default function () {
     SunsetBlog.doesTheBlackMoonHowl = function () {
         window.open("https://scp-wiki.wikidot.com/", "_blank");
     };
+
+    SunsetBlog.base16384 = base16384;
 
     window.SunsetBlog = SunsetBlog;
 }
