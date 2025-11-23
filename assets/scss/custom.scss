@@ -31,6 +31,52 @@
 // MiSans L3: GB 18030-2022 实现级别 3
 @import "MiSansL3";
 
+// Last Resort
+// https://github.com/unicode-org/last-resort-font
+@font-face {
+    font-family: "Last Resort";
+    src:
+        local("Last Resort"),
+        url("/fonts/LastResort/LastResort-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+// GNU Unifont Glyphs
+// https://unifoundry.com/unifont/index.html
+@font-face {
+    font-family: "Unifont";
+    src:
+        local("Unifont"),
+        url("/fonts/Unifont/unifont-17.0.03.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Unifont-JP";
+    src:
+        local("Unifont-JP"),
+        url("/fonts/Unifont/unifont_jp-17.0.03.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Unifont Upper";
+    src:
+        local("Unifont Upper"),
+        url("/fonts/Unifont/unifont_upper-17.0.03.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Unifont CSUR";
+    src:
+        local("Unifont CSUR"),
+        url("/fonts/Unifont/unifont_csur-17.0.03.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+
 // 为部分未配置过渡效果的元素添加过渡效果
 aside,
 main,
@@ -80,6 +126,9 @@ footer {
 }
 
 :root {
+    /* The least resort when the system doesn't support any font */
+    --lastresort-font-family:
+        "Unifont", "Unifont-JP", "Unifont Upper", "Unifont CSUR", "Last Resort";
     /* Based on theme default */
     --zh-font-family:
         "HarmonyOS Sans SC", "MiSans L3", "PingFang SC", "Hiragino Sans GB",
@@ -91,10 +140,12 @@ footer {
         "Segoe UI Symbol", "Noto Color Emoji Compat", "emoji";
     --code-font-family:
         "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New",
-        var(--zh-font-family), var(--emoji-font-family), monospace;
+        var(--zh-font-family), var(--emoji-font-family), monospace,
+        var(--lastresort-font-family);
     --base-font-family:
         "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), var(--emoji-font-family), sans-serif;
+        var(--zh-font-family), var(--emoji-font-family), sans-serif,
+        var(--lastresort-font-family);
 }
 
 .custom-footer-code {
