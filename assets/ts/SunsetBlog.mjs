@@ -64,5 +64,11 @@ export default function () {
 
     SunsetBlog.base16384 = base16384;
 
+    SunsetBlog.getXkcdRandomNumber = function () {
+        // https://xkcd.com/221/
+        return 4; // chosen by fair dice roll.
+        // guaranteed to be random.
+    };
+
     window.SunsetBlog = SunsetBlog;
 }
