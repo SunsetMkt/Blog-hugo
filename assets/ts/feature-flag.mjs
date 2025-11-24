@@ -7,6 +7,7 @@ export var expectedFlags = [
     "lenis-touch",
     "waline-statistic",
     "save-ukraine",
+    "enforce-grayscale",
 ];
 export var permissive = false;
 

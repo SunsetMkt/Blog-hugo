@@ -1,5 +1,6 @@
 import * as featureFlags from "./feature-flag.mjs";
 import * as tools from "./tools.mjs";
+import * as grayscale from "./grayscale.mjs";
 
 var loggingPrefix = "[interval-and-event]";
 
@@ -42,6 +43,12 @@ export default function () {
                         });
                     },
                 );
+            }
+        });
+        // enforce-grayscale flag
+        safeRun(function () {
+            if (featureFlags.isFlagSet("enforce-grayscale")) {
+                grayscale.addGrayscale(document.body);
             }
         });
     });

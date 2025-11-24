@@ -1,4 +1,4 @@
-function addGrayscale(elem) {
+export function addGrayscale(elem) {
     if (!elem || !elem.style) return;
 
     const current = elem.style.filter || "";
@@ -14,7 +14,7 @@ function addGrayscale(elem) {
         : "grayscale(100%)";
 }
 
-function isGrayPage() {
+export function isGrayPage() {
     // Homepage only
     var pathname = window.location.pathname;
     if (pathname == "/") {
@@ -26,7 +26,7 @@ function isGrayPage() {
     return false;
 }
 
-function getMMDD() {
+export function getMMDD() {
     // return MMDD format
     var date = new Date();
     var month = date.getMonth() + 1;
