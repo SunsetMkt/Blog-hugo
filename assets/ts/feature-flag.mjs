@@ -44,6 +44,16 @@ export function pullFlags() {
     var flagsStorage = localStorage.getItem(flagsStorageKey);
     var parseAttempt = tryParseJSONObject(flagsStorage);
     if (parseAttempt) {
+        if (!permissive) {
+            // Drop any flags that aren't expected and warn
+            for (var i = parseAttempt.length - 1; i >= 0; i--) {
+                var flag = parseAttempt[i];
+                if (!expectedFlags.includes(flag)) {
+                    console.warn(logPrefix, "Dropping unexpected flag", flag);
+                    parseAttempt.splice(i, 1);
+                }
+            }
+        }
         flags = parseAttempt;
     } else {
         localStorage.setItem(flagsStorageKey, JSON.stringify(flags));
