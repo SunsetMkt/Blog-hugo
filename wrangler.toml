@@ -3,6 +3,9 @@ compatibility_date = "2025-11-01"
 main = "./functions_build/index.js"
 workers_dev = true
 
+[build]
+command = "chmod a+x workers_build.sh && ./workers_build.sh"
+
 [assets]
 directory = "./public"
 not_found_handling = "404-page"

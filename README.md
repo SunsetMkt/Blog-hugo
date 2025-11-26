@@ -18,6 +18,12 @@ hugo --gc --logLevel info
 
 This blog is migrated from Jekyll with `/article/:slug/` URL pattern (allow uppercase). The migrated slugs are defined explicitly in the front matter.
 
+This blog is migrated from Cloudflare Pages to Workers. The following command is used to build in Pages:
+
+```sh
+git fetch --unshallow && hugo --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates && find public -type f -size +25M -print -exec rm -vf {} \; && find public -type f -printf '%P\n' > public/filelist.txt
+```
+
 ## GitInfo
 
 When hosting your site in a [CI/CD](https://gohugo.io/quick-reference/glossary/#cicd) environment, the step that clones your project repository must perform a deep clone. If the clone is shallow, the Git information for a given file may not be accurate—it may reflect the most recent repository commit, not the commit that last modified the file.

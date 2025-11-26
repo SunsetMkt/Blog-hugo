@@ -30,7 +30,8 @@
         "lint": "eslint . --fix",
         "format": "prettier . --write",
         "test": "hugo -M --logLevel info",
-        "prepare": "husky"
+        "prepare": "husky",
+        "cloudflare-workers-build": "chmod a+x workers_build.sh && ./workers_build.sh"
     },
     "engines": {
         "node": ">=22",
