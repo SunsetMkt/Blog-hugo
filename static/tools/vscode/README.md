@@ -5,3 +5,4 @@
 * <https://github.com/microsoft/vscode-test-web>
 * <https://update.code.visualstudio.com/api/update/web-standalone/stable/latest>
 * Set `access-control-allow-origin: *` if not working
+* `productVersion`: `1.106.2`

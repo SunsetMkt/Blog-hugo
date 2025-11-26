@@ -15,7 +15,7 @@
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="Code" />
-        <link rel="apple-touch-icon" href="/vscode/code-192.png" />
+        <link rel="apple-touch-icon" href="./build/code-192.png" />
 
         <!-- Disable pinch zooming -->
         <meta
@@ -35,13 +35,13 @@
         <meta id="vscode-workbench-builtin-extensions" data-settings="[]" />
 
         <!-- Workbench Icon/Manifest/CSS -->
-        <link rel="icon" href="/vscode/favicon.ico" type="image/x-icon" />
-        <link rel="manifest" href="/vscode/manifest.json" />
+        <link rel="icon" href="./build/favicon.ico" type="image/x-icon" />
+        <link rel="manifest" href="./build/manifest.json" />
 
         <link
             data-name="vs/workbench/workbench.web.main"
             rel="stylesheet"
-            href="/vscode/out/vs/workbench/workbench.web.main.css"
+            href="./build/out/vs/workbench/workbench.web.main.css"
         />
         <style id="vscode-css-modules" type="text/css" media="screen"></style>
     </head>
@@ -50,20 +50,28 @@
 
     <!-- Startup (do not modify order of script tags!) -->
     <script>
+        const url = new URL(window.location.href);
+        const path = url.pathname.split("/").slice(0, -1).join("/") + "/";
+        const dir = url.origin + path;
         // BASE URL
-        const baseUrl = new URL("/vscode", window.location.origin).toString();
+        const baseUrl = new URL("./build", dir).toString();
         globalThis._VSCODE_FILE_ROOT = baseUrl + "/out/";
+        globalThis._VSCODE_WEB_PACKAGE_TTP = window.trustedTypes?.createPolicy('amdLoader', {
+            createScriptURL(value) {
+                return value;
+            }
+        });
     </script>
     <script>
         performance.mark("code/willLoadWorkbenchMain");
     </script>
-    <script src="/vscode/out/nls.messages.js"></script>
+    <script src="./build/out/nls.messages.js"></script>
     <script type="module">
         import {
             create,
             URI,
             Emitter,
-        } from "/vscode/out/vs/workbench/workbench.web.main.internal.js";
+        } from "./build/out/vs/workbench/workbench.web.main.internal.js";
         class WorkspaceProvider {
             workspace;
             payload;
