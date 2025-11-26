@@ -3,6 +3,7 @@
 <!-- https://github.com/microsoft/vscode-test-web -->
 <!-- https://update.code.visualstudio.com/api/update/web-standalone/stable/latest -->
 <!-- Set access-control-allow-origin: * if not working -->
+<!-- Use HTTPS if still not working -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -328,16 +329,15 @@
                     enableTelemetry: false,
                     webEndpointUrlTemplate: `${dir}build`,
                     webviewContentExternalBaseUrlTemplate: `${dir}build/out/vs/workbench/contrib/webview/browser/pre/`,
-                    extensionsGallery: {
-                        serviceUrl: "https://open-vsx.org/vscode/gallery",
-                        itemUrl: "https://open-vsx.org/vscode/item",
-                    },
+                    extensionsGallery: false, // CORS breaks gallery
                 },
                 workspaceUri: {
                     $mid: 1,
                     path: "/default.code-workspace",
                     scheme: "tmp",
                 },
+                // If you really need an out-of-box place to write stuff:
+                // folderUri: { scheme: "vscode-userdata", path: "/" },
             };
             create(window.document.body, {
                 ...config,
