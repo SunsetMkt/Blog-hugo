@@ -15,7 +15,8 @@
         "prettier-plugin-go-template": "^0.0.15",
         "prettier-plugin-lint-md": "^1.0.1",
         "typescript": "^5.9.3",
-        "typescript-eslint": "^8.46.4"
+        "typescript-eslint": "^8.46.4",
+        "wrangler": "^4.50.0"
     },
     "scripts": {
         "build": "hugo --gc --logLevel info",

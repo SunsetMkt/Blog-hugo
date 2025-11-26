@@ -1,0 +1,9 @@
+name = "sunset-blog-hugo"
+compatibility_date = "2025-11-01"
+main = "./functions_build/index.js"
+workers_dev = true
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
+binding = "ASSETS"
