@@ -56,11 +56,14 @@
         // BASE URL
         const baseUrl = new URL("./build", dir).toString();
         globalThis._VSCODE_FILE_ROOT = baseUrl + "/out/";
-        globalThis._VSCODE_WEB_PACKAGE_TTP = window.trustedTypes?.createPolicy('amdLoader', {
-            createScriptURL(value) {
-                return value;
+        globalThis._VSCODE_WEB_PACKAGE_TTP = window.trustedTypes?.createPolicy(
+            "amdLoader",
+            {
+                createScriptURL(value) {
+                    return value;
+                },
             }
-        });
+        );
     </script>
     <script>
         performance.mark("code/willLoadWorkbenchMain");
@@ -325,21 +328,16 @@
                     enableTelemetry: false,
                     // webEndpointUrlTemplate: `${dir}build`,
                     // webviewContentExternalBaseUrlTemplate: `${dir}build/out/vs/workbench/contrib/webview/browser/pre/`,
+                    extensionsGallery: {
+                        serviceUrl: "https://open-vsx.org/vscode/gallery",
+                        itemUrl: "https://open-vsx.org/vscode/item",
+                    },
                 },
                 workspaceUri: {
                     $mid: 1,
                     path: "/default.code-workspace",
                     scheme: "tmp",
                 },
-                additionalBuiltinExtensions: [
-                    {
-                        scheme:
-                            window.location.protocol === "http:"
-                                ? "http"
-                                : "https",
-                        authority: window.location.host,
-                    },
-                ],
             };
             create(window.document.body, {
                 ...config,
