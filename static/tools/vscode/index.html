@@ -329,7 +329,10 @@
                 authenticationProviders: false,
                 tunnelProvider: false,
                 settingsSyncOptions: false,
+                // https://github.com/microsoft/vscode/blob/main/src/vs/base/common/product.ts#L66
                 productConfiguration: {
+                    nameShort: "Not VSCode",
+                    nameLong: "Not Visual Studio Code",
                     enableTelemetry: false,
                     webEndpointUrlTemplate: `${dir}build`,
                     webviewContentExternalBaseUrlTemplate: `${dir}build/out/vs/workbench/contrib/webview/browser/pre/`,
