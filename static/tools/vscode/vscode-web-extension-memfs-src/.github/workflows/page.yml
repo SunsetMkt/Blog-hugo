@@ -1,0 +1,47 @@
+name: Github Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+
+      - name: Install and Build
+        run: |
+          pnpm install
+          pnpm build
+          mkdir -p dist/extension
+          cp -r extension/package.* dist/extension/
+          cp -r extension/dist dist/extension/
+          cp index.html dist/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "./dist"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
