@@ -325,11 +325,19 @@
             const path = url.pathname.split("/").slice(0, -1).join("/") + "/";
             const dir = url.origin + path;
             const config = {
+                // https://github.com/microsoft/vscode/blob/main/src/vs/workbench/browser/web.api.ts#L149
+                authenticationProviders: false,
+                tunnelProvider: false,
+                settingsSyncOptions: false,
                 productConfiguration: {
                     enableTelemetry: false,
                     webEndpointUrlTemplate: `${dir}build`,
                     webviewContentExternalBaseUrlTemplate: `${dir}build/out/vs/workbench/contrib/webview/browser/pre/`,
                     extensionsGallery: false, // CORS breaks gallery
+                    tasConfig: false, // AB Testing
+                    mcpGallery: false,
+                    aiConfig: false,
+                    chatParticipantRegistry: false,
                 },
                 workspaceUri: {
                     $mid: 1,
