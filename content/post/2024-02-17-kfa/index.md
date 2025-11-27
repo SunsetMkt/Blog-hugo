@@ -57,6 +57,12 @@ KES（[引用](https://bbs.kafan.cn/thread-2283790-1-1.html)）:
 https://api-router.kaspersky-labs.com/downloads/search/v3/b2b?productcode=2911379&sites=https%3A%2F%2Fwww.kaspersky.com.cn
 ```
 
+Standard Global:
+
+```plain
+https://api-router.kaspersky-labs.com/downloads/search/v4/b2c?productcodes=5003624&businesspurposes=Update&licensetiers=Standard&sites=https%3A%2F%2Fwww.kaspersky.com&sites=https%3A%2F%2Fwww.kaspersky.com%2Fcarribean&sites=https%3A%2F%2Fwww.kaspersky.com%2Fisrael&sites=https%3A%2F%2Fwww.kaspersky.com%2Fsouth-east-asia&sites=https%3A%2F%2Fwww.kaspersky.com%2Findonesia&sites=https%3A%2F%2Fwww.kaspersky.com%2Fthe-european-union&sites=https%3A%2F%2Fwww.kaspersky.com%2Flatvia&sites=https%3A%2F%2Fwww.kaspersky.com%2Flithuania&sites=https%3A%2F%2Fwww.kaspersky.com%2Festonia&sites=https%3A%2F%2Fwww.kaspersky.com%2Funited-kingdom&sites=https%3A%2F%2Fwww.kaspersky.com%2Fcalifornia&sites=https%3A%2F%2Fwww.kaspersky.com%2Fbrazil
+```
+
 ## API（已弃用）
 
 曾经，此页面还会在下载前请求另一个 API：
