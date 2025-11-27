@@ -391,7 +391,7 @@
 					throw err instanceof Error ? err : new Error(String(err));
 				}
 
-				if (hostname === parentOriginHash || hostname.startsWith(parentOriginHash + '.')) {
+				if (hostname === parentOriginHash || hostname.startsWith(parentOriginHash + '.') || location.origin === parentOrigin) {
 					// validation succeeded!
 					return start(parentOrigin);
 				}
