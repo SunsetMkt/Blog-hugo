@@ -350,6 +350,13 @@
                     path: "/default.code-workspace",
                     scheme: "tmp",
                 },
+                additionalBuiltinExtensions: [
+                    {
+                        scheme: location.protocol.replace(":", ""),
+                        authority: location.host,
+                        path: location.pathname + "vscode-web-extension-memfs",
+                    },
+                ],
                 // If you really need an out-of-box place to write stuff:
                 // folderUri: { scheme: "vscode-userdata", path: "/" },
             };
