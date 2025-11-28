@@ -73,12 +73,29 @@ export async function activate(context: vscode.ExtensionContext) {
   );
   context.subscriptions.push(
     vscode.commands.registerCommand("memfs.reset", async () => {
-      for (const dir of await fs.readdir("/")) {
-        await fs.rm(dir, { recursive: true, force: true });
-      }
-      vscode.window.showInformationMessage(
-        "MemFS cleared. Please reload the window.",
+      const choice = await vscode.window.showWarningMessage(
+        "This will clear the entire MemFS. Are you sure you want to continue?",
+        { modal: true },
+        "Reset",
       );
+
+      if (choice !== "Reset") {
+        // User cancelled
+        return;
+      }
+
+      try {
+        for (const dir of await fs.readdir("/")) {
+          await fs.rm(dir, { recursive: true, force: true });
+        }
+        void vscode.window.showInformationMessage(
+          "MemFS cleared. Please reload the window.",
+        );
+      } catch (err) {
+        void vscode.window.showErrorMessage(
+          `Failed to reset MemFS: ${String(err)}`,
+        );
+      }
     }),
   );
 }

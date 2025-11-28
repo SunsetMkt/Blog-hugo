@@ -66,7 +66,12 @@
           resourceUrlTemplate:
             "https://openvsxorg.blob.core.windows.net/resources/{publisher}/{name}/{version}/{path}",
         },
-        extensionEnabledApiProposals: {},
+        extensionEnabledApiProposals: {
+          "YieldRay.vscode-web-extension-memfs": [
+            "fileSearchProvider",
+            "textSearchProvider",
+          ],
+        },
         /** IMPORTANT CONFIG TO MAKE webWorkerExtensionHostIframe.html work */
         webEndpointUrlTemplate: "https://unpkg.com/code-oss@1.104.3",
         quality: "stable",
