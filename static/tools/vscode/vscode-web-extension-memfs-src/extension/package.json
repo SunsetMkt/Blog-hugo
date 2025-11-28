@@ -41,6 +41,10 @@
       "commandPalette": [
         {
           "command": "memfs.workspaceInit",
+          "when": "workbenchState == workspace"
+        },
+        {
+          "command": "memfs.init",
           "when": "workbenchState != workspace"
         },
         {
@@ -66,11 +70,12 @@
     "process": "^0.11.10"
   },
   "devDependencies": {
-    "esbuild-register": "^3.6.0",
-    "webpack": "^5.102.0",
-    "webpack-cli": "^6.0.1",
     "@types/node": "^22.18.8",
     "@types/vscode": "^1.104.0",
-    "esbuild-loader": "^4.3.0"
+    "esbuild-loader": "^4.3.0",
+    "esbuild-register": "^3.6.0",
+    "prettier": "^3.7.1",
+    "webpack": "^5.102.0",
+    "webpack-cli": "^6.0.1"
   }
 }

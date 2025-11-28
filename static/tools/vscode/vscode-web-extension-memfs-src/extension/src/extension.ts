@@ -51,6 +51,27 @@ export async function activate(context: vscode.ExtensionContext) {
     }),
   );
   context.subscriptions.push(
+    vscode.commands.registerCommand("memfs.init", async () => {
+      const uri = vscode.Uri.parse("memfs:/");
+      try {
+        const folders = vscode.workspace.workspaceFolders;
+        if (folders && folders.length >= 0) {
+          const index = folders.length;
+          vscode.workspace.updateWorkspaceFolders(index, 0, {
+            uri,
+            name: "MemFS",
+          });
+        } else {
+          await vscode.commands.executeCommand("vscode.openFolder", uri, false);
+        }
+      } catch (err) {
+        void vscode.window.showErrorMessage(
+          `Failed to open MemFS workspace: ${String(err)}`,
+        );
+      }
+    }),
+  );
+  context.subscriptions.push(
     vscode.commands.registerCommand("memfs.reset", async () => {
       for (const dir of await fs.readdir("/")) {
         await fs.rm(dir, { recursive: true, force: true });
