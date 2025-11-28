@@ -27,8 +27,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "memfs.workspaceInit",
-        "title": "Setup Workspace",
+        "command": "memfs.init",
+        "title": "Setup",
         "category": "MemFS"
       },
       {
@@ -40,16 +40,10 @@
     "menus": {
       "commandPalette": [
         {
-          "command": "memfs.workspaceInit",
-          "when": "workbenchState == workspace"
+          "command": "memfs.init"
         },
         {
-          "command": "memfs.init",
-          "when": "workbenchState != workspace"
-        },
-        {
-          "command": "memfs.reset",
-          "when": "workbenchState == workspace"
+          "command": "memfs.reset"
         }
       ]
     }
