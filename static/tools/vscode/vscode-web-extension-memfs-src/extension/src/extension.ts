@@ -56,7 +56,7 @@ export async function activate(context: vscode.ExtensionContext) {
         await fs.rm(dir, { recursive: true, force: true });
       }
       vscode.window.showInformationMessage(
-        "MemFS cleared, please reload the window.",
+        "MemFS cleared. Please reload the window.",
       );
     }),
   );
