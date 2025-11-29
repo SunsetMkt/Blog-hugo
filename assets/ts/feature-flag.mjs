@@ -8,6 +8,7 @@ export var expectedFlags = [
     "waline-statistic",
     "save-ukraine",
     "enforce-grayscale",
+    "outlink-alert",
 ];
 export var permissive = false;
 
