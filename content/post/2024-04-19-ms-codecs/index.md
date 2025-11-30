@@ -2,6 +2,7 @@
 categories: Original
 date: 2024-04-19T00:00:00Z
 tags:
+    - Microsoft
     - Windows
     - 信息技术
     - 软件
@@ -26,6 +27,8 @@ title: 微软在 Microsoft Store 发布的解码器列表
 [Raw Image Extension](https://apps.microsoft.com/detail/9nctdw2w1bh8?hl=en-us)
 
 [Web Media Extensions](https://apps.microsoft.com/detail/9n5tdp8vcmhs?hl=en-us)
+
+[HEVC Video Extensions](https://massgrave.dev/unsupported_products_activation#hevc-video-extensions)
 
 [HEVC Video Extensions from Device Manufacturer](https://apps.microsoft.com/detail/9n4wgh0z6vhq?hl=en-us)
 
