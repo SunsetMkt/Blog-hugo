@@ -3,6 +3,7 @@ categories: Original
 date: 2025-10-14T00:00:00Z
 tags:
     - Windows
+    - Microsoft
 slug: windows-10-esu
 title: 获取适用于 Windows 10 的扩展安全汇报 (ESU) 计划
 ---

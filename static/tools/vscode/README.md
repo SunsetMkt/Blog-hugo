@@ -11,6 +11,7 @@
 * Keep `index.html`. It's customized. Replace `build` when upgrade.
 * For demonstration purpose only. This page is not affiliated with Microsoft, nor the Visual Studio Code project.
 * Alternative: [@github1s/vscode-web](https://www.npmjs.com/package/@github1s/vscode-web) seems to have all essential patches.
+* Extension based on: [vscode-web-extension-memfs](https://github.com/YieldRay/vscode-web-extension-memfs)
 
 ## Patches
 
