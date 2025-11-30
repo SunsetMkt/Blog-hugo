@@ -87,7 +87,9 @@ export default function () {
                     if (whitelist.includes(url.hostname)) return;
 
                     if (url.hostname !== location.hostname) {
-                        const ok = confirm(`Redirect to ${url.href} ?`);
+                        const ok = confirm(
+                            `You are being redirected to:\n${url.hostname}\nAre you sure to continue?`,
+                        );
                         if (!ok) {
                             e.preventDefault();
                             e.stopPropagation();
