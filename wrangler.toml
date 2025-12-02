@@ -11,3 +11,4 @@ command = "chmod a+x workers_build.sh && ./workers_build.sh"
 directory = "./public"
 not_found_handling = "404-page"
 binding = "ASSETS"
+run_worker_first = ["/api/*"]
