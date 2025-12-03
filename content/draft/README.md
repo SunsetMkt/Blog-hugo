@@ -16,5 +16,5 @@ draft: true
 Or set `hidden` to hide the page from listing and searching.
 
 ```yaml
-hidden: false
+hidden: true
 ```

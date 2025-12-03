@@ -6,6 +6,7 @@ tags:
     - benjaminsliu
 slug: 人与狗-终有不同
 title: 人与狗，终有不同
+hidden: true
 ---
 
 [原文链接](https://github.com/benjaminsliu/deletedarticles/blob/main/%E4%BA%BA%E4%B8%8E%E7%8B%97%EF%BC%8C%E7%BB%88%E6%9C%89%E4%B8%8D%E5%90%8C)，著作权归[作者](https://github.com/benjaminsliu)所有。
