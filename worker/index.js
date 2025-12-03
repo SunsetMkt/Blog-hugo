@@ -2,6 +2,8 @@
 import authHandler from "./ghauth/auth.js";
 import callbackHandler from "./ghauth/callback.js";
 
+import echo from "./cloudflare-worker-echo-back.js";
+
 export default {
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
@@ -28,6 +30,11 @@ export default {
             // Handle /api/time
             if (url.pathname === "/api/time") {
                 return new Response(Date.now().toString());
+            }
+
+            // Handle /api/echo
+            if (url.pathname === "/api/echo") {
+                return echo(request, request.url);
             }
         }
         // Otherwise, serve the static assets.
