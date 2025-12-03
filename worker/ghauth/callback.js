@@ -16,7 +16,7 @@ function renderBody(status, content) {
     return blob;
 }
 
-export async function onRequest(context) {
+export default async function onRequest(context) {
     const {
         request, // same as existing Worker API
         env, // same as existing Worker API
