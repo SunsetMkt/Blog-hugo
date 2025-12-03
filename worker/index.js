@@ -24,6 +24,11 @@ export default {
                     env,
                 });
             }
+
+            // Handle /api/time
+            if (url.pathname === "/api/time") {
+                return new Response(Date.now().toString());
+            }
         }
         // Otherwise, serve the static assets.
         // Without this, the Worker will error and no assets will be served.
