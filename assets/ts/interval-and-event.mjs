@@ -1,6 +1,7 @@
 import * as featureFlags from "./feature-flag.mjs";
 import * as tools from "./tools.mjs";
 import * as grayscale from "./grayscale.mjs";
+import addBackToTop from "./vanilla-back-to-top.mjs";
 
 var loggingPrefix = "[interval-and-event]";
 
@@ -95,6 +96,15 @@ export default function () {
                             e.stopPropagation();
                         }
                     }
+                });
+            }
+        });
+        // back-to-top flag
+        safeRun(function () {
+            if (featureFlags.isFlagSet("back-to-top")) {
+                addBackToTop({
+                    backgroundColor: "#000",
+                    scrollDuration: 100, // ms
                 });
             }
         });

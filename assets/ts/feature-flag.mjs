@@ -9,6 +9,7 @@ export var expectedFlags = [
     "save-ukraine",
     "enforce-grayscale",
     "outlink-alert",
+    "back-to-top",
 ];
 export var permissive = false;
 
