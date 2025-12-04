@@ -4,6 +4,7 @@ main = "./worker/index.js"
 workers_dev = true
 keep_vars = true
 send_metrics = false
+minify = true
 
 [build]
 command = "chmod a+x workers_build.sh && ./workers_build.sh"
