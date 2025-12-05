@@ -5,6 +5,7 @@ import callbackHandler from "./ghauth/callback.js";
 import echo from "./cloudflare-worker-echo-back.js";
 
 import { handleWebSocket } from "./ws/index.js";
+import handleCorsRequest from "./cors.js"; // Added this import
 
 export default {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -38,6 +39,11 @@ export default {
             // Handle /api/echo
             if (url.pathname === "/api/echo") {
                 return echo(request, request.url);
+            }
+
+            // Handle /api/cors
+            if (url.pathname === "/api/cors") {
+                return handleCorsRequest(request, env, ctx);
             }
 
             // Handle /api/{env.UUID}
