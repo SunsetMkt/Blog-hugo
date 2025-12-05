@@ -156,7 +156,7 @@ export default async function handleCorsRequest(request, env, ctx) {
                 JSON.stringify(
                     {
                         message: "CLOUDFLARE-CORS-ANYWHERE",
-                        usage: `${originUrl.origin}/?uri`,
+                        usage: `${request.url}/?uri`,
                         origin: originHeader,
                         ip: connectingIp,
                         country: country || undefined,
