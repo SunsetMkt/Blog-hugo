@@ -1,3 +1,5 @@
+// https://github.com/i40west/netlify-cms-cloudflare-pages
+
 export default async function onRequest(context) {
     const {
         request, // same as existing Worker API

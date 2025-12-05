@@ -1,3 +1,5 @@
+// https://github.com/i40west/netlify-cms-cloudflare-pages
+
 function renderBody(status, content) {
     const html = `
     <script>

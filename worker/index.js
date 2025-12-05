@@ -1,14 +1,11 @@
-// https://github.com/i40west/netlify-cms-cloudflare-pages
+import bingwHandler from "./bingw.js";
+import handleCorsRequest from "./cors.js";
+import echo from "./echo.js";
 import authHandler from "./ghauth/auth.js";
 import callbackHandler from "./ghauth/callback.js";
-
-import echo from "./cloudflare-worker-echo-back.js";
-
 import { handleWebSocket } from "./ws/index.js";
-import handleCorsRequest from "./cors.js"; // Added this import
 
 export default {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
         if (url.pathname.startsWith("/api/")) {
@@ -44,6 +41,11 @@ export default {
             // Handle /api/cors
             if (url.pathname === "/api/cors") {
                 return handleCorsRequest(request, env, ctx);
+            }
+
+            // Handle /api/bingw
+            if (url.pathname.startsWith("/api/bingw")) {
+                return bingwHandler(request);
             }
 
             // Handle /api/{env.UUID}

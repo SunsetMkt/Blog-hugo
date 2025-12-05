@@ -56,6 +56,7 @@ async function readRequestBody(request, url) {
         // like an image, or some other binary data.
         try {
             rsp["data"] = new TextDecoder().decode(await request.arrayBuffer());
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (error) {
             rsp["data"] = "";
             rsp["dataError"] = "not decodable";
