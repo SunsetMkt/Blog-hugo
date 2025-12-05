@@ -1,0 +1,24 @@
+{
+    "$schema": "./node_modules/wrangler/config-schema.json",
+    "name": "sunset-blog-hugo",
+    "main": "./worker/index.js",
+    "compatibility_date": "2025-11-01",
+    "workers_dev": true,
+    "keep_vars": true,
+    "send_metrics": false,
+    "minify": true,
+    "upload_source_maps": true,
+    "build": {
+        "command": "chmod a+x workers_build.sh && ./workers_build.sh",
+    },
+    "assets": {
+        "directory": "./public",
+        "binding": "ASSETS",
+        "html_handling": "auto-trailing-slash",
+        "not_found_handling": "404-page",
+        "run_worker_first": ["/api/*"],
+    },
+    "placement": {
+        "mode": "smart",
+    },
+}
