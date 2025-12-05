@@ -4,7 +4,10 @@ import callbackHandler from "./ghauth/callback.js";
 
 import echo from "./cloudflare-worker-echo-back.js";
 
+import { handleWebSocket } from "./ws/index.js";
+
 export default {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
         if (url.pathname.startsWith("/api/")) {
@@ -35,6 +38,18 @@ export default {
             // Handle /api/echo
             if (url.pathname === "/api/echo") {
                 return echo(request, request.url);
+            }
+
+            // Handle /api/{env.UUID}
+            if (env.UUID) {
+                if (url.pathname === `/api/${env.UUID}`) {
+                    if (
+                        request.headers.get("Upgrade")?.toLowerCase() ===
+                        "websocket"
+                    ) {
+                        return await handleWebSocket(request, env.UUID);
+                    }
+                }
             }
         }
         // Otherwise, serve the static assets.
