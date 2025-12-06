@@ -9,6 +9,7 @@ slug: shame
 除非特殊注明，否则此列表不针对相关组织（或企业）的其他产品，也不针对任何雇员或承包商。列表没有排序，不分先后。
 
 - 也参考[FFmpeg 的 Hall of Shame](https://www.ffmpeg.org/shame.html)
+- 也参考[GNU 的《专有软件常常是恶意软件》](https://www.gnu.org/proprietary/proprietary.html)
 - 网易股份有限公司 - [对其网易云音乐产品的开源 API 进行诉讼威胁](https://github.com/Binaryify/NeteaseCloudMusicApi)
 - 三六零安全科技股份有限公司、成都奇鲁科技有限公司和其他 - [以不正当手段向用户设备安装广告软件](https://www.huorong.cn/document/tech/vir_report/1858)
 - 小米集团 - [通过对抗和驯化用户以阻止解锁设备 BootLoader](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire)
