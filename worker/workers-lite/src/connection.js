@@ -23,14 +23,23 @@ export const ConnectionMode = {
  */
 export function getConnectionOrder(url) {
     const connectionMode = url.searchParams.get("mode") || "auto";
+    console.debug("[Connection] Determining connection order", {
+        connectionMode,
+    });
 
     // Legacy proxy mode maps to direct + proxy
     if (connectionMode === "proxy") {
+        console.info(
+            "[Connection] Legacy proxy mode detected, using direct + proxy",
+        );
         return ["direct", "proxy"];
     }
 
     // Single mode specified
     if (connectionMode !== "auto") {
+        console.info("[Connection] Single connection mode specified", {
+            mode: connectionMode,
+        });
         return [connectionMode];
     }
 
@@ -50,7 +59,12 @@ export function getConnectionOrder(url) {
     }
 
     // Default to direct connection if no parameters specified
-    return connectionOrder.length > 0 ? connectionOrder : ["direct"];
+    const finalOrder =
+        connectionOrder.length > 0 ? connectionOrder : ["direct"];
+    console.info("[Connection] Auto mode connection order determined", {
+        order: finalOrder,
+    });
+    return finalOrder;
 }
 
 /**
@@ -70,6 +84,12 @@ export async function connectWithMethod(
     socks5Config,
     proxyIP,
 ) {
+    console.debug("[Connection] Attempting connection", {
+        method: connectionMethod,
+        targetHost,
+        targetPort,
+    });
+
     switch (connectionMethod) {
         case "direct":
             // Direct connection to target
@@ -78,6 +98,7 @@ export async function connectWithMethod(
         case "s5":
             // SOCKS5 proxy connection
             if (!socks5Config) {
+                console.error("[Connection] SOCKS5 config not available");
                 throw new Error("SOCKS5 config not available");
             }
             return await connectViaSocks5(socks5Config, targetHost, targetPort);
@@ -85,11 +106,15 @@ export async function connectWithMethod(
         case "proxy":
             // ProxyIP connection
             if (!proxyIP) {
+                console.error("[Connection] Proxy IP not available");
                 throw new Error("Proxy IP not available");
             }
             return await connectViaProxy(proxyIP, targetHost, targetPort);
 
         default:
+            console.error("[Connection] Unknown connection method", {
+                connectionMethod,
+            });
             throw new Error(`Unknown connection method: ${connectionMethod}`);
     }
 }
@@ -101,8 +126,13 @@ export async function connectWithMethod(
  * @returns {Promise<Socket>} Connected socket
  */
 async function connectDirect(targetHost, targetPort) {
+    console.info("[Connection] Establishing direct connection", {
+        targetHost,
+        targetPort,
+    });
     const socket = connect({ hostname: targetHost, port: targetPort });
     await socket.opened;
+    console.info("[Connection] Direct connection established successfully");
     return socket;
 }
 
@@ -118,11 +148,20 @@ async function connectViaProxy(proxyIP, targetHost, targetPort) {
     // Convert port string to number, fallback to targetPort if invalid or missing
     const parsedPort = proxyPortStr ? +proxyPortStr : NaN;
     const proxyPort = !isNaN(parsedPort) ? parsedPort : targetPort;
+
+    console.info("[Connection] Establishing proxy connection", {
+        proxyHost,
+        proxyPort,
+        targetHost,
+        targetPort,
+    });
+
     const socket = connect({
         hostname: proxyHost,
         port: proxyPort,
     });
     await socket.opened;
+    console.info("[Connection] Proxy connection established successfully");
     return socket;
 }
 
@@ -142,20 +181,42 @@ export async function connectWithFallback(
     socks5Config,
     proxyIP,
 ) {
+    console.info("[Connection] Starting connection with fallback", {
+        methods: connectionMethods,
+        targetHost,
+        targetPort,
+    });
+
     for (const connectionMethod of connectionMethods) {
         try {
-            return await connectWithMethod(
+            const socket = await connectWithMethod(
                 connectionMethod,
                 targetHost,
                 targetPort,
                 socks5Config,
                 proxyIP,
             );
+            console.info("[Connection] Connection successful", {
+                method: connectionMethod,
+            });
+            return socket;
         } catch (error) {
-            console.debug("Connection attempt failed:", error);
+            console.warn(
+                "[Connection] Connection attempt failed, trying next method",
+                {
+                    method: connectionMethod,
+                    error: error.message,
+                },
+            );
             // Try next method
             continue;
         }
     }
+
+    console.error("[Connection] All connection methods failed", {
+        methods: connectionMethods,
+        targetHost,
+        targetPort,
+    });
     return null;
 }

@@ -44,12 +44,18 @@ function toSize(bytes) {
  * @returns {Promise<void>}
  */
 async function uploadToRemote(counter, writer, lite) {
-    // eslint-disable-next-line no-unused-vars
+    console.debug("[gRPC] Starting upload to remote");
+
     async function innerUpload(d, src) {
         if (!d || d.length === 0) {
             return;
         }
         counter.add(d.length);
+        console.debug("[gRPC] Uploading chunk", {
+            source: src,
+            length: d.length,
+            totalBytes: counter.get(),
+        });
         await writer.write(d);
     }
 
@@ -65,6 +71,10 @@ async function uploadToRemote(counter, writer, lite) {
         }
         await innerUpload(r.value, "remain packets");
     }
+
+    console.info("[gRPC] Upload to remote completed", {
+        totalBytes: counter.get(),
+    });
 }
 
 /**
@@ -100,6 +110,7 @@ function createUploader(lite, writable) {
  * @returns {Object} Object with readable stream, counter, and done promise
  */
 function createDownloader(resp, remoteReadable) {
+    console.debug("[gRPC] Creating downloader for remote responses");
     const counter = new Counter();
     let stream;
 
@@ -109,20 +120,39 @@ function createDownloader(resp, remoteReadable) {
                 start(controller) {
                     // Send LITE response header first
                     counter.add(resp.length);
+                    console.debug("[gRPC] Sending LITE response header", {
+                        length: resp.length,
+                    });
                     controller.enqueue(resp);
                 },
                 transform(chunk, controller) {
                     counter.add(chunk.length);
+                    console.debug("[gRPC] Downloading chunk from remote", {
+                        length: chunk.length,
+                        totalBytes: counter.get(),
+                    });
                     controller.enqueue(chunk);
                 },
                 cancel(reason) {
+                    console.warn("[gRPC] Download cancelled", { reason });
                     reject(`download cancelled: ${reason}`);
                 },
             },
             null,
             new ByteLengthQueuingStrategy({ highWaterMark: 65536 }),
         );
-        remoteReadable.pipeTo(stream.writable).catch(reject).finally(resolve);
+        remoteReadable
+            .pipeTo(stream.writable)
+            .catch((err) => {
+                console.warn("[gRPC] Download pipe error:", err);
+                reject(err);
+            })
+            .finally(() => {
+                console.info("[gRPC] Download completed", {
+                    totalBytes: counter.get(),
+                });
+                resolve();
+            });
     });
 
     return {
@@ -141,6 +171,12 @@ function createDownloader(resp, remoteReadable) {
  * @returns {Promise<Object|null>} Object with uploader and downloader, or null on failure
  */
 async function connectToRemote(lite, methods, socks5Config, proxyIP) {
+    console.debug("[gRPC] Connecting to remote", {
+        hostname: lite.hostname,
+        port: lite.port,
+        methods,
+    });
+
     const remote = await connectWithFallback(
         methods,
         lite.hostname,
@@ -150,12 +186,17 @@ async function connectToRemote(lite, methods, socks5Config, proxyIP) {
     );
 
     if (!remote) {
+        console.error("[gRPC] Remote connection failed");
         return null;
     }
 
+    console.debug("[gRPC] Creating uploader and downloader");
     const uploader = createUploader(lite, remote.writable);
     const downloader = createDownloader(lite.resp, remote.readable);
 
+    console.info(
+        "[gRPC] Remote connection established with uploader and downloader",
+    );
     return {
         downloader,
         uploader,
@@ -172,26 +213,37 @@ async function connectToRemote(lite, methods, socks5Config, proxyIP) {
  * @returns {Promise<Object|null>} Object with readable stream and closed promise
  */
 async function handleGrpcClient(body, uuid, methods, socks5Config, proxyIP) {
+    console.debug("[gRPC] Handling gRPC client connection");
+
     const lite = await parseLiteHeaderStream(body, uuid);
     if (typeof lite !== "object" || !lite) {
+        console.error("[gRPC] Failed to parse LITE header from stream");
         return null;
     }
+
+    console.info("[gRPC] LITE header parsed from stream", {
+        hostname: lite.hostname,
+        port: lite.port,
+    });
 
     const r = await connectToRemote(lite, methods, socks5Config, proxyIP);
     if (r === null) {
+        console.error("[gRPC] Failed to connect to remote");
         return null;
     }
 
+    console.debug("[gRPC] Setting up connection lifecycle tracking");
     const connectionClosed = new Promise((resolve) => {
         r.downloader.done
-            .catch(() => {
-                // Ignore errors
+            .catch((err) => {
+                console.warn("[gRPC] Downloader error:", err);
             })
             .finally(() => r.uploader.done)
-            .catch(() => {
-                // Ignore errors
+            .catch((err) => {
+                console.warn("[gRPC] Uploader error:", err);
             })
             .finally(() => {
+                console.info("[gRPC] gRPC connection closed");
                 resolve();
             });
     });
@@ -209,16 +261,29 @@ async function handleGrpcClient(body, uuid, methods, socks5Config, proxyIP) {
  * @returns {Promise<Response|null>} Response or null on error
  */
 export async function handleGrpcPost(request, uuid) {
+    console.info("[gRPC] Handling gRPC POST request");
+
     if (request.method !== "POST") {
+        console.debug("[gRPC] Request method is not POST");
         return null;
     }
 
     const requestURL = new URL(request.url);
+    console.debug("[gRPC] Request URL parsed", {
+        pathname: requestURL.pathname,
+        searchParams: requestURL.search,
+    });
 
     // Parse connection configuration from URL
     const socks5QueryParam = requestURL.searchParams.get("s5");
     const proxyQueryParam = requestURL.searchParams.get("proxyip");
     const pathParameter = requestURL.pathname.slice(1);
+
+    console.debug("[gRPC] Parsing connection configuration", {
+        hasSocks5Param: !!socks5QueryParam,
+        hasProxyParam: !!proxyQueryParam,
+        pathParameter,
+    });
 
     // Determine SOCKS5 configuration source (query param or path)
     const socks5ConfigString = socks5QueryParam || pathParameter;
@@ -238,9 +303,11 @@ export async function handleGrpcPost(request, uuid) {
         );
 
         if (!result) {
+            console.warn("[gRPC] handleGrpcClient returned null");
             return null;
         }
 
+        console.info("[gRPC] gRPC request handled successfully");
         return new Response(result.readable, {
             headers: {
                 "X-Accel-Buffering": "no",
@@ -251,7 +318,7 @@ export async function handleGrpcPost(request, uuid) {
             },
         });
     } catch (err) {
-        console.debug("Error handling gRPC request:", err);
+        console.error("[gRPC] Error handling gRPC request:", err);
         return null;
     }
 }

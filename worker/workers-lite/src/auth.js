@@ -10,7 +10,15 @@
  * @returns {boolean} True if UUID matches, false otherwise
  */
 export function validateUUID(data, expectedUUID) {
-    if (data.byteLength < 24) return false;
+    console.debug("[Auth] Validating UUID...");
+
+    if (data.byteLength < 24) {
+        console.warn("[Auth] UUID validation failed: data too short", {
+            byteLength: data.byteLength,
+            required: 24,
+        });
+        return false;
+    }
 
     const uuidBytes = new Uint8Array(data.slice(1, 17));
     const normalizedExpectedUUID = expectedUUID.replace(/-/g, "");
@@ -22,10 +30,16 @@ export function validateUUID(data, expectedUUID) {
             16,
         );
         if (uuidBytes[byteIndex] !== expectedByteValue) {
+            console.warn("[Auth] UUID validation failed: mismatch at byte", {
+                byteIndex,
+                expected: expectedByteValue,
+                actual: uuidBytes[byteIndex],
+            });
             return false;
         }
     }
 
+    console.info("[Auth] UUID validation successful");
     return true;
 }
 
@@ -35,15 +49,24 @@ export function validateUUID(data, expectedUUID) {
  * @returns {ArrayBuffer|null} Decoded early data or null if invalid
  */
 export function processEarlyData(headerValue) {
-    if (!headerValue) return null;
+    console.debug("[Auth] Processing early data from handshake");
+
+    if (!headerValue) {
+        console.debug("[Auth] No early data header present");
+        return null;
+    }
 
     try {
-        return Uint8Array.from(
+        const decoded = Uint8Array.from(
             atob(headerValue.replace(/-/g, "+").replace(/_/g, "/")),
             (c) => c.charCodeAt(0),
         ).buffer;
+        console.info("[Auth] Early data decoded successfully", {
+            byteLength: decoded.byteLength,
+        });
+        return decoded;
     } catch (error) {
-        console.debug("Error processing early data:", error);
+        console.warn("[Auth] Error processing early data:", error);
         return null;
     }
 }

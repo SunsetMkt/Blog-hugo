@@ -16,14 +16,21 @@ import { parseLiteHeader, LiteCommand } from "./protocol.js";
  * @returns {Response} WebSocket response
  */
 export async function handleWebSocket(request, expectedUUID) {
+    console.info("[Handler] WebSocket connection initiated");
+
     // Establish WebSocket pair
     const [clientWebSocket, serverWebSocket] = Object.values(
         // eslint-disable-next-line no-undef
         new WebSocketPair(),
     );
     serverWebSocket.accept();
+    console.debug("[Handler] WebSocket pair created and accepted");
 
     const requestURL = new URL(request.url);
+    console.debug("[Handler] Request URL parsed", {
+        pathname: requestURL.pathname,
+        searchParams: requestURL.search,
+    });
 
     // Fix for URL-encoded query parameters in pathname
     if (requestURL.pathname.includes("%3F")) {
@@ -39,6 +46,12 @@ export async function handleWebSocket(request, expectedUUID) {
     const socks5QueryParam = requestURL.searchParams.get("s5");
     const proxyQueryParam = requestURL.searchParams.get("proxyip");
     const pathParameter = requestURL.pathname.slice(1);
+
+    console.debug("[Handler] Parsing connection configuration", {
+        hasSocks5Param: !!socks5QueryParam,
+        hasProxyParam: !!proxyQueryParam,
+        pathParameter,
+    });
 
     // Determine SOCKS5 configuration source (query param or path)
     const socks5ConfigString = socks5QueryParam || pathParameter;
@@ -63,12 +76,14 @@ export async function handleWebSocket(request, expectedUUID) {
 
             // Handle WebSocket close
             serverWebSocket.addEventListener("close", () => {
+                console.info("[Handler] WebSocket closed");
                 remoteSocket?.close();
                 controller.close();
             });
 
             // Handle WebSocket errors
             serverWebSocket.addEventListener("error", () => {
+                console.error("[Handler] WebSocket error occurred");
                 remoteSocket?.close();
                 controller.error();
             });
@@ -78,8 +93,10 @@ export async function handleWebSocket(request, expectedUUID) {
                 "sec-websocket-protocol",
             );
             if (earlyDataHeader) {
+                console.debug("[Handler] Processing early data from handshake");
                 const earlyData = processEarlyData(earlyDataHeader);
                 if (earlyData) {
+                    console.debug("[Handler] Early data enqueued");
                     controller.enqueue(earlyData);
                 }
             }
@@ -105,13 +122,18 @@ export async function handleWebSocket(request, expectedUUID) {
                     }
 
                     // First message: validate and parse LITE header
+                    console.debug("[Handler] Processing first message");
                     if (!validateUUID(incomingData, expectedUUID)) {
+                        console.error(
+                            "[Handler] UUID validation failed, ignoring message",
+                        );
                         return; // Invalid UUID, ignore
                     }
 
                     // Parse LITE protocol header
                     const parsedHeader = parseLiteHeader(incomingData);
                     if (!parsedHeader) {
+                        console.error("[Handler] Failed to parse LITE header");
                         return; // Invalid header
                     }
 
@@ -122,9 +144,16 @@ export async function handleWebSocket(request, expectedUUID) {
                     // Handle UDP DNS queries
                     if (parsedHeader.command === LiteCommand.UDP) {
                         if (parsedHeader.port !== 53) {
+                            console.warn(
+                                "[Handler] UDP request for non-DNS port rejected",
+                                {
+                                    port: parsedHeader.port,
+                                },
+                            );
                             return; // Only DNS (port 53) is supported for UDP
                         }
 
+                        console.info("[Handler] Switching to DNS mode");
                         isDNSMode = true;
                         const dnsHandler = createDNSHandler(
                             serverWebSocket,
@@ -135,6 +164,7 @@ export async function handleWebSocket(request, expectedUUID) {
                     }
 
                     // Handle TCP connections
+                    console.info("[Handler] Establishing TCP connection");
                     const connectedSocket = await connectWithFallback(
                         connectionOrder,
                         parsedHeader.address,
@@ -144,23 +174,44 @@ export async function handleWebSocket(request, expectedUUID) {
                     );
 
                     if (!connectedSocket) {
+                        console.error(
+                            "[Handler] Failed to establish connection - all methods failed",
+                        );
                         return; // All connection methods failed
                     }
+
+                    console.info(
+                        "[Handler] TCP connection established successfully",
+                    );
 
                     remoteSocket = connectedSocket;
 
                     // Send initial payload
+                    console.debug("[Handler] Sending initial payload", {
+                        payloadLength: initialPayload.byteLength,
+                    });
                     const remoteWriter = connectedSocket.writable.getWriter();
                     await remoteWriter.write(initialPayload);
                     remoteWriter.releaseLock();
 
                     // Pipe remote socket data back to WebSocket
+                    console.debug(
+                        "[Handler] Setting up bidirectional data pipe",
+                    );
                     let isFirstResponse = true;
                     connectedSocket.readable
                         .pipeTo(
                             new WritableStream({
                                 write(responseChunk) {
                                     if (serverWebSocket.readyState === 1) {
+                                        console.debug(
+                                            "[Handler] Forwarding response to client",
+                                            {
+                                                chunkLength:
+                                                    responseChunk.byteLength,
+                                                isFirstResponse,
+                                            },
+                                        );
                                         // Prepend header to first message only
                                         if (isFirstResponse) {
                                             serverWebSocket.send(
@@ -178,28 +229,37 @@ export async function handleWebSocket(request, expectedUUID) {
                                     }
                                 },
                                 close() {
+                                    console.info(
+                                        "[Handler] Remote connection closed",
+                                    );
                                     if (serverWebSocket.readyState === 1) {
                                         serverWebSocket.close();
                                     }
                                 },
                                 abort() {
+                                    console.warn(
+                                        "[Handler] Remote connection aborted",
+                                    );
                                     if (serverWebSocket.readyState === 1) {
                                         serverWebSocket.close();
                                     }
                                 },
                             }),
                         )
-                        .catch(() => {
+                        .catch((error) => {
+                            console.warn("[Handler] Pipe error:", error);
                             // Silently handle pipe errors
                         });
                 },
             }),
         )
-        .catch(() => {
+        .catch((error) => {
+            console.warn("[Handler] Stream error:", error);
             // Silently handle stream errors
         });
 
     // Return WebSocket response
+    console.info("[Handler] WebSocket response created successfully");
     return new Response(null, {
         status: 101,
         webSocket: clientWebSocket,

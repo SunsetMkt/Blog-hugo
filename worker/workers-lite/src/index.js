@@ -46,25 +46,41 @@ export default {
      * @returns {Promise<Response>} The response
      */
     async fetch(request, env) {
+        console.info("[Worker] Incoming request received", {
+            method: request.method,
+            url: request.url,
+        });
+
         // Get UUID from environment or use default
         const UUID = env.UUID || "b02e0d4b-caaf-4ce3-bf03-d116265bbb0a";
+        if (!env.UUID) {
+            console.warn(
+                "[Worker] Using default UUID - consider setting UUID in environment",
+            );
+        }
 
         const url = new URL(request.url);
 
         // Check if this is a WebSocket upgrade request
         if (request.headers.get("Upgrade")?.toLowerCase() === "websocket") {
+            console.info("[Worker] WebSocket upgrade detected");
             return await handleWebSocket(request, UUID);
         }
 
         // Handle gRPC transport for POST requests when grpc query parameter is present
         if (request.method === "POST" && url.searchParams.has("grpc")) {
+            console.info("[Worker] gRPC transport request detected");
             const response = await handleGrpcPost(request, UUID);
             if (response) {
                 return response;
             }
+            console.warn(
+                "[Worker] gRPC handler returned null, falling through",
+            );
         }
 
         // For other non-WebSocket requests, proxy to example.com
+        console.info("[Worker] Proxying request to example.com");
         url.hostname = "example.com";
         return fetch(new Request(url, request));
     },
