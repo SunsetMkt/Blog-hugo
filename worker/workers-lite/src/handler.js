@@ -18,6 +18,7 @@ import { parseLiteHeader, LiteCommand } from "./protocol.js";
 export async function handleWebSocket(request, expectedUUID) {
     // Establish WebSocket pair
     const [clientWebSocket, serverWebSocket] = Object.values(
+        // eslint-disable-next-line no-undef
         new WebSocketPair(),
     );
     serverWebSocket.accept();

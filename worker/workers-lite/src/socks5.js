@@ -53,7 +53,7 @@ export async function connectViaSocks5(socks5Config, targetHost, targetPort) {
     const authResponse = (await reader.read()).value;
 
     // If username/password authentication is required
-    if (authResponse[1] === 2 && socks5Config.user) {
+    if (authResponse && authResponse[1] === 2 && socks5Config.user) {
         const userBytes = new TextEncoder().encode(socks5Config.user);
         const passBytes = new TextEncoder().encode(socks5Config.pass || "");
 

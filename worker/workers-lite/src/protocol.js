@@ -82,6 +82,6 @@ export function parseLiteHeader(data) {
         port,
         address,
         headerLength: currentPosition,
-        responseHeader: new Uint8Array([data[0], 0]),
+        responseHeader: new Uint8Array([new Uint8Array(data)[0], 0]),
     };
 }

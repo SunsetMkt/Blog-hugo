@@ -17,9 +17,17 @@ export function createDNSHandler(webSocket, responseHeader) {
         transform(chunk, controller) {
             // DNS messages are length-prefixed (2 bytes)
             for (let currentOffset = 0; currentOffset < chunk.byteLength; ) {
+                // Ensure we have at least 2 bytes for the length prefix
+                if (currentOffset + 2 > chunk.byteLength) {
+                    break;
+                }
                 const messageLength = new DataView(
                     chunk.slice(currentOffset, currentOffset + 2),
                 ).getUint16(0);
+                // Ensure we have the complete message
+                if (currentOffset + 2 + messageLength > chunk.byteLength) {
+                    break;
+                }
                 controller.enqueue(
                     chunk.slice(
                         currentOffset + 2,
@@ -61,6 +69,7 @@ export function createDNSHandler(webSocket, responseHeader) {
                         isFirstMessageSent = true;
                     }
                 } catch (error) {
+                    console.debug("Error processing DNS query:", error);
                     // Silently ignore DNS errors to avoid disrupting the connection
                 }
             },

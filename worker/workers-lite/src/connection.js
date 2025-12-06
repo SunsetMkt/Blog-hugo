@@ -114,10 +114,13 @@ async function connectDirect(targetHost, targetPort) {
  * @returns {Promise<Socket>} Connected socket
  */
 async function connectViaProxy(proxyIP, targetHost, targetPort) {
-    const [proxyHost, proxyPort = targetPort] = proxyIP.split(":");
+    const [proxyHost, proxyPortStr] = proxyIP.split(":");
+    // Convert port string to number, fallback to targetPort if invalid or missing
+    const parsedPort = proxyPortStr ? +proxyPortStr : NaN;
+    const proxyPort = !isNaN(parsedPort) ? parsedPort : targetPort;
     const socket = connect({
         hostname: proxyHost,
-        port: +proxyPort || targetPort,
+        port: proxyPort,
     });
     await socket.opened;
     return socket;
@@ -149,6 +152,7 @@ export async function connectWithFallback(
                 proxyIP,
             );
         } catch (error) {
+            console.debug("Connection attempt failed:", error);
             // Try next method
             continue;
         }

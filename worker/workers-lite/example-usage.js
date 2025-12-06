@@ -34,13 +34,13 @@ import {
     validateUUID,
     parseSocks5Config,
     parseLiteHeader,
-    ConnectionMode,
 } from "./src/index.js";
 
 export const customWorker = {
     async fetch(request, env) {
         if (request.headers.get("Upgrade")?.toLowerCase() === "websocket") {
             // Custom WebSocket handling with access to lower-level functions
+            // eslint-disable-next-line no-undef
             const [client, ws] = Object.values(new WebSocketPair());
             ws.accept();
 
@@ -103,7 +103,7 @@ export const multiRouteWorker = {
 // Example 4: Using SOCKS5 module independently
 // ============================================================
 
-import { parseSocks5Config, connectViaSocks5 } from "./src/index.js";
+import { connectViaSocks5 } from "./src/index.js";
 
 export async function connectThroughSocks5(
     targetHost,

@@ -1,0 +1,12 @@
+name = "workers-lite"
+main = "src/index.js"
+compatibility_date = "2025-12-01"
+minify = true
+
+# Environment variables
+# Set your UUID in the Cloudflare dashboard or use wrangler secret put UUID
+# [vars]
+# UUID = "b02e0d4b-caaf-4ce3-bf03-d116265bbb0a"
+
+# For local development, you can create a .dev.vars file with:
+# UUID=your-uuid-here

@@ -1,14 +1,22 @@
 /**
  * Workers LITE - Main Entry Point
  *
- * A lightweight LITE proxy implementation for Cloudflare Workers that provides
- * WebSocket-based proxy functionality with support for multiple connection modes
- * including direct connections, SOCKS5 proxies, and proxy IP forwarding.
+ * A lightweight LITE proxy implementation for Cloudflare Workers.
  *
  * @module workers-lite
+ *
+ * For complete API documentation, usage examples, and configuration details,
+ * please refer to API.md in the project root.
+ *
+ * Quick links:
+ * - API Documentation: API.md
+ * - Development Guide: DEVELOPMENT.md
+ * - Usage Examples: example-usage.js
+ * - Quick Start: README.md
  */
 
 import { handleWebSocket } from "./handler.js";
+import { handleGrpcPost } from "./grpc-handler.js";
 
 // Export all modules for use by other workers
 export { validateUUID, processEarlyData } from "./auth.js";
@@ -21,6 +29,11 @@ export {
 export { createDNSHandler } from "./dns.js";
 export { parseLiteHeader, LiteCommand, AddressType } from "./protocol.js";
 export { handleWebSocket } from "./handler.js";
+export {
+    parseLiteHeaderStream,
+    AddressType as GrpcAddressType,
+} from "./grpc.js";
+export { handleGrpcPost } from "./grpc-handler.js";
 
 /**
  * Default Cloudflare Worker export
@@ -33,16 +46,25 @@ export default {
      * @returns {Promise<Response>} The response
      */
     async fetch(request, env) {
-        // Get UUID from environment
-        const UUID = env.UUID;
+        // Get UUID from environment or use default
+        const UUID = env.UUID || "b02e0d4b-caaf-4ce3-bf03-d116265bbb0a";
+
+        const url = new URL(request.url);
 
         // Check if this is a WebSocket upgrade request
         if (request.headers.get("Upgrade")?.toLowerCase() === "websocket") {
             return await handleWebSocket(request, UUID);
         }
 
-        // For non-WebSocket requests, proxy to example.com
-        const url = new URL(request.url);
+        // Handle gRPC transport for POST requests when grpc query parameter is present
+        if (request.method === "POST" && url.searchParams.has("grpc")) {
+            const response = await handleGrpcPost(request, UUID);
+            if (response) {
+                return response;
+            }
+        }
+
+        // For other non-WebSocket requests, proxy to example.com
         url.hostname = "example.com";
         return fetch(new Request(url, request));
     },

@@ -43,6 +43,7 @@ export function processEarlyData(headerValue) {
             (c) => c.charCodeAt(0),
         ).buffer;
     } catch (error) {
+        console.debug("Error processing early data:", error);
         return null;
     }
 }
