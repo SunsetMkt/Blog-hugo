@@ -9,9 +9,15 @@ export default {
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
         const pathname = url.pathname;
+        const searchParams = url.searchParams;
+        // console.debug(`[Request] ${request.method} ${pathname} ${searchParams.toString()}`);
         if (pathname.startsWith("/api/")) {
             // TODO: Add your custom /api/* logic here.
             // return new Response("Ok");
+
+            console.info(
+                `[Request] ${request.method} ${pathname} ${searchParams.toString()}`,
+            );
 
             // Handle /api/auth
             if (pathname === "/api/ghauth") {
@@ -76,6 +82,9 @@ export default {
             }
 
             // API path not found
+            console.info(
+                `[Request] ${request.method} ${pathname} ${searchParams.toString()} not found`,
+            );
             return new Response(
                 JSON.stringify({
                     status: "Not Found",
@@ -90,6 +99,9 @@ export default {
         }
         // Otherwise, serve the static assets.
         // Without this, the Worker will error and no assets will be served.
+        console.warn(
+            `[Request] Unexpected workers route ${request.method} ${pathname} ${searchParams.toString()}`,
+        );
         return env.ASSETS.fetch(request);
     },
 };

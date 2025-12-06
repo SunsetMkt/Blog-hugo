@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // https://github.com/i40west/netlify-cms-cloudflare-pages
 
 function renderBody(status, content) {
