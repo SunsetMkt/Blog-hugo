@@ -4,3 +4,4 @@ resources
 node_modules/
 !static/
 !static/**
+.wrangler
