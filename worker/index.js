@@ -65,10 +65,10 @@ export default {
                     ) {
                         return await handleWebSocket(request, env.UUID);
                     }
-                    // Handle gRPC transport for POST requests when grpc query parameter is present
+                    // Handle gRPC transport for POST requests ~~when grpc query parameter is present~~
                     if (
-                        request.method === "POST" &&
-                        url.searchParams.has("grpc")
+                        request.method === "POST" // &&
+                        // url.searchParams.has("grpc")
                     ) {
                         const response = await handleGrpcPost(
                             request,
@@ -94,6 +94,8 @@ export default {
                 {
                     status: 404,
                     headers: { "Content-Type": "application/json" },
+                    pathname: pathname,
+                    searchParams: searchParams,
                 },
             );
         }
