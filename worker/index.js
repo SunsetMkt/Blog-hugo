@@ -14,7 +14,7 @@ export default {
             // return new Response("Ok");
 
             // Handle /api/auth
-            if (pathname === "/api/auth") {
+            if (pathname === "/api/ghauth") {
                 return authHandler({
                     request,
                     env,
@@ -22,7 +22,7 @@ export default {
             }
 
             // Handle /api/callback
-            if (pathname === "/api/callback") {
+            if (pathname === "/api/ghauthcallback") {
                 return callbackHandler({
                     request,
                     env,

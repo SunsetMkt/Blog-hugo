@@ -5,7 +5,7 @@ backend:
     use_graphql: true
     site_domain: https://blog.sunmkt.uk
     base_url: https://blog.sunmkt.uk
-    auth_endpoint: /api/auth
+    auth_endpoint: /api/ghauth
     commit_messages:
         create: "cms: create {{collection}} {{slug}}"
         update: "cms: update {{collection}} {{slug}}"
