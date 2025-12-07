@@ -87,7 +87,7 @@ export default async function handleRequest(request, env) {
 
     return new Response(JSON.stringify(result), {
         headers: {
-            "Cache-Control": `max-age=${cacheTime}`,
+            "Cache-Control": `public, max-age=${cacheTime}`,
             "Content-Type": "application/json",
         },
     });
