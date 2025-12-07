@@ -47,8 +47,11 @@ export default {
             }
 
             // Handle /api/cors
-            if (pathname === "/api/cors") {
-                return handleCorsRequest(request, env, ctx);
+            // eslint-disable-next-line no-constant-condition
+            if (false) {
+                if (pathname === "/api/cors") {
+                    return handleCorsRequest(request, env, ctx);
+                }
             }
 
             // Handle /api/bingw
