@@ -6,7 +6,7 @@ tags:
     - 鸣潮
     - 逆向工程
 slug: wuwa-ps
-title: \[已弃用\]《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（2.5 版本）
+title: "[已弃用]《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（2.5 版本）"
 ---
 
 > xavo95/xeondev/Reversed Rooms 已将此私服标记为弃用。
