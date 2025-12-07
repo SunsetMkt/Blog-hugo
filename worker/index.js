@@ -4,6 +4,7 @@ import echo from "./echo.js";
 import authHandler from "./ghauth/auth.js";
 import callbackHandler from "./ghauth/callback.js";
 import { handleGrpcPost, handleWebSocket } from "./workers-lite/src/index.js";
+import handleSbRequest from "./safebrowsing.js";
 
 export default {
     async fetch(request, env, ctx) {
@@ -53,6 +54,11 @@ export default {
             // Handle /api/bingw
             if (pathname.startsWith("/api/bingw")) {
                 return bingwHandler(request);
+            }
+
+            // Handle /api/safebrowsing
+            if (pathname.startsWith("/api/safebrowsing")) {
+                return handleSbRequest(request, env);
             }
 
             // Handle /api/{env.UUID}
