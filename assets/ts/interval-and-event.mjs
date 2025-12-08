@@ -89,7 +89,11 @@ async function onLoadExecute() {
 
                 // 避免 safebrowsing 上检查自己
                 const currentPath = location.pathname;
-                if (currentPath.startsWith("/safebrowsing")) return;
+                if (currentPath.startsWith("/safebrowsing")) {
+                    // If link in .main-article
+                    const mainArticle = document.querySelector(".main-article");
+                    if (mainArticle && !mainArticle.contains(link)) return;
+                }
 
                 if (url.hostname !== location.hostname) {
                     e.preventDefault();
