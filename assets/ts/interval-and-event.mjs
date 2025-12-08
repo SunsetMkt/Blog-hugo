@@ -1,6 +1,7 @@
 import * as featureFlags from "./feature-flag.mjs";
 import * as tools from "./tools.mjs";
 import * as grayscale from "./grayscale.mjs";
+import * as outlinkAlert from "./outlink-alert.mjs";
 import addBackToTop from "./vanilla-back-to-top.mjs";
 
 var loggingPrefix = "[interval-and-event]";
@@ -37,55 +38,7 @@ function executeImmediately() {
     // outlink-alert flag
     safeRun(function () {
         if (featureFlags.isFlagSet("outlink-alert")) {
-            document.addEventListener("click", function (e) {
-                let link = e.target;
-
-                // 向上找到最近的 <a>
-                if (link.tagName !== "A") {
-                    link = link.closest("a");
-                }
-                if (!link || !link.getAttribute("href")) return;
-
-                const rawHref = link.getAttribute("href").trim();
-
-                /*  
-                    if (rawHref.startsWith("#")) return;
-                    if (rawHref.toLowerCase().startsWith("javascript:")) return;
-                    if (
-                        rawHref.startsWith("mailto:") ||
-                        rawHref.startsWith("tel:")
-                    )
-                        return; */
-
-                if (!/^(https?):\/\//i.test(rawHref)) return;
-
-                let url;
-                try {
-                    url = new URL(link.href, location.href);
-                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                } catch (err) {
-                    return; // 非法 URL，跳过
-                }
-
-                const whitelist = [];
-                if (whitelist.includes(url.hostname)) return;
-
-                // 避免 safebrowsing 上检查自己
-                const currentPath = location.pathname;
-                if (currentPath.startsWith("/safebrowsing")) {
-                    // If link in .main-article
-                    const mainArticle = document.querySelector(".main-article");
-                    if (mainArticle && mainArticle.contains(link)) return;
-                }
-
-                if (url.hostname !== location.hostname) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    const base64Url = tools.base64UrlEncode(rawHref);
-                    const target = link.getAttribute("target") || "_self";
-                    window.open(`/safebrowsing/#${base64Url}`, target);
-                }
-            });
+            outlinkAlert.addEventListeners();
         }
     });
 }
