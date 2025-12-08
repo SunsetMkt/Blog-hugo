@@ -149,6 +149,9 @@ slug: safebrowsing
                 sameOriginEl.textContent =
                     "警告：您从非本站引用来源访问此跳转链接检查页面，请确保访问来源安全。";
             }
+        } else {
+            sameOriginEl.textContent =
+                "警告：您似乎直接访问了此跳转链接检查页面，请确保访问来源安全。";
         }
 
         const hash = (location.hash || "").replace(/^#/, "");
