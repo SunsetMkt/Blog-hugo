@@ -1,0 +1,242 @@
+---
+title: 站外跳转链接检查
+date: 2025-12-07
+slug: safebrowsing
+---
+
+<div>
+    <h2 id="status">准备检查...</h2>
+    <p id="result"></p>
+    <p id="same-origin" class="safebrowsing-warning"></p>
+    <pre id="url">请稍候...</pre>
+    <p>
+        <a
+            id="jump-to"
+            href="/"
+            style="display: none;"
+            rel="noopener noreferrer"
+            class="link"
+            >点击此处前往跳转链接</a
+        >
+    </p>
+    <p>
+        URL 安全检测由
+        <a
+            href="https://developers.google.com/safe-browsing/v4/usage-limits?hl=zh-cn"
+            class="link"
+            target="_blank"
+            >Google Safe Browsing API</a
+        >
+        提供支持。Google
+        致力于提供有关不安全网络资源的最准确和最新信息。不过，Google
+        无法保证其信息全面且没有错误：一些有风险的网站可能未被识别出来，而一些安全网站也可能会被错误地识别。
+        无论检查结果如何，您仍可<a class="link" id="copy-url">复制此 URL</a
+        >，然后前往该网站。
+    </p>
+    <p>
+        了解更多：<a
+            href="https://support.google.com/webmasters/answer/6350487?hl=zh-cn"
+            class="link"
+            target="_blank"
+            >社会工程学（钓鱼式攻击和欺骗性网站）</a
+        >、<a
+            href="https://developers.google.com/search/docs/monitor-debug/security/malware?hl=zh-cn"
+            class="link"
+            target="_blank"
+            >恶意软件和垃圾软件</a
+        >和<a
+            href="https://developers.google.com/safe-browsing/v4/advisory?hl=zh-cn"
+            class="link"
+            target="_blank"
+            >Google 提供的安全建议</a
+        >。
+    </p>
+</div>
+
+<style>
+    /* Safe Browsing Warning Styles */
+    .safebrowsing-warning {
+        color: #cc3300;
+        font-weight: bold;
+    }
+
+    .safebrowsing-safe {
+        color: #336600;
+        font-weight: bold;
+    }
+
+    .safebrowsing-unknown {
+        color: #888888;
+    }
+</style>
+
+<script>
+    const threatMessages = {
+        MALWARE:
+            "警告 - 访问此网站可能会损害您的计算机。此网页似乎包含恶意代码，这些代码可能会在未经您同意的情况下下载到您的计算机。",
+        SOCIAL_ENGINEERING:
+            "警告 - 您要访问的是诈骗网站。网站上的攻击者可能会诱使您执行一些危险的操作，例如安装软件或泄露您的个人信息（例如密码、电话号码或信用卡信息）。",
+        UNWANTED_SOFTWARE:
+            "警告 - 您要访问的网站可能包含有害程序。攻击者可能会试图诱使您安装会损害浏览体验的程序（例如，通过更改您的主页或在您访问的网站上展示额外的广告）。",
+        POTENTIALLY_HARMFUL_APPLICATION:
+            "警告 - 您要访问的网站可能包含恶意软件。攻击者可能会试图在您的设备上安装危险应用，以窃取或删除您的信息（例如照片、密码、消息和信用卡信息）。",
+        SAFE: "您要访问的网站可能是安全的。不过，Google 无法保证其信息全面且没有错误：一些有风险的网站可能未被识别出来，而一些安全网站也可能会被错误地识别。",
+        UNKNOWN: "我们无法识别此网站的安全性。",
+    };
+
+    function base64UrlEncode(str) {
+        const u = new TextEncoder().encode(str); // UTF-8 bytes
+        const bin = Array.from(u)
+            .map((b) => String.fromCharCode(b))
+            .join("");
+        return btoa(bin)
+            .replace(/\+/g, "-")
+            .replace(/\//g, "_")
+            .replace(/=+$/, "");
+    }
+
+    function base64UrlDecode(b64url) {
+        try {
+            b64url = b64url.replace(/-/g, "+").replace(/_/g, "/");
+            while (b64url.length % 4) b64url += "=";
+            const bin = atob(b64url);
+            const bytes = Uint8Array.from(
+                [...bin].map((ch) => ch.charCodeAt(0)),
+            );
+            return new TextDecoder().decode(bytes);
+        } catch (e) {
+            return null;
+        }
+    }
+
+    // 无威胁: { "matches": [] } 或 无 matches 字段
+    // 有威胁: { "matches": [ {...}, ... ] }
+    function isThreat(json) {
+        if (!json) return false;
+        if (Array.isArray(json.matches) && json.matches.length > 0) return true;
+        return false;
+    }
+
+    function getThreatType(json) {
+        if (!json) return false;
+        if (Array.isArray(json.matches) && json.matches.length > 0) {
+            return json.matches[0].threatType;
+        }
+        return false;
+    }
+
+    async function runCheck() {
+        const statusEl = document.getElementById("status");
+        const resultEl = document.getElementById("result");
+        const urlEl = document.getElementById("url");
+        const sameOriginEl = document.getElementById("same-origin");
+        const jumpToEl = document.getElementById("jump-to");
+        const copyUrlEl = document.getElementById("copy-url");
+
+        statusEl.textContent = "检查中...";
+        resultEl.textContent = "";
+        resultEl.className = "safebrowsing-unknown";
+        urlEl.textContent = "";
+        jumpToEl.href = "/";
+        jumpToEl.style.display = "none";
+        copyUrlEl.onclick = null;
+
+        const referrer = document.referrer;
+        if (referrer) {
+            const currentOrigin = new URL(document.location.href).origin;
+            const referrerOrigin = new URL(referrer).origin;
+            if (currentOrigin !== referrerOrigin) {
+                sameOriginEl.textContent =
+                    "警告：您从非本站引用来源访问此跳转链接检查页面，请确保访问来源安全。";
+            }
+        }
+
+        const hash = (location.hash || "").replace(/^#/, "");
+        if (!hash) {
+            statusEl.textContent = "错误：URL Hash 为空";
+            return;
+        }
+
+        const decoded = base64UrlDecode(hash);
+        if (!decoded) {
+            statusEl.textContent = "错误：URL Hash 解码失败";
+            return;
+        }
+
+        console.info("[SafeBrowsing]", decoded);
+
+        let targetUrl = decoded.trim();
+        if (!/^[a-zA-Z][a-zA-Z0-9+.-]*:\/\//.test(targetUrl)) {
+            targetUrl = "https://" + targetUrl;
+        }
+        const originalUrl = targetUrl;
+        try {
+            const u = new URL(targetUrl);
+            targetUrl = u.toString();
+        } catch (e) {
+            statusEl.textContent = "错误：URL Hash 解码后不是有效 URL";
+            return;
+        }
+
+        urlEl.textContent = originalUrl;
+        copyUrlEl.onclick = function () {
+            navigator.clipboard.writeText(originalUrl);
+        };
+        statusEl.textContent = "请求 Google Safe Browsing 检查...";
+
+        try {
+            const resp = await fetch(
+                "/api/safebrowsing?url=" + encodeURIComponent(targetUrl),
+                {
+                    method: "GET",
+                    headers: { Accept: "application/json" },
+                },
+            );
+
+            console.info("[SafeBrowsing]", resp);
+
+            if (!resp.ok) {
+                statusEl.textContent = "错误：Google Safe Browsing API 错误";
+                // urlEl.textContent = originalUrl;
+                resultEl.textContent = threatMessages.UNKNOWN;
+                return;
+            }
+
+            const json = await resp.json().catch(() => null);
+            const threat = isThreat(json);
+            const threatType = getThreatType(json);
+
+            console.info("[SafeBrowsing]", json, threat, threatType);
+
+            if (threat) {
+                statusEl.textContent = "警告 - 您要访问的网站可能有风险";
+                // urlEl.textContent = originalUrl;
+                const message = threatMessages[threatType];
+                if (message) {
+                    resultEl.textContent = message;
+                    resultEl.className = "safebrowsing-warning";
+                }
+            } else {
+                statusEl.textContent = "您要访问的网站可能是安全的";
+                // urlEl.textContent = originalUrl;
+                resultEl.textContent = threatMessages.SAFE;
+                resultEl.className = "safebrowsing-safe";
+                jumpToEl.href = originalUrl;
+                jumpToEl.style.display = "inline";
+            }
+        } catch (e) {
+            statusEl.textContent = "错误：发生内部错误";
+            console.error("[SafeBrowsing]", e);
+            // urlEl.textContent = originalUrl;
+            resultEl.textContent = threatMessages.UNKNOWN;
+        }
+    }
+
+    // if (document.readyState === "loading") {
+    //     document.addEventListener("DOMContentLoaded", runCheck);
+    // } else runCheck();
+
+    runCheck();
+
+    window.addEventListener("hashchange", runCheck);
+</script>

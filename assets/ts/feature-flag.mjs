@@ -10,7 +10,9 @@ export var expectedFlags = [
     "enforce-grayscale",
     "outlink-alert",
     "back-to-top",
+    "prevent-default",
 ];
+export const defaultFlags = ["lenis", "outlink-alert"];
 export var permissive = false;
 
 /**
@@ -57,13 +59,27 @@ export function pullFlags() {
                 }
             }
         }
+        if (parseAttempt.length === 0) {
+            // "prevent-default" will naturally false this expression
+            console.info(logPrefix, "No flags found, using defaults");
+            parseAttempt = defaultFlags;
+        }
         flags = parseAttempt;
     } else {
+        console.info(logPrefix, "No flags storage found, using defaults");
+        flags = defaultFlags;
         localStorage.setItem(flagsStorageKey, JSON.stringify(flags));
     }
 }
 
 export function pushFlags() {
+    if (flags.length === 0) {
+        console.info(
+            logPrefix,
+            "Intending to push empty flags, add prevent-default",
+        );
+        flags = ["prevent-default"];
+    }
     localStorage.setItem(flagsStorageKey, JSON.stringify(flags));
 }
 

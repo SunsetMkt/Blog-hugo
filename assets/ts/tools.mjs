@@ -103,3 +103,24 @@ export function animateCSS(element, animation, prefix = "animate__") {
         });
     });
 }
+
+export function base64UrlEncode(str) {
+    const u = new TextEncoder().encode(str); // UTF-8 bytes
+    const bin = Array.from(u)
+        .map((b) => String.fromCharCode(b))
+        .join("");
+    return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+export function base64UrlDecode(b64url) {
+    try {
+        b64url = b64url.replace(/-/g, "+").replace(/_/g, "/");
+        while (b64url.length % 4) b64url += "=";
+        const bin = atob(b64url);
+        const bytes = Uint8Array.from([...bin].map((ch) => ch.charCodeAt(0)));
+        return new TextDecoder().decode(bytes);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (e) {
+        return null;
+    }
+}
