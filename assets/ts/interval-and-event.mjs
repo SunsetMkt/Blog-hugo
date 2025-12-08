@@ -92,7 +92,7 @@ async function onLoadExecute() {
                 if (currentPath.startsWith("/safebrowsing")) {
                     // If link in .main-article
                     const mainArticle = document.querySelector(".main-article");
-                    if (mainArticle && !mainArticle.contains(link)) return;
+                    if (mainArticle && mainArticle.contains(link)) return;
                 }
 
                 if (url.hostname !== location.hostname) {
