@@ -76,6 +76,7 @@ export default async function handleRequest(request, env) {
     }
 
     const result = await checkUrlSafety(apiKey, querytUrl);
+    console.info("[safeBrowsing] Result", result);
 
     // Get cache time from result["matches"][0]["cacheDuration"] = 300s
     const cacheTime =
