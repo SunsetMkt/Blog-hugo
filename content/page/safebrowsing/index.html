@@ -7,7 +7,7 @@ slug: safebrowsing
 <div>
     <h2 id="status">准备检查...</h2>
     <p id="result"></p>
-    <p id="same-origin" class="safebrowsing-warning"></p>
+    <p id="same-origin"></p>
     <pre id="url">请稍候...</pre>
     <p>
         <a
@@ -161,11 +161,16 @@ slug: safebrowsing
         if (referrer) {
             const currentOrigin = new URL(document.location.href).origin;
             const referrerOrigin = new URL(referrer).origin;
+            const referrerPath = new URL(referrer).pathname;
             if (currentOrigin !== referrerOrigin) {
-                sameOriginEl.textContent =
-                    "警告：您从非本站引用来源访问此跳转链接检查页面，请确保访问来源安全。";
+                sameOriginEl.className = "safebrowsing-warning";
+                sameOriginEl.textContent = `警告：您从非本站引用来源 ${referrer} 访问此跳转链接检查页面，请确保访问来源安全。`;
+            } else {
+                sameOriginEl.className = "safebrowsing-unknown";
+                sameOriginEl.textContent = `您从本站的 ${referrerPath} 访问此跳转链接检查页面。`;
             }
         } else {
+            sameOriginEl.className = "safebrowsing-warning";
             sameOriginEl.textContent =
                 "警告：您似乎直接访问了此跳转链接检查页面，请确保访问来源安全。";
         }
