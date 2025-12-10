@@ -15,6 +15,8 @@ slug: shame
 - 华为技术有限公司 - [对其 HarmonyOS 产品技术细节进行故意混淆和虚假宣传](<https://zh.wikipedia.org/zh-cn/%E9%B8%BF%E8%92%99_(%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)#%E7%88%AD%E8%AD%B0>)
 - 腾讯控股有限公司 - 其研发的反作弊程序不必要地破坏游戏体验并侵犯用户隐私，也参考[腾讯相关争议](https://zh.wikipedia.org/wiki/%E8%85%BE%E8%AE%AF%E7%9B%B8%E5%85%B3%E4%BA%89%E8%AE%AE)
 - 上海米哈游网络科技股份有限公司/Cognosphere Pte., Ltd. - [对其游戏的开源工具软件进行诉讼威胁](https://github.com/sigewinnefish/Snap.Hutao)，也参考[原神相关争议](https://zh.wikipedia.org/wiki/%E5%8E%9F%E7%A5%9E%E7%9B%B8%E5%85%B3%E4%BA%89%E8%AE%AE)
+- 微软股份有限公司 - 在 2025 年宣布停止支持作为 Windows 11 卖点之一的[Windows Subsystem For Android](https://github.com/MustardChef/WSABuilds)，也参考[对微软的批评](https://zh.wikipedia.org/wiki/%E5%AF%B9%E5%BE%AE%E8%BD%AF%E7%9A%84%E6%89%B9%E8%AF%84)
+- 谷歌有限公司 - 关闭了[大量的服务](https://github.com/codyogden/killedbygoogle)，也参考[对 Google 的批评](https://zh.wikipedia.org/wiki/%E5%B0%8DGoogle%E7%9A%84%E6%89%B9%E8%A9%95)
 
 ## 也参考
 
