@@ -119,7 +119,7 @@ export default async function handleRequest(request, env) {
 
     // 从 cacheDuration 提取秒数
     const match = result?.matches?.[0]?.cacheDuration?.match(/^(\d+)(?:s)?$/);
-    const cacheTime = match ? Number(match[1]) : 300;
+    const cacheTime = match ? Number(match[1]) : 0;
 
     const responseBodyDetails = {
         inputUrl: queryUrl,
