@@ -5,7 +5,7 @@ slug: safebrowsing
 ---
 
 <div>
-    <h2 id="status">准备检查...</h2>
+    <h2 id="status">⏳准备检查...</h2>
     <p id="result"></p>
     <p id="same-origin"></p>
     <div class="highlight">
@@ -22,7 +22,7 @@ slug: safebrowsing
                         <pre
                             tabindex="0"
                             class="chroma"
-                        ><code class="language-plain" data-lang="plain"><span class="line"><span class="cl" id="url">请稍候...</span></span></code></pre>
+                        ><code class="language-plain" data-lang="plain"><span class="line"><span class="cl" id="url">⏳请稍候...</span></span></code></pre>
                     </td>
                 </tr>
             </table>
@@ -35,7 +35,7 @@ slug: safebrowsing
             style="display: none;"
             rel="noopener noreferrer"
             class="link"
-            >点击此处前往跳转链接</a
+            >➡️点击此处继续前往 (Continue)</a
         >
     </p>
     <p>
@@ -108,16 +108,16 @@ slug: safebrowsing
 <script>
     const threatMessages = {
         MALWARE:
-            "警告 - 访问此网站可能会损害您的计算机。此网页似乎包含恶意代码，这些代码可能会在未经您同意的情况下下载到您的计算机。",
+            "🚨警告 - 访问此网站可能会损害您的计算机。此网页似乎包含恶意代码，这些代码可能会在未经您同意的情况下下载到您的计算机。",
         SOCIAL_ENGINEERING:
-            "警告 - 您要访问的是诈骗网站。网站上的攻击者可能会诱使您执行一些危险的操作，例如安装软件或泄露您的个人信息（例如密码、电话号码或信用卡信息）。",
+            "🥸警告 - 您要访问的是诈骗网站。网站上的攻击者可能会诱使您执行一些危险的操作，例如安装软件或泄露您的个人信息（例如密码、电话号码或信用卡信息）。",
         UNWANTED_SOFTWARE:
-            "警告 - 您要访问的网站可能包含有害程序。攻击者可能会试图诱使您安装会损害浏览体验的程序（例如，通过更改您的主页或在您访问的网站上展示额外的广告）。",
+            "🗑️警告 - 您要访问的网站可能包含有害程序。攻击者可能会试图诱使您安装会损害浏览体验的程序（例如，通过更改您的主页或在您访问的网站上展示额外的广告）。",
         POTENTIALLY_HARMFUL_APPLICATION:
-            "警告 - 您要访问的网站可能包含恶意软件。攻击者可能会试图在您的设备上安装危险应用，以窃取或删除您的信息（例如照片、密码、消息和信用卡信息）。",
-        SAFE: "您要访问的网站可能是安全的。不过，Google 无法保证其信息全面且没有错误：一些有风险的网站可能未被识别出来，而一些安全网站也可能会被错误地识别。",
-        UNKNOWN: "我们无法识别此网站的安全性。",
-        THREAT_TYPE_UNSPECIFIED: "警告 - 您要访问的网站可能有害。",
+            "⚠️警告 - 您要访问的网站可能包含恶意软件。攻击者可能会试图在您的设备上安装危险应用，以窃取或删除您的信息（例如照片、密码、消息和信用卡信息）。",
+        SAFE: "✅您要访问的网站可能是安全的。不过，Google 无法保证其信息全面且没有错误：一些有风险的网站可能未被识别出来，而一些安全网站也可能会被错误地识别。",
+        UNKNOWN: "❓我们无法识别此网站的安全性。",
+        THREAT_TYPE_UNSPECIFIED: "🚨警告 - 您要访问的网站可能有害。",
     };
 
     function base64UrlEncode(str) {
@@ -169,7 +169,7 @@ slug: safebrowsing
         const jumpToEl = document.getElementById("jump-to");
         const copyUrlEl = document.getElementById("copy-url");
 
-        statusEl.textContent = "检查中...";
+        statusEl.textContent = "⏳检查中...";
         resultEl.textContent = "";
         resultEl.className = "safebrowsing-unknown";
         urlEl.textContent = "";
@@ -184,26 +184,26 @@ slug: safebrowsing
             const referrerPath = new URL(referrer).pathname;
             if (currentOrigin !== referrerOrigin) {
                 sameOriginEl.className = "safebrowsing-warning";
-                sameOriginEl.textContent = `警告：您从非本站引用来源 ${referrer} 访问此跳转链接检查页面，请确保访问来源安全。`;
+                sameOriginEl.textContent = `❓警告：您从非本站引用来源 ${referrer} 访问此跳转链接检查页面，请确保访问来源安全。`;
             } else {
                 sameOriginEl.className = "safebrowsing-unknown";
-                sameOriginEl.textContent = `您从本站的 ${referrerPath} 访问此跳转链接检查页面。`;
+                sameOriginEl.textContent = `ℹ️您从本站的 ${referrerPath} 访问此跳转链接检查页面。`;
             }
         } else {
             sameOriginEl.className = "safebrowsing-warning";
             sameOriginEl.textContent =
-                "警告：您似乎直接访问了此跳转链接检查页面，请确保访问来源安全。";
+                "❓警告：您似乎直接访问了此跳转链接检查页面，请确保访问来源安全。";
         }
 
         const hash = (location.hash || "").replace(/^#/, "");
         if (!hash) {
-            statusEl.textContent = "错误：URL Hash 为空";
+            statusEl.textContent = "❓错误：URL Hash 为空";
             return;
         }
 
         const decoded = base64UrlDecode(hash);
         if (!decoded) {
-            statusEl.textContent = "错误：URL Hash 解码失败";
+            statusEl.textContent = "❓错误：URL Hash 解码失败";
             return;
         }
 
@@ -218,7 +218,7 @@ slug: safebrowsing
             const u = new URL(targetUrl);
             targetUrl = u.toString();
         } catch (e) {
-            statusEl.textContent = "错误：URL Hash 解码后不是有效 URL";
+            statusEl.textContent = "❓错误：URL Hash 解码后不是有效 URL";
             return;
         }
 
@@ -226,7 +226,7 @@ slug: safebrowsing
         copyUrlEl.onclick = function () {
             navigator.clipboard.writeText(originalUrl);
         };
-        statusEl.textContent = "请求 Google Safe Browsing 检查...";
+        statusEl.textContent = "⏳请求 Google Safe Browsing 检查...";
 
         try {
             const resp = await fetch(
@@ -240,7 +240,7 @@ slug: safebrowsing
             console.info("[SafeBrowsing]", resp);
 
             if (!resp.ok) {
-                statusEl.textContent = "错误：Google Safe Browsing API 错误";
+                statusEl.textContent = "❓错误：Google Safe Browsing API 错误";
                 // urlEl.textContent = originalUrl;
                 resultEl.textContent = threatMessages.UNKNOWN;
                 return;
@@ -253,7 +253,7 @@ slug: safebrowsing
             console.info("[SafeBrowsing]", json, threat, threatType);
 
             if (threat) {
-                statusEl.textContent = "警告 - 您要访问的网站可能有风险";
+                statusEl.textContent = "❌警告 - 您要访问的网站可能有风险";
                 // urlEl.textContent = originalUrl;
                 const message = threatMessages[threatType];
                 if (message) {
@@ -261,7 +261,7 @@ slug: safebrowsing
                     resultEl.className = "safebrowsing-warning";
                 }
             } else {
-                statusEl.textContent = "您要访问的网站可能是安全的";
+                statusEl.textContent = "✅您要访问的网站可能是安全的";
                 // urlEl.textContent = originalUrl;
                 resultEl.textContent = threatMessages.SAFE;
                 resultEl.className = "safebrowsing-safe";
@@ -269,7 +269,7 @@ slug: safebrowsing
                 jumpToEl.style.display = "inline";
             }
         } catch (e) {
-            statusEl.textContent = "错误：发生内部错误";
+            statusEl.textContent = "❓错误：发生内部错误";
             console.error("[SafeBrowsing]", e);
             // urlEl.textContent = originalUrl;
             resultEl.textContent = threatMessages.UNKNOWN;
