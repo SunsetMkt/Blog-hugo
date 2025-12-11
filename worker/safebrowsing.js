@@ -20,7 +20,7 @@ export async function checkUrlSafety(apiKey, targetUrl) {
                 "POTENTIALLY_HARMFUL_APPLICATION",
             ],
             platformTypes: ["ANY_PLATFORM"],
-            threatEntryTypes: ["URL", "IP_RANGE"],
+            threatEntryTypes: ["URL"],
             threatEntries: [
                 {
                     url: targetUrl,
@@ -59,32 +59,28 @@ export default async function handleRequest(request, env) {
     const url = new URL(request.url);
     const queryParams = url.searchParams;
     const apiKey = env.GOOGLE_SAFEBROWSING_API_KEY;
-    const querytUrl = queryParams.get("url");
+    const queryUrl = queryParams.get("url");
 
     // If no URL provided, return error
-    if (!querytUrl) {
+    if (!queryUrl) {
         return new Response("No URL provided", {
             status: 400,
         });
     }
 
     // If URL is not valid, return error
-    if (!validateUrl(querytUrl)) {
+    if (!validateUrl(queryUrl)) {
         return new Response("Invalid URL", {
             status: 400,
         });
     }
 
-    const result = await checkUrlSafety(apiKey, querytUrl);
+    const result = await checkUrlSafety(apiKey, queryUrl);
     console.info("[safeBrowsing] Result", result);
 
     // Get cache time from result["matches"][0]["cacheDuration"] = 300s
-    const cacheTime =
-        result["matches"] &&
-        result["matches"][0] &&
-        result["matches"][0]["cacheDuration"]
-            ? result["matches"][0]["cacheDuration"].replace("s", "")
-            : 300;
+    const match = result?.matches?.[0]?.cacheDuration?.match(/^(\d+)(?:s)?$/);
+    const cacheTime = match ? Number(match[1]) : 300;
 
     return new Response(JSON.stringify(result), {
         headers: {
