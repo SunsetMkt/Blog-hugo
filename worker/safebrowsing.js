@@ -18,9 +18,10 @@ export async function checkUrlSafety(apiKey, targetUrl) {
                 "SOCIAL_ENGINEERING",
                 "UNWANTED_SOFTWARE",
                 "POTENTIALLY_HARMFUL_APPLICATION",
+                "THREAT_TYPE_UNSPECIFIED",
             ],
-            platformTypes: ["ANY_PLATFORM"],
-            threatEntryTypes: ["URL"],
+            platformTypes: ["ANY_PLATFORM", "PLATFORM_TYPE_UNSPECIFIED"],
+            threatEntryTypes: ["URL", "THREAT_ENTRY_TYPE_UNSPECIFIED"],
             threatEntries: [{ url: targetUrl }],
         },
     };
@@ -120,14 +121,13 @@ export default async function handleRequest(request, env) {
     const match = result?.matches?.[0]?.cacheDuration?.match(/^(\d+)(?:s)?$/);
     const cacheTime = match ? Number(match[1]) : 300;
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const responseBodyDetails = {
         inputUrl: queryUrl,
         finalUrl,
         ...result,
     };
 
-    return new Response(JSON.stringify(result), {
+    return new Response(JSON.stringify(responseBodyDetails), {
         headers: {
             "Cache-Control": `private, max-age=${cacheTime}`,
             "Content-Type": "application/json",
