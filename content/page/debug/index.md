@@ -54,8 +54,11 @@ URL 参数`eruda=true`。
 
 ### Feature Flags
 
+Feature Flags 用于开启或关闭此站点的非核心功能。
+
 <div class="featureFlags">
-    <a class="link" id="featureFlagsInit">初始化并显示 Flags</a>
+    <a class="link" onclick="window.SunsetBlog.featureFlags.clearFlags();location.reload();">清空 Flags</a>
+    <a class="link" id="featureFlagsInit">显示 Flags 列表</a>
     <div id="featureFlagsContainer"></div>
     <script>
         document

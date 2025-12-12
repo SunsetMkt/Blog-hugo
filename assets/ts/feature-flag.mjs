@@ -12,7 +12,7 @@ export var expectedFlags = [
     "back-to-top",
     "prevent-default",
 ];
-export const defaultFlags = ["lenis", "outlink-alert"];
+export const defaultFlags = ["outlink-alert"];
 export var permissive = false;
 
 /**
