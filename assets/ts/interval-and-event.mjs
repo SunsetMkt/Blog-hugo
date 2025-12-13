@@ -81,10 +81,28 @@ async function onLoadExecute() {
 
     // Auto fill in WALINE_USER_META
     safeRun(function () {
-        // If WALINE_USER_META not exists
-        if (!localStorage.WALINE_USER_META && localStorage.SunsetUUID) {
+        function isValidMeta(meta) {
+            try {
+                var o = JSON.parse(meta);
+                // If has at least one non-empty value
+                return o && Object.values(o).some((v) => v);
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            } catch (e) {
+                return false;
+            }
+        }
+
+        // If WALINE_USER_META not valid
+        if (
+            !isValidMeta(localStorage.WALINE_USER_META) &&
+            localStorage.SunsetUUID
+        ) {
             var meta = { nick: localStorage.SunsetUUID, mail: "", link: "" };
             localStorage.WALINE_USER_META = JSON.stringify(meta);
+            var nickEl = document.getElementById("wl-nick");
+            if (nickEl) {
+                nickEl.value = localStorage.SunsetUUID;
+            }
         }
     });
 }
