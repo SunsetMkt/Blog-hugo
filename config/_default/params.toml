@@ -123,7 +123,7 @@ reaction = [
     "https://unpkg.com/@waline/emojis@1.3.0/tw-emoji/1f641.png",
     "https://unpkg.com/@waline/emojis@1.3.0/tw-emoji/1f62d.png",
 ]
-requiredMeta = ["name"]
+requiredMeta = ["nick"]
 search = false
 turnstileKey = "0x4AAAAAAAZ0ouYIQ46lj2Up"
 pageview = ".waline-pageview-count" # 浏览量统计
