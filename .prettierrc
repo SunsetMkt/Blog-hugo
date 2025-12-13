@@ -1,5 +1,9 @@
 {
-    "plugins": ["prettier-plugin-go-template", "prettier-plugin-lint-md", "prettier-plugin-toml"],
+    "plugins": [
+        "prettier-plugin-go-template",
+        "prettier-plugin-lint-md",
+        "prettier-plugin-toml"
+    ],
     "overrides": [
         {
             "files": ["layouts/**/*.html", "content/**/*.html"],
