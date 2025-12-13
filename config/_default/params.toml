@@ -137,6 +137,7 @@ level2 = 'Level 2'
 level3 = 'Level 3'
 level4 = 'Level 4'
 level5 = 'Level 5'
+placeholder = "若启用人工审核，评论的展示可能会有所延迟。我们将尽最大努力保障您的言论表达权利。If manual review is enabled, the display of comments may be delayed. We will make every effort to protect your right to freedom of expression."
 
 [comments.twikoo]
 envId = ""
