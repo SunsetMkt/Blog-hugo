@@ -131,6 +131,12 @@ comment = ".waline-comment-count" # 评论数统计
 
 [comments.waline.locale]
 admin = "Admin"
+level0 = 'Level 0'
+level1 = 'Level 1'
+level2 = 'Level 2'
+level3 = 'Level 3'
+level4 = 'Level 4'
+level5 = 'Level 5'
 
 [comments.twikoo]
 envId = ""
