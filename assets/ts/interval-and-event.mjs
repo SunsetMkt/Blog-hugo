@@ -78,6 +78,15 @@ async function onLoadExecute() {
             });
         }
     });
+
+    // Auto fill in WALINE_USER_META
+    safeRun(function () {
+        // If WALINE_USER_META not exists
+        if (!localStorage.WALINE_USER_META && localStorage.SunsetUUID) {
+            var meta = { nick: localStorage.SunsetUUID, mail: "", link: "" };
+            localStorage.WALINE_USER_META = JSON.stringify(meta);
+        }
+    });
 }
 
 export default function () {
