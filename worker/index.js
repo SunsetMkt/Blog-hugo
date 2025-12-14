@@ -67,7 +67,7 @@ export default {
 
             // Handle /api/bomb
             if (pathname.startsWith("/api/bomb")) {
-                return handleBombRequest(request);
+                return handleBombRequest();
             }
 
             // Handle /api/{env.UUID}
