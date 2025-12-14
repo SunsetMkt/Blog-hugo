@@ -46,7 +46,7 @@ export default async function handleRequest(request) {
             "Content-Encoding": "br",
             "Content-Length": brotliBomb.byteLength.toString(),
             "Content-Type": "text/html",
-            Vary: "Accept-Encoding",
+            // Vary: "Accept-Encoding",
         },
     });
 }
