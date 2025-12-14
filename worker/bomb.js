@@ -27,7 +27,7 @@ function makeBrotliBombBase64(size) {
     return base64.join("");
 }
 
-const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(511));
+const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(79)); // 10GB
 
 export default async function handleRequest(request) {
     // Get Accept-Encoding from request header
