@@ -5,6 +5,7 @@ import authHandler from "./ghauth/auth.js";
 import callbackHandler from "./ghauth/callback.js";
 import { handleGrpcPost, handleWebSocket } from "./workers-lite/src/index.js";
 import handleSbRequest from "./safebrowsing.js";
+import handleBombRequest from "./bomb.js";
 
 export default {
     async fetch(request, env, ctx) {
@@ -62,6 +63,11 @@ export default {
             // Handle /api/safebrowsing
             if (pathname.startsWith("/api/safebrowsing")) {
                 return handleSbRequest(request, env);
+            }
+
+            // Handle /api/bomb
+            if (pathname.startsWith("/api/bomb")) {
+                return handleBombRequest();
             }
 
             // Handle /api/{env.UUID}
