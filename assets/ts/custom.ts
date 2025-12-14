@@ -51,7 +51,7 @@ safeRun(rotate_emoji);
 safeRun(footer_debug);
 // Handle lenis scroll
 safeRun(function () {
-    if (featureFlags.isFlagSet("lenis")) {
+    if (featureFlags.isFlagSet("lenis-basic")) {
         Lenis();
     }
 });

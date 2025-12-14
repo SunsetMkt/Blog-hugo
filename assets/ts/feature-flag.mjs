@@ -3,7 +3,7 @@ export var flagsStorageKey = "sunset-feature-flags";
 var logPrefix = "[featureFlags]";
 export var flags = [];
 export var expectedFlags = [
-    "lenis",
+    "lenis-basic",
     "lenis-touch",
     "waline-statistic",
     "save-ukraine",
