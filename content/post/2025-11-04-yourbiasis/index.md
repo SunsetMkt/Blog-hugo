@@ -3,6 +3,7 @@ categories: Repost
 date: 2025-11-04T00:00:00Z
 tags:
     - 逻辑学
+    - 翻译
 slug: yourbiasis
 title: 汝当远离认知偏见
 ---
