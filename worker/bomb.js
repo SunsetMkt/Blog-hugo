@@ -28,7 +28,7 @@ function base64ToArrayBuffer(base64) {
     return buffer;
 }
 
-const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(79));
+const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(2047));
 
 export default async function handleRequest(request) {
     // Get Accept-Encoding from request header
