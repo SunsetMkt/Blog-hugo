@@ -37,7 +37,11 @@ export function linkHandler(e) {
         e.stopPropagation();
         console.info("[outlink]", rawHref);
         const base64Url = tools.base64UrlEncode(rawHref);
-        const target = link.getAttribute("target") || "_self";
+        var target = link.getAttribute("target") || "_self";
+        if (e.button === 1) {
+            // Middle Mouse Button
+            target = "_blank";
+        }
         window.open(`/safebrowsing/#${base64Url}`, target);
     }
 
@@ -48,6 +52,7 @@ export function addEventListeners() {
     document.addEventListener("click", linkHandler);
     document.addEventListener("auxclick", function (e) {
         if (e.button === 1) {
+            // Middle Mouse Button
             linkHandler(e);
         }
         return;
