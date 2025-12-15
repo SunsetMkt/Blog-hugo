@@ -45,6 +45,13 @@ function getBrotliBombBuffer(count) {
     return buffer;
 }
 
+function uint8ArrayToArrayBuffer(u8) {
+    const buffer = new ArrayBuffer(u8.length);
+    const view = new Uint8Array(buffer);
+    view.set(u8);
+    return buffer;
+}
+
 export default async function handleRequest(request) {
     const url = new URL(request.url);
     const params = url.searchParams;
@@ -77,7 +84,7 @@ export default async function handleRequest(request) {
         return new Response("Require Accept-Encoding: br", { status: 406 });
     }
 
-    const brotliBomb = getBrotliBombBuffer(count);
+    const brotliBomb = uint8ArrayToArrayBuffer(getBrotliBombBuffer(count));
 
     return new Response(brotliBomb, {
         encodeBody: "manual",
