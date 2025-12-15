@@ -56,17 +56,17 @@ export default {
             }
 
             // Handle /api/bingw
-            if (pathname.startsWith("/api/bingw")) {
+            if (pathname === "/api/bingw") {
                 return bingwHandler(request);
             }
 
             // Handle /api/safebrowsing
-            if (pathname.startsWith("/api/safebrowsing")) {
+            if (pathname === "/api/safebrowsing") {
                 return handleSbRequest(request, env);
             }
 
             // Handle /api/bomb
-            if (pathname.startsWith("/api/bomb")) {
+            if (pathname === "/api/bomb") {
                 return handleBombRequest(request);
             }
 
