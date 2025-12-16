@@ -92,16 +92,23 @@ async function onLoadExecute() {
             }
         }
 
-        // If WALINE_USER_META not valid
-        if (
-            !isValidMeta(localStorage.WALINE_USER_META) &&
-            localStorage.SunsetUUID
-        ) {
+        function setWalineMeta() {
             var meta = { nick: localStorage.SunsetUUID, mail: "", link: "" };
             localStorage.WALINE_USER_META = JSON.stringify(meta);
             var nickEl = document.getElementById("wl-nick");
             if (nickEl) {
                 nickEl.value = localStorage.SunsetUUID;
+            }
+        }
+
+        // If WALINE_USER_META not valid
+        if (!isValidMeta(localStorage.WALINE_USER_META)) {
+            if (localStorage.SunsetUUID) {
+                setWalineMeta();
+            } else {
+                window.addEventListener("SunsetUUIDReady", function () {
+                    setWalineMeta();
+                });
             }
         }
     });
