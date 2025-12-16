@@ -374,6 +374,7 @@ async function getCfCDNinfo(id) {
     console.info("[getCfCDNinfo]", trace);
 
     // Set alert text
+    textElement.style.cursor = "pointer";
     textElement.onclick = () => {
         // navigator.clipboard.writeText(data);
         // alert(data);
