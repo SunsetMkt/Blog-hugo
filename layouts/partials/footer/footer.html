@@ -24,7 +24,7 @@
         <code class="custom-footer-code">{{ $ThemeVersion | safeHTML }}</code>
         时间:
         <code class="custom-footer-code"
-            >{{ time.Now.UnixMicro | safeHTML }}</code
+            ><local-time>{{ time.Now.UnixMicro | safeHTML }}</local-time></code
         >
         Cloudflare:
         <code class="custom-footer-code" id="cf-trace">Unknown</code>

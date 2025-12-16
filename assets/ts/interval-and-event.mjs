@@ -41,6 +41,62 @@ function executeImmediately() {
             outlinkAlert.addEventListeners();
         }
     });
+
+    // <local-time> HTMLElement
+    safeRun(function () {
+        class LocalTime extends HTMLElement {
+            connectedCallback() {
+                const raw = this.textContent.trim();
+                if (!raw || isNaN(raw)) return;
+
+                this._raw = raw;
+                this._isLocal = true;
+
+                this._renderLocal();
+
+                this.style.cursor = "pointer";
+                this.title = this._isLocal
+                    ? "点击显示原始时间戳"
+                    : "点击显示本地时间";
+
+                this.addEventListener("click", () => {
+                    this._isLocal = !this._isLocal;
+
+                    if (this._isLocal) {
+                        this._renderLocal();
+                    } else {
+                        this._renderRaw();
+                    }
+                });
+            }
+
+            _normalize(ts) {
+                let num = Number(ts);
+                if (num > 1e15) return Math.floor(num / 1000); // 微秒
+                if (num > 1e12) return num; // 毫秒
+                return num * 1000; // 秒
+            }
+
+            _renderLocal() {
+                const ms = this._normalize(this._raw);
+                const date = new Date(ms);
+                this.textContent = date.toLocaleString(undefined, {
+                    year: "numeric",
+                    month: "2-digit",
+                    day: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                });
+            }
+
+            _renderRaw() {
+                this.textContent = this._raw;
+            }
+        }
+
+        customElements.define("local-time", LocalTime);
+    });
 }
 
 async function onLoadExecute() {
