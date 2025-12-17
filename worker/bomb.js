@@ -71,6 +71,10 @@ export default async function handleRequest(request) {
         return new Response("Require Accept-Encoding: br", { status: 406 });
     }
 
+    console.info(
+        `[Bomb] ${request.method} ${request.pathname} ${request.searchParams.toString()}`,
+    );
+
     const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(count));
 
     return new Response(brotliBomb, {

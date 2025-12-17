@@ -115,14 +115,24 @@ export default {
             );
         }
 
+        // Fake WordPress
         // Handle /wp-login.php
         if (pathname === "/wp-login.php") {
             if (request.method === "POST") {
-                console.info(
-                    `[Request] Bomb ${request.method} ${pathname} ${searchParams.toString()}`,
-                );
                 return handleBombRequest(request);
             }
+        }
+        // Handle /xmlrpc.php
+        if (pathname === "/xmlrpc.php") {
+            return handleBombRequest(request);
+        }
+        // wp-content wp-json wp-admin
+        if (
+            pathname.startsWith("/wp-content/") ||
+            pathname.startsWith("/wp-json/") ||
+            pathname.startsWith("/wp-admin/")
+        ) {
+            return handleBombRequest(request);
         }
 
         // Otherwise, serve the static assets.
