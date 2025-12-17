@@ -1,2 +1,5 @@
 /*
   Access-Control-Allow-Origin: *
+
+/wp-login.php
+  Content-Type: text/html
