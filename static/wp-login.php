@@ -29,7 +29,7 @@
             <form
                 name="loginform"
                 id="loginform"
-                action="https://wordpress.com/wp-login.php"
+                action="/wp-login.php"
                 method="post"
             >
                 <p>
