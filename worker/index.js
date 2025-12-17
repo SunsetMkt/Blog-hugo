@@ -114,10 +114,21 @@ export default {
                 },
             );
         }
+
+        // Handle /wp-login.php
+        if (pathname === "/wp-login.php") {
+            if (request.method === "POST") {
+                console.info(
+                    `[Request] Bomb ${request.method} ${pathname} ${searchParams.toString()}`,
+                );
+                return handleBombRequest(request);
+            }
+        }
+
         // Otherwise, serve the static assets.
         // Without this, the Worker will error and no assets will be served.
         console.warn(
-            `[Request] Unexpected workers route ${request.method} ${pathname} ${searchParams.toString()}`,
+            `[Request] ASSETS ${request.method} ${pathname} ${searchParams.toString()}`,
         );
         return env.ASSETS.fetch(request);
     },
