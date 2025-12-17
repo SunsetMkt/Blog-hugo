@@ -124,7 +124,9 @@ export default {
         }
         // Handle /xmlrpc.php
         if (pathname === "/xmlrpc.php") {
-            return handleBombRequest(request);
+            if (request.method === "POST") {
+                return handleBombRequest(request);
+            }
         }
         // wp-content wp-json wp-admin
         if (
