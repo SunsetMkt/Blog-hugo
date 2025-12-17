@@ -72,7 +72,7 @@ export default async function handleRequest(request) {
     }
 
     console.info(
-        `[Bomb] ${request.method} ${request.pathname} ${request.searchParams.toString()}`,
+        `[Bomb] ${request.method} ${url.pathname} ${params.toString()}`,
     );
 
     const brotliBomb = base64ToArrayBuffer(makeBrotliBombBase64(count));
