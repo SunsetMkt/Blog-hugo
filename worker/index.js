@@ -119,7 +119,13 @@ export default {
         // Handle /wp-login.php
         if (pathname === "/wp-login.php") {
             if (request.method === "POST") {
-                return handleBombRequest(request);
+                // return handleBombRequest(request);
+                return new Response("Redirecting...", {
+                    status: 302,
+                    headers: {
+                        Location: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                    },
+                });
             }
         }
         // Handle /xmlrpc.php

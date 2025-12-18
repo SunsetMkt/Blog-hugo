@@ -19,10 +19,10 @@
         "run_worker_first": [
             "/api/*",
             "/wp-login.php",
-            "/xmlrpc.php",
-            "/wp-content/*",
-            "/wp-json/*",
-            "/wp-admin/*",
+            // "/xmlrpc.php",
+            // "/wp-content/*",
+            // "/wp-json/*",
+            // "/wp-admin/*",
         ],
     },
     "placement": {
