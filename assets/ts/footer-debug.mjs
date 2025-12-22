@@ -28,14 +28,42 @@ export function goDebug() {
 }
 
 export default function () {
-    var debugTriggerCount = 0;
-    var debugTriggerBind = document.getElementsByClassName("site-footer")[0];
+    let debugTriggerCount = 0;
+    let firstClickTime = 0;
+    let hasTriggered = false;
+    const MAX_CLICK = 5;
+    const TIME_LIMIT = 1000; // 1 秒
+
+    const debugTriggerBind = document.getElementsByClassName("site-footer")[0];
+
     debugTriggerBind.addEventListener("click", function () {
+        if (hasTriggered) {
+            return;
+        }
+
+        const now = Date.now();
+
+        // 第一次点击，记录时间
+        if (debugTriggerCount === 0) {
+            firstClickTime = now;
+        }
+
+        // 超出时间窗口，重置
+        if (now - firstClickTime > TIME_LIMIT) {
+            debugTriggerCount = 0;
+            firstClickTime = now;
+        }
+
         debugTriggerCount++;
-        if (debugTriggerCount == 5) {
+
+        if (debugTriggerCount === MAX_CLICK) {
             console.info("[debugTriggerBind]", "Launch Eruda");
             launchEruda();
-            // localStorage.setItem("active-eruda", "true");
+
+            // 重置，避免重复触发
+            debugTriggerCount = 0;
+            firstClickTime = 0;
+            hasTriggered = true;
         }
     });
 }
