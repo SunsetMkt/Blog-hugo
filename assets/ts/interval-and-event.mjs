@@ -55,9 +55,7 @@ function executeImmediately() {
                 this._renderLocal();
 
                 this.style.cursor = "pointer";
-                this.title = this._isLocal
-                    ? "点击显示原始时间戳"
-                    : "点击显示本地时间";
+                this._updateTitle();
 
                 this.addEventListener("click", () => {
                     this._isLocal = !this._isLocal;
@@ -67,6 +65,7 @@ function executeImmediately() {
                     } else {
                         this._renderRaw();
                     }
+                    this._updateTitle();
                 });
             }
 
@@ -92,6 +91,12 @@ function executeImmediately() {
 
             _renderRaw() {
                 this.textContent = this._raw;
+            }
+
+            _updateTitle() {
+                this.title = this._isLocal
+                    ? "点击显示原始时间戳"
+                    : "点击显示本地时间";
             }
         }
 
