@@ -22,6 +22,7 @@
             <span>
                 {{ T "article.lastUpdatedOn" }}
                 {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated "Jan 02, 2006 15:04 MST" ) }}
+                (<local-time>{{ .Lastmod.Unix | safeHTML }}</local-time>)
             </span>
         </section>
     {{- end -}}
