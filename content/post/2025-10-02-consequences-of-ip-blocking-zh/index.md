@@ -16,7 +16,7 @@ tags:
 
 8 月底，Cloudflare 客户支持团队开始收到奥地利方面有关我们网络上的网站宕机的投诉。我们的团队立即采取行动，试图确定从外部看像是奥地利部分互联网中断的源头。我们很快意识到这是奥地利当地互联网服务提供商的问题。
 
-![The unintended consequences of blocking IP addresses](image1-53.png)
+![The unintended consequences of blocking IP addresses](image1-53.webp)
 
 但这一服务中断并不是技术问题造成的。正我们后来从[媒体报道](https://www.derstandard.de/story/2000138619757/ueberzogene-netzsperre-sorgt-fuer-probleme-im-oesterreichischen-internet)所知，我们看到的情况是一个法庭命令的结果。奥地利一家法院在没有通知 Cloudflare 的情况下，下令奥地利互联网服务提供商屏蔽 Cloudflare 的 11 个 IP 地址。
 
@@ -125,7 +125,7 @@ Addressing
 
 2022 年 11 月 15 日，联合国宣布地球人口超过 80 亿。凭直觉，我们就知道不可能有这么多邮政地址。地球上可能出现的名字的数量之差，和互联网上的名字的数量之差，确实而且必须超过可用地址的数量。
 
-![img](Screenshot-2022-12-16-at-13.02.04.png)
+![img](Screenshot-2022-12-16-at-13.02.04.webp)
 
 ## 证据就在布丁名称里!
 
@@ -135,7 +135,7 @@ Addressing
 
 上表清楚地表明，地球上任何地区只需要不超过 1070 万个地址就能到达 255315270 个名字，而这些名字的 IP 地址集总数大约是 1600 万个——名称与 IP 地址的比率在欧洲接近 24 倍，在全球是 16 倍。
 
-![img](image3-23.png)
+![img](image3-23.webp)
 
 关于上述数字还有一个值得注意的细节：这些 IP 地址是 IPv4 和 IPv6 地址的总和，这意味着访问所有 2.55 亿个网站所需的地址要少得多。
 
@@ -143,7 +143,7 @@ Addressing
 
 通过观察 CDF，有一些令人难以想象的观察结果：
 
-![img](image2-37.png)
+![img](image2-37.webp)
 
 - 不到 10 个 IP 地址就可以到达集合中 20% 的域，即大约 5100 万个域；
 - 100 个 IP 足以到达几乎 50% 的域名；
