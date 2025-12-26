@@ -52,7 +52,7 @@ links:
       image: TokyoHackerGirls.png
     - title: "worable’s Blog"
       description: ≡ω≡ 嗯对，一名普通的职一牲~
-      website: https://blog.cloudcn.top/
+      website: https://worable.top/
       image: worable.jpg
     - title: "羽蔚陌凜"
       description: 誰說道士一定是來斬妖驅魔的？各位要知道了解科技也是種玄學
