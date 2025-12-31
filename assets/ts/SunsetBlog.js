@@ -1,4 +1,3 @@
-import Confetti from "./confetti.js";
 import * as tools from "./tools.js";
 // import jQuery from "./jquery-3.7.1.js";
 import Cookies from "./js.cookie.js";
@@ -22,9 +21,6 @@ export default function () {
     // ondemand css and js loader
     SunsetBlog.loadCSSPreload = tools.loadCSSPreload;
     SunsetBlog.addScriptTag = tools.addScriptTag;
-
-    // confetti animation
-    SunsetBlog.Confetti = Confetti;
 
     // jump to debug
     SunsetBlog.goDebug = function () {
