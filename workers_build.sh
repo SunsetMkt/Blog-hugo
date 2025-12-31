@@ -60,6 +60,14 @@ main() {
     git fetch --unshallow
   fi
 
+  # Install NPM dependencies
+  echo "Installing NPM dependencies..."
+  npm install
+
+  # Install Go dependencies
+  echo "Installing Go dependencies..."
+  hugo mod get
+
   # Build the site
   echo "Building the site..."
   hugo --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates
