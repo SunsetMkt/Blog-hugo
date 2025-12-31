@@ -119,7 +119,18 @@ footer {
         --article-line-height: 1.85 !important;
     }
 
-    @import "gutenberg/gutenberg";
+    // Variables
+    @import "gutenberg-css/scss/variables";
+
+    // Normalize
+    @import "modern-normalize/modern-normalize";
+
+    @import "gutenberg-css/scss/print-reset";
+    @import "gutenberg-css/scss/pagination";
+    // @import 'gutenberg-css/scss/page';
+    @import "gutenberg-css/scss/reformat";
+    @import "gutenberg-css/scss/utilities";
+    @import "gutenberg-css/scss/themes/modern";
 }
 
 :root {
@@ -152,19 +163,3 @@ footer {
     border-radius: var(--tag-border-radius);
     font-family: var(--code-font-family);
 }
-
-/*
-    Debug/Diagnose Styles
-    Do NOT enable in production 
-    Do NOT enable more than one at a time
-*/
-/*
-    @import "Debug/checka11y";
-
-    @import "Debug/ct";
-
-    @import "Debug/holmes";
-    body {
-        @extend .holmes-debug;
-    }
-*/
