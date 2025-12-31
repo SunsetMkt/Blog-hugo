@@ -1,5 +1,5 @@
-import Lenis from "./lenis.mjs";
-import * as featureFlags from "./feature-flag.mjs";
+import Lenis from "./lenis.js";
+import * as featureFlags from "./feature-flag.js";
 
 export default function () {
     // Initialize Lenis

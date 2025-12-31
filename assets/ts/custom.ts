@@ -30,16 +30,16 @@ export async function safeRunAwait(func: () => Promise<void>) {
 }
 
 // Import and run scripts
-import hello from "./hello.mjs";
-import rotate_emoji from "./rotate-emoji.mjs";
-import footer_debug from "./footer-debug.mjs";
-import cf_trace from "./cf-trace.mjs";
-import post_css_loader from "./post-css-loader.mjs";
-import SunsetBlog from "./SunsetBlog.mjs";
-import Lenis from "./lenis-loader.mjs";
-import grayscale from "./grayscale.mjs";
-import * as featureFlags from "./feature-flag.mjs";
-import interval_and_event from "./interval-and-event.mjs";
+import hello from "./hello.js";
+import rotate_emoji from "./rotate-emoji.js";
+import footer_debug from "./footer-debug.js";
+import cf_trace from "./cf-trace.js";
+import post_css_loader from "./post-css-loader.js";
+import SunsetBlog from "./SunsetBlog.js";
+import Lenis from "./lenis-loader.js";
+import grayscale from "./grayscale.js";
+import * as featureFlags from "./feature-flag.js";
+import interval_and_event from "./interval-and-event.js";
 
 // Hello world
 safeRun(hello);

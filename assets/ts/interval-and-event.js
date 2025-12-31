@@ -1,8 +1,8 @@
-import * as featureFlags from "./feature-flag.mjs";
-import * as tools from "./tools.mjs";
-import * as grayscale from "./grayscale.mjs";
-import * as outlinkAlert from "./outlink-alert.mjs";
-import addBackToTop from "./vanilla-back-to-top.mjs";
+import * as featureFlags from "./feature-flag.js";
+import * as tools from "./tools.js";
+import * as grayscale from "./grayscale.js";
+import * as outlinkAlert from "./outlink-alert.js";
+import addBackToTop from "./vanilla-back-to-top.js";
 
 var loggingPrefix = "[interval-and-event]";
 

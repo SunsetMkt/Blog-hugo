@@ -1,4 +1,4 @@
-import * as tools from "./tools.mjs";
+import * as tools from "./tools.js";
 
 export function linkHandler(e) {
     let link = e.target;
