@@ -71,7 +71,9 @@ main() {
   cp _headers public/_headers
 
   # Generate file list
-  find public -type f -printf '%P\n' > public/filelist.txt
+  # find public -type f -printf '%P\n' > public/filelist.txt
+  # UTF-8 BOM
+  { printf '\xEF\xBB\xBF'; find public -type f -printf '%P\n'; } > public/filelist.txt
 }
 
 set -euo pipefail
