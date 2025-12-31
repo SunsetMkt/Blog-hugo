@@ -7,8 +7,11 @@ Blog refactored.
 ## Quickstart
 
 ```bash
+scoop install main/nodejs
 scoop install main/go
 scoop install main/hugo-extended
+scoop install main/sass
+npm install
 hugo mod get
 # hugo --minify --gc --logLevel info
 hugo --gc --logLevel info

@@ -1,4 +1,4 @@
-import Lenis from "./lenis.js";
+import Lenis from "lenis";
 import * as featureFlags from "./feature-flag.js";
 
 export default function () {

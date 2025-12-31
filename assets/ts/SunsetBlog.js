@@ -1,6 +1,6 @@
 import * as tools from "./tools.js";
 // import jQuery from "./jquery-3.7.1.js";
-import Cookies from "./js.cookie.js";
+import Cookies from "js-cookie";
 import glitch from "./glitch.js";
 import featureFlags from "./feature-flag.js";
 import * as base16384 from "./base16384.ts";
