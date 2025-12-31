@@ -7,14 +7,11 @@
 
 // Lenis
 // https://github.com/darkroomengineering/lenis/blob/main/README.md#recommended-css
-@import "lenis/dist/lenis.css";
+@import "lenis/dist/lenis";
 
 // animate.css
 // https://github.com/animate-css/animate.css
-@import "animate";
-
-// Twemoji
-// @import "twemoji";
+@import "animate.css/animate";
 
 // Noto Color Emoji
 @import "NotoColorEmoji"; // COLRv1 for Chromium

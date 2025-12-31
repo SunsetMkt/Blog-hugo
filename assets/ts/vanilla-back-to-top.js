@@ -30,6 +30,7 @@ export default function addBackToTop(params = {}) {
     adapt();
 
     function adapt() {
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         getScrollTop() >= showWhenScrollTopIs ? show() : hide();
     }
 

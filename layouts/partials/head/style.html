@@ -1,4 +1,4 @@
 {{ $sass := resources.Get "scss/style.scss" }}
-{{ $opts := dict "enableSourceMap" true "outputStyle" "compressed" "includePaths" (slice "node_modules") }}
-{{ $style := $sass | toCSS $opts | resources.Fingerprint "sha256" }}
+{{ $opts := dict "enableSourceMap" true "outputStyle" "compressed" "includePaths" (slice "node_modules") "sourceMapIncludeSources" true }}
+{{ $style := $sass | css.Sass $opts | resources.Fingerprint "sha256" }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
