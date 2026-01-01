@@ -17,6 +17,9 @@ main() {
 
   export TZ=UTC
 
+  # Create .local directory
+  mkdir -p "${HOME}/.local"
+
   # Install Dart Sass
   echo "Installing Dart Sass ${DART_SASS_VERSION}..."
   curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
