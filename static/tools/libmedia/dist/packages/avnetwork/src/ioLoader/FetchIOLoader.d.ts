@@ -1,0 +1,43 @@
+import { type Uint8ArrayInterface } from '@libmedia/common/io';
+import type { IOLoaderOptions } from './IOLoader';
+import IOLoader from './IOLoader';
+import type { HttpOptions, Range } from '@libmedia/common';
+export interface FetchInfo {
+    url: string;
+    httpOptions?: HttpOptions;
+}
+export interface FetchIOLoaderOptions extends IOLoaderOptions {
+    disableSegment?: boolean;
+    enableBandwidthReader?: boolean;
+}
+export default class FetchIOLoader extends IOLoader {
+    options: FetchIOLoaderOptions;
+    private contentLength;
+    private receivedLength;
+    private info;
+    private range;
+    private startBytes;
+    private endBytes;
+    private eofIndex;
+    private abortController;
+    private reader;
+    private buffers;
+    private supportRange;
+    private abortSleep_;
+    private aborted;
+    private bandwidth;
+    private delay;
+    constructor(options?: FetchIOLoaderOptions);
+    private getTotalSize;
+    open(info: FetchInfo, range?: Range): Promise<number>;
+    private getBandwidthReader;
+    private openReader;
+    private readInterval;
+    read(buffer: Uint8ArrayInterface): Promise<int32>;
+    seek(pos: int64): Promise<0 | -9 | -10>;
+    size(): Promise<int64 | 0n>;
+    abortSleep(): void;
+    abort(): Promise<void>;
+    stop(): Promise<void>;
+    getUrl(): string;
+}

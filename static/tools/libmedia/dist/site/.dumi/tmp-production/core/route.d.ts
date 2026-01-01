@@ -28,6 +28,11 @@ export declare function getRoutes(): Promise<{
             readonly id: "docs/guide/struct-overview.en-US";
             readonly parentId: "DocLayout";
         };
+        readonly "docs/guide/migrate-to-v1.en-US": {
+            readonly path: "en-US/guide/migrate-to-v1";
+            readonly id: "docs/guide/migrate-to-v1.en-US";
+            readonly parentId: "DocLayout";
+        };
         readonly "docs/guide/architecture.en-US": {
             readonly path: "en-US/guide/architecture";
             readonly id: "docs/guide/architecture.en-US";
@@ -106,6 +111,11 @@ export declare function getRoutes(): Promise<{
         readonly "docs/guide/licence.en-US": {
             readonly path: "en-US/guide/licence";
             readonly id: "docs/guide/licence.en-US";
+            readonly parentId: "DocLayout";
+        };
+        readonly "docs/guide/migrate-to-v1": {
+            readonly path: "guide/migrate-to-v1";
+            readonly id: "docs/guide/migrate-to-v1";
             readonly parentId: "DocLayout";
         };
         readonly "docs/guide/package.en-US": {
@@ -346,6 +356,7 @@ export declare function getRoutes(): Promise<{
         DocLayout: React.LazyExoticComponent<() => import("react/jsx-runtime").JSX.Element>;
         DemoLayout: React.LazyExoticComponent<() => import("react/jsx-runtime").JSX.Element>;
         'docs/guide/struct-overview.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/migrate-to-v1.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/architecture.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/compile-wasm.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/contribution.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
@@ -362,6 +373,7 @@ export declare function getRoutes(): Promise<{
         'docs/guide/transcode.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/timebase.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/licence.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
+        'docs/guide/migrate-to-v1': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/package.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/threads.en-US': React.LazyExoticComponent<React.ComponentType<any>>;
         'docs/guide/architecture': React.LazyExoticComponent<React.ComponentType<any>>;

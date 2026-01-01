@@ -4,4 +4,4 @@
 
 Extract `public/file-viewer/file-viewer` here, rm `fileTest` folder.
 
-Version: `09aaddda08d51ad27ff889c5181a1e8ed248e32c`
+Version: `82f3fa8806d3f5215244aad108e3defc91f4e84f`

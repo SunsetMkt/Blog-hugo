@@ -308,6 +308,10 @@ pdfjs-comment-floating-button =
     .title = შენიშვნა
     .aria-label = შენიშვნა
 pdfjs-comment-floating-button-label = შენიშვნა
+pdfjs-editor-comment-button =
+    .title = შენიშვნა
+    .aria-label = შენიშვნა
+pdfjs-editor-comment-button-label = შენიშვნა
 pdfjs-editor-signature-button =
     .title = ხელმოწერის დამატება
 pdfjs-editor-signature-button-label = ხელმოწერის დამატება
@@ -370,6 +374,21 @@ pdfjs-editor-add-saved-signature-button =
 pdfjs-free-text2 =
     .aria-label = წარწერის ჩასწორება
     .default-content = დაიწყეთ აკრეფა…
+# Used to show how many comments are present in the pdf file.
+# Variables:
+#   $count (Number) - the number of comments.
+pdfjs-editor-comments-sidebar-title =
+    { $count ->
+        [one] შენიშვნა
+       *[other] შენიშვნა
+    }
+pdfjs-editor-comments-sidebar-close-button =
+    .title = გვერდითი ზოლის დახურვა
+    .aria-label = გვერდითი ზოლის დახურვა
+pdfjs-editor-comments-sidebar-close-button-label = გვერდითი ზოლის დახურვა
+# Instructional copy to add a comment by selecting text or an annotations.
+pdfjs-editor-comments-sidebar-no-comments1 = რამე საყურადღებოს წააწყდით? გააფერადეთ და დაურთეთ შენიშვნა.
+pdfjs-editor-comments-sidebar-no-comments-link = ვრცლად
 
 ## Alt-text dialog
 
@@ -446,13 +465,13 @@ pdfjs-editor-new-alt-text-dialog-edit-label = დართული წარწ
 # Modal header positioned above a text box where users can add the alt text.
 pdfjs-editor-new-alt-text-dialog-add-label = დართული წარწერის დამატება (სურათის აღწერის)
 pdfjs-editor-new-alt-text-textarea =
-    .placeholder = დაწერეთ თქვენი აღწერა აქ…
+    .placeholder = დაწერეთ თქვენი აღწერილობა აქ…
 # This text refers to the alt text box above this description. It offers a definition of alt text.
 pdfjs-editor-new-alt-text-description = მოკლე აღწერა მათთვის, ვინც ვერ ხედავს სურათს ან ვისთანაც ვერ ჩაიტვირთება სურათი.
 # This is a required legal disclaimer that refers to the automatically created text inside the alt text box above this text. It disappears if the text is edited by a human.
 pdfjs-editor-new-alt-text-disclaimer1 = ეს დართული წარწერა ავტომატურადაა შედგენილი და შესაძლოა, უმართებულო იყოს.
 pdfjs-editor-new-alt-text-disclaimer-learn-more-url = ვრცლად
-pdfjs-editor-new-alt-text-create-automatically-button-label = დართული წარწერის ავტომატური შედგენა
+pdfjs-editor-new-alt-text-create-automatically-button-label = დართული წარწერის თვითშედგენა
 pdfjs-editor-new-alt-text-not-now-button = ახლა არა
 pdfjs-editor-new-alt-text-error-title = დართული წარწერის შედგენა ვერ მოხერხდა
 pdfjs-editor-new-alt-text-error-description = გთხოვთ დაწეროთ საკუთარი დანართი და კვლავ სცადოთ მოგვიანებით.
@@ -486,12 +505,12 @@ pdfjs-image-alt-text-settings-button =
 pdfjs-image-alt-text-settings-button-label = სურათის დართული წარწერის პარამეტრები
 pdfjs-editor-alt-text-settings-dialog-label = სურათის დართული წარწერის პარამეტრები
 pdfjs-editor-alt-text-settings-automatic-title = ავტომატურად დართული წარწერა
-pdfjs-editor-alt-text-settings-create-model-button-label = დართული წარწერის ავტომატური შედგენა
+pdfjs-editor-alt-text-settings-create-model-button-label = დართული წარწერის თვითშედგენა
 pdfjs-editor-alt-text-settings-create-model-description = აღწერს სურათს მათთვის, ვინც ვერ ხედავს ან ვისთანაც ვერ ჩაიტვირთება.
 # Variables:
 #   $totalSize (Number) - the total size (in MB) of the AI model.
 pdfjs-editor-alt-text-settings-download-model-label = დართული წარწერის შესადგენი AI-მოდელი ({ $totalSize } მბაიტი)
-pdfjs-editor-alt-text-settings-ai-model-description = ეშვება ადგილობრივად თქვენს მოწყობილობასა, ასე რომ მონაცემები დარჩება პირადი. საჭიროა წარწერის ავტომატურად დართვისთვის.
+pdfjs-editor-alt-text-settings-ai-model-description = ეშვება ადგილობრივად თქვენს მოწყობილობაზე, ასე რომ მონაცემები დარჩება პირადი. საჭიროა დართული წარწერების თვითშედგენისთვის.
 pdfjs-editor-alt-text-settings-delete-model-button = წაშლა
 pdfjs-editor-alt-text-settings-download-model-button = ჩამოტვირთვა
 pdfjs-editor-alt-text-settings-downloading-model-button = ჩამოიტვრითება...
@@ -586,25 +605,33 @@ pdfjs-editor-add-signature-cancel-button = გაუქმება
 pdfjs-editor-add-signature-add-button = დამატება
 pdfjs-editor-edit-signature-update-button = განახლება
 
+## Comment popup
+
+pdfjs-editor-edit-comment-popup-button-label = შენიშვნის ჩასწორება
+pdfjs-editor-edit-comment-popup-button =
+    .title = შენიშვნის ჩასწორება
+pdfjs-editor-delete-comment-popup-button-label = შენიშვნის მოცილება
+pdfjs-editor-delete-comment-popup-button =
+    .title = შენიშვნის მოცილება
+pdfjs-show-comment-button =
+    .title = შენიშვნის გამოჩენა
+
 ##  Edit a comment dialog
 
-pdfjs-editor-edit-comment-actions-button-label = მოქმედებები
-pdfjs-editor-edit-comment-actions-button =
-    .title = მოქმედებები
-pdfjs-editor-edit-comment-close-button-label = დახურვა
-pdfjs-editor-edit-comment-close-button =
-    .title = დახურვა
-pdfjs-editor-edit-comment-actions-edit-button-label = ჩასწორება
-pdfjs-editor-edit-comment-actions-delete-button-label = წაშლა
-pdfjs-editor-edit-comment-manager-text-input =
-    .placeholder = შეიყვანეთ დასართავი შენიშვნა
-pdfjs-editor-edit-comment-manager-cancel-button = გაუქმება
-pdfjs-editor-edit-comment-manager-save-button = შენახვა
+# An existing comment is edited
+pdfjs-editor-edit-comment-dialog-title-when-editing = შენიშვნის ჩასწორება
+pdfjs-editor-edit-comment-dialog-save-button-when-editing = განახლება
+# No existing comment
+pdfjs-editor-edit-comment-dialog-title-when-adding = შენიშვნის დამატება
+pdfjs-editor-edit-comment-dialog-save-button-when-adding = დამატება
+pdfjs-editor-edit-comment-dialog-text-input =
+    .placeholder = აკრიფეთ…
+pdfjs-editor-edit-comment-dialog-cancel-button = გაუქმება
 
 ## Edit a comment button in the editor toolbar
 
-pdfjs-editor-edit-comment-button =
-    .title = შენიშვნის ჩასწორება
+pdfjs-editor-add-comment-button =
+    .title = შენიშვნის დამატება
 
 ## Main menu for adding/removing signatures
 

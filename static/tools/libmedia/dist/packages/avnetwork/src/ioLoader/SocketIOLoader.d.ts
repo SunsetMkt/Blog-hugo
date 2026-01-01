@@ -1,0 +1,14 @@
+import { type Uint8ArrayInterface } from '@libmedia/common/io';
+import type { IOLoaderOptions } from './IOLoader';
+import IOLoader from './IOLoader';
+import type { Data } from '@libmedia/common';
+export default abstract class SocketIOLoader extends IOLoader {
+    protected readQueue: Uint8Array[];
+    protected consume: (value: void | PromiseLike<void>) => void;
+    constructor(options?: IOLoaderOptions);
+    abstract send(buffer: Uint8ArrayInterface): Promise<int32>;
+    abstract open(info: Data): Promise<int32>;
+    private readInterval;
+    read(buffer: Uint8ArrayInterface): Promise<number>;
+    write(buffer: Uint8ArrayInterface): Promise<int32>;
+}

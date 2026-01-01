@@ -1,0 +1,10 @@
+import { type Data } from '@libmedia/common';
+import { type IOReader } from '@libmedia/common/io';
+import { AVCodecID, type AVStream, type AVCodecParameters } from '@libmedia/avutil';
+export declare function getWavCodecId(tag: int32, bitsPerCodedSample: int32): AVCodecID;
+export declare function getGuidCodecId(guid: string): AVCodecID;
+export declare function readFormatTag(ioReader: IOReader, codecpar: pointer<AVCodecParameters>, size: int32): Promise<0 | -2>;
+export declare function readInfo(ioReader: IOReader, size: int64, metadata: Data): Promise<void>;
+export declare function readBmpHeader(ioReader: IOReader, stream: AVStream): Promise<number>;
+export declare function readWaveformatex(ioReader: IOReader, stream: AVStream): Promise<void>;
+export declare function readWavHeader(ioReader: IOReader, stream: AVStream, size: int32): Promise<0 | -2>;

@@ -1,0 +1,13 @@
+import type { WebGPURenderOptions } from './WebGPURender';
+import WebGPURender from './WebGPURender';
+import { type AVFrame } from '@libmedia/avutil';
+export default abstract class WebGPUDefaultRender extends WebGPURender {
+    protected yTexture: GPUTexture;
+    protected uTexture: GPUTexture;
+    protected vTexture: GPUTexture;
+    protected aTexture: GPUTexture;
+    constructor(canvas: HTMLCanvasElement | OffscreenCanvas, options: WebGPURenderOptions);
+    protected generateBindGroup(): void;
+    protected abstract checkFrame(frame: pointer<AVFrame>): void;
+    destroy(): void;
+}

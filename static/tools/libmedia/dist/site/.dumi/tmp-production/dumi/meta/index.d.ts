@@ -5,6 +5,12 @@ export declare const filesMeta: {
         demoIndex: any;
         textGetter: () => Promise<any>;
     };
+    'docs/guide/migrate-to-v1.en-US': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
     'docs/guide/architecture.en-US': {
         frontmatter: any;
         toc: any;
@@ -96,6 +102,12 @@ export declare const filesMeta: {
         textGetter: () => Promise<any>;
     };
     'docs/guide/licence.en-US': {
+        frontmatter: any;
+        toc: any;
+        demoIndex: any;
+        textGetter: () => Promise<any>;
+    };
+    'docs/guide/migrate-to-v1': {
         frontmatter: any;
         toc: any;
         demoIndex: any;

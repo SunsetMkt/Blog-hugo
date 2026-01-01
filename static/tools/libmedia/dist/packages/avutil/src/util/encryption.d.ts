@@ -1,0 +1,6 @@
+import type { EncryptionInfo, EncryptionInitInfo } from '../struct/encryption';
+import { type Uint8ArrayInterface } from '@libmedia/common/io';
+export declare function encryptionSideData2Info(buffer: Uint8ArrayInterface): EncryptionInfo;
+export declare function encryptionInfo2SideData(info: EncryptionInfo): Uint8Array;
+export declare function encryptionSideData2InitInfo(buffer: Uint8ArrayInterface): EncryptionInitInfo[];
+export declare function encryptionInitInfo2SideData(infos: EncryptionInitInfo[]): Uint8Array;

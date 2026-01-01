@@ -6,7 +6,7 @@
 * <https://update.code.visualstudio.com/api/update/web-standalone/stable/latest>
 * Set `access-control-allow-origin: *` if not working.
 * Use HTTPS if still not working.
-* `productVersion`: `1.106.3`
+* `productVersion`: `1.107.1`
 * It just works and with no warranty.
 * Keep `index.html`. It's customized. Replace `build` when upgrade.
 * For demonstration purpose only. This page is not affiliated with Microsoft, nor the Visual Studio Code project.

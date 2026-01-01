@@ -1,0 +1,42 @@
+import { type AVCodecParameters, type AVPacket } from '@libmedia/avutil';
+export type WebVideoDecoderOptions = {
+    onReceiveVideoFrame: (frame: VideoFrame, alpha?: VideoFrame) => void;
+    onError: (error?: Error) => void;
+    enableHardwareAcceleration?: boolean;
+    optimizeForLatency?: boolean;
+    alpha?: 'keep' | 'discard';
+    codec?: string;
+    rotation?: number;
+    flip?: boolean;
+    colorSpace?: VideoColorSpaceInit;
+};
+export default class WebVideoDecoder {
+    private decoder;
+    private alphaDecoder;
+    private options;
+    private parameters;
+    private extradata;
+    private currentError;
+    private inputQueue;
+    private outputQueue;
+    private dtsQueue;
+    private sort;
+    private keyframeRequire;
+    private extradataRequire;
+    private alphaQueue;
+    private alphaPending;
+    constructor(options: WebVideoDecoderOptions);
+    private getAlphaFrame;
+    private output;
+    private outputAlpha;
+    private error;
+    private errorAlpha;
+    private changeExtraData;
+    open(parameters: pointer<AVCodecParameters>): Promise<int32>;
+    decode(avpacket: pointer<AVPacket>): int32;
+    flush(): Promise<int32>;
+    close(): void;
+    getQueueLength(): number;
+    setSkipFrameDiscard(discard: number): void;
+    static isSupported(parameters: pointer<AVCodecParameters>, enableHardwareAcceleration: boolean): Promise<boolean>;
+}

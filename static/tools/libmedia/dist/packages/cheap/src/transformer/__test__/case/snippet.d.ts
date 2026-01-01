@@ -1,0 +1,11 @@
+export declare const symbolImport = "\n  import { symbolStruct as symbolStruct, symbolStructMaxBaseTypeByteLength as symbolStructMaxBaseTypeByteLength, symbolStructLength as symbolStructLength, symbolStructKeysMeta as symbolStructKeysMeta } from \"cheap/src/internal\";\n";
+export declare const symbol2Import = "\n  import { symbolStruct as symbolStruct, symbolStructMaxBaseTypeByteLength as symbolStructMaxBaseTypeByteLength, symbolStructLength as symbolStructLength, symbolStructKeysMeta as symbolStructKeysMeta, symbolStructAddress as symbolStructAddress } from \"cheap/src/internal\";\n";
+export declare const definedMetaPropertyImport = "\n  import { definedMetaProperty as definedMetaProperty } from \"cheap/src/internal\";\n";
+export declare const ctypeEnumReadImport = "\n  import { CTypeEnumRead as CTypeEnumRead } from \"cheap/src/internal\";\n";
+export declare const ctypeEnumWriteImport = "\n  import { CTypeEnumWrite as CTypeEnumWrite } from \"cheap/src/internal\";\n";
+export declare const mapStructImport = "\n  import { mapStruct as mapStruct } from \"cheap/src\";\n";
+export declare const memcpyImport = "\n  import { memcpy as memcpy } from \"cheap/src\";\n";
+export declare const sizeofImport = "\n  import { sizeof as sizeof } from \"cheap/src\";\n";
+export declare const makeSharedPtrImport = "\n  import { makeSharedPtr as makeSharedPtr } from \"cheap/src/internal\";\n";
+export declare const makeImport = "\n  import { make as make } from \"cheap/src\";\n";
+export declare const allocatorImport = "\n  import { Allocator as Allocator } from 'cheap/src/internal';\n";

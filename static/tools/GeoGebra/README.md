@@ -6,16 +6,16 @@ Solve math problems, graph functions, create geometric constructions, do statist
 
 With our JavaScript library it's easy to embed GeoGebra in any website, please see the following documentation
 
-- https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_Embedding/ -- how to embed and customize the Apps
-- https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_API/ -- JavaScript API to interact with the Apps
-- https://geogebra.github.io/integration/ -- examples of Math Apps embedded in HTML, sources available from GitHub: https://github.com/geogebra/integration
+- <https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_Embedding/> -- how to embed and customize the Apps
+- <https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_API/> -- JavaScript API to interact with the Apps
+- <https://geogebra.github.io/integration/> -- examples of Math Apps embedded in HTML, sources available from GitHub<https://github.com/geogebra/integration>on
 
 ## License
 
-You are free to copy, distribute and transmit GeoGebra for non-commercial purposes. For details see https://www.geogebra.org/license
+You are free to copy, distribute and transmit GeoGebra for non-commercial purposes. For details see <https://www.geogebra.org/license>
 
 ## Version
 
-`geogebra-math-apps-bundle-5-2-904-2`
+`geogebra-math-apps-bundle-5-2-909-9`
 
 [Docs](https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_Embedding/#_offline_and_self_hosted_solution) [Download](https://download.geogebra.org/package/geogebra-math-apps-bundle)
