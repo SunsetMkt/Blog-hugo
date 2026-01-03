@@ -4,5 +4,6 @@ go 1.24
 
 require (
 	github.com/CaiJimmy/hugo-theme-stack/v3 v3.33.0 // indirect
+	github.com/KKKZOZ/hugo-admonitions v0.11.1 // indirect
 	github.com/mfg92/hugo-shortcode-gallery v1.3.0 // indirect
 )
