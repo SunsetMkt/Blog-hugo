@@ -1,4 +1,4 @@
-{{ if .Store.Get "hasMermaid" }}
+{{ if or (or .Params.mermaid .Site.Params.article.mermaid) (.Store.Get "hasMermaid") }}
     <script type="module">
         import mermaid from "https://unpkg.com/mermaid@11.12.2/dist/mermaid.esm.min.mjs";
         mermaid.initialize({
