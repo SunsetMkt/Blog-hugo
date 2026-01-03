@@ -18,7 +18,7 @@ title: 通用写作律法：多语言、领域混编，模块化的书写规范
 ```
 
 《<ruby>通用写作律法<rp>(</rp><rt>General Writing Laws</rt><rp>)</rp></ruby>》是由
-[Save The Web Project][] 设计的开放律法（标准），后文简称为《律法》。
+[Save The Web Project][https://github.com/saveweb] 设计的开放律法（标准），后文简称为《律法》。
 
 《律法》有多种设想的使用场景，分别是：
 
