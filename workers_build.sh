@@ -65,7 +65,7 @@ main() {
 
   # Install NPM dependencies
   echo "Installing NPM dependencies..."
-  npm install
+  npm ci
 
   # Install Go dependencies
   echo "Installing Go dependencies..."
@@ -73,7 +73,7 @@ main() {
 
   # Build the site
   echo "Building the site..."
-  hugo --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates
+  hugo --minify --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates
 
   # Remove files larger than 25MB for Cloudflare limits
   find public -type f -size +25M -print -exec rm -vf {} \;
