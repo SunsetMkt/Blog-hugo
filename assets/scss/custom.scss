@@ -134,6 +134,14 @@ footer {
 }
 
 :root {
+    /* Theme default */
+    /* 
+        --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
+        --base-font-family: "Lato", var(--sys-font-family), sans-serif;
+        --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    */
+
+    /* Custom font list */
     /* The least resort when the system doesn't support any font */
     --lastresort-font-family:
         "Unifont", "Unifont-JP", "Unifont Upper", "Unifont CSUR", "Last Resort";
@@ -146,14 +154,15 @@ footer {
         "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
         "Android Emoji", "EmojiSymbols", "EmojiOne Mozilla", "Twemoji Mozilla",
         "Segoe UI Symbol", "Noto Color Emoji Compat", "emoji";
+
+    /* Final used font list */
     --code-font-family:
         "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New",
         var(--zh-font-family), var(--emoji-font-family), monospace,
         var(--lastresort-font-family);
     --base-font-family:
-        "HarmonyOS Sans SC", "Lato", var(--sys-font-family),
-        var(--zh-font-family), var(--emoji-font-family), sans-serif,
-        var(--lastresort-font-family);
+        "HarmonyOS Sans SC", var(--zh-font-family), var(--emoji-font-family),
+        var(--sys-font-family), sans-serif, var(--lastresort-font-family);
 }
 
 .custom-footer-code {
