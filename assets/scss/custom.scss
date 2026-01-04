@@ -163,3 +163,8 @@ footer {
     border-radius: var(--tag-border-radius);
     font-family: var(--code-font-family);
 }
+
+/* .pagination overflow on mobile hotpatch */
+.pagination {
+    overflow: auto !important;
+}
