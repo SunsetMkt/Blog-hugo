@@ -17,6 +17,10 @@ slug: shame
 - 上海米哈游网络科技股份有限公司/Cognosphere Pte., Ltd. - [对其游戏的开源工具软件进行诉讼威胁](https://github.com/sigewinnefish/Snap.Hutao)，也参考[原神相关争议](https://zh.wikipedia.org/wiki/%E5%8E%9F%E7%A5%9E%E7%9B%B8%E5%85%B3%E4%BA%89%E8%AE%AE)
 - 微软股份有限公司 - 在 2025 年宣布停止支持作为 Windows 11 卖点之一的[Windows Subsystem For Android](https://github.com/MustardChef/WSABuilds)，也参考[对微软的批评](https://zh.wikipedia.org/wiki/%E5%AF%B9%E5%BE%AE%E8%BD%AF%E7%9A%84%E6%89%B9%E8%AF%84)
 - 谷歌有限公司 - 关闭了[大量的服务](https://github.com/codyogden/killedbygoogle)，也参考[对 Google 的批评](https://zh.wikipedia.org/wiki/%E5%B0%8DGoogle%E7%9A%84%E6%89%B9%E8%A9%95)
+- Unity Software Inc. - 其开发的 Unity 引擎编辑器无法在离线环境下运行（即使是个人免费版本）且不向个人开发者提供源代码
+- Denuvo Software Solutions GmbH - 开发的 DRM 使得用户无法在离线环境下简单地运行游戏，且导致了性能下降
+- VMProtect Software - 其开发的可执行混淆工具被广泛用于干扰防病毒软件和安全分析，且导致了性能下降
+- 任何主体 - 滥用[UPX](https://github.com/upx/upx)以生成无法被解压的可执行，例如[UPX Issue #108](https://github.com/upx/upx/issues/108)
 
 ## 也参考
 
