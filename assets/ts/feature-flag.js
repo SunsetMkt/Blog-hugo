@@ -11,6 +11,7 @@ export var expectedFlags = [
     "outlink-alert",
     "back-to-top",
     "prevent-default",
+    "always-confetti",
 ];
 export const defaultFlags = ["outlink-alert"];
 export var permissive = false;

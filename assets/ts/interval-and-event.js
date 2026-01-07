@@ -173,6 +173,17 @@ async function onLoadExecute() {
             }
         }
     });
+
+    // always-confetti flag
+    safeRun(function () {
+        if (featureFlags.isFlagSet("always-confetti")) {
+            window.addEventListener("click", function (event) {
+                const x = event.clientX / window.innerWidth;
+                const y = event.clientY / window.innerHeight;
+                tools.fireConfetti(x, y);
+            });
+        }
+    });
 }
 
 export default function () {
