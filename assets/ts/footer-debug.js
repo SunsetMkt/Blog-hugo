@@ -25,13 +25,13 @@ function launchEruda() {
     });
 }
 
-function firework(x, y) {
+function fireConfetti(x, y) {
     var count = 200;
     var defaults = {
         origin: { x: x, y: y },
         disableForReducedMotion: true,
     };
-    console.info("[firework]", defaults);
+    console.info("[fireConfetti]", defaults);
 
     function fire(particleRatio, opts) {
         confetti({
@@ -104,7 +104,7 @@ export default function () {
 
             const x = event.clientX / window.innerWidth;
             const y = event.clientY / window.innerHeight;
-            firework(x, y);
+            fireConfetti(x, y);
 
             // 重置，避免重复触发
             debugTriggerCount = 0;
