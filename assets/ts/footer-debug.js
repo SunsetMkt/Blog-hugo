@@ -1,4 +1,4 @@
-import confetti from "canvas-confetti";
+import * as tools from "./tools.js";
 
 function addScriptTag(src, async, onload) {
     var scriptElement = document.createElement("script");
@@ -22,46 +22,6 @@ function launchEruda() {
             "[launchEruda]",
             "Console output before launch is not recorded",
         );
-    });
-}
-
-function fireConfetti(x, y) {
-    var count = 200;
-    var defaults = {
-        origin: { x: x, y: y },
-        disableForReducedMotion: true,
-    };
-    console.info("[fireConfetti]", defaults);
-
-    function fire(particleRatio, opts) {
-        confetti({
-            ...defaults,
-            ...opts,
-            particleCount: Math.floor(count * particleRatio),
-        });
-    }
-
-    fire(0.25, {
-        spread: 26,
-        startVelocity: 55,
-    });
-    fire(0.2, {
-        spread: 60,
-    });
-    fire(0.35, {
-        spread: 100,
-        decay: 0.91,
-        scalar: 0.8,
-    });
-    fire(0.1, {
-        spread: 120,
-        startVelocity: 25,
-        decay: 0.92,
-        scalar: 1.2,
-    });
-    fire(0.1, {
-        spread: 120,
-        startVelocity: 45,
     });
 }
 
@@ -104,7 +64,7 @@ export default function () {
 
             const x = event.clientX / window.innerWidth;
             const y = event.clientY / window.innerHeight;
-            fireConfetti(x, y);
+            tools.fireConfetti(x, y);
 
             // 重置，避免重复触发
             debugTriggerCount = 0;
