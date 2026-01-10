@@ -82,6 +82,10 @@
 			{
 				"Name": "expression2",
 				"File": "shuiyin2.exp3.json"
+			},
+			{
+				"Name": "expression3",
+				"File": "shuiyin3.exp3.json"
 			}
 		]
 	},
