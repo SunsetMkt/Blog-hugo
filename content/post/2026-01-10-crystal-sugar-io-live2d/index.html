@@ -1,0 +1,186 @@
+---
+categories: Repost
+date: "2026-01-10T00:00:00Z"
+tags:
+    - 前端
+slug: crystal-sugar-io-live2d
+title: 冰糖 IO 免费 Live2D 模型
+---
+
+<p>
+    Live2D Model by
+    <a href="https://www.bilibili.com/video/BV1Ln4y1R7HU">神宫凉子</a>. All
+    rights unreserved by this site.
+</p>
+<script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+<script src="https://unpkg.com/pixi.js@7.4.3/dist/pixi.min.js"></script>
+<script src="https://unpkg.com/pixi-live2d-display-lipsyncpatch@0.5.0-ls-7/dist/cubism4.min.js"></script>
+<!-- https://github.com/RaSan147/pixi-live2d-display -->
+<button id="fullscreen">Fullscreen</button>
+<canvas id="canvas"></canvas>
+
+<script>
+    document.getElementById("fullscreen").addEventListener("click", () => {
+        document.getElementById("canvas").classList.toggle("fullscreen");
+        document.getElementById("fullscreen").remove();
+    });
+</script>
+
+<style>
+    #canvas {
+        width: 100%;
+    }
+
+    .fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+    }
+</style>
+
+<script>
+    const cubism4Model = "免费模型冰糖/免费模型冰糖.model3.json";
+
+    (async function main() {
+        // Create app
+        PIXI.live2d.config.logLevel = PIXI.live2d.config.LOG_LEVEL_VERBOSE;
+        const app = new PIXI.Application({
+            view: document.getElementById("canvas"),
+            autoStart: true,
+            resizeTo: window,
+            backgroundAlpha: 0,
+            resolution: 1,
+            antialias: true,
+        });
+
+        window.pixiApp = app;
+
+        // Load model
+        const model4 = await PIXI.live2d.Live2DModel.from(cubism4Model, {
+            motionPreload: PIXI.live2d.MotionPreloadStrategy.ALL,
+        });
+
+        window.model4 = model4;
+
+        // Add to stage
+        app.stage.addChild(model4);
+
+        // Scale
+        model4.scale.set(0.3);
+
+        // Run remove watermark expression
+        model4.expression("expression1");
+        model4.expression("expression2");
+
+        // Controls
+        // === MOUSE: Wheel Zoom ===
+        app.view.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            const scaleFactor = 1.1;
+            if (e.deltaY < 0) {
+                model4.scale.x *= scaleFactor;
+                model4.scale.y *= scaleFactor;
+            } else {
+                model4.scale.x /= scaleFactor;
+                model4.scale.y /= scaleFactor;
+            }
+        });
+
+        // === MOUSE: Drag ===
+        let dragging = false;
+        let lastMousePos = { x: 0, y: 0 };
+
+        app.view.addEventListener("mousedown", (e) => {
+            dragging = true;
+            lastMousePos = { x: e.clientX, y: e.clientY };
+        });
+
+        app.view.addEventListener("mousemove", (e) => {
+            if (dragging) {
+                const dx = e.clientX - lastMousePos.x;
+                const dy = e.clientY - lastMousePos.y;
+                model4.position.x += dx;
+                model4.position.y += dy;
+                lastMousePos = { x: e.clientX, y: e.clientY };
+            }
+        });
+
+        window.addEventListener("mouseup", () => {
+            dragging = false;
+        });
+
+        // === TOUCH: Drag & Pinch Zoom ===
+        let touchMode = null; // "drag" or "zoom"
+        let lastTouchPos = null;
+        let lastDistance = 0;
+
+        app.view.addEventListener("touchstart", (e) => {
+            if (e.touches.length === 1) {
+                // One finger: drag
+                touchMode = "drag";
+                lastTouchPos = {
+                    x: e.touches[0].clientX,
+                    y: e.touches[0].clientY,
+                };
+            } else if (e.touches.length === 2) {
+                // Two fingers: zoom
+                touchMode = "zoom";
+                lastDistance = getTouchDistance(e.touches);
+            }
+        });
+
+        app.view.addEventListener(
+            "touchmove",
+            (e) => {
+                e.preventDefault();
+                if (touchMode === "drag" && e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    const dx = touch.clientX - lastTouchPos.x;
+                    const dy = touch.clientY - lastTouchPos.y;
+                    model4.position.x += dx;
+                    model4.position.y += dy;
+                    lastTouchPos = { x: touch.clientX, y: touch.clientY };
+                } else if (touchMode === "zoom" && e.touches.length === 2) {
+                    const newDistance = getTouchDistance(e.touches);
+                    const scaleChange = newDistance / lastDistance;
+                    model4.scale.x *= scaleChange;
+                    model4.scale.y *= scaleChange;
+                    lastDistance = newDistance;
+                }
+            },
+            { passive: false },
+        );
+
+        window.addEventListener("touchend", () => {
+            touchMode = null;
+            lastTouchPos = null;
+            lastDistance = 0;
+        });
+
+        // Helper: calculate distance between two fingers
+        function getTouchDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.hypot(dx, dy);
+        }
+    })();
+</script>
+
+<script>
+    (function () {
+        var script = document.createElement("script");
+        script.onload = function () {
+            var stats = new Stats();
+            document.body.appendChild(stats.dom);
+            requestAnimationFrame(function loop() {
+                stats.update();
+                requestAnimationFrame(loop);
+            });
+        };
+        script.src = "https://unpkg.com/stats.js@0.17.0/build/stats.min.js";
+        document.head.appendChild(script);
+    })();
+</script>
