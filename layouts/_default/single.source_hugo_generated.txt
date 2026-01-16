@@ -4,3 +4,4 @@
 # This source code does not contain additional page resources. 
 # For the full website codebase, see /debug/ page for the repository.
 # Please notice that this source may have a different license.
+# The commit hash is: {{ $commitHash := partialCached "getCommitHash.html" "git-commit-hash-source" }}{{ $commitHash | safeHTML }}
