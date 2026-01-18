@@ -13,4 +13,6 @@ title: WeMod 游戏修改器及破解
 
 离线安装包：<https://api.wemod.com/client/download>
 
+Game-Cheats-Manager 提供的 Patch：<https://github.com/dyang886/Game-Cheats-Manager>
+
 Patch：<https://github.com/k1tbyte/Wemod-Patcher>
