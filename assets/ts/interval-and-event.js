@@ -184,6 +184,29 @@ async function onLoadExecute() {
             });
         }
     });
+
+    // gtranslate-widget flag
+    safeRun(function () {
+        if (featureFlags.isFlagSet("gtranslate-widget")) {
+            // Add class="gtranslate_wrapper" div to body
+            var gtranslateWrapper = document.createElement("div");
+            gtranslateWrapper.classList.add("gtranslate_wrapper");
+            document.body.appendChild(gtranslateWrapper);
+            // Config
+            window.gtranslateSettings = {
+                default_language: "zh-CN",
+                native_language_names: true,
+                detect_browser_language: true,
+                wrapper_selector: ".gtranslate_wrapper",
+            };
+            // Add script
+            var scriptElement = document.createElement("script");
+            scriptElement.defer = true;
+            scriptElement.src =
+                "https://cdn.gtranslate.net/widgets/latest/float.js";
+            document.body.appendChild(scriptElement);
+        }
+    });
 }
 
 export default function () {
