@@ -4,6 +4,11 @@ mainSections = ["post"]
 rssFullContent = false
 favicon = "/favicon.ico"
 
+# Accepted values: "default", "lastmod"
+# default = see https://gohugo.io/quick-reference/glossary/#default-sort-order
+# lastmod = sort by last modified date, in descending order
+SortBy = "default"
+
 # Edit on GitHub repo
 repository = "https://github.com/SunsetMkt/Blog-hugo"
 
@@ -22,11 +27,7 @@ lastUpdated = "2006-01-02 15:04:05"
 [sidebar]
 emoji = "🇺🇦"
 subtitle = "Sunset Edu. & Tech. Group 的首席程序员"
-
-[sidebar.avatar]
-enabled = true
-local = true
-src = "img/avatar_pride.png"
+avatar = "img/avatar_pride.png"
 
 [article]
 headingAnchor = false
@@ -37,30 +38,14 @@ readingTime = true
 enabled = true
 default = "除非另有说明，此内容使用 CC BY-SA 4.0 许可。"
 
-## Widgets
-[[widgets.homepage]]
-type = "search"
-
-[[widgets.homepage]]
-type = "archives"
-
-[widgets.homepage.params]
-limit = 5
-
-[[widgets.homepage]]
-type = "categories"
-
-[widgets.homepage.params]
-limit = 10
-
-[[widgets.homepage]]
-type = "tag-cloud"
-
-[widgets.homepage.params]
-limit = 10
-
-[[widgets.page]]
-type = "toc"
+[widgets]
+homepage = [
+    { type = "search" },
+    { type = "archives", params = { limit = 5 } },
+    { type = "categories", params = { limit = 10 } },
+    { type = "tag-cloud", params = { limit = 10 } },
+]
+page = [{ type = "toc" }]
 
 [opengraph.twitter]
 site = ""

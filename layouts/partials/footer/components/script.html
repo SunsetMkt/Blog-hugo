@@ -1,5 +1,3 @@
-{{- partial "helper/external" (dict "Context" . "Namespace" "Vibrant") -}}
-
 {{ $mainScript := partial "jsBuild" "ts/main.ts" }}
 <script type="text/javascript" src="{{ $mainScript }}" defer></script>
 

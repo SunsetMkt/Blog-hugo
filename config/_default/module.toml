@@ -1,5 +1,5 @@
 [[imports]]
-path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+path = "github.com/CaiJimmy/hugo-theme-stack/v4"
 
 # [[imports]]
 # path = "github.com/martignoni/hugo-notice"

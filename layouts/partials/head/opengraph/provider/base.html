@@ -86,7 +86,8 @@
     <meta property="og:image:height" content="{{ $img.Height }}" />
 {{- else }}
     {{ $image := partialCached "helper/image" (dict "Context" . "Type" "opengraph") .RelPermalink "opengraph" }}
-    {{- if $image.exists -}}
+    {{ $isString := eq (printf "%T" $image) "string" }}
+    {{ if and (not $isString) ($image.Exists) }}
         <meta property="og:image" content="{{ absURL $image.permalink }}" />
     {{- end -}}
 {{- end -}}
