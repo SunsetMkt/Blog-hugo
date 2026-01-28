@@ -198,12 +198,14 @@ async function onLoadExecute() {
                 native_language_names: true,
                 detect_browser_language: true,
                 wrapper_selector: ".gtranslate_wrapper",
+                flags_location:
+                    "https://unpkg.com/gtranslate-io-widget-unofficial@1.0.1/dist/flags/",
             };
             // Add script
             var scriptElement = document.createElement("script");
             scriptElement.defer = true;
             scriptElement.src =
-                "https://cdn.gtranslate.net/widgets/latest/float.js";
+                "https://unpkg.com/gtranslate-io-widget-unofficial@1.0.1/dist/js/float.js";
             document.body.appendChild(scriptElement);
         }
     });
