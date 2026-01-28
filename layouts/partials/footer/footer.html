@@ -1,4 +1,8 @@
-{{- $ThemeVersion := .Site.Params.themeVersion | default "unknown" -}}
+{{- $ThemeVersion := getenv "HUGO_PARAMS_STACK_THEME_VERSION" | default "unknown" -}}
+<!--
+    THEME_VERSION=$(hugo mod graph | grep hugo-theme-stack/v | sed -E 's/.*@v([0-9][^ ]*)/\1/')
+    export HUGO_PARAMS_STACK_THEME_VERSION="$THEME_VERSION"
+-->
 {{- $ThemeVersion = (print $ThemeVersion "-modified") -}}
 <footer class="site-footer">
     <section class="copyright">

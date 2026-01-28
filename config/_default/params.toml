@@ -14,7 +14,7 @@ repository = "https://github.com/SunsetMkt/Blog-hugo"
 
 # THEME_VERSION=$(hugo mod graph | grep hugo-theme-stack/v | sed -E 's/.*@v([0-9][^ ]*)/\1/')
 # export HUGO_PARAMS_STACK_THEME_VERSION="$THEME_VERSION"
-themeVersion = "{{ getenv `HUGO_PARAMS_STACK_THEME_VERSION` }}"
+# themeVersion = "{{ getenv `HUGO_PARAMS_STACK_THEME_VERSION` }}" # Not working
 
 [footer]
 since = 2019
