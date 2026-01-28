@@ -71,6 +71,12 @@ main() {
   echo "Installing Go dependencies..."
   hugo mod get
 
+  # Get theme version
+  echo "Getting theme version..."
+  THEME_VERSION=$(hugo mod graph | grep hugo-theme-stack/v | sed -E 's/.*@v([0-9][^ ]*)/\1/')
+  export HUGO_PARAMS_STACK_THEME_VERSION="$THEME_VERSION"
+  echo "Theme version: $HUGO_PARAMS_STACK_THEME_VERSION"
+
   # Build the site
   echo "Building the site..."
   hugo --minify --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates
