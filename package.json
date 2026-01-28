@@ -28,11 +28,15 @@
         "git-unshallow": "git fetch --unshallow",
         "rm-25mb-public": "find public -type f -size +25M -print -exec rm -vf {} \\;",
         "list-public": "find public -type f -printf '%P\n' > public/filelist.txt",
-        "lint": "eslint . --fix",
-        "format": "prettier . --write",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier . --check",
+        "format:fix": "prettier . --write",
         "test": "hugo -M --minify --gc --logLevel info",
         "prepare": "husky",
-        "cloudflare-workers-build": "chmod a+x workers_build.sh && ./workers_build.sh"
+        "cloudflare-workers-build": "chmod a+x workers_build.sh && ./workers_build.sh",
+        "ncu": "npm-check-updates",
+        "ncu:fix": "npm-check-updates -u"
     },
     "engines": {
         "node": ">=22",
