@@ -55,6 +55,7 @@ main() {
   echo Go: "$(go version)"
   echo Hugo: "$(hugo version)"
   echo Node.js: "$(node --version)"
+  echo NPM: "$(npm --version)"
 
   # Configure Git
   echo "Configuring Git..."
