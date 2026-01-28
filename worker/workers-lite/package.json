@@ -30,6 +30,6 @@
         "globals": "^16.5.0",
         "prettier": "^3.7.4",
         "vitest": "^4.0.15",
-        "wrangler": "^4.53.0"
+        "wrangler": "^4.59.1"
     }
 }
