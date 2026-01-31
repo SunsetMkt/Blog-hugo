@@ -103,7 +103,7 @@ autoCreateIssue = false
 
 [comments.waline]
 serverURL = "https://waline.sunmkt.uk"
-# lang = "zh-CN"
+lang = "zh-CN"
 # avatar = ""
 emoji = ["https://unpkg.com/@waline/emojis@1.3.0/tw-emoji"]
 reaction = [
