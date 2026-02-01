@@ -13,6 +13,7 @@ export var expectedFlags = [
     "prevent-default",
     "always-confetti",
     "gtranslate-widget",
+    "blind-watermark",
 ];
 export const defaultFlags = ["outlink-alert"];
 export var permissive = false;

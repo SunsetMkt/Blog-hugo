@@ -3,6 +3,7 @@ import * as tools from "./tools.js";
 import * as grayscale from "./grayscale.js";
 import * as outlinkAlert from "./outlink-alert.js";
 import addBackToTop from "./vanilla-back-to-top.js";
+import { BlindWatermark } from "watermark-js-plus";
 
 var loggingPrefix = "[interval-and-event]";
 
@@ -207,6 +208,26 @@ async function onLoadExecute() {
             scriptElement.src =
                 "https://unpkg.com/gtranslate-io-widget-unofficial@1.0.1/dist/js/float.js";
             document.body.appendChild(scriptElement);
+        }
+    });
+
+    // blind-watermark flag
+    safeRun(function () {
+        if (featureFlags.isFlagSet("blind-watermark")) {
+            var watermarkConfig = {
+                contentType: 'multi-line-text',
+                content: localStorage.SunsetUUID,
+                width: 200,
+                height: 200,
+                onSuccess: () => {
+                    console.info(loggingPrefix, "BlindWatermark onSuccess");
+                },
+            };
+            if (tools.isDarkScheme()) {
+                watermarkConfig.fontColor = "#fff";
+            }
+            const watermark = new BlindWatermark(watermarkConfig);
+            watermark.create();
         }
     });
 }
