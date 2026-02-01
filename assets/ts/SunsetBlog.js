@@ -66,5 +66,7 @@ export default function () {
         // guaranteed to be random.
     };
 
+    SunsetBlog.isDarkScheme = tools.isDarkScheme;
+
     window.SunsetBlog = SunsetBlog;
 }

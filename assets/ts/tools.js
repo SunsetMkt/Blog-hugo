@@ -170,3 +170,7 @@ export function fireConfetti(x, y) {
         startVelocity: 45,
     });
 }
+
+export function isDarkScheme() {
+    return document.documentElement.getAttribute("data-scheme") === "dark";
+}
