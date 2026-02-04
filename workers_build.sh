@@ -92,6 +92,17 @@ main() {
   # find public -type f -printf '%P\n' > public/filelist.txt
   # UTF-8 BOM
   { printf '\xEF\xBB\xBF'; find public -type f -printf '%P\n'; } > public/filelist.txt
+
+  # Generate SHA256 file list
+  # UTF-8 BOM
+  {
+    printf '\xEF\xBB\xBF'
+    find public -type f -print0 |
+      while IFS= read -r -d '' f; do
+        rel=${f#public/}
+        printf '%s %s\n' "$rel" "$(sha256sum "$f" | cut -d' ' -f1)"
+      done
+  } > public/filelist.sha256
 }
 
 set -euo pipefail
