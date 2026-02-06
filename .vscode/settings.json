@@ -4,5 +4,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[toml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
     }
 }
