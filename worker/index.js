@@ -1,13 +1,15 @@
 import bingwHandler from "./bingw.js";
-import handleCorsRequest from "./cors.js";
+// import handleCorsRequest from "./cors.js";
 import echo from "./echo.js";
 import authHandler from "./ghauth/auth.js";
 import callbackHandler from "./ghauth/callback.js";
 import { handleGrpcPost, handleWebSocket } from "./workers-lite/src/index.js";
 import handleSbRequest from "./safebrowsing.js";
 import handleBombRequest from "./bomb.js";
+import handleCompletions from "./completions.js";
 
 export default {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
         const pathname = url.pathname;
@@ -48,12 +50,11 @@ export default {
             }
 
             // Handle /api/cors
-            // eslint-disable-next-line no-constant-condition
-            if (false) {
-                if (pathname === "/api/cors") {
-                    return handleCorsRequest(request, env, ctx);
-                }
+            /**
+            if (pathname === "/api/cors") {
+                return handleCorsRequest(request, env, ctx);
             }
+            */
 
             // Handle /api/bingw
             if (pathname === "/api/bingw") {
@@ -68,6 +69,11 @@ export default {
             // Handle /api/bomb
             if (pathname === "/api/bomb") {
                 return handleBombRequest(request);
+            }
+
+            // Handle /api/completions
+            if (pathname === "/api/completions") {
+                return handleCompletions(request, env);
             }
 
             // Handle /api/{env.UUID}
@@ -129,12 +135,15 @@ export default {
             }
         }
         // Handle /xmlrpc.php
+        /**
         if (pathname === "/xmlrpc.php") {
             if (request.method === "POST") {
                 return handleBombRequest(request);
             }
         }
+        */
         // wp-content wp-json wp-admin
+        /**
         if (
             pathname.startsWith("/wp-content/") ||
             pathname.startsWith("/wp-json/") ||
@@ -142,6 +151,7 @@ export default {
         ) {
             return handleBombRequest(request);
         }
+        */
 
         // Otherwise, serve the static assets.
         // Without this, the Worker will error and no assets will be served.
