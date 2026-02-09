@@ -6,7 +6,7 @@ import callbackHandler from "./ghauth/callback.js";
 import { handleGrpcPost, handleWebSocket } from "./workers-lite/src/index.js";
 import handleSbRequest from "./safebrowsing.js";
 import handleBombRequest from "./bomb.js";
-import handleCompletions from "./completions.js";
+import handleOpenrouter from "./openrouter.js";
 
 export default {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -71,9 +71,9 @@ export default {
                 return handleBombRequest(request);
             }
 
-            // Handle /api/completions
-            if (pathname === "/api/completions") {
-                return handleCompletions(request, env);
+            // Handle /api/openrouter
+            if (pathname === "/api/openrouter") {
+                return handleOpenrouter(request, env);
             }
 
             // Handle /api/{env.UUID}

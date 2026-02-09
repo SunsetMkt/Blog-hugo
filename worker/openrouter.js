@@ -1,13 +1,19 @@
-export default async function handleCompletions(request, env) {
+export default async function handleOpenrouter(request, env) {
     if (request.method !== "POST") {
-        return new Response("Method Not Allowed", { status: 405 });
+        return new Response(
+            "Method Not Allowed. Check https://openrouter.ai/docs/api/api-reference/responses/create-responses",
+            { status: 405 },
+        );
     }
 
     let clientBody;
     try {
         clientBody = await request.json();
     } catch {
-        return new Response("Invalid JSON", { status: 400 });
+        return new Response(
+            "Invalid JSON. Check https://openrouter.ai/docs/api/api-reference/responses/create-responses",
+            { status: 400 },
+        );
     }
 
     // 强制覆盖 model，其余字段完全透传
@@ -16,7 +22,7 @@ export default async function handleCompletions(request, env) {
         model: env.OPENROUTER_MODEL || "openrouter/free",
     };
 
-    console.info("[Completions] Upstream request body", upstreamBody);
+    console.info("[OpenRouter] Upstream request body", upstreamBody);
 
     const upstreamResponse = await fetch(
         env.OPENROUTER_API || "https://openrouter.ai/api/v1/responses",
