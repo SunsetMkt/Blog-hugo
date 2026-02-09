@@ -142,6 +142,11 @@ export function getExpectedFlags() {
     return expectedFlags;
 }
 
+export function restoreDefaults() {
+    flags = defaultFlags;
+    pushFlags();
+}
+
 var featureFlags = {};
 featureFlags.setFlag = setFlag;
 featureFlags.unsetFlag = unsetFlag;
@@ -149,4 +154,5 @@ featureFlags.isFlagSet = isFlagSet;
 featureFlags.getFlags = getFlags;
 featureFlags.clearFlags = clearFlags;
 featureFlags.getExpectedFlags = getExpectedFlags;
+featureFlags.restoreDefaults = restoreDefaults;
 export default featureFlags;
