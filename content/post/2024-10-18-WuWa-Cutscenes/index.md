@@ -8,19 +8,13 @@ tags:
     - 逆向工程
     - 鸣潮
 slug: WuWa-Cutscenes
-title: 【需要帮助】《鸣潮》的过场动画提取
+title: 《鸣潮》的过场动画提取
 ---
 
 Source: <https://github.com/SunsetMkt/WuWa-Cutscenes>
 
-2.1 及之后版本的视频 (\*.mp4) 已加密。需要帮助对解密解决方案进行逆向工程，[在这里讨论](https://github.com/SunsetMkt/WuWa-Cutscenes/issues/1)。
-
-## 过时的指南
-
 > [!WARNING]  
-> Movies (\*.mp4) in 2.1 and after are encrypted. Help needed to reverse engineer the decryption solution. See issues.
->
-> [What we know about WuWa's Media Player](HELP.md)
+> Movies (\*.mp4) in 2.1 and after are encrypted. Use the latest version of [4sval/FModel](https://github.com/4sval/FModel) to export videos.
 
 A method to export Wuthering Waves cutscenes/movies.
 

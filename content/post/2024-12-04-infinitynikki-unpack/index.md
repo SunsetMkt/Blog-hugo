@@ -11,10 +11,12 @@ slug: infinitynikki-unpack
 title: 《无限暖暖》的资源文件解包（和其他逆向工程）
 ---
 
+> 注意：本文档自 2024.12 起没有更新，一些信息可能已经过时，也无法提供进一步支持。
+
 ## 有用的链接
 
 - ~~[特定版本的 umodel](https://www.gildor.org/smf/index.php/topic,8930.msg47594.html#msg47594) by [spiritovod](https://www.gildor.org/smf/index.php?action=profile;u=5330)~~
-- [特定版本的 Fmodel](https://github.com/LukeFZ/FModel)（推荐）by [LukeFZ](https://github.com/LukeFZ)
+- [原版 Fmodel](https://github.com/4sval/FModel)或者[特定版本的 Fmodel](https://github.com/LukeFZ/FModel) by [LukeFZ](https://github.com/LukeFZ)
 - [有关 AES Key 的讨论](https://cs.rin.ru/forum/viewtopic.php?p=3082204#p3082204) 和[主要 Key](https://cs.rin.ru/forum/viewtopic.php?t=100672)
 - [配置文件序列化实现](https://github.com/NikkiTools/perfect) by [LukeFZ](https://github.com/LukeFZ)
 - [已提取资源](https://www.xivmodarchive.com/modid/123983) by [Crow](https://www.xivmodarchive.com/user/158572) [CrowMods on X](https://x.com/CrowMods)
