@@ -1,1 +1,1 @@
-/article/* /p/:splat 301
+/article/* /post/:splat 301
