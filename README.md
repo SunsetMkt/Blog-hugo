@@ -19,8 +19,6 @@ hugo --gc --logLevel info
 
 ## Migration notes
 
-This blog is migrated from Jekyll with `/article/:slug/` URL pattern (allow uppercase). The migrated slugs are defined explicitly in the front matter.
-
 This blog is migrated from Cloudflare Pages to Workers. The following command is used to build in Pages:
 
 ```sh

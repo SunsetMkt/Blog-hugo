@@ -88,6 +88,9 @@ main() {
   # Copy _headers
   cp _headers public/_headers
 
+  # Copy _redirects
+  cp _redirects public/_redirects
+
   # Generate file list
   # find public -type f -printf '%P\n' > public/filelist.txt
   # UTF-8 BOM
