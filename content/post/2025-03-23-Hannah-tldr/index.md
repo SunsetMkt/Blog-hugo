@@ -9,25 +9,36 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 
 ## 站务回应
 
-我们在 2026-02-17 通过评论区获悉，[有关站点工作人员](http://www.wikidot.com/user:info/w-asriel)已在 4 Nov 2025, 15:09 作出[回应](http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)（[Archive](https://web.archive.org/web/20260219110404/http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)）。
+我们在 2026-02-17 通过评论区获悉，[W Asriel](http://www.wikidot.com/user:info/w-asriel)已在 4 Nov 2025, 15:09 作出[回应](http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)（[Archive](https://web.archive.org/web/20260219110404/http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)）。
 
 考虑到我们无法代表任何当事人，也没有被委托处理相关事宜，因此不会在这里对站务回应做出任何评价。（就我个人而言，为这位站务的责任精神点个赞）
 
-我们仍然接受有关此事件的任何评论或通讯，但无法保证快速更新信息。您也可将您的抗辩或质疑意见发送给[有关站点工作人员](http://www.wikidot.com/user:info/w-asriel)。
+我们仍然接受有关此事件的任何评论或通讯，但无法保证快速更新信息。您也可将您的抗辩或质疑意见发送给有关站点工作人员。
+
+我们推荐您在[05command-cn.wikidot.com](http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)阅读原始格式的回应。
+
+> 对于部分疑问和抗辩意见，由于其和规则本身无关/没有通过正式渠道提交，原本也被认为无回复必要。但事实证明，这并非消除疑问和保障透明性的方式。（[W Asriel](http://www.wikidot.com/user:info/w-asriel)，4 Nov 2025）
 
 在下面摘抄完整的站务回应以供参考：
 
 ---
 
-用户[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1762240150)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)发布作品[分手](https://scpper.com/page/1304863430)（现已自删，目前仍在其[沙盒中](http://scpsandboxcn.wikidot.com/confucious)，[新 SCPPer](https://scpper.mer.run/page/1304863430)链接）抄袭《[学习康德好榜样](https://zhuanlan.zhihu.com/p/363976654)》（作者虎头，《当代杂志》 2006 年第 6 期），故做出封禁 1 个月之处分。
+{{< details 展开 >}}
+
+用户[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)发布作品[分手](https://scpper.com/page/1304863430)（现已自删，目前仍在其[沙盒中](http://scpsandboxcn.wikidot.com/confucious)，[新 SCPPer](https://scpper.mer.run/page/1304863430)链接）抄袭《[学习康德好榜样](https://zhuanlan.zhihu.com/p/363976654)》（作者虎头，《当代杂志》 2006 年第 6 期），故做出封禁 1 个月之处分。
 [调色盘](https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E5%88%86%E6%89%8B.pdf)
 
 2025.11.03 补充说明：
+
 **Q：**自删的作品也会被追溯处分吗？沙盒的文章也会被处分吗？
 
 并不绝对。这么做的依据有下。
-1\. 沙盒站的规则提及：“工作人员保留删除违规沙盒页和材料的权利。如果在沙盒站违反了主网站的规则，可能会采取纪律处分。” （见：[沙盒站首页](https://scpsandboxcn.wikidot.com/)）2. 我们了解沙盒站的内容往往是作者的创作中草稿，有时候包括参考材料等，并不一定严格遵循包括 CC 协议等在内的规则。实际判定上，则取决于其是否被置于**发布和展示状态**。
-3\. 具体到《分手》例，其满足了以下的条件：
+
+1. 沙盒站的规则提及：“工作人员保留删除违规沙盒页和材料的权利。如果在沙盒站违反了主网站的规则，可能会采取纪律处分。” （见：[沙盒站首页](https://scpsandboxcn.wikidot.com/)）
+
+2. 我们了解沙盒站的内容往往是作者的创作中草稿，有时候包括参考材料等，并不一定严格遵循包括 CC 协议等在内的规则。实际判定上，则取决于其是否被置于**发布和展示状态**。
+
+3. 具体到《分手》例，其满足了以下的条件：
 
 - 已经被在主网站（SCP-CN 维基）发布过。
 - 仍被原样展示于沙盒。
@@ -35,13 +46,13 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
     - 这实际上将沙盒作为了作品展示页面之一，而且给出了具体的访问路径。
     - 作者也同时将其他发布或未发布作品展示于沙盒。
 
-4\. 因此我们认为《分手》实质上仍然是发布状态的作品，并受到网站规章的管辖。
+4. 因此我们认为《分手》实质上仍然是发布状态的作品，并受到网站规章的管辖。
 
 作为参考的是，同作者的作品[地球二 中心页](https://scpper.mer.run/page/53929780)（约 2017 年 9 月发布，约 2019 年 12 月自行删除），在查重中发现全文复制自[suixinsuiyuan 圣斗士星矢同人《雅典学派》](https://www.zhihu.com/search?type=content&q=%E5%90%8A%E7%AC%BC%E3%80%81%E6%9C%A8%E6%9E%B7%E3%80%81%E9%92%A2%E9%A1%B9%E5%9C%88%E3%80%81%E9%93%81%E5%90%8A%E7%B4%A2%E3%80%81%E5%BC%80%E8%8A%B1%E6%A2%A8%E3%80%81%E5%8F%A3%E6%9E%B7%E3%80%81%E6%9C%A8%E9%A9%AC%E3%80%81%E9%93%81%E5%A4%84%E5%A5%B3)且未标出处。因页面自删且并未被作者主动展示或留存，因此未做出追溯性处分。
 
 此外，草稿区偶有作者分享的创作中草稿涉及了大段不加出处声明的、对非 CC 材料的复制粘贴。若这些草稿被原样发布，其将被判定抄袭，但因草稿被视作未完成/未发布状态，因此站务从未做出任何处置。
 
-\[其他疑问和抗辩意见\]
+[其他疑问和抗辩意见]
 
 这些实际上并不影响判定或者与规则无关，我们认为以上内容已经足够做出抄袭认定。但因抗辩方提出/存在提问，我在此也做出一一详细的正面回复。
 
@@ -52,14 +63,16 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 > 仅限于个别词语、句子的极少量引用、改编属于用典/致敬/彩蛋，这些不必予以注明。
 
 “致敬”在常识判断中也往往来自知名台词或者句子。所复制部分并非引自康德原文（引用的康德原文部分并未被标记），而是一名杂志作者对康德的个人解读，也不属于名台词。
+
 150/3000 的不署名复制粘贴在本站的处置标准中超出了可接受范围。
+
 比例相近的判例有《星海遗孤》（已删除，公告于 2019 年 4 月 20 日，[SCPPer 备份](https://scpper.mer.run/page/69801977)，[通告帖链接](https://scp-wiki-cn.wikidot.com/forum/t-11228898/freedom-koo#post-4224390)，[调色盘](http://scpsandboxcn.wikidot.com/local--files/collab:turnitin/SCP-CN-231.pdf)链接）
 
 **Q：**这篇文章似乎只在主网站存在了两个小时/已经是几年前的了，而且只有十多分。为什么也要处分？
 
 1. 《反抄袭政策》仅关注抄袭现象，文章的发布时间和分数与之并无关系。有大量判例是在文章发布不久后就立刻锁定并处分，其从发布到处分，时间远远小于 2 小时，有不少还是负分状态。
 2. 如第一个 Q&A 所述，站务认为《分手》**被实际置于持续性的发布展示状态**，亦即其截止到被查实时仍处于该状态。
-   3\. 这篇文章在主网站存在了**不止 2 小时**。
+3. 这篇文章在主网站存在了**不止 2 小时**。
 
 - 该观点的“文章存在了 2 小时”是基于 SCPPER 的 Last Update 时间被记录为 2020-09-17 06:14，而发布时间被记录为 2020-09-17 04:18。但这可能是对 SCPPER 机制的误解导致的。
 - SCPPER 基于爬虫运行，每隔一段时间统一抓取一次全站页面的元数据。“Last Update”为统一抓取的时间戳，而页面详情中的版本记录时间戳则直接来自于页面元数据的版本记录，与 SCPPER 更新频率无关。
@@ -68,17 +81,18 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
     - 也可以登录 SCPPER 主页，切到“Chinese Branch”并留意整个分支 Last Update 时间戳，然后随机检查几个仍存在的页面，可验证这些时间戳都是一样的。代表 SCPPER 上一次统一爬取的时间。
     - 在我的记忆中，旧版的 SCPPER 对中分更新时间是一周一次，后改为一天一次。Last update 2020-09-17 06:14 代表该 SCPPER 数据最后一次被更新的时间，而 SCPPER 在下一次更新中并没有看到它。实际删除时间应大于 2 小时，小于 7 天。
 
-4\. 抄袭是无限追溯制，在《反抄袭政策》201 9年第一次制定和应用于[![Freedom Koo](http://www.wikidot.com/avatar.php?userid=2239155&size=small&timestamp=1762240150)](http://www.wikidot.com/user:info/freedom-koo)[Freedom Koo](http://www.wikidot.com/user:info/freedom-koo)案（下称自由）时，便追溯性地应用于了其所有过往作品。这是因为作者本有机会随时修正或删除他们的抄袭作品，但他们选择了继续展示抄袭材料。同理，《地球二 中心页》也因实际自删而并未被追究。
-5\. 同上条判例，也不会因该作者是前站务、威望高或者曾有贡献而免除处分。
+4. 抄袭是无限追溯制，在《反抄袭政策》201 9 年第一次制定和应用于[Freedom Koo](http://www.wikidot.com/user:info/freedom-koo)案（下称自由）时，便追溯性地应用于了其所有过往作品。这是因为作者本有机会随时修正或删除他们的抄袭作品，但他们选择了继续展示抄袭材料。同理，《地球二 中心页》也因实际自删而并未被追究。
+5. 同上条判例，也不会因该作者是前站务、威望高或者曾有贡献而免除处分。
 
 ---
 
 该用户发布作品[中国██大学 2018 年春季学期异常心理学教学大纲](https://scpper.com/page/64966487)（[原链接](https://scp-wiki-cn.wikidot.com/hannah-s-syllabus)）的折叠外部分几乎全文照搬"Fall20 Abnormal Psychology"（原文为英语，下称原教学大纲）。
 
 由于
-1\. 网络上公开的各学校《异常心理学》课程的教学大纲各不相同。搜索文中某段，能且仅能找到原教学大纲，且文本内容几乎完全一致。其他段落则无法直接搜索到重合内容。（该段为原教学大纲唯一能被搜索引擎找到的内容；完整大纲则能在[CourseHero 学习资料网站](https://www.coursehero.com/)查看。）
-2\. 不同学校教学大纲对于作业要求、作业内容、分数要求、教学内容和计划均各不相同，而文中的相应内容和原教学大纲几乎完全一致。
-3\. 尽管其所授的是同一门课程，不同学校教学大纲的课程目标、课程描述、论文题目不尽相同，所使用的介绍语、措辞、顺序，所讲的内容等等均有很大差异，而文中相应文本和原教学大纲几乎完全一致。
+
+1. 网络上公开的各学校《异常心理学》课程的教学大纲各不相同。搜索文中某段，能且仅能找到原教学大纲，且文本内容几乎完全一致。其他段落则无法直接搜索到重合内容。（该段为原教学大纲唯一能被搜索引擎找到的内容；完整大纲则能在[CourseHero 学习资料网站](https://www.coursehero.com/)查看。）
+2. 不同学校教学大纲对于作业要求、作业内容、分数要求、教学内容和计划均各不相同，而文中的相应内容和原教学大纲几乎完全一致。
+3. 尽管其所授的是同一门课程，不同学校教学大纲的课程目标、课程描述、论文题目不尽相同，所使用的介绍语、措辞、顺序，所讲的内容等等均有很大差异，而文中相应文本和原教学大纲几乎完全一致。
 
 故而认为本文的大量内容并非原创，因此认定为抄袭，并删除文章。由于此为该用户的第二篇抄袭作品，故做出永久封禁之处分。
 
@@ -89,7 +103,7 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 
 2025.11.03 更新
 
-\[其他疑问和抗辩意见\]
+[其他疑问和抗辩意见]
 
 同理，这些实际上并不影响判定或者与规则无关，仅仅是对此做出正面回复以期解答疑问。
 
@@ -109,17 +123,17 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 [该用户的另一篇抄袭作品](http://scp-wiki-cn.wikidot.com/forum/t-15176050/)。
 
 文档《为何而站》（原地址：why-we-fight-how-we-fight）大量照搬小说《兽血沸腾》而未声明出处。[调色盘见此](https://scpsandboxcn.wikidot.com/local--files/collab:records/%E8%B0%83%E8%89%B2%E7%9B%98_%E4%B8%BA%E4%BD%95%E8%80%8C%E7%AB%99.pdf)。
-原文归档[链接见此](https://scp-wiki-cn.wikidot.com/deleted:why-we-fight-how-we-fight)，其内容和原始讨论区仍可访问。作者[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1762246222)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)于讨论区做出的声明提及：
+原文归档[链接见此](https://scp-wiki-cn.wikidot.com/deleted:why-we-fight-how-we-fight)，其内容和原始讨论区仍可访问。作者[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)于讨论区做出的声明提及：
 
 > 又算合作又不能彻底算合作的一篇？
 >
 > 剧情设置和大部分由我完成，Tictoc 贡献了第二段绿字，“Hannah 拿到箱子”到“Hannah，跑”和最后的的“下雨了”到神父说自己的名字的那部分。
 
-根据比对，证实所有抄袭部分均来自于[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1762246222)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)所认领部分。**另一用户所贡献内容中并无抄袭内容。**
+根据比对，证实所有抄袭部分均来自于[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)所认领部分。**另一用户所贡献内容中并无抄袭内容。**
 
 2025.11.03 补充：
 
-\[其他疑问\]
+[其他疑问]
 
 **Q：**原始公告提及“不关心一切合著”原则。这是否意味着页面发布者替所有其他贡献者承担违规内容的责任？
 
@@ -139,13 +153,13 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 
 **Q：**抄袭的处理流程到底是什么样的？为什么利益冲突方没有做出回避？
 
-抄袭是很严重的指控。自《反抄袭政策》于 2019 年制定至今，抄袭（和绝大部分决定）都需要多名站务联署方可判定。在大多数案例中，往往由我（[![W Asriel](http://www.wikidot.com/avatar.php?userid=3317001&size=small&timestamp=1762690156)](http://www.wikidot.com/user:info/w-asriel)[W Asriel](http://www.wikidot.com/user:info/w-asriel)）进行调查、举证，而具体处理和认定意见由站务组商讨达成一致，再由具备权限的 Admin 执行封禁（在 2024 年之前我并不具备该权限），最后再由其中一人（往往也是我）进行通告。
+抄袭是很严重的指控。自《反抄袭政策》于 2019 年制定至今，抄袭（和绝大部分决定）都需要多名站务联署方可判定。在大多数案例中，往往由我（[W Asriel](http://www.wikidot.com/user:info/w-asriel)）进行调查、举证，而具体处理和认定意见由站务组商讨达成一致，再由具备权限的 Admin 执行封禁（在 2024 年之前我并不具备该权限），最后再由其中一人（往往也是我）进行通告。
 
 由于 SCP-CN 是个小圈子，所以站务处理案件时并无制度性的回避政策存在。本人也处理了绝大多数的抄袭或其他类型的违规，有其中不少同时也是相识的社群成员甚至有过摩擦的知名人物。举例而言，我曾是我处理过的其中一起 doxxing 事件的直接受害者，但也并未启动回避机制。
 
-具体到本案，鉴于[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1762690156)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)是前站务和社群知名人物，站务组内几乎所有执行人员都要么与之共事过，要么与之有过较多人际交集，几乎不可能找出完全无利益冲突的成员。此外，鉴于抄袭证据属于白纸黑字，也从规章制定之初就被声明过属于零容忍的社群底线，此案本应最没有争议。我们当时并不认为有回避必要，也并不认为有完全回避的可能性，因此认为以常规流程处置便可。
+具体到本案，鉴于[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)是前站务和社群知名人物，站务组内几乎所有执行人员都要么与之共事过，要么与之有过较多人际交集，几乎不可能找出完全无利益冲突的成员。此外，鉴于抄袭证据属于白纸黑字，也从规章制定之初就被声明过属于零容忍的社群底线，此案本应最没有争议。我们当时并不认为有回避必要，也并不认为有完全回避的可能性，因此认为以常规流程处置便可。
 
-在前两篇被查实和用户封禁之后，我本人因各种原因退出后续处理，并由[![Areyoucrazytom](http://www.wikidot.com/avatar.php?userid=1476662&size=small&timestamp=1762690156)](http://www.wikidot.com/user:info/areyoucrazytom)[Areyoucrazytom](http://www.wikidot.com/user:info/areyoucrazytom)接手第三篇的处置。此事件也令我深刻认识到，网站事务上或应当设立更系统的回避机制，以保护案件本身、当事人以及相关站务。
+在前两篇被查实和用户封禁之后，我本人因各种原因退出后续处理，并由[Areyoucrazytom](http://www.wikidot.com/user:info/areyoucrazytom)接手第三篇的处置。此事件也令我深刻认识到，网站事务上或应当设立更系统的回避机制，以保护案件本身、当事人以及相关站务。
 
 **Q：**此案是否从快从严了？
 
@@ -154,16 +168,18 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 《[反抄袭政策](https://scp-wiki-cn.wikidot.com/anti-plagiarism-policy)》中提到的对于批量抄袭之作者的处分是：
 
 > 对经证实累计有多于一篇作品抄袭的作者，删除涉及抄袭的全部作品，对其行为予以全站公告，**移除其作者个人页面、作者页连接。对作者本人予以永封处分。**
+>
 > 若经证实有三篇以上作品存在抄袭的，视为该作者存在大批量抄袭行为，对其现存**所有作品添加“原创性待查”标签，移至 Reviewing 分类**，并对此处置予以全站公告。若有作品占用 CN 原创主列表编号，它将被从主列表腾退。……某篇作品被从主列表腾退，而它先前的编号在这期间有了新的投稿，那么该作品在回到主列表时必须重新选择编号。
 
-[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1762690156)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)的永久封禁在此应用了同等标准。
+[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)的永久封禁在此应用了同等标准。
+
 其实际查实抄袭篇数为三篇，但我们并未移除作者页链接，也没有腾退其所有篇目并移到其他分类，而是在不做任何编辑的情况下原位调查，使得这些篇目在调查前后可以完全不受干扰地被展示。**已经属于从轻处理**。
 
 该作者也仍然持有沙盒站的编辑资格并继续发布内容。
 
 在检查中我们发现用户有其他多篇作品也存在不当引用现象，但并未进一步追究。这些内容本应进行公示。现一并公布如下：
 
-\[展开完整调查结果\]
+[展开完整调查结果]
 
 [彷徨](http://scp-wiki-cn.wikidot.com/panghuang)
 
@@ -192,11 +208,11 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 
 此外，还有一篇现存文章的旧版本文本照搬一篇非 CC 小说，作者在作者帖宣称“使用该小说的情节”，但并未提及引用。在两年后，作者自行修改了照搬的部分并重新创作，并在作者帖声明了引用之事。这也被认为属于合理的补救措施，而无需追究。
 
-\[展开完整调查结果结束\]
+[展开完整调查结果结束]
 
 综上，尽管上述引用内容已尽可能从轻认定，但我们认为该作者的抄袭行为表现出了系统性和连续性，而非勉强满足标准即被“从快从严”。
 
-“2 篇即永封”之标准是依照 2018 年的[![Lee Knight](http://www.wikidot.com/avatar.php?userid=8183389&size=small&timestamp=1762690156)](http://www.wikidot.com/user:info/lee-knight)[Lee Knight](http://www.wikidot.com/user:info/lee-knight)案作为判例依据而制定，[链接见此](http://05command-cn.wikidot.com/forum/t-6798398/lee-knight)。该案恰恰是[![Hannah_AI](http://www.wikidot.com/avatar.php?userid=3082326&size=small&timestamp=1762690156)](http://www.wikidot.com/user:info/hannah-ai)[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)本人所主理。我们尊重其为社区原创性做出的努力，并希望秉持同样的标准。
+“2 篇即永封”之标准是依照 2018 年的[Lee Knight](http://www.wikidot.com/user:info/lee-knight)案作为判例依据而制定，[链接见此](http://05command-cn.wikidot.com/forum/t-6798398/lee-knight)。该案恰恰是[Hannah_AI](http://www.wikidot.com/user:info/hannah-ai)本人所主理。我们尊重其为社区原创性做出的努力，并希望秉持同样的标准。
 
 **Q：**为什么当时信息不透明？为什么现在又写那么详细？
 
@@ -213,6 +229,8 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 迄今为止，并无颠覆抄袭事实的抗辩意见被提出，因此仍维持原本认定不变。
 
 后续仍接受各方抗辩或质疑意见，但请通过正式渠道提交。
+
+{{< /details >}}
 
 ---
 
@@ -326,7 +344,7 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 
 如果任何人有希望补充在下面的内容，请通过页面上提供的 Email 地址联系网站管理员。
 
-## 补充
+## 补充（按时间顺序）
 
 ### 来自`9c5a446d78`
 
@@ -334,12 +352,18 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 
 ### 来自匿名评论`b23ff89e-7fdb-4b38-8b67-99620f878db4`
 
+{{< details 展开 >}}
+
 ```plain
 我必须得说，这可能是第一篇系统性整理Hannah被封禁前后历史的文章，而床角（既SKIP—创作交流，QQ唯一的半官方群聊（虽然中分站点不承认，但是事实如此））中绝大多数人对此讳莫如深，余下人支支吾吾，与作者莫大的勇气形成了鲜明对比
 在这里向文章作者们表示敬意，他们为后来人指明了道路
 ```
 
+{{< /details >}}
+
 ### 来自匿名评论`nobody`
+
+{{< details 展开 >}}
 
 ```plain
 感叹.
@@ -356,7 +380,11 @@ Hannah博士与她的创作者究竟发生了什么？ 为何被莫名封禁？
 这么看 实在是难以对照上其作品与行为了
 ```
 
+{{< /details >}}
+
 ### 来自匿名评论`d2480e96-8c63-4344-9c3c-40f8bcb3feca`
+
+{{< details 展开 >}}
 
 ```plain
 我希望对此事进行一些补充
@@ -441,3 +469,5 @@ Q：为什么当时信息不透明？为什么现在又写那么详细？
 类似的事情出现到底会怎么样，2165已经是一个很好的例子了，当时可是闹的人心惶惶，还是不要这样为妙。
 不过现在许多新人涌入，可能这件事的争议性会下降许多
 ```
+
+{{< /details >}}
