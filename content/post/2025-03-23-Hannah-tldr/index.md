@@ -17,6 +17,8 @@ title: 【站务回应】SCP 基金会中文站作者 Hannah_AI 的封禁争议
 
 我们推荐您在[05command-cn.wikidot.com](http://05command-cn.wikidot.com/forum/t-15088930/hannah-ai)阅读原始格式的回应。
 
+无论如何，我个人恳请有关各方在消除疑问和保障透明性的目标下，尽可能减少对任何实际的人的伤害。
+
 > 对于部分疑问和抗辩意见，由于其和规则本身无关/没有通过正式渠道提交，原本也被认为无回复必要。但事实证明，这并非消除疑问和保障透明性的方式。（[W Asriel](http://www.wikidot.com/user:info/w-asriel)，4 Nov 2025）
 
 在下面摘抄完整的站务回应以供参考：
