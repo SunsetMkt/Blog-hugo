@@ -50,6 +50,8 @@ export function linkHandler(e) {
 
 export function addEventListeners() {
     document.addEventListener("click", linkHandler);
+
+    /** 
     document.addEventListener("auxclick", function (e) {
         if (e.button === 1) {
             // Middle Mouse Button
@@ -57,4 +59,5 @@ export function addEventListeners() {
         }
         return;
     });
+    */
 }
