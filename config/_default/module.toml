@@ -10,5 +10,5 @@ path = "github.com/CaiJimmy/hugo-theme-stack/v4"
 [[imports]]
 path = "github.com/mfg92/hugo-shortcode-gallery"
 
-[[imports]]
-path = "github.com/KKKZOZ/hugo-admonitions"
+# [[imports]]
+# path = "github.com/KKKZOZ/hugo-admonitions"

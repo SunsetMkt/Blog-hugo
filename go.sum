@@ -1,6 +1,4 @@
-github.com/CaiJimmy/hugo-theme-stack/v4 v4.0.0-beta.5 h1:CezJinFPotrNCrOla1qsZEe5YlO8zEzzNYViCAIFLvA=
-github.com/CaiJimmy/hugo-theme-stack/v4 v4.0.0-beta.5/go.mod h1:6SWZIQIut6uVjxhLraexYzgtdNDrod0xnfM/to6D/1I=
-github.com/KKKZOZ/hugo-admonitions v0.11.4 h1:DB/PEKrZqU1tymA9w+2Id45QT3gExO8BDvQCvv4/jaQ=
-github.com/KKKZOZ/hugo-admonitions v0.11.4/go.mod h1:4PsJAsqo3mS3VzAtDLa8k0ds+CJQUWZhAo9kLi1NRlM=
+github.com/CaiJimmy/hugo-theme-stack/v4 v4.0.0-beta.6 h1:QA+XPmZCeEVanXH4OANRtJbB6nA6g65tSpUfS8NwN/o=
+github.com/CaiJimmy/hugo-theme-stack/v4 v4.0.0-beta.6/go.mod h1:6SWZIQIut6uVjxhLraexYzgtdNDrod0xnfM/to6D/1I=
 github.com/mfg92/hugo-shortcode-gallery v1.3.0 h1:7wiUUu7adN3JbcshZfZ+Q0ZLDilPoGkquoor0ZcdJVU=
 github.com/mfg92/hugo-shortcode-gallery v1.3.0/go.mod h1:SEdbeBGSMX2lP+4nCqqy9AyTWWktUMWXYnR3r1l01Rw=

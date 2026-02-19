@@ -5,7 +5,6 @@ tags:
     - 信息技术
 slug: general-writing-laws
 title: 通用写作律法：多语言、领域混编，模块化的书写规范
-mermaid: true
 math: true
 ---
 
