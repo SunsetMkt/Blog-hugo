@@ -1,0 +1,20 @@
+---
+title: Pagefind
+date: 2026-02-19
+slug: pagefind
+---
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener("DOMContentLoaded", (event) => {
+        new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            pageSize: 10,
+            showImages: false,
+            // resetStyles: false,
+        });
+    });
+</script>

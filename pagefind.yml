@@ -1,0 +1,10 @@
+# pagefind.yml
+# https://pagefind.app/docs/config-sources/
+# Pagefind title polyfill
+# <span data-pagefind-meta="title" style="display: none;">{{ .Title }}</span>
+site: public
+output_subdir: pagefind
+root_selector: article
+force_language: zh
+write_playground: true
+verbose: true

@@ -83,21 +83,30 @@ main() {
   hugo --minify --gc --logLevel debug --templateMetrics --templateMetricsHints --enableGitInfo --printI18nWarnings --printPathWarnings --printUnusedTemplates
 
   # Remove files larger than 25MB for Cloudflare limits
+  echo "Removing files larger than 25MB..."
   find public -type f -size +25M -print -exec rm -vf {} \;
 
   # Copy _headers
+  echo "Copying _headers..."
   cp _headers public/_headers
 
   # Copy _redirects
+  echo "Copying _redirects..."
   cp _redirects public/_redirects
+
+  # Build Pagefind index
+  echo "Building Pagefind index..."
+  npm run pagefind
 
   # Generate file list
   # find public -type f -printf '%P\n' > public/filelist.txt
   # UTF-8 BOM
+  echo "Generating file list..."
   { printf '\xEF\xBB\xBF'; find public -type f -printf '%P\n'; } > public/filelist.txt
 
   # Generate SHA256 file list
   # UTF-8 BOM
+  echo "Generating SHA256 file list..."
   {
     printf '\xEF\xBB\xBF'
     find public -type f -print0 |
