@@ -118,6 +118,7 @@ slug: safebrowsing
         SAFE: "✅您要访问的网站可能是安全的。不过，Google 无法保证其信息全面且没有错误：一些有风险的网站可能未被识别出来，而一些安全网站也可能会被错误地识别。",
         UNKNOWN: "❓我们无法识别此网站的安全性。",
         THREAT_TYPE_UNSPECIFIED: "🚨警告 - 您要访问的网站可能有害。",
+        INSECURE_HTTP: "需要注意，此网站使用不安全的 HTTP 连接。",
     };
 
     function base64UrlEncode(str) {
@@ -216,6 +217,7 @@ slug: safebrowsing
         const originalUrl = targetUrl;
         try {
             const u = new URL(targetUrl);
+            const isHttp = u.protocol === "http:";
             targetUrl = u.toString();
         } catch (e) {
             statusEl.textContent = "❓错误：URL Hash 解码后不是有效 URL";
@@ -264,6 +266,10 @@ slug: safebrowsing
                 statusEl.textContent = "✅您要访问的网站可能是安全的";
                 // urlEl.textContent = originalUrl;
                 resultEl.textContent = threatMessages.SAFE;
+                // if isHttp, append threatMessages.INSECURE_HTTP
+                if (isHttp) {
+                    resultEl.textContent += threatMessages.INSECURE_HTTP;
+                }
                 resultEl.className = "safebrowsing-safe";
                 jumpToEl.href = originalUrl;
                 jumpToEl.style.display = "inline";
