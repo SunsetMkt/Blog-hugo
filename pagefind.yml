@@ -4,7 +4,7 @@
 # <span data-pagefind-meta="title" style="display: none;">{{ .Title }}</span>
 site: public
 output_subdir: pagefind
-root_selector: article
+root_selector: .main-article
 force_language: zh
 write_playground: true
 verbose: true
