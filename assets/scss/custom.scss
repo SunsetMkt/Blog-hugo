@@ -180,7 +180,7 @@ footer {
 
 /* https://pagefind.app/docs/ui-usage/#customising-the-styles */
 :root {
-    --pagefind-ui-font: --base-font-family;
+    --pagefind-ui-font: var(--base-font-family) !important;
 }
 
 html[data-scheme="dark"] {
