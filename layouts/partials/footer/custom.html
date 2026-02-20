@@ -53,3 +53,16 @@
 </style>
 
 <a href="/wp-login.php" class="hidden-wordpress-element">Login</a>
+
+<script type="module">
+    // https://pagefind.app/docs/highlighting/
+    let queryString = window.location.search;
+    let urlParams = new URLSearchParams(queryString);
+    let highlightString = urlParams.get("highlight");
+
+    if (highlightString) {
+        console.info("[PagefindHighlight]", highlightString);
+        await import("/pagefind/pagefind-highlight.js");
+        new PagefindHighlight({ highlightParam: "highlight" });
+    }
+</script>
