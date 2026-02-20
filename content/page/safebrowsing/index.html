@@ -215,9 +215,10 @@ slug: safebrowsing
             targetUrl = "https://" + targetUrl;
         }
         const originalUrl = targetUrl;
+        let isHttp = false;
         try {
             const u = new URL(targetUrl);
-            const isHttp = u.protocol === "http:";
+            isHttp = u.protocol === "http:";
             targetUrl = u.toString();
         } catch (e) {
             statusEl.textContent = "❓错误：URL Hash 解码后不是有效 URL";
