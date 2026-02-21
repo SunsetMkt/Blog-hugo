@@ -2,12 +2,16 @@
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="pagefindui"></div>
 <div id="legacysearch" style="display: none;">
-    <p>
-        Pagefind 索引不存在，请检查构建流程。对于一般用户，请使用<a
-            href="/legacysearch/"
-            >旧版搜索</a
-        >。
-    </p>
+    <div class="not-found-card">
+        <h1 class="article-title">Pagefind 错误</h1>
+        <h2 class="article-subtitle">
+            Pagefind 索引不存在，请检查构建流程。对于一般用户，请使用<a
+                href="/legacysearch/"
+                class="link"
+                >旧版搜索</a
+            >。
+        </h2>
+    </div>
 </div>
 <script>
     // https://kiko.io/post/Pagefind-UI-and-URL-Parameters/
