@@ -1,6 +1,14 @@
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="pagefindui"></div>
+<div id="legacysearch" style="display: none;">
+    <p>
+        Pagefind 索引不存在，请检查构建流程。对于一般用户，请使用<a
+            href="/legacysearch/"
+            >旧版搜索</a
+        >。
+    </p>
+</div>
 <script>
     // https://kiko.io/post/Pagefind-UI-and-URL-Parameters/
     // get value search parameter
@@ -9,6 +17,12 @@
     let searchString = urlParams.get("keyword");
 
     window.addEventListener("DOMContentLoaded", (event) => {
+        // Check for PagefindUI
+        if (typeof PagefindUI === "undefined") {
+            document.getElementById("legacysearch").style.display = "block";
+            return;
+        }
+
         let pagefind = new PagefindUI({
             element: "#pagefindui",
             showSubResults: true,
