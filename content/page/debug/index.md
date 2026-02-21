@@ -17,7 +17,7 @@ tags:
 
 ## 快捷链接
 
-[网站源码](https://github.com/SunsetMkt/Blog-hugo) | [主题源码](https://github.com/CaiJimmy/hugo-theme-stack) | [主题文档](https://stack.jimmycai.com/config/) | [Hugo 文档](https://gohugo.io/documentation/) | [Sitemap](/sitemap/)
+[网站源码](https://github.com/SunsetMkt/Blog-hugo) | [主题源码](https://github.com/CaiJimmy/hugo-theme-stack) | [主题文档](https://stack.jimmycai.com/config/) | [Hugo 文档](https://gohugo.io/documentation/) | [Sitemap](/sitemap/) | [Pagefind Playground](/pagefind/playground/)
 
 ## 调试功能
 
