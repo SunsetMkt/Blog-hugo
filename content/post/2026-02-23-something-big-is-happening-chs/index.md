@@ -11,6 +11,8 @@ slug: something-big-is-happening-chs
 title: 大事正在发生 Something Big Is Happening (Matt Shumer, Feb 9, 2026)
 ---
 
+> 本文内容不构成投资建议或暗示其真实性。
+
 [来源](https://shumer.dev/something-big-is-happening)，许可协议未知，`gemini-3-pro-preview`翻译。
 
 回想一下 2020 年 2 月。
