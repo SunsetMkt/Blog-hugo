@@ -5,7 +5,8 @@
     <div class="not-found-card">
         <h1 class="article-title">Pagefind 错误</h1>
         <h2 class="article-subtitle">
-            Pagefind 索引不存在，请检查构建流程。对于一般用户，请使用<a
+            Pagefind UI
+            初始化失败，请检查控制台和构建流程。对于一般用户，请使用<a
                 href="/legacysearch/"
                 class="link"
                 >旧版搜索</a
@@ -27,22 +28,28 @@
             return;
         }
 
-        let pagefind = new PagefindUI({
-            element: "#pagefindui",
-            showSubResults: true,
-            pageSize: 10,
-            showImages: false,
-            highlightParam: "highlight",
-        });
+        try {
+            let pagefind = new PagefindUI({
+                element: "#pagefindui",
+                showSubResults: true,
+                pageSize: 10,
+                showImages: false,
+                highlightParam: "highlight",
+            });
 
-        console.info("[PagefindUI]", pagefind);
+            console.info("[PagefindUI]", pagefind);
+        } catch (e) {
+            console.error("[PagefindUI]", e);
+            document.getElementById("legacysearch").style.display = "block";
+            return;
+        }
 
         if (typeof searchKeyword !== "undefined" && searchKeyword != null) {
             // searchKeyword is const by 404 page
-            console.info("[PagefindUI]", searchKeyword);
+            console.info("[PagefindUI]", "searchKeyword", searchKeyword);
             pagefind.triggerSearch(searchKeyword);
         } else if (searchString != null) {
-            console.info("[PagefindUI]", searchString);
+            console.info("[PagefindUI]", "searchString", searchString);
             pagefind.triggerSearch(searchString);
         }
     });
