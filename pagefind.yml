@@ -5,7 +5,7 @@
 site: public
 output_subdir: pagefind
 root_selector: .main-article
-force_language: zh
+force_language: zh-cn
 write_playground: true
 verbose: true
 exclude_selectors:
