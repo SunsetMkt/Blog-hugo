@@ -8,3 +8,5 @@ root_selector: .main-article
 force_language: zh
 write_playground: true
 verbose: true
+exclude_selectors:
+    - ".lnt" # Line numbers

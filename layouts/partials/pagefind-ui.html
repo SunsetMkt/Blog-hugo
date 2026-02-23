@@ -35,6 +35,18 @@
                 pageSize: 10,
                 showImages: false,
                 highlightParam: "highlight",
+                excerptLength: 40,
+                processTerm: function (term) {
+                    console.debug("[PagefindUI]", "processTerm", term);
+                    return term;
+                },
+                processResult: function (result) {
+                    console.debug("[PagefindUI]", "processResult", result);
+                    return result;
+                },
+                showEmptyFilters: true,
+                resetStyles: true,
+                autofocus: false,
             });
 
             console.info("[PagefindUI]", pagefind);
