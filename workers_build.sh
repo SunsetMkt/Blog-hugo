@@ -51,8 +51,9 @@ main() {
 
   # Install pnpm
   echo "Installing pnpm..."
-  npm install -g pnpm
-
+  npm install --global corepack@latest
+  corepack enable pnpm
+  
   # Verify installations
   echo "Verifying installations..."
   echo Dart Sass: "$(sass --version)"
