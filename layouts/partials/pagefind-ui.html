@@ -50,19 +50,19 @@
             });
 
             console.info("[PagefindUI]", pagefind);
+
+            if (typeof searchKeyword !== "undefined" && searchKeyword != null) {
+                // searchKeyword is const by 404 page
+                console.info("[PagefindUI]", "searchKeyword", searchKeyword);
+                pagefind.triggerSearch(searchKeyword);
+            } else if (searchString != null) {
+                console.info("[PagefindUI]", "searchString", searchString);
+                pagefind.triggerSearch(searchString);
+            }
         } catch (e) {
             console.error("[PagefindUI]", e);
             document.getElementById("legacysearch").style.display = "block";
             return;
-        }
-
-        if (typeof searchKeyword !== "undefined" && searchKeyword != null) {
-            // searchKeyword is const by 404 page
-            console.info("[PagefindUI]", "searchKeyword", searchKeyword);
-            pagefind.triggerSearch(searchKeyword);
-        } else if (searchString != null) {
-            console.info("[PagefindUI]", "searchString", searchString);
-            pagefind.triggerSearch(searchString);
         }
     });
 </script>
