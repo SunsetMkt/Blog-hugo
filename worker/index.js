@@ -7,10 +7,13 @@ import { handleGrpcPost, handleWebSocket } from "./workers-lite/src/index.js";
 import handleSbRequest from "./safebrowsing.js";
 import handleBombRequest from "./bomb.js";
 import handleOpenrouter from "./openrouter.js";
+import getSunsetUUID from "./SunsetUUID.js";
 
 export default {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async fetch(request, env, ctx) {
+        console.info("[Request] Incoming request received");
+        console.info(`[getSunsetUUID] ${getSunsetUUID(request)}`);
         const url = new URL(request.url);
         const pathname = url.pathname;
         const searchParams = url.searchParams;
