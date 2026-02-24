@@ -49,6 +49,10 @@ main() {
   rm "node-v${NODE_VERSION}-linux-x64.tar.xz"
   export PATH="${HOME}/.local/node-v${NODE_VERSION}-linux-x64/bin:${PATH}"
 
+  # Install pnpm
+  echo "Installing pnpm..."
+  npm install -g pnpm
+
   # Verify installations
   echo "Verifying installations..."
   echo Dart Sass: "$(sass --version)"
@@ -56,6 +60,7 @@ main() {
   echo Hugo: "$(hugo version)"
   echo Node.js: "$(node --version)"
   echo NPM: "$(npm --version)"
+  echo pnpm: "$(pnpm --version)"
 
   # Configure Git
   echo "Configuring Git..."
@@ -64,9 +69,9 @@ main() {
     git fetch --unshallow
   fi
 
-  # Install NPM dependencies
-  echo "Installing NPM dependencies..."
-  npm ci
+  # Install pnpm dependencies
+  echo "Installing pnpm dependencies..."
+  pnpm install
 
   # Install Go dependencies
   echo "Installing Go dependencies..."
