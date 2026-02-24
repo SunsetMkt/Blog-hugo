@@ -11,9 +11,9 @@
 main() {
 
   DART_SASS_VERSION=1.97.3
-  GO_VERSION=1.25.6
-  HUGO_VERSION=0.155.1
-  NODE_VERSION=24.13.0
+  GO_VERSION=1.26.0
+  HUGO_VERSION=0.156.0
+  NODE_VERSION=24.14.0
 
   export TZ=UTC
 
@@ -79,7 +79,7 @@ main() {
   echo "Installing Go dependencies..."
   hugo mod get
 
-  # Get theme version
+  # Get theme version for site footer generation
   echo "Getting theme version..."
   THEME_VERSION=$(hugo mod graph | grep hugo-theme-stack/v | sed -E 's/.*@v([0-9][^ ]*)/\1/')
   export HUGO_PARAMS_STACK_THEME_VERSION="$THEME_VERSION"
@@ -103,7 +103,7 @@ main() {
 
   # Build Pagefind index
   echo "Building Pagefind index..."
-  npm run pagefind
+  pnpm run pagefind
 
   # Generate file list
   # find public -type f -printf '%P\n' > public/filelist.txt
