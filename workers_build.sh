@@ -51,9 +51,10 @@ main() {
 
   # Install pnpm
   echo "Installing pnpm..."
+  # pnpm version is defined by packageManager in package.json
   npm install --global corepack@latest
   corepack enable pnpm
-  
+
   # Verify installations
   echo "Verifying installations..."
   echo Dart Sass: "$(sass --version)"
