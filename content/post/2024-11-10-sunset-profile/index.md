@@ -117,7 +117,7 @@ Sunset 可能使用假名，可能的中文假名包括 Zhao、Lee、Chang、Wan
 
 ## Stable Diffusion 提示词参考
 
-### 基础外观
+### 基础外观（已弃用）
 
 ```plain
 1girl,solo,portrait,(bright:1.5),(white background:1.5),(soft lighting:1.3),(light on face:1.1),labcoat,black shirt,glasses,simple background,looking at viewer,small breasts,ahoge,bangs,medium hair,closed mouth,black eyes,blonde hair,black-framed eyewear,light smile,masterpiece,best quality,highres,absurdres,
@@ -127,20 +127,38 @@ Sunset 可能使用假名，可能的中文假名包括 Zhao、Lee、Chang、Wan
 
 ### 适用于头像
 
-使用模型：[Blue Archive Flat Celluloid Style Fine-tune](https://civitai.com/models/212253/baxl-or-blue-archive-flat-celluloid-style-fine-tune-or-kohaku-d-and-animagine-xl-v3)
+模型：[WAI-illustrious-SDXL](https://civitai.com/models/827184/wai-illustrious-sdxl) Lora：[Blue archive style](https://civitai.com/models/1571191/blue-archive-style)
+
+#### Positive Prompt
 
 ```plain
-1girl,solo,portrait,(bright:1.5),(white background:1.5),(soft lighting:1.3),(light on face:1.1),labcoat,black shirt,glasses,simple background,looking at viewer,small breasts,ahoge,bangs,medium hair,closed mouth,black eyes,blonde hair,black-framed eyewear,light smile,masterpiece,best quality,highres,absurdres,
-Negative prompt: (shaded face:1.5),(shadow:1.3),(backlighting:1.2),(dark:1.1),nsfw,lowres,error,worst quality,low quality,jpeg artifacts,signature,username,blurry,chibi,text,
+Blue archive style,
+1girl, solo, portrait,
+head fully visible, no crop, centered composition,
+front view, straight-on, symmetrical face,
+looking directly at viewer,
+
+pure white background, solid white background, plain white background,
+white backdrop, seamless white background,
+
+flat lighting, evenly lit face, no facial shadow,
+
+lab coat, black shirt, black-framed glasses,
+blonde hair, medium hair, ahoge, bangs,
+black eyes, very slight smile, almost neutral expression, closed mouth,
+
+masterpiece, best quality, amazing quality
 ```
 
-### 适用于 Blue Archive 联动的半身像
-
-使用模型：[Blue Archive Flat Celluloid Style Fine-tune](https://civitai.com/models/212253/baxl-or-blue-archive-flat-celluloid-style-fine-tune-or-kohaku-d-and-animagine-xl-v3)
+#### Negative Prompt
 
 ```plain
-1girl,original,solo,portrait,upper_body,labcoat,jeans,black shirt,glasses,hand_in_pocket,looking at viewer,small breasts,ahoge,bangs,medium hair,closed mouth,black eyes,blonde hair,black-framed eyewear,light smile,mechanical halo,halo,blue sky,best quality,masterpiece,highres,absurdres,
-Negative prompt: nsfw,lowres,error,worst quality,low quality,jpeg artifacts,signature,username,blurry,chibi,text,
+bad quality, worst quality, worst detail,
+sketch, censor,
+gradient background, gray background, textured background,
+shadow on face, heavy shadow, backlighting,
+cropped head, halo,
+nsfw
 ```
 
 ## 调整
