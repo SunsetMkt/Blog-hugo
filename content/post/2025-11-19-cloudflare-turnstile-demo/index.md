@@ -17,7 +17,7 @@ title: Cloudflare Turnstile Demo
   defer
 ></script>
 <div class="cf-turnstile"
-    data-sitekey="3x00000000000000000000FF"
+    data-sitekey="0x4AAAAAAAZ0ouYIQ46lj2Up"
     data-theme="auto"
     data-size="flexible"
     data-callback="onTurnstileSuccess"
