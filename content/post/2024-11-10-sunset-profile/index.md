@@ -155,9 +155,10 @@ masterpiece, best quality, amazing quality
 ```plain
 bad quality, worst quality, worst detail,
 sketch, censor,
-gradient background, gray background, textured background,
+halo, glowing ring, floating ring, head ornament,
+gradient background, gray background,
 shadow on face, heavy shadow, backlighting,
-cropped head, halo,
+cropped head,
 nsfw
 ```
 
