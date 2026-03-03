@@ -89,8 +89,7 @@ slug: friends
 链接/URL（博客）：https://blog.sunmkt.uk/
 友情链接展示页：https://blog.sunmkt.uk/friends/
 新版图片（白色背景）：https://blog.sunmkt.uk/avatar/avatar2.png
-图片（Pride Flag 背景）：https://blog.sunmkt.uk/avatar/avatar_pride.png
-图片（透明背景）：https://blog.sunmkt.uk/avatar/avatar.png
-图片（矢量图透明背景）：https://blog.sunmkt.uk/avatar/avatar.svg
+新版图片（透明背景）：https://blog.sunmkt.uk/avatar/avatar2_alpha.png
+新版图片（矢量图透明背景）：https://blog.sunmkt.uk/avatar/avatar2.svg
 （所有图片不推荐直接引用 URL）
 ```

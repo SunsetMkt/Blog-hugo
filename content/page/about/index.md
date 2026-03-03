@@ -109,8 +109,10 @@ Sunset 的重构博客（Sunset's Refactored Blog），基于[Hugo](https://gohu
 - [Codioful (Formerly Gradienta)](https://unsplash.com/@codioful)
 - [OpenGraph Image Background](https://unsplash.com/photos/an-abstract-black-background-with-a-curved-curve-pC8e7FFONcI)
 
-### Favicon 矢量化
+### Favicon 处理和矢量化
 
+- [RealFaviconGenerator](https://realfavicongenerator.net/)
+- [Adobe Express](https://new.express.adobe.com/home/tools/remove-background)
 - [Vectorizer.AI](https://vectorizer.ai/)
 - [vectorizer.ai free download](https://greasyfork.org/zh-CN/scripts/497378-vectorizer-ai)
 
