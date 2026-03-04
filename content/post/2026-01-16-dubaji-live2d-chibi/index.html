@@ -75,6 +75,10 @@ title: 毒霸姬大头 Live2D 模型
         // Scale
         model4.scale.set(0.3);
 
+        // Position
+        model4.anchor.set(0.5, 0.5);
+        model4.position.set(app.renderer.width / 2, app.renderer.height / 2);
+
         // Controls
         // === MOUSE: Wheel Zoom ===
         app.view.addEventListener("wheel", (e) => {
