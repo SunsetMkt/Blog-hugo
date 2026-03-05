@@ -2,4 +2,4 @@
 
 [Download](https://github.com/johnfactotum/foliate-js)
 
-Version: `6b11e1744346f60504b727984f7d42f0fef3ab54`
+Version: `399248a67a8862ffb5e6463a33f9d52b317ca2eb`

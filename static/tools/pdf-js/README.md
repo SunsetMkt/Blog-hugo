@@ -2,4 +2,4 @@
 
 [Download](https://github.com/mozilla/pdf.js/releases)
 
-Version: `v5.4.530`
+Version: `v5.5.207`
