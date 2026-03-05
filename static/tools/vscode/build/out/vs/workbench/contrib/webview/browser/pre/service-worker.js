@@ -1,3 +1,544 @@
-const sw=self,VERSION=4,resourceCacheName=`vscode-resource-cache-${VERSION}`,rootPath=sw.location.pathname.replace(/\/service-worker.js$/,""),searchParams=new URL(location.toString()).searchParams,remoteAuthority=searchParams.get("remoteAuthority");let outerIframeMessagePort;const resourceBaseAuthority=searchParams.get("vscode-resource-base-authority"),perfMark=(e,t={})=>{performance.mark(`webview/service-worker/${e}`,{detail:{...t}})};perfMark("scriptStart");const resolveTimeout=3e4;class RequestStore{constructor(){this.map=new Map,this.requestPool=0}create(){const t=++this.requestPool;let s;const r=new Promise(c=>s=c),o={resolve:s,promise:r};this.map.set(t,o);const i=setTimeout(()=>{clearTimeout(i);const c=this.map.get(t);c===o&&(c.resolve({status:"timeout"}),this.map.delete(t))},resolveTimeout);return{requestId:t,promise:r}}resolve(t,s){const r=this.map.get(t);return r?(r.resolve({status:"ok",value:s}),this.map.delete(t),!0):!1}}const resourceRequestStore=new RequestStore,localhostRequestStore=new RequestStore,unauthorized=()=>new Response("Unauthorized",{status:401}),notFound=()=>new Response("Not Found",{status:404}),methodNotAllowed=()=>new Response("Method Not Allowed",{status:405}),requestTimeout=()=>new Response("Request Timeout",{status:408});sw.addEventListener("message",async e=>{if(!e.source)return;const t=e.source;switch(e.data.channel){case"version":{perfMark("version/request"),outerIframeMessagePort=e.ports[0],sw.clients.get(t.id).then(s=>{perfMark("version/reply"),s&&s.postMessage({channel:"version",version:VERSION})});return}case"did-load-resource":{const s=e.data.data;resourceRequestStore.resolve(s.id,s)||console.log("Could not resolve unknown resource",s.path);return}case"did-load-localhost":{const s=e.data.data;localhostRequestStore.resolve(s.id,s.location)||console.log("Could not resolve unknown localhost",s.origin);return}default:{console.log("Unknown message");return}}}),sw.addEventListener("fetch",e=>{const t=new URL(e.request.url);if(typeof resourceBaseAuthority=="string"&&t.protocol==="https:"&&t.hostname.endsWith("."+resourceBaseAuthority))switch(e.request.method){case"GET":case"HEAD":{const s=t.hostname.slice(0,t.hostname.length-(resourceBaseAuthority.length+1)),r=s.split("+",1)[0],o=s.slice(r.length+1);return e.respondWith(processResourceRequest(e,{scheme:r,authority:o,path:t.pathname,query:t.search.replace(/^\?/,"")}))}default:return e.respondWith(methodNotAllowed())}if(t.origin!==sw.origin&&t.host===remoteAuthority)switch(e.request.method){case"GET":case"HEAD":return e.respondWith(processResourceRequest(e,{path:t.pathname,scheme:t.protocol.slice(0,t.protocol.length-1),authority:t.host,query:t.search.replace(/^\?/,"")}));default:return e.respondWith(methodNotAllowed())}if(t.origin!==sw.origin&&t.host.match(/^(localhost|127.0.0.1|0.0.0.0):(\d+)$/))return e.respondWith(processLocalhostRequest(e,t))}),sw.addEventListener("install",e=>{e.waitUntil(sw.skipWaiting())}),sw.addEventListener("activate",e=>{e.waitUntil(sw.clients.claim())});async function processResourceRequest(e,t){let s=await sw.clients.get(e.clientId);if(!s&&(s=await getWorkerClientForId(e.clientId),!s))return console.error("Could not find inner client for request"),notFound();const r=getWebviewIdForClient(s);if(!r&&s.type!=="worker"&&s.type!=="sharedworker")return console.error("Could not resolve webview id"),notFound();const o=e.request.method==="GET",p=(n,d)=>{if(n.status==="timeout")return requestTimeout();const g={"Access-Control-Allow-Origin":"*","Cross-Origin-Resource-Policy":"cross-origin"},a=n.value;if(a.status===304)if(d){const h=d.clone();for(const[y,m]of Object.entries(g))h.headers.set(y,m);return h}else throw new Error("No cache found");if(a.status===401)return unauthorized();if(a.status!==200)return notFound();const f=a.data.byteLength,q=e.request.headers.get("range");if(q){const h=q.match(/^bytes\=(\d+)\-(\d+)?$/g);if(h){const y=Number(h[1]),m=Number(h[2])||f-1;return new Response(a.data.slice(y,m+1),{status:206,headers:{...g,"Content-range":`bytes 0-${m}/${f}`}})}else return new Response(null,{status:416,headers:{...g,"Content-range":`*/${f}`}})}const u={...g,"Content-Type":a.mime,"Content-Length":f.toString()};a.etag&&(u.ETag=a.etag,u["Cache-Control"]="no-cache"),a.mtime&&(u["Last-Modified"]=new Date(a.mtime).toUTCString());const w=new URL(e.request.url).searchParams.get("vscode-coi");w==="3"?(u["Cross-Origin-Opener-Policy"]="same-origin",u["Cross-Origin-Embedder-Policy"]="require-corp"):w==="2"?u["Cross-Origin-Embedder-Policy"]="require-corp":w==="1"&&(u["Cross-Origin-Opener-Policy"]="same-origin");const C=new Response(a.data,{status:200,headers:u});return o&&a.etag&&caches.open(resourceCacheName).then(h=>h.put(e.request,C)),C.clone()};let i;o&&(i=await(await caches.open(resourceCacheName)).match(e.request));const{requestId:c,promise:l}=resourceRequestStore.create();if(r){const n=await getOuterIframeClient(r);if(!n.length)return console.log("Could not find parent client for request"),notFound();for(const d of n)d.postMessage({channel:"load-resource",id:c,scheme:t.scheme,authority:t.authority,path:t.path,query:t.query,ifNoneMatch:i?.headers.get("ETag")})}else(s.type==="worker"||s.type==="sharedworker")&&outerIframeMessagePort?.postMessage({channel:"load-resource",id:c,scheme:t.scheme,authority:t.authority,path:t.path,query:t.query,ifNoneMatch:i?.headers.get("ETag")});return l.then(n=>p(n,i))}async function processLocalhostRequest(e,t){const s=await sw.clients.get(e.clientId);if(!s)return fetch(e.request);const r=getWebviewIdForClient(s);if(!r&&s.type!=="worker"&&s.type!=="sharedworker")return console.error("Could not resolve webview id"),fetch(e.request);const o=t.origin,p=async function(l){if(l.status!=="ok"||!l.value)return fetch(e.request);const n=l.value,d=e.request.url.replace(new RegExp(`^${t.origin}(/|$)`),`${n}$1`);return new Response(null,{status:302,headers:{Location:d}})},{requestId:i,promise:c}=localhostRequestStore.create();if(r){const l=await getOuterIframeClient(r);if(!l.length)return console.log("Could not find parent client for request"),notFound();for(const n of l)n.postMessage({channel:"load-localhost",origin:o,id:i})}else(s.type==="worker"||s.type==="sharedworker")&&outerIframeMessagePort?.postMessage({channel:"load-localhost",origin:o,id:i});return c.then(p)}function getWebviewIdForClient(e){return new URL(e.url).searchParams.get("id")}async function getOuterIframeClient(e){return(await sw.clients.matchAll({includeUncontrolled:!0})).filter(s=>{const r=new URL(s.url);return(r.pathname===`${rootPath}/`||r.pathname===`${rootPath}/index.html`||r.pathname===`${rootPath}/index-no-csp.html`)&&r.searchParams.get("id")===e})}async function getWorkerClientForId(e){const t=await sw.clients.matchAll({type:"worker"}),s=await sw.clients.matchAll({type:"sharedworker"});return[...t,...s].find(o=>o.id===e)}
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+//@ts-check
+/// <reference lib="webworker" />
 
-//# sourceMappingURL=https://main.vscode-cdn.net/sourcemaps/994fd12f8d3a5aa16f17d42c041e5809167e845a/core/vs/workbench/contrib/webview/browser/pre/service-worker.js.map
+/** @type {ServiceWorkerGlobalScope} */
+const sw = /** @type {any} */ (self);
+
+const VERSION = 4;
+
+const resourceCacheName = `vscode-resource-cache-${VERSION}`;
+
+const rootPath = sw.location.pathname.replace(/\/service-worker.js$/, '');
+
+const searchParams = new URL(location.toString()).searchParams;
+
+const remoteAuthority = searchParams.get('remoteAuthority');
+
+/** @type {MessagePort|undefined} */
+let outerIframeMessagePort;
+
+/**
+ * Origin used for resources
+ */
+const resourceBaseAuthority = searchParams.get('vscode-resource-base-authority');
+
+/**
+ * @param {string} name
+ * @param {Record<string, string>} [options]
+ */
+const perfMark = (name, options = {}) => {
+	performance.mark(`webview/service-worker/${name}`, {
+		detail: {
+			...options
+		}
+	});
+};
+
+perfMark('scriptStart');
+
+/** @type {number} */
+const resolveTimeout = 30_000;
+
+
+/**
+ * @template T
+ * @typedef {{ status: 'ok', value: T } | { status: 'timeout' }} RequestStoreResult
+ */
+
+
+/**
+ * @template T
+ * @typedef {{ resolve: (x: RequestStoreResult<T>) => void, promise: Promise<RequestStoreResult<T>> }} RequestStoreEntry
+ */
+
+
+/**
+ * @template T
+ */
+class RequestStore {
+	constructor() {
+		/** @type {Map<number, RequestStoreEntry<T>>} */
+		this.map = new Map();
+		/** @type {number} */
+		this.requestPool = 0;
+	}
+
+	/**
+	 * @returns {{ requestId: number, promise: Promise<RequestStoreResult<T>> }}
+	 */
+	create() {
+		const requestId = ++this.requestPool;
+
+		/** @type {(x: RequestStoreResult<T>) => void} */
+		let resolve;
+		const promise = new Promise(r => resolve = r);
+
+		/** @type {RequestStoreEntry<T>} */
+		const entry = { resolve, promise };
+		this.map.set(requestId, entry);
+
+		const dispose = () => {
+			clearTimeout(timeout);
+			const existingEntry = this.map.get(requestId);
+			if (existingEntry === entry) {
+				existingEntry.resolve({ status: 'timeout' });
+				this.map.delete(requestId);
+			}
+		};
+		const timeout = setTimeout(dispose, resolveTimeout);
+		return { requestId, promise };
+	}
+
+	/**
+	 * @param {number} requestId
+	 * @param {T} result
+	 * @returns {boolean}
+	 */
+	resolve(requestId, result) {
+		const entry = this.map.get(requestId);
+		if (!entry) {
+			return false;
+		}
+		entry.resolve({ status: 'ok', value: result });
+		this.map.delete(requestId);
+		return true;
+	}
+}
+
+/**
+ * Map of requested paths to responses.
+ */
+/** @type {RequestStore<ResourceResponse>} */
+const resourceRequestStore = new RequestStore();
+
+/**
+ * Map of requested localhost origins to optional redirects.
+ */
+/** @type {RequestStore<string|undefined>} */
+const localhostRequestStore = new RequestStore();
+
+const unauthorized = () =>
+	new Response('Unauthorized', { status: 401, });
+
+const notFound = () =>
+	new Response('Not Found', { status: 404, });
+
+const methodNotAllowed = () =>
+	new Response('Method Not Allowed', { status: 405, });
+
+const requestTimeout = () =>
+	new Response('Request Timeout', { status: 408, });
+
+sw.addEventListener('message', async (event) => {
+	if (!event.source) {
+		return;
+	}
+
+	/** @type {Client} */
+	const source = event.source;
+	switch (event.data.channel) {
+		case 'version': {
+			perfMark('version/request');
+			outerIframeMessagePort = event.ports[0];
+			sw.clients.get(source.id).then(client => {
+				perfMark('version/reply');
+				if (client) {
+					client.postMessage({
+						channel: 'version',
+						version: VERSION
+					});
+				}
+			});
+			return;
+		}
+		case 'did-load-resource': {
+			/** @type {ResourceResponse} */
+			const response = event.data.data;
+			if (!resourceRequestStore.resolve(response.id, response)) {
+				console.log('Could not resolve unknown resource', response.path);
+			}
+			return;
+		}
+		case 'did-load-localhost': {
+			const data = event.data.data;
+			if (!localhostRequestStore.resolve(data.id, data.location)) {
+				console.log('Could not resolve unknown localhost', data.origin);
+			}
+			return;
+		}
+		default: {
+			console.log('Unknown message');
+			return;
+		}
+	}
+});
+
+sw.addEventListener('fetch', (event) => {
+	const requestUrl = new URL(event.request.url);
+	if (typeof resourceBaseAuthority === 'string' && requestUrl.protocol === 'https:' && requestUrl.hostname.endsWith('.' + resourceBaseAuthority)) {
+		switch (event.request.method) {
+			case 'GET':
+			case 'HEAD': {
+				const firstHostSegment = requestUrl.hostname.slice(0, requestUrl.hostname.length - (resourceBaseAuthority.length + 1));
+				const scheme = firstHostSegment.split('+', 1)[0];
+				const authority = firstHostSegment.slice(scheme.length + 1); // may be empty
+				return event.respondWith(processResourceRequest(event, {
+					scheme,
+					authority,
+					path: requestUrl.pathname,
+					query: requestUrl.search.replace(/^\?/, ''),
+				}));
+			}
+			default: {
+				return event.respondWith(methodNotAllowed());
+			}
+		}
+	}
+
+	// If we're making a request against the remote authority, we want to go
+	// through VS Code itself so that we are authenticated properly.  If the
+	// service worker is hosted on the same origin we will have cookies and
+	// authentication will not be an issue.
+	if (requestUrl.origin !== sw.origin && requestUrl.host === remoteAuthority) {
+		switch (event.request.method) {
+			case 'GET':
+			case 'HEAD': {
+				return event.respondWith(processResourceRequest(event, {
+					path: requestUrl.pathname,
+					scheme: requestUrl.protocol.slice(0, requestUrl.protocol.length - 1),
+					authority: requestUrl.host,
+					query: requestUrl.search.replace(/^\?/, ''),
+				}));
+			}
+			default: {
+				return event.respondWith(methodNotAllowed());
+			}
+		}
+	}
+
+	// See if it's a localhost request
+	if (requestUrl.origin !== sw.origin && requestUrl.host.match(/^(localhost|127.0.0.1|0.0.0.0):(\d+)$/)) {
+		return event.respondWith(processLocalhostRequest(event, requestUrl));
+	}
+});
+
+sw.addEventListener('install', (event) => {
+	event.waitUntil(sw.skipWaiting()); // Activate worker immediately
+});
+
+sw.addEventListener('activate', (event) => {
+	event.waitUntil(sw.clients.claim()); // Become available to all pages
+});
+
+
+/**
+ * @typedef {Object} ResourceRequestUrlComponents
+ * @property {string} scheme
+ * @property {string} authority
+ * @property {string} path
+ * @property {string} query
+ */
+
+/**
+ * @param {FetchEvent} event
+ * @param {ResourceRequestUrlComponents} requestUrlComponents
+ * @returns {Promise<Response>}
+ */
+async function processResourceRequest(
+	event,
+	requestUrlComponents
+) {
+	let client = await sw.clients.get(event.clientId);
+	if (!client) {
+		client = await getWorkerClientForId(event.clientId);
+		if (!client) {
+			console.error('Could not find inner client for request');
+			return notFound();
+		}
+	}
+
+	const webviewId = getWebviewIdForClient(client);
+
+	// Refs https://github.com/microsoft/vscode/issues/244143
+	// With PlzDedicatedWorker, worker subresources and blob wokers
+	// will use clients different from the window client.
+	// Since we cannot different a worker main resource from a worker subresource
+	// we will use message channel to the outer iframe provided at the time
+	// of service worker controller version initialization.
+	if (!webviewId && client.type !== 'worker' && client.type !== 'sharedworker') {
+		console.error('Could not resolve webview id');
+		return notFound();
+	}
+
+	const shouldTryCaching = (event.request.method === 'GET');
+
+	/**
+	 * @param {RequestStoreResult<ResourceResponse>} result
+	 * @param {Response|undefined} cachedResponse
+	 * @returns {Response}
+	 */
+	const resolveResourceEntry = (result, cachedResponse) => {
+		if (result.status === 'timeout') {
+			return requestTimeout();
+		}
+
+		/** @type {Record<string, string>} */
+		const accessControlHeaders = {
+			'Access-Control-Allow-Origin': '*',
+			'Cross-Origin-Resource-Policy': 'cross-origin',
+		};
+
+		const entry = result.value;
+		if (entry.status === 304) { // Not modified
+			if (cachedResponse) {
+				const r = cachedResponse.clone();
+				for (const [key, value] of Object.entries(accessControlHeaders)) {
+					r.headers.set(key, value);
+				}
+				return r;
+			} else {
+				throw new Error('No cache found');
+			}
+		}
+
+		if (entry.status === 401) {
+			return unauthorized();
+		}
+
+		if (entry.status !== 200) {
+			return notFound();
+		}
+
+		const byteLength = entry.data.byteLength;
+
+		const range = event.request.headers.get('range');
+		if (range) {
+			// To support seeking for videos, we need to handle range requests
+			const bytes = range.match(/^bytes\=(\d+)\-(\d+)?$/g);
+			if (bytes) {
+				// TODO: Right now we are always reading the full file content. This is a bad idea
+				// for large video files :)
+
+				const start = Number(bytes[1]);
+				const end = Number(bytes[2]) || byteLength - 1;
+				return new Response(entry.data.slice(start, end + 1), {
+					status: 206,
+					headers: {
+						...accessControlHeaders,
+						'Content-range': `bytes 0-${end}/${byteLength}`,
+					}
+				});
+			} else {
+				// We don't understand the requested bytes
+				return new Response(null, {
+					status: 416,
+					headers: {
+						...accessControlHeaders,
+						'Content-range': `*/${byteLength}`
+					}
+				});
+			}
+		}
+
+		/** @type {Record<string, string>} */
+		const headers = {
+			...accessControlHeaders,
+			'Content-Type': entry.mime,
+			'Content-Length': byteLength.toString(),
+		};
+
+		if (entry.etag) {
+			headers['ETag'] = entry.etag;
+			headers['Cache-Control'] = 'no-cache';
+		}
+		if (entry.mtime) {
+			headers['Last-Modified'] = new Date(entry.mtime).toUTCString();
+		}
+
+		// support COI requests, see network.ts#COI.getHeadersFromQuery(...)
+		const coiRequest = new URL(event.request.url).searchParams.get('vscode-coi');
+		if (coiRequest === '3') {
+			headers['Cross-Origin-Opener-Policy'] = 'same-origin';
+			headers['Cross-Origin-Embedder-Policy'] = 'require-corp';
+		} else if (coiRequest === '2') {
+			headers['Cross-Origin-Embedder-Policy'] = 'require-corp';
+		} else if (coiRequest === '1') {
+			headers['Cross-Origin-Opener-Policy'] = 'same-origin';
+		}
+
+		const response = new Response(entry.data, {
+			status: 200,
+			headers
+		});
+
+		if (shouldTryCaching && entry.etag) {
+			caches.open(resourceCacheName).then(cache => {
+				return cache.put(event.request, response);
+			});
+		}
+		return response.clone();
+	};
+
+	/** @type {Response|undefined} */
+	let cached;
+	if (shouldTryCaching) {
+		const cache = await caches.open(resourceCacheName);
+		cached = await cache.match(event.request);
+	}
+
+	const { requestId, promise } = resourceRequestStore.create();
+
+	if (webviewId) {
+		const parentClients = await getOuterIframeClient(webviewId);
+		if (!parentClients.length) {
+			console.log('Could not find parent client for request');
+			return notFound();
+		}
+
+		for (const parentClient of parentClients) {
+			parentClient.postMessage({
+				channel: 'load-resource',
+				id: requestId,
+				scheme: requestUrlComponents.scheme,
+				authority: requestUrlComponents.authority,
+				path: requestUrlComponents.path,
+				query: requestUrlComponents.query,
+				ifNoneMatch: cached?.headers.get('ETag'),
+			});
+		}
+	} else if (client.type === 'worker' || client.type === 'sharedworker') {
+		outerIframeMessagePort?.postMessage({
+			channel: 'load-resource',
+			id: requestId,
+			scheme: requestUrlComponents.scheme,
+			authority: requestUrlComponents.authority,
+			path: requestUrlComponents.path,
+			query: requestUrlComponents.query,
+			ifNoneMatch: cached?.headers.get('ETag'),
+		});
+	}
+
+	return promise.then(entry => resolveResourceEntry(entry, cached));
+}
+
+/**
+ * @param {FetchEvent} event
+ * @param {URL} requestUrl
+ * @returns {Promise<Response>}
+ */
+async function processLocalhostRequest(
+	event,
+	requestUrl
+) {
+	const client = await sw.clients.get(event.clientId);
+	if (!client) {
+		// This is expected when requesting resources on other localhost ports
+		// that are not spawned by vs code
+		return fetch(event.request);
+	}
+	const webviewId = getWebviewIdForClient(client);
+	// Refs https://github.com/microsoft/vscode/issues/244143
+	// With PlzDedicatedWorker, worker subresources and blob wokers
+	// will use clients different from the window client.
+	// Since we cannot different a worker main resource from a worker subresource
+	// we will use message channel to the outer iframe provided at the time
+	// of service worker controller version initialization.
+	if (!webviewId && client.type !== 'worker' && client.type !== 'sharedworker') {
+		console.error('Could not resolve webview id');
+		return fetch(event.request);
+	}
+
+	const origin = requestUrl.origin;
+
+	/**
+	 * @param {RequestStoreResult<string|undefined>} result
+	 * @returns {Promise<Response>}
+	 */
+	const resolveRedirect = async function (result) {
+		if (result.status !== 'ok' || !result.value) {
+			return fetch(event.request);
+		}
+
+		const redirectOrigin = result.value;
+		const location = event.request.url.replace(new RegExp(`^${requestUrl.origin}(/|$)`), `${redirectOrigin}$1`);
+		return new Response(null, {
+			status: 302,
+			headers: {
+				Location: location
+			}
+		});
+	};
+
+	const { requestId, promise } = localhostRequestStore.create();
+	if (webviewId) {
+		const parentClients = await getOuterIframeClient(webviewId);
+		if (!parentClients.length) {
+			console.log('Could not find parent client for request');
+			return notFound();
+		}
+		for (const parentClient of parentClients) {
+			parentClient.postMessage({
+				channel: 'load-localhost',
+				origin: origin,
+				id: requestId,
+			});
+		}
+	} else if (client.type === 'worker' || client.type === 'sharedworker') {
+		outerIframeMessagePort?.postMessage({
+			channel: 'load-localhost',
+			origin: origin,
+			id: requestId,
+		});
+	}
+
+	return promise.then(resolveRedirect);
+}
+
+/**
+ * @param {Client} client
+ * @returns {string|null}
+ */
+function getWebviewIdForClient(client) {
+	const requesterClientUrl = new URL(client.url);
+	return requesterClientUrl.searchParams.get('id');
+}
+
+/**
+ * @param {string} webviewId
+ * @returns {Promise<Client[]>}
+ */
+async function getOuterIframeClient(webviewId) {
+	const allClients = await sw.clients.matchAll({ includeUncontrolled: true });
+	return allClients.filter(client => {
+		const clientUrl = new URL(client.url);
+		const hasExpectedPathName = (clientUrl.pathname === `${rootPath}/` || clientUrl.pathname === `${rootPath}/index.html` || clientUrl.pathname === `${rootPath}/index-no-csp.html`);
+		return hasExpectedPathName && clientUrl.searchParams.get('id') === webviewId;
+	});
+}
+
+/**
+ * @param {string} clientId
+ * @returns {Promise<Client|undefined>}
+ */
+async function getWorkerClientForId(clientId) {
+	const allDedicatedWorkerClients = await sw.clients.matchAll({ type: 'worker' });
+	const allSharedWorkerClients = await sw.clients.matchAll({ type: 'sharedworker' });
+	const allWorkerClients = [...allDedicatedWorkerClients, ...allSharedWorkerClients];
+	return allWorkerClients.find(client => {
+		return client.id === clientId;
+	});
+}
+
+
+/**
+ * @typedef {(
+ *   | { readonly status: 200, id: number, path: string, mime: string, data: Uint8Array, etag: string|undefined, mtime: number|undefined }
+ *   | { readonly status: 304, id: number, path: string, mime: string, mtime: number|undefined }
+ *   | { readonly status: 401, id: number, path: string }
+ *   | { readonly status: 404, id: number, path: string }
+ * )} ResourceResponse
+ */
