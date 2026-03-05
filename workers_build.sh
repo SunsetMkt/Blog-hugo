@@ -75,9 +75,10 @@ main() {
   echo "Installing pnpm dependencies..."
   pnpm install
 
-  # Install Go dependencies
-  echo "Installing Go dependencies..."
-  hugo mod get
+  # Install Hugo dependencies
+  echo "Installing Hugo dependencies..."
+  # hugo mod get
+  hugo mod tidy
 
   # Get theme version for site footer generation
   echo "Getting theme version..."
