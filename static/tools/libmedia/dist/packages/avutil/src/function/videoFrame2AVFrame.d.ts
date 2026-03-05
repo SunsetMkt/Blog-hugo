@@ -4,4 +4,4 @@ export declare function mapPixelFormat(format: VideoPixelFormat): AVPixelFormat;
 export declare function mapColorSpace(colorSpace: VideoMatrixCoefficients): AVColorSpace;
 export declare function mapColorPrimaries(colorPrimaries: VideoColorPrimaries): AVColorPrimaries;
 export declare function mapColorTrc(colorTrc: VideoTransferCharacteristics): AVColorTransferCharacteristic;
-export declare function videoFrame2AVFrame(videoFrame: VideoFrame, avframe?: pointer<AVFrame>): Promise<pointer<AVFrame>>;
+export declare function videoFrame2AVFrame<T extends pointer<AVFrame> = pointer<AVFrame>>(videoFrame: VideoFrame, avframe?: T): Promise<T>;

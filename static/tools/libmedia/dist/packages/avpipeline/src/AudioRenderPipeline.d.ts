@@ -1,5 +1,5 @@
 import { IPCPort } from '@libmedia/common/network';
-import { type AVFrameRef, AVFramePoolImpl, type AVPCMBuffer, type AVPCMBufferRef, type AVSampleFormat } from '@libmedia/avutil';
+import { type AVFrameRef, AVFramePoolImpl, AVSampleFormat, type AVPCMBuffer, type AVPCMBufferRef } from '@libmedia/avutil';
 import { type WebAssemblyResource, type Mutex, type List } from '@libmedia/cheap';
 import { WorkerSetTimeout, MasterTimer } from '@libmedia/common/timer';
 import { Resampler } from '@libmedia/audioresample';
@@ -27,7 +27,7 @@ type SelfTask = AudioRenderTaskOptions & {
     resamplerResource: WebAssemblyResource;
     stretchpitcherResource: WebAssemblyResource;
     resampler: Resampler;
-    stretchpitcher: Map<int32, StretchPitcher>;
+    stretchpitcher: StretchPitcher;
     outPCMBuffer: AVPCMBuffer;
     waitPCMBuffer: pointer<AVPCMBufferRef>;
     waitPCMBufferPos: int32;
@@ -56,6 +56,8 @@ type SelfTask = AudioRenderTaskOptions & {
     fakePlay: boolean;
     lastRenderTimestamp: number;
     avframePool: AVFramePoolImpl;
+    outputInterleavedData: pointer<float>;
+    outputInterleavedSize: int32;
 };
 export default class AudioRenderPipeline extends Pipeline {
     tasks: Map<string, SelfTask>;

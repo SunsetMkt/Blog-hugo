@@ -69,4 +69,4 @@ export interface AC3HeaderInfo {
     channelLayout: uint64;
     ac3BitrateCode: int8;
 }
-export declare function parseHeader(buf: Uint8ArrayInterface): -3 | -5 | -1 | -4 | -2 | -7 | -6 | AC3HeaderInfo;
+export declare function parseHeader(buf: Uint8ArrayInterface): -5 | -3 | -1 | -4 | -2 | -7 | -6 | AC3HeaderInfo;

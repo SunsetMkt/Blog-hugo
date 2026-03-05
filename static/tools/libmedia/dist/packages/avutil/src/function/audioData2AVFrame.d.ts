@@ -1,2 +1,2 @@
 import type AVFrame from '../struct/avframe';
-export declare function audioData2AVFrame(audioData: AudioData, avframe?: pointer<AVFrame>): pointer<AVFrame>;
+export declare function audioData2AVFrame<T extends pointer<AVFrame> = pointer<AVFrame>>(audioData: AudioData, avframe?: T): T;
