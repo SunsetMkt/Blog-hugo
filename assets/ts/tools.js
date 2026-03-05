@@ -1,4 +1,4 @@
-import confetti from "canvas-confetti";
+import confetti from "canvas-confetti/dist/confetti.module.mjs";
 
 /**
  * 通过尝试为逐级上升的域名设置 cookie 来推断“可写的根域名”。
