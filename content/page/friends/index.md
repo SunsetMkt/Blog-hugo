@@ -90,6 +90,7 @@ slug: friends
 友情链接展示页：https://blog.sunmkt.uk/friends/
 新版图片（白色背景）：https://blog.sunmkt.uk/avatar/avatar2.png
 新版图片（透明背景）：https://blog.sunmkt.uk/avatar/avatar2_alpha.png
+新版图片（Intersex-inclusive Pride Flag 背景）：https://blog.sunmkt.uk/avatar/avatar2_pride.png
 新版图片（矢量图透明背景）：https://blog.sunmkt.uk/avatar/avatar2.svg
 （所有图片不推荐直接引用 URL）
 ```
