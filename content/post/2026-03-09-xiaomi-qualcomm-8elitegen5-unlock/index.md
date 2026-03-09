@@ -29,3 +29,12 @@ title: Xiaomi/Redmi 8 Elite Gen 5 的 Bootloader 解锁漏洞
 此文件仅用于记录，不暗示安全性：[小米骁龙 8E5 一键解锁 BL.zip](./小米骁龙8E5一键解锁BL.zip)
 
 仅适用于 2 月补丁前的 Xiaomi/Redmi 8 Elite Gen 5 设备。
+
+相关 PoC：[qualcomm_gbl_exploit_poc](github.com/hicode002/qualcomm_gbl_exploit_poc)
+
+核心 Exploit 命令速览：
+
+```bash
+fastboot oem set-gpu-preemption-value 0 androidboot.selinux=permissive
+adb shell service call miui.mqsas.IMQSNative 21 i32 1 s16 "dd" i32 1 s16 'if=/data/local/tmp/linuxloader_unlock.efi of=/dev/block/by-name/efisp' s16 '/data/mqsas/log.txt' i32 60
+```
