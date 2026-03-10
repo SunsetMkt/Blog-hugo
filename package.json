@@ -1,6 +1,7 @@
 {
     "name": "sunset-blog-hugo",
     "description": "Blog refactored.",
+    "private": true,
     "devDependencies": {
         "@eslint/css": "^0.14.1",
         "@eslint/js": "^10.0.1",
