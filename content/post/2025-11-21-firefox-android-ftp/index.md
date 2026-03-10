@@ -13,6 +13,9 @@ title: Firefox Android APK 的下载链接
 <div>
     <div id="fenix-ftp-links"></div>
     <script>
+        function deepcopy(obj) {
+            return JSON.parse(JSON.stringify(obj));
+        }
         const version_json =
             "https://product-details.mozilla.org/1.0/mobile_versions.json";
         const universal_template =
@@ -23,11 +26,11 @@ title: Firefox Android APK 的下载链接
             .then((response) => response.json())
             .then((data) => {
                 const version = data.version;
-                const universal = universal_template.replace(
+                const universal = deepcopy(universal_template).replaceAll(
                     "{version}",
                     version,
                 );
-                const arm64 = arm64_template.replace("{version}", version);
+                const arm64 = deepcopy(arm64_template).replaceAll("{version}", version);
                 const links_div = document.getElementById("fenix-ftp-links");
                 const universal_link = document.createElement("a");
                 universal_link.textContent = universal;
