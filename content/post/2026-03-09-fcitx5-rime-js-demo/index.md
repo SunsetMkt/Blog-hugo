@@ -10,6 +10,8 @@ title: fcitx5-rime.js Demo
 
 [Source](https://github.com/rimeinn/fcitx5-rime.js)
 
+`Ctrl + ~` 切换输入方式
+
 <script type="module">
   import { loadZip } from "./Fcitx5.js"
   await loadZip('./artifact.zip')
