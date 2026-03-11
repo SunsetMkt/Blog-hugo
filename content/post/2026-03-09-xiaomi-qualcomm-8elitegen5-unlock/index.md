@@ -30,7 +30,7 @@ title: Xiaomi/Redmi 8 Elite Gen 5 的 Bootloader 解锁漏洞
 
 仅适用于 2 月补丁前的 Xiaomi/Redmi 8 Elite Gen 5 设备。
 
-相关 PoC：[qualcomm_gbl_exploit_poc](github.com/hicode002/qualcomm_gbl_exploit_poc)
+相关 PoC：[qualcomm_gbl_exploit_poc](https://github.com/hicode002/qualcomm_gbl_exploit_poc)
 
 核心 Exploit 命令速览：
 
