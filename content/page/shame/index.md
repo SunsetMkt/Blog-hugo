@@ -28,3 +28,12 @@ slug: shame
 - [GNU 的《专有软件常常是恶意软件》](https://www.gnu.org/proprietary/proprietary.html)
 - [BootLoader 解锁耻辱柱](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame)
 - [各 Android 手机厂商 Bootloader 解锁 / 内核开源 / 解锁后保修情况](https://github.com/KHwang9883/MobileModels/blob/master/misc/bootloader-kernel-source.md)
+
+## 其他
+
+“其他”列表中包含了参与或实施侵犯人权的罪行但与 IT 不密切相关的组织。
+
+针对此类罪行，列表很可能会针对特定个人。列表没有排序，不分先后。
+
+- [中山大学孙逸仙纪念医院](https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E5%AD%99%E9%80%B8%E4%BB%99%E7%BA%AA%E5%BF%B5%E5%8C%BB%E9%99%A2)（[宋尔卫](https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%B0%94%E5%8D%AB)、[苏士成](https://zh.wikipedia.org/wiki/%E8%8B%8F%E5%A3%AB%E6%88%90)） - [中山二院乳腺外科患癌事件](https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E4%BA%8C%E9%99%A2%E4%B9%B3%E8%85%BA%E5%A4%96%E7%A7%91%E6%82%A3%E7%99%8C%E4%BA%8B%E4%BB%B6)
+- [中南大学湘雅医院](https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B9%98%E9%9B%85%E5%8C%BB%E9%99%A2)（[谷文萍](https://baike.baidu.com/item/%E8%B0%B7%E6%96%87%E8%90%8D/15783783)） - [3·14 长沙研究生坠江事件](https://baike.baidu.com/item/3%C2%B714%E9%95%BF%E6%B2%99%E7%A0%94%E7%A9%B6%E7%94%9F%E5%9D%A0%E6%B1%9F%E4%BA%8B%E4%BB%B6/67497192)
