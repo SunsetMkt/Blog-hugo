@@ -1,0 +1,25 @@
+{{- $src := .Get "src" | default (.Get 0) -}}
+{{ $uniqueID := substr ($src | md5) 0 8 }}
+<div class="midi-links">
+    <p>
+        <code>{{ $src | safeHTML }}</code>
+        |
+        <a href="{{- $src -}}" download>下载 MIDI</a>
+    </p>
+</div>
+<div class="midi-wrapper">
+    <!-- https://github.com/cifkao/html-midi-player -->
+    <script src="https://unpkg.com/tone@15.1.22/build/Tone.js"></script>
+    <script src="https://unpkg.com/@magenta/music@1.23.1/es6/core.js"></script>
+    <script src="https://unpkg.com/html-midi-player@1.6.0/dist/midi-player.min.js"></script>
+    <midi-player
+        src="{{- $src -}}"
+        sound-font="https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus"
+        visualizer="#midiVisualizer-{{- $uniqueID -}}"
+    >
+    </midi-player>
+    <midi-visualizer
+        type="staff"
+        id="midiVisualizer-{{- $uniqueID -}}"
+    ></midi-visualizer>
+</div>
