@@ -7,6 +7,6 @@ slug: only-my-railgun-midi
 title: Only My Railgun MIDI
 ---
 
-[Source](https://www.midishow.com/midi/27391.html) by [jingyunz](https://www.midishow.com/u/jingyunz)
+[Source](https://www.midishow.com/midi/43778.html) by [1U_s](https://space.bilibili.com/3147231)
 
-{{< midi "Only My Railgun.mid" >}}
+{{< midi "only my railgun.mid" >}}
