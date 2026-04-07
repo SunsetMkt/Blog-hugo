@@ -21,6 +21,7 @@ slug: shame
 - Denuvo Software Solutions GmbH - 开发的 DRM 使得用户无法在离线环境下简单地运行游戏，且导致了性能下降
 - VMProtect Software - 其开发的可执行混淆工具被广泛用于干扰防病毒软件和安全分析，且导致了性能下降
 - 任何主体 - 滥用[UPX](https://github.com/upx/upx)以生成无法被解压的可执行，例如[UPX Issue #108](https://github.com/upx/upx/issues/108)
+- Anthropic PBC - 建立于开源技术上却从未发布任何与大模型直接相关的开源贡献，[对使用其模型的开源项目发出法律威胁](https://github.com/anomalyco/opencode/pull/18186)
 
 ## 也参考
 
