@@ -9,7 +9,7 @@ slug: wuwa-ps-zigrika
 title: "《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（3.3 版本）"
 ---
 
-此文档针对`CN 3.3`测试服，不保证在未来正确无误。
+此文档针对`OS 3.3`测试服，不保证在未来正确无误。
 
 本文在未来不一定实时更新，但每个版本的操作步骤基本相同，有开发经验的读者可轻松了解。
 
@@ -64,7 +64,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ### 下载测试版游戏客户端
 
-**请自行在 Discord 群组内搜索第三方上传的客户端。**
+**请自行在 Discord 群组内搜索[第三方上传的客户端](https://discord.com/channels/1154412462372818945/1170994564107079751/1490697466608353330)。**
 
 在`D:`下新建文件夹`WuWaPS`，在`WuWaPS`内新建`client`文件夹。将下载的客户端解压到`client`文件夹，确保`Wuthering Waves.exe`在文件夹内。
 
