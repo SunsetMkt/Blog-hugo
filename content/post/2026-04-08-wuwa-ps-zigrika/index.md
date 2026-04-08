@@ -6,7 +6,7 @@ tags:
     - 鸣潮
     - 逆向工程
 slug: wuwa-ps-zigrika
-title: "《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运行教程（3.3 版本）"
+title: "《鸣潮》的 rabby/xeondev/Reversed Rooms 私服简要运行教程（3.3 版本）"
 ---
 
 此文档针对`OS 3.3`测试服，不保证在未来正确无误。
