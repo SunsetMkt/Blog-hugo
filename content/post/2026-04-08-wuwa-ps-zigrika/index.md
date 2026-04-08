@@ -146,3 +146,7 @@ cd "D:\WuWaPS\client\Client\Binaries\Win64"
 确保左上角的登录服务器为`http://127.0.0.1:10001`。
 
 如果没有发生任何错误，应该可以使用任意 ID 进入游戏（不要使用快速新建/登录）。
+
+### 也参考
+
+- [MrEg](https://www.youtube.com/watch?v=5ob6tmorDZY)
