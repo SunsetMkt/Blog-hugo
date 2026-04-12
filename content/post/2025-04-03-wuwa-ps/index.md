@@ -10,6 +10,8 @@ title: "[已弃用]《鸣潮》的 xavo95/xeondev/Reversed Rooms 私服简要运
 ---
 
 > xavo95/xeondev/Reversed Rooms 已将此私服标记为弃用。
+>
+> 请阅读[新版私服文档]({{< ref "2026-04-08-wuwa-ps-zigrika" >}})。
 
 此文档针对`CN 2.5.1`测试服，不保证在未来正确无误。
 
@@ -183,7 +185,9 @@ cargo run --bin wicked-waifus-game-server
 executable_file = 'Client-Win64-Shipping.exe'
 cmd_line_args = '-fileopenlog'
 current_dir = 'D:\WuWaPS\client\Client\Binaries\Win64'
-dll_list = ['D:\WuWaPS\client\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_5_1-regular.dll']
+dll_list = [
+    'D:\WuWaPS\client\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_5_1-regular.dll',
+]
 
 [environment]
 #environment = ['TESTVAR1=AAAAAA', 'TESTVAR2=AAAAAA']
