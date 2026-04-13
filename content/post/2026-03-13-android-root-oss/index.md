@@ -33,6 +33,13 @@ title: 开源的 Android Root 方案和其他工具
 - [APatch](https://github.com/bmax121/APatch)
 - [Magisk](https://github.com/topjohnwu/Magisk)
 - [sukisu-ultra](https://github.com/sukisu-ultra/sukisu-ultra)
+- [ReSukiSU](https://github.com/ReSukiSU/ReSukiSU)
+- [Wild_KSU](https://github.com/WildKernels/Wild_KSU)
+
+### KernelSU & APatch 的 metamodule
+
+- **[meta-hybrid_mount](https://github.com/Hybrid-Mount/meta-hybrid_mount)**
+- [meta-overlayfs](https://github.com/KernelSU-Modules-Repo/meta-overlayfs)
 
 ## Zygisk
 
@@ -53,10 +60,30 @@ title: 开源的 Android Root 方案和其他工具
 ## TEE 修补
 
 - **[TEESimulator](https://github.com/JingMatrix/TEESimulator) & [Tricky-Addon-Update-Target-List](https://github.com/KOWX712/Tricky-Addon-Update-Target-List)**
+- [TEESimulator-RS](https://github.com/Enginex0/TEESimulator-RS) & [tricky-addon-enhanced](https://github.com/Enginex0/tricky-addon-enhanced)
 - ~~[TrickyStoreOSS](https://github.com/beakthoven/TrickyStoreOSS)~~
+
+### TEE 修补模块的其他可选辅助模块
+
+- [Integrity-Box](https://github.com/MeowDump/Integrity-Box)
+- [yurikey](https://github.com/Yurii0307/yurikey)
 
 ## Xposed
 
 - **[Vector (LSPosed Fork)](https://github.com/JingMatrix/Vector)**
 - [LSPosed-Irena](https://github.com/re-zero001/LSPosed-Irena)
+- [ReLSPosed](https://github.com/ThePedroo/ReLSPosed)
 - ~~[LSPosed](https://github.com/LSPosed/LSPosed)~~
+
+## Xposed 模块
+
+### 应用列表隐藏
+
+- **[HMA-OSS](https://github.com/frknkrc44/HMA-OSS)**
+- ~~[Hide-My-Applist](https://github.com/Dr-TSNG/Hide-My-Applist)~~
+
+## 其他可能有用的列表
+
+这些列表可能有不同的标准，因而不是被此列表认可的内容。
+
+- [LRFP](https://github.com/LRFP-Team/LRFP)
