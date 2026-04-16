@@ -20,7 +20,7 @@ title: 开源的 Android Root 方案和其他工具
 特别感谢这些开发者长期坚持以开源方式推动 Android Root 生态发展：
 
 - [topjohnwu](https://github.com/topjohnwu) 率先开创并长期维护 Magisk 方案，为现代 Android Root 生态奠定基础
-- [tiann](https://github.com/tiann) 开创了 KernelSU 方案，推动了内核级 Root 路线的发展
+- [tiann](https://github.com/tiann) 创建了 KernelSU 方案，推动了内核级 Root 路线的发展
 - [JingMatrix](https://github.com/JingMatrix) 持续维护并改进多个方向上的开源项目，为社区提供了大量可审计、可复现、可继续演进的实现
 - 以及所有选择公开实现细节、接受社区审查、以透明方式发布成果的其他开发者
 
@@ -81,6 +81,29 @@ title: 开源的 Android Root 方案和其他工具
 
 - **[HMA-OSS](https://github.com/frknkrc44/HMA-OSS)**
 - ~~[Hide-My-Applist](https://github.com/Dr-TSNG/Hide-My-Applist)~~
+
+### Shizuku API
+
+- [Sui (Fork)](https://github.com/XiaoTong6666/Sui)
+- ~~[Sui](https://github.com/RikkaApps/Sui)~~
+
+## 无 Root 的提权方案
+
+### Shizuku
+
+- [Shizuku (Fork)](https://github.com/thedjchi/Shizuku)
+- ~~[Shizuku](https://github.com/RikkaApps/Shizuku)~~
+
+### Dhizuku
+
+- [Dhizuku](https://github.com/iamr0s/Dhizuku)
+
+## 第三方包安装器
+
+- [InstallerX-Revived](https://github.com/wxxsfxyzm/InstallerX-Revived)
+- [InstallWithOptions](https://github.com/zacharee/InstallWithOptions)
+- [anyapk](https://github.com/sam1am/anyapk)
+- [PackageInstaller](https://github.com/vvb2060/PackageInstaller)
 
 ## 其他可能有用的列表
 
