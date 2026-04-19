@@ -12,6 +12,7 @@ title: Unity 游戏的通用解包和逆向工程工具
 
 ## AssetBundle
 
+- [AnimeStudio](https://github.com/Escartem/AnimeStudio)
 - [AssetRipper](https://github.com/AssetRipper/AssetRipper)
 - [aelurum/AssetStudio](https://github.com/aelurum/AssetStudio)
 - [Perfare/AssetStudio](https://github.com/Perfare/AssetStudio)
@@ -22,6 +23,7 @@ title: Unity 游戏的通用解包和逆向工程工具
 
 - [Il2CppDumper](https://github.com/Perfare/Il2CppDumper)
 - [Cpp2IL](https://github.com/SamboyCoding/Cpp2IL)
+- [Zygisk-Il2CppDumper](https://github.com/Perfare/Zygisk-Il2CppDumper)
 
 ## Modding
 
