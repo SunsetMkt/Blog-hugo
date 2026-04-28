@@ -376,8 +376,9 @@ async function getCfCDNinfo(id) {
     // Set alert text
     textElement.style.cursor = "pointer";
     textElement.onclick = () => {
-        // navigator.clipboard.writeText(data);
-        // alert(data);
+        navigator.clipboard.writeText(data);
+        alert(data);
+        /** 
         function openTextWindow(text, title = "Trace") {
             const safeText = text
                 .replace(/&/g, "&amp;")
@@ -410,6 +411,7 @@ async function getCfCDNinfo(id) {
             );
         }
         openTextWindow(data, "Trace");
+        */
     };
 
     // Get colo name
