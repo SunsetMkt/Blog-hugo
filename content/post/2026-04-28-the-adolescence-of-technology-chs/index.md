@@ -4,6 +4,7 @@ date: "2026-04-28T00:00:00Z"
 tags:
     - 翻译
     - AI
+    - 社会评论
 slug: the-adolescence-of-technology-chs
 title: 技术的青春期：直面并克服强大 AI 的风险（Dario Amodei，Anthropic 的 CEO，2026）
 ---

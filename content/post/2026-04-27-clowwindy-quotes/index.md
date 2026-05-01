@@ -3,6 +3,7 @@ categories: Repost
 date: "2026-04-27T00:00:00Z"
 tags:
     - 信息技术
+    - 社会评论
 slug: clowwindy-quotes
 title: clowwindy 语录
 ---
