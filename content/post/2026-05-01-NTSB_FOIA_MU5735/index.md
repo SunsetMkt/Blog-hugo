@@ -7,6 +7,19 @@ slug: NTSB_FOIA_MU5735
 title: NTSB FOIA MU5735
 ---
 
+## 已由 NTSB 公开发布
+
+<https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F>
+
+```yaml
+Title: "DCA22WA102 3/21/2022 Wuzhou, China"
+Published Date: "5/1/2026"
+Pages: 13
+Size: "326.80 MB"
+Comments: "China Eastern Airlines Flight 5735 FOIA Release Records - Please note that the NTSB does not have any transcripts of the Cockpit Voice Recorder. Regarding the .upk files, specialized Flight Data Recorder (FDR) analysis software is required to access and interpret the data. Even with the appropriate software, the information would not be usable without the manufacturer’s proprietary documentation."
+Folder Format: "ZIP"
+```
+
 ## 引用来源
 
 - **[NTSB Frequently Requested Cabinet](https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F)**
