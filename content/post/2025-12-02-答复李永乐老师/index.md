@@ -6,7 +6,8 @@ tags:
     - benjaminsliu
 slug: 答复李永乐老师
 title: 答复李永乐老师
-hidden: true
+build:
+    list: never
 ---
 
 [原文链接](https://github.com/benjaminsliu/deletedarticles/blob/main/%E7%AD%94%E5%A4%8D%E6%9D%8E%E6%B0%B8%E4%B9%90%E8%80%81%E5%B8%88)，著作权归[作者](https://github.com/benjaminsliu)所有。

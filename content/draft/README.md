@@ -13,8 +13,9 @@ Set the `draft` front matter to true to actually set a draft and avoid it from b
 draft: true
 ```
 
-Or set `hidden` to hide the page from listing and searching.
+Or set `list: never` to hide the page from listing and searching.
 
 ```yaml
-hidden: true
+build:
+    list: never
 ```
