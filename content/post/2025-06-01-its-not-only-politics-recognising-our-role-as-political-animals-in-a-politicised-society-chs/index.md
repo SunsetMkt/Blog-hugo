@@ -4,6 +4,7 @@ date: "2025-06-01T00:00:00Z"
 tags:
     - 社会评论
     - 翻译
+    - TheBLACKProject
 slug: its-not-only-politics-recognising-our-role-as-political-animals-in-a-politicised-society-chs
 title: 不仅仅是政治：在一个政治化的社会中认识我们作为政治动物的角色
 ---

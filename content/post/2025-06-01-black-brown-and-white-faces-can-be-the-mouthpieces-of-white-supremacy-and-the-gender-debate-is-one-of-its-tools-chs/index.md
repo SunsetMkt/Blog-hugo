@@ -4,6 +4,7 @@ date: "2025-06-01T00:00:00Z"
 tags:
     - 社会评论
     - 翻译
+    - TheBLACKProject
 slug: black-brown-and-white-faces-can-be-the-mouthpieces-of-white-supremacy-and-the-gender-debate-is-one-of-its-tools-chs
 title: 黑人、棕色人种和白人都可能为白人至上主义代言，性别议题是其工具之一
 ---

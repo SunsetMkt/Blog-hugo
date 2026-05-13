@@ -4,6 +4,7 @@ date: "2025-06-01T00:00:00Z"
 tags:
     - 社会评论
     - 翻译
+    - TheBLACKProject
 slug: its-not-political-its-about-humanity-chs
 title: 这不是政治分歧，而是人性差异。
 ---
