@@ -16,14 +16,12 @@ title: Space Cadet Pinball
     <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1" style="display:none; outline:none;"></canvas>
 </div>
 
-<!--
-    <style>
-        #canvas {
-            width: 100%;
-            max-width: 640px;
-        }
-    </style>
--->
+<style>
+    #canvas {
+        width: 100%;
+        max-width: 640px;
+    }
+</style>
 
 <script>
     var statusElement = document.getElementById("status"),
