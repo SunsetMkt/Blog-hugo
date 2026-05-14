@@ -42,14 +42,14 @@ var facilities =
 
 <hr />
 
-<div id="errorResults">
+<div id="errorResults" style="overflow-x: auto; width: 100%;">
     <h3>Errors 匹配结果</h3>
     <div id="errList">请输入关键词。</div>
 </div>
 
 <br />
 
-<div id="facilityResults">
+<div id="facilityResults" style="overflow-x: auto; width: 100%;">
     <h3>Facilities 匹配结果</h3>
     <div id="facList">请输入关键词。</div>
 </div>
