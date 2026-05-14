@@ -47,12 +47,14 @@ var facilities =
     <div id="errList">请输入关键词。</div>
 </div>
 
+<!--
 <br />
 
 <div id="facilityResults" style="overflow-x: auto; width: 100%;">
     <h3>Facilities 匹配结果</h3>
     <div id="facList">请输入关键词。</div>
 </div>
+-->
 
 <script>
     function doSearch() {
@@ -61,11 +63,11 @@ var facilities =
             .value.trim()
             .toLowerCase();
         const errList = document.getElementById("errList");
-        const facList = document.getElementById("facList");
+        // const facList = document.getElementById("facList");
 
         if (!query) {
             errList.innerHTML = "请输入搜索内容。";
-            facList.innerHTML = "请输入搜索内容。";
+            // facList.innerHTML = "请输入搜索内容。";
             return;
         }
 
@@ -91,6 +93,7 @@ var facilities =
 
         // --- 搜索 Facilities ---
         // 匹配 facilities 数组中的任意一个字段
+        /**
         const matchedFacs = facilities.filter((row) =>
             row.some((field) => field.toLowerCase().includes(query)),
         );
@@ -108,6 +111,7 @@ var facilities =
         } else {
             facList.innerHTML = "无匹配项。";
         }
+        **/
     }
 
     // 监听回车键
