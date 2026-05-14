@@ -3,6 +3,7 @@ categories: Repost
 date: "2026-05-01T00:00:00Z"
 tags:
     - 社会评论
+    - 翻译
 slug: NTSB_FOIA_MU5735
 title: NTSB FOIA MU5735
 ---
