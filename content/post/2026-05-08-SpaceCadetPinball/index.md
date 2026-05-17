@@ -10,6 +10,8 @@ title: Space Cadet Pinball
 
 [alula/SpaceCadetPinball](https://github.com/alula/SpaceCadetPinball) based on [k4zmu2a/SpaceCadetPinball](https://github.com/k4zmu2a/SpaceCadetPinball).
 
+3D Pinbal Table created for Microsoft by Maxis. Copyright (c) 1995 Maxis.
+
 <div id="pinball-container">
     <div id="status">Downloading...</div>
     <progress id="progress" max="100" value="0" hidden></progress>
