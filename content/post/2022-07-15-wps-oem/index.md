@@ -10,6 +10,12 @@ slug: wps-oem
 title: WPS Office Pro（金山 WPS 企业版）和金山 PDF 专业版的 OEM 配置方法
 ---
 
+## WPS Office 在 2026
+
+对于大众，最简单的合规渠道或许是下载[WPS 365 体验版](https://365.wps.cn/download365)（独立安装 WPS Office 的 32 位版本，或者解压 64 位的复合版本，获取独立安装 WPS Office 的 64 位安装包），通过配置工具移除所有文件关联、内容菜单项目、在线推荐并开启离线兼容选项。在当前时代，它的植入广告较前已大幅减少。
+
+也有一些方便的第三方方案（如[WPSOfficeConf](https://github.com/ShinjoKurumi/WPSOfficeConf)）。
+
 ## 引子
 
 曾经，互联网上流传着多个“WPS 政府版”，例如：`http://【移除具体链接】/WPS Office 2019 珠海市政府专业版(11.8.2.8506).exe`（目前已 404）。
