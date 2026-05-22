@@ -22,9 +22,22 @@
     </p>
     <iframe
         src="/tools/file-viewer/index.html?fileUrl="
-        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        style="width: 100%; border: none; overflow: hidden;"
+        class="embed-office-iframe"
         id="embed-office-iframe-{{ $uniqueID }}"
     ></iframe>
+    <style>
+        .embed-office-iframe {
+            aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 768px) {
+            .embed-office-iframe {
+                aspect-ratio: auto;
+                height: 60vh;
+            }
+        }
+    </style>
   <script>
     (function () {
       var uniqueID = "{{ $uniqueID }}";

@@ -22,9 +22,22 @@
     </p>
     <iframe
         src="/tools/embeddable-monaco/index.html?folding=true&lang=auto&theme=vs-dark&readonly=false&fileUrl="
-        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        style="width: 100%; border: none; overflow: hidden;"
+        class="embed-monaco-iframe"
         id="embed-monaco-iframe-{{ $uniqueID }}"
     ></iframe>
+    <style>
+        .embed-monaco-iframe {
+            aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 768px) {
+            .embed-monaco-iframe {
+                aspect-ratio: auto;
+                height: 60vh;
+            }
+        }
+    </style>
   <script>
     (function () {
       var uniqueID = "{{ $uniqueID }}";

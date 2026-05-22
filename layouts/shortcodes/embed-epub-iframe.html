@@ -22,9 +22,22 @@
     </p>
     <iframe
         src="/tools/foliate-js/reader.html?url="
-        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        style="width: 100%; border: none; overflow: hidden;"
+        class="embed-epub-iframe"
         id="embed-epub-iframe-{{ $uniqueID }}"
     ></iframe>
+    <style>
+        .embed-epub-iframe {
+            aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 768px) {
+            .embed-epub-iframe {
+                aspect-ratio: auto;
+                height: 60vh;
+            }
+        }
+    </style>
   <script>
     (function () {
       var uniqueID = "{{ $uniqueID }}";

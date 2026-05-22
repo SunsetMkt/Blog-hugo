@@ -22,9 +22,22 @@
     </p>
     <iframe
         src="/tools/pdf-js/web/viewer.html?file="
-        style="aspect-ratio: 16/9; width: 100%; border: none; overflow: hidden"
+        style="width: 100%; border: none; overflow: hidden;"
+        class="embed-pdf-iframe"
         id="embed-pdf-iframe-{{ $uniqueID }}"
     ></iframe>
+    <style>
+        .embed-pdf-iframe {
+            aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 768px) {
+            .embed-pdf-iframe {
+                aspect-ratio: auto;
+                height: 60vh;
+            }
+        }
+    </style>
   <script>
     (function () {
       var uniqueID = "{{ $uniqueID }}";
