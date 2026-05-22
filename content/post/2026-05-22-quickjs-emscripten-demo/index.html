@@ -29,11 +29,14 @@ title: QuickJS WebAssembly Demo
     }
     .output-box {
         width: 100%;
+        display: block;
         padding: 10px;
         background: #222;
         color: #7f7;
         font-family: monospace;
-        white-space: pre-wrap;
+        white-space: pre;
+        overflow-x: auto;
+        box-sizing: border-box;
     }
     .output-box.error {
         color: #f77;
