@@ -2,7 +2,7 @@
 categories: Repost
 date: 2025-12-25T00:00:00Z
 tags:
-    - 社会评论
+    - 社会科学
     - benjaminsliu
 slug: logiccards
 title: 中医逻辑扑克

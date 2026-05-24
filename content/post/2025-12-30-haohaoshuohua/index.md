@@ -2,7 +2,7 @@
 categories: Repost
 date: 2025-12-30T00:00:00Z
 tags:
-    - 社会评论
+    - 社会科学
 slug: haohaoshuohua
 title: 好好说话
 ---

@@ -2,7 +2,7 @@
 categories: Repost
 date: "2024-12-13T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
 slug: i4smnnqaca1g
 title: "林三土: “政治正确”与“言论自由” | C 讲坛"
 ---

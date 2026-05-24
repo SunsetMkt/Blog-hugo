@@ -2,7 +2,7 @@
 categories: Repost
 date: 2022-05-23T00:00:00Z
 tags:
-    - 社会评论
+    - 社会科学
     - 虚拟主播
 slug: as-long-as-there-are-crowds
 title: 只要在有人群的地方……

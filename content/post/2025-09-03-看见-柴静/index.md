@@ -2,7 +2,7 @@
 categories: Repost
 date: "2025-09-03T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
 slug: 看见-柴静
 title: 看见（柴静）
 ---

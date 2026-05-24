@@ -5,7 +5,7 @@ tags:
     - Melancholie
     - Sunset
     - 游戏
-    - 社会评论
+    - 社会科学
 slug: sunset-s-small-speech
 title: Sunset 的一场小型线上讲演（文字版）
 ---

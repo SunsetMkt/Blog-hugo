@@ -3,7 +3,7 @@ categories: Repost
 date: 2025-09-03T00:00:00Z
 tags:
     - 指南
-    - 社会评论
+    - 社会科学
     - 翻译
     - 联合国
 slug: un-en-gender-inclusive-language-guidelines

@@ -3,7 +3,7 @@ categories: Repost
 date: "2025-05-17T00:00:00Z"
 tags:
     - LGBTQIA
-    - 社会评论
+    - 社会科学
 slug: un-news-2025-05-1138691
 title: 国际不再恐惧同性恋、跨性别与双性恋日：联合国人权高专呼吁抵抗暴力和歧视
 ---

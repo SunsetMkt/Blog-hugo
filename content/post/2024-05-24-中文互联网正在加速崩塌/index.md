@@ -3,7 +3,7 @@ categories: Repost
 date: 2024-05-24T00:00:00Z
 tags:
     - 信息技术
-    - 社会评论
+    - 社会科学
 slug: 中文互联网正在加速崩塌
 title: 中文互联网正在加速崩塌
 ---

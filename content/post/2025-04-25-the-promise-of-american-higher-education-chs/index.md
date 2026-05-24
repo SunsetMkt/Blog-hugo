@@ -3,7 +3,7 @@ categories: Repost
 date: "2025-04-25T00:00:00Z"
 tags:
     - 翻译
-    - 社会评论
+    - 社会科学
 slug: the-promise-of-american-higher-education-chs
 title: 美国高等教育的承诺
 ---

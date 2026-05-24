@@ -2,7 +2,7 @@
 categories: Repost
 date: 2025-12-02T00:00:00Z
 tags:
-    - 社会评论
+    - 社会科学
     - benjaminsliu
 slug: 上海十年
 title: 上海十年

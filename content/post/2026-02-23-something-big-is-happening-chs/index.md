@@ -5,7 +5,7 @@ tags:
     - LLM
     - AI
     - 信息技术
-    - 社会评论
+    - 社会科学
     - 翻译
 slug: something-big-is-happening-chs
 title: 大事正在发生 Something Big Is Happening (Matt Shumer, Feb 9, 2026)

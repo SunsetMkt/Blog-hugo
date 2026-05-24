@@ -2,7 +2,7 @@
 categories: Repost
 date: 2020-03-25T00:00:00Z
 tags:
-    - 社会评论
+    - 社会科学
 slug: FangFang-Diary
 title: 方方日记
 ---

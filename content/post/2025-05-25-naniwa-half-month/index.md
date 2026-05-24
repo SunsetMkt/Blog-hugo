@@ -3,7 +3,7 @@ categories: Repost
 date: "2025-05-25T00:00:00Z"
 description: "权力之处，必有抵抗。"
 tags:
-    - 社会评论
+    - 社会科学
     - Cedaros
 slug: naniwa-half-month
 title: 浪花半月记

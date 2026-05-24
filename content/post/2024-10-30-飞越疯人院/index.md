@@ -2,7 +2,7 @@
 categories: Repost
 date: "2024-10-30T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
 slug: 飞越疯人院
 title: 飞越疯人院 周怡恒
 ---

@@ -6,7 +6,7 @@ tags:
     - 信息技术
     - 华为
     - 开源
-    - 社会评论
+    - 社会科学
     - 翻译
 slug: HonestyAGI-LLM-Fingerprint
 title: 大语言模型的内在指纹：想偷模型？只靠继续训练可不够！

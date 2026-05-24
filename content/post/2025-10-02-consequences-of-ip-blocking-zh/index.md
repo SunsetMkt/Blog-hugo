@@ -6,7 +6,7 @@ slug: consequences-of-ip-blocking-zh
 tags:
     - Cloudflare
     - 信息技术
-    - 社会评论
+    - 社会科学
     - 翻译
 ---
 

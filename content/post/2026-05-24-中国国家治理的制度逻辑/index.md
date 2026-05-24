@@ -2,7 +2,7 @@
 categories: Repost
 date: "2026-05-24T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
 slug: 中国国家治理的制度逻辑
 title: 《中国国家治理的制度逻辑》
 ---

@@ -2,7 +2,7 @@
 categories: Repost
 date: 2025-12-02T00:00:00Z
 tags:
-    - 社会评论
+    - 社会科学
     - benjaminsliu
 slug: 人与狗-终有不同-答复李永乐老师
 title: 人与狗，终有不同 & 答复李永乐老师

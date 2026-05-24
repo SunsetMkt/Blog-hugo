@@ -4,7 +4,7 @@ date: 2025-05-28T00:00:00Z
 tags:
     - Windows
     - 信息技术
-    - 社会评论
+    - 社会科学
 slug: the-sola-virus
 title: 苏拉病毒
 ---

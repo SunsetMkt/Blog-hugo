@@ -5,7 +5,7 @@ tags:
     - 信息技术
     - 翻译
     - AI
-    - 社会评论
+    - 社会科学
 slug: politics-bench-benchmarking-political-values-in-large-language-models-with-multi-turn-roleplay
 title: PoliticsBench：基于多轮角色扮演的大型语言模型政治价值观基准测试（2026）
 ---

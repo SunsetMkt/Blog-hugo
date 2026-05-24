@@ -3,7 +3,7 @@ categories: Repost
 date: 2025-05-18T00:00:00Z
 tags:
     - 音乐
-    - 社会评论
+    - 社会科学
 slug: 黄昏-邵夷贝
 title: "黄昏 - 邵夷贝/李志"
 ---

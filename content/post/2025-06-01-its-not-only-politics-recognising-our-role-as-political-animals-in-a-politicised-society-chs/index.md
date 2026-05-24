@@ -2,7 +2,7 @@
 categories: Repost
 date: "2025-06-01T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
     - 翻译
     - TheBLACKProject
 slug: its-not-only-politics-recognising-our-role-as-political-animals-in-a-politicised-society-chs

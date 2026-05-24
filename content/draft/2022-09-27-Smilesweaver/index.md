@@ -5,7 +5,7 @@ categories: Repost
 draft: true
 slug: Smilesweaver
 tags:
-    - 社会评论
+    - 社会科学
 ---
 
 <!--

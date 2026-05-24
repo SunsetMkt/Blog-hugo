@@ -2,7 +2,7 @@
 categories: Repost
 date: "2025-06-01T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
     - 信息技术
     - 翻译
 slug: why-i-support-piracy-and-you-should-too-d48d0834febe-chs

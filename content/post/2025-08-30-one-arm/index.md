@@ -3,7 +3,7 @@ categories: Repost
 date: "2025-08-30T00:00:00Z"
 description: "我的恩典够你用的，因为我的能力，是在人的软弱上显得完全。” ——《哥林多后书》12:9"
 tags:
-    - 社会评论
+    - 社会科学
     - Cedaros
 slug: one-arm
 title: 只有一只胳膊的日子

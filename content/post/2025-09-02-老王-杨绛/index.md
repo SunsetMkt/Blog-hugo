@@ -2,7 +2,7 @@
 categories: Repost
 date: "2025-09-02T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
 slug: 老王-杨绛
 title: 老王（杨绛）
 ---

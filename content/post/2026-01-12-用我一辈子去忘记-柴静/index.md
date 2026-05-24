@@ -2,7 +2,7 @@
 categories: Repost
 date: "2026-01-12T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
 slug: 用我一辈子去忘记-柴静
 title: 用我一辈子去忘记（柴静）
 ---

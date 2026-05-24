@@ -4,7 +4,7 @@ date: 2025-04-11
 tags:
     - 小说
     - 游戏
-    - 社会评论
+    - 社会科学
 categories: Repost
 slug: Trickstar-indienova
 ---

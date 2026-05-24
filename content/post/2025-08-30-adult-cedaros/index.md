@@ -3,7 +3,7 @@ categories: Repost
 date: "2025-08-30T00:00:00Z"
 description: "谢谢你，资本主义，终于愿意吞下我这块烂肉了。"
 tags:
-    - 社会评论
+    - 社会科学
     - Cedaros
 slug: adult-cedaros
 title: 成年——点一瓶不会喝的酒

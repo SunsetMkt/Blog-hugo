@@ -3,7 +3,7 @@ categories: Repost
 date: "2025-06-11T00:00:00Z"
 description: "我们跨过江水，以为奔向了自由。"
 tags:
-    - 社会评论
+    - 社会科学
     - Cedaros
 slug: amur-river
 title: 阿穆尔河畔的囚徒

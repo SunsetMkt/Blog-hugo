@@ -5,7 +5,7 @@ tags:
     - Linux
     - 信息技术
     - 开源
-    - 社会评论
+    - 社会科学
     - 翻译
 slug: Goodbye-from-a-Linux-community-volunteer
 title: "linux: Goodbye from a Linux community volunteer"

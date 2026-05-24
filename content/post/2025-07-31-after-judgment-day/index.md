@@ -3,7 +3,7 @@ categories: Repost
 date: "2025-07-31T00:00:00Z"
 description: "我们付出了什么？又得到了什么？"
 tags:
-    - 社会评论
+    - 社会科学
     - Cedaros
 slug: after-judgment-day
 title: 审判

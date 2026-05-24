@@ -2,7 +2,7 @@
 categories: Repost
 date: "2025-06-01T00:00:00Z"
 tags:
-    - 社会评论
+    - 社会科学
     - 翻译
     - TheBLACKProject
 slug: black-brown-and-white-faces-can-be-the-mouthpieces-of-white-supremacy-and-the-gender-debate-is-one-of-its-tools-chs

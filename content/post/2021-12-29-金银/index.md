@@ -2,7 +2,7 @@
 categories: Repost
 date: 2021-12-29T00:00:00Z
 tags:
-    - 社会评论
+    - 社会科学
     - 视频
 slug: 金银
 title: 《金银》

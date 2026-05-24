@@ -3,7 +3,7 @@ categories: Repost
 date: 2025-05-15T00:00:00Z
 tags:
     - 信息技术
-    - 社会评论
+    - 社会科学
 slug: Research-on-Avalon-System-in-Bilibili-Comment-Area
 title: "深挖b站如何控评-对阿瓦隆系统探究"
 ---

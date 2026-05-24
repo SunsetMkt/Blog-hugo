@@ -3,7 +3,7 @@ categories: Repost
 date: 2023-10-10T00:00:00Z
 tags:
     - 信息技术
-    - 社会评论
+    - 社会科学
 slug: oss-and-gfw
 draft: true
 title: GFW, 开源与社会主义
