@@ -4,7 +4,7 @@ date: 2025-11-19
 slug: shame
 ---
 
-这是一个或许有偏见的列表，列出了一些对开源软件或软件开发有敌对态度，或是破坏互联网安全或自由的组织（特别是企业）。
+这是一个或许有偏见的列表，列出了一些对开源软件或软件开发有敌对态度、破坏互联网安全或自由或参与或实施侵犯人权的罪行的组织（特别是企业）。
 
 除非特殊注明，否则此列表不针对相关组织（或企业）的其他产品，也不针对任何雇员或承包商。列表没有排序，不分先后。
 
@@ -22,6 +22,14 @@ slug: shame
 - VMProtect Software - 其开发的可执行混淆工具被广泛用于干扰防病毒软件和安全分析，且导致了性能下降
 - 任何主体 - 滥用[UPX](https://github.com/upx/upx)以生成无法被解压的可执行，例如[UPX Issue #108](https://github.com/upx/upx/issues/108)
 - Anthropic PBC - 建立于开源技术上却从未发布任何与大模型直接相关的开源贡献，[对使用其模型的开源项目发出法律威胁](https://github.com/anomalyco/opencode/pull/18186)
+- Access Advance LLC 及其潜在支持者 - 通过专利池对 HEVC 等多媒体私有格式实施非普惠的垄断性高额收税与商业限制
+- Via Licensing Alliance (Via LA) 及其潜在支持者 - 建立私有音频、无线等技术的专利壁垒，将其作为金融抽水机并阻碍开放多媒体标准的普及
+- Apple Inc. - 通过严格限制侧载、对外部开发者征收高额“苹果税”以及对开源浏览器引擎 WebKit 的排他性政策来阻碍 Web 开放生态和独立软件分发，亦可参考[苹果公司相关争议](https://zh.wikipedia.org/wiki/%E8%8B%B9%E6%9E%9C%E5%85%AC%E5%8F%B8%E7%9B%B8%E5%85%B3%E4%BA%89%E8%AE%AE)
+- Nintendo Co., Ltd. - 长期以法律诉讼或“DMCA 社区下架通知”作为武器，迫使知名开源模拟器 Yuzu（Switch 模拟器）停止开发并支付巨额赔偿，并大批量清除 GitHub 上的相关开源分支，对软件模拟和游戏保存生态造成破坏
+- 埃隆·马斯克 / X Corp., 原 Twitter - 变更其平台政策，对原先免费或低成本的 API 接口收取高昂费用，导致大量开源工具和学术研究项目被迫中止
+- 百度在线网络技术（北京）有限公司 - 其网络云盘产品长期对非付费用户进行极端限速，并通过法律手段和技术对抗封杀第三方开源加速下载工具，也参考[对百度的争议](https://zh.wikipedia.org/wiki/%E5%AF%B9%E7%99%BE%E5%BA%A6%E7%9A%84%E4%BA%89%E8%AE%AE)
+- Oracle Corporation - 因对 Java API 提起长达数年的版权诉讼，威胁了软件开发的互操作性与开源生态
+- Sony Interactive Entertainment LLC - 因滥用数字版权管理（DRM）和涉嫌反竞争行为引发长期争议
 
 ## 也参考
 
