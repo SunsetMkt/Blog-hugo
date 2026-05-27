@@ -25,11 +25,21 @@ slug: shame
 - Access Advance LLC 及其潜在支持者 - 通过专利池对 HEVC 等多媒体私有格式实施非普惠的垄断性高额收税与商业限制
 - Via Licensing Alliance (Via LA) 及其潜在支持者 - 建立私有音频、无线等技术的专利壁垒，将其作为金融抽水机并阻碍开放多媒体标准的普及
 - Apple Inc. - 通过严格限制侧载、对外部开发者征收高额“苹果税”以及对开源浏览器引擎 WebKit 的排他性政策来阻碍 Web 开放生态和独立软件分发，亦可参考[苹果公司相关争议](https://zh.wikipedia.org/wiki/%E8%8B%B9%E6%9E%9C%E5%85%AC%E5%8F%B8%E7%9B%B8%E5%85%B3%E4%BA%89%E8%AE%AE)
-- Nintendo Co., Ltd. - 长期以法律诉讼或“DMCA 社区下架通知”作为武器，迫使知名开源模拟器 Yuzu（Switch 模拟器）停止开发并支付巨额赔偿，并大批量清除 GitHub 上的相关开源分支，对软件模拟和游戏保存生态造成破坏
-- 埃隆·马斯克 / X Corp., 原 Twitter - 变更其平台政策，对原先免费或低成本的 API 接口收取高昂费用，导致大量开源工具和学术研究项目被迫中止
+- Nintendo Co., Ltd. - 长期以法律诉讼或 DMCA 作为武器，迫使知名开源模拟器 Yuzu（Switch 模拟器）停止开发并支付巨额赔偿，并大批量清除 GitHub 上的相关开源分支
+- 埃隆·马斯克 / X Corp., 原 Twitter - 变更其平台政策，对原先免费或低成本的 API 接口收取高昂费用
 - 百度在线网络技术（北京）有限公司 - 其网络云盘产品长期对非付费用户进行极端限速，并通过法律手段和技术对抗封杀第三方开源加速下载工具，也参考[对百度的争议](https://zh.wikipedia.org/wiki/%E5%AF%B9%E7%99%BE%E5%BA%A6%E7%9A%84%E4%BA%89%E8%AE%AE)
 - Oracle Corporation - 因对 Java API 提起长达数年的版权诉讼，威胁了软件开发的互操作性与开源生态
 - Sony Interactive Entertainment LLC - 因滥用数字版权管理（DRM）和涉嫌反竞争行为引发长期争议
+- Reddit, Inc. - 变更其 API 免费及定价策略，导致诸如 Apollo 等大量优秀的第三方开源客户端、视障人士辅助工具以及学术研究项目被迫关闭，并将由互联网用户共同构建的社区数据转变为私有且高昂的 AI 训练壁垒，也参考[争议](https://zh.wikipedia.org/wiki/Reddit#%E7%88%AD%E8%AD%B0)
+- HashiCorp / Redis Ltd. / Elastic NV - 在利用开源社区的无偿贡献、生态构建与信任确立了绝对的市场主导地位后，将其核心产品（Terraform、Redis、Elasticsearch）的开源协议单方面更改为非开源的商业限制协议（如 BSL、SSPL 或 RSAL）
+- Broadcom Inc. - 在收购 VMware 后，出于极端利润导向，全面取消了深受全球独立开发者、学生和中小企业依赖的免费版 ESXi 虚拟机管理程序，并强制推行极其高昂的订阅制捆绑
+- Take-Two Interactive Software, Inc. - 长期滥用数字千年版权法（DMCA）机制对开源项目和 Mod 发起激进的版权诉讼
+- Epic Games, Inc. - 尽管其声称支持开发者，但长期使用资金买断 PC 游戏的独占权（破坏多平台分发自由）；其拥有的 Easy Anti-Cheat (EAC) 反作弊系统在历史上也长期对 Linux/Proton 游戏生态抱有敌意和技术怠惰
+- Adobe Inc. - 长期推行极具垄断性的全订阅制
+- Red Hat, Inc. - 于 2023 年宣布停止向公众免费提供 Red Hat Enterprise Linux (RHEL) 的下游源码，仅向付费客户开放
+- HP Inc. - 长期通过远程强制推送固件更新，恶意锁死安装了非官方/第三方兼容墨盒的用户打印机
+- NSO Group Technologies - 研发并向多国政府或特定机构出售间谍软件 Pegasus
+- NVIDIA Corporation - 历史上长期对开源 Linux 社区采取极其不合作和敌视态度
 
 ## 也参考
 
