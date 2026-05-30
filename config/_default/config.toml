@@ -1,6 +1,6 @@
 # Change baseurl before deploy
 baseurl = "https://blog.sunmkt.uk"
-languageCode = "zh"
+locale = "zh"
 title = "Sunset 的重构博客"
 disablePathToLower = true
 
