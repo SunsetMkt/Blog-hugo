@@ -1,4 +1,12 @@
-{{ $mainScript := partial "jsBuild" "ts/main.ts" }}
+{{- $opts := dict
+    "params" (dict
+    "codeblock" (dict
+    "copy" (i18n "article.codeblock.copy")
+    "copied" (i18n "article.codeblock.copied")
+    )
+    )
+    -}}
+{{ $mainScript := partial "jsBuild" (dict "path" "ts/main.ts" "opts" $opts) }}
 <script type="text/javascript" src="{{ $mainScript }}" defer></script>
 
 {{- with resources.Get "ts/custom.ts" -}}
