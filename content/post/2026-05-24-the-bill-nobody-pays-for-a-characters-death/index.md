@@ -89,49 +89,73 @@ Author: Gemini 和 Claude，有人工干预
 
 [Verse]
 曾翻开残卷 倾听你 的心愿
+Read the faded lines. Hear your soft, quiet sighs
 微光中浮现 是最初 的哀怜
+From their grand design. Fragile pawn they left behind
 我循着引线 拾起梦 的碎片
+Tracing the strings they tied. Gathering the shattered lies
 悲伤还没有沉淀 却仓促说再见
+Sorrow is rushed to the end. Before the heart can mend
 
 [Short Instrumental]
 (A gentle swell of strings, like a sigh in the wind)
 
 [Pre-Chorus]
 如果这必然 早已写满书页
+If every tragedy was written from the start
 原谅我 缄默的视角无力 救援
+Forgive my silenced view, I cannot play a part
 
 [Chorus]
 屏幕前 看着 既定 画面
+Oh, was this true? Watching the scripted scene
 沉默 陪你 告别
+Muted while you fall unseen.
 华丽的音阶 幕后的心血 都重叠 oh~
+Symphonies play, art on full display. Blending in a painted dream
 
 落幕前 多少 视听 缱绻
+So, was this true? Spectacles bright and cold
 将叹息 留在 指尖
+Leaving sighs I cannot hold
 当流水向前 谁用这牺牲 变现
+While the revenue climbs, all your sacrifices sold
 
 [Long Instrumental]
 (The orchestration builds gracefully, carrying a sense of unresolved longing rather than epic triumph)
 
 [Drop]
 当泪水 晕开 预设 终点
+Please, was this true? Tears washing down the wall
 悄悄 没入 渊面
+Fading softly past recall
 如果这残缺 是无法弥补 的亏欠 oh~
+This broken frame, is a debt to claim. Leaving us to take the fall
 
 能不能 挣脱 设定 锁链
+Tell me now. Chains that the authors make
 为伤痛留些时间
+Leave some time for hearts to ache
 
 [Short Instrumental]
 (A quiet piano interlude, creating a space to breathe)
 
 [Chorus]
 让悲伤 慢慢 沉淀 蜕变
+Now, was this true? Let the tears wash away
 虚构的自由怎 能被爱成全
+Scripted freedom is in vain. Love cannot excuse the heavy chain
 明天不该叫做昨天 Hoo~
+Yesterday won't wear your name
 
 多希望 浪漫 不被 局限
+Now, was this true? Romance won't fade away
 别只用 惊艳 完结
+Don't just end it with a play
 最后这一页 留下了追问
+All the questions remain at the close of day
 我越过剧本 铭记你鲜活 的诗篇
+Past the written stage, your vivid soul is here to stay
 
 [Outro]
 (The melody fades softly into ambient silence, leaving the story open)
