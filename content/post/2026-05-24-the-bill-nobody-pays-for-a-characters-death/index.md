@@ -4,7 +4,7 @@ date: "2026-05-24T00:00:00Z"
 tags:
     - 游戏
 slug: the-bill-nobody-pays-for-a-characters-death
-title: 角色之死无人买单：对一些糟糕游戏剧情设计的批评
+title: 未被赚得的告别：二次元长线游戏中的情绪透支、商业变现与“反向机械降神”
 ---
 
 熟悉[二次元游戏](https://zh.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%81%8A%E6%88%B2)的读者可能会时常遇见一些看似精妙设计的悲剧。在这些故事中，角色由于看起来非常难以解决的两难抉择（例如[时间循环（HSR-昔涟）](https://www.youtube.com/watch?v=LB_65-rOYYo)、还是[时间循环（WuWa-爱弥斯）](https://www.youtube.com/watch?v=ZRpHFIPp-0M)、[电车难题（WuWa-达妮娅）](https://www.youtube.com/watch?v=h2mExeCBKVQ)、[历史遗留问题（GI-芙卡洛斯）](https://www.youtube.com/watch?v=_RAhrisU6Mc)、以及在更多作品中死亡的角色，_这不是一个穷尽的列举，也不是需要完全批评的举例_）主动选择或接受死亡（或消失）。此时，这个结果通常解释为角色自己的选择。
@@ -153,7 +153,7 @@ _此段落由 Gemini 按照笔者意见补充，有人工干预。_
 ## 附录：戏作：《代写》
 
 ```plain
-Title: 代写
+Title: 代写 / Echoes of Scripted Reverie
 Copyright: 本文是对 HOYO-MiX 作品《昔涟》的改写，原文很可能是受版权保护的材料。
 Author: Gemini 和 Claude，有人工干预
 
