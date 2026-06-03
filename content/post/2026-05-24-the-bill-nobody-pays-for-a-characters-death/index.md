@@ -97,7 +97,7 @@ _此段落由 Claude 和 Gemini 按照笔者意见补充，有人工修改。_
 
 最后，在严格的自我审视下，笔者无法完全确认自己写下这些文字的真正动机。用“叙事不够诚实”来挑剔一切，在心理学上（如[库伯勒-罗丝模型](https://zh.wikipedia.org/wiki/%E5%BA%93%E4%BC%AF%E5%8B%92-%E7%BD%97%E4%B8%9D%E6%A8%A1%E5%9E%8B)中的否认、愤怒与讨价还价）完全有可能是一种冷峻的理性防御，用以回避那些连自己都未曾察觉、或是不愿承认的潜意识里的情绪负荷。批评与被打动，在情感的底层逻辑上或许来源相似，只是最终的表达方式不同。
 
-一个可以作为这一审视之注脚的细节是：在笔者梳理对话、完成初稿的几个小时里，耳机里循环播放的背景音乐恰恰就是[《昔涟》](https://www.youtube.com/watch?v=LB_65-rOYYo)。这构成了一种微妙的现实互文——如前文所述，它确拥有一个在工业层面上溢满了情绪的优秀视听演出，即便其背后的故事设计或许充满争议，但在写作的停顿处，笔者依然能清晰地感受到这种顶尖视听对感官的天然吸引力。
+一个可以作为这一审视之注脚的细节是：在笔者梳理对话、完成初稿的几个小时里，耳机里循环播放的背景音乐恰恰就是[《昔涟》](https://www.youtube.com/watch?v=nJaYtzwTUvY)。这构成了一种微妙的现实互文——如前文所述，它确拥有一个在工业层面上溢满了情绪的优秀视听演出，即便其背后的故事设计或许充满争议，但在写作的停顿处，笔者依然能清晰地感受到这种顶尖视听对感官的天然吸引力。
 
 这或许正是长线运营游戏最奇妙也最危险的地方：它的视听往往走得太快，以至于在剧本还没来得及给出合理交代时，音乐和画面就已经提前替它完成了情感的预支。笔者在敲击这些挑剔文字的同时，身体却在顺从地接受这种情绪的包裹。这种理智上的审视、潜意识里的防御、与感官上的沉浸同时存在的状态，或许也是许多玩家在面对此类剧情时，那种“说不清楚理由，但总觉得什么地方不对”的真实起点。
 
@@ -156,10 +156,18 @@ _此段落由 Gemini 按照笔者意见补充，有人工干预。_
 
 ## 附录：戏作：《代写》
 
+此部分是对 HOYO-MiX 作品[《昔涟》(Ripples of Past Reverie)](https://www.youtube.com/watch?v=nJaYtzwTUvY)的改写与翻唱。原曲之视听版权及核心旋律素材完全属于原权利人（HOYO-MiX/[COGNOSPHERE PTE. LTD.](https://www.hoyoverse.com/)），本改写作品严格遵循非商业性合理使用之原则。
+
+它的完成依赖于 Gemini、Claude、[OpenUTAU](https://github.com/openutau/OpenUtau)、[yousa-ling-diffsinger-v1](https://github.com/yousa-ling-official-production/yousa-ling-diffsinger-v1)，当然，还有 HOYO-MiX/[COGNOSPHERE PTE. LTD.](https://www.hoyoverse.com/)创造了这个作品及原唱歌手[张韶涵](https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9F%B6%E6%B6%B5)演唱了笔者在后记中提到的版本。
+
+{{< audio "代写 - Cover by Gemini & Claude feat. yousa-ling-diffsinger-v1 in OpenUTAU (O.A. HOYO-MiX).mp3" >}}
+
 ```plain
 Title: 代写 / Echoes of Scripted Reverie
 Copyright: 本文是对 HOYO-MiX 作品《昔涟》的改写，原文很可能是受版权保护的材料。
 Author: Gemini 和 Claude，有人工干预
+VOCAL: yousa-ling-diffsinger-v1 in OpenUTAU
+Original Artist: HOYO-MiX (Vocals by Angela Chang)
 
 [Intro]
 (Soft, melodic piano with a distant, nostalgic hum)
