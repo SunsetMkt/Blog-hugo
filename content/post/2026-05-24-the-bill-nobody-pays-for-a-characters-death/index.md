@@ -158,7 +158,7 @@ _此段落由 Gemini 按照笔者意见补充，有人工干预。_
 
 此部分是对 HOYO-MiX 作品[《昔涟》(Ripples of Past Reverie)](https://www.youtube.com/watch?v=nJaYtzwTUvY)的改写与翻唱。原曲之视听版权及核心旋律素材完全属于原权利人（HOYO-MiX/[COGNOSPHERE PTE. LTD.](https://www.hoyoverse.com/)），本改写作品严格遵循非商业性合理使用之原则。
 
-它的完成依赖于 Gemini、Claude、[OpenUTAU](https://github.com/openutau/OpenUtau)、[yousa-ling-diffsinger-v1](https://github.com/yousa-ling-official-production/yousa-ling-diffsinger-v1)，当然，还有 HOYO-MiX/[COGNOSPHERE PTE. LTD.](https://www.hoyoverse.com/)创造了这个作品及原唱歌手[张韶涵](https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9F%B6%E6%B6%B5)演唱了笔者在后记中提到的版本。
+它的完成依赖于 Gemini、Claude、[OpenUTAU](https://github.com/openutau/OpenUtau)、[DiffSinger](https://github.com/openvpi/DiffSinger)、[yousa-ling-diffsinger-v1](https://github.com/yousa-ling-official-production/yousa-ling-diffsinger-v1)，当然，还有 HOYO-MiX/[COGNOSPHERE PTE. LTD.](https://www.hoyoverse.com/)创造了这个作品及原唱歌手[张韶涵](https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9F%B6%E6%B6%B5)演唱了笔者在后记中提到的版本。
 
 {{< audio "代写 - Cover by Gemini & Claude feat. yousa-ling-diffsinger-v1 in OpenUTAU (O.A. HOYO-MiX).mp3" >}}
 
