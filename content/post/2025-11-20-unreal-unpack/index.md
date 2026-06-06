@@ -52,17 +52,22 @@ title: Unreal 游戏的通用解包和逆向工程工具
 - [UE-Modding-Tools](https://github.com/Buckminsterfullerene02/UE-Modding-Tools)
 - [UE_Modding](https://github.com/Dmgvol/UE_Modding)
 
-## Wwise（和引擎无关）
+## Wwise 音频（和引擎无关）
 
 - [wwiser](https://github.com/bnnm/wwiser)
 - [vgmstream](https://github.com/vgmstream/vgmstream)
 - [bnkextr](https://github.com/eXpl0it3r/bnkextr)
 
-## Spine（和引擎无关）
+## CRIWARE USM 视频（和引擎无关）
+
+- [crid_mod](https://github.com/bnnm/vgm-tools/tree/master/misc/crid-mod)
+- [泄露 SDK 工具](https://archive.org/details/new-criware-sdk)
+
+## Spine 动画（和引擎无关）
 
 - [SpineViewer](https://github.com/ww-rm/SpineViewer)
 
-## Live2D（和引擎无关）
+## Live2D 动画（和引擎无关）
 
 - [Cubism Viewer](https://docs.live2d.com/zh-CHS/cubism-editor-manual/selection-of-viewer/)
 
