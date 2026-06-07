@@ -39,9 +39,14 @@ title: Unreal 游戏的通用解包和逆向工程工具
 - 任务管理器
 - [KsDumper-11](https://github.com/mastercodeon314/KsDumper-11)
 
-## 生成 SDK/Mapping
+## 生成 Mapping
 
 对 UE5 的 Pak 浏览可能是必需的。
+
+- [jmap](https://github.com/trumank/jmap)
+- [RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS)
+
+## 生成 SDK
 
 - [RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS)
 - [Dumper-7](https://github.com/Encryqed/Dumper-7)
