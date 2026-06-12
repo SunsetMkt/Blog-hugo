@@ -5,7 +5,7 @@ tags:
     - 信息技术
     - Windows
 slug: windows-search-ranks-database
-title: Windows Search 的全球排序数据库
+title: Windows Search 的全球应用排序数据库
 ---
 
 在位于`%LOCALAPPDATA%\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\Search\`的`AppsIndex.db` SQLite 数据库中，存在名为`ranks`的表。它似乎包含了来自 Microsoft 的全球常用应用路径和排序用于优化开始菜单搜索排序体验。
