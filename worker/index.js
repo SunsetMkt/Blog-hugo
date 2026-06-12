@@ -1,12 +1,9 @@
 import bingwHandler from "./bingw.js";
-// import handleCorsRequest from "./cors.js";
 import echo from "./echo.js";
 import authHandler from "./ghauth/auth.js";
 import callbackHandler from "./ghauth/callback.js";
-import { handleGrpcPost, handleWebSocket } from "./workers-lite/src/index.js";
 import handleSbRequest from "./safebrowsing.js";
 import handleBombRequest from "./bomb.js";
-import handleOpenrouter from "./openrouter.js";
 import getSunsetUUID from "./SunsetUUID.js";
 
 export default {
@@ -52,13 +49,6 @@ export default {
                 return echo(request, request.url);
             }
 
-            // Handle /api/cors
-            /**
-            if (pathname === "/api/cors") {
-                return handleCorsRequest(request, env, ctx);
-            }
-            */
-
             // Handle /api/bingw
             if (pathname === "/api/bingw") {
                 return bingwHandler(request);
@@ -72,37 +62,6 @@ export default {
             // Handle /api/bomb
             if (pathname === "/api/bomb") {
                 return handleBombRequest(request);
-            }
-
-            // Handle /api/openrouter
-            if (pathname === "/api/openrouter") {
-                return handleOpenrouter(request, env);
-            }
-
-            // Handle /api/{env.UUID}
-            if (env.UUID) {
-                if (pathname.startsWith(`/api/${env.UUID}`)) {
-                    // Check if this is a WebSocket upgrade request
-                    if (
-                        request.headers.get("Upgrade")?.toLowerCase() ===
-                        "websocket"
-                    ) {
-                        return await handleWebSocket(request, env.UUID);
-                    }
-                    // Handle gRPC transport for POST requests ~~when grpc query parameter is present~~
-                    if (
-                        request.method === "POST" // &&
-                        // url.searchParams.has("grpc")
-                    ) {
-                        const response = await handleGrpcPost(
-                            request,
-                            env.UUID,
-                        );
-                        if (response) {
-                            return response;
-                        }
-                    }
-                }
             }
 
             // API path not found
@@ -123,38 +82,6 @@ export default {
                 },
             );
         }
-
-        // Fake WordPress
-        // Handle /wp-login.php
-        if (pathname === "/wp-login.php") {
-            if (request.method === "POST") {
-                // return handleBombRequest(request);
-                return new Response("Redirecting...", {
-                    status: 302,
-                    headers: {
-                        Location: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                    },
-                });
-            }
-        }
-        // Handle /xmlrpc.php
-        /**
-        if (pathname === "/xmlrpc.php") {
-            if (request.method === "POST") {
-                return handleBombRequest(request);
-            }
-        }
-        */
-        // wp-content wp-json wp-admin
-        /**
-        if (
-            pathname.startsWith("/wp-content/") ||
-            pathname.startsWith("/wp-json/") ||
-            pathname.startsWith("/wp-admin/")
-        ) {
-            return handleBombRequest(request);
-        }
-        */
 
         // Otherwise, serve the static assets.
         // Without this, the Worker will error and no assets will be served.
