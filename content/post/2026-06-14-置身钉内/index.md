@@ -12,7 +12,7 @@ title: 置身钉内
 
 > 作者：滕雅辛（幽素）  
 > 发布：2026 年 6 月 5 日  
-> 全文：7.5 万字
+> 全文：7.5 万字  
 > 参考来源：<https://gist.github.com/horaceho/4be04df73b1f1ede458ad5cec2b94132>
 
 ---
