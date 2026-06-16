@@ -4,7 +4,7 @@ date: "2026-06-14T00:00:00Z"
 tags:
     - 社会科学
     - 阿里巴巴
-slug: 置身钉内
+slug: pinned-inside-dingtalk
 title: 置身钉内
 ---
 
