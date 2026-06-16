@@ -14,7 +14,8 @@ title: 置身钉内
 > 发布：2026 年 6 月 5 日  
 > 全文：7.5 万字  
 > 参考来源：<https://gist.github.com/horaceho/4be04df73b1f1ede458ad5cec2b94132>  
-> 参考来源：<https://read.limboy.me/pinned-inside-dingtalk.md>
+> 参考来源：<https://read.limboy.me/pinned-inside-dingtalk.md>  
+> 参考来源：<https://drive.google.com/file/d/1qgPL1p9KQdluszqrPFuJnxArjnnwnYpH/view>
 
 ---
 
