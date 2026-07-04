@@ -18,6 +18,8 @@ slug: rip
 
 ## 帮助自己 (Help yourself)
 
+[自杀干预热线与危机求助热线/Suicide Hotlines & Crisis Helplines (Find A Helpline)](https://findahelpline.com/)
+
 此处文本参考了[Nicky Case 的心理健康资源](https://ncase.me/mental-health/)。
 
 ### 中文（简体）
