@@ -5,7 +5,7 @@ tags:
     - 游戏
     - 鸣潮
 slug: jiting-sans-regular-in-wuwa
-title: Jiting Sans Regular in Wuthering Waves
+title: Jiting Sans Regular Font in Wuthering Waves
 ---
 
 Extracted from game version 1.4.

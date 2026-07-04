@@ -4,7 +4,7 @@ date: 2026-05-17T00:00:00Z
 tags:
     - 游戏
 slug: tostar-in-nte
-title: ToStar Regular in Neverness to Everness
+title: ToStar Regular Font in Neverness to Everness
 ---
 
 Extracted from game version 1.0.
