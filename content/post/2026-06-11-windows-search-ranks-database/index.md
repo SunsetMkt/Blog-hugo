@@ -1,5 +1,5 @@
 ---
-categories: Original
+categories: Repost
 date: "2026-06-11T00:00:00Z"
 tags:
     - 信息技术
