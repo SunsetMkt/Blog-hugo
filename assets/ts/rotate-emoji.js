@@ -26,7 +26,7 @@ export function countryCodeToFlag(countryCode) {
 export default function () {
     // Change emoji on click
     var emojiSpan = document.getElementsByClassName("emoji")[0];
-    var emojiList = ["🇺🇦", "🏳️‍🌈", "🏳️‍⚧️", "🦄", "🇺🇳", "📎"];
+    var emojiList = ["🇺🇦", "🏳️‍🌈", "🏳️‍⚧️", "🦄", "🇺🇳", "📎", "♀️", "💜"];
 
     // Add current user country flag to emoji list
     var countryCode = navigator.language.split("-")[1];
