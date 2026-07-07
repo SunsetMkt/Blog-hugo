@@ -31,7 +31,7 @@ export default function () {
     // Add current user country flag to emoji list
     var countryCode = navigator.language.split("-")[1];
     if (countryCode) {
-        emojiList.push(countryCodeToFlag(countryCode));
+        // emojiList.push(countryCodeToFlag(countryCode));
     }
 
     var currentIndex = 0;
