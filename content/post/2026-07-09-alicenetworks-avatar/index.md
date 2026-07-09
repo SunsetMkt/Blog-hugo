@@ -16,7 +16,7 @@ title: Alice Networks 的动漫主视觉图
 
 此处展示的艺术作品（包括但不限于图片、角色形象、商标等）仅供非商业性的存档、介绍及评论参考，其版权及所有相关知识产权均归 Alice Networks LTD 及原作者/权利人所有。本站对该作品不主张任何权利。
 
-如相关权利人认为本站的展示侵犯了您的合法权益，请联系我们，我们将在核实后第一时间予以删除或更正。
+如果您是 Alice Networks LTD 的运营者或原画师，且不希望这些历史版本图片在此展示，请随时通过 Email 告知我们，我们会在收到邮件后第一时间进行下架处理。
 
 Alice Networks LTD 引入动漫主视觉图的有记录的最早时间是`20251208204939`，下面是自此之后的 Internet Archive 可检索的`https://alicenetworks.net/assets/images/alice.png`的历史版本。
 
