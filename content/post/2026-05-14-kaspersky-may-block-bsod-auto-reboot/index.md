@@ -11,6 +11,8 @@ slug: kaspersky-may-block-bsod-auto-reboot
 title: 卡巴斯基可能会阻止特定环境下的 BSOD 时自动重启
 ---
 
+> 注意：VMware Workstation Pro 或许也会导致类似的结果。
+
 ## 摘要
 
 在开启了内存完整性和内核模式硬件强制堆栈保护的 Windows 11 物理设备环境下，安装卡巴斯基（Kaspersky）系列产品后，一旦系统发生蓝屏（BSOD），“信息收集”进度可能会在卡在 100% 后彻底失去响应。此时，Windows 预设的 BSOD 时“自动重启”功能失效，必须手动按物理电源键强制重启。
