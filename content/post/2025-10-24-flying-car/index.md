@@ -1,7 +1,7 @@
 ---
 categories: Repost
 date: 2025-10-24T00:00:00Z
-description: “我就感觉到快，有催人跑的意思。”——邓小平
+description: 我就感觉到快，有催人跑的意思。
 tags:
     - Cedaros
     - 社会科学
