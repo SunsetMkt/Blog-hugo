@@ -11,6 +11,8 @@ title: 冲出革命湾
 
 转载自[angelkawaii.xyz](https://angelkawaii.xyz/2025/10/16/flying-car/)，使用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议授权。
 
+这是一篇转载文档，[您也可以点击此处前往原作者的网站阅读全文并向她致意](https://angelkawaii.xyz/2025/10/16/flying-car/)。
+
 ---
 
 <h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2>
