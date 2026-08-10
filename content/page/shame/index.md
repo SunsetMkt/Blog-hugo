@@ -40,6 +40,7 @@ slug: shame
 - 金山软件有限公司 - 开发的金山毒霸软件[滥用内核驱动进行广告推广](https://huorong.cn/document/tech/vir_report/1985)
 - Esoteric Software LLC - 开发的 Spine 动画软件具备垄断地位且索取高额授权费用，其免费版本在实践上几乎不可用
 - Live2D Inc. - 开发的 Live2D 动画软件具备垄断地位且索取高额授权费用，其免费版本在实践上几乎不可用
+- 上海宽娱数码科技有限公司 - [对其哔哩哔哩平台的开源插件进行诉讼威胁](https://github.com/yujincheng08/BiliRoaming)、[对其哔哩哔哩平台的 API 收集进行诉讼威胁](https://github.com/socialsisteryi/bilibili-api-collect)
 
 ## 也参考
 
