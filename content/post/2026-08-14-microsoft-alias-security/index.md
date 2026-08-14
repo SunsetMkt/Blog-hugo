@@ -42,7 +42,7 @@ For third-party emails and phone numbers, this button simply removes the contact
 
 This severe design defect makes it incredibly easy for users to make a fatal mistake, leading to the absolute and irreversible loss of their email accounts.
 
-We could analyze _why_ users click "Remove" (e.g., to stop brute-force hacking attempts or clean up old identities), **but that is entirely beside the point.**
+We could analyze _why_ users click "Remove" (e.g., to stop brute-force hacking attempts or clean up old identities). **However, from a security design perspective, a user's actions or underlying motivations do not alter the severity of this flaw.**
 
 The core issue is that no competent developer or product manager would place an action as catastrophic as "permanently destroying an email account" in a standard list with a generic, unalarming button.
 
@@ -59,7 +59,7 @@ In Microsoft's alias management interface, **all four of these standard safeguar
 
 Microsoft 账户的地址管理界面（同时也是电子邮箱别名管理界面）将所有联系方式（第三方邮箱、电话号码、基于 Microsoft 服务的邮箱、基于 Microsoft 服务的邮箱别名）以完全相同的外观展示，且提供移除（Remove）按钮。对于第三方邮箱和电话号码，此按钮代表删除此联系方式（即某种意义上的解除绑定）。然而，对于基于 Microsoft 服务的邮箱/别名，此相同文案的按钮会导致它被永久删除（无法发送和接收电子邮件）且无法恢复。此设计缺陷导致用户极易发生误操作，导致用户电子邮箱彻底无法使用。
 
-我们可以去分析为什么用户会去点击“移除”（比如为了阻挡黑客频繁撞库，或是清理旧身份），**但这根本不重要。**
+我们可以去分析*为什么*用户会去点击“移除”（比如为了阻挡黑客频繁撞库，或是清理旧身份），**然而，从安全设计的角度来看，用户的任何行为或者具体动机并不影响该缺陷的严重性。**
 
 真正的问题在于：没有任何一个合格的开发者或产品经理，会把“永久销毁一个电子邮件账户”这种灾难性操作，堂而皇之地放在一个普通的列表里，并用一个毫无警示感的按钮来处理。
 
