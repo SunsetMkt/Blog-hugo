@@ -20,7 +20,8 @@ title: 《鸣潮》的资源文件解包（和其他逆向工程）
 - Wwise 音频事件提取 <https://github.com/bnnm/wwiser>
 - Unreal 模型提取 <https://www.gildor.org/en/projects/umodel>
 - Wwise 音频转码 <https://github.com/vgmstream/vgmstream>
-- 《鸣潮》使用的游戏内脚本方案 <https://github.com/Tencent/puerts>
+- 《鸣潮》使用的游戏内 TypeScript 脚本方案 <https://github.com/Tencent/puerts>
+- 《鸣潮》使用的游戏内 C# 方案 <https://github.com/crazytuzi/UnrealCSharp>
 - 自`2.1`版本，视频文件~~已被加密，暂无解决方案~~采用了非常规的加密方式，由[yarik0chka](https://github.com/yarik0chka)在[上游](https://github.com/FabianFG/CUE4Parse/pull/313)修复。
 - 自`2.4`版本，`ConfigDB`似乎已被加密。参考[wicked-waifus-data](https://git.xeondev.com/wickedwaifus/wicked-waifus-data)，FModel 已实现解密。
 
