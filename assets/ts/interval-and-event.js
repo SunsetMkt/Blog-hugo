@@ -234,7 +234,9 @@ async function onLoadExecute() {
     // tawk-to flag
     safeRun(function () {
         if (featureFlags.isFlagSet("tawk-to")) {
+            // eslint-disable-next-line no-useless-assignment
             var Tawk_API = Tawk_API || {},
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 Tawk_LoadStart = new Date();
             (function () {
                 var s1 = document.createElement("script"),
