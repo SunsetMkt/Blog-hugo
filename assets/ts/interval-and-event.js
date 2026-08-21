@@ -215,7 +215,7 @@ async function onLoadExecute() {
     safeRun(function () {
         if (featureFlags.isFlagSet("blind-watermark")) {
             var watermarkConfig = {
-                contentType: 'multi-line-text',
+                contentType: "multi-line-text",
                 content: localStorage.SunsetUUID,
                 width: 200,
                 height: 200,
@@ -228,6 +228,24 @@ async function onLoadExecute() {
             }
             const watermark = new BlindWatermark(watermarkConfig);
             watermark.create();
+        }
+    });
+
+    // tawk-to flag
+    safeRun(function () {
+        if (featureFlags.isFlagSet("tawk-to")) {
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src =
+                    "https://embed.tawk.to/6a8835ba95b7fc3443c162e0/1k0i13oqu";
+                s1.charset = "UTF-8";
+                s1.setAttribute("crossorigin", "*");
+                s0.parentNode.insertBefore(s1, s0);
+            })();
         }
     });
 }
