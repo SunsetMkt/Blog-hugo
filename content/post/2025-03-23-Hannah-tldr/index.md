@@ -481,3 +481,7 @@ Q：为什么当时信息不透明？为什么现在又写那么详细？
 ```
 
 {{< /details >}}
+
+### 其他社区讨论和转载
+
+- [ubmh.wikidot.com](https://ubmh.wikidot.com/hannah-ai-banning-controversy)
