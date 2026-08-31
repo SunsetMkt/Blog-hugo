@@ -34,6 +34,10 @@ links:
       description: "Stop Doing IT Jobs!!!!!"
       website: https://www.xzc-meina.top/
       image: 79711420.jpg
+    - title: Outpost 202
+      description: 生信·IT·观察
+      website: https://blog.tabitabi.top/
+      image: 183110343_p7-1.webp
     - title: qwq233
       description: "女子高中生 | 给岁月以文明，而不是给文明以岁月。"
       website: https://qwq2333.top/
