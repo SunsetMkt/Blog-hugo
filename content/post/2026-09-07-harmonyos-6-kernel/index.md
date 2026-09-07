@@ -13,6 +13,8 @@ title: HarmonyOS 6 的操作系统内核分析尝试（以 HUAWEI Mate 60 Pro �
 
 任何人都应该看看[Huawei Open Source Release Center](https://consumer.huawei.com/en/opensource/)的 HarmonyOS 6 机型 GPL 源码包。
 
+> 猜想：HongMeng Kernel is a hybrid operating system kernel developed by Huawei, consisting of a proprietary microkernel and an embedded Linux 5.10 (referred to as liblinux) that handles drivers, file systems, and networking.
+
 ## 引子
 
 > HarmonyOS NEXT 从操作系统内核、文件系统，到编程语言、编译器/运行时、编程框架，再到设计系统、集成开发环境，以及 AI 框架和大模型等，全面焕新。[HarmonyOS NEXT Beta 重磅发布：有史以来最大一次升级 - 华为](https://www.huawei.com/cn/news/2024/6/hdc2024)
