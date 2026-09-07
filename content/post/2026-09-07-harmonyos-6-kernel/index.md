@@ -2159,6 +2159,25 @@ int liblinux_pal_vfs_hmv_read_debugfs_info(uint64_t shm_key, size_t len, int pid
 
 > HarmonyOS 6 使用了自研的 HongMeng Kernel（`hm-verif-kernel`），同时嵌入了自定义为`liblinux`的用户态 Linux（`linux-5.10-lts`，似乎与微内核共享地址空间）。
 
+## DevEco Studio 虚拟机镜像的研究
+
+HarmonyOS 6.0.0 的 x86 虚拟机镜像：<https://update.dbankcdn.com/download/data/pub_13/HWHOTA_hota_900_9/a7/v3/j_DYt5c1R0-v3uxX9Vx9Pw/system-image-phone_all-x86.zip>
+
+```sh
+bzImage:         Linux kernel x86 boot executable, bzImage, version 5.10.210 (huawei@ceresf64116) #1 SMP Thu Sep 18 17:18:29 CST 2025, RO-rootFS, Normal VGA, setup size 512*29, syssize 0x9ba90, jump 0x26c 0x8cd88ec0fc8cd239 instruction, protocol 2.15, from protected-mode code at offset 0x411 0x9aa85e bytes gzip compressed, relocatable, handover offset 0x190, legacy 64-bit entry point, can be above 4G, 32-bit EFI handoff entry point, 64-bit EFI handoff entry point, EFI kexec boot support, xloadflags bit 5, max cmdline size 2047, init_size 0x2558000
+features.ini:    ASCII text
+image_signature: directory
+info.json:       JSON text data
+ramdisk.img:     gzip compressed data, was "ramdisk.img", last modified: Thu Sep 18 10:17:21 2025, from Unix, original size modulo 2^32 5843456
+sdk-pkg.json:    JSON text data
+sys_prod.img:    Linux rev 1.0 ext2 filesystem data, UUID=12dc6d56-c937-432d-b28b-1fbf7358abbf (extents) (64bit) (large files) (huge files)
+system.img:      Linux rev 1.0 ext2 filesystem data, UUID=35dc30d0-9bd4-44cb-878f-21ffaec670b7 (extents) (64bit) (large files) (huge files)
+userdata.img:    Linux rev 1.0 ext4 filesystem data, UUID=35b92a43-fd08-4aac-b74f-8c3323bac960 (extents) (64bit) (large files) (huge files)
+vendor.img:      Linux rev 1.0 ext2 filesystem data, UUID=d94d9942-b4fa-46cc-a389-4c9a8ce0bfce (extents) (64bit) (large files) (huge files)
+```
+
+需要注意，虚拟机镜像提供了和消费者设备不同的内核。
+
 ## 附件：`SimomYung/unpack_huawei_package`主程序
 
 ```python
