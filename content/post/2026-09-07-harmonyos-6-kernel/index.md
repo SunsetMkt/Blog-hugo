@@ -2157,7 +2157,7 @@ int liblinux_pal_vfs_hmv_read_debugfs_info(uint64_t shm_key, size_t len, int pid
 #endif	/* __LIBLINUX_PAL_H__ */
 ```
 
-> HarmonyOS 6 使用了自研的 HongMeng Kernel（`hm-verif-kernel`），同时嵌入了自定义为`liblinux`的用户态 Linux（`linux-5.10-lts`，似乎与微内核共享地址空间）。
+> HarmonyOS 6 使用了自研的 HongMeng Kernel（`hm-verif-kernel`），同时嵌入了自定义为`liblinux`的用户态 Linux（`linux-5.10-lts`）。
 
 ## DevEco Studio 虚拟机镜像的研究
 
