@@ -20,7 +20,15 @@ title: 三星的 Over the Horizon 音乐
 
 [Samsung Design](https://design.samsung.com/global/contents/over-the-horizon/)和[此 reddit 帖子](https://www.reddit.com/r/samsung/comments/xdd4g7/samsung_galaxy_audio_library_alarms_notifications/)，SAMSUNG 版权所有。
 
-## 2025 Jacob Mann Jazz #The Rhythm of a Day
+## The Melody
+
+{{< video "samsung-over-the-horizon-sec-outro.mp4" >}}
+
+## 2026 Eunike Tanzil Contemporary Classical #A_Soundtrack_of_the_Earth
+
+{{< audio "Over_the_Horizon_2026.m4a" >}}
+
+## 2025 Jacob Mann Jazz #The_Rhythm_of_a_Day
 
 {{< audio "Over_the_Horizon_2025.m4a" >}}
 
