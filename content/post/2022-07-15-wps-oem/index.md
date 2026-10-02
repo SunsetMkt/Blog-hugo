@@ -293,6 +293,8 @@ UninstExeCount=1
 
 ## 也参考
 
+[WPS Office 雨糖科技特别版](https://raincandy.tech/wpsoffice_umrse/)
+
 [2019 from 423down](https://www.423down.com/8890.html)
 
 [WPS VBA 安装程序备份](VBA_Setup.exe)
