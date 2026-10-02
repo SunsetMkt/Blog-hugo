@@ -16,6 +16,10 @@ title: WPS Office Pro（金山 WPS 企业版）和金山 PDF 专业版的 OEM �
 
 也有一些方便的第三方方案（如[WPSOfficeConf](https://github.com/ShinjoKurumi/WPSOfficeConf)）。
 
+## WPS 企业版在 2026
+
+WPS 的所有企业版产品都有公开的下载链接（[WPS 企业版-下载中心](https://ep.wps.cn/download)）。而且令人意外的是，特定的 SN 泄露一直可用且可通过 GUI 用于注册 WPS 和 PDF 产品。WPS Office 移动专业版似乎缺乏更新，但也有[相应的 SN 泄露](https://net.jmu.edu.cn/info/1293/2985.htm)。
+
 ## 引子
 
 曾经，互联网上流传着多个“WPS 政府版”，例如：`http://【移除具体链接】/WPS Office 2019 珠海市政府专业版(11.8.2.8506).exe`（目前已 404）。
