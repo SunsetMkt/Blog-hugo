@@ -28,6 +28,8 @@ TL;DR: `.\Client-Win64-Shipping.exe -CloudGame -SkipSplash -CloudGamePlatform=An
 
 确保在官方启动器保持客户端更新。第一次以 CloudGame 启动后，会自动下载全部语言的语音包。
 
+有用户报告，它只在国际版上生效。CN 版本无法正确处理登录缓存。
+
 **需要真实的 Windows 触屏（多点触控）输入。** 在此状态下，它不支持鼠标键盘输入。在进入游戏后，光标会被持续隐藏。可以使用[Sunshine](https://github.com/LizardByte/Sunshine)和[Moonlight](https://github.com/moonlight-stream)从其他设备上模拟触屏输入。需要注意，一些平台的 Sunshine 客户端[不默认支持](https://github.com/moonlight-stream/moonlight-android/issues/1271)此功能，已知[moonlight-qt](https://github.com/moonlight-stream/moonlight-qt)在有触摸屏的 Windows 设备上支持此功能。
 
 其他可用的参数：`-Device=` `-Dpi=` `-DeviceScreenResolution=1920x1080` `-Res=1920x1080` `-IsWeb=1`
