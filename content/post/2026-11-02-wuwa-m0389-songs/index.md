@@ -25,3 +25,11 @@ title: "《鸣潮》的《月声尽，心灯明》游戏内动画歌曲的泄露
 ## 最终游戏版本
 
 {{< audio "FINAL_mov-story_video_m0389.opus" >}}
+
+## 未使用的 OST 汉语版本（未知歌手）
+
+{{< audio "ZH_ost-album28_02_心声心生演出-all-full-74bpm-4_4.opus" >}}
+
+## 最终游戏 OST 版本
+
+{{< audio "FINAL_ost-album28_02_心声心生演出-all-full-74bpm-4_4.opus" >}}
