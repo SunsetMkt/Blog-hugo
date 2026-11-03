@@ -1,0 +1,30 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "大肥鱼.moc3",
+		"Textures": [
+			"大肥鱼.4096/texture_00.png",
+			"大肥鱼.4096/texture_01.png",
+			"大肥鱼.4096/texture_02.png",
+			"大肥鱼.4096/texture_03.png",
+			"大肥鱼.4096/texture_04.png"
+		],
+		"Physics": "大肥鱼.physics3.json",
+		"DisplayInfo": "大肥鱼.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeROpen",
+				"ParamEyeLOpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

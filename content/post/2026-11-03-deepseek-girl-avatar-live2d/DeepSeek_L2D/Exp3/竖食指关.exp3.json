@@ -1,0 +1,11 @@
+{
+    "Type": "Live2D Expression",
+    "IsModelCustomizationExpression": false,
+    "Parameters": [
+        {
+            "Id": "Movement3",
+            "Value": 0.0,
+            "Blend": "Add"
+        }
+    ]
+}
