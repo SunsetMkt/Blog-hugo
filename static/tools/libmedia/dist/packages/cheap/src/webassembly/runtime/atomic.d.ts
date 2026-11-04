@@ -35,8 +35,8 @@ export declare let atomic_load_i64: (p: pointer<atomic_int64>) => int64;
 export declare let atomic_compare_exchange_i64: (p: pointer<atomic_int64>, expectedValue: int64, replacementValue: int64) => int64;
 export declare let atomic_exchange_i64: (p: pointer<atomic_int64>, value: int64) => int64;
 export declare let atomics_notify: (p: pointer<atomic_int32>, count: uint32) => uint32;
-export declare let atomics_wait: (p: pointer<atomic_int32>, value: int32) => 0 | 1 | 2;
-export declare let atomics_wait_timeout: (p: pointer<atomic_int32>, value: int32, timeout: int64) => 0 | 1 | 2;
+export declare let atomics_wait: (p: pointer<atomic_int32>, value: int32) => 0 | 2 | 1;
+export declare let atomics_wait_timeout: (p: pointer<atomic_int32>, value: int32, timeout: int64) => 0 | 2 | 1;
 export declare function override(data: {
     atomic_add_i8?: typeof atomic_add_i8;
     atomic_sub_i8?: typeof atomic_sub_i8;

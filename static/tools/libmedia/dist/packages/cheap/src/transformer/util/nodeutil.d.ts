@@ -28,3 +28,4 @@ export declare function isBigIntNode(node: ts.Node): boolean;
 export declare function getBigIntValue(node: ts.BigIntLiteral | ts.CallExpression): bigint;
 export declare function getTypeAtLocation(node: ts.Node): ts.Type;
 export declare function isNullPointerNode(node: ts.Node): boolean;
+export declare function isPointerOperatorBinaryNode(node: ts.Node, child?: boolean): boolean;

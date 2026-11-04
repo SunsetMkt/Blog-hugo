@@ -94,7 +94,7 @@ export interface AVPlayerOptions {
     /**
      * 自定义检查是否使用 mse 模式
      */
-    checkUseMES?: (streams: AVStreamInterface[]) => boolean;
+    checkUseMSE?: (streams: AVStreamInterface[]) => boolean;
     /**
      * 是否启用硬件加速
      */
