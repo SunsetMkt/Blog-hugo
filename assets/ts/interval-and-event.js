@@ -250,6 +250,59 @@ async function onLoadExecute() {
             })();
         }
     });
+
+    // msime-web-engine flag
+    safeRun(function () {
+        if (featureFlags.isFlagSet("msime-web-engine")) {
+            (async function () {
+                try {
+                    const { createMsimeEngine, attachInput } =
+                        await import("https://unpkg.com/@msime/web-engine@0.4.1/index.js");
+
+                    const engine = await createMsimeEngine({
+                        scheme: "quanpin",
+                    });
+
+                    const attachInputConfig = {
+                        skin: {
+                            base: "shuishan",
+                            fontFamily: "HarmonyOS Sans SC",
+                        },
+                        layout: "horizontal",
+                        dark: "auto",
+                    };
+
+                    document
+                        .querySelectorAll(
+                            'input, textarea, [contenteditable], [role="textbox"]',
+                        )
+                        .forEach((element) => {
+                            if (
+                                (element.tagName === "INPUT" &&
+                                    element.hasAttribute("type")) ||
+                                element.matches(":disabled, [readonly]") ||
+                                element.getAttribute("inputmode") === "none" ||
+                                getComputedStyle(element).imeMode ===
+                                    "disabled" ||
+                                (element.hasAttribute("contenteditable") &&
+                                    !element.isContentEditable)
+                            ) {
+                                return;
+                            }
+
+                            safeRun(() => {
+                                attachInput(element, engine, attachInputConfig);
+                            });
+                        });
+                } catch (error) {
+                    console.error(
+                        "Failed to initialize msime-web-engine:",
+                        error,
+                    );
+                }
+            })();
+        }
+    });
 }
 
 export default function () {

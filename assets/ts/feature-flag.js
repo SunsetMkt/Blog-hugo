@@ -15,6 +15,7 @@ export var expectedFlags = [
     "gtranslate-widget",
     "blind-watermark",
     "tawk-to",
+    "msime-web-engine",
 ];
 export const defaultFlags = ["outlink-alert"];
 export var permissive = false;
