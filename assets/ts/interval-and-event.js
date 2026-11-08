@@ -279,7 +279,7 @@ async function onLoadExecute() {
                         .forEach((element) => {
                             if (
                                 (element.tagName === "INPUT" &&
-                                    element.hasAttribute("type")) ||
+                                    element.type !== "text") ||
                                 element.matches(":disabled, [readonly]") ||
                                 element.getAttribute("inputmode") === "none" ||
                                 getComputedStyle(element).imeMode ===
